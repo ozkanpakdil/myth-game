@@ -13,7 +13,7 @@ import {
   countWords,
   REGION_ORDER,
   SENSITIVITY_LABEL,
-} from './content.js?v=20261107-9';
+} from './content.js?v=20261107-10';
 import {
   getState,
   getSettings,
@@ -24,7 +24,7 @@ import {
   recordStoryRead,
   awardBadges,
   resetProgress,
-} from './storage.js?v=20261107-9';
+} from './storage.js?v=20261107-10';
 import {
   mythStats,
   overallStats,
@@ -33,8 +33,8 @@ import {
   glossaryUnlockedCount,
   allStoryQuizzesPassed,
   isStoryUnlocked,
-} from './progress.js?v=20261107-9';
-import { badgeCatalog, evaluateBadges } from './badges.js?v=20261107-9';
+} from './progress.js?v=20261107-10';
+import { badgeCatalog, evaluateBadges } from './badges.js?v=20261107-10';
 import {
   escapeHtml,
   iconImg,
@@ -50,17 +50,17 @@ import {
   toast,
   confirmDialog,
   emptyState,
-} from './ui.js?v=20261107-9';
-import { renderQuiz } from './quiz.js?v=20261107-9';
+} from './ui.js?v=20261107-10';
+import { renderQuiz } from './quiz.js?v=20261107-10';
 import {
   renderChallengeHub,
   renderTimelineChallenge,
   renderMatchChallenge,
   renderCultureChallenge,
-} from './challenges.js?v=20261107-9';
-import { renderMap } from './map.js?v=20261107-9';
-import { storyScene, characterPortrait } from './scene.js?v=20261107-9';
-import { narrate, stopNarration, speechSupported, availableVoices, narrationSupported, studioAudioUrl } from './narration.js?v=20261107-9';
+} from './challenges.js?v=20261107-10';
+import { renderMap } from './map.js?v=20261107-10';
+import { storyScene, characterPortrait } from './scene.js?v=20261107-10';
+import { narrate, stopNarration, speechSupported, availableVoices, narrationSupported, studioAudioUrl } from './narration.js?v=20261107-10';
 
 const app = document.getElementById('app');
 const nav = document.querySelector('.main-nav');
@@ -102,7 +102,7 @@ function applySettings(settings = getSettings()) {
   if (narrationToggle) narrationToggle.checked = settings.audio !== false;
 }
 
-const STUDIO_LABELS = { cori: 'Cori', joe: 'Joe' };
+const STUDIO_LABELS = { cori: 'Cori', joe: 'Joe', morgan: 'Morgan' };
 
 function updateStudioVoiceUI() {
   const saved = getSettings().studioVoice || '';
@@ -1265,7 +1265,7 @@ async function renderAbout() {
       <p>The game uses native links and buttons, a skip link, visible focus styles, live regions for quiz feedback, keyboard-operable challenges and a text-size control. Animations are minimal and respect <code>prefers-reduced-motion</code>. The world map has a list-view alternative.</p>
       <h2>Images and narration</h2>
       <p>All images are original SVG: sixteen-pixel sigils, story scenes, quiz clues and character portraits are built from a small palette and a deterministic pixel grid. The map is an inline SVG built from a text tile grid. No photographs or generated raster art are used.</p>
-      <p>Narration is optional. Choose a generated open-voice narrator (Joe or Cori) in the speaker menu, or use any installed system voice as the fallback. There is no celebrity voice and no audio is sent to a server. Use the Listen button beside a story or question.</p>
+      <p>Narration is optional. Choose a generated narrator (Joe, Cori or Morgan) in the speaker menu, or use any installed system voice as the fallback. Joe and Cori are open-voice models with permissive licences; Morgan is a fan-made XTTS v2 clone of a public figure, licensed for non-commercial use only and never presented as an endorsement. No audio is sent to a server. Use the Listen button beside a story or question.</p>
     </section>
 
     <section class="panel">

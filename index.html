@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#0e1310">
     <title>Mythos · A world mythology game</title>
     <link rel="icon" href="assets/svg/logo.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="css/style.css?v=20261107-9">
+    <link rel="stylesheet" href="css/style.css?v=20261107-10">
     <!-- Google tag (gtag.js). Kept off localhost so development and tests stay quiet. -->
     <script>
       (function () {
@@ -116,7 +116,7 @@
         <p class="voice-note" id="voice-note" data-testid="voice-note" aria-live="polite">Looking for voices…</p>
         <section class="studio-samples" aria-labelledby="studio-samples-title">
           <h3 class="studio-samples__title" id="studio-samples-title">Try a local neural narrator</h3>
-          <p class="studio-samples__note">Audition both, then choose one. The selected voice plays pre-generated narration; if a clip is missing, playback falls back to your system voice.</p>
+          <p class="studio-samples__note">Audition each, then choose one. The selected voice plays pre-generated narration; if a clip is missing, playback falls back to your system voice.</p>
           <div class="studio-sample">
             <label class="studio-sample__choice">
               <input type="radio" name="studio-voice" value="cori" data-testid="studio-voice-cori">
@@ -133,11 +133,19 @@
           </div>
           <div class="studio-sample">
             <label class="studio-sample__choice">
+              <input type="radio" name="studio-voice" value="morgan" data-testid="studio-voice-morgan">
+              <span><strong>Morgan</strong><small>American English · XTTS v2 fine-tune, non-commercial</small></span>
+            </label>
+            <audio controls preload="none" src="audio/samples/morgan-xtts.mp3" data-testid="studio-sample-morgan" aria-label="Morgan voice sample"></audio>
+          </div>
+          <div class="studio-sample">
+            <label class="studio-sample__choice">
               <input type="radio" name="studio-voice" value="" data-testid="studio-voice-system">
               <span><strong>System voice</strong><small>Use my installed voice only</small></span>
             </label>
           </div>
           <p class="studio-samples__status" id="studio-voice-status" data-testid="studio-voice-status" aria-live="polite">Select a voice to use it on every Listen button.</p>
+          <p class="studio-samples__note" data-testid="studio-voice-disclosure">Morgan is a fan-made voice clone of a public figure, generated on-device and licensed for non-commercial use. Do not imply the person's endorsement or use it to deceive.</p>
         </section>
         <p class="voice-tip"><strong>Want a more human voice?</strong> Install a Premium or Enhanced system voice: on macOS, System Settings → Accessibility → Spoken Content → Manage Voices; on Windows, Settings → Time &amp; language → Speech. The list updates after a refresh.</p>
         <div class="dialog__actions">
@@ -149,6 +157,6 @@
 
     <div id="toast" role="status" aria-live="polite"></div>
 
-    <script type="module" src="js/app.js?v=20261107-9"></script>
+    <script type="module" src="js/app.js?v=20261107-10"></script>
   </body>
 </html>

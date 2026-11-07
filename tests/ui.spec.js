@@ -222,6 +222,31 @@ test.describe('visual storytelling and narration', () => {
     await expect.poll(() => page.evaluate(() => document.querySelector('audio[aria-hidden="true"]')?.readyState || 0)).toBeGreaterThan(1);
   });
 
+  test('the XTTS narrator is selectable, disclosed and plays its own clips', async ({ page }) => {
+    await page.goto('/#/');
+    await page.locator('#audio-toggle').click();
+    await expect(page.getByTestId('studio-sample-morgan')).toHaveAttribute('src', 'audio/samples/morgan-xtts.mp3');
+    const sample = await page.request.get('/audio/samples/morgan-xtts.mp3');
+    expect(sample.status()).toBe(200);
+    expect(sample.headers()['content-type']).toContain('audio');
+    await expect(page.getByTestId('studio-voice-disclosure')).toContainText('non-commercial');
+
+    await page.getByTestId('studio-voice-morgan').check();
+    await expect(page.getByTestId('studio-voice-status')).toContainText('Listen uses Morgan');
+    expect(await page.evaluate(() => JSON.parse(localStorage.getItem('mythos.settings.v1')).studioVoice)).toBe('morgan');
+    await page.getByTestId('voice-close').click();
+
+    await page.goto('/#/myth/greek/story/greek-01');
+    const storyClip = page.waitForRequest((request) => request.url().includes('/audio/voices/morgan/story/greek-01-0.mp3'));
+    await page.getByTestId('story-listen').click();
+    await storyClip;
+    await expect.poll(() => page.evaluate(() => document.querySelector('audio[aria-hidden="true"]')?.readyState || 0)).toBeGreaterThan(1);
+
+    await page.reload();
+    await page.locator('#audio-toggle').click();
+    await expect(page.getByTestId('studio-voice-morgan')).toBeChecked();
+  });
+
   test('the narration button opens its settings and the on/off choice persists', async ({ page }) => {
     await page.goto('/#/');
     const trigger = page.locator('#audio-toggle');

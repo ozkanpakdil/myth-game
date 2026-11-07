@@ -134,6 +134,9 @@ function loadState() {
   return freshState();
 }
 
+/** Studio narrators that have pre-generated clips under audio/voices/. */
+export const STUDIO_VOICES = ['cori', 'joe', 'morgan'];
+
 function defaultSettings() {
   return { theme: 'dark', fontScale: 'md', audio: true, voice: '', studioVoice: '' };
 }
@@ -148,7 +151,7 @@ function loadSettings() {
       fontScale: ['md', 'lg', 'xl'].includes(parsed.fontScale) ? parsed.fontScale : 'md',
       audio: parsed.audio !== false,
       voice: typeof parsed.voice === 'string' ? parsed.voice.slice(0, 200) : '',
-      studioVoice: parsed.studioVoice === 'cori' || parsed.studioVoice === 'joe' ? parsed.studioVoice : '',
+      studioVoice: STUDIO_VOICES.includes(parsed.studioVoice) ? parsed.studioVoice : '',
     };
   } catch {
     return defaultSettings();
@@ -182,7 +185,7 @@ export function updateSettings(patch) {
     ...(['md', 'lg', 'xl'].includes(patch.fontScale) ? { fontScale: patch.fontScale } : {}),
     ...(typeof patch.audio === 'boolean' ? { audio: patch.audio } : {}),
     ...(typeof patch.voice === 'string' ? { voice: patch.voice.slice(0, 200) } : {}),
-    ...(patch.studioVoice === '' || patch.studioVoice === 'cori' || patch.studioVoice === 'joe' ? { studioVoice: patch.studioVoice } : {}),
+    ...(typeof patch.studioVoice === 'string' && (patch.studioVoice === '' || STUDIO_VOICES.includes(patch.studioVoice)) ? { studioVoice: patch.studioVoice } : {}),
   };
   writeRaw(SETTINGS_KEY, JSON.stringify(settings));
   return { ...settings };

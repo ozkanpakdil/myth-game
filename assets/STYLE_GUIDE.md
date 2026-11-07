@@ -183,10 +183,13 @@ stop icon and `Stop narration` / `Stop`. The header speaker button opens the
 narration dialog, where the reader can switch narration on or off, choose an
 installed system voice, and preview it.
 
-There is no recorded human or celebrity audio. Studio narration uses pre-generated
-Piper clips, with the browser's SpeechSynthesis engine as fallback. There
-are no celebrity voices and no voice cloning. Never label
-a system voice as a real person. The Voice dialog lists installed system voices, groups Premium/Enhanced/Natural
+Studio narration uses pre-generated neural clips, with the browser's
+SpeechSynthesis engine as fallback. Joe and Cori are open Piper voices with
+permissive licences. Morgan is a fan-made XTTS v2 clone of a public figure: it
+is allowed only because it is labelled as a fan-made, non-commercial clone in the
+dialog and in the About page, and it must never be presented as the person's
+endorsement or used to deceive a listener. Never label a system voice as a real
+person. The Voice dialog lists installed system voices, groups Premium/Enhanced/Natural
 voices first with a ★, persists the chosen `voiceURI`, and previews it with a
 neutral sample sentence. The studio voices are selectable auditions that drive real pre-generated clips;
 the system voice remains the fallback when a clip is unavailable.

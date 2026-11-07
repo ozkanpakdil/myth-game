@@ -3,7 +3,7 @@
 A text-first educational game for ages 12+. Read short retellings from eight
 world traditions, answer quizzes, unlock a codex of figures and terms, and
 explore a stylised world map and timeline. Stories and questions carry original
-pixel-art SVG scenes, and optional open-voice narration reads the text aloud.
+pixel-art SVG scenes, and optional pre-generated narration reads the text aloud.
 
 There is no build step and no framework. Content lives in JSON, the interface is
 HTML/CSS/vanilla ES modules, and every image is SVG. Progress stays in the
@@ -106,7 +106,7 @@ content/
   greek/ ...            five JSON files per playable tradition
 schemas/                JSON Schema documents for every content file
 audio/
-  voices/joe,cori/      pre-generated Piper narration clips
+  voices/               joe, cori and morgan narration clips
   samples/              short in-dialog audition files
 assets/
   palette.json          16-key pixel palette
@@ -193,8 +193,9 @@ not fetched images. See `assets/STYLE_GUIDE.md` for the palette and grid rules.
 - The map has focusable regions, a list view and a horizontally scrollable
   mobile view; region details are announced in a live region.
 - Text-size control (`Aa`) cycles 100 / 112.5 / 125%, persisted locally.
-- Optional narration uses pre-generated open-voice Piper clips (Joe and Cori)
-  or the browser's SpeechSynthesis API as a fallback. It never autoplays and
+- Optional narration uses pre-generated neural clips — open Piper voices (Joe,
+  Cori) plus a fan-made, non-commercial XTTS v2 clone (Morgan) — or the
+  browser's SpeechSynthesis API as a fallback. It never autoplays and
   stops on navigation. The header speaker button opens a narration dialog with
   an on/off switch, a system-voice picker and selectable studio voices. Selecting a studio voice applies immediately and is saved as `studioVoice`;
   each Listen button plays its clip and falls back to the system voice if the

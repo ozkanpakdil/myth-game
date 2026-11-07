@@ -1,0 +1,10 @@
+{
+  "voice": "morgan",
+  "label": "Morgan",
+  "language": "American English",
+  "license": "Non-commercial (XTTS v2)",
+  "model": "model.pth",
+  "engine": "xtts-v2",
+  "clips": 354,
+  "generatedAt": "2026-11-07T20:03:59Z"
+}

@@ -8,7 +8,7 @@ import {
   getState,
   isFinalQuizPassed,
   isQuizPassed,
-} from './storage.js?v=20261107-9';
+} from './storage.js?v=20261107-10';
 
 export function isStoryUnlocked(mythId, stories, index) {
   if (index <= 0) return true;

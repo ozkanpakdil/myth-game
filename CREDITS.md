@@ -7,7 +7,18 @@ Mythos is an educational draft. The retellings are new, short summaries in moder
 - Design, code and retellings: the Mythos project.
 - Built with HTML, CSS and vanilla JavaScript. No frameworks, no build step. Google Analytics is the only third-party script and is disabled on localhost.
 - All images are original SVG: 16×16 text-grid sigils compiled by `tools/render_sprites.js`, procedural story scenes and character portraits from `js/scene.js`, plus an inline SVG map generated from a text tile grid.
-- Narration uses the browser's SpeechSynthesis API. No recorded voice files, no celebrity voices and no voice cloning are used.
+- Narration is optional and generated on the author's machine. The browser's
+  SpeechSynthesis API is the fallback; the shipped clips come from three models:
+  - **Joe** — Piper `en_US-joe-medium`, CC0.
+  - **Cori** — Piper `en_GB-cori-high`, trained on a public-domain dataset.
+  - **Morgan** — a fan-made XTTS v2 fine-tune of Morgan Freeman's voice,
+    [`drewThomasson/Morgan_freeman_xtts_model`](https://huggingface.co/drewThomasson/Morgan_freeman_xtts_model).
+    The clone was not made with his consent, so it is used only as a
+    non-commercial demonstration of narration, is labelled as a fan-made clone
+    in the voice dialog, and must never be presented as his endorsement or used
+    to deceive a listener. XTTS v2's own licence is non-commercial, so the
+    `morgan` clips carry a `Non-commercial (XTTS v2)` manifest entry; remove
+    them before any commercial distribution.
 - Fonts are the operating system serif and sans-serif stacks. No external fonts or assets are loaded.
 
 ## Sources by tradition

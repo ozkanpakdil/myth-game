@@ -390,6 +390,7 @@ An AI that writes text can create pixel art as **text grids**, one character per
 - [x] **T502** Add Google Analytics 4 (`G-NSB9K61M5S`) on published hosts, with localhost disabled for development and tests.
 - [x] **T503** Add a GitHub Actions Pages workflow and verify the assembled static artifact under a project-style path.
 - [ ] **T504** **NEEDS HUMAN**: review the new symbolic scenes and portrait archetypes for cultural sensitivity and visual quality. Do not treat generated portraits as historical likenesses.
+- [x] **T505** Add a third studio narrator, `morgan`, generated from the fan-made XTTS v2 fine-tune (epoch 7) with `tools/generate_xtts_audio.py`; centralise the voice list in `STUDIO_VOICES`, add the dialog audition, and disclose the clone plus its non-commercial licence in the dialog, the About page, `CREDITS.md` and `audio/README.md`.
 
 ---
 
@@ -433,4 +434,5 @@ Add one line per finished task. Newest at the bottom.
 | 2026-11-07 | T210–T214, T216 | 16-key palette and style guide, sprite compiler, eight mythology sigils, map markers, story/codex sigils. Character portrait sprites added (T215). |
 | 2026-11-07 | T400–T403 | Git history, Playwright suite, all-SVG art and zero-dependency dev server documented. |
 | 2026-11-07 | T500–T503 | Story/quiz scenes, answer portraits, browser narration, GA4 on published hosts, and GitHub Pages workflow. |
-| 2026-11-07 | Verification | `node tools/validate_content.js` clean; 42 Playwright tests pass headlessly; 708 generated Piper clips validated; no console errors on the checked routes; assembled Pages artifact verified. |
+| 2026-11-07 | T505 | Third narrator `morgan` from the fan-made XTTS v2 fine-tune (epoch 7): new `tools/generate_xtts_audio.py` with `--shard` support, `STUDIO_VOICES` list, dialog audition and licence disclosure, 354 generated clips. |
+| 2026-11-07 | Verification | `node tools/validate_content.js` clean; 43 Playwright tests pass headlessly; 1062 generated narration clips validated (708 Piper + 354 XTTS, filename parity and non-empty audio); no console errors on the checked routes; assembled Pages artifact verified. |

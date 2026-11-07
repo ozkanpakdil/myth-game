@@ -2,12 +2,12 @@
  * narration.js — optional, local speech synthesis.
  *
  * The browser's own SpeechSynthesis engine is the fallback. When a reader picks
- * a studio voice, pre-generated Piper MP3s are played instead; if a clip is
+ * a studio voice, pre-generated neural MP3s are played instead; if a clip is
  * missing or cannot play, the same text falls back to the system voice. Audio is
  * opt-in per click, stops on navigation, and degrades quietly.
  */
 
-import { getSettings, updateSettings } from './storage.js?v=20261107-9';
+import { getSettings, updateSettings, STUDIO_VOICES } from './storage.js?v=20261107-10';
 
 let generation = 0;
 let currentAudio = null;
@@ -30,10 +30,11 @@ export function narrationEnabled() {
 
 /**
  * Build the stable path for a generated studio clip. Paths mirror the authoring
- * script in tools/generate_piper_audio.py; no manifest lookup is needed.
+ * scripts in tools/ (generate_piper_audio.py, generate_xtts_audio.py); no
+ * manifest lookup is needed.
  */
 export function studioAudioUrl(voice, kind, id, index = 0) {
-  if (!voice || !['cori', 'joe'].includes(voice) || !id) return '';
+  if (!voice || !STUDIO_VOICES.includes(voice) || !id) return '';
   if (kind === 'story') return `audio/voices/${voice}/story/${id}-${index}.mp3`;
   if (kind === 'quiz') return `audio/voices/${voice}/quiz/${id}.mp3`;
   return '';

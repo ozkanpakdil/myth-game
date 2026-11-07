@@ -226,8 +226,9 @@ or `https://<user>.github.io/` if the repository is named
 path. To publish at `https://ozkanpakdil.github.io/`, the repository must be
 named `ozkanpakdil.github.io`.
 
-The workflow copies only the runtime files (`index.html`, `css`, `js`,
-`content`, `assets`, `.nojekyll`) into the Pages artifact. Any static host
+The workflow copies only the site and its two documentation links
+(`index.html`, `css`, `js`, `content`, `assets`, `CREDITS.md`, `README.md`,
+`.nojekyll`) into the Pages artifact. Any static host
 (Netlify, S3, nginx) also works: upload those files and keep their relative
 layout. Hash routes need no rewrite rules.
 

@@ -1413,7 +1413,6 @@ a.story-row:hover { border-color: var(--gold); background: var(--surface-2); tra
 .studio-sample__choice span { display: flex; flex-direction: column; gap: 0.05rem; color: var(--ink-2); font-size: 0.8rem; }
 .studio-sample__choice small { color: var(--muted); font-size: 0.72rem; }
 .studio-sample audio { width: 100%; height: 32px; }
-.studio-samples__actions { display: flex; align-items: center; gap: 0.7rem; flex-wrap: wrap; margin-top: 0.8rem; }
 .studio-samples__status { flex: 1 1 12rem; margin: 0; color: var(--muted); font-size: 0.74rem; line-height: 1.45; }
 .dialog__actions { display: flex; justify-content: flex-end; gap: 0.5rem; margin-top: 1.4rem; }
 

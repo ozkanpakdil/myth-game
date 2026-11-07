@@ -1,15 +1,16 @@
 /**
  * narration.js — optional, local speech synthesis.
  *
- * There are no voice files and no celebrity voices. The browser's own
- * SpeechSynthesis engine reads the current paragraph or question. Audio is
- * opt-in per click, stops on navigation, and degrades quietly when a browser
- * has no speech support.
+ * The browser's own SpeechSynthesis engine is the fallback. When a reader picks
+ * a studio voice, pre-generated Piper MP3s are played instead; if a clip is
+ * missing or cannot play, the same text falls back to the system voice. Audio is
+ * opt-in per click, stops on navigation, and degrades quietly.
  */
 
-import { getSettings, updateSettings } from './storage.js?v=20261107-7';
+import { getSettings, updateSettings } from './storage.js?v=20261107-9';
 
 let generation = 0;
+let currentAudio = null;
 
 export function ensureNarration() {
   if (getSettings().audio) return;
@@ -27,8 +28,38 @@ export function narrationEnabled() {
   return getSettings().audio;
 }
 
+/**
+ * Build the stable path for a generated studio clip. Paths mirror the authoring
+ * script in tools/generate_piper_audio.py; no manifest lookup is needed.
+ */
+export function studioAudioUrl(voice, kind, id, index = 0) {
+  if (!voice || !['cori', 'joe'].includes(voice) || !id) return '';
+  if (kind === 'story') return `audio/voices/${voice}/story/${id}-${index}.mp3`;
+  if (kind === 'quiz') return `audio/voices/${voice}/quiz/${id}.mp3`;
+  return '';
+}
+
+export function narrationSupported(audioUrl = '') {
+  const canPlayAudio = Boolean(audioUrl)
+    && typeof window !== 'undefined'
+    && typeof window.Audio === 'function';
+  return canPlayAudio || speechSupported();
+}
+
 export function stopNarration() {
   generation += 1;
+  if (currentAudio) {
+    const audio = currentAudio;
+    currentAudio = null;
+    try {
+      audio.pause();
+      audio.removeAttribute('src');
+      audio.load();
+      audio.remove();
+    } catch {
+      /* the media element may already be detached */
+    }
+  }
   if (!speechSupported()) return;
   try {
     window.speechSynthesis.cancel();
@@ -68,20 +99,12 @@ function chooseVoice() {
     || voices[0];
 }
 
-export function narrate(text, { onStart, onEnd, onError } = {}) {
+function speak(clean, { token, onStart, onEnd, onError }) {
   if (!speechSupported()) {
     onError?.('unsupported');
     return false;
   }
 
-  const clean = String(text || '').replace(/\s+/g, ' ').trim();
-  if (!clean) {
-    onError?.('empty');
-    return false;
-  }
-
-  stopNarration();
-  const token = generation;
   const utterance = new window.SpeechSynthesisUtterance(clean);
   const voice = chooseVoice();
   if (voice) utterance.voice = voice;
@@ -110,4 +133,78 @@ export function narrate(text, { onStart, onEnd, onError } = {}) {
     onError?.('speech-error');
     return false;
   }
+}
+
+export function narrate(text, { audioUrl = '', onStart, onEnd, onError } = {}) {
+  const clean = String(text || '').replace(/\s+/g, ' ').trim();
+  if (!clean) {
+    onError?.('empty');
+    return false;
+  }
+
+  const canPlayAudio = Boolean(audioUrl)
+    && typeof window !== 'undefined'
+    && typeof window.Audio === 'function';
+  if (!canPlayAudio && !speechSupported()) {
+    onError?.('unsupported');
+    return false;
+  }
+
+  stopNarration();
+  const token = generation;
+
+  if (canPlayAudio) {
+    const audio = new window.Audio();
+    audio.preload = 'auto';
+    audio.src = audioUrl;
+    audio.hidden = true;
+    audio.setAttribute('aria-hidden', 'true');
+    document.body.append(audio);
+    currentAudio = audio;
+    let finished = false;
+
+    const dispose = () => {
+      try {
+        audio.remove();
+      } catch {
+        /* ignore */
+      }
+    };
+
+    const fallback = () => {
+      if (finished || token !== generation) return;
+      finished = true;
+      if (currentAudio === audio) currentAudio = null;
+      try {
+        audio.pause();
+      } catch {
+        /* ignore */
+      }
+      dispose();
+      speak(clean, { token, onStart, onEnd, onError });
+    };
+
+    audio.addEventListener('playing', () => {
+      if (token !== generation) return;
+      onStart?.();
+    }, { once: true });
+    audio.addEventListener('ended', () => {
+      if (token !== generation) return;
+      finished = true;
+      if (currentAudio === audio) currentAudio = null;
+      dispose();
+      onEnd?.();
+    }, { once: true });
+    audio.addEventListener('error', fallback, { once: true });
+
+    try {
+      const playback = audio.play();
+      if (playback?.catch) playback.catch(fallback);
+    } catch {
+      fallback();
+    }
+    return true;
+  }
+
+  return speak(clean, { token, onStart, onEnd, onError });
 }

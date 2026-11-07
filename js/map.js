@@ -2,8 +2,8 @@
  * map.js — a stylised, accessible SVG map built from the text tile grid.
  * Regions are focusable buttons; markers are ordinary links into the game.
  */
-import { escapeHtml, focusPage } from './ui.js?v=20261107-7';
-import { loadMythologies, loadWorldMap, loadMapRegions, iconFor } from './content.js?v=20261107-7';
+import { escapeHtml, focusPage } from './ui.js?v=20261107-9';
+import { loadMythologies, loadWorldMap, loadMapRegions, iconFor } from './content.js?v=20261107-9';
 
 const TILE = 16;
 

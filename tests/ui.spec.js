@@ -171,13 +171,9 @@ test.describe('visual storytelling and narration', () => {
     const sample = await page.request.get('/audio/samples/en_GB-cori-high.mp3');
     expect(sample.status()).toBe(200);
     expect(sample.headers()['content-type']).toContain('audio');
-    const applyStudio = page.getByTestId('studio-voice-apply');
-    await expect(applyStudio).toBeDisabled();
-    await expect(page.getByTestId('studio-voice-status')).toContainText('No studio voice chosen yet');
+    await expect(page.getByTestId('studio-voice-status')).toContainText('System voice selected');
     await page.getByTestId('studio-voice-joe').check();
-    await expect(applyStudio).toBeEnabled();
-    await applyStudio.click();
-    await expect(page.getByTestId('studio-voice-status')).toContainText('Joe is saved for the full narration');
+    await expect(page.getByTestId('studio-voice-status')).toContainText('Joe is selected. Listen uses Joe');
     const savedStudio = await page.evaluate(() => JSON.parse(localStorage.getItem('mythos.settings.v1')).studioVoice);
     expect(savedStudio).toBe('joe');
     const duration = await page.getByTestId('studio-sample-cori').evaluate((audio) => new Promise((resolve) => {
@@ -198,8 +194,32 @@ test.describe('visual storytelling and narration', () => {
     await page.locator('#audio-toggle').click();
     await expect(select).toHaveValue('test-tenor');
     await expect(page.getByTestId('studio-voice-joe')).toBeChecked();
-    await expect(page.getByTestId('studio-voice-status')).toContainText('Joe is saved for the full narration');
+    await expect(page.getByTestId('studio-voice-status')).toContainText('Joe is selected. Listen uses Joe');
+    await page.getByTestId('studio-voice-system').check();
+    await expect(page.getByTestId('studio-voice-status')).toContainText('System voice selected');
+    expect(await page.evaluate(() => JSON.parse(localStorage.getItem('mythos.settings.v1')).studioVoice)).toBe('');
     await page.getByTestId('voice-preview').click();
+  });
+
+  test('a saved studio voice plays generated story and quiz audio', async ({ page }) => {
+    await page.goto('/#/');
+    await page.locator('#audio-toggle').click();
+    await page.getByTestId('studio-voice-joe').check();
+    await expect(page.getByTestId('studio-voice-status')).toContainText('Listen uses Joe');
+    await page.getByTestId('voice-close').click();
+
+    await page.goto('/#/myth/greek/story/greek-01');
+    const storyClip = page.waitForRequest((request) => request.url().includes('/audio/voices/joe/story/greek-01-0.mp3'));
+    await page.getByTestId('story-listen').click();
+    await storyClip;
+    await expect(page.getByTestId('story-listen')).toContainText('Stop narration');
+    await expect.poll(() => page.evaluate(() => document.querySelector('audio[aria-hidden="true"]')?.readyState || 0)).toBeGreaterThan(1);
+
+    await page.goto('/#/myth/greek/quiz/greek-01');
+    const quizClip = page.waitForRequest((request) => request.url().includes('/audio/voices/joe/quiz/greek-q01.mp3'));
+    await page.getByTestId('quiz-listen').click();
+    await quizClip;
+    await expect.poll(() => page.evaluate(() => document.querySelector('audio[aria-hidden="true"]')?.readyState || 0)).toBeGreaterThan(1);
   });
 
   test('the narration button opens its settings and the on/off choice persists', async ({ page }) => {

@@ -13,7 +13,7 @@ import {
   countWords,
   REGION_ORDER,
   SENSITIVITY_LABEL,
-} from './content.js?v=20261107-7';
+} from './content.js?v=20261107-9';
 import {
   getState,
   getSettings,
@@ -24,7 +24,7 @@ import {
   recordStoryRead,
   awardBadges,
   resetProgress,
-} from './storage.js?v=20261107-7';
+} from './storage.js?v=20261107-9';
 import {
   mythStats,
   overallStats,
@@ -33,8 +33,8 @@ import {
   glossaryUnlockedCount,
   allStoryQuizzesPassed,
   isStoryUnlocked,
-} from './progress.js?v=20261107-7';
-import { badgeCatalog, evaluateBadges } from './badges.js?v=20261107-7';
+} from './progress.js?v=20261107-9';
+import { badgeCatalog, evaluateBadges } from './badges.js?v=20261107-9';
 import {
   escapeHtml,
   iconImg,
@@ -50,17 +50,17 @@ import {
   toast,
   confirmDialog,
   emptyState,
-} from './ui.js?v=20261107-7';
-import { renderQuiz } from './quiz.js?v=20261107-7';
+} from './ui.js?v=20261107-9';
+import { renderQuiz } from './quiz.js?v=20261107-9';
 import {
   renderChallengeHub,
   renderTimelineChallenge,
   renderMatchChallenge,
   renderCultureChallenge,
-} from './challenges.js?v=20261107-7';
-import { renderMap } from './map.js?v=20261107-7';
-import { storyScene, characterPortrait } from './scene.js?v=20261107-7';
-import { narrate, stopNarration, speechSupported, availableVoices } from './narration.js?v=20261107-7';
+} from './challenges.js?v=20261107-9';
+import { renderMap } from './map.js?v=20261107-9';
+import { storyScene, characterPortrait } from './scene.js?v=20261107-9';
+import { narrate, stopNarration, speechSupported, availableVoices, narrationSupported, studioAudioUrl } from './narration.js?v=20261107-9';
 
 const app = document.getElementById('app');
 const nav = document.querySelector('.main-nav');
@@ -104,32 +104,20 @@ function applySettings(settings = getSettings()) {
 
 const STUDIO_LABELS = { cori: 'Cori', joe: 'Joe' };
 
-function selectedStudioVoice() {
-  return document.querySelector('input[name="studio-voice"]:checked');
-}
-
 function updateStudioVoiceUI() {
-  const selected = selectedStudioVoice();
   const saved = getSettings().studioVoice || '';
-  const apply = document.getElementById('studio-voice-apply');
   const status = document.getElementById('studio-voice-status');
-  if (apply) apply.disabled = !selected || selected.value === saved;
   if (!status) return;
-  if (saved) {
-    status.textContent = `${STUDIO_LABELS[saved] || saved} is saved for the full narration. Live Listen still uses your system voice until that audio is generated.`;
-  } else if (selected) {
-    status.textContent = `${STUDIO_LABELS[selected.value] || selected.value} selected — press “Use this voice” to save it.`;
-  } else {
-    status.textContent = 'No studio voice chosen yet.';
-  }
+  status.textContent = saved
+    ? `${STUDIO_LABELS[saved] || saved} is selected. Listen uses ${STUDIO_LABELS[saved] || saved}'s narration, with your system voice as fallback.`
+    : 'System voice selected. Listen uses your installed voice.';
 }
 
-function saveStudioVoice() {
-  const selected = selectedStudioVoice();
-  if (!selected) return;
-  updateSettings({ studioVoice: selected.value });
+function chooseStudioVoice(input) {
+  if (!input?.checked) return;
+  updateSettings({ studioVoice: input.value });
   updateStudioVoiceUI();
-  toast(`${STUDIO_LABELS[selected.value] || selected.value} saved for the full narration.`, { duration: 2800 });
+  toast(input.value ? `${STUDIO_LABELS[input.value] || input.value} selected. Listen will use this narrator.` : 'System voice selected.', { duration: 2200 });
 }
 
 function populateVoiceSelect() {
@@ -178,10 +166,6 @@ function previewVoice() {
 }
 
 function openVoiceDialog() {
-  if (!speechSupported()) {
-    toast('This browser has no speech voices. You can still read the text.', { tone: 'warn' });
-    return;
-  }
   if (!voiceDialog || voiceDialog.open) return;
   voiceTrigger = document.activeElement;
   populateVoiceSelect();
@@ -196,8 +180,8 @@ function openVoiceDialog() {
   voiceSelect?.focus();
 }
 
-function narrateWithButton(text, button, idleLabel) {
-  if (!speechSupported()) {
+function narrateWithButton(text, button, idleLabel, audioUrl = '') {
+  if (!narrationSupported(audioUrl)) {
     toast('Narration is not available in this browser. You can still read the text.', { tone: 'warn' });
     return;
   }
@@ -210,9 +194,10 @@ function narrateWithButton(text, button, idleLabel) {
   if (!getSettings().audio) {
     updateSettings({ audio: true });
     applySettings();
-    toast('Narration on. Using your browser’s local voice.', { duration: 2200 });
+    toast(audioUrl ? 'Narration on. Using the selected studio voice.' : 'Narration on. Using your browser’s local voice.', { duration: 2200 });
   }
   const started = narrate(text, {
+    audioUrl,
     onEnd() {
       if (!button) return;
       button.dataset.speaking = 'false';
@@ -253,9 +238,8 @@ function initChrome() {
     previewVoice();
   });
   document.querySelectorAll('input[name="studio-voice"]').forEach((input) => {
-    input.addEventListener('change', updateStudioVoiceUI);
+    input.addEventListener('change', () => chooseStudioVoice(input));
   });
-  document.getElementById('studio-voice-apply')?.addEventListener('click', saveStudioVoice);
   voiceDialog?.querySelector('[data-testid="voice-preview"]')?.addEventListener('click', previewVoice);
   voiceDialog?.addEventListener('close', () => {
     stopNarration();
@@ -938,7 +922,8 @@ async function renderStory(mythId, storyId) {
       window.scrollTo(0, 0);
     });
     app.querySelector('[data-testid="story-listen"]')?.addEventListener('click', (event) => {
-      narrateWithButton(story.paragraphs[paragraph], event.currentTarget, 'Listen to paragraph');
+      const audioUrl = studioAudioUrl(getSettings().studioVoice, 'story', story.id, paragraph);
+      narrateWithButton(story.paragraphs[paragraph], event.currentTarget, 'Listen to paragraph', audioUrl);
     });
     app.querySelector('[data-testid="story-finish"]')?.addEventListener('click', finish);
   }
@@ -1280,7 +1265,7 @@ async function renderAbout() {
       <p>The game uses native links and buttons, a skip link, visible focus styles, live regions for quiz feedback, keyboard-operable challenges and a text-size control. Animations are minimal and respect <code>prefers-reduced-motion</code>. The world map has a list-view alternative.</p>
       <h2>Images and narration</h2>
       <p>All images are original SVG: sixteen-pixel sigils, story scenes, quiz clues and character portraits are built from a small palette and a deterministic pixel grid. The map is an inline SVG built from a text tile grid. No photographs or generated raster art are used.</p>
-      <p>Narration is optional and uses the browser's own speech synthesis. There are no recorded voice files, no celebrity voice, and no audio is sent to a server. Use the speaker button in the header to open narration settings, turn narration on or off, and choose any installed system voice. Use the Listen button beside a story or question.</p>
+      <p>Narration is optional. Choose a generated open-voice narrator (Joe or Cori) in the speaker menu, or use any installed system voice as the fallback. There is no celebrity voice and no audio is sent to a server. Use the Listen button beside a story or question.</p>
     </section>
 
     <section class="panel">

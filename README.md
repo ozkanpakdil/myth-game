@@ -3,7 +3,7 @@
 A text-first educational game for ages 12+. Read short retellings from eight
 world traditions, answer quizzes, unlock a codex of figures and terms, and
 explore a stylised world map and timeline. Stories and questions carry original
-pixel-art SVG scenes, and optional browser narration reads the text aloud.
+pixel-art SVG scenes, and optional open-voice narration reads the text aloud.
 
 There is no build step and no framework. Content lives in JSON, the interface is
 HTML/CSS/vanilla ES modules, and every image is SVG. Progress stays in the
@@ -99,12 +99,15 @@ js/
   map.js                accessible inline SVG world map
   scene.js              deterministic pixel-art story scenes, quiz clues,
                         answer icons and character portraits
-  narration.js          optional browser speech synthesis
+  narration.js          studio-clip playback with browser speech fallback
   ui.js                 shared escaping, formatting and dialog helpers
 content/
   mythologies.json      35-tradition catalogue; `mvp: true` for the eight
   greek/ ...            five JSON files per playable tradition
 schemas/                JSON Schema documents for every content file
+audio/
+  voices/joe,cori/      pre-generated Piper narration clips
+  samples/              short in-dialog audition files
 assets/
   palette.json          16-key pixel palette
   sprites/icons/        16×16 text grids: mythology sigils and map markers
@@ -117,6 +120,7 @@ tools/
   validate_content.js   content validator
   render_sprites.js     text-grid → SVG compiler
   make_map.js           regenerates assets/map/world.txt
+  generate_piper_audio.py  offline authoring tool for studio narration clips
 tests/                  Playwright end-to-end tests
 ```
 
@@ -189,14 +193,13 @@ not fetched images. See `assets/STYLE_GUIDE.md` for the palette and grid rules.
 - The map has focusable regions, a list view and a horizontally scrollable
   mobile view; region details are announced in a live region.
 - Text-size control (`Aa`) cycles 100 / 112.5 / 125%, persisted locally.
-- Optional narration uses the browser's SpeechSynthesis API. It never autoplays
-  and stops on navigation. The header speaker button opens a narration dialog
-  with an on/off switch and a picker for any installed system voice; the choice
-  is persisted. Premium/Enhanced/Natural voices are grouped first with a ★.
-  Two open-licensed Piper neural-voice samples are available to audition in the
-  same dialog. They are selectable radio choices and the chosen voice is saved
-  as `studioVoice`; full audio narration is not generated yet, so live Listen
-  buttons still use the selected system voice.
+- Optional narration uses pre-generated open-voice Piper clips (Joe and Cori)
+  or the browser's SpeechSynthesis API as a fallback. It never autoplays and
+  stops on navigation. The header speaker button opens a narration dialog with
+  an on/off switch, a system-voice picker and selectable studio voices. Selecting a studio voice applies immediately and is saved as `studioVoice`;
+  each Listen button plays its clip and falls back to the system voice if the
+  clip is unavailable.
+  Premium/Enhanced/Natural system voices are grouped first with a ★.
 - `prefers-reduced-motion` removes animations.
 - All decorative sigils have empty `alt`; labels are in text.
 
@@ -205,8 +208,8 @@ not fetched images. See `assets/STYLE_GUIDE.md` for the palette and grid rules.
 The suite covers the shell, every route, all eight traditions, the Greek read →
 quiz → unlock → persistence loop, failed quiz and retry, the final challenge,
 codex unlocks, timeline, all three challenges, the map and its mobile scroll,
-story and quiz SVG scenes, answer icons, narration controls, system-voice
-selection, theme/font persistence, reset confirmation, responsive overflow, skip
+story and quiz SVG scenes, answer icons, narration controls, studio-clip playback,
+system-voice selection, theme/font persistence, reset confirmation, responsive overflow, skip
 link and quiz keyboard feedback.
 
 ```bash

@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#0e1310">
     <title>Mythos · A world mythology game</title>
     <link rel="icon" href="assets/svg/logo.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="css/style.css?v=20261107-7">
+    <link rel="stylesheet" href="css/style.css?v=20261107-9">
     <!-- Google tag (gtag.js). Kept off localhost so development and tests stay quiet. -->
     <script>
       (function () {
@@ -104,7 +104,7 @@
       <form method="dialog" class="dialog__panel">
         <p class="eyebrow">Narration</p>
         <h2 class="dialog__title" id="voice-dialog-title">Choose a voice</h2>
-        <p class="dialog__body">Your system voice is used by every Listen button. If you want a fuller narrator, audition the studio voices below and save one for the full narration.</p>
+        <p class="dialog__body">Your system voice is the fallback. Choose a studio voice below to hear its generated narration on every Listen button.</p>
         <label class="narration-switch" for="narration-enabled">
           <span><strong>Narration</strong><small>Read aloud when you press Listen.</small></span>
           <input type="checkbox" id="narration-enabled" data-testid="narration-enabled">
@@ -116,7 +116,7 @@
         <p class="voice-note" id="voice-note" data-testid="voice-note" aria-live="polite">Looking for voices…</p>
         <section class="studio-samples" aria-labelledby="studio-samples-title">
           <h3 class="studio-samples__title" id="studio-samples-title">Try a local neural narrator</h3>
-          <p class="studio-samples__note">Audition both, then choose one. Saving a studio voice records your choice for the full narration; the live Listen buttons still use your system voice until that audio is generated.</p>
+          <p class="studio-samples__note">Audition both, then choose one. The selected voice plays pre-generated narration; if a clip is missing, playback falls back to your system voice.</p>
           <div class="studio-sample">
             <label class="studio-sample__choice">
               <input type="radio" name="studio-voice" value="cori" data-testid="studio-voice-cori">
@@ -131,14 +131,17 @@
             </label>
             <audio controls preload="none" src="audio/samples/en_US-joe-medium.mp3" data-testid="studio-sample-joe" aria-label="Joe voice sample"></audio>
           </div>
-          <div class="studio-samples__actions">
-            <button class="button button--ghost button--small" type="button" id="studio-voice-apply" data-testid="studio-voice-apply" disabled>Use this voice</button>
-            <p class="studio-samples__status" id="studio-voice-status" data-testid="studio-voice-status" aria-live="polite">No studio voice chosen yet.</p>
+          <div class="studio-sample">
+            <label class="studio-sample__choice">
+              <input type="radio" name="studio-voice" value="" data-testid="studio-voice-system">
+              <span><strong>System voice</strong><small>Use my installed voice only</small></span>
+            </label>
           </div>
+          <p class="studio-samples__status" id="studio-voice-status" data-testid="studio-voice-status" aria-live="polite">Select a voice to use it on every Listen button.</p>
         </section>
         <p class="voice-tip"><strong>Want a more human voice?</strong> Install a Premium or Enhanced system voice: on macOS, System Settings → Accessibility → Spoken Content → Manage Voices; on Windows, Settings → Time &amp; language → Speech. The list updates after a refresh.</p>
         <div class="dialog__actions">
-          <button class="button button--ghost" type="button" data-testid="voice-preview"><svg class="button__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 5.4v13.2L19 12z" fill="currentColor"/></svg><span>Preview</span></button>
+          <button class="button button--ghost" type="button" data-testid="voice-preview"><svg class="button__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 5.4v13.2L19 12z" fill="currentColor"/></svg><span>Preview system voice</span></button>
           <button class="button button--primary" value="close" data-testid="voice-close">Done</button>
         </div>
       </form>
@@ -146,6 +149,6 @@
 
     <div id="toast" role="status" aria-live="polite"></div>
 
-    <script type="module" src="js/app.js?v=20261107-7"></script>
+    <script type="module" src="js/app.js?v=20261107-9"></script>
   </body>
 </html>

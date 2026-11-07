@@ -183,13 +183,13 @@ stop icon and `Stop narration` / `Stop`. The header speaker button opens the
 narration dialog, where the reader can switch narration on or off, choose an
 installed system voice, and preview it.
 
-There is no audio art. Narration uses the browser's SpeechSynthesis engine only;
-there are no voice files, no celebrity voices and no voice cloning. Never label
+There is no recorded human or celebrity audio. Studio narration uses pre-generated
+Piper clips, with the browser's SpeechSynthesis engine as fallback. There
+are no celebrity voices and no voice cloning. Never label
 a system voice as a real person. The Voice dialog lists installed system voices, groups Premium/Enhanced/Natural
 voices first with a ★, persists the chosen `voiceURI`, and previews it with a
-neutral sample sentence. Two short Piper neural-voice samples are offered as selectable
-auditions; the chosen studio voice is stored, but it is not the live narration until
-the full audio is generated.
+neutral sample sentence. The studio voices are selectable auditions that drive real pre-generated clips;
+the system voice remains the fallback when a clip is unavailable.
 
 ## Review checklist for new art
 

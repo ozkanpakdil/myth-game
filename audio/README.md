@@ -1,35 +1,59 @@
 # Narration audio
 
-The site currently uses the browser's SpeechSynthesis voices for all narration.
-This directory holds short **audition samples** of open-licensed, locally generated
-neural voices. They are not yet wired into the story or quiz players.
+Mythos ships two open-voice narrators and uses them for the pre-generated story
+and quiz clips. The browser's SpeechSynthesis voice remains the fallback when a
+clip is missing or cannot play.
 
-| File | Voice | Language | License |
+## Voices
+
+| Voice | Piper model | Language | License |
 | --- | --- | --- | --- |
-| `samples/en_GB-cori-high.mp3` | Piper `en_GB-cori-high` | British English | Public-domain dataset |
-| `samples/en_US-joe-medium.mp3` | Piper `en_US-joe-medium` | American English | CC0 |
+| `joe` | `en_US-joe-medium` | American English | CC0 |
+| `cori` | `en_GB-cori-high` | British English | Public-domain dataset |
 
-Generated with [Piper](https://github.com/rhasspy/piper) 1.8.0 from the sample
-paragraph of *The War of the Titans*. No cloud service was called, and no
-recording of a real person was imitated.
+No cloud service, API key or voice cloning is involved. The model files stay
+outside the repository; only the generated MP3s are committed.
 
-To regenerate a sample:
+## Layout
+
+```text
+audio/
+  samples/                 short audition files used by the voice dialog
+  voices/
+    joe/
+      story/<story-id>-<paragraph>.mp3
+      quiz/<question-id>.mp3
+      manifest.json
+    cori/
+      ...
+```
+
+The player derives these paths in `js/narration.js` (`studioAudioUrl`), so no
+large manifest lookup is needed at runtime.
+
+## Regenerate
+
+Install Piper and download a voice model, then run the authoring script:
 
 ```bash
 python3 -m venv /tmp/piper-venv
 /tmp/piper-venv/bin/pip install piper-tts
 /tmp/piper-venv/bin/python -m piper.download_voices \
-  --download-dir /tmp/piper-voices en_GB-cori-high en_US-joe-medium
-/tmp/piper-venv/bin/python -m piper \
-  -m /tmp/piper-voices/en_GB-cori-high.onnx \
-  -c /tmp/piper-voices/en_GB-cori-high.onnx.json \
-  -i paragraph.txt -f /tmp/cori.wav --length-scale 1.06 --sentence-silence 0.35
-ffmpeg -y -i /tmp/cori.wav -ac 1 -codec:a libmp3lame -b:a 64k \
-  audio/samples/en_GB-cori-high.mp3
+  --download-dir /tmp/piper-voices en_US-joe-medium en_GB-cori-high
+
+python3 tools/generate_piper_audio.py \
+  --voice joe \
+  --model /tmp/piper-voices/en_US-joe-medium.onnx \
+  --config /tmp/piper-voices/en_US-joe-medium.onnx.json \
+  --label Joe --license CC0 --language "American English" \
+  --workers 3
 ```
 
-The dialog lets the reader audition and choose Cori or Joe. The choice is saved
-as `studioVoice` in the settings blob, but it is not yet connected to playback.
-Before generating the full library, decide which voice to use and add an audio
-player/fallback path in `js/narration.js`. Full narration also needs an audio player/fallback path in
-`js/narration.js`.
+Use `--voice cori` with the Cori model/config for the second narrator. Existing
+files are skipped, so the script is safe to re-run after content changes.
+
+## Audition samples
+
+`samples/en_GB-cori-high.mp3` and `samples/en_US-joe-medium.mp3` are short
+recordings of the same paragraph, used for the in-dialog audition before a voice
+is selected.

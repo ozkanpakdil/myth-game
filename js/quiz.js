@@ -5,13 +5,13 @@
  * review questions from the previous stories, so every quiz has 4–5 questions
  * and a passing mark of 70% (3/4 or 4/5). The final challenge uses all 20.
  */
-import { escapeHtml, iconImg, progressBar, toast, focusPage, difficultyClass, percent, listenButtonContent } from './ui.js?v=20261107-7';
-import { getQuizRecord, recordQuizResult, recordFinalQuiz, recordStoryRead, awardBadges, isStoryRead } from './storage.js?v=20261107-7';
-import { loadMythology, loadMythologies, storyIndexById, nextStory } from './content.js?v=20261107-7';
-import { allStoryQuizzesPassed, isStoryUnlocked } from './progress.js?v=20261107-7';
-import { evaluateBadges } from './badges.js?v=20261107-7';
-import { questionScene, choiceIcon } from './scene.js?v=20261107-7';
-import { narrate, stopNarration, ensureNarration, speechSupported } from './narration.js?v=20261107-7';
+import { escapeHtml, iconImg, progressBar, toast, focusPage, difficultyClass, percent, listenButtonContent } from './ui.js?v=20261107-9';
+import { getQuizRecord, recordQuizResult, recordFinalQuiz, recordStoryRead, awardBadges, isStoryRead, getSettings } from './storage.js?v=20261107-9';
+import { loadMythology, loadMythologies, storyIndexById, nextStory } from './content.js?v=20261107-9';
+import { allStoryQuizzesPassed, isStoryUnlocked } from './progress.js?v=20261107-9';
+import { evaluateBadges } from './badges.js?v=20261107-9';
+import { questionScene, choiceIcon } from './scene.js?v=20261107-9';
+import { narrate, stopNarration, ensureNarration, narrationSupported, studioAudioUrl } from './narration.js?v=20261107-9';
 
 const PASS_RATIO = 0.7;
 
@@ -138,7 +138,8 @@ export async function renderQuiz(root, { mythId, storyId }) {
   }
 
   function readQuestion(question, button) {
-    if (!speechSupported()) {
+    const audioUrl = studioAudioUrl(getSettings().studioVoice, 'quiz', question.id);
+    if (!narrationSupported(audioUrl)) {
       toast('Narration is not available in this browser. You can still read the question.', { tone: 'warn' });
       return;
     }
@@ -149,10 +150,11 @@ export async function renderQuiz(root, { mythId, storyId }) {
       return;
     }
     ensureNarration();
-    const text = `Question ${index + 1} of ${total}. ${question.question}. ${question.choices
+    const text = `${question.question}. ${question.choices
       .map((choice, i) => `${'ABCD'[i]}: ${choice}.`)
       .join(' ')}`;
     const started = narrate(text, {
+      audioUrl,
       onEnd() {
         if (!button) return;
         button.dataset.speaking = 'false';

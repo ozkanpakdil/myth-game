@@ -76,24 +76,34 @@ Use the community fork (`coqui-tts`); the original Coqui company is gone.
 
 ```bash
 python3 -m venv /tmp/xtts-venv
-/tmp/xtts-venv/bin/pip install coqui-tts
+/tmp/xtts-venv/bin/pip install coqui-tts torch torchaudio torchcodec six
 
-# epoch 7 checkpoints + speaker reference (do not unzip inside the repo)
-curl -L -o /tmp/xtts/model.zip https://huggingface.co/drewThomasson/Morgan_freeman_xtts_model/resolve/main/7_epoches/model.zip
-curl -L -o /tmp/xtts/ref.wav  https://huggingface.co/drewThomasson/Morgan_freeman_xtts_model/resolve/main/7_epoches/ref.wav
-unzip -q /tmp/xtts/model.zip -d /tmp/xtts/ckpt
+# checkpoint + speaker reference (keep them outside the repo)
+base=https://huggingface.co/drewThomasson/fineTunedTTSModels/resolve/main/xtts-v2/eng/MorganFreeman
+mkdir -p /tmp/xtts/ckpt
+for f in model.pth config.json vocab.json speakers_xtts.pth ref.wav; do
+  curl -L -o "/tmp/xtts/ckpt/$f" "$base/$f"
+done
 
 /tmp/xtts-venv/bin/python tools/generate_xtts_audio.py \
   --voice morgan \
   --model /tmp/xtts/ckpt/model.pth \
   --config /tmp/xtts/ckpt/config.json \
-  --reference /tmp/xtts/ref.wav \
+  --reference /tmp/xtts/ckpt/ref.wav \
   --label "Morgan" --license "Non-commercial (XTTS v2)" \
   --language "American English"
 ```
 
-Pass `--device mps` on Apple Silicon to use the GPU, and `--limit 5` for a
-quick smoke test.
+The same weights are also published as `7_epoches/model.zip` in
+`drewThomasson/Morgan_freeman_xtts_model`; the fine-tuned-models copy is the
+same epoch 7 checkpoint (identical `model.pth` hash) but ships as loose files,
+so no unzip step is needed. The `fineTunedTTSModels` repository is tagged
+Apache-2.0, which does not change the base XTTS licence or the voice-rights
+caveat above.
+
+Pass `--device mps` on Apple Silicon to try the GPU, `--limit 5` for a quick
+smoke test, and `--shard 0/3 … 2/3` to split a full render across three
+processes (roughly 3× faster on an 8–10 core laptop).
 
 Existing files are skipped in both scripts, so they are safe to re-run after
 content changes.

@@ -16,17 +16,19 @@ an educational demo, not for anything that implies the person's endorsement.
 Usage:
   python3 tools/generate_xtts_audio.py \
     --voice morgan \
-    --model /tmp/xtts/morgan-freeman-epoch7/model.pth \
-    --config /tmp/xtts/morgan-freeman-epoch7/config.json \
-    --reference /tmp/xtts/morgan-freeman-epoch7/ref.wav \
+    --model /tmp/xtts/ckpt/model.pth \
+    --config /tmp/xtts/ckpt/config.json \
+    --reference /tmp/xtts/ckpt/ref.wav \
     --label "Morgan" --license "Non-commercial (XTTS v2)" \
     --language "American English"
 
 Setup (macOS/Linux, Python 3.10+):
   python3 -m venv /tmp/xtts-venv
-  /tmp/xtts-venv/bin/pip install coqui-tts
-  # then download 7_epoches/model.zip and 7_epoches/ref.wav from the model repo
-  # and unzip the checkpoint next to ref.wav
+  /tmp/xtts-venv/bin/pip install coqui-tts torch torchaudio torchcodec six
+  # checkpoint (individual files, no unzip needed):
+  # https://huggingface.co/drewThomasson/fineTunedTTSModels/tree/main/xtts-v2/eng/MorganFreeman
+  # The same weights are also published as 7_epoches/model.zip in
+  # https://huggingface.co/drewThomasson/Morgan_freeman_xtts_model
 
 Existing clips are skipped, so the script is safe to re-run after content
 changes. Requires ffmpeg on PATH.

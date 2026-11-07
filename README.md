@@ -97,8 +97,8 @@ js/
   challenges.js         timeline, match and culture challenges
   badges.js             badge catalogue and evaluator
   map.js                accessible inline SVG world map
-  scene.js              deterministic pixel-art story scenes, quiz clues and
-                        character portraits
+  scene.js              deterministic pixel-art story scenes, quiz clues,
+                        answer icons and character portraits
   narration.js          optional browser speech synthesis
   ui.js                 shared escaping, formatting and dialog helpers
 content/
@@ -189,9 +189,10 @@ not fetched images. See `assets/STYLE_GUIDE.md` for the palette and grid rules.
 - The map has focusable regions, a list view and a horizontally scrollable
   mobile view; region details are announced in a live region.
 - Text-size control (`Aa`) cycles 100 / 112.5 / 125%, persisted locally.
-- Optional narration uses the browser's SpeechSynthesis API. It never autoplays,
-  stops on navigation, has a header on/off control, and lets the reader choose
-  any installed system voice from the Voice dialog. The choice is persisted.
+- Optional narration uses the browser's SpeechSynthesis API. It never autoplays
+  and stops on navigation. The header speaker button opens a narration dialog
+  with an on/off switch and a picker for any installed system voice; the choice
+  is persisted.
 - `prefers-reduced-motion` removes animations.
 - All decorative sigils have empty `alt`; labels are in text.
 
@@ -200,9 +201,9 @@ not fetched images. See `assets/STYLE_GUIDE.md` for the palette and grid rules.
 The suite covers the shell, every route, all eight traditions, the Greek read →
 quiz → unlock → persistence loop, failed quiz and retry, the final challenge,
 codex unlocks, timeline, all three challenges, the map and its mobile scroll,
-story and quiz SVG scenes, narration controls, system-voice selection, theme/font
-persistence, reset confirmation, responsive overflow, skip link and quiz keyboard
-feedback.
+story and quiz SVG scenes, answer icons, narration controls, system-voice
+selection, theme/font persistence, reset confirmation, responsive overflow, skip
+link and quiz keyboard feedback.
 
 ```bash
 npm test
@@ -221,6 +222,10 @@ static site through GitHub Actions on every push to `main`.
 1. Push the repository to GitHub.
 2. In **Settings → Pages**, set **Source** to **GitHub Actions**.
 3. Run the workflow (or push to `main`).
+
+The local module and stylesheet URLs include a release query (`?v=...`). Bump
+that value when changing CSS or JavaScript and redeploy, so visitors do not mix
+an old cached module with a new page.
 
 The public URL is `https://<user>.github.io/<repo>/` for a project repository,
 or `https://<user>.github.io/` if the repository is named

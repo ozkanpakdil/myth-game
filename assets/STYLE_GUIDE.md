@@ -162,10 +162,10 @@ are generated in the browser and are never fetched as image files.
 - The portrait is an abstract bust with an emblem, **not a likeness**. Do not
   add faces to sacred figures, and do not use portraits as a claim about how a
   deity was depicted historically.
-- Portraits appear in the codex, in story figure chips, and in quiz answers only
-  when **every** choice is an exact character name. Showing a portrait for only
-  one choice would leak the answer, so the UI deliberately falls back to letter
-  medallions in mixed-choice questions.
+- Portraits appear in the codex and story figure chips. Every quiz choice also
+  gets an SVG icon: a character portrait when the choice names a figure, or a
+  compact motif glyph (sun, gate, tree, scales, seed, etc.) otherwise. The icon
+  must never contain the answer text or a unique "correct" marker.
 
 ### Colour and contrast
 
@@ -177,6 +177,11 @@ are generated in the browser and are never fetched as image files.
   theme's surrounding page; the art itself does not switch palettes.
 
 ### Audio
+
+Listen buttons pair a play icon with the label; while speaking they switch to a
+stop icon and `Stop narration` / `Stop`. The header speaker button opens the
+narration dialog, where the reader can switch narration on or off, choose an
+installed system voice, and preview it.
 
 There is no audio art. Narration uses the browser's SpeechSynthesis engine only;
 there are no voice files, no celebrity voices and no voice cloning. Never label

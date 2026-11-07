@@ -385,8 +385,8 @@ An AI that writes text can create pixel art as **text grids**, one character per
 - [x] **T403** Add npm scripts and a zero-dependency static dev server; document test and build commands.
 
 ### Phase 9: Visual storytelling, audio and publishing (follow-up request)
-- [x] **T500** Add a deterministic pixel-art scene engine for story illustrations, quiz clues and character portraits; keep every image SVG.
-- [x] **T501** Add optional browser narration (SpeechSynthesis) with a header toggle, a system-voice chooser with preview and persistence, and per-story/per-question Listen controls; no recorded or celebrity voices.
+- [x] **T500** Add a deterministic pixel-art scene engine for story illustrations, quiz clues, per-answer icons and character portraits; keep every image SVG.
+- [x] **T501** Add optional browser narration (SpeechSynthesis) with a header settings dialog (on/off plus a system-voice chooser with preview and persistence), play/stop icons, and per-story/per-question Listen controls; no recorded or celebrity voices.
 - [x] **T502** Add Google Analytics 4 (`G-NSB9K61M5S`) on published hosts, with localhost disabled for development and tests.
 - [x] **T503** Add a GitHub Actions Pages workflow and verify the assembled static artifact under a project-style path.
 - [ ] **T504** **NEEDS HUMAN**: review the new symbolic scenes and portrait archetypes for cultural sensitivity and visual quality. Do not treat generated portraits as historical likenesses.

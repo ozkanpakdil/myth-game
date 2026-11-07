@@ -138,6 +138,40 @@ test.describe('visual storytelling and narration', () => {
     await expect(page.getByTestId('quiz-progress-label')).toContainText('Question 6 of 20');
   });
 
+
+  test('a different system voice can be selected, previewed and persisted', async ({ page }) => {
+    await page.addInitScript(() => {
+      const voices = [
+        { name: 'Test Alto', lang: 'en-GB', voiceURI: 'test-alto', localService: true, default: true },
+        { name: 'Test Tenor', lang: 'en-US', voiceURI: 'test-tenor', localService: true, default: false },
+        { name: 'Voix de test', lang: 'fr-FR', voiceURI: 'test-fr', localService: true, default: false },
+      ];
+      const synth = window.speechSynthesis;
+      synth.getVoices = () => voices;
+      synth.speak = (utterance) => {
+        setTimeout(() => utterance.onstart?.(), 0);
+        setTimeout(() => utterance.onend?.(), 15);
+      };
+      synth.cancel = () => {};
+    });
+
+    await page.goto('/#/');
+    await page.locator('#voice-toggle').click();
+    await expect(page.getByTestId('voice-dialog')).toBeVisible();
+    const select = page.getByTestId('voice-select');
+    await expect(select.locator('option[value="test-alto"]')).toHaveCount(1);
+    await select.selectOption('test-tenor');
+    const stored = await page.evaluate(() => JSON.parse(localStorage.getItem('mythos.settings.v1')));
+    expect(stored.voice).toBe('test-tenor');
+
+    await page.getByTestId('voice-close').click();
+    await expect(page.getByTestId('voice-dialog')).not.toBeVisible();
+    await page.reload();
+    await page.locator('#voice-toggle').click();
+    await expect(select).toHaveValue('test-tenor');
+    await page.getByTestId('voice-preview').click();
+  });
+
   test('narration can be switched off and the choice survives a reload', async ({ page }) => {
     await page.goto('/#/');
     const toggle = page.locator('#audio-toggle');

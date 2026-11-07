@@ -59,13 +59,18 @@ import {
 } from './challenges.js';
 import { renderMap } from './map.js';
 import { storyScene, characterPortrait } from './scene.js';
-import { narrate, stopNarration, speechSupported } from './narration.js';
+import { narrate, stopNarration, speechSupported, availableVoices } from './narration.js';
 
 const app = document.getElementById('app');
 const nav = document.querySelector('.main-nav');
 const themeButton = document.getElementById('theme-toggle');
 const fontButton = document.getElementById('font-toggle');
 const audioButton = document.getElementById('audio-toggle');
+const voiceButton = document.getElementById('voice-toggle');
+const voiceDialog = document.getElementById('voice-dialog');
+const voiceSelect = document.getElementById('voice-select');
+const voiceNote = document.getElementById('voice-note');
+let voiceTrigger = null;
 let renderSequence = 0;
 
 /* ------------------------------------------------------------------ */
@@ -94,6 +99,58 @@ function applySettings(settings = getSettings()) {
     audioButton.setAttribute('aria-label', on ? 'Turn narration off' : 'Turn narration on');
     audioButton.setAttribute('title', on ? 'Narration on' : 'Narration off');
   }
+}
+
+function populateVoiceSelect() {
+  if (!voiceSelect) return;
+  const voices = availableVoices();
+  const saved = getSettings().voice;
+  const valueFor = (voice) => voice.voiceURI || voice.name;
+  const option = (voice) => `<option value="${escapeHtml(valueFor(voice))}">${escapeHtml(voice.name)} · ${escapeHtml(voice.lang)}</option>`;
+  const english = voices.filter((voice) => voice.lang.toLowerCase().startsWith('en'));
+  const other = voices.filter((voice) => !voice.lang.toLowerCase().startsWith('en'));
+  const groups = [];
+  if (english.length) groups.push(`<optgroup label="English">${english.map(option).join('')}</optgroup>`);
+  if (other.length) groups.push(`<optgroup label="Other languages">${other.map(option).join('')}</optgroup>`);
+  voiceSelect.innerHTML = `<option value="">System default</option>${groups.join('')}`;
+
+  const available = voices.some((voice) => valueFor(voice) === saved);
+  voiceSelect.value = available ? saved : '';
+
+  if (!voices.length) {
+    voiceNote.textContent = 'No system voices are listed yet. The browser may still use its default voice.';
+  } else if (saved && !available) {
+    voiceNote.textContent = `Your previous voice is not available anymore. ${voices.length} other ${voices.length === 1 ? 'voice is' : 'voices are'} available.`;
+  } else {
+    voiceNote.textContent = `${voices.length} system ${voices.length === 1 ? 'voice' : 'voices'} found on this device.`;
+  }
+}
+
+function previewVoice() {
+  if (!speechSupported()) {
+    toast('Narration is not available in this browser.', { tone: 'warn' });
+    return;
+  }
+  if (!getSettings().audio) {
+    updateSettings({ audio: true });
+    applySettings();
+  }
+  const started = narrate('The story begins before the age of heroes.', {
+    onError: () => toast('That voice could not be played. Try another one.', { tone: 'warn' }),
+  });
+  if (!started) toast('Narration could not start.', { tone: 'warn' });
+}
+
+function openVoiceDialog() {
+  if (!speechSupported()) {
+    toast('This browser has no speech voices. You can still read the text.', { tone: 'warn' });
+    return;
+  }
+  if (!voiceDialog || voiceDialog.open) return;
+  voiceTrigger = document.activeElement;
+  populateVoiceSelect();
+  voiceDialog.showModal();
+  voiceSelect?.focus();
 }
 
 function narrateWithButton(text, button, idleLabel) {
@@ -148,6 +205,21 @@ function initChrome() {
     applySettings();
     toast(on ? 'Narration on — use Listen beside a story or question.' : 'Narration off', { duration: 1800 });
   });
+  voiceButton?.addEventListener('click', openVoiceDialog);
+  voiceSelect?.addEventListener('change', () => {
+    updateSettings({ voice: voiceSelect.value });
+    previewVoice();
+  });
+  voiceDialog?.querySelector('[data-testid="voice-preview"]')?.addEventListener('click', previewVoice);
+  voiceDialog?.addEventListener('close', () => {
+    stopNarration();
+    voiceTrigger?.focus({ preventScroll: true });
+  });
+  if (speechSupported()) {
+    window.speechSynthesis.addEventListener?.('voiceschanged', () => {
+      if (voiceDialog?.open) populateVoiceSelect();
+    });
+  }
   fontButton?.addEventListener('click', () => {
     const order = ['md', 'lg', 'xl'];
     const current = getSettings().fontScale;
@@ -1162,7 +1234,7 @@ async function renderAbout() {
       <p>The game uses native links and buttons, a skip link, visible focus styles, live regions for quiz feedback, keyboard-operable challenges and a text-size control. Animations are minimal and respect <code>prefers-reduced-motion</code>. The world map has a list-view alternative.</p>
       <h2>Images and narration</h2>
       <p>All images are original SVG: sixteen-pixel sigils, story scenes, quiz clues and character portraits are built from a small palette and a deterministic pixel grid. The map is an inline SVG built from a text tile grid. No photographs or generated raster art are used.</p>
-      <p>Narration is optional and uses the browser's own speech synthesis. There are no recorded voice files, no celebrity voice, and no audio is sent to a server. Use the speaker button in the header or the Listen button beside a story or question.</p>
+      <p>Narration is optional and uses the browser's own speech synthesis. There are no recorded voice files, no celebrity voice, and no audio is sent to a server. Use the speaker button in the header to turn narration on, the Voice button to choose any installed system voice, and the Listen button beside a story or question.</p>
     </section>
 
     <section class="panel">

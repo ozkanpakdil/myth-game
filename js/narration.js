@@ -37,10 +37,30 @@ export function stopNarration() {
   }
 }
 
+export function availableVoices() {
+  if (!speechSupported()) return [];
+  return window.speechSynthesis
+    .getVoices()
+    .slice()
+    .sort((a, b) => {
+      const aEnglish = a.lang.toLowerCase().startsWith('en');
+      const bEnglish = b.lang.toLowerCase().startsWith('en');
+      if (aEnglish !== bEnglish) return aEnglish ? -1 : 1;
+      return a.name.localeCompare(b.name);
+    });
+}
+
 function chooseVoice() {
   if (!speechSupported()) return null;
   const voices = window.speechSynthesis.getVoices();
   if (!voices.length) return null;
+
+  const preferred = getSettings().voice;
+  if (preferred) {
+    const match = voices.find((voice) => voice.voiceURI === preferred || voice.name === preferred);
+    if (match) return match;
+  }
+
   return voices.find((voice) => voice.lang === 'en-GB' && voice.localService)
     || voices.find((voice) => voice.lang === 'en-GB')
     || voices.find((voice) => voice.lang.startsWith('en') && voice.localService)

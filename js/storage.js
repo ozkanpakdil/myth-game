@@ -135,7 +135,7 @@ function loadState() {
 }
 
 function defaultSettings() {
-  return { theme: 'dark', fontScale: 'md', audio: true };
+  return { theme: 'dark', fontScale: 'md', audio: true, voice: '' };
 }
 
 function loadSettings() {
@@ -147,6 +147,7 @@ function loadSettings() {
       theme: parsed.theme === 'light' ? 'light' : 'dark',
       fontScale: ['md', 'lg', 'xl'].includes(parsed.fontScale) ? parsed.fontScale : 'md',
       audio: parsed.audio !== false,
+      voice: typeof parsed.voice === 'string' ? parsed.voice.slice(0, 200) : '',
     };
   } catch {
     return defaultSettings();
@@ -179,6 +180,7 @@ export function updateSettings(patch) {
     ...(patch.theme === 'light' || patch.theme === 'dark' ? { theme: patch.theme } : {}),
     ...(['md', 'lg', 'xl'].includes(patch.fontScale) ? { fontScale: patch.fontScale } : {}),
     ...(typeof patch.audio === 'boolean' ? { audio: patch.audio } : {}),
+    ...(typeof patch.voice === 'string' ? { voice: patch.voice.slice(0, 200) } : {}),
   };
   writeRaw(SETTINGS_KEY, JSON.stringify(settings));
   return { ...settings };

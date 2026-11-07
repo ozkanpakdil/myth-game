@@ -57,6 +57,12 @@
           <a href="#/results" data-nav="results">Progress</a>
         </nav>
         <div class="header-actions">
+          <button class="voice-button" type="button" id="voice-toggle" aria-haspopup="dialog" aria-controls="voice-dialog" aria-label="Choose narration voice" title="Choose narration voice">
+            <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" focusable="false">
+              <path d="M4 10v4M8 7v10M12 4v16M16 8v8M20 11v2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+            </svg>
+            <span class="voice-button__label">Voice</span>
+          </button>
           <button class="icon-button audio-toggle" type="button" id="audio-toggle" aria-label="Turn narration off" aria-pressed="true" title="Narration on">
             <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
               <path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/>
@@ -97,6 +103,23 @@
         <p class="footer-note">Educational draft · all content awaiting human fact-check and sensitivity review · images are SVG · <span id="year"></span></p>
       </div>
     </footer>
+
+    <dialog class="dialog voice-dialog" id="voice-dialog" data-testid="voice-dialog" aria-labelledby="voice-dialog-title">
+      <form method="dialog" class="dialog__panel">
+        <p class="eyebrow">Narration</p>
+        <h2 class="dialog__title" id="voice-dialog-title">Choose a voice</h2>
+        <p class="dialog__body">These are the voices installed in your browser. The choice stays on this device and is used by every Listen button.</p>
+        <label class="field-label" for="voice-select">Narration voice</label>
+        <select class="voice-select" id="voice-select" data-testid="voice-select">
+          <option value="">System default</option>
+        </select>
+        <p class="voice-note" id="voice-note" data-testid="voice-note" aria-live="polite">Looking for voices…</p>
+        <div class="dialog__actions">
+          <button class="button button--ghost" type="button" data-testid="voice-preview">Preview</button>
+          <button class="button button--primary" value="close" data-testid="voice-close">Done</button>
+        </div>
+      </form>
+    </dialog>
 
     <div id="toast" role="status" aria-live="polite"></div>
 

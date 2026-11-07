@@ -187,7 +187,8 @@ There is no audio art. Narration uses the browser's SpeechSynthesis engine only;
 there are no voice files, no celebrity voices and no voice cloning. Never label
 a system voice as a real person. The Voice dialog lists installed system voices, groups Premium/Enhanced/Natural
 voices first with a ★, persists the chosen `voiceURI`, and previews it with a
-neutral sample sentence.
+neutral sample sentence. Two short Piper neural-voice samples are offered as an
+audition; they are not the default narration.
 
 ## Review checklist for new art
 

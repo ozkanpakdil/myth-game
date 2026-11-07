@@ -13,7 +13,7 @@ import {
   countWords,
   REGION_ORDER,
   SENSITIVITY_LABEL,
-} from './content.js?v=20261107-5';
+} from './content.js?v=20261107-6';
 import {
   getState,
   getSettings,
@@ -24,7 +24,7 @@ import {
   recordStoryRead,
   awardBadges,
   resetProgress,
-} from './storage.js?v=20261107-5';
+} from './storage.js?v=20261107-6';
 import {
   mythStats,
   overallStats,
@@ -33,8 +33,8 @@ import {
   glossaryUnlockedCount,
   allStoryQuizzesPassed,
   isStoryUnlocked,
-} from './progress.js?v=20261107-5';
-import { badgeCatalog, evaluateBadges } from './badges.js?v=20261107-5';
+} from './progress.js?v=20261107-6';
+import { badgeCatalog, evaluateBadges } from './badges.js?v=20261107-6';
 import {
   escapeHtml,
   iconImg,
@@ -50,17 +50,17 @@ import {
   toast,
   confirmDialog,
   emptyState,
-} from './ui.js?v=20261107-5';
-import { renderQuiz } from './quiz.js?v=20261107-5';
+} from './ui.js?v=20261107-6';
+import { renderQuiz } from './quiz.js?v=20261107-6';
 import {
   renderChallengeHub,
   renderTimelineChallenge,
   renderMatchChallenge,
   renderCultureChallenge,
-} from './challenges.js?v=20261107-5';
-import { renderMap } from './map.js?v=20261107-5';
-import { storyScene, characterPortrait } from './scene.js?v=20261107-5';
-import { narrate, stopNarration, speechSupported, availableVoices } from './narration.js?v=20261107-5';
+} from './challenges.js?v=20261107-6';
+import { renderMap } from './map.js?v=20261107-6';
+import { storyScene, characterPortrait } from './scene.js?v=20261107-6';
+import { narrate, stopNarration, speechSupported, availableVoices } from './narration.js?v=20261107-6';
 
 const app = document.getElementById('app');
 const nav = document.querySelector('.main-nav');

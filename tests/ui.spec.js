@@ -166,6 +166,19 @@ test.describe('visual storytelling and narration', () => {
     await expect(select.locator('option[value="test-alto"]')).toHaveCount(1);
     await expect(select.locator('optgroup[label="Natural voices (best)"]')).toHaveCount(1);
     await expect(select.locator('option[value="test-premium"]')).toHaveCount(1);
+    await expect(page.getByTestId('studio-sample-cori')).toBeVisible();
+    await expect(page.getByTestId('studio-sample-cori')).toHaveAttribute('src', 'audio/samples/en_GB-cori-high.mp3');
+    const sample = await page.request.get('/audio/samples/en_GB-cori-high.mp3');
+    expect(sample.status()).toBe(200);
+    expect(sample.headers()['content-type']).toContain('audio');
+    const duration = await page.getByTestId('studio-sample-cori').evaluate((audio) => new Promise((resolve) => {
+      if (audio.readyState >= 1) return resolve(audio.duration);
+      audio.addEventListener('loadedmetadata', () => resolve(audio.duration), { once: true });
+      audio.addEventListener('error', () => resolve(-1), { once: true });
+      audio.load();
+      setTimeout(() => resolve(-1), 5000);
+    }));
+    expect(duration).toBeGreaterThan(0);
     await select.selectOption('test-tenor');
     const stored = await page.evaluate(() => JSON.parse(localStorage.getItem('mythos.settings.v1')));
     expect(stored.voice).toBe('test-tenor');

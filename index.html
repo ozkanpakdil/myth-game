@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#0e1310">
     <title>Mythos · A world mythology game</title>
     <link rel="icon" href="assets/svg/logo.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="css/style.css?v=20261107-5">
+    <link rel="stylesheet" href="css/style.css?v=20261107-6">
     <!-- Google tag (gtag.js). Kept off localhost so development and tests stay quiet. -->
     <script>
       (function () {
@@ -114,6 +114,18 @@
           <option value="">System default</option>
         </select>
         <p class="voice-note" id="voice-note" data-testid="voice-note" aria-live="polite">Looking for voices…</p>
+        <section class="studio-samples" aria-labelledby="studio-samples-title">
+          <h3 class="studio-samples__title" id="studio-samples-title">Try a local neural narrator</h3>
+          <p class="studio-samples__note">Two samples generated on this machine with Piper. They are samples only; the full story narration is not generated yet.</p>
+          <div class="studio-sample">
+            <div class="studio-sample__label"><span>Cori</span><small>British English · public domain</small></div>
+            <audio controls preload="none" src="audio/samples/en_GB-cori-high.mp3" data-testid="studio-sample-cori"></audio>
+          </div>
+          <div class="studio-sample">
+            <div class="studio-sample__label"><span>Joe</span><small>American English · CC0</small></div>
+            <audio controls preload="none" src="audio/samples/en_US-joe-medium.mp3" data-testid="studio-sample-joe"></audio>
+          </div>
+        </section>
         <p class="voice-tip"><strong>Want a more human voice?</strong> Install a Premium or Enhanced system voice: on macOS, System Settings → Accessibility → Spoken Content → Manage Voices; on Windows, Settings → Time &amp; language → Speech. The list updates after a refresh.</p>
         <div class="dialog__actions">
           <button class="button button--ghost" type="button" data-testid="voice-preview"><svg class="button__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 5.4v13.2L19 12z" fill="currentColor"/></svg><span>Preview</span></button>
@@ -124,6 +136,6 @@
 
     <div id="toast" role="status" aria-live="polite"></div>
 
-    <script type="module" src="js/app.js?v=20261107-5"></script>
+    <script type="module" src="js/app.js?v=20261107-6"></script>
   </body>
 </html>

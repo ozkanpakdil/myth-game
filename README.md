@@ -192,7 +192,9 @@ not fetched images. See `assets/STYLE_GUIDE.md` for the palette and grid rules.
 - Optional narration uses the browser's SpeechSynthesis API. It never autoplays
   and stops on navigation. The header speaker button opens a narration dialog
   with an on/off switch and a picker for any installed system voice; the choice
-  is persisted.
+  is persisted. Premium/Enhanced/Natural voices are grouped first with a ★.
+  Two open-licensed Piper neural-voice samples are available to audition in the
+  same dialog; full audio narration is not generated yet.
 - `prefers-reduced-motion` removes animations.
 - All decorative sigils have empty `alt`; labels are in text.
 

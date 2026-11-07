@@ -28,7 +28,7 @@ jobs:
       - name: Assemble the static site
         run: |
           mkdir -p dist
-          cp -R index.html css js content assets CREDITS.md README.md .nojekyll dist/
+          cp -R index.html css js content assets audio CREDITS.md README.md .nojekyll dist/
 
       - name: Configure Pages
         uses: actions/configure-pages@v5

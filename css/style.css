@@ -1355,7 +1355,7 @@ a.story-row:hover { border-color: var(--gold); background: var(--surface-2); tra
 .dialog__panel { padding: 1.6rem; }
 .dialog__title { font-size: 1.5rem; margin-bottom: 0.6rem; }
 .dialog__body { color: var(--ink-2); font-size: 0.9rem; }
-.voice-dialog { width: min(540px, calc(100vw - 2rem)); }
+.voice-dialog { width: min(540px, calc(100vw - 2rem)); max-height: calc(100dvh - 2rem); overflow: auto; }
 .narration-switch {
   display: flex;
   align-items: center;
@@ -1396,6 +1396,8 @@ a.story-row:hover { border-color: var(--gold); background: var(--surface-2); tra
 }
 .voice-select:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
 .voice-note { margin: 0.55rem 0 0; color: var(--muted); font-size: 0.78rem; }
+.voice-tip { margin: 0.85rem 0 0; padding: 0.7rem 0.8rem; border-left: 2px solid var(--gold); background: var(--surface-2); color: var(--muted); font-size: 0.76rem; line-height: 1.55; }
+.voice-tip strong { color: var(--gold-2); }
 .dialog__actions { display: flex; justify-content: flex-end; gap: 0.5rem; margin-top: 1.4rem; }
 
 #toast {

@@ -147,6 +147,7 @@ test.describe('visual storytelling and narration', () => {
       const voices = [
         { name: 'Test Alto', lang: 'en-GB', voiceURI: 'test-alto', localService: true, default: true },
         { name: 'Test Tenor', lang: 'en-US', voiceURI: 'test-tenor', localService: true, default: false },
+        { name: 'Test Premium', lang: 'en-GB', voiceURI: 'test-premium', localService: true, default: false },
         { name: 'Voix de test', lang: 'fr-FR', voiceURI: 'test-fr', localService: true, default: false },
       ];
       const synth = window.speechSynthesis;
@@ -163,6 +164,8 @@ test.describe('visual storytelling and narration', () => {
     await expect(page.getByTestId('voice-dialog')).toBeVisible();
     const select = page.getByTestId('voice-select');
     await expect(select.locator('option[value="test-alto"]')).toHaveCount(1);
+    await expect(select.locator('optgroup[label="Natural voices (best)"]')).toHaveCount(1);
+    await expect(select.locator('option[value="test-premium"]')).toHaveCount(1);
     await select.selectOption('test-tenor');
     const stored = await page.evaluate(() => JSON.parse(localStorage.getItem('mythos.settings.v1')));
     expect(stored.voice).toBe('test-tenor');

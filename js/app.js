@@ -13,7 +13,7 @@ import {
   countWords,
   REGION_ORDER,
   SENSITIVITY_LABEL,
-} from './content.js?v=20261107-4';
+} from './content.js?v=20261107-5';
 import {
   getState,
   getSettings,
@@ -24,7 +24,7 @@ import {
   recordStoryRead,
   awardBadges,
   resetProgress,
-} from './storage.js?v=20261107-4';
+} from './storage.js?v=20261107-5';
 import {
   mythStats,
   overallStats,
@@ -33,8 +33,8 @@ import {
   glossaryUnlockedCount,
   allStoryQuizzesPassed,
   isStoryUnlocked,
-} from './progress.js?v=20261107-4';
-import { badgeCatalog, evaluateBadges } from './badges.js?v=20261107-4';
+} from './progress.js?v=20261107-5';
+import { badgeCatalog, evaluateBadges } from './badges.js?v=20261107-5';
 import {
   escapeHtml,
   iconImg,
@@ -50,17 +50,17 @@ import {
   toast,
   confirmDialog,
   emptyState,
-} from './ui.js?v=20261107-4';
-import { renderQuiz } from './quiz.js?v=20261107-4';
+} from './ui.js?v=20261107-5';
+import { renderQuiz } from './quiz.js?v=20261107-5';
 import {
   renderChallengeHub,
   renderTimelineChallenge,
   renderMatchChallenge,
   renderCultureChallenge,
-} from './challenges.js?v=20261107-4';
-import { renderMap } from './map.js?v=20261107-4';
-import { storyScene, characterPortrait } from './scene.js?v=20261107-4';
-import { narrate, stopNarration, speechSupported, availableVoices } from './narration.js?v=20261107-4';
+} from './challenges.js?v=20261107-5';
+import { renderMap } from './map.js?v=20261107-5';
+import { storyScene, characterPortrait } from './scene.js?v=20261107-5';
+import { narrate, stopNarration, speechSupported, availableVoices } from './narration.js?v=20261107-5';
 
 const app = document.getElementById('app');
 const nav = document.querySelector('.main-nav');
@@ -107,12 +107,15 @@ function populateVoiceSelect() {
   const voices = availableVoices();
   const saved = getSettings().voice;
   const valueFor = (voice) => voice.voiceURI || voice.name;
-  const option = (voice) => `<option value="${escapeHtml(valueFor(voice))}">${escapeHtml(voice.name)} · ${escapeHtml(voice.lang)}</option>`;
-  const english = voices.filter((voice) => voice.lang.toLowerCase().startsWith('en'));
-  const other = voices.filter((voice) => !voice.lang.toLowerCase().startsWith('en'));
+  const isNatural = (voice) => /premium|enhanced|natural|neural|siri/i.test(voice.name);
+  const option = (voice, star = false) => `<option value="${escapeHtml(valueFor(voice))}">${star ? '★ ' : ''}${escapeHtml(voice.name)} · ${escapeHtml(voice.lang)}</option>`;
+  const natural = voices.filter(isNatural);
+  const english = voices.filter((voice) => !isNatural(voice) && voice.lang.toLowerCase().startsWith('en'));
+  const other = voices.filter((voice) => !isNatural(voice) && !voice.lang.toLowerCase().startsWith('en'));
   const groups = [];
-  if (english.length) groups.push(`<optgroup label="English">${english.map(option).join('')}</optgroup>`);
-  if (other.length) groups.push(`<optgroup label="Other languages">${other.map(option).join('')}</optgroup>`);
+  if (natural.length) groups.push(`<optgroup label="Natural voices (best)">${natural.map((voice) => option(voice, true)).join('')}</optgroup>`);
+  if (english.length) groups.push(`<optgroup label="English">${english.map((voice) => option(voice)).join('')}</optgroup>`);
+  if (other.length) groups.push(`<optgroup label="Other languages">${other.map((voice) => option(voice)).join('')}</optgroup>`);
   voiceSelect.innerHTML = `<option value="">System default</option>${groups.join('')}`;
 
   const available = voices.some((voice) => valueFor(voice) === saved);
@@ -122,8 +125,10 @@ function populateVoiceSelect() {
     voiceNote.textContent = 'No system voices are listed yet. The browser may still use its default voice.';
   } else if (saved && !available) {
     voiceNote.textContent = `Your previous voice is not available anymore. ${voices.length} other ${voices.length === 1 ? 'voice is' : 'voices are'} available.`;
+  } else if (!natural.length) {
+    voiceNote.textContent = `${voices.length} system ${voices.length === 1 ? 'voice' : 'voices'} found. Install a Premium or Enhanced voice for a more natural sound.`;
   } else {
-    voiceNote.textContent = `${voices.length} system ${voices.length === 1 ? 'voice' : 'voices'} found on this device.`;
+    voiceNote.textContent = `${voices.length} system ${voices.length === 1 ? 'voice' : 'voices'} found; ${natural.length} marked Natural.`;
   }
 }
 

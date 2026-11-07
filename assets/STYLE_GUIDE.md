@@ -180,7 +180,8 @@ are generated in the browser and are never fetched as image files.
 
 There is no audio art. Narration uses the browser's SpeechSynthesis engine only;
 there are no voice files, no celebrity voices and no voice cloning. Never label
-a system voice as a real person.
+a system voice as a real person. The Voice dialog lists installed system voices,
+persists the chosen `voiceURI`, and previews it with a neutral sample sentence.
 
 ## Review checklist for new art
 

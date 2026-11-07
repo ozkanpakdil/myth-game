@@ -190,7 +190,8 @@ not fetched images. See `assets/STYLE_GUIDE.md` for the palette and grid rules.
   mobile view; region details are announced in a live region.
 - Text-size control (`Aa`) cycles 100 / 112.5 / 125%, persisted locally.
 - Optional narration uses the browser's SpeechSynthesis API. It never autoplays,
-  stops on navigation, and has a header on/off control.
+  stops on navigation, has a header on/off control, and lets the reader choose
+  any installed system voice from the Voice dialog. The choice is persisted.
 - `prefers-reduced-motion` removes animations.
 - All decorative sigils have empty `alt`; labels are in text.
 
@@ -199,8 +200,9 @@ not fetched images. See `assets/STYLE_GUIDE.md` for the palette and grid rules.
 The suite covers the shell, every route, all eight traditions, the Greek read →
 quiz → unlock → persistence loop, failed quiz and retry, the final challenge,
 codex unlocks, timeline, all three challenges, the map and its mobile scroll,
-story and quiz SVG scenes, narration controls, theme/font persistence, reset
-confirmation, responsive overflow, skip link and quiz keyboard feedback.
+story and quiz SVG scenes, narration controls, system-voice selection, theme/font
+persistence, reset confirmation, responsive overflow, skip link and quiz keyboard
+feedback.
 
 ```bash
 npm test

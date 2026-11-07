@@ -386,7 +386,7 @@ An AI that writes text can create pixel art as **text grids**, one character per
 
 ### Phase 9: Visual storytelling, audio and publishing (follow-up request)
 - [x] **T500** Add a deterministic pixel-art scene engine for story illustrations, quiz clues and character portraits; keep every image SVG.
-- [x] **T501** Add optional browser narration (SpeechSynthesis) with a header toggle and per-story/per-question Listen controls; no recorded or celebrity voices.
+- [x] **T501** Add optional browser narration (SpeechSynthesis) with a header toggle, a system-voice chooser with preview and persistence, and per-story/per-question Listen controls; no recorded or celebrity voices.
 - [x] **T502** Add Google Analytics 4 (`G-NSB9K61M5S`) on published hosts, with localhost disabled for development and tests.
 - [x] **T503** Add a GitHub Actions Pages workflow and verify the assembled static artifact under a project-style path.
 - [ ] **T504** **NEEDS HUMAN**: review the new symbolic scenes and portrait archetypes for cultural sensitivity and visual quality. Do not treat generated portraits as historical likenesses.
@@ -433,4 +433,4 @@ Add one line per finished task. Newest at the bottom.
 | 2026-11-07 | T210–T214, T216 | 16-key palette and style guide, sprite compiler, eight mythology sigils, map markers, story/codex sigils. Character portrait sprites added (T215). |
 | 2026-11-07 | T400–T403 | Git history, Playwright suite, all-SVG art and zero-dependency dev server documented. |
 | 2026-11-07 | T500–T503 | Story/quiz scenes, answer portraits, browser narration, GA4 on published hosts, and GitHub Pages workflow. |
-| 2026-11-07 | Verification | `node tools/validate_content.js` clean; 40 Playwright tests pass headlessly; no console errors on the checked routes; assembled Pages artifact verified. |
+| 2026-11-07 | Verification | `node tools/validate_content.js` clean; 41 Playwright tests pass headlessly; no console errors on the checked routes; assembled Pages artifact verified. |

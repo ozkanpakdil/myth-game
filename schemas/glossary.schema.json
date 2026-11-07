@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mythos.local/schemas/glossary.schema.json",
+  "title": "Glossary collection",
+  "type": "array",
+  "minItems": 10,
+  "maxItems": 10,
+  "items": {
+    "type": "object",
+    "additionalProperties": true,
+    "required": ["term", "definition", "verified"],
+    "properties": {
+      "term": { "type": "string", "minLength": 2 },
+      "definition": { "type": "string", "minLength": 20 },
+      "verified": { "type": "boolean" }
+    }
+  }
+}

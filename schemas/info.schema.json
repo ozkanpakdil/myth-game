@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mythos.local/schemas/info.schema.json",
+  "title": "Mythology information page",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["id", "name", "intro", "timeline", "sources", "sensitivity", "verified"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z_]+$" },
+    "name": { "type": "string", "minLength": 2 },
+    "intro": {
+      "type": "string",
+      "description": "100–150 words. A neutral orientation to the tradition and its sources."
+    },
+    "timeline": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 8,
+      "items": {
+        "type": "object",
+        "required": ["label", "year_text", "note"],
+        "properties": {
+          "label": { "type": "string" },
+          "year_text": { "type": "string" },
+          "note": { "type": "string" }
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 5,
+      "items": {
+        "type": "object",
+        "required": ["title", "note"],
+        "properties": {
+          "title": { "type": "string" },
+          "note": { "type": "string" }
+        }
+      }
+    },
+    "sensitivity": { "type": "string", "enum": ["low", "medium", "high"] },
+    "verified": { "type": "boolean" }
+  }
+}

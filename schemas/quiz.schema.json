@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mythos.local/schemas/quiz.schema.json",
+  "title": "Quiz collection",
+  "type": "array",
+  "minItems": 20,
+  "maxItems": 20,
+  "items": {
+    "type": "object",
+    "additionalProperties": true,
+    "required": [
+      "id",
+      "story_id",
+      "question",
+      "choices",
+      "correct_index",
+      "explanation",
+      "difficulty",
+      "verified"
+    ],
+    "properties": {
+      "id": { "type": "string", "pattern": "^[a-z_]+-q[0-9]{2}$" },
+      "story_id": { "type": "string" },
+      "question": { "type": "string", "minLength": 10 },
+      "choices": {
+        "type": "array",
+        "minItems": 4,
+        "maxItems": 4,
+        "uniqueItems": true,
+        "items": { "type": "string", "minLength": 1 }
+      },
+      "correct_index": { "type": "integer", "minimum": 0, "maximum": 3 },
+      "explanation": { "type": "string", "minLength": 20 },
+      "difficulty": { "type": "string", "enum": ["easy", "medium", "hard"] },
+      "verified": { "type": "boolean" }
+    }
+  }
+}

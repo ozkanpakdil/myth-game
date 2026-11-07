@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mythos.local/schemas/stories.schema.json",
+  "title": "Story collection",
+  "type": "array",
+  "minItems": 6,
+  "maxItems": 6,
+  "items": {
+    "type": "object",
+    "additionalProperties": true,
+    "required": [
+      "id",
+      "title",
+      "source_ref",
+      "paragraphs",
+      "characters",
+      "themes",
+      "uncertain",
+      "verified"
+    ],
+    "properties": {
+      "id": { "type": "string", "pattern": "^[a-z_]+-[0-9]{2}$" },
+      "title": { "type": "string", "minLength": 3 },
+      "source_ref": { "type": "string", "minLength": 3 },
+      "paragraphs": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 5,
+        "items": { "type": "string", "minLength": 60 }
+      },
+      "characters": {
+        "type": "array",
+        "minItems": 1,
+        "items": { "type": "string" }
+      },
+      "themes": {
+        "type": "array",
+        "minItems": 1,
+        "items": { "type": "string" }
+      },
+      "notes": { "type": "string" },
+      "uncertain": { "type": "boolean" },
+      "verified": { "type": "boolean" }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "transparent": ".",
+  "colors": {
+    "#": { "name": "outline", "hex": "#171712" },
+    "w": { "name": "bone", "hex": "#f2e6cf" },
+    "c": { "name": "stone", "hex": "#c9bda5" },
+    "g": { "name": "gold", "hex": "#d6a84b" },
+    "l": { "name": "light gold", "hex": "#f2d37b" },
+    "b": { "name": "teal", "hex": "#3f7f86" },
+    "d": { "name": "deep teal", "hex": "#24545c" },
+    "r": { "name": "terracotta", "hex": "#b5523b" },
+    "o": { "name": "orange", "hex": "#d9824a" },
+    "e": { "name": "leaf", "hex": "#5d8148" },
+    "n": { "name": "deep green", "hex": "#33502f" },
+    "s": { "name": "sand", "hex": "#b08a55" },
+    "k": { "name": "brown", "hex": "#6b4f33" },
+    "p": { "name": "plum", "hex": "#7b4a6b" },
+    "v": { "name": "violet", "hex": "#9a6b9e" }
+  }
+}

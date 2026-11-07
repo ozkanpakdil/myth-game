@@ -10,6 +10,8 @@ import { getQuizRecord, recordQuizResult, recordFinalQuiz, recordStoryRead, awar
 import { loadMythology, loadMythologies, storyIndexById, nextStory } from './content.js';
 import { allStoryQuizzesPassed, isStoryUnlocked } from './progress.js';
 import { evaluateBadges } from './badges.js';
+import { questionScene, findCharacterForChoice, characterPortrait } from './scene.js';
+import { narrate, stopNarration, ensureNarration, speechSupported } from './narration.js';
 
 const PASS_RATIO = 0.7;
 
@@ -135,39 +137,128 @@ export async function renderQuiz(root, { mythId, storyId }) {
     </div>`;
   }
 
+  function readQuestion(question, button) {
+    if (!speechSupported()) {
+      toast('Narration is not available in this browser. You can still read the question.', { tone: 'warn' });
+      return;
+    }
+    if (button?.dataset.speaking === 'true') {
+      stopNarration();
+      button.dataset.speaking = 'false';
+      button.textContent = 'Listen';
+      return;
+    }
+    ensureNarration();
+    const text = `Question ${index + 1} of ${total}. ${question.question}. ${question.choices
+      .map((choice, i) => `${'ABCD'[i]}: ${choice}.`)
+      .join(' ')}`;
+    const started = narrate(text, {
+      onEnd() {
+        if (!button) return;
+        button.dataset.speaking = 'false';
+        button.textContent = 'Listen';
+      },
+      onError() {
+        if (!button) return;
+        button.dataset.speaking = 'false';
+        button.textContent = 'Listen';
+      },
+    });
+    if (!started) {
+      toast('Narration could not start.', { tone: 'warn' });
+      return;
+    }
+    if (button) {
+      button.dataset.speaking = 'true';
+      button.textContent = 'Stop';
+    }
+  }
+
   function renderQuestion() {
+    stopNarration();
     root.innerHTML = header();
     const stage = root.querySelector('#quiz-stage');
     const question = questions[index];
-    stage.innerHTML = `<section class="question-card" aria-labelledby="question-text">
-      <div class="question-card__top">
-        <span class="pill ${difficultyClass(question.difficulty)}">${escapeHtml(question.difficulty)}</span>
-        <span class="muted small">${index + 1} / ${total}</span>
-      </div>
-      <h2 class="question-card__text" id="question-text" data-testid="quiz-question">${escapeHtml(question.question)}</h2>
-      <div class="choices" role="group" aria-labelledby="question-text">
-        ${question.choices
-          .map(
-            (choice, choiceIndex) => `<button class="choice" type="button" data-index="${choiceIndex}" data-testid="quiz-choice-${choiceIndex}">
-              <span class="choice__letter" aria-hidden="true">${'ABCD'[choiceIndex]}</span>
+    const questionStory = data.stories.find((item) => item.id === question.story_id);
+    const art = questionScene(meta, question, questionStory);
+    const choiceCharacters = question.choices.map((choice) => findCharacterForChoice(choice, data.characters));
+    const showPortraits = choiceCharacters.every(Boolean);
+    const choices = question.choices
+      .map((choice, choiceIndex) => {
+        const character = showPortraits ? choiceCharacters[choiceIndex] : null;
+        const portrait = character ? characterPortrait(meta.id, character) : '';
+        return `<button class="choice ${portrait ? 'choice--portrait' : ''}" type="button" data-index="${choiceIndex}" data-testid="quiz-choice-${choiceIndex}">
+              ${portrait || `<span class="choice__letter" aria-hidden="true">${'ABCD'[choiceIndex]}</span>`}
               <span class="choice__text">${escapeHtml(choice)}</span>
-            </button>`,
-          )
-          .join('')}
+              <span class="choice__key" aria-hidden="true">${'ABCD'[choiceIndex]}</span>
+            </button>`;
+      })
+      .join('');
+
+    stage.innerHTML = `<section class="question-card question-card--visual" aria-labelledby="question-text">
+      <div class="question-layout">
+        <aside class="question-art" data-testid="quiz-scene" data-motif="${art.motif}">
+          <figure class="pixel-frame pixel-frame--quiz">
+            ${art.svg}
+            <figcaption class="question-art__caption">
+              <strong>${escapeHtml(art.caption)}</strong>
+              <span>${questionStory ? escapeHtml(questionStory.title) : 'The final challenge'}</span>
+            </figcaption>
+          </figure>
+          <p class="question-art__note">A clue, not the answer key.</p>
+        </aside>
+        <div class="question-main">
+          <div class="question-card__top">
+            <span class="pill ${difficultyClass(question.difficulty)}">${escapeHtml(question.difficulty)}</span>
+            <div class="question-card__tools">
+              <button class="button button--ghost button--small" type="button" data-testid="quiz-listen">Listen</button>
+              <span class="muted small">${index + 1} / ${total}</span>
+            </div>
+          </div>
+          <h2 class="question-card__text" id="question-text" data-testid="quiz-question" tabindex="-1">${escapeHtml(question.question)}</h2>
+          <div class="choices" role="group" aria-labelledby="question-text">
+            ${choices}
+          </div>
+          <p class="key-hint" aria-hidden="true">Keys: A–D or 1–4 to answer · Enter for next</p>
+          <div id="quiz-feedback" class="quiz-feedback" aria-live="polite"></div>
+        </div>
       </div>
-      <div id="quiz-feedback" class="quiz-feedback" aria-live="polite"></div>
     </section>`;
 
     stage.querySelectorAll('.choice').forEach((button) => {
       button.addEventListener('click', () => choose(Number(button.dataset.index)));
     });
+    stage.querySelector('[data-testid="quiz-listen"]')?.addEventListener('click', (event) => {
+      readQuestion(question, event.currentTarget);
+    });
     answered = false;
     selectedIndex = -1;
-    focusPage();
+    root.onkeydown = (event) => {
+      if (event.altKey || event.ctrlKey || event.metaKey || event.defaultPrevented) return;
+      if (event.target.closest('button, a, input, textarea, select')) return;
+      if (!answered && /^[1-4]$/.test(event.key)) {
+        event.preventDefault();
+        choose(Number(event.key) - 1);
+      } else if (!answered && /^[a-d]$/i.test(event.key)) {
+        event.preventDefault();
+        choose(event.key.toUpperCase().charCodeAt(0) - 65);
+      } else if (answered && event.key === 'Enter') {
+        event.preventDefault();
+        next();
+      }
+    };
+    const heading = stage.querySelector('[data-testid="quiz-question"]');
+    heading?.focus({ preventScroll: true });
   }
 
   function choose(choiceIndex) {
     if (answered) return;
+    stopNarration();
+    const listenButton = root.querySelector('[data-testid="quiz-listen"]');
+    if (listenButton) {
+      listenButton.dataset.speaking = 'false';
+      listenButton.textContent = 'Listen';
+    }
     answered = true;
     selectedIndex = choiceIndex;
     const question = questions[index];
@@ -200,6 +291,7 @@ export async function renderQuiz(root, { mythId, storyId }) {
   }
 
   function next() {
+    stopNarration();
     if (index + 1 < total) {
       index += 1;
       renderQuestion();
@@ -209,6 +301,8 @@ export async function renderQuiz(root, { mythId, storyId }) {
   }
 
   async function finish() {
+    stopNarration();
+    root.onkeydown = null;
     const passed = score >= required;
     if (isFinal) {
       recordFinalQuiz({ mythId, score, total, passed });
@@ -273,6 +367,7 @@ export async function renderQuiz(root, { mythId, storyId }) {
   }
 
   function retry() {
+    stopNarration();
     index = 0;
     score = 0;
     answered = false;

@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { dataByMyth, freshState, seedProgress, quizRecord } from './helpers.js';
+import { dataByMyth, freshState, seedProgress, quizRecord, fullyPlayedState } from './helpers.js';
 
 test.describe('settings', () => {
   test('theme and text size persist across reloads', async ({ page }) => {
@@ -98,5 +98,57 @@ test.describe('accessibility basics', () => {
     await expect(page.getByTestId('quiz-next')).toBeFocused();
     await page.keyboard.press('Enter');
     await expect(page.getByTestId('quiz-progress-label')).toContainText('Question 2 of 4');
+  });
+});
+
+test.describe('visual storytelling and narration', () => {
+  test('story scenes are SVG, change with the paragraph, and expose narration', async ({ page }) => {
+    await page.goto('/#/myth/greek/story/greek-01');
+    const scene = page.getByTestId('story-scene');
+    await expect(scene).toBeVisible();
+    await expect(scene).toHaveAttribute('data-motif', 'titan');
+    await expect(scene.locator('svg.pixel-scene')).toBeVisible();
+    await expect(page.getByTestId('story-listen')).toBeVisible();
+    const first = await scene.locator('svg').innerHTML();
+    await page.getByTestId('story-next').click();
+    await expect(scene).toHaveAttribute('data-scene-step', '2');
+    const second = await scene.locator('svg').innerHTML();
+    expect(second).not.toBe(first);
+  });
+
+  test('quiz questions have related SVG art, keyboard focus and consistent answer portraits', async ({ page }) => {
+    await seedProgress(page, fullyPlayedState());
+    await page.goto('/#/myth/egypt/quiz/final');
+    await expect(page.getByTestId('quiz-scene').locator('svg.pixel-scene')).toBeVisible();
+    await expect(page.getByTestId('quiz-question')).toBeFocused();
+    await expect(page.getByTestId('quiz-listen')).toBeVisible();
+
+    const quiz = dataByMyth.egypt.quiz;
+    for (let i = 0; i < 4; i += 1) {
+      await page.getByTestId(`quiz-choice-${quiz[i].correct_index}`).click();
+      await page.getByTestId('quiz-next').click();
+    }
+    await expect(page.getByTestId('quiz-question')).toContainText(quiz[4].question);
+    await expect(page.locator('[data-testid^="quiz-choice-"] .character-portrait')).toHaveCount(4);
+
+    await page.getByTestId('quiz-question').focus();
+    await page.keyboard.press('a');
+    await expect(page.locator('#quiz-feedback')).toHaveClass(/is-visible/);
+    await page.keyboard.press('Enter');
+    await expect(page.getByTestId('quiz-progress-label')).toContainText('Question 6 of 20');
+  });
+
+  test('narration can be switched off and the choice survives a reload', async ({ page }) => {
+    await page.goto('/#/');
+    const toggle = page.locator('#audio-toggle');
+    await expect(toggle).toHaveAttribute('aria-pressed', 'true');
+    await toggle.click();
+    await expect(toggle).toHaveAttribute('aria-pressed', 'false');
+    const stored = await page.evaluate(() => JSON.parse(localStorage.getItem('mythos.settings.v1')));
+    expect(stored.audio).toBe(false);
+    await page.reload();
+    await expect(toggle).toHaveAttribute('aria-pressed', 'false');
+    await toggle.click();
+    await expect(toggle).toHaveAttribute('aria-pressed', 'true');
   });
 });

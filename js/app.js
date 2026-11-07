@@ -58,11 +58,14 @@ import {
   renderCultureChallenge,
 } from './challenges.js';
 import { renderMap } from './map.js';
+import { storyScene, characterPortrait } from './scene.js';
+import { narrate, stopNarration, speechSupported } from './narration.js';
 
 const app = document.getElementById('app');
 const nav = document.querySelector('.main-nav');
 const themeButton = document.getElementById('theme-toggle');
 const fontButton = document.getElementById('font-toggle');
+const audioButton = document.getElementById('audio-toggle');
 let renderSequence = 0;
 
 /* ------------------------------------------------------------------ */
@@ -84,6 +87,51 @@ function applySettings(settings = getSettings()) {
     fontButton.setAttribute('aria-label', `${labels[settings.fontScale]} — change text size`);
     fontButton.setAttribute('title', `${labels[settings.fontScale]} — change text size`);
   }
+  if (audioButton) {
+    const on = settings.audio !== false;
+    audioButton.classList.toggle('is-off', !on);
+    audioButton.setAttribute('aria-pressed', String(on));
+    audioButton.setAttribute('aria-label', on ? 'Turn narration off' : 'Turn narration on');
+    audioButton.setAttribute('title', on ? 'Narration on' : 'Narration off');
+  }
+}
+
+function narrateWithButton(text, button, idleLabel) {
+  if (!speechSupported()) {
+    toast('Narration is not available in this browser. You can still read the text.', { tone: 'warn' });
+    return;
+  }
+  if (button?.dataset.speaking === 'true') {
+    stopNarration();
+    button.dataset.speaking = 'false';
+    button.textContent = idleLabel;
+    return;
+  }
+  if (!getSettings().audio) {
+    updateSettings({ audio: true });
+    applySettings();
+    toast('Narration on. Using your browser’s local voice.', { duration: 2200 });
+  }
+  const started = narrate(text, {
+    onEnd() {
+      if (!button) return;
+      button.dataset.speaking = 'false';
+      button.textContent = idleLabel;
+    },
+    onError() {
+      if (!button) return;
+      button.dataset.speaking = 'false';
+      button.textContent = idleLabel;
+    },
+  });
+  if (!started) {
+    toast('Narration could not start.', { tone: 'warn' });
+    return;
+  }
+  if (button) {
+    button.dataset.speaking = 'true';
+    button.textContent = 'Stop narration';
+  }
 }
 
 function initChrome() {
@@ -93,6 +141,13 @@ function initChrome() {
     updateSettings({ theme: next });
     applySettings();
   });
+  audioButton?.addEventListener('click', () => {
+    const on = !getSettings().audio;
+    updateSettings({ audio: on });
+    if (!on) stopNarration();
+    applySettings();
+    toast(on ? 'Narration on — use Listen beside a story or question.' : 'Narration off', { duration: 1800 });
+  });
   fontButton?.addEventListener('click', () => {
     const order = ['md', 'lg', 'xl'];
     const current = getSettings().fontScale;
@@ -101,6 +156,7 @@ function initChrome() {
     applySettings();
     toast(next === 'md' ? 'Normal text size' : next === 'lg' ? 'Large text size' : 'Extra-large text size', { duration: 1800 });
   });
+  document.addEventListener('mythos:audio-change', () => applySettings());
   document.querySelector('.skip-link')?.addEventListener('click', (event) => {
     event.preventDefault();
     const main = document.getElementById('main');
@@ -183,6 +239,8 @@ function parseRoute() {
 async function renderRoute() {
   const token = ++renderSequence;
   const route = parseRoute();
+  stopNarration();
+  app.onkeydown = null;
   window.scrollTo(0, 0);
   app.innerHTML = `<div class="page loading-page" role="status"><p class="loading-page__mark" aria-hidden="true">✦</p><p>Opening the archive…</p></div>`;
   try {
@@ -190,7 +248,7 @@ async function renderRoute() {
     if (token !== renderSequence) return;
     markNav(navKeyFor(route));
     if (route.name !== 'home' && route.name !== 'notfound') setLastRoute(location.hash || '#/');
-    focusPage();
+    if (route.name !== 'quiz') focusPage();
   } catch (error) {
     if (token !== renderSequence) return;
     console.error(error);
@@ -664,59 +722,78 @@ async function renderStory(mythId, storyId) {
   function draw() {
     const total = story.paragraphs.length;
     const isLast = paragraph === total - 1;
+    const art = storyScene(meta, story, paragraph);
+    stopNarration();
     app.innerHTML = `<div class="page page--reader" data-testid="story-page" data-story="${story.id}">
       ${breadcrumb([{ label: 'Traditions', href: '#/myths' }, { label: meta.name, href: `#/myth/${meta.id}` }, { label: `Story ${index + 1}` }])}
       <article class="story-reader">
-        <header class="story-reader__head">
-          <div class="story-reader__kicker">
-            ${iconImg(meta.id, { className: 'sigil sigil--story' })}
-            <p class="eyebrow">Story ${index + 1} of ${data.stories.length} · ${escapeHtml(meta.name)}</p>
-          </div>
-          <h1 id="page-title">${escapeHtml(story.title)}</h1>
-          <p class="story-reader__source">Adapted from ${escapeHtml(story.source_ref)}</p>
-          <div class="story-reader__tags">
-            ${story.themes.map((theme) => `<span class="pill pill--quiet">${escapeHtml(theme)}</span>`).join('')}
-            <span class="muted small">${readingMinutes(story.paragraphs.join(' '))} min read</span>
-          </div>
-        </header>
-        <div class="reader-progress">
-          <div class="dots" aria-hidden="true">
-            ${story.paragraphs.map((_, i) => `<span class="dot ${i === paragraph ? 'is-current' : i < paragraph ? 'is-done' : ''}"></span>`).join('')}
-          </div>
-          <span class="muted small" data-testid="story-progress">Paragraph ${paragraph + 1} of ${total}</span>
-          ${progressBar(paragraph + 1, total, 'Story progress', { compact: true })}
-        </div>
-        <div class="story-text" data-testid="story-paragraph" tabindex="-1">
-          <p>${escapeHtml(story.paragraphs[paragraph])}</p>
-        </div>
-        ${isLast
-          ? `<div class="story-end">
-              <p class="story-end__note">You have reached the end of this retelling. The quiz unlocks the next story.</p>
-              <div class="story-end__actions">
-                <button class="button button--ghost" type="button" data-testid="story-reread">Read again</button>
-                <button class="button button--primary" type="button" data-testid="story-finish">Finish &amp; take the quiz <span aria-hidden="true">→</span></button>
+        <div class="story-layout">
+          <aside class="story-art" data-testid="story-scene" data-motif="${art.motif}" data-scene-step="${paragraph + 1}">
+            <figure class="pixel-frame pixel-frame--story">
+              ${art.svg}
+              <figcaption class="story-art__caption">
+                <strong>${escapeHtml(art.caption)}</strong>
+                <span>A symbolic scene, not a literal illustration.</span>
+              </figcaption>
+            </figure>
+            <div class="story-art__actions">
+              <button class="button button--ghost button--small" type="button" data-testid="story-listen">Listen to paragraph</button>
+              <span class="story-art__hint">Scene ${paragraph + 1} of ${total}</span>
+            </div>
+          </aside>
+          <div class="story-copy">
+            <header class="story-reader__head">
+              <div class="story-reader__kicker">
+                ${iconImg(meta.id, { className: 'sigil sigil--story' })}
+                <p class="eyebrow">Story ${index + 1} of ${data.stories.length} · ${escapeHtml(meta.name)}</p>
               </div>
-            </div>`
-          : ''}
-        <div class="reader-controls">
-          <button class="button button--ghost" type="button" data-testid="story-back" ${paragraph === 0 ? 'data-back-to-start="true"' : ''}>${paragraph === 0 ? 'Back to tradition' : '← Previous'}</button>
-          ${isLast
-            ? '<span class="muted small">End of story</span>'
-            : '<button class="button button--primary" type="button" data-testid="story-next">Next paragraph →</button>'}
-        </div>
-        <footer class="story-reader__foot">
-          <div class="character-chips">
-            <span class="muted small">Figures in this story:</span>
-            ${(story.characters || [])
-              .map((id) => {
-                const character = data.characters.find((item) => item.id === id);
-                return character ? `<a class="chip" href="#/codex/${meta.id}">${escapeHtml(character.name)}</a>` : '';
-              })
-              .join('')}
+              <h1 id="page-title">${escapeHtml(story.title)}</h1>
+              <p class="story-reader__source">Adapted from ${escapeHtml(story.source_ref)}</p>
+              <div class="story-reader__tags">
+                ${story.themes.map((theme) => `<span class="pill pill--quiet">${escapeHtml(theme)}</span>`).join('')}
+                <span class="muted small">${readingMinutes(story.paragraphs.join(' '))} min read</span>
+              </div>
+            </header>
+            <div class="reader-progress">
+              <div class="dots" aria-hidden="true">
+                ${story.paragraphs.map((_, i) => `<span class="dot ${i === paragraph ? 'is-current' : i < paragraph ? 'is-done' : ''}"></span>`).join('')}
+              </div>
+              <span class="muted small" data-testid="story-progress">Paragraph ${paragraph + 1} of ${total}</span>
+              ${progressBar(paragraph + 1, total, 'Story progress', { compact: true })}
+            </div>
+            <div class="story-text" data-testid="story-paragraph" tabindex="-1">
+              <p>${escapeHtml(story.paragraphs[paragraph])}</p>
+            </div>
+            ${isLast
+              ? `<div class="story-end">
+                  <p class="story-end__note">You have reached the end of this retelling. The quiz unlocks the next story.</p>
+                  <div class="story-end__actions">
+                    <button class="button button--ghost" type="button" data-testid="story-reread">Read again</button>
+                    <button class="button button--primary" type="button" data-testid="story-finish">Finish &amp; take the quiz <span aria-hidden="true">→</span></button>
+                  </div>
+                </div>`
+              : ''}
+            <div class="reader-controls">
+              <button class="button button--ghost" type="button" data-testid="story-back" ${paragraph === 0 ? 'data-back-to-start="true"' : ''}>${paragraph === 0 ? 'Back to tradition' : '← Previous'}</button>
+              ${isLast
+                ? '<span class="muted small">End of story</span>'
+                : '<button class="button button--primary" type="button" data-testid="story-next">Next paragraph →</button>'}
+            </div>
+            <footer class="story-reader__foot">
+              <div class="character-chips">
+                <span class="muted small">Figures in this story:</span>
+                ${(story.characters || [])
+                  .map((id) => {
+                    const character = data.characters.find((item) => item.id === id);
+                    return character ? `<a class="chip chip--figure" href="#/codex/${meta.id}">${characterPortrait(meta.id, character)}<span>${escapeHtml(character.name)}</span></a>` : '';
+                  })
+                  .join('')}
+              </div>
+              ${story.uncertain ? `<p class="uncertain-note"><strong>Note:</strong> ${escapeHtml(story.notes || 'Some details of this story are uncertain or told differently in different sources.')}</p>` : ''}
+              <p class="small muted">Many traditions tell more than one version of this story. This is a short retelling, not a translation.</p>
+            </footer>
           </div>
-          ${story.uncertain ? `<p class="uncertain-note"><strong>Note:</strong> ${escapeHtml(story.notes || 'Some details of this story are uncertain or told differently in different sources.')}</p>` : ''}
-          <p class="small muted">Many traditions tell more than one version of this story. This is a short retelling, not a translation.</p>
-        </footer>
+        </div>
       </article>
     </div>`;
 
@@ -741,6 +818,9 @@ async function renderStory(mythId, storyId) {
       draw();
       app.querySelector('[data-testid="story-paragraph"]')?.focus();
       window.scrollTo(0, 0);
+    });
+    app.querySelector('[data-testid="story-listen"]')?.addEventListener('click', (event) => {
+      narrateWithButton(story.paragraphs[paragraph], event.currentTarget, 'Listen to paragraph');
     });
     app.querySelector('[data-testid="story-finish"]')?.addEventListener('click', finish);
   }
@@ -818,7 +898,7 @@ async function renderCodex(initialMythId = null) {
           ${characters.length ? `<h3 class="codex-subhead">Figures</h3><div class="codex-grid">${characters
             .map((character) => character.unlocked
               ? `<article class="codex-card" data-testid="codex-card-${entry.meta.id}-${character.id}">
-                  <div class="codex-card__head"><span class="codex-card__icon">${iconImg(entry.meta.id, { className: 'sigil sigil--small' })}</span><div><h4>${escapeHtml(character.name)}</h4><p class="muted small">${escapeHtml(character.role)}</p></div></div>
+                  <div class="codex-card__head"><span class="codex-card__icon">${characterPortrait(entry.meta.id, character)}</span><div><h4>${escapeHtml(character.name)}</h4><p class="muted small">${escapeHtml(character.role)}</p></div></div>
                   <p class="codex-card__domains">${character.domain.map((domain) => `<span class="chip chip--tiny">${escapeHtml(domain)}</span>`).join('')}</p>
                   <p class="small"><strong>Symbols:</strong> ${escapeHtml(character.symbols.join(', '))}</p>
                   <p class="codex-card__fact">${escapeHtml(character.fun_fact)}</p>
@@ -982,7 +1062,7 @@ async function renderResults() {
     <header class="page-head">
       <p class="eyebrow">Your journey</p>
       <h1 id="page-title">Progress</h1>
-      <p class="lede">A record of what you have read, passed and unlocked in this browser. Nothing is sent anywhere.</p>
+      <p class="lede">A record of what you have read, passed and unlocked in this browser. Progress stays here; the published site also uses Google Analytics for aggregate usage.</p>
     </header>
     <section class="stat-grid" aria-label="Overall statistics">
       <div class="stat"><span class="stat__value">${stats.storiesRead}<small>/${stats.storiesTotal}</small></span><span class="stat__label">Stories read</span></div>
@@ -1071,7 +1151,7 @@ async function renderAbout() {
     <section class="panel prose">
       <h2>What the game is</h2>
       <p>Eight traditions are playable: Greek, Norse, Egyptian, Mesopotamian, Hindu, Japanese, Maya and Celtic. Each has six short retellings, a five-question quiz after every story, a twenty-question final challenge, ten character cards and ten glossary terms. A stylised map and three challenges offer other ways into the material.</p>
-      <p>Everything is stored locally in your browser. There is no account, no analytics and no server.</p>
+      <p>Progress is stored locally in your browser. There is no account and no game server. The published site loads Google Analytics (measurement ID <code>G-NSB9K61M5S</code>) to understand aggregate use; analytics is disabled on localhost.</p>
       <h2>How the content is written</h2>
       <p>Retellings are short summaries in new words, not translations. They point to named sources and note when a story has several versions. Dates are approximate: the date a story was first written down is usually much later than the oral tradition behind it.</p>
       <p><strong>Review status:</strong> every story, quiz, character and glossary entry is marked <code>verified: false</code>. The material has not yet been checked line by line by a named human reviewer. Treat it as a learning draft.</p>
@@ -1080,8 +1160,9 @@ async function renderAbout() {
       <p>Sensitivity is marked on each tradition: <span class="pill pill--quiet">General tradition</span> <span class="pill pill--gold">Living tradition</span>. The Hindu entries are marked high sensitivity and need a dedicated human review before release.</p>
       <h2>Accessibility</h2>
       <p>The game uses native links and buttons, a skip link, visible focus styles, live regions for quiz feedback, keyboard-operable challenges and a text-size control. Animations are minimal and respect <code>prefers-reduced-motion</code>. The world map has a list-view alternative.</p>
-      <h2>Images</h2>
-      <p>All images are SVG: sixteen-pixel sigils for each tradition, authored as text grids and compiled by <code>tools/render_sprites.js</code>; the map is an inline SVG built from a text tile grid. No photographs or generated art are used.</p>
+      <h2>Images and narration</h2>
+      <p>All images are original SVG: sixteen-pixel sigils, story scenes, quiz clues and character portraits are built from a small palette and a deterministic pixel grid. The map is an inline SVG built from a text tile grid. No photographs or generated raster art are used.</p>
+      <p>Narration is optional and uses the browser's own speech synthesis. There are no recorded voice files, no celebrity voice, and no audio is sent to a server. Use the speaker button in the header or the Listen button beside a story or question.</p>
     </section>
 
     <section class="panel">
@@ -1103,7 +1184,7 @@ async function renderAbout() {
 
     <section class="panel">
       <h2>Credits</h2>
-      <p>Design, code and retellings: the Mythos project. Built with vanilla HTML, CSS and JavaScript. No frameworks, no build step, no trackers.</p>
+      <p>Design, code and retellings: the Mythos project. Built with vanilla HTML, CSS and JavaScript. No frameworks and no build step. Google Analytics is the only third-party script and is disabled on localhost.</p>
       <p>Thanks to the translators, scholars and tradition-bearers whose published work makes a project like this possible. Full source notes appear above and in each tradition's page.</p>
       <p class="small muted">${playable.length} playable traditions · ${mythologies.length} catalogued · ${sources.length} source notes.</p>
       <p class="small"><a class="text-link" href="CREDITS.md">Plain-text credits file</a> · <a class="text-link" href="README.md">README</a></p>

@@ -5,13 +5,13 @@
  * review questions from the previous stories, so every quiz has 4–5 questions
  * and a passing mark of 70% (3/4 or 4/5). The final challenge uses all 20.
  */
-import { escapeHtml, iconImg, progressBar, toast, focusPage, difficultyClass, percent } from './ui.js';
-import { getQuizRecord, recordQuizResult, recordFinalQuiz, recordStoryRead, awardBadges, isStoryRead } from './storage.js';
-import { loadMythology, loadMythologies, storyIndexById, nextStory } from './content.js';
-import { allStoryQuizzesPassed, isStoryUnlocked } from './progress.js';
-import { evaluateBadges } from './badges.js';
-import { questionScene, findCharacterForChoice, characterPortrait } from './scene.js';
-import { narrate, stopNarration, ensureNarration, speechSupported } from './narration.js';
+import { escapeHtml, iconImg, progressBar, toast, focusPage, difficultyClass, percent, listenButtonContent } from './ui.js?v=20261107-4';
+import { getQuizRecord, recordQuizResult, recordFinalQuiz, recordStoryRead, awardBadges, isStoryRead } from './storage.js?v=20261107-4';
+import { loadMythology, loadMythologies, storyIndexById, nextStory } from './content.js?v=20261107-4';
+import { allStoryQuizzesPassed, isStoryUnlocked } from './progress.js?v=20261107-4';
+import { evaluateBadges } from './badges.js?v=20261107-4';
+import { questionScene, choiceIcon } from './scene.js?v=20261107-4';
+import { narrate, stopNarration, ensureNarration, speechSupported } from './narration.js?v=20261107-4';
 
 const PASS_RATIO = 0.7;
 
@@ -145,7 +145,7 @@ export async function renderQuiz(root, { mythId, storyId }) {
     if (button?.dataset.speaking === 'true') {
       stopNarration();
       button.dataset.speaking = 'false';
-      button.textContent = 'Listen';
+      button.innerHTML = listenButtonContent('Listen');
       return;
     }
     ensureNarration();
@@ -156,12 +156,12 @@ export async function renderQuiz(root, { mythId, storyId }) {
       onEnd() {
         if (!button) return;
         button.dataset.speaking = 'false';
-        button.textContent = 'Listen';
+        button.innerHTML = listenButtonContent('Listen');
       },
       onError() {
         if (!button) return;
         button.dataset.speaking = 'false';
-        button.textContent = 'Listen';
+        button.innerHTML = listenButtonContent('Listen');
       },
     });
     if (!started) {
@@ -170,7 +170,7 @@ export async function renderQuiz(root, { mythId, storyId }) {
     }
     if (button) {
       button.dataset.speaking = 'true';
-      button.textContent = 'Stop';
+      button.innerHTML = listenButtonContent('Stop', true);
     }
   }
 
@@ -181,14 +181,11 @@ export async function renderQuiz(root, { mythId, storyId }) {
     const question = questions[index];
     const questionStory = data.stories.find((item) => item.id === question.story_id);
     const art = questionScene(meta, question, questionStory);
-    const choiceCharacters = question.choices.map((choice) => findCharacterForChoice(choice, data.characters));
-    const showPortraits = choiceCharacters.every(Boolean);
     const choices = question.choices
       .map((choice, choiceIndex) => {
-        const character = showPortraits ? choiceCharacters[choiceIndex] : null;
-        const portrait = character ? characterPortrait(meta.id, character) : '';
-        return `<button class="choice ${portrait ? 'choice--portrait' : ''}" type="button" data-index="${choiceIndex}" data-testid="quiz-choice-${choiceIndex}">
-              ${portrait || `<span class="choice__letter" aria-hidden="true">${'ABCD'[choiceIndex]}</span>`}
+        const icon = choiceIcon(meta.id, choice, data.characters, art.motif);
+        return `<button class="choice choice--icon" type="button" data-index="${choiceIndex}" data-testid="quiz-choice-${choiceIndex}">
+              ${icon}
               <span class="choice__text">${escapeHtml(choice)}</span>
               <span class="choice__key" aria-hidden="true">${'ABCD'[choiceIndex]}</span>
             </button>`;
@@ -211,7 +208,7 @@ export async function renderQuiz(root, { mythId, storyId }) {
           <div class="question-card__top">
             <span class="pill ${difficultyClass(question.difficulty)}">${escapeHtml(question.difficulty)}</span>
             <div class="question-card__tools">
-              <button class="button button--ghost button--small" type="button" data-testid="quiz-listen">Listen</button>
+              <button class="button button--ghost button--small" type="button" data-testid="quiz-listen">${listenButtonContent('Listen')}</button>
               <span class="muted small">${index + 1} / ${total}</span>
             </div>
           </div>
@@ -257,7 +254,7 @@ export async function renderQuiz(root, { mythId, storyId }) {
     const listenButton = root.querySelector('[data-testid="quiz-listen"]');
     if (listenButton) {
       listenButton.dataset.speaking = 'false';
-      listenButton.textContent = 'Listen';
+      listenButton.innerHTML = listenButtonContent('Listen');
     }
     answered = true;
     selectedIndex = choiceIndex;

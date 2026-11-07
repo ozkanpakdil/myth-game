@@ -145,7 +145,7 @@ const MOTIF_RULES = [
   [/\b(wolf|fenrir)\b/i, 'wolf'],
   [/\b(eye|sight|watch|vision|balor)\b/i, 'eye'],
   [/\b(heart|scale|judg|maat|truth|feather)\b/i, 'scales'],
-  [/\b(maize|corn|harvest|grain)\b/i, 'maize'],
+  [/\b(maize|corn|harvest|grain|seed|sprout|grow)\b/i, 'maize'],
   [/\b(rabbit|hare)\b/i, 'rabbit'],
   [/\b(ball|game|hoop|ball court)\b/i, 'ballcourt'],
   [/\b(jaguar|jungle)\b/i, 'jaguar'],
@@ -867,12 +867,16 @@ function storyMotifFor(story) {
   return STORY_MOTIFS[story.id] || 'temple';
 }
 
-function questionMotifFor(question, fallback) {
-  const text = `${question.question} ${question.choices[question.correct_index] || ''} ${question.explanation || ''}`;
+function motifForText(text) {
   for (const [pattern, motif] of MOTIF_RULES) {
     if (pattern.test(text)) return motif;
   }
-  return fallback;
+  return null;
+}
+
+function questionMotifFor(question, fallback) {
+  const text = `${question.question} ${question.choices[question.correct_index] || ''} ${question.explanation || ''}`;
+  return motifForText(text) || fallback;
 }
 
 function sceneSvg(metaId, motif, seed, step, label) {
@@ -908,6 +912,35 @@ export function findCharacterForChoice(choice, characters) {
   if (!Array.isArray(characters)) return null;
   const normalized = String(choice || '').trim().toLowerCase();
   return characters.find((character) => character.name.toLowerCase() === normalized) || null;
+}
+
+function escapeRegExp(value) {
+  return String(value).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+function findCharacterMention(choice, characters) {
+  const exact = findCharacterForChoice(choice, characters);
+  if (exact) return exact;
+  if (!Array.isArray(characters)) return null;
+  const normalized = String(choice || '').trim().toLowerCase();
+  return characters.find((character) => {
+    const name = escapeRegExp(character.name.toLowerCase());
+    return new RegExp(`(^|[^a-z])${name}([^a-z]|$)`, 'i').test(normalized);
+  }) || null;
+}
+
+export function motifGlyph(metaId, motif) {
+  const p = paletteFor(metaId);
+  const g = new Grid(1, W, H);
+  const rnd = mulberry32(hashString(`${metaId}:${motif}:glyph`));
+  drawMotif(g, p, motif, 32, 28, rnd);
+  return `<svg class="choice-glyph" viewBox="10 2 44 34" aria-hidden="true" shape-rendering="crispEdges" focusable="false">${g.svg()}</svg>`;
+}
+
+export function choiceIcon(metaId, choice, characters, fallbackMotif = 'temple') {
+  const character = findCharacterMention(choice, characters);
+  if (character) return characterPortrait(metaId, character);
+  return motifGlyph(metaId, motifForText(choice) || fallbackMotif);
 }
 
 function portraitArchetype(character) {

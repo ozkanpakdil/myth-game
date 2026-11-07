@@ -109,19 +109,22 @@ test.describe('visual storytelling and narration', () => {
     await expect(scene).toHaveAttribute('data-motif', 'titan');
     await expect(scene.locator('svg.pixel-scene')).toBeVisible();
     await expect(page.getByTestId('story-listen')).toBeVisible();
-    const first = await scene.locator('svg').innerHTML();
+    await expect(page.getByTestId('story-listen').locator('svg.button__icon')).toHaveCount(1);
+    const first = await scene.locator('svg.pixel-scene').innerHTML();
     await page.getByTestId('story-next').click();
     await expect(scene).toHaveAttribute('data-scene-step', '2');
-    const second = await scene.locator('svg').innerHTML();
+    const second = await scene.locator('svg.pixel-scene').innerHTML();
     expect(second).not.toBe(first);
   });
 
-  test('quiz questions have related SVG art, keyboard focus and consistent answer portraits', async ({ page }) => {
+  test('quiz questions have related SVG art, keyboard focus and icons on every answer', async ({ page }) => {
     await seedProgress(page, fullyPlayedState());
     await page.goto('/#/myth/egypt/quiz/final');
     await expect(page.getByTestId('quiz-scene').locator('svg.pixel-scene')).toBeVisible();
     await expect(page.getByTestId('quiz-question')).toBeFocused();
     await expect(page.getByTestId('quiz-listen')).toBeVisible();
+    await expect(page.getByTestId('quiz-listen').locator('svg.button__icon')).toHaveCount(1);
+    await expect(page.locator('[data-testid^="quiz-choice-"] .character-portrait, [data-testid^="quiz-choice-"] .choice-glyph')).toHaveCount(4);
 
     const quiz = dataByMyth.egypt.quiz;
     for (let i = 0; i < 4; i += 1) {
@@ -156,7 +159,7 @@ test.describe('visual storytelling and narration', () => {
     });
 
     await page.goto('/#/');
-    await page.locator('#voice-toggle').click();
+    await page.locator('#audio-toggle').click();
     await expect(page.getByTestId('voice-dialog')).toBeVisible();
     const select = page.getByTestId('voice-select');
     await expect(select.locator('option[value="test-alto"]')).toHaveCount(1);
@@ -167,22 +170,29 @@ test.describe('visual storytelling and narration', () => {
     await page.getByTestId('voice-close').click();
     await expect(page.getByTestId('voice-dialog')).not.toBeVisible();
     await page.reload();
-    await page.locator('#voice-toggle').click();
+    await page.locator('#audio-toggle').click();
     await expect(select).toHaveValue('test-tenor');
     await page.getByTestId('voice-preview').click();
   });
 
-  test('narration can be switched off and the choice survives a reload', async ({ page }) => {
+  test('the narration button opens its settings and the on/off choice persists', async ({ page }) => {
     await page.goto('/#/');
-    const toggle = page.locator('#audio-toggle');
-    await expect(toggle).toHaveAttribute('aria-pressed', 'true');
-    await toggle.click();
-    await expect(toggle).toHaveAttribute('aria-pressed', 'false');
+    const trigger = page.locator('#audio-toggle');
+    await trigger.click();
+    await expect(page.getByTestId('voice-dialog')).toBeVisible();
+    const enabled = page.getByTestId('narration-enabled');
+    await expect(enabled).toBeChecked();
+    await enabled.uncheck();
     const stored = await page.evaluate(() => JSON.parse(localStorage.getItem('mythos.settings.v1')));
     expect(stored.audio).toBe(false);
+    await page.getByTestId('voice-close').click();
+    await expect(trigger).toHaveClass(/is-off/);
+
     await page.reload();
-    await expect(toggle).toHaveAttribute('aria-pressed', 'false');
-    await toggle.click();
-    await expect(toggle).toHaveAttribute('aria-pressed', 'true');
+    await trigger.click();
+    await expect(enabled).not.toBeChecked();
+    await enabled.check();
+    await page.getByTestId('voice-close').click();
+    await expect(trigger).not.toHaveClass(/is-off/);
   });
 });

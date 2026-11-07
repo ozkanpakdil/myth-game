@@ -256,6 +256,7 @@ a { color: inherit; }
 }
 .voice-button:hover { border-color: var(--gold); color: var(--gold-2); }
 .voice-button svg { flex: 0 0 auto; }
+.voice-button__chevron { width: 0.8rem; height: 0.8rem; opacity: 0.65; }
 
 .site-footer {
   border-top: 1px solid var(--line);
@@ -408,6 +409,7 @@ a { color: inherit; }
   cursor: pointer;
   transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
 }
+.button__icon { width: 1.05em; height: 1.05em; flex: 0 0 auto; }
 .button:hover { transform: translateY(-1px); }
 .button:active { transform: translateY(0); }
 .button--primary {
@@ -1354,6 +1356,27 @@ a.story-row:hover { border-color: var(--gold); background: var(--surface-2); tra
 .dialog__title { font-size: 1.5rem; margin-bottom: 0.6rem; }
 .dialog__body { color: var(--ink-2); font-size: 0.9rem; }
 .voice-dialog { width: min(540px, calc(100vw - 2rem)); }
+.narration-switch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding: 0.78rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--bg-2);
+  cursor: pointer;
+}
+.narration-switch span { display: flex; flex-direction: column; gap: 0.12rem; }
+.narration-switch strong { color: var(--ink); font-size: 0.88rem; }
+.narration-switch small { color: var(--muted); font-size: 0.75rem; }
+.narration-switch input {
+  flex: 0 0 auto;
+  width: 1.25rem;
+  height: 1.25rem;
+  accent-color: var(--gold);
+}
 .field-label {
   display: block;
   margin: 1.25rem 0 0.45rem;
@@ -1512,8 +1535,21 @@ a.story-row:hover { border-color: var(--gold); background: var(--surface-2); tra
 .question-card--visual .choice:nth-child(3) { animation-delay: 0.08s; }
 .question-card--visual .choice:nth-child(4) { animation-delay: 0.12s; }
 
-.choice--portrait { padding-left: 0.55rem; }
-.choice--portrait > .character-portrait { width: 34px; height: 34px; }
+.choice--icon { padding-left: 0.55rem; }
+.choice--icon > .character-portrait,
+.choice--icon > .choice-glyph { width: 34px; height: 34px; }
+.choice-glyph {
+  display: block;
+  flex: 0 0 auto;
+  padding: 2px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--surface-3);
+}
+.choice.is-correct .character-portrait,
+.choice.is-correct .choice-glyph { border-color: var(--ok); }
+.choice.is-wrong .character-portrait,
+.choice.is-wrong .choice-glyph { border-color: var(--danger); }
 .choice__key {
   margin-left: auto;
   color: var(--muted);

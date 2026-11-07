@@ -3,6 +3,13 @@
  * Templates are plain strings; every piece of content is escaped here.
  */
 
+export const playIcon = '<svg class="button__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 5.4v13.2L19 12z" fill="currentColor"/></svg>';
+export const stopIcon = '<svg class="button__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="7" y="7" width="10" height="10" rx="1.2" fill="currentColor"/></svg>';
+
+export function listenButtonContent(label, speaking = false) {
+  return `${speaking ? stopIcon : playIcon}<span>${escapeHtml(label)}</span>`;
+}
+
 export function escapeHtml(value) {
   return String(value ?? '')
     .replaceAll('&', '&amp;')

@@ -13,7 +13,7 @@ import {
   countWords,
   REGION_ORDER,
   SENSITIVITY_LABEL,
-} from './content.js';
+} from './content.js?v=20261107-4';
 import {
   getState,
   getSettings,
@@ -24,7 +24,7 @@ import {
   recordStoryRead,
   awardBadges,
   resetProgress,
-} from './storage.js';
+} from './storage.js?v=20261107-4';
 import {
   mythStats,
   overallStats,
@@ -33,8 +33,8 @@ import {
   glossaryUnlockedCount,
   allStoryQuizzesPassed,
   isStoryUnlocked,
-} from './progress.js';
-import { badgeCatalog, evaluateBadges } from './badges.js';
+} from './progress.js?v=20261107-4';
+import { badgeCatalog, evaluateBadges } from './badges.js?v=20261107-4';
 import {
   escapeHtml,
   iconImg,
@@ -46,27 +46,27 @@ import {
   regionSlug,
   setDocumentTitle,
   focusPage,
+  listenButtonContent,
   toast,
   confirmDialog,
   emptyState,
-} from './ui.js';
-import { renderQuiz } from './quiz.js';
+} from './ui.js?v=20261107-4';
+import { renderQuiz } from './quiz.js?v=20261107-4';
 import {
   renderChallengeHub,
   renderTimelineChallenge,
   renderMatchChallenge,
   renderCultureChallenge,
-} from './challenges.js';
-import { renderMap } from './map.js';
-import { storyScene, characterPortrait } from './scene.js';
-import { narrate, stopNarration, speechSupported, availableVoices } from './narration.js';
+} from './challenges.js?v=20261107-4';
+import { renderMap } from './map.js?v=20261107-4';
+import { storyScene, characterPortrait } from './scene.js?v=20261107-4';
+import { narrate, stopNarration, speechSupported, availableVoices } from './narration.js?v=20261107-4';
 
 const app = document.getElementById('app');
 const nav = document.querySelector('.main-nav');
 const themeButton = document.getElementById('theme-toggle');
 const fontButton = document.getElementById('font-toggle');
 const audioButton = document.getElementById('audio-toggle');
-const voiceButton = document.getElementById('voice-toggle');
 const voiceDialog = document.getElementById('voice-dialog');
 const voiceSelect = document.getElementById('voice-select');
 const voiceNote = document.getElementById('voice-note');
@@ -95,10 +95,11 @@ function applySettings(settings = getSettings()) {
   if (audioButton) {
     const on = settings.audio !== false;
     audioButton.classList.toggle('is-off', !on);
-    audioButton.setAttribute('aria-pressed', String(on));
-    audioButton.setAttribute('aria-label', on ? 'Turn narration off' : 'Turn narration on');
-    audioButton.setAttribute('title', on ? 'Narration on' : 'Narration off');
+    audioButton.setAttribute('aria-label', `Open narration settings — narration ${on ? 'on' : 'off'}`);
+    audioButton.setAttribute('title', on ? 'Narration on — choose a voice' : 'Narration off — choose a voice');
   }
+  const narrationToggle = document.getElementById('narration-enabled');
+  if (narrationToggle) narrationToggle.checked = settings.audio !== false;
 }
 
 function populateVoiceSelect() {
@@ -149,6 +150,8 @@ function openVoiceDialog() {
   if (!voiceDialog || voiceDialog.open) return;
   voiceTrigger = document.activeElement;
   populateVoiceSelect();
+  const narrationToggle = document.getElementById('narration-enabled');
+  if (narrationToggle) narrationToggle.checked = getSettings().audio !== false;
   voiceDialog.showModal();
   voiceSelect?.focus();
 }
@@ -161,7 +164,7 @@ function narrateWithButton(text, button, idleLabel) {
   if (button?.dataset.speaking === 'true') {
     stopNarration();
     button.dataset.speaking = 'false';
-    button.textContent = idleLabel;
+    button.innerHTML = listenButtonContent(idleLabel);
     return;
   }
   if (!getSettings().audio) {
@@ -173,12 +176,12 @@ function narrateWithButton(text, button, idleLabel) {
     onEnd() {
       if (!button) return;
       button.dataset.speaking = 'false';
-      button.textContent = idleLabel;
+      button.innerHTML = listenButtonContent(idleLabel);
     },
     onError() {
       if (!button) return;
       button.dataset.speaking = 'false';
-      button.textContent = idleLabel;
+      button.innerHTML = listenButtonContent(idleLabel);
     },
   });
   if (!started) {
@@ -187,7 +190,7 @@ function narrateWithButton(text, button, idleLabel) {
   }
   if (button) {
     button.dataset.speaking = 'true';
-    button.textContent = 'Stop narration';
+    button.innerHTML = listenButtonContent('Stop narration', true);
   }
 }
 
@@ -198,14 +201,13 @@ function initChrome() {
     updateSettings({ theme: next });
     applySettings();
   });
-  audioButton?.addEventListener('click', () => {
-    const on = !getSettings().audio;
+  audioButton?.addEventListener('click', openVoiceDialog);
+  document.getElementById('narration-enabled')?.addEventListener('change', (event) => {
+    const on = event.currentTarget.checked;
     updateSettings({ audio: on });
     if (!on) stopNarration();
     applySettings();
-    toast(on ? 'Narration on — use Listen beside a story or question.' : 'Narration off', { duration: 1800 });
   });
-  voiceButton?.addEventListener('click', openVoiceDialog);
   voiceSelect?.addEventListener('change', () => {
     updateSettings({ voice: voiceSelect.value });
     previewVoice();
@@ -809,7 +811,7 @@ async function renderStory(mythId, storyId) {
               </figcaption>
             </figure>
             <div class="story-art__actions">
-              <button class="button button--ghost button--small" type="button" data-testid="story-listen">Listen to paragraph</button>
+              <button class="button button--ghost button--small" type="button" data-testid="story-listen">${listenButtonContent('Listen to paragraph')}</button>
               <span class="story-art__hint">Scene ${paragraph + 1} of ${total}</span>
             </div>
           </aside>
@@ -1234,7 +1236,7 @@ async function renderAbout() {
       <p>The game uses native links and buttons, a skip link, visible focus styles, live regions for quiz feedback, keyboard-operable challenges and a text-size control. Animations are minimal and respect <code>prefers-reduced-motion</code>. The world map has a list-view alternative.</p>
       <h2>Images and narration</h2>
       <p>All images are original SVG: sixteen-pixel sigils, story scenes, quiz clues and character portraits are built from a small palette and a deterministic pixel grid. The map is an inline SVG built from a text tile grid. No photographs or generated raster art are used.</p>
-      <p>Narration is optional and uses the browser's own speech synthesis. There are no recorded voice files, no celebrity voice, and no audio is sent to a server. Use the speaker button in the header to turn narration on, the Voice button to choose any installed system voice, and the Listen button beside a story or question.</p>
+      <p>Narration is optional and uses the browser's own speech synthesis. There are no recorded voice files, no celebrity voice, and no audio is sent to a server. Use the speaker button in the header to open narration settings, turn narration on or off, and choose any installed system voice. Use the Listen button beside a story or question.</p>
     </section>
 
     <section class="panel">

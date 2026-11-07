@@ -2,10 +2,10 @@
  * challenges.js — three text challenges built from the same JSON content.
  * Everything is keyboard operable; no drag-and-drop is required.
  */
-import { escapeHtml, focusPage, progressBar, toast, yearLabel, rangeLabel } from './ui.js?v=20261107-10';
-import { loadMythologies, loadAllPlayable } from './content.js?v=20261107-10';
-import { awardBadges, getChallengeRecord, recordChallenge } from './storage.js?v=20261107-10';
-import { evaluateBadges } from './badges.js?v=20261107-10';
+import { escapeHtml, focusPage, progressBar, toast, yearLabel, rangeLabel } from './ui.js?v=20261107-13';
+import { loadMythologies, loadAllPlayable } from './content.js?v=20261107-13';
+import { awardBadges, getChallengeRecord, recordChallenge } from './storage.js?v=20261107-13';
+import { evaluateBadges } from './badges.js?v=20261107-13';
 
 const CHALLENGES = [
   {
@@ -105,7 +105,8 @@ export async function renderTimelineChallenge(root) {
         <button class="button button--primary" type="button" data-testid="check-order">Check my order</button>
         <a class="button button--ghost" href="#/challenges">Back to challenges</a>
       </div>
-      <div id="order-result" data-live="polite"></div>
+      <p class="visually-hidden" id="order-status" role="status" data-testid="order-status"></p>
+      <div id="order-result" tabindex="-1"></div>
     </div>`;
     renderOrder();
     root.querySelector('[data-testid="check-order"]').addEventListener('click', check);
@@ -135,6 +136,9 @@ export async function renderTimelineChallenge(root) {
         if (to < 0 || to >= order.length) return;
         [order[from], order[to]] = [order[to], order[from]];
         renderOrder();
+        const movedItem = order[to];
+        const status = root.querySelector('#order-status');
+        if (status) status.textContent = `${movedItem.name} moved to position ${to + 1} of ${order.length}.`;
         const moved = root.querySelector(`[data-testid="order-item-${button.dataset.id}"]`);
         moved?.querySelector('button[data-dir]')?.focus();
       });
@@ -175,6 +179,7 @@ export async function renderTimelineChallenge(root) {
       page();
     });
     result.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    result.focus({ preventScroll: true });
   }
 
   page();
@@ -320,7 +325,7 @@ export async function renderMatchChallenge(root) {
     }
     stage = 'feedback';
     const feedback = root.querySelector('#match-feedback');
-    feedback.innerHTML = `<div class="quiz-feedback is-visible ${pointsThisRound === 2 ? 'is-correct' : 'is-wrong'}" role="status">
+    feedback.innerHTML = `<div class="quiz-feedback is-visible ${pointsThisRound === 2 ? 'is-correct' : 'is-wrong'}">
       <p class="quiz-feedback__title">${pointsThisRound}/2 this round</p>
       <p class="quiz-feedback__body">${escapeHtml(round.character.name)} belongs to the <strong>${escapeHtml(round.entry.meta.name)}</strong> tradition. Their domain includes <strong>${escapeHtml(correctDomain)}</strong>.</p>
       <p class="quiz-feedback__correct">${escapeHtml(round.character.fun_fact)}</p>
@@ -350,7 +355,9 @@ export async function renderMatchChallenge(root) {
         }
       }
     });
-    feedback.querySelector('[data-testid="match-next"]').focus();
+    // Read the verdict before the next button takes focus.
+    feedback.setAttribute('tabindex', '-1');
+    feedback.focus();
   }
 
   page();
@@ -447,7 +454,7 @@ export async function renderCultureChallenge(root) {
       else button.classList.add('is-dimmed');
     });
     const feedback = root.querySelector('#culture-feedback');
-    feedback.innerHTML = `<div class="quiz-feedback is-visible ${correct ? 'is-correct' : 'is-wrong'}" role="status">
+    feedback.innerHTML = `<div class="quiz-feedback is-visible ${correct ? 'is-correct' : 'is-wrong'}">
       <p class="quiz-feedback__title">${correct ? 'Correct' : 'Not quite'}</p>
       <p class="quiz-feedback__body">This is from <strong>${escapeHtml(round.story.title)}</strong>, a ${escapeHtml(round.entry.meta.name)} story. Source: ${escapeHtml(round.story.source_ref)}.</p>
       <button class="button button--primary" type="button" data-testid="culture-next">${roundIndex + 1 === rounds.length ? 'See result' : 'Next clue'}</button>
@@ -474,7 +481,9 @@ export async function renderCultureChallenge(root) {
         }
       }
     });
-    feedback.querySelector('[data-testid="culture-next"]').focus();
+    // Read the verdict before the next button takes focus.
+    feedback.setAttribute('tabindex', '-1');
+    feedback.focus();
   }
 
   page();

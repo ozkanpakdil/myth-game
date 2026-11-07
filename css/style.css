@@ -343,6 +343,13 @@ a { color: inherit; }
   text-underline-offset: 0.2em;
 }
 .text-link:hover { text-decoration-color: var(--gold); }
+/* Standalone links need a 24px target; inline ones are covered by the WCAG inline exception. */
+.text-link--standalone {
+  display: inline-block;
+  padding-block: 4px;
+  padding-inline: 2px;
+  margin-inline: -2px;
+}
 
 .page-head { margin-bottom: 2.3rem; }
 .page-head--split {

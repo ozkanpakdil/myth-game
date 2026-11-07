@@ -5,13 +5,13 @@
  * review questions from the previous stories, so every quiz has 4–5 questions
  * and a passing mark of 70% (3/4 or 4/5). The final challenge uses all 20.
  */
-import { escapeHtml, iconImg, progressBar, toast, focusPage, difficultyClass, percent, listenButtonContent } from './ui.js?v=20261107-10';
-import { getQuizRecord, recordQuizResult, recordFinalQuiz, recordStoryRead, awardBadges, isStoryRead, getSettings } from './storage.js?v=20261107-10';
-import { loadMythology, loadMythologies, storyIndexById, nextStory } from './content.js?v=20261107-10';
-import { allStoryQuizzesPassed, isStoryUnlocked } from './progress.js?v=20261107-10';
-import { evaluateBadges } from './badges.js?v=20261107-10';
-import { questionScene, choiceIcon } from './scene.js?v=20261107-10';
-import { narrate, stopNarration, ensureNarration, narrationSupported, studioAudioUrl } from './narration.js?v=20261107-10';
+import { escapeHtml, iconImg, progressBar, toast, focusPage, difficultyClass, percent, listenButtonContent } from './ui.js?v=20261107-13';
+import { getQuizRecord, recordQuizResult, recordFinalQuiz, recordStoryRead, awardBadges, isStoryRead, getSettings } from './storage.js?v=20261107-13';
+import { loadMythology, loadMythologies, storyIndexById, nextStory } from './content.js?v=20261107-13';
+import { allStoryQuizzesPassed, isStoryUnlocked } from './progress.js?v=20261107-13';
+import { evaluateBadges } from './badges.js?v=20261107-13';
+import { questionScene, choiceIcon } from './scene.js?v=20261107-13';
+import { narrate, stopNarration, ensureNarration, narrationSupported, studioAudioUrl } from './narration.js?v=20261107-13';
 
 const PASS_RATIO = 0.7;
 
@@ -219,7 +219,7 @@ export async function renderQuiz(root, { mythId, storyId }) {
             ${choices}
           </div>
           <p class="key-hint" aria-hidden="true">Keys: A–D or 1–4 to answer · Enter for next</p>
-          <div id="quiz-feedback" class="quiz-feedback" aria-live="polite"></div>
+          <div id="quiz-feedback" class="quiz-feedback" tabindex="-1"></div>
         </div>
       </div>
     </section>`;
@@ -286,7 +286,11 @@ export async function renderQuiz(root, { mythId, storyId }) {
         ${index + 1 === total ? 'See results' : 'Next question'}
       </button>`;
     feedback.querySelector('[data-testid="quiz-next"]').addEventListener('click', next);
-    feedback.querySelector('[data-testid="quiz-next"]').focus();
+    // Focus the result itself, not the button: screen readers then read the
+    // verdict and the explanation instead of interrupting with "Next question".
+    // The button follows immediately in the tab order, and Enter still advances
+    // through the quiz key handler.
+    feedback.focus();
   }
 
   function next() {

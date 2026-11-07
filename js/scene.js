@@ -939,7 +939,9 @@ export function motifGlyph(metaId, motif) {
 
 export function choiceIcon(metaId, choice, characters, fallbackMotif = 'temple') {
   const character = findCharacterMention(choice, characters);
-  if (character) return characterPortrait(metaId, character);
+  // The glyph sits inside a button whose text already names the choice, so it
+  // must stay decorative or the accessible name is read twice.
+  if (character) return characterPortrait(metaId, character, { decorative: true });
   return motifGlyph(metaId, motifForText(choice) || fallbackMotif);
 }
 
@@ -1018,10 +1020,13 @@ function drawPortrait(g, p, character) {
   g.set(8, 14, p.ink);
 }
 
-export function characterPortrait(metaId, character, { compact = false } = {}) {
+export function characterPortrait(metaId, character, { compact = false, decorative = false } = {}) {
   const p = paletteFor(metaId);
   const g = new Grid(2, 16, 16);
   drawPortrait(g, p, character);
   const label = character?.name ? `Portrait symbol for ${character.name}` : 'Character portrait symbol';
-  return `<svg class="character-portrait${compact ? ' character-portrait--compact' : ''}" viewBox="0 0 32 32" role="img" aria-label="${escapeXml(label)}" shape-rendering="crispEdges" focusable="false">${g.svg()}</svg>`;
+  const a11y = decorative
+    ? 'aria-hidden="true" role="presentation"'
+    : `role="img" aria-label="${escapeXml(label)}"`;
+  return `<svg class="character-portrait${compact ? ' character-portrait--compact' : ''}" viewBox="0 0 32 32" ${a11y} shape-rendering="crispEdges" focusable="false">${g.svg()}</svg>`;
 }

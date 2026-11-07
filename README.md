@@ -188,7 +188,10 @@ not fetched images. See `assets/STYLE_GUIDE.md` for the palette and grid rules.
 ## Accessibility notes
 
 - Skip link; visible `:focus-visible` rings; native links and buttons.
-- Route changes focus the page heading; quiz feedback uses `aria-live`.
+- Route changes focus the page heading. Answering a quiz question moves focus to
+  the result so screen readers read the verdict and explanation before the
+  `Next question` button; reordering the timeline challenge is announced in a
+  live region.
 - Challenges are keyboard-operable with arrow buttons, not drag-and-drop.
 - The map has focusable regions, a list view and a horizontally scrollable
   mobile view; region details are announced in a live region.

@@ -13,7 +13,7 @@ import {
   countWords,
   REGION_ORDER,
   SENSITIVITY_LABEL,
-} from './content.js?v=20261107-10';
+} from './content.js?v=20261107-13';
 import {
   getState,
   getSettings,
@@ -24,7 +24,7 @@ import {
   recordStoryRead,
   awardBadges,
   resetProgress,
-} from './storage.js?v=20261107-10';
+} from './storage.js?v=20261107-13';
 import {
   mythStats,
   overallStats,
@@ -33,8 +33,8 @@ import {
   glossaryUnlockedCount,
   allStoryQuizzesPassed,
   isStoryUnlocked,
-} from './progress.js?v=20261107-10';
-import { badgeCatalog, evaluateBadges } from './badges.js?v=20261107-10';
+} from './progress.js?v=20261107-13';
+import { badgeCatalog, evaluateBadges } from './badges.js?v=20261107-13';
 import {
   escapeHtml,
   iconImg,
@@ -50,17 +50,17 @@ import {
   toast,
   confirmDialog,
   emptyState,
-} from './ui.js?v=20261107-10';
-import { renderQuiz } from './quiz.js?v=20261107-10';
+} from './ui.js?v=20261107-13';
+import { renderQuiz } from './quiz.js?v=20261107-13';
 import {
   renderChallengeHub,
   renderTimelineChallenge,
   renderMatchChallenge,
   renderCultureChallenge,
-} from './challenges.js?v=20261107-10';
-import { renderMap } from './map.js?v=20261107-10';
-import { storyScene, characterPortrait } from './scene.js?v=20261107-10';
-import { narrate, stopNarration, speechSupported, availableVoices, narrationSupported, studioAudioUrl } from './narration.js?v=20261107-10';
+} from './challenges.js?v=20261107-13';
+import { renderMap } from './map.js?v=20261107-13';
+import { storyScene, characterPortrait } from './scene.js?v=20261107-13';
+import { narrate, stopNarration, speechSupported, availableVoices, narrationSupported, studioAudioUrl } from './narration.js?v=20261107-13';
 
 const app = document.getElementById('app');
 const nav = document.querySelector('.main-nav');
@@ -479,7 +479,7 @@ async function renderHome() {
           <div><dt>Current</dt><dd>${lastMyth ? escapeHtml(lastMyth.name) : '—'}</dd></div>
         </dl>
         <a class="button button--primary button--wide" href="${continueHref}" data-testid="continue-button">${started ? 'Continue' : 'Choose a tradition'}</a>
-        <p class="small muted"><a class="text-link" href="#/results">See detailed progress</a></p>
+        <p class="small muted"><a class="text-link text-link--standalone" href="#/results">See detailed progress</a></p>
       </aside>
     </section>
 
@@ -887,7 +887,7 @@ async function renderStory(mythId, storyId) {
                 ${(story.characters || [])
                   .map((id) => {
                     const character = data.characters.find((item) => item.id === id);
-                    return character ? `<a class="chip chip--figure" href="#/codex/${meta.id}">${characterPortrait(meta.id, character)}<span>${escapeHtml(character.name)}</span></a>` : '';
+                    return character ? `<a class="chip chip--figure" href="#/codex/${meta.id}">${characterPortrait(meta.id, character, { decorative: true })}<span>${escapeHtml(character.name)}</span></a>` : '';
                   })
                   .join('')}
               </div>
@@ -1001,7 +1001,7 @@ async function renderCodex(initialMythId = null) {
           ${characters.length ? `<h3 class="codex-subhead">Figures</h3><div class="codex-grid">${characters
             .map((character) => character.unlocked
               ? `<article class="codex-card" data-testid="codex-card-${entry.meta.id}-${character.id}">
-                  <div class="codex-card__head"><span class="codex-card__icon">${characterPortrait(entry.meta.id, character)}</span><div><h4>${escapeHtml(character.name)}</h4><p class="muted small">${escapeHtml(character.role)}</p></div></div>
+                  <div class="codex-card__head"><span class="codex-card__icon">${characterPortrait(entry.meta.id, character, { decorative: true })}</span><div><h4>${escapeHtml(character.name)}</h4><p class="muted small">${escapeHtml(character.role)}</p></div></div>
                   <p class="codex-card__domains">${character.domain.map((domain) => `<span class="chip chip--tiny">${escapeHtml(domain)}</span>`).join('')}</p>
                   <p class="small"><strong>Symbols:</strong> ${escapeHtml(character.symbols.join(', '))}</p>
                   <p class="codex-card__fact">${escapeHtml(character.fun_fact)}</p>
@@ -1262,7 +1262,7 @@ async function renderAbout() {
       <p>Hindu and Shinto sacred stories, and Maya traditions, are living traditions, not relics. They are presented as traditions and with respect. The game does not depict deities' faces; it uses objects and symbols. If you belong to one of these traditions and find something inaccurate or disrespectful, the correct response is to remove or revise it, not to defend the text.</p>
       <p>Sensitivity is marked on each tradition: <span class="pill pill--quiet">General tradition</span> <span class="pill pill--gold">Living tradition</span>. The Hindu entries are marked high sensitivity and need a dedicated human review before release.</p>
       <h2>Accessibility</h2>
-      <p>The game uses native links and buttons, a skip link, visible focus styles, live regions for quiz feedback, keyboard-operable challenges and a text-size control. Animations are minimal and respect <code>prefers-reduced-motion</code>. The world map has a list-view alternative.</p>
+      <p>The game uses native links and buttons, a skip link, visible focus styles, quiz results that take focus so they are read aloud, keyboard-operable challenges and a text-size control. Animations are minimal and respect <code>prefers-reduced-motion</code>. The world map has a list-view alternative.</p>
       <h2>Images and narration</h2>
       <p>All images are original SVG: sixteen-pixel sigils, story scenes, quiz clues and character portraits are built from a small palette and a deterministic pixel grid. The map is an inline SVG built from a text tile grid. No photographs or generated raster art are used.</p>
       <p>Narration is optional. Choose a generated narrator (Joe, Cori or Morgan) in the speaker menu, or use any installed system voice as the fallback. Joe and Cori are open-voice models with permissive licences; Morgan is a fan-made XTTS v2 clone of a public figure, licensed for non-commercial use only and never presented as an endorsement. No audio is sent to a server. Use the Listen button beside a story or question.</p>

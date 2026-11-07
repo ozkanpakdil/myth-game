@@ -86,15 +86,18 @@ test.describe('accessibility basics', () => {
     await expect(page.getByTestId('myths-page')).toBeVisible();
   });
 
-  test('quiz feedback is announced and keyboard operable', async ({ page }) => {
+  test('quiz feedback is focused, readable and keyboard operable', async ({ page }) => {
     await page.goto('/#/myth/greek/quiz/greek-01');
     await expect(page.getByTestId('quiz-question')).toBeVisible();
     const question = dataByMyth.greek.quiz[0];
     await page.getByTestId(`quiz-choice-${question.correct_index}`).click();
     const feedback = page.locator('#quiz-feedback');
     await expect(feedback).toBeVisible();
-    await expect(feedback).toHaveAttribute('aria-live', 'polite');
+    await expect(feedback).toContainText('Correct');
+    await expect(feedback).toContainText('The answer is');
+    await expect(feedback).toBeFocused();
     await expect(page.locator('.choice').first()).toBeDisabled();
+    await page.keyboard.press('Tab');
     await expect(page.getByTestId('quiz-next')).toBeFocused();
     await page.keyboard.press('Enter');
     await expect(page.getByTestId('quiz-progress-label')).toContainText('Question 2 of 4');

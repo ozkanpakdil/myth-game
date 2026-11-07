@@ -13,7 +13,7 @@ import {
   countWords,
   REGION_ORDER,
   SENSITIVITY_LABEL,
-} from './content.js?v=20261107-6';
+} from './content.js?v=20261107-7';
 import {
   getState,
   getSettings,
@@ -24,7 +24,7 @@ import {
   recordStoryRead,
   awardBadges,
   resetProgress,
-} from './storage.js?v=20261107-6';
+} from './storage.js?v=20261107-7';
 import {
   mythStats,
   overallStats,
@@ -33,8 +33,8 @@ import {
   glossaryUnlockedCount,
   allStoryQuizzesPassed,
   isStoryUnlocked,
-} from './progress.js?v=20261107-6';
-import { badgeCatalog, evaluateBadges } from './badges.js?v=20261107-6';
+} from './progress.js?v=20261107-7';
+import { badgeCatalog, evaluateBadges } from './badges.js?v=20261107-7';
 import {
   escapeHtml,
   iconImg,
@@ -50,17 +50,17 @@ import {
   toast,
   confirmDialog,
   emptyState,
-} from './ui.js?v=20261107-6';
-import { renderQuiz } from './quiz.js?v=20261107-6';
+} from './ui.js?v=20261107-7';
+import { renderQuiz } from './quiz.js?v=20261107-7';
 import {
   renderChallengeHub,
   renderTimelineChallenge,
   renderMatchChallenge,
   renderCultureChallenge,
-} from './challenges.js?v=20261107-6';
-import { renderMap } from './map.js?v=20261107-6';
-import { storyScene, characterPortrait } from './scene.js?v=20261107-6';
-import { narrate, stopNarration, speechSupported, availableVoices } from './narration.js?v=20261107-6';
+} from './challenges.js?v=20261107-7';
+import { renderMap } from './map.js?v=20261107-7';
+import { storyScene, characterPortrait } from './scene.js?v=20261107-7';
+import { narrate, stopNarration, speechSupported, availableVoices } from './narration.js?v=20261107-7';
 
 const app = document.getElementById('app');
 const nav = document.querySelector('.main-nav');
@@ -100,6 +100,36 @@ function applySettings(settings = getSettings()) {
   }
   const narrationToggle = document.getElementById('narration-enabled');
   if (narrationToggle) narrationToggle.checked = settings.audio !== false;
+}
+
+const STUDIO_LABELS = { cori: 'Cori', joe: 'Joe' };
+
+function selectedStudioVoice() {
+  return document.querySelector('input[name="studio-voice"]:checked');
+}
+
+function updateStudioVoiceUI() {
+  const selected = selectedStudioVoice();
+  const saved = getSettings().studioVoice || '';
+  const apply = document.getElementById('studio-voice-apply');
+  const status = document.getElementById('studio-voice-status');
+  if (apply) apply.disabled = !selected || selected.value === saved;
+  if (!status) return;
+  if (saved) {
+    status.textContent = `${STUDIO_LABELS[saved] || saved} is saved for the full narration. Live Listen still uses your system voice until that audio is generated.`;
+  } else if (selected) {
+    status.textContent = `${STUDIO_LABELS[selected.value] || selected.value} selected — press “Use this voice” to save it.`;
+  } else {
+    status.textContent = 'No studio voice chosen yet.';
+  }
+}
+
+function saveStudioVoice() {
+  const selected = selectedStudioVoice();
+  if (!selected) return;
+  updateSettings({ studioVoice: selected.value });
+  updateStudioVoiceUI();
+  toast(`${STUDIO_LABELS[selected.value] || selected.value} saved for the full narration.`, { duration: 2800 });
 }
 
 function populateVoiceSelect() {
@@ -157,6 +187,11 @@ function openVoiceDialog() {
   populateVoiceSelect();
   const narrationToggle = document.getElementById('narration-enabled');
   if (narrationToggle) narrationToggle.checked = getSettings().audio !== false;
+  const savedStudio = getSettings().studioVoice || '';
+  document.querySelectorAll('input[name="studio-voice"]').forEach((input) => {
+    input.checked = input.value === savedStudio;
+  });
+  updateStudioVoiceUI();
   voiceDialog.showModal();
   voiceSelect?.focus();
 }
@@ -217,6 +252,10 @@ function initChrome() {
     updateSettings({ voice: voiceSelect.value });
     previewVoice();
   });
+  document.querySelectorAll('input[name="studio-voice"]').forEach((input) => {
+    input.addEventListener('change', updateStudioVoiceUI);
+  });
+  document.getElementById('studio-voice-apply')?.addEventListener('click', saveStudioVoice);
   voiceDialog?.querySelector('[data-testid="voice-preview"]')?.addEventListener('click', previewVoice);
   voiceDialog?.addEventListener('close', () => {
     stopNarration();

@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#0e1310">
     <title>Mythos · A world mythology game</title>
     <link rel="icon" href="assets/svg/logo.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="css/style.css?v=20261107-6">
+    <link rel="stylesheet" href="css/style.css?v=20261107-7">
     <!-- Google tag (gtag.js). Kept off localhost so development and tests stay quiet. -->
     <script>
       (function () {
@@ -104,26 +104,36 @@
       <form method="dialog" class="dialog__panel">
         <p class="eyebrow">Narration</p>
         <h2 class="dialog__title" id="voice-dialog-title">Choose a voice</h2>
-        <p class="dialog__body">These are the voices installed in your browser. The choice stays on this device and is used by every Listen button.</p>
+        <p class="dialog__body">Your system voice is used by every Listen button. If you want a fuller narrator, audition the studio voices below and save one for the full narration.</p>
         <label class="narration-switch" for="narration-enabled">
           <span><strong>Narration</strong><small>Read aloud when you press Listen.</small></span>
           <input type="checkbox" id="narration-enabled" data-testid="narration-enabled">
         </label>
-        <label class="field-label" for="voice-select">Narration voice</label>
+        <label class="field-label" for="voice-select">Live narration voice (system)</label>
         <select class="voice-select" id="voice-select" data-testid="voice-select">
           <option value="">System default</option>
         </select>
         <p class="voice-note" id="voice-note" data-testid="voice-note" aria-live="polite">Looking for voices…</p>
         <section class="studio-samples" aria-labelledby="studio-samples-title">
           <h3 class="studio-samples__title" id="studio-samples-title">Try a local neural narrator</h3>
-          <p class="studio-samples__note">Two samples generated on this machine with Piper. They are samples only; the full story narration is not generated yet.</p>
+          <p class="studio-samples__note">Audition both, then choose one. Saving a studio voice records your choice for the full narration; the live Listen buttons still use your system voice until that audio is generated.</p>
           <div class="studio-sample">
-            <div class="studio-sample__label"><span>Cori</span><small>British English · public domain</small></div>
-            <audio controls preload="none" src="audio/samples/en_GB-cori-high.mp3" data-testid="studio-sample-cori"></audio>
+            <label class="studio-sample__choice">
+              <input type="radio" name="studio-voice" value="cori" data-testid="studio-voice-cori">
+              <span><strong>Cori</strong><small>British English · public domain</small></span>
+            </label>
+            <audio controls preload="none" src="audio/samples/en_GB-cori-high.mp3" data-testid="studio-sample-cori" aria-label="Cori voice sample"></audio>
           </div>
           <div class="studio-sample">
-            <div class="studio-sample__label"><span>Joe</span><small>American English · CC0</small></div>
-            <audio controls preload="none" src="audio/samples/en_US-joe-medium.mp3" data-testid="studio-sample-joe"></audio>
+            <label class="studio-sample__choice">
+              <input type="radio" name="studio-voice" value="joe" data-testid="studio-voice-joe">
+              <span><strong>Joe</strong><small>American English · CC0</small></span>
+            </label>
+            <audio controls preload="none" src="audio/samples/en_US-joe-medium.mp3" data-testid="studio-sample-joe" aria-label="Joe voice sample"></audio>
+          </div>
+          <div class="studio-samples__actions">
+            <button class="button button--ghost button--small" type="button" id="studio-voice-apply" data-testid="studio-voice-apply" disabled>Use this voice</button>
+            <p class="studio-samples__status" id="studio-voice-status" data-testid="studio-voice-status" aria-live="polite">No studio voice chosen yet.</p>
           </div>
         </section>
         <p class="voice-tip"><strong>Want a more human voice?</strong> Install a Premium or Enhanced system voice: on macOS, System Settings → Accessibility → Spoken Content → Manage Voices; on Windows, Settings → Time &amp; language → Speech. The list updates after a refresh.</p>
@@ -136,6 +146,6 @@
 
     <div id="toast" role="status" aria-live="polite"></div>
 
-    <script type="module" src="js/app.js?v=20261107-6"></script>
+    <script type="module" src="js/app.js?v=20261107-7"></script>
   </body>
 </html>

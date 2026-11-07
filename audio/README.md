@@ -28,6 +28,8 @@ ffmpeg -y -i /tmp/cori.wav -ac 1 -codec:a libmp3lame -b:a 64k \
   audio/samples/en_GB-cori-high.mp3
 ```
 
-Before generating the full library, decide whether to keep the samples and which
-voice to use. Full narration also needs an audio player/fallback path in
+The dialog lets the reader audition and choose Cori or Joe. The choice is saved
+as `studioVoice` in the settings blob, but it is not yet connected to playback.
+Before generating the full library, decide which voice to use and add an audio
+player/fallback path in `js/narration.js`. Full narration also needs an audio player/fallback path in
 `js/narration.js`.

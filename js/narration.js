@@ -7,7 +7,7 @@
  * has no speech support.
  */
 
-import { getSettings, updateSettings } from './storage.js?v=20261107-6';
+import { getSettings, updateSettings } from './storage.js?v=20261107-7';
 
 let generation = 0;
 

@@ -171,6 +171,15 @@ test.describe('visual storytelling and narration', () => {
     const sample = await page.request.get('/audio/samples/en_GB-cori-high.mp3');
     expect(sample.status()).toBe(200);
     expect(sample.headers()['content-type']).toContain('audio');
+    const applyStudio = page.getByTestId('studio-voice-apply');
+    await expect(applyStudio).toBeDisabled();
+    await expect(page.getByTestId('studio-voice-status')).toContainText('No studio voice chosen yet');
+    await page.getByTestId('studio-voice-joe').check();
+    await expect(applyStudio).toBeEnabled();
+    await applyStudio.click();
+    await expect(page.getByTestId('studio-voice-status')).toContainText('Joe is saved for the full narration');
+    const savedStudio = await page.evaluate(() => JSON.parse(localStorage.getItem('mythos.settings.v1')).studioVoice);
+    expect(savedStudio).toBe('joe');
     const duration = await page.getByTestId('studio-sample-cori').evaluate((audio) => new Promise((resolve) => {
       if (audio.readyState >= 1) return resolve(audio.duration);
       audio.addEventListener('loadedmetadata', () => resolve(audio.duration), { once: true });
@@ -188,6 +197,8 @@ test.describe('visual storytelling and narration', () => {
     await page.reload();
     await page.locator('#audio-toggle').click();
     await expect(select).toHaveValue('test-tenor');
+    await expect(page.getByTestId('studio-voice-joe')).toBeChecked();
+    await expect(page.getByTestId('studio-voice-status')).toContainText('Joe is saved for the full narration');
     await page.getByTestId('voice-preview').click();
   });
 

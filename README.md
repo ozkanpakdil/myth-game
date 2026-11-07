@@ -194,7 +194,9 @@ not fetched images. See `assets/STYLE_GUIDE.md` for the palette and grid rules.
   with an on/off switch and a picker for any installed system voice; the choice
   is persisted. Premium/Enhanced/Natural voices are grouped first with a ★.
   Two open-licensed Piper neural-voice samples are available to audition in the
-  same dialog; full audio narration is not generated yet.
+  same dialog. They are selectable radio choices and the chosen voice is saved
+  as `studioVoice`; full audio narration is not generated yet, so live Listen
+  buttons still use the selected system voice.
 - `prefers-reduced-motion` removes animations.
 - All decorative sigils have empty `alt`; labels are in text.
 

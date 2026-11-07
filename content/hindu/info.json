@@ -1,0 +1,74 @@
+{
+  "id": "hindu",
+  "name": "Hindu",
+  "intro": "Hinduism is a family of living traditions rather than a single founder-led religion. Its sacred stories are told in Sanskrit, Tamil and many other languages, and they are still recited in temples, at festivals and in homes today. The oldest layer, the Rigveda, preserves hymns to gods such as Agni and Indra; the great epics, the Ramayana and the Mahabharata, turn divine power into narrative on a human scale; the Puranas gather creation accounts, genealogies and devotional tales of Vishnu, Shiva and the Goddess. Some traditions read these stories as history, others as allegory, and most honour several meanings at once. Different regions and communities tell different versions, and no single telling is the only authoritative one. Because these stories belong to a living faith, they are presented here with respect, as sacred stories rather than as fiction.",
+  "timeline": [
+    {
+      "label": "Vedic hymns are composed and sung",
+      "year_text": "about 1500–1200 BCE",
+      "note": "Hymns to Agni, Indra, Varuna and other gods are preserved in the Rigveda and passed down orally with extraordinary care."
+    },
+    {
+      "label": "The Upanishads and early philosophical schools",
+      "year_text": "about 800–400 BCE",
+      "note": "Teachers explore the self, brahman and liberation, and the ideas that later stories assume begin to take shape."
+    },
+    {
+      "label": "The Ramayana and Mahabharata grow into epics",
+      "year_text": "roughly 400 BCE–400 CE",
+      "note": "Oral bards and written traditions expand the two great epics, which are still performed and retold in many languages."
+    },
+    {
+      "label": "The Puranas are compiled",
+      "year_text": "roughly 300–1000 CE",
+      "note": "Collections of creation accounts, genealogies and devotional narratives centre on Vishnu, Shiva and the Goddess."
+    },
+    {
+      "label": "The Devi Mahatmya is composed",
+      "year_text": "roughly 500–900 CE",
+      "note": "A poem within the Markandeya Purana tells of Durga's victory over Mahishasura and is recited at Navaratri."
+    },
+    {
+      "label": "Bhakti movements spread across the subcontinent",
+      "year_text": "roughly 700–1700 CE",
+      "note": "Poets in Tamil, Hindi, Bengali and other languages retell the old stories with intense personal devotion."
+    },
+    {
+      "label": "Living tradition",
+      "year_text": "present day",
+      "note": "The stories remain in daily worship, festival performance, dance, film and family storytelling around the world."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Rigveda",
+      "note": "The oldest surviving collection of Vedic hymns, composed in Sanskrit and transmitted orally for centuries before being written down."
+    },
+    {
+      "title": "Valmiki Ramayana",
+      "note": "The Sanskrit epic of Rama in seven books (kandas), from his boyhood to his exile, the war in Lanka and its aftermath."
+    },
+    {
+      "title": "Mahabharata",
+      "note": "A vast Sanskrit epic of the Pandava and Kaurava families, containing the Bhagavad Gita and the story of the churning of the ocean."
+    },
+    {
+      "title": "Bhagavad Gita",
+      "note": "A dialogue of about seven hundred verses within the Mahabharata, in which Krishna teaches Arjuna on the eve of battle."
+    },
+    {
+      "title": "Bhagavata Purana",
+      "note": "A major devotional Purana, especially loved for its tellings of Vishnu's avatars, the churning of the ocean and Krishna's life."
+    },
+    {
+      "title": "Devi Mahatmya (Markandeya Purana)",
+      "note": "The central Sanskrit text of the Goddess, telling how Durga defeats Mahishasura and other demons."
+    },
+    {
+      "title": "Regional retellings",
+      "note": "Works such as Tulsidas's Ramcharitmanas in Awadhi and Kamban's Ramavataram in Tamil show how living traditions reshape the same stories."
+    }
+  ],
+  "sensitivity": "high",
+  "verified": false
+}

@@ -1,0 +1,69 @@
+{
+  "id": "maya",
+  "name": "Maya",
+  "intro": "Maya traditions belong to many communities across what is now Mexico, Guatemala, Belize, Honduras and El Salvador, and they are still lived and celebrated today. Their sacred stories were carved on stone, painted in folded books and carried in speech, song and ceremony. The best-known collection is the Popol Vuh, a K'iche' account of creation, the Hero Twins and the first people made from maize. It was written down in the 16th century in K'iche' using the Latin alphabet, and translated into other languages centuries later; the surviving manuscript is itself a later transcription. Other Maya communities, such as the Yucatec and the Ch'orti', keep their own traditions. This game retells a few of these sacred stories with care and respect.",
+  "timeline": [
+    {
+      "label": "Maya communities and writing",
+      "year_text": "about 1000 BCE – 900 CE",
+      "note": "Maya communities build cities, develop a full writing system and keep detailed calendars; sacred stories are recorded on stone monuments and in painted books."
+    },
+    {
+      "label": "The Classic period",
+      "year_text": "about 250 – 900 CE",
+      "note": "Divine kings rule cities such as Tikal and Palenque, and scribes paint folded codices, though no version of the Popol Vuh survives from this period."
+    },
+    {
+      "label": "The K'iche' highlands",
+      "year_text": "about 1200 – 1500 CE",
+      "note": "K'iche' communities build a powerful confederation in the Guatemalan highlands, and the traditions later gathered in the Popol Vuh take shape."
+    },
+    {
+      "label": "The Popol Vuh is written down",
+      "year_text": "16th century, about 1550",
+      "note": "A K'iche' author or authors set the sacred stories in writing with the Latin alphabet, in the K'iche' language."
+    },
+    {
+      "label": "The manuscript is copied and translated",
+      "year_text": "about 1701 – 1861",
+      "note": "Father Francisco Ximénez copies and translates the text in the early 1700s, and printed translations reach a wider public in the 19th century."
+    },
+    {
+      "label": "Living traditions",
+      "year_text": "present day",
+      "note": "K'iche' and other Maya communities continue ceremonies, day-keeping and language revitalization, and scholars work alongside them on the texts."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Popol Vuh: The Definitive Edition of the Mayan Book of the Dawn of Life and the Glories of Gods and Kings, translated by Dennis Tedlock (1996)",
+      "note": "A widely used English translation with an introduction and notes on the K'iche' language and the oral performance of the text."
+    },
+    {
+      "title": "Popol Vuh: The Sacred Book of the Maya, translated by Allen J. Christenson (2003; revised 2007)",
+      "note": "A scholarly English translation with extensive notes on the K'iche' text, its poetics and its colonial context."
+    },
+    {
+      "title": "The Popol Vuh manuscript, transcribed by Father Francisco Ximénez in the early 18th century and held by the Newberry Library, Chicago",
+      "note": "The surviving manuscript is a later transcription and translation of the 16th-century K'iche' text, not the original document."
+    },
+    {
+      "title": "The Book of Chilam Balam of Chumayel, translated by Ralph L. Roys (1933)",
+      "note": "Colonial-period Yucatec Maya texts that preserve a different body of tradition from the K'iche' Popol Vuh."
+    },
+    {
+      "title": "Diego de Landa, Relación de las cosas de Yucatán (written about 1566)",
+      "note": "A colonial Spanish account of Yucatec Maya life, calendar and writing; valuable, but shaped by its author's hostile perspective."
+    },
+    {
+      "title": "David Freidel, Linda Schele and Joy Parker, Maya Cosmos: Three Thousand Years on the Shaman's Path (1993)",
+      "note": "A wide-ranging study of Maya cosmology and ritual that draws on archaeology, inscriptions and living communities."
+    },
+    {
+      "title": "Mary Miller and Karl Taube, An Illustrated Dictionary of the Gods and Symbols of Ancient Mexico and the Maya (1993)",
+      "note": "A reference work on Maya and central Mexican deities, symbols and iconography."
+    }
+  ],
+  "sensitivity": "medium",
+  "verified": false
+}

@@ -1,0 +1,74 @@
+{
+  "id": "egypt",
+  "name": "Egyptian",
+  "intro": "Egyptian myth is a family of traditions rather than a single book. Its stories were carved on pyramid walls, painted on coffins, written on papyrus, and sung in temples over more than three thousand years, and they change with every generation that copied them. At the centre stands Maat, the order that holds the world together, and the sun god Ra, who crosses the sky each day and battles chaos each night. Around them gather the gods of Heliopolis: Atum the creator, Osiris the murdered king, Isis the magician, Horus the rightful heir, and Set the restless rival. The myths explain why the Nile rises, why kings rule, and what awaits the dead. They were also living ritual, words spoken to heal, to protect, and to guide. This section retells six of the best-attested stories for modern readers.",
+  "timeline": [
+    {
+      "label": "Unification and Horus kingship",
+      "year_text": "c. 3100 BCE",
+      "note": "Upper and Lower Egypt are united, and the king is identified with Horus, whose name is written inside a falcon-topped serekh."
+    },
+    {
+      "label": "The Pyramid Texts",
+      "year_text": "c. 2400–2200 BCE",
+      "note": "Spells carved inside royal pyramids at Saqqara preserve the earliest large body of Egyptian funerary, creation, and Osiris material."
+    },
+    {
+      "label": "The Coffin Texts",
+      "year_text": "c. 2050–1650 BCE",
+      "note": "Middle Kingdom spells painted on coffins extend hopes for the afterlife beyond the royal family to officials and ordinary households."
+    },
+    {
+      "label": "New Kingdom underworld books",
+      "year_text": "c. 1550–1100 BCE",
+      "note": "The Book of the Dead, the Book of Caverns, and related works map the sun god's night journey and the judgement of the dead."
+    },
+    {
+      "label": "Ramesside narrative papyri",
+      "year_text": "c. 1150 BCE",
+      "note": "Papyrus Chester Beatty I and Papyrus Turin 1993 preserve the contendings of Horus and Set and the legend of Ra's secret name."
+    },
+    {
+      "label": "Plutarch writes Isis and Osiris",
+      "year_text": "2nd century CE",
+      "note": "A Greek author composes the fullest connected account of Osiris, Set, Isis, and Horus, many centuries after the Egyptian originals."
+    },
+    {
+      "label": "The temples fall silent",
+      "year_text": "4th century CE",
+      "note": "Under Roman and Christian rule the temple cults decline; the last dated hieroglyphic inscription is carved at Philae in 394 CE."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Pyramid Texts",
+      "note": "Old Kingdom spells carved in the pyramids of Saqqara from about 2400 BCE, including creation accounts and allusions to Osiris."
+    },
+    {
+      "title": "Coffin Texts",
+      "note": "Middle Kingdom funerary spells on coffins, which made elaborate afterlife hopes available to non-royal Egyptians."
+    },
+    {
+      "title": "Book of the Dead",
+      "note": "New Kingdom papyri of funerary spells, including spell 125 on the weighing of the heart before Osiris."
+    },
+    {
+      "title": "Book of Caverns",
+      "note": "A New Kingdom underworld book describing the sun god's nightly passage and the treatment of his enemies."
+    },
+    {
+      "title": "Plutarch, Isis and Osiris",
+      "note": "A Greek essay of the second century CE and the fullest connected narrative of Osiris, Set, and Horus; a late source."
+    },
+    {
+      "title": "Papyrus Chester Beatty I",
+      "note": "A Ramesside papyrus of about 1150 BCE preserving The Contendings of Horus and Set."
+    },
+    {
+      "title": "Papyrus Turin 1993",
+      "note": "A Ramesside magical papyrus containing the legend of Isis and the secret name of Ra."
+    }
+  ],
+  "sensitivity": "low",
+  "verified": false
+}

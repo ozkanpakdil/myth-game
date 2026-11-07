@@ -1,0 +1,232 @@
+[
+  {
+    "id": "hindu-q01",
+    "story_id": "hindu-01",
+    "question": "In the churning of the ocean, what do the devas and asuras use as a rope?",
+    "choices": ["The serpent Vasuki", "A chain of gold", "The serpent Shesha", "A length of mountain vine"],
+    "correct_index": 0,
+    "explanation": "The devas and asuras wind the serpent Vasuki around Mount Mandara and pull the two ends, using the mountain as a churning rod.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "hindu-q02",
+    "story_id": "hindu-01",
+    "question": "Who supports Mount Mandara on his back during the churning?",
+    "choices": ["Shiva", "Brahma", "Vishnu as the tortoise Kurma", "Indra"],
+    "correct_index": 2,
+    "explanation": "When the mountain starts to sink, Vishnu takes the form of the tortoise Kurma and holds it up so that the churning can continue.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "hindu-q03",
+    "story_id": "hindu-01",
+    "question": "In many tellings, what rises from the ocean before the treasures and the amrita?",
+    "choices": ["A white horse", "A deadly poison called halahala", "The goddess Lakshmi", "A wish-granting cow"],
+    "correct_index": 1,
+    "explanation": "The poison halahala comes up early in the churning, and Shiva is said to hold it in his throat to spare the worlds; tellings differ on when this episode falls.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "hindu-q04",
+    "story_id": "hindu-01",
+    "question": "In many tellings, why does the churning end with the asuras empty-handed?",
+    "choices": [
+      "The asuras lose interest and go home",
+      "The ocean runs dry before the nectar is shared",
+      "Vishnu, as Mohini, offers to divide the nectar and gives it to the devas",
+      "The devas steal the pot while the asuras sleep"
+    ],
+    "correct_index": 2,
+    "explanation": "The churning stops when the asuras seize the pot of amrita, and Mohini, a form of Vishnu, divides the nectar so that the devas receive it instead.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "hindu-q05",
+    "story_id": "hindu-02",
+    "question": "For how many years is Rama sent into exile?",
+    "choices": ["Seven", "Ten", "Fourteen", "Twenty-one"],
+    "correct_index": 2,
+    "explanation": "Kaikeyi asks that Rama be sent to the forest for fourteen years, and Rama accepts the term to keep his father's promise.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "hindu-q06",
+    "story_id": "hindu-02",
+    "question": "Who goes with Rama into the forest?",
+    "choices": ["Sita and Lakshmana", "Bharata and Shatrughna", "Kaikeyi and Manthara", "Hanuman and Sugriva"],
+    "correct_index": 0,
+    "explanation": "Sita refuses to stay behind and Lakshmana insists on accompanying his brother, so the three leave Ayodhya together in simple clothes.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "hindu-q07",
+    "story_id": "hindu-02",
+    "question": "What does Kaikeyi ask for when she claims Dasharatha's two boons?",
+    "choices": [
+      "A palace and a treasury",
+      "Bharata's kingship and Rama's fourteen-year exile",
+      "Rama's bow and the royal army",
+      "A place in the forest beside Rama"
+    ],
+    "correct_index": 1,
+    "explanation": "Kaikeyi uses the boons to have her own son Bharata made king and Rama exiled, and Dasharatha cannot refuse because a king's word must be kept.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "hindu-q08",
+    "story_id": "hindu-03",
+    "question": "What does Ravana send to draw Rama away from the hut?",
+    "choices": ["A golden deer", "A talking parrot", "A wounded ascetic", "A caravan of merchants"],
+    "correct_index": 0,
+    "explanation": "The golden deer is really the demon Maricha in disguise, and Sita's wish to have it leads Rama to leave her in Lakshmana's care.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "hindu-q09",
+    "story_id": "hindu-03",
+    "question": "Who finds Sita in Lanka and brings word back to Rama?",
+    "choices": ["Lakshmana", "Hanuman", "Sugriva", "Jatayu"],
+    "correct_index": 1,
+    "explanation": "Hanuman crosses the sea, finds Sita in the grove where Ravana is holding her, and returns to Rama with news of where she is.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "hindu-q10",
+    "story_id": "hindu-03",
+    "question": "How does Hanuman prove to Sita that he comes from Rama?",
+    "choices": ["He recites the Ramayana", "He shows her Rama's ring", "He carries Rama's bow", "He brings Lakshmana with him"],
+    "correct_index": 1,
+    "explanation": "Hanuman gives Sita Rama's ring and takes her jewel back as a token, so that she can trust his message and Rama can know she is safe.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "hindu-q11",
+    "story_id": "hindu-04",
+    "question": "Who builds the bridge from the mainland to Lanka?",
+    "choices": ["The vanara army", "Ravana's rakshasas", "The devas", "The nagas"],
+    "correct_index": 0,
+    "explanation": "Rama's vanara armies build the bridge of stones and trees across the sea, with Hanuman and the monkeys carrying the material.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "hindu-q12",
+    "story_id": "hindu-04",
+    "question": "In the Valmiki Ramayana, how does Ravana meet his end?",
+    "choices": [
+      "He is killed by Lakshmana's spear",
+      "He is struck down by Rama's divine arrow",
+      "He drowns in the sea",
+      "He is killed by his brother Vibhishana"
+    ],
+    "correct_index": 1,
+    "explanation": "Rama finally strikes Ravana down with a divine arrow, ending the war, after Ravana has refused to return Sita.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "hindu-q13",
+    "story_id": "hindu-04",
+    "question": "After the war, what does Sita undergo in Valmiki's telling before she and Rama are reunited?",
+    "choices": ["A trial by fire", "A riddle contest", "A year of silence", "A duel with Ravana's widow"],
+    "correct_index": 0,
+    "explanation": "Valmiki has Sita enter a fire to show that she stayed faithful in captivity, and she comes out unharmed; later retellings soften, omit or reinterpret the scene.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "hindu-q14",
+    "story_id": "hindu-05",
+    "question": "Who drives Arjuna's chariot and teaches him in the Bhagavad Gita?",
+    "choices": ["Krishna", "Drona", "Bhishma", "Yudhishthira"],
+    "correct_index": 0,
+    "explanation": "Krishna, Arjuna's friend and kinsman and the god Vishnu in human form, acts as his charioteer and answers his despair.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "hindu-q15",
+    "story_id": "hindu-05",
+    "question": "What does Krishna teach Arjuna about action?",
+    "choices": [
+      "To avoid all action",
+      "To act without clinging to the fruits of action",
+      "To act only for reward",
+      "To leave every decision to the gods"
+    ],
+    "correct_index": 1,
+    "explanation": "Krishna teaches action without attachment: a person should do the work that is theirs to do while giving up possessiveness about the results.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "hindu-q16",
+    "story_id": "hindu-05",
+    "question": "What does Krishna say about the self, or atman?",
+    "choices": ["It dies with the body", "It is reborn only as an animal", "It is not born and does not die", "It belongs only to warriors"],
+    "correct_index": 2,
+    "explanation": "Krishna describes the self as unborn and undying, so that what is killed in battle is the body rather than the true self.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "hindu-q17",
+    "story_id": "hindu-06",
+    "question": "Who finally defeats the buffalo demon Mahishasura?",
+    "choices": ["Durga", "Vishnu", "Indra", "Shiva"],
+    "correct_index": 0,
+    "explanation": "Durga, formed from the gathered power of the gods, meets Mahishasura in battle and ends his rule after nine days and nights.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "hindu-q18",
+    "story_id": "hindu-06",
+    "question": "Mahishasura's name comes from the Sanskrit word for which animal?",
+    "choices": ["Lion", "Elephant", "Buffalo", "Serpent"],
+    "correct_index": 2,
+    "explanation": "Mahisha means buffalo, and Mahishasura is the buffalo demon who changes form during his battle with Durga.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "hindu-q19",
+    "story_id": "hindu-06",
+    "question": "In the Devi Mahatmya, what is the source of Durga's power?",
+    "choices": [
+      "Her own creation from the ocean of milk",
+      "The combined energy of the gods",
+      "A boon granted by Brahma",
+      "The weapons of the asuras"
+    ],
+    "correct_index": 1,
+    "explanation": "The anger and power of the gods pour out of them and take the form of Durga, though some traditions instead call her the supreme source from which the gods draw strength.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "hindu-q20",
+    "story_id": "hindu-06",
+    "question": "Why can Mahishasura's boon not save him from Durga?",
+    "choices": [
+      "Because the boon had expired",
+      "Because it protected him only from male beings, and Durga is a goddess",
+      "Because he had broken the boon himself",
+      "Because the boon was granted by a demon"
+    ],
+    "correct_index": 1,
+    "explanation": "Mahishasura's boon promised that no male being could kill him, so the gods' power takes a female form and a goddess ends him.",
+    "difficulty": "hard",
+    "verified": false
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "id": "maya-01",
+    "title": "The First People",
+    "source_ref": "Popol Vuh, Part I",
+    "paragraphs": [
+      "In the beginning there was only sky and sea, and everything was silent and dark. Tepeu, whose name means Sovereign, and Gucumatz, the Feathered Serpent, gathered in the water and thought together with Huracan, Heart of Sky. They wished for beings who could speak, name what exists, and remember their makers.",
+      "Their first act was to make light. The earth rose from the sea, mountains and valleys took shape, and trees, birds and animals found their places. The makers asked the animals to speak, but the creatures could only cry out. They could not say the names of the gods or give thanks, so they were given the wild to live in.",
+      "The makers then shaped a person from mud. The figure could stand and talk a little, but it was soft and heavy, and when rain fell it melted back into the earth. Its face could not turn, and it saw only dimly. This attempt failed, and the makers set the mud aside.",
+      "Next they carved people from wood. These figures walked and multiplied, but they had no hearts and no minds, and they never remembered the ones who made them. The world was treated carelessly, so the makers decided the wooden people must be removed; a flood came, and the animals turned against them. It is said that the monkeys of the forest are their descendants."
+    ],
+    "characters": ["tepeu", "gucumatz", "huracan"],
+    "themes": ["creation", "speech and memory", "failed beginnings"],
+    "uncertain": false,
+    "verified": false
+  },
+  {
+    "id": "maya-02",
+    "title": "The Boast of Seven Macaw",
+    "source_ref": "Popol Vuh, Part II",
+    "paragraphs": [
+      "In the time after the flood, a proud being named Vucub Caquix, or Seven Macaw, set himself above everyone. His teeth shone like jade and his eyes gleamed like mirrors of metal, and he wore feathers of blue-green. 'I am the sun,' he said. 'I am the moon. My light is the only light.' But the world was still dark, and his boast was empty.",
+      "Hunahpu and Xbalanque, the Hero Twins, were great hunters with blowguns. They watched Seven Macaw strut in the treetops and decided his pride had to end. They hid beneath the tree where he fed and waited until he came close. Hunahpu raised his blowgun and sent a pellet into the great bird's cheek. Seven Macaw screamed and fell, but as he fell he seized Hunahpu's arm and tore it away.",
+      "The twins did not despair. They disguised themselves as an old man and an old woman and came to Seven Macaw pretending to be healers. 'Your teeth are not jade,' they told him. 'They are only stones, and your eyes are clouded. Let us cure you.' Seven Macaw agreed, and the old ones took away his shining teeth and the metal from his eyes.",
+      "With his false splendour gone, Seven Macaw's strength left him, and the twins recovered Hunahpu's arm. His boast had been undone not by a greater boast but by cleverness and patience. The story is one of the first victories of the Hero Twins, and it shows how pride can make a being blind."
+    ],
+    "characters": ["vucub_caquix", "hunahpu", "xbalanque"],
+    "themes": ["pride", "trickery", "false splendour"],
+    "uncertain": false,
+    "verified": false
+  },
+  {
+    "id": "maya-03",
+    "title": "The Journey to Xibalba",
+    "source_ref": "Popol Vuh, Part II",
+    "paragraphs": [
+      "Hun Hunahpu and his brother Vucub Hunahpu loved the ball game. They played on a court near the road to the underworld, striking the heavy rubber ball back and forth with their hips, and the sound carried far. In Xibalba, the place of the dead, the lords heard the noise and were offended by it.",
+      "The lords sent owls as messengers. 'The lords of Xibalba call you,' the owls said. 'Come down and play with them.' The brothers said goodbye to their grandmother and their mother, and they set off along the steep road that leads below the earth.",
+      "The road was full of tricks. The brothers crossed a river of blood and a river of pus, and they came to a crossroads where the road itself spoke, trying to confuse them. They did not greet the lords correctly, and they sat on a stone that burned them. Every mistake gave the lords more power over them.",
+      "Hun Came and Vucub Came, the chief lords, set the brothers impossible tasks and then killed them. Their bodies were buried in the ball court, but Hun Hunahpu's head was hung in a calabash tree, and the tree bore fruit that looked like his head. The lords forbade anyone to go near it. Yet the story does not end there, because a daughter of Xibalba would soon visit that tree."
+    ],
+    "characters": ["hun_hunahpu", "vucub_hunahpu", "hun_came"],
+    "themes": ["the underworld", "pride and caution", "the ball game"],
+    "uncertain": false,
+    "verified": false
+  },
+  {
+    "id": "maya-04",
+    "title": "The Birth of the Hero Twins",
+    "source_ref": "Popol Vuh, Part II",
+    "paragraphs": [
+      "Xquic was a daughter of Cuchumaquic, one of the lords of Xibalba. One day she went to the calabash tree where the head of Hun Hunahpu hung, forbidden to all. The head spoke to her and spat into her open hand. At once she felt a new life begin inside her, and she knew she carried the children of Hun Hunahpu.",
+      "When her father learned she was pregnant, he was furious and sent owls to take her away and kill her. Xquic pleaded with the owls, telling them that the children she carried were not guilty of anything. The owls took pity on her and let her go, bringing back a false heart made from sap so that the lords would believe she was dead.",
+      "Xquic walked a long way to the surface of the earth and came to the house of Xmucane, the grandmother of the twins. Xmucane did not believe her story at first. She set a test: Xquic must fill a net with maize from the garden. Xquic went out, found the garden, and the maize she gathered filled the net, proving that the children were truly of the family.",
+      "In time Xquic gave birth to twin boys, Hunahpu and Xbalanque, in the mountains. They grew quickly and became skilled hunters. Their grandmother and their mother raised them, and the story of their father's death waited for them in the world below."
+    ],
+    "characters": ["xquic", "hunahpu", "xbalanque"],
+    "themes": ["motherhood", "courage", "destiny"],
+    "uncertain": false,
+    "verified": false
+  },
+  {
+    "id": "maya-05",
+    "title": "The Trials of Xibalba",
+    "source_ref": "Popol Vuh, Part II",
+    "paragraphs": [
+      "When Hunahpu and Xbalanque grew up, the lords of Xibalba summoned them too. The twins went down the same road their father had taken, but they sent a mosquito ahead to learn the names of every lord, so they could greet each one correctly. That small trick unsettled the lords from the start.",
+      "The lords set tests. In the House of Darkness the twins had to keep cigars and torches burning all night and then return them unburned. They placed fireflies on the tips so the lords would see a glow, and in the morning the cigars and torches were whole. In the House of Cold, the House of Jaguars and the House of Bats they survived by patience and quick thinking.",
+      "Then came the ball game. The lords hoped the twins would lose, but the twins played well and refused to be frightened. When the lords plotted to kill them, Hunahpu and Xbalanque pretended to be defeated and lay still. The lords celebrated too soon.",
+      "The twins then showed a wonder: a dog was killed and then called back to life. Amazed, the lords asked to be treated the same way. The twins did as they asked, but they did not bring the lords back. Hun Came and the others were defeated, and the twins rose from Xibalba to the sky, where their story is remembered still."
+    ],
+    "characters": ["hunahpu", "xbalanque", "hun_came"],
+    "themes": ["tests", "trickery", "defeat of death"],
+    "uncertain": false,
+    "verified": false
+  },
+  {
+    "id": "maya-06",
+    "title": "The Maize People",
+    "source_ref": "Popol Vuh, Part III",
+    "paragraphs": [
+      "After the failures of mud and wood, Tepeu, Gucumatz and Huracan prepared to try again. They needed a substance that could hold feeling and memory. In the place of good things, the makers took yellow maize and white maize, and the grandmother Xmucane ground it fine, nine times over, until it became dough.",
+      "From the dough the makers shaped four people: Balam Quitze, Balam Acab, Mahucutah and Iqui Balam. When the figures opened their eyes, they could see everything — the sky, the earth, the mountains and the far corners of the world. They thanked the makers and spoke clearly.",
+      "The makers were pleased but also worried. The first people could see too far, as the gods could, so the makers breathed on their eyes and clouded them a little. The people could no longer see the whole world at once, but they could still think, speak and remember.",
+      "The four became the ancestors of the K'iche' peoples, and their wives were made while they slept. They wandered in the dark toward the rising sun, carrying the traditions that would be written down centuries later. This is why maize is sacred to many Maya communities: the first true people were made from it."
+    ],
+    "characters": ["tepeu", "gucumatz", "huracan"],
+    "themes": ["maize", "creation", "ancestry"],
+    "uncertain": false,
+    "verified": false
+  }
+]

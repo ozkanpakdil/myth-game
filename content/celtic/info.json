@@ -1,0 +1,74 @@
+{
+  "id": "celtic",
+  "name": "Celtic",
+  "intro": "Celtic is a modern umbrella term for the related languages and cultures of Iron Age and medieval Europe, from Ireland and Britain to Gaul and Iberia. The stories in this section come mainly from medieval Irish and Welsh manuscripts, written down by Christian scribes between roughly the eighth and fourteenth centuries. Those scribes preserved much older oral material: tales of the Tuatha Dé Danann, of Ulster's heroes, and of Fionn and his warrior band. The texts often survive in several versions that disagree with each other, and they mix older myth with later Christian and literary concerns. They are neither scripture nor one unified system of belief. Read them as layered stories shaped by many tellers, and treat the people who kept them alive with respect.",
+  "timeline": [
+    {
+      "label": "Celtic-speaking Iron Age Europe",
+      "year_text": "c. 800–50 BCE",
+      "note": "Related languages were spoken from Ireland and Britain across Gaul to parts of Iberia and Anatolia. There was never one Celtic nation or one shared religion."
+    },
+    {
+      "label": "Druids and oral learning",
+      "year_text": "c. 200 BCE–100 CE",
+      "note": "Classical writers describe druids and poets as keepers of law, ritual and genealogy. Teaching was largely oral, and no written scripture is known."
+    },
+    {
+      "label": "Roman conquest and Christian conversion",
+      "year_text": "1st–5th centuries CE",
+      "note": "Rome absorbed much of Gaul and Britain, while Ireland remained outside the empire. Christianity reached Ireland in the fifth century and brought Latin literacy."
+    },
+    {
+      "label": "First Irish manuscript collections",
+      "year_text": "c. 700–1100 CE",
+      "note": "Monks began writing down older tales. The Book of the Dun Cow (c. 1100) is the oldest surviving manuscript of the Táin."
+    },
+    {
+      "label": "Cath Maige Tuired and the Ulster tales",
+      "year_text": "9th–12th centuries",
+      "note": "The two battles of Mag Tuired and the Ulster Cycle were shaped into the forms we know, blending myth, history and Christian learning."
+    },
+    {
+      "label": "Welsh prose tales compiled",
+      "year_text": "12th–14th centuries",
+      "note": "The eleven tales now called the Mabinogion survive in the White Book of Rhydderch and the Red Book of Hergest."
+    },
+    {
+      "label": "Collectors and living storytellers",
+      "year_text": "17th–19th centuries",
+      "note": "Antiquarians and folklorists recorded Fenian ballads and folktales still told in Irish, Scottish Gaelic and Welsh communities."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Cath Maige Tuired",
+      "note": "The Battle of Mag Tuired, the central account of the Tuatha Dé Danann and their wars with the Fir Bolg and the Fomorians. It survives in a sixteenth-century manuscript and partly in the twelfth-century Book of Leinster."
+    },
+    {
+      "title": "Lebor Gabála Érenn",
+      "note": "The Book of the Taking of Ireland, a medieval compilation of origin legends that places the Tuatha Dé Danann among the successive settlers of the island. It was assembled by Christian scholars from older poems and tales."
+    },
+    {
+      "title": "Táin Bó Cúailnge",
+      "note": "The Cattle Raid of Cooley, the central epic of the Ulster Cycle, preserved in twelfth-century manuscripts such as the Book of the Dun Cow and the Book of Leinster. The scribes who copied it worked centuries after the oral tales began."
+    },
+    {
+      "title": "Tochmarc Emire",
+      "note": "The Wooing of Emer, an Ulster Cycle tale that contains one of the earliest accounts of Cú Chulainn's boyhood and his training in arms."
+    },
+    {
+      "title": "Acallam na Senórach",
+      "note": "The Colloquy of the Ancients, a large twelfth- or thirteenth-century narrative in which Oisín and Caoilte tell the stories of Fionn and the Fianna to St Patrick. It preserves older Fenian material within a Christian frame."
+    },
+    {
+      "title": "The Mabinogion",
+      "note": "The modern title for eleven medieval Welsh prose tales, preserved in the White Book of Rhydderch and the Red Book of Hergest. They draw on British tradition that is related to, but distinct from, the Irish material."
+    },
+    {
+      "title": "The Book of the Dun Cow (Lebor na hUidre)",
+      "note": "A manuscript compiled around 1100 at Clonmacnoise and the oldest surviving collection of Irish narrative. It shows how Christian scribes copied and edited older oral and written material between the eighth and twelfth centuries."
+    }
+  ],
+  "sensitivity": "low",
+  "verified": false
+}

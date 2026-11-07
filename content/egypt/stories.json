@@ -1,0 +1,92 @@
+[
+  {
+    "id": "egypt-01",
+    "title": "The Hill in the Waters",
+    "source_ref": "Pyramid Texts; later Heliopolitan creation accounts",
+    "paragraphs": [
+      "Before the first sunrise, the Egyptians said, everything was Nun: a vast, dark, motionless water without shore or sky. Nothing had yet been named, and nothing had yet been divided.",
+      "Then a mound of earth rose out of the flood, the benben, the first land. On it appeared Atum, the one who made himself, and the priests of Heliopolis taught that he was the source of all that followed. Some texts instead picture the creator as a heron, a lotus, or the sun itself, and the versions do not agree.",
+      "Atum began to separate the world. He produced Shu, the air, and Tefnut, moisture, and from them came Geb the earth and Nut the sky. Their children were Osiris, Isis, Set, and Nephthys. With Atum and his first pair, these nine gods formed the Ennead, the company that ordered the cosmos.",
+      "Light and life then spread outward. Atum's tears became human beings, some accounts say, and the sun he had become warmed the land. The story exists in spell form in the Pyramid Texts and was retold for well over two thousand years. Egyptian sources span millennia, so no single telling is definitive; later priests harmonized and reshaped the older words."
+    ],
+    "characters": ["ra"],
+    "themes": ["creation from chaos", "order", "the first gods"],
+    "uncertain": false,
+    "verified": false
+  },
+  {
+    "id": "egypt-02",
+    "title": "The Murder of Osiris",
+    "source_ref": "Plutarch, Isis and Osiris; Pyramid Texts",
+    "paragraphs": [
+      "Osiris ruled Egypt as a wise king and taught people farming, law, and the worship of the gods. His brother Set, restless and violent, wanted the throne. According to the Greek writer Plutarch, a late source writing in the second century CE, Set secretly measured Osiris's body and had a beautiful chest made to fit it exactly.",
+      "At a banquet, Set offered the chest to whoever could lie inside. When Osiris climbed in, Set's followers slammed the lid, sealed it with lead, and threw it into the Nile. The coffin drifted to Byblos, where a tree grew around it.",
+      "Isis, Osiris's wife, cut her hair and searched the world with her sister Nephthys. The two goddesses mourned as they went, and their lament became a model for Egyptian funeral songs. Isis found the body and brought it home, but Set discovered it and scattered the pieces.",
+      "Isis gathered them and, with magic, briefly restored her husband. In that liminal hour she conceived a son, Horus, who would later claim his father's throne. Osiris then withdrew to rule the dead, becoming king of the underworld while Horus grew up to avenge him. The Pyramid Texts allude to these events in spells for dead kings, while Plutarch's version supplies the connected story. The details vary between sources, and the Egyptian tradition shaped them across millennia."
+    ],
+    "characters": ["osiris", "isis", "set", "nephthys"],
+    "themes": ["murder", "mourning", "resurrection", "inheritance"],
+    "uncertain": false,
+    "verified": false
+  },
+  {
+    "id": "egypt-03",
+    "title": "Horus and Set",
+    "source_ref": "The Contendings of Horus and Set (Papyrus Chester Beatty I)",
+    "paragraphs": [
+      "The Contendings of Horus and Set, preserved on Papyrus Chester Beatty I, is a long, often comic account of a lawsuit among the gods. Horus, son of Osiris, claimed the throne of Egypt; Set, who had killed Osiris, insisted the kingship was his by strength.",
+      "For eighty years the Ennead heard the case. The gods bickered, and Ra, the sun god, was reluctant to hand the rule of the living world to a child. The two rivals were set impossible contests. They became hippopotamuses, or raced in stone boats, and each side cheated in turn.",
+      "In one famous episode, Set tore out Horus's eye. The eye was restored by Thoth and became the wedjat, a symbol of wholeness and protection. Later, Isis disguised herself and tricked Set into declaring that a son should inherit a father's property, so condemning his own claim. When Set realized the trap, he was furious.",
+      "A letter from the dead Osiris finally shamed the Ennead into deciding. Horus was declared the rightful king, and Set was given a place with Ra in the sky, where his thunder could still be heard. The tale is chiefly known from a single Ramesside papyrus, and parts of the text are damaged; the ending is reconstructed in part. Egyptian storytellers told and retold it over many centuries, and the sources span millennia, so details shift from version to version."
+    ],
+    "characters": ["horus", "set", "isis"],
+    "themes": ["rivalry", "legitimacy", "justice", "the eye"],
+    "uncertain": false,
+    "verified": false
+  },
+  {
+    "id": "egypt-04",
+    "title": "Ra and the Serpent Apep",
+    "source_ref": "Book of the Dead; Book of Caverns",
+    "paragraphs": [
+      "Each day Ra, the sun god, crossed the sky in his barque, and each night he sailed through the Duat, the hidden underworld. The Egyptians pictured this journey as a dangerous passage through twelve gates, one for every hour of darkness. The boat carried a crew of gods and blessed dead, and the sun's light had to be defended.",
+      "Chief among the enemies was Apep, a monstrous serpent of chaos who waited in the deepest waters. Apep tried to swallow the barque or to stop it with his coils. The gods on board fought him with spears and knives: Set, in some versions, stood at the prow, and other deities helped bind the serpent.",
+      "When Apep was wounded, the sky could grow dark or storms might break, and an eclipse might be read as the serpent's momentary triumph. Yet the sun always rose. At dawn Ra emerged justified from the Duat, and the world was renewed.",
+      "The Book of the Dead and the Book of Caverns describe these nightly battles, and priests performed rituals to repel Apep. The texts come from different periods and do not always agree on the crew or the sequence. Egyptian sources span millennia, and the journey was imagined and reimagined many times."
+    ],
+    "characters": ["ra", "apep"],
+    "themes": ["chaos", "nightly renewal", "cosmic battle"],
+    "uncertain": false,
+    "verified": false
+  },
+  {
+    "id": "egypt-05",
+    "title": "The Secret Name of Ra",
+    "source_ref": "Papyrus Turin 1993; later magical texts",
+    "paragraphs": [
+      "Ra had grown old. His bones were silver, his flesh gold, his hair true lapis lazuli, and his mouth trembled. He ruled the gods and knew every name in creation, but one name, his own deepest and secret name, he kept hidden.",
+      "Isis, clever and skilled in magic, wanted that name. She gathered dust and spit and shaped a small serpent, which she placed on the road where Ra walked. The snake struck; its venom burned through the god, and no spell of his could cool it.",
+      "As Ra writhed, Isis offered to help, if he would tell her his true name. At first he tried to distract her with riddles and with other names, and he recited the many titles by which he was known. Isis was not fooled. The poison bit deeper, and at last Ra gave way, letting his secret name pass from his heart into hers.",
+      "With the name, Isis gained power over the sun god himself. She could command him, and she used that knowledge to heal him and to secure her son Horus's claim to the throne. The story survives on Papyrus Turin 1993 and in later magical texts, where it was used as a spell. Versions differ, and the sources span millennia, but the core idea is constant: a name was not a label but a share of a being's power."
+    ],
+    "characters": ["ra", "isis"],
+    "themes": ["magic", "secret knowledge", "power"],
+    "uncertain": false,
+    "verified": false
+  },
+  {
+    "id": "egypt-06",
+    "title": "The Weighing of the Heart",
+    "source_ref": "Book of the Dead, spell 125",
+    "paragraphs": [
+      "The Book of the Dead, spell 125, describes the hall where the dead were judged. The deceased entered and addressed forty-two divine judges, declaring innocence of a long list of wrongs: I have not stolen, I have not lied, I have not caused tears. This negative confession was a claim to have lived by Maat, the order and truth embodied in a goddess.",
+      "At the centre stood the scales. Anubis, the jackal-headed god of embalming, placed the heart on one pan and the feather of Maat on the other. The heart was the seat of memory and character, and it had to balance against the feather; if it was heavier, guilt weighed it down.",
+      "Thoth, god of writing, recorded the verdict with his palette. If the heart passed, the dead was declared true of voice and presented to Osiris, who welcomed the justified into the Field of Reeds. If it failed, the monster Ammit devoured it, and the person ceased to exist.",
+      "The papyri were often made in advance, with the owner's name inserted, and the judgement was as much a ritual hope as a remembered event. The spells and images vary from copy to copy, and Egyptian sources span millennia, so the hall of judgement was imagined in many forms."
+    ],
+    "characters": ["anubis", "thoth", "maat"],
+    "themes": ["judgement", "truth", "afterlife", "the heart"],
+    "uncertain": false,
+    "verified": false
+  }
+]

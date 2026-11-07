@@ -1,0 +1,92 @@
+[
+  {
+    "id": "gilgamesh",
+    "name": "Gilgamesh",
+    "role": "Legendary king of Uruk and the hero of the epic that bears his name",
+    "domain": ["kingship", "heroism", "the city"],
+    "symbols": ["city walls", "cedar door"],
+    "fun_fact": "The epic calls him two-thirds divine and one-third human, a ratio that has puzzled and amused readers for centuries.",
+    "verified": false
+  },
+  {
+    "id": "enkidu",
+    "name": "Enkidu",
+    "role": "Wild man shaped by the gods to rival Gilgamesh, later his closest friend",
+    "domain": ["wilderness", "friendship"],
+    "symbols": ["clay", "gazelles"],
+    "fun_fact": "The gods shaped Enkidu from clay in answer to the complaints of the people of Uruk about their king.",
+    "verified": false
+  },
+  {
+    "id": "inanna",
+    "name": "Inanna",
+    "role": "Sumerian goddess of love, war, and the planet Venus, who descends to the underworld",
+    "domain": ["love", "war", "the planet Venus"],
+    "symbols": ["eight-pointed star", "lion"],
+    "fun_fact": "Inanna is identified with the Akkadian goddess Ishtar, and the two names appear in different copies of the same stories.",
+    "verified": false
+  },
+  {
+    "id": "ereshkigal",
+    "name": "Ereshkigal",
+    "role": "Queen of the underworld, ruler of the land from which no traveller returns",
+    "domain": ["the underworld", "death"],
+    "symbols": ["the seven gates", "the underworld palace"],
+    "fun_fact": "Her Sumerian name means roughly 'Lady of the Great Earth,' and she judges the dead alongside the Anunnaki.",
+    "verified": false
+  },
+  {
+    "id": "dumuzi",
+    "name": "Dumuzi",
+    "role": "Shepherd god and husband of Inanna, who is handed over to the underworld in her place",
+    "domain": ["shepherds", "seasonal renewal"],
+    "symbols": ["shepherd's crook", "gazelle"],
+    "fun_fact": "Under the Akkadian name Tammuz he was mourned in Mesopotamian rituals for well over a thousand years.",
+    "verified": false
+  },
+  {
+    "id": "marduk",
+    "name": "Marduk",
+    "role": "Storm god and patron of Babylon, who defeats Tiamat and frames the world from her body",
+    "domain": ["storm", "kingship", "creation"],
+    "symbols": ["bow", "mushhushshu dragon"],
+    "fun_fact": "In Assyrian copies of Enuma Elish, the national god Ashur takes Marduk's place as the champion of the gods.",
+    "verified": false
+  },
+  {
+    "id": "tiamat",
+    "name": "Tiamat",
+    "role": "Primordial salt sea and mother of the gods, defeated by Marduk in the creation poem",
+    "domain": ["primeval waters", "chaos"],
+    "symbols": ["salt sea", "the two rivers"],
+    "fun_fact": "In the poem her split body becomes the sky and the earth, and her eyes the sources of the Tigris and Euphrates.",
+    "verified": false
+  },
+  {
+    "id": "utnapishtim",
+    "name": "Utnapishtim",
+    "role": "Flood survivor who was granted immortality and now lives at the edge of the world",
+    "domain": ["the flood", "immortality"],
+    "symbols": ["the boat", "Mount Nimush"],
+    "fun_fact": "His name is often translated 'he found life,' and he lives with his wife at the mouth of the rivers.",
+    "verified": false
+  },
+  {
+    "id": "ea",
+    "name": "Ea",
+    "role": "God of wisdom, fresh water, and craft, who warns Utnapishtim about the flood",
+    "domain": ["wisdom", "fresh water", "magic"],
+    "symbols": ["flowing water", "goat-fish"],
+    "fun_fact": "Ea is the Akkadian name of the Sumerian god Enki, whose temple stood at Eridu.",
+    "verified": false
+  },
+  {
+    "id": "humbaba",
+    "name": "Humbaba",
+    "role": "Monstrous guardian set by Enlil to protect the Cedar Forest",
+    "domain": ["the forest", "terror"],
+    "symbols": ["cedar", "seven terrors"],
+    "fun_fact": "His face is described as coils of entrails, and his roar is compared to a flood.",
+    "verified": false
+  }
+]

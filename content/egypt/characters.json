@@ -1,0 +1,92 @@
+[
+  {
+    "id": "ra",
+    "name": "Ra",
+    "role": "Sun god, creator, and first king of the gods",
+    "domain": ["the sun", "creation", "kingship"],
+    "symbols": ["sun disk", "falcon"],
+    "fun_fact": "Ra was said to sail across the sky in a barque and to grow visibly older as the day wore on.",
+    "verified": false
+  },
+  {
+    "id": "isis",
+    "name": "Isis",
+    "role": "Goddess of magic, motherhood, and the throne",
+    "domain": ["magic", "motherhood", "kingship"],
+    "symbols": ["throne hieroglyph", "tyet knot"],
+    "fun_fact": "Isis wears a throne on her head because her name is written with the hieroglyph for a throne.",
+    "verified": false
+  },
+  {
+    "id": "osiris",
+    "name": "Osiris",
+    "role": "God of the dead and of resurrection, the rightful king",
+    "domain": ["the afterlife", "resurrection", "fertility"],
+    "symbols": ["crook and flail", "mummy wrappings"],
+    "fun_fact": "Osiris is usually shown as a mummified king holding a crook and flail, the tools of a shepherd and a ruler.",
+    "verified": false
+  },
+  {
+    "id": "set",
+    "name": "Set",
+    "role": "God of disorder, the desert, and storms; Osiris's brother and rival",
+    "domain": ["chaos", "the desert", "storms"],
+    "symbols": ["was-sceptre", "set-animal"],
+    "fun_fact": "Set's sacred animal is a strange long-snouted creature that Egyptologists still cannot match to any living species.",
+    "verified": false
+  },
+  {
+    "id": "horus",
+    "name": "Horus",
+    "role": "Falcon god of kingship, son of Osiris and Isis",
+    "domain": ["kingship", "the sky", "protection"],
+    "symbols": ["falcon", "wedjat eye"],
+    "fun_fact": "Every living pharaoh was identified with Horus, whose name was written in a falcon-topped serekh.",
+    "verified": false
+  },
+  {
+    "id": "anubis",
+    "name": "Anubis",
+    "role": "Jackal-headed god of embalming and cemeteries",
+    "domain": ["mummification", "burial", "guiding the dead"],
+    "symbols": ["jackal", "embalming tools"],
+    "fun_fact": "Priests who performed the embalming rites wore a jackal mask to act as Anubis himself.",
+    "verified": false
+  },
+  {
+    "id": "thoth",
+    "name": "Thoth",
+    "role": "God of writing, wisdom, and reckoning",
+    "domain": ["writing", "wisdom", "the balance"],
+    "symbols": ["ibis", "scribe's palette"],
+    "fun_fact": "Thoth was credited with inventing hieroglyphs and with keeping the calendar of the gods.",
+    "verified": false
+  },
+  {
+    "id": "maat",
+    "name": "Maat",
+    "role": "Goddess of truth, order, and right conduct",
+    "domain": ["truth", "order", "justice"],
+    "symbols": ["ostrich feather", "scales"],
+    "fun_fact": "Pharaohs were said to present Maat to the gods, a phrase that meant ruling justly.",
+    "verified": false
+  },
+  {
+    "id": "apep",
+    "name": "Apep",
+    "role": "Serpent of chaos who attacks the sun god's barque each night",
+    "domain": ["chaos", "darkness", "destruction"],
+    "symbols": ["giant serpent", "knife"],
+    "fun_fact": "Images of Apep were drawn on papyrus and then burned or cut up to render the serpent harmless.",
+    "verified": false
+  },
+  {
+    "id": "nephthys",
+    "name": "Nephthys",
+    "role": "Goddess of mourning and protection, sister of Isis and wife of Set",
+    "domain": ["mourning", "protection", "the dead"],
+    "symbols": ["kite bird", "basket"],
+    "fun_fact": "Nephthys's name means Lady of the House, and she often appears with Isis as a kite mourning Osiris.",
+    "verified": false
+  }
+]

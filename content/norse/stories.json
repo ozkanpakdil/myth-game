@@ -1,0 +1,94 @@
+[
+  {
+    "id": "norse-01",
+    "title": "The Making of the Worlds",
+    "source_ref": "Prose Edda, Gylfaginning",
+    "paragraphs": [
+      "Before earth or sky there was Ginnungagap, a gap cold in the north and burning in the south. Where ice met fire it melted, and from the drops came Ymir, the first giant, and Audhumla, the primeval cow. Ymir drank her milk, while Audhumla licked the salty ice until a man emerged from it: Búri, ancestor of the gods.",
+      "Búri's grandson Odin and his brothers killed Ymir. His blood poured out so fiercely that it drowned almost every frost giant; only Bergelmir and his wife escaped in a boat. Dragging Ymir's body into the middle of the void, the gods made a world from it.",
+      "His flesh became the earth, his bones the mountains, his teeth the rocks. His blood became the seas; his skull, propped on four dwarfs, became the sky, and his brains the clouds. Sparks from Muspell were fixed overhead as stars. From two trees on the shore the gods shaped Ask and Embla, the first humans, and gave them breath, thought, and warmth.",
+      "A great ash, Yggdrasil, holds the nine worlds in its branches and roots: Asgard for the gods, Midgard for humans, Jotunheim for giants, and others below. An eagle nests in its crown, a serpent gnaws one root, and a squirrel carries insults between them. The Eddas that preserve this account were written in thirteenth-century Christian Iceland, long after the old beliefs, and Snorri's orderly version is not the only one."
+    ],
+    "characters": ["odin", "ymir"],
+    "themes": ["creation", "sacrifice", "order from chaos"],
+    "uncertain": false,
+    "verified": false
+  },
+  {
+    "id": "norse-02",
+    "title": "Odin's Eye",
+    "source_ref": "Poetic Edda, Völuspá; Prose Edda, Gylfaginning",
+    "paragraphs": [
+      "Beneath one root of Yggdrasil stood Mimir's well, and its water was wisdom itself. Mimir, a giant of great knowledge, guarded it. Odin came to drink, but the well had a price: Mimir asked for one of Odin's eyes. Odin gave it, and the eye sank into the water. Ever after he was the one-eyed god, seeing less of the world but understanding more of it.",
+      "Odin paid for wisdom more than once. In the poem Hávamál he describes hanging on the windblown tree for nine nights, pierced by a spear, with no food or drink, until he seized the runes. He took them up with a cry and fell back. Runes were not only letters but a way of writing and of working magic, and the poem lists eighteen spells he learned.",
+      "Mimir's wisdom outlasted his body. When the gods and the Vanir made peace after their war, they exchanged hostages, and Mimir went to the Vanir. They cut off his head and sent it back. Odin preserved it with herbs and spoke to it, and the head gave him counsel. The story shows what Odin values: not strength or beauty, but knowledge, even when it costs him part of himself.",
+      "The eye and the runes come from different sources and are not always told together. Völuspá mentions Odin's pledge to Mimir, while Hávamál gives the rune-winning speech. Both were written down in thirteenth-century Iceland, and Snorri arranges the material his own way in Gylfaginning. Other poems and images suggest that wisdom was always Odin's most contested treasure."
+    ],
+    "characters": ["odin", "mimir"],
+    "themes": ["wisdom", "sacrifice", "knowledge"],
+    "uncertain": false,
+    "verified": false
+  },
+  {
+    "id": "norse-03",
+    "title": "The Theft of Thor's Hammer",
+    "source_ref": "Poetic Edda, Þrymskviða",
+    "paragraphs": [
+      "Thor woke one morning to find Mjölnir, his hammer, gone. He searched his halls, then turned to Loki. \"Something has happened,\" he said, \"something enormous: my hammer is missing.\" The two borrowed Freyja's falcon cloak, and Loki flew to Jotunheim.",
+      "There sat Thrym, lord of the giants, weaving collars for his hounds. He admitted the theft at once. He would return Mjölnir on one condition: Freyja must come to Jotunheim as his bride. Loki flew back. Freyja refused so angrily that the necklace Brísingamen burst from her throat.",
+      "The gods met in council. Heimdall proposed a strange plan: dress Thor as a bride, with a veil, jewels, and Freyja's necklace, and send Loki along as a maidservant. Thor protested, but the giants had his hammer, and he had little choice.",
+      "At the wedding feast the \"bride\" ate an ox, eight salmon, and all the cakes, and drank three barrels of mead. Thrym stared. Loki explained that Freyja had eaten nothing for eight days, so eager was she for the wedding. Then Thrym lifted the veil to kiss her and leapt back from the burning eyes.",
+      "Freyja's eyes, Loki said, had kept her awake for eight nights. Thrym called for the hammer to hallow the bride. Thor caught it, threw off the veil, and struck. The giants fell, and the wedding ended. Þrymskviða is one of the funniest poems in the Edda; tellings differ in details, but the hammer always comes home."
+    ],
+    "characters": ["thor", "loki", "freyja"],
+    "themes": ["trickery", "disguise", "humour"],
+    "uncertain": false,
+    "verified": false
+  },
+  {
+    "id": "norse-04",
+    "title": "The Death of Baldr",
+    "source_ref": "Prose Edda, Gylfaginning; Poetic Edda, Baldrs draumar",
+    "paragraphs": [
+      "Baldr the Beautiful began to dream. Night after night he saw himself dying, and the gods grew afraid, for Baldr was the best of them and the world seemed dimmer at the thought of losing him.",
+      "Frigg, his mother, took an oath from everything: fire, water, iron, every metal, stone, earth, trees, sickness, beasts, birds, and worms. Nothing would harm Baldr. The gods made a game of it, throwing stones and shooting arrows at him and laughing as they bounced away.",
+      "Loki watched, then went to Frigg at Fensalir in the shape of a woman. He asked whether anything had been left out. Only one thing, she said: mistletoe, growing west of Valhalla. It had seemed too young to ask. Loki cut it, sharpened it, and put it in the hand of Höðr, Baldr's blind brother, guiding his aim.",
+      "The dart struck. Baldr fell dead, and the gods stood silent. Frigg asked who would ride to Hel and beg for his return. Hermóðr took Odin's horse Sleipnir and rode nine nights. Hel said she would release Baldr if everything in the world wept for him, and everything did, except a giantess named Þökk, widely thought to be Loki in disguise.",
+      "Baldr's body was carried to his ship Hringhorni for the funeral pyre. The giantess Hyrrokkin launched it, and Thor blessed the fire with Mjölnir. Nanna, Baldr's wife, died of grief and was laid beside him. Baldrs draumar gives a darker telling of the same loss, but every version agrees that this death was the first crack before Ragnarök."
+    ],
+    "characters": ["baldur", "frigg", "loki"],
+    "themes": ["loss", "deception", "mourning"],
+    "uncertain": false,
+    "verified": false
+  },
+  {
+    "id": "norse-05",
+    "title": "Ragnarök",
+    "source_ref": "Poetic Edda, Völuspá; Prose Edda, Gylfaginning",
+    "paragraphs": [
+      "The end was foretold, and the gods knew it. First came Fimbulwinter: three winters in a row with no summer between, when the sun gave little warmth and people fought and starved. Then the wolves swallowed the sun and moon, and the stars fell from the sky.",
+      "The bonds broke. Fenrir, the great wolf, had been bound by the gods with a chain made of impossible things; now he tore free. Loki slipped his fetters. A ship built from dead men's nails was ready to sail. Surtr came from Muspell with fire, and the rainbow bridge Bifröst burned behind the giants.",
+      "Odin rode to meet Fenrir and was swallowed. His son Víðarr avenged him, planting a foot on the wolf's lower jaw and tearing it apart. Thor fought Jörmungandr, the serpent that circles the world, and killed it with Mjölnir, then staggered nine paces and fell, drowned in its venom. Loki and Heimdall killed each other.",
+      "Surtr's fire covered the earth. The sea rose, the sky burned, and the nine worlds ended. Yet the seeress in Völuspá sees further: the earth rises again from the water, green and clean, and Baldr returns. A handful of survivors, including two humans hidden in Yggdrasil's wood, begin again. Snorri and the poem do not agree on every detail, but both insist that the ending is also a beginning."
+    ],
+    "characters": ["odin", "thor", "loki", "jormungandr"],
+    "themes": ["apocalypse", "courage", "renewal"],
+    "uncertain": false,
+    "verified": false
+  },
+  {
+    "id": "norse-06",
+    "title": "The Binding of Loki",
+    "source_ref": "Prose Edda, Gylfaginning; Poetic Edda, Lokasenna",
+    "paragraphs": [
+      "Loki's luck ran out at a feast. He had insulted every god in Ægir's hall in the poem Lokasenna, and when he fled, the gods came after him. He built a house on a cliff with doors facing every direction, and by day he turned into a salmon and hid in Franangr's waterfall.",
+      "The gods saw the pattern of the net Loki had made, copied it, and caught him in the waterfall. He was bound with the entrails of his son Narfi, which the gods had hardened like iron. His other son, Váli, had been changed into a wolf and had killed Narfi.",
+      "The gods set him in a cave and hung a serpent above his face. Venom dripped. Sigyn, Loki's wife, sat beside him and caught the drops in a wooden bowl. When the bowl filled, she had to turn away to empty it, and the poison struck his face. He writhed so violently that the earth shook, and people called it an earthquake.",
+      "Loki stayed there until Ragnarök, when the bonds broke and he sailed against the gods. In some tellings his punishment follows the killing of Baldr; in others it comes after Lokasenna. The Prose Edda and the poems were written down in thirteenth-century Iceland, and details shift between them, but Sigyn's bowl remains one of the myths' clearest images of loyalty."
+    ],
+    "characters": ["loki", "sigyn", "thor"],
+    "themes": ["punishment", "loyalty", "fate"],
+    "uncertain": false,
+    "verified": false
+  }
+]

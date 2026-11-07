@@ -1,0 +1,302 @@
+[
+  {
+    "id": "mesopotamia-q01",
+    "story_id": "mesopotamia-01",
+    "question": "At the start of Enuma Elish, which two waters exist before the world?",
+    "choices": [
+      "Apsu and Tiamat",
+      "Shamash and Sin",
+      "Anu and Enlil",
+      "The Euphrates and the Tigris"
+    ],
+    "correct_index": 0,
+    "explanation": "The poem opens with Apsu, the sweet water, and Tiamat, the salt sea, whose mixing produces the first generation of gods.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "mesopotamia-q02",
+    "story_id": "mesopotamia-01",
+    "question": "Who kills Apsu after the younger gods disturb his rest?",
+    "choices": [
+      "Tiamat",
+      "Marduk",
+      "Ea",
+      "Kingu"
+    ],
+    "correct_index": 2,
+    "explanation": "Ea, the god of wisdom, puts Apsu to sleep with a spell and kills him, then builds his house on the dead god's body.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "mesopotamia-q03",
+    "story_id": "mesopotamia-01",
+    "question": "What does Marduk do with Tiamat's body after he defeats her?",
+    "choices": [
+      "Buries it beneath the sea",
+      "Gives it to Kingu as a reward",
+      "Makes the sky and the earth from its two halves",
+      "Burns it on an altar"
+    ],
+    "correct_index": 2,
+    "explanation": "Marduk splits Tiamat in two and uses the halves for the vault of heaven and the floor of the earth, with her eyes becoming the sources of the two rivers.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "mesopotamia-q04",
+    "story_id": "mesopotamia-01",
+    "question": "In Assyrian versions of Enuma Elish, which god takes Marduk's role as champion?",
+    "choices": [
+      "Nabu",
+      "Ashur",
+      "Shamash",
+      "Anu"
+    ],
+    "correct_index": 1,
+    "explanation": "Assyrian scribes adapted the poem for their own tradition, putting the national god Ashur in Marduk's place as the hero of the battle.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "mesopotamia-q05",
+    "story_id": "mesopotamia-02",
+    "question": "How many gates does Inanna pass through on her way to the underworld?",
+    "choices": [
+      "Three",
+      "Five",
+      "Seven",
+      "Twelve"
+    ],
+    "correct_index": 2,
+    "explanation": "At each of the seven gates she must surrender one ornament, so that she arrives before Ereshkigal with nothing left to protect her.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "mesopotamia-q06",
+    "story_id": "mesopotamia-02",
+    "question": "Who rules the underworld in the story of Inanna's descent?",
+    "choices": [
+      "Ereshkigal",
+      "Inanna",
+      "Ninshubur",
+      "Geshtinanna"
+    ],
+    "correct_index": 0,
+    "explanation": "Ereshkigal, Inanna's older sister, is queen of the land of no return, and her judges condemn Inanna to death.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "mesopotamia-q07",
+    "story_id": "mesopotamia-02",
+    "question": "Who helps bring Inanna back to life?",
+    "choices": [
+      "Enlil",
+      "Enki",
+      "Nanna",
+      "Dumuzi"
+    ],
+    "correct_index": 1,
+    "explanation": "Enki makes two small creatures from the dirt under his fingernails; they mourn with Ereshkigal, ask for Inanna's body, and revive it with the water of life.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "mesopotamia-q08",
+    "story_id": "mesopotamia-03",
+    "question": "Who shapes Enkidu from clay?",
+    "choices": [
+      "Shamhat",
+      "Aruru",
+      "Ea",
+      "Ninshubur"
+    ],
+    "correct_index": 1,
+    "explanation": "The goddess Aruru creates Enkidu in answer to the complaints of the people of Uruk about their king's behaviour.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "mesopotamia-q09",
+    "story_id": "mesopotamia-03",
+    "question": "How does Enkidu live before he meets Shamhat?",
+    "choices": [
+      "As a shepherd in Uruk",
+      "Among wild animals, freeing them from traps",
+      "As a scribe in the temple",
+      "As a soldier in the king's guard"
+    ],
+    "correct_index": 1,
+    "explanation": "Enkidu runs with gazelles, eats grass, and frees animals from hunters' traps until Shamhat teaches him human ways.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "mesopotamia-q10",
+    "story_id": "mesopotamia-03",
+    "question": "What quest does Gilgamesh propose after he and Enkidu become friends?",
+    "choices": [
+      "To sail to the edge of the world",
+      "To build a ziggurat for Inanna",
+      "To cut cedar in the Cedar Forest",
+      "To find the plant of youth"
+    ],
+    "correct_index": 2,
+    "explanation": "Gilgamesh wants lasting fame, so he proposes travelling to the Cedar Forest to cut timber and face its guardian, Humbaba.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "mesopotamia-q11",
+    "story_id": "mesopotamia-04",
+    "question": "Who set Humbaba as guardian of the Cedar Forest?",
+    "choices": [
+      "Enlil",
+      "Shamash",
+      "Marduk",
+      "Enki"
+    ],
+    "correct_index": 0,
+    "explanation": "The god Enlil appointed Humbaba to terrify anyone who approached the forest, which makes the killing a challenge to Enlil's authority.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "mesopotamia-q12",
+    "story_id": "mesopotamia-04",
+    "question": "Who urges Gilgamesh to kill Humbaba when the monster begs for mercy?",
+    "choices": [
+      "Shamash",
+      "The elders of Uruk",
+      "Enkidu",
+      "Urshanabi"
+    ],
+    "correct_index": 2,
+    "explanation": "Enkidu knows how dangerous Humbaba is and tells Gilgamesh to finish the killing before the gods can intervene.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "mesopotamia-q13",
+    "story_id": "mesopotamia-04",
+    "question": "What happens to Enkidu after Humbaba is killed?",
+    "choices": [
+      "He becomes king of Uruk",
+      "He returns to live with the gazelles",
+      "He marries Shamhat",
+      "The gods decree his death and he falls ill"
+    ],
+    "correct_index": 3,
+    "explanation": "Enlil is angry at the killing, and the gods decide that one of the two heroes must die; Enkidu sickens and dies after twelve days.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "mesopotamia-q14",
+    "story_id": "mesopotamia-05",
+    "question": "Who warns Utnapishtim about the coming flood?",
+    "choices": [
+      "Ea",
+      "Enlil",
+      "Ishtar",
+      "Shamash"
+    ],
+    "correct_index": 0,
+    "explanation": "Ea, the god of wisdom, speaks to the reed wall of Utnapishtim's house so that he can pass on the warning without openly breaking his oath.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "mesopotamia-q15",
+    "story_id": "mesopotamia-05",
+    "question": "Which birds does Utnapishtim send out to look for land?",
+    "choices": [
+      "Eagles and hawks",
+      "Three doves",
+      "A dove, a swallow, and a raven",
+      "A raven and an owl"
+    ],
+    "correct_index": 2,
+    "explanation": "The dove and the swallow find nothing and return, but the raven finds the water receding and does not come back.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "mesopotamia-q16",
+    "story_id": "mesopotamia-05",
+    "question": "What do the gods do for Utnapishtim and his wife at the end of the flood story?",
+    "choices": [
+      "They grant them immortality",
+      "They send them to the underworld",
+      "They make them rulers of Babylon",
+      "They turn them into birds"
+    ],
+    "correct_index": 0,
+    "explanation": "After Ea argues that the punishment was too harsh, Enlil blesses the couple and gives them life without end, which is why Gilgamesh seeks them out.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "mesopotamia-q17",
+    "story_id": "mesopotamia-06",
+    "question": "Who is Utnapishtim, the man Gilgamesh goes looking for?",
+    "choices": [
+      "A king of Uruk",
+      "The flood survivor who was given eternal life",
+      "A boatman who ferries the dead",
+      "A scorpion-man who guards the sun"
+    ],
+    "correct_index": 1,
+    "explanation": "Utnapishtim survived the flood and was granted immortality, and Gilgamesh travels to the edge of the world to ask him the secret of death.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "mesopotamia-q18",
+    "story_id": "mesopotamia-06",
+    "question": "What test does Utnapishtim set for Gilgamesh?",
+    "choices": [
+      "To lift a stone door",
+      "To find a jewel in the sea",
+      "To defeat a lion",
+      "To stay awake six days and seven nights"
+    ],
+    "correct_index": 3,
+    "explanation": "Gilgamesh falls asleep almost at once, and the loaves baked each day beside him show how long he has slept.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "mesopotamia-q19",
+    "story_id": "mesopotamia-06",
+    "question": "What happens to the plant of immortality?",
+    "choices": [
+      "Gilgamesh gives it to Urshanabi",
+      "It withers in the sun",
+      "Utnapishtim takes it back",
+      "A snake takes it and sheds its skin"
+    ],
+    "correct_index": 3,
+    "explanation": "While Gilgamesh bathes in a pool, a snake smells the plant and carries it off, shedding its old skin as it leaves.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "mesopotamia-q20",
+    "story_id": "mesopotamia-06",
+    "question": "What does Gilgamesh do at the end of the epic?",
+    "choices": [
+      "He dives for the plant a second time",
+      "He stays with Utnapishtim",
+      "He returns to Uruk and shows Urshanabi its walls",
+      "He asks the gods to bring Enkidu back"
+    ],
+    "correct_index": 2,
+    "explanation": "The poem closes with Gilgamesh and the boatman looking at Uruk's brickwork and gardens, the lasting achievement that remains after his loss.",
+    "difficulty": "hard",
+    "verified": false
+  }
+]

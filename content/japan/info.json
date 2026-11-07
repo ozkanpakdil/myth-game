@@ -1,0 +1,70 @@
+{
+  "id": "japan",
+  "name": "Japanese",
+  "intro": "Japanese sacred stories are recorded in two eighth-century court chronicles, the Kojiki (712 CE) and the Nihon Shoki (720 CE), and they are still told and enacted today. Shinto, often translated as 'the way of the kami', honours powers present in the sun, mountains, rivers, storms, food and ancestors. The stories begin with Izanagi and Izanami shaping the islands, continue with Amaterasu's light and Susanoo's storms, and end with the heavenly descent of Ninigi, from whom the imperial line claimed descent. The chronicles were compiled by order of the court, partly to legitimise imperial rule, yet they also preserve older regional traditions that sometimes disagree with one another. Versions differ between the two books and between local shrines, so this collection offers one telling among several. Shinto is a living tradition, and its kami are approached with respect.",
+  "timeline": [
+    {
+      "label": "The age of the kami",
+      "year_text": "mythic time",
+      "note": "The stories of Izanagi, Izanami, Amaterasu and Susanoo are set before written history, in a world where heaven and earth are still close."
+    },
+    {
+      "label": "Yayoi period",
+      "year_text": "c. 300 BCE – 250 CE",
+      "note": "Wet-rice farming, bronze mirrors and bronze bells spread through the islands, and regional chiefdoms begin to honour local powers later understood as kami."
+    },
+    {
+      "label": "Kofun period",
+      "year_text": "c. 250 – 538 CE",
+      "note": "Large tomb mounds mark powerful clans, some of which trace their ancestry to particular kami and to the sun line."
+    },
+    {
+      "label": "Kojiki presented",
+      "year_text": "712 CE",
+      "note": "Ō no Yasumaro presents the court's account of origins and genealogy to Empress Genmei, combining myth, song and imperial descent."
+    },
+    {
+      "label": "Nihon Shoki completed",
+      "year_text": "720 CE",
+      "note": "A longer official history in thirty books, preserving many variant tellings of the same myths."
+    },
+    {
+      "label": "Engishiki compiled",
+      "year_text": "927 CE",
+      "note": "Court regulations list shrines, offerings and purification rites, showing how kami worship was organised by the state."
+    },
+    {
+      "label": "Shinto in modern Japan",
+      "year_text": "1868 CE – present",
+      "note": "State sponsorship in the Meiji era was followed by postwar religious freedom; shrine traditions remain active across the country."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Kojiki (712 CE)",
+      "note": "Japan's oldest surviving chronicle and the main source for these stories; compiled for the imperial court and rich in older songs and variant details."
+    },
+    {
+      "title": "Nihon Shoki (720 CE)",
+      "note": "The court's official history, which often gives several versions of a single myth and preserves claims made by regional clans."
+    },
+    {
+      "title": "Engishiki (927 CE)",
+      "note": "A compendium of court procedure that lists shrines, taxes, offerings and purification prayers, useful for how the traditions were practised."
+    },
+    {
+      "title": "Donald L. Philippi, Kojiki (1968)",
+      "note": "A widely used English translation with a scholarly introduction that discusses the text's compilation and its uncertain readings."
+    },
+    {
+      "title": "Helen Hardacre, Shinto: A History (2017)",
+      "note": "A modern history that distinguishes living shrine practice from later nationalist uses of the word Shinto."
+    },
+    {
+      "title": "John Breen and Mark Teeuwen, A New History of Shinto (2010)",
+      "note": "Argues that Shinto as a single organised religion is relatively recent, while shrine traditions and kami worship are much older."
+    }
+  ],
+  "sensitivity": "medium",
+  "verified": false
+}

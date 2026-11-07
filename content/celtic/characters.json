@@ -1,0 +1,92 @@
+[
+  {
+    "id": "nuada",
+    "name": "Nuada",
+    "role": "King of the Tuatha Dé Danann",
+    "domain": ["kingship", "war", "sovereignty"],
+    "symbols": ["the silver hand", "the sword of Nuada"],
+    "fun_fact": "His lost hand was replaced first with silver by the physician Dian Cecht and later with living flesh by Dian Cecht's son Miach.",
+    "verified": false
+  },
+  {
+    "id": "dagda",
+    "name": "The Dagda",
+    "role": "Chief of the Tuatha Dé Danann and a god of fertility and strength",
+    "domain": ["fertility", "agriculture", "druidry"],
+    "symbols": ["the cauldron of plenty", "the great club"],
+    "fun_fact": "His cauldron could feed any company without being emptied, and his club could kill with one end and restore life with the other.",
+    "verified": false
+  },
+  {
+    "id": "lugh",
+    "name": "Lugh",
+    "role": "Master of many arts and champion of the Tuatha Dé Danann",
+    "domain": ["craft", "skill", "war"],
+    "symbols": ["the sling", "the spear"],
+    "fun_fact": "His epithet Lámfada means 'long-armed', and the harvest festival of Lughnasadh is named after him.",
+    "verified": false
+  },
+  {
+    "id": "balor",
+    "name": "Balor",
+    "role": "Fomorian leader whose eye could destroy whatever it saw",
+    "domain": ["war", "destruction"],
+    "symbols": ["the great eye", "the props that hold up his eyelid"],
+    "fun_fact": "His eyelid was so heavy that servants had to lever it open with props before he could use his gaze.",
+    "verified": false
+  },
+  {
+    "id": "cuchulainn",
+    "name": "Cú Chulainn",
+    "role": "Ulster's greatest hero and defender of the province",
+    "domain": ["war", "single combat", "skill"],
+    "symbols": ["the Gáe Bolga", "the hound"],
+    "fun_fact": "He won the name Cú Chulainn, 'the hound of Culann', as a young boy after killing the smith's guard dog.",
+    "verified": false
+  },
+  {
+    "id": "morrigan",
+    "name": "The Morrígan",
+    "role": "War-goddess associated with fate, prophecy and sovereignty",
+    "domain": ["war", "fate", "prophecy"],
+    "symbols": ["the crow", "shapeshifting"],
+    "fun_fact": "Her name is often translated as 'phantom queen', and she sometimes appears as a crow above the battlefield.",
+    "verified": false
+  },
+  {
+    "id": "fionn",
+    "name": "Fionn mac Cumhaill",
+    "role": "Leader of the Fianna and a legendary hunter and seer",
+    "domain": ["wisdom", "hunting", "poetry"],
+    "symbols": ["the salmon of knowledge", "the burned thumb"],
+    "fun_fact": "He gained his wisdom without eating the salmon, from a single touch of its hot skin and a burned thumb.",
+    "verified": false
+  },
+  {
+    "id": "oisin",
+    "name": "Oisín",
+    "role": "Poet of the Fianna and son of Fionn",
+    "domain": ["poetry", "love", "memory"],
+    "symbols": ["the white horse"],
+    "fun_fact": "His name means 'little fawn', because his mother Sadb had been turned into a deer.",
+    "verified": false
+  },
+  {
+    "id": "niamh",
+    "name": "Niamh",
+    "role": "Daughter of Manannán mac Lir who brings Oisín to the Otherworld",
+    "domain": ["the Otherworld", "youth", "love"],
+    "symbols": ["golden hair", "the white horse"],
+    "fun_fact": "She warns Oisín that setting foot on Irish soil will bring all the lost years down on him at once.",
+    "verified": false
+  },
+  {
+    "id": "conchobar",
+    "name": "Conchobar mac Nessa",
+    "role": "King of Ulster at Emain Macha",
+    "domain": ["kingship", "war"],
+    "symbols": ["the court at Emain Macha"],
+    "fun_fact": "In many tales he is the uncle of Cú Chulainn, whose mother Deichtine was his sister.",
+    "verified": false
+  }
+]

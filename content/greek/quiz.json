@@ -1,0 +1,202 @@
+[
+  {
+    "id": "greek-q01",
+    "story_id": "greek-01",
+    "question": "In Hesiod's account, who were the parents of the Titans?",
+    "choices": ["Gaia and Uranus", "Cronus and Rhea", "Zeus and Hera", "Chaos and Nyx"],
+    "correct_index": 0,
+    "explanation": "Hesiod makes Gaia, the earth, and Uranus, the sky, the parents of the twelve Titans, including Cronus and Rhea.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "greek-q02",
+    "story_id": "greek-01",
+    "question": "How did Rhea trick Cronus into sparing the infant Zeus?",
+    "choices": ["She hid Zeus in a golden box", "She gave Cronus a stone wrapped in cloth", "She changed Zeus into an eagle", "She asked Gaia to raise him on Olympus"],
+    "correct_index": 1,
+    "explanation": "Cronus swallowed the stone believing it was his son, while the real Zeus was raised in secret on Crete.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "greek-q03",
+    "story_id": "greek-01",
+    "question": "Why did Gaia ask her children to act against Uranus?",
+    "choices": ["He had killed the Cyclopes", "He had refused to marry her", "He had imprisoned the Hundred-Handers in the earth", "He had given the sky to Cronus"],
+    "correct_index": 2,
+    "explanation": "Uranus feared his monstrous children and hid them away inside the earth, and Gaia grieved for them.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "greek-q04",
+    "story_id": "greek-01",
+    "question": "After the Titanomachy, how did Zeus, Poseidon and Hades divide the cosmos?",
+    "choices": ["They raced for the three realms", "Cronus assigned the realms before the war", "Gaia chose each realm for them", "They drew lots for sky, sea and Underworld"],
+    "correct_index": 3,
+    "explanation": "The victorious brothers drew lots, and each received one of the three great domains to rule.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "greek-q05",
+    "story_id": "greek-02",
+    "question": "Who seized Persephone while she was gathering flowers?",
+    "choices": ["Hades", "Apollo", "Hermes", "Poseidon"],
+    "correct_index": 0,
+    "explanation": "Hades, the lord of the dead, carried her off in his chariot when the earth opened beneath her.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "greek-q06",
+    "story_id": "greek-02",
+    "question": "Why could Persephone not remain with her mother all year?",
+    "choices": ["She had promised Hades her crown", "Zeus forbade her to return", "She had eaten pomegranate seeds in the Underworld", "Demeter refused to take her back"],
+    "correct_index": 2,
+    "explanation": "Food eaten in the Underworld bound her to it, so she had to return to Hades for part of every year.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "greek-q07",
+    "story_id": "greek-02",
+    "question": "What natural cycle does the story of Demeter and Persephone explain?",
+    "choices": ["The phases of the moon", "The changing seasons", "The flooding of rivers", "The movement of the stars"],
+    "correct_index": 1,
+    "explanation": "Demeter's joy at her daughter's return brings growth, while her grief brings the barren season.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "greek-q08",
+    "story_id": "greek-03",
+    "question": "Who stole fire from the gods and gave it to human beings?",
+    "choices": ["Prometheus", "Epimetheus", "Hephaestus", "Pandora"],
+    "correct_index": 0,
+    "explanation": "Prometheus, a Titan who favoured humans, took fire and hid it in a fennel stalk.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "greek-q09",
+    "story_id": "greek-03",
+    "question": "What does the Greek word pithos, used in the Pandora story, actually mean?",
+    "choices": ["A wooden chest", "A woven basket", "A bronze lamp", "A large storage jar"],
+    "correct_index": 3,
+    "explanation": "A pithos is a big jar for grain or wine, and the familiar box comes from a much later mistranslation.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "greek-q10",
+    "story_id": "greek-03",
+    "question": "What stayed inside Pandora's jar after the other contents escaped?",
+    "choices": ["Sleep", "Fire", "Hope", "Memory"],
+    "correct_index": 2,
+    "explanation": "In Hesiod's telling only Hope remained, caught under the rim of the jar after the evils flew out.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "greek-q11",
+    "story_id": "greek-04",
+    "question": "Which hero was sent to fetch the head of Medusa?",
+    "choices": ["Theseus", "Perseus", "Herakles", "Bellerophon"],
+    "correct_index": 1,
+    "explanation": "Perseus took on the errand for King Polydectes, who wanted him out of the way so he could pursue Danaë.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "greek-q12",
+    "story_id": "greek-04",
+    "question": "How did Perseus avoid being turned to stone by Medusa?",
+    "choices": ["He watched her reflection in a bronze shield", "He closed his eyes and struck at random", "He used a mirror to blind her", "He fought her in complete darkness"],
+    "correct_index": 0,
+    "explanation": "Athena's polished shield let him see Medusa's reflection without ever meeting her eyes directly.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "greek-q13",
+    "story_id": "greek-04",
+    "question": "What emerged from Medusa's neck when Perseus cut off her head?",
+    "choices": ["A swarm of snakes", "Only blood, which became coral", "The golden fleece", "Pegasus and Chrysaor"],
+    "correct_index": 3,
+    "explanation": "The winged horse Pegasus and the warrior Chrysaor sprang from the Gorgon's severed neck.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "greek-q14",
+    "story_id": "greek-05",
+    "question": "What did Ariadne give Theseus so that he could escape the Labyrinth?",
+    "choices": ["A magic sword", "A map drawn on linen", "A ball of thread", "A lantern that never went out"],
+    "correct_index": 2,
+    "explanation": "He tied the thread to the doorpost and followed it back out after killing the Minotaur.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "greek-q15",
+    "story_id": "greek-05",
+    "question": "Why did King Aegeus throw himself into the sea?",
+    "choices": ["He saw the black sail and believed his son had died", "He was fleeing an Athenian revolt", "He had lost a war with Minos", "An oracle had ordered him to"],
+    "correct_index": 0,
+    "explanation": "Theseus forgot to change the sail to white, so his father despaired at the sight of the black sail.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "greek-q16",
+    "story_id": "greek-05",
+    "question": "Which ancient author wrote a Life of Theseus while doubting how much of it was historical?",
+    "choices": ["Herodotus", "Plutarch", "Pausanias", "Apollodorus"],
+    "correct_index": 1,
+    "explanation": "Plutarch wrote around 100 CE and openly questioned the reliability of the hero's legends.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "greek-q17",
+    "story_id": "greek-06",
+    "question": "What false name did Odysseus give to the Cyclops Polyphemus?",
+    "choices": ["Polyphemus", "Hector", "Aeolus", "Nobody"],
+    "correct_index": 3,
+    "explanation": "He called himself Outis, meaning Nobody, so that the other Cyclopes would misunderstand the giant's cries.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "greek-q18",
+    "story_id": "greek-06",
+    "question": "Who was the father of the Cyclops Polyphemus?",
+    "choices": ["Zeus", "Hephaestus", "Poseidon", "Oceanus"],
+    "correct_index": 2,
+    "explanation": "Polyphemus was a son of Poseidon, which is why his curse on Odysseus carried such weight.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "greek-q19",
+    "story_id": "greek-06",
+    "question": "How did Odysseus and his men get past the blinded Cyclops and out of the cave?",
+    "choices": ["They tied themselves under the bellies of the sheep", "They rolled the stone aside together", "They climbed out through a crack in the cave", "They disguised themselves in sheepskins"],
+    "correct_index": 0,
+    "explanation": "The giant felt only the backs of his flock as it left, so the men hidden underneath slipped out with it.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "greek-q20",
+    "story_id": "greek-06",
+    "question": "Why did Odysseus stop his men from killing the sleeping Polyphemus?",
+    "choices": ["Killing him would have angered Athena", "Only the giant could move the stone blocking the cave", "The men had sworn not to kill him", "He wanted to steal the giant's flocks first"],
+    "correct_index": 1,
+    "explanation": "They would have been trapped inside forever, since the boulder at the entrance was far too heavy for them to move.",
+    "difficulty": "hard",
+    "verified": false
+  }
+]

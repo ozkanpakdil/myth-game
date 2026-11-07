@@ -1,0 +1,92 @@
+[
+  {
+    "id": "zeus",
+    "name": "Zeus",
+    "role": "King of the Olympian gods and lord of the sky",
+    "domain": ["sky", "thunder and lightning", "justice and oaths"],
+    "symbols": ["thunderbolt", "eagle", "oak tree"],
+    "fun_fact": "Zeus was hidden as a baby in a Cretan cave and fed by the goat Amaltheia, so that his father Cronus could not swallow him.",
+    "verified": false
+  },
+  {
+    "id": "demeter",
+    "name": "Demeter",
+    "role": "Olympian goddess of grain, harvest and the fertility of the earth",
+    "domain": ["agriculture", "harvest", "the growing earth"],
+    "symbols": ["sheaf of wheat", "torch", "poppy"],
+    "fun_fact": "Her Roman name is Ceres, which is the root of the modern English word cereal.",
+    "verified": false
+  },
+  {
+    "id": "persephone",
+    "name": "Persephone",
+    "role": "Queen of the Underworld and goddess of spring growth",
+    "domain": ["the Underworld", "the dead", "spring renewal"],
+    "symbols": ["pomegranate", "seeds of grain", "narcissus flower"],
+    "fun_fact": "She is also called Kore, meaning simply the maiden, and was worshipped under both names in different cults.",
+    "verified": false
+  },
+  {
+    "id": "hades",
+    "name": "Hades",
+    "role": "God of the dead and ruler of the Underworld",
+    "domain": ["the Underworld", "the dead", "hidden wealth beneath the earth"],
+    "symbols": ["helm of darkness", "pomegranate", "Cerberus"],
+    "fun_fact": "The Greeks often avoided his name and called him Plouton, the wealthy one, because his realm held the earth's mineral riches.",
+    "verified": false
+  },
+  {
+    "id": "prometheus",
+    "name": "Prometheus",
+    "role": "Titan who sided with humanity and stole fire for them",
+    "domain": ["forethought", "fire", "craft and invention"],
+    "symbols": ["fennel stalk", "flame", "eagle"],
+    "fun_fact": "His name means forethought, and his punishment was to be chained to a rock while an eagle ate his liver, which regrew each day.",
+    "verified": false
+  },
+  {
+    "id": "pandora",
+    "name": "Pandora",
+    "role": "The first woman, shaped by the gods as part of Zeus's punishment of humanity",
+    "domain": ["human origins", "the jar of evils"],
+    "symbols": ["pithos or storage jar", "crown", "wedding veil"],
+    "fun_fact": "Her name means all-gifted, because each god contributed a different quality to her before she was sent to Epimetheus.",
+    "verified": false
+  },
+  {
+    "id": "perseus",
+    "name": "Perseus",
+    "role": "Hero who beheaded Medusa and rescued Andromeda",
+    "domain": ["heroic quests", "monster slaying"],
+    "symbols": ["Medusa's severed head", "winged sandals", "curved sword"],
+    "fun_fact": "The myths make him the founder of Mycenae, and his descendant Herakles is the greatest of the Greek heroes.",
+    "verified": false
+  },
+  {
+    "id": "athena",
+    "name": "Athena",
+    "role": "Olympian goddess of wisdom, craft and strategic warfare",
+    "domain": ["wisdom", "crafts and weaving", "strategic war"],
+    "symbols": ["owl", "aegis", "olive tree"],
+    "fun_fact": "She was said to have been born from the head of Zeus, fully grown and armed, after he swallowed her mother Metis.",
+    "verified": false
+  },
+  {
+    "id": "theseus",
+    "name": "Theseus",
+    "role": "Hero-king of Athens and slayer of the Minotaur",
+    "domain": ["Athens and kingship", "heroic adventure"],
+    "symbols": ["club", "Ariadne's thread", "traveller's sandals"],
+    "fun_fact": "Athenians credited him with bringing the villages of Attica together into one city-state and honoured him as a founder.",
+    "verified": false
+  },
+  {
+    "id": "odysseus",
+    "name": "Odysseus",
+    "role": "Hero of the Odyssey, known for cunning and endurance",
+    "domain": ["cunning intelligence", "seafaring", "endurance"],
+    "symbols": ["bow", "ship", "olive-wood stake"],
+    "fun_fact": "He tried to avoid the Trojan War by pretending to be mad and sowing a field with salt, until his infant son was placed before the plough.",
+    "verified": false
+  }
+]

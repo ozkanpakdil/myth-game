@@ -1,0 +1,74 @@
+{
+  "id": "greek",
+  "name": "Greek",
+  "intro": "Greek myth is not a single book but a family of stories told across a thousand years and a scatter of independent city-states. The earliest surviving versions come from Homer and Hesiod, around 800–700 BCE, who shaped older oral traditions into poems about gods and heroes. Later writers — the tragedians, Apollodorus, Plutarch and Pausanias — retold and expanded the tales, often disagreeing with one another. The gods were imagined as powerful, long-lived beings with human tempers, living on Mount Olympus and intervening in mortal affairs. Heroes such as Perseus, Theseus and Odysseus bridged the two worlds. These stories were religious, but also civic and political: Athens promoted Theseus, and noble families traced their descent from Herakles. Roman writers adopted and renamed the gods, and later European art, opera and poetry kept reinterpreting them. Versions differ, and this collection presents the best-known tellings.",
+  "timeline": [
+    {
+      "label": "Minoan and Mycenaean palace cultures",
+      "year_text": "about 1600–1100 BCE",
+      "note": "Cretan and mainland palaces leave images and Linear B tablets that already name several gods later found in Greek myth."
+    },
+    {
+      "label": "Homer and Hesiod",
+      "year_text": "about 800–700 BCE",
+      "note": "The Iliad, the Odyssey and the Theogony give the earliest written versions of the creation story and the great heroic cycles."
+    },
+    {
+      "label": "Archaic and classical city-states",
+      "year_text": "about 700–400 BCE",
+      "note": "Temples, festivals and theatre embed myth in civic life; Athens in particular promotes Theseus as its founding hero."
+    },
+    {
+      "label": "Hellenistic scholarship",
+      "year_text": "about 300–100 BCE",
+      "note": "Scholars at Alexandria collect manuscripts, compare variants and write handbooks that shape later retellings."
+    },
+    {
+      "label": "Roman adaptation",
+      "year_text": "about 146 BCE–200 CE",
+      "note": "Roman poets and scholars adopt the Greek gods under Latin names and give the old stories new literary forms."
+    },
+    {
+      "label": "Imperial compilers and travellers",
+      "year_text": "about 100–200 CE",
+      "note": "Plutarch, Pausanias and the author of the Library preserve local traditions and convenient summaries of the myths."
+    },
+    {
+      "label": "Modern retellings",
+      "year_text": "since about 1500 CE",
+      "note": "Printed editions and translations spread the stories widely, and translators' choices still shape what readers assume the originals say."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Hesiod, Theogony",
+      "note": "Composed around 700 BCE; the main early account of creation, the Titans and Zeus's rise to power."
+    },
+    {
+      "title": "Hesiod, Works and Days",
+      "note": "Roughly contemporary with the Theogony; it contains the story of Prometheus, Pandora and the origins of human hardship."
+    },
+    {
+      "title": "Homeric Hymn to Demeter",
+      "note": "A hexameter hymn probably from the seventh or sixth century BCE; the fullest early narrative of Persephone's abduction."
+    },
+    {
+      "title": "Homer, Odyssey",
+      "note": "An epic probably finalised in the eighth century BCE; Book 9 contains Odysseus's own account of the Cyclops."
+    },
+    {
+      "title": "Apollodorus, Library",
+      "note": "A mythographic handbook from perhaps the first or second century CE, written long after the stories; our fullest continuous account of Perseus."
+    },
+    {
+      "title": "Plutarch, Life of Theseus",
+      "note": "A biography written around 100 CE, many centuries after the supposed events, and openly sceptical about them."
+    },
+    {
+      "title": "Pausanias, Description of Greece",
+      "note": "A travel guide from the second century CE that records local cults, monuments and competing versions of the myths."
+    }
+  ],
+  "sensitivity": "low",
+  "verified": false
+}

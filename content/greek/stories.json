@@ -1,0 +1,92 @@
+[
+  {
+    "id": "greek-01",
+    "title": "The War of the Titans",
+    "source_ref": "Hesiod, Theogony (composed around 700 BCE)",
+    "paragraphs": [
+      "In the beginning, Hesiod says, there was Chaos: not a god but a gap, a yawning emptiness. From it came Gaia, the wide earth, and Uranus, the sky, who covered her. Their children included the twelve Titans, the one-eyed Cyclopes and the Hundred-Handers, giants with fifty heads and a hundred arms.",
+      "Uranus feared his strangest children and shut the Hundred-Handers deep inside the earth. Gaia, grieving and angry, made a sickle of grey flint and asked which of her sons would help her. Only Cronus, the youngest Titan, agreed. He ambushed his father, wounded him and took the sky's throne. He then married his sister Rhea and swallowed each of their children, because a prophecy warned that a son would overthrow him.",
+      "Rhea saved the last child, Zeus, by wrapping a stone in swaddling clothes and giving it to Cronus to swallow. Zeus was raised in secret on Crete. When he grew up he returned, forced his father to vomit up the swallowed gods, and led them in a ten-year war against the Titans, the Titanomachy.",
+      "With the Cyclopes' thunderbolts and the Hundred-Handers' volleys of stone, Zeus won. The defeated Titans were imprisoned in Tartarus, and Atlas was set to hold up the sky. Zeus and his brothers divided the world by lot: sky, sea and Underworld. Versions differ in detail, but later Greeks told the story as the moment when the ordered rule of the Olympians began."
+    ],
+    "characters": ["zeus"],
+    "themes": ["creation", "succession of power", "war among the gods"],
+    "uncertain": false,
+    "verified": false
+  },
+  {
+    "id": "greek-02",
+    "title": "Demeter and Persephone",
+    "source_ref": "Homeric Hymn to Demeter (probably 7th–6th century BCE)",
+    "paragraphs": [
+      "Persephone, daughter of Demeter and Zeus, was gathering flowers in a meadow when the ground opened. Hades, lord of the dead, drove up in his chariot and carried her away. She cried out for her father, but Zeus had already agreed to the match, and in most tellings he did so without consulting Demeter.",
+      "Demeter searched for nine days with burning torches, eating and drinking nothing. Helios the sun, who sees everything, finally told her what had happened. Furious, she left Olympus and wandered the world disguised as an old woman. Crops failed, famine spread, and the gods began to lose the sacrifices that kept them honoured.",
+      "Zeus sent Hermes to bring Persephone back. Hades let her go, but first, quietly, he had given her seeds of a pomegranate. She ate them. Because food taken in the Underworld binds the eater to it, she could not stay away forever. Some versions say she ate four seeds, some six, some seven.",
+      "A compromise was arranged: Persephone would spend part of each year with Hades and the rest with her mother. When she returns, Demeter lets the earth bloom; when she leaves, the land turns barren. That is how the hymn explains the seasons, not as weather but as a mother's grief. The Homeric Hymn to Demeter, probably composed in the seventh or sixth century BCE, is the fullest early telling of the story."
+    ],
+    "characters": ["demeter", "persephone", "hades"],
+    "themes": ["grief", "the cycle of the seasons", "marriage and loss"],
+    "uncertain": false,
+    "verified": false
+  },
+  {
+    "id": "greek-03",
+    "title": "Pandora's Jar",
+    "source_ref": "Hesiod, Works and Days (composed around 700 BCE)",
+    "paragraphs": [
+      "Prometheus, a Titan who had taken Zeus's side in the war, stole fire for human beings, hiding it in a fennel stalk. Zeus was furious. Fire was a privilege of the gods, and the theft could not go unpunished, so he planned a punishment that would reach every person rather than only Prometheus.",
+      "Zeus ordered Hephaestus to shape a woman out of earth and water. Athena taught her weaving, Aphrodite gave her charm, and Hermes gave her a persuasive tongue. She was named Pandora, meaning all-gifts, because every god had contributed something. Then Zeus gave her a jar and sent her to Epimetheus, Prometheus's brother. Prometheus had warned him never to accept a gift from Zeus, but Epimetheus took her in.",
+      "What happened next depends on the version. In Hesiod's Works and Days, Pandora lifted the lid of the pithos, a large storage jar, and out flew sickness, toil and sorrow, which had been kept away from humans until then. Only Hope stayed behind, caught under the rim. The story is often told with a box, but that is a much later mistranslation: the Greek word pithos means a jar, and the sixteenth-century scholar Erasmus rendered it as pyxis, a small box.",
+      "The tale is not really about curiosity being wicked. It is about why suffering exists if the gods are powerful, and about whether hope is a comfort or a cruel last item left in the jar. Hesiod does not say that Pandora was curious; she is simply the agent through whom Zeus's plan works."
+    ],
+    "characters": ["prometheus", "pandora", "zeus"],
+    "themes": ["punishment", "the origin of human suffering", "hope"],
+    "uncertain": false,
+    "verified": false
+  },
+  {
+    "id": "greek-04",
+    "title": "Perseus and Medusa",
+    "source_ref": "Apollodorus, Library (perhaps 1st–2nd century CE, long after the myth)",
+    "paragraphs": [
+      "Acrisius, king of Argos, was told that his daughter Danaë would bear a son who would kill him. He locked her in a bronze chamber, but Zeus visited her as a shower of gold, and she bore Perseus. Acrisius set mother and child adrift in a chest; they washed ashore on Seriphos, where a fisherman named Dictys sheltered them.",
+      "Years later the island's king, Polydectes, wanted Danaë and wanted Perseus gone. He demanded a wedding gift: the head of Medusa, one of three Gorgon sisters whose glance turned people to stone. It was meant to be a suicide mission, but Athena and Hermes came to help. Hermes lent him winged sandals and a curved sword, while Athena lent him a polished bronze shield and told him to watch Medusa only in its reflection.",
+      "Perseus first found the Graeae, three old women who shared one eye and one tooth, and kept the eye until they told him the way to the nymphs who held the cap of darkness and a bag for the head. Thus equipped, he flew to the Gorgons' lair. Medusa was the only mortal sister. Watching her reflection in the shield, he cut off her head, and from her neck sprang Pegasus, the winged horse, and the warrior Chrysaor.",
+      "On the way home Perseus saw Andromeda, chained to a rock as a sacrifice to a sea monster because her mother Cassiopeia had boasted that Andromeda was more beautiful than the Nereids. He killed the monster, freed her and married her. Later, at funeral games, he accidentally killed Acrisius with a thrown discus, and the prophecy came true. Apollodorus, writing many centuries after the story, gives the fullest surviving version."
+    ],
+    "characters": ["perseus", "athena"],
+    "themes": ["heroic quest", "divine aid", "fate"],
+    "uncertain": false,
+    "verified": false
+  },
+  {
+    "id": "greek-05",
+    "title": "Theseus and the Minotaur",
+    "source_ref": "Plutarch, Life of Theseus (about 100 CE, centuries after the supposed events)",
+    "paragraphs": [
+      "Athens was tributary to Crete. After the death of Androgeos, King Minos demanded that Athens send seven young men and seven young women every year, or every nine years in some accounts, to be fed to the Minotaur. The creature had a man's body and a bull's head, and it was kept in the Labyrinth built by the craftsman Daedalus.",
+      "Theseus, son of King Aegeus — and, some said, of Poseidon — volunteered to go with the victims. He promised his father that if he survived he would change the ship's black sail to white on the way home. In Crete, Minos's daughter Ariadne fell in love with him and gave him a ball of thread. He tied one end to the doorpost and paid it out as he walked deeper into the maze.",
+      "He found the Minotaur at the centre and killed it, with his fists in some versions and with a sword in others, then followed the thread back to the entrance. He took Ariadne with him but abandoned her on the island of Naxos, where Dionysus found her and made her his wife. Some tellings say Theseus simply forgot her; others say a god ordered him to leave.",
+      "On the return voyage Theseus forgot the signal. Aegeus, watching from a cliff, saw the black sail, believed his son was dead and threw himself into the sea, which ever afterwards bore his name. Theseus became king of Athens. Plutarch, writing around 100 CE, tells the story while openly doubting how much of it is history."
+    ],
+    "characters": ["theseus"],
+    "themes": ["courage", "cunning and memory", "tragic oversight"],
+    "uncertain": false,
+    "verified": false
+  },
+  {
+    "id": "greek-06",
+    "title": "Odysseus and the Cyclops",
+    "source_ref": "Homer, Odyssey, Book 9 (epic probably finalised in the 8th century BCE)",
+    "paragraphs": [
+      "Blown off course on his way home from Troy, Odysseus and his companions came to an island where sheep and goats ran wild. Across the water stood a cave, and in it lived a Cyclops named Polyphemus, a son of Poseidon. Curious to see what gift the monster might offer, Odysseus took twelve men and went inside.",
+      "The Cyclops returned, drove his flock in and rolled a boulder across the door that twenty oxen could not have moved. He ate two of the men for supper and two for breakfast. Odysseus wanted to kill him with his sword, but he realised that only the giant could move the stone, so they would be sealed in forever if he did.",
+      "So Odysseus offered the Cyclops strong wine and said his name was Nobody, Outis in Greek. Drunk, Polyphemus promised to eat Nobody last and fell asleep. Odysseus heated a stake in the fire, hardened it and drove it into the single eye. When the other Cyclopes heard the shouting and asked who had hurt him, he roared, “Nobody!” and they went away.",
+      "In the morning the blinded giant rolled back the stone and sat at the mouth of the cave to feel for the sheep as they left. Odysseus tied his men under the rams' bellies and clung to the fleece of the largest ram himself, and so they escaped. But as his ship pulled away, Odysseus shouted his real name, and Polyphemus called on Poseidon to curse him. That curse is why the journey home took ten years."
+    ],
+    "characters": ["odysseus"],
+    "themes": ["cunning", "hospitality and its abuse", "divine wrath"],
+    "uncertain": false,
+    "verified": false
+  }
+]

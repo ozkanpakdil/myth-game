@@ -1,0 +1,202 @@
+[
+  {
+    "id": "celtic-q01",
+    "story_id": "celtic-01",
+    "question": "Who leads the Tuatha Dé Danann when they first come to Ireland?",
+    "choices": ["Bres", "Nuada", "Lugh", "Balor"],
+    "correct_index": 1,
+    "explanation": "Nuada is king at the arrival and leads the first battle of Mag Tuired before Bres takes his place.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "celtic-q02",
+    "story_id": "celtic-01",
+    "question": "Which of the Four Treasures belongs to the Dagda?",
+    "choices": ["The stone from Falias", "The sword from Gorias", "The spear from Finias", "The cauldron from Murias"],
+    "correct_index": 3,
+    "explanation": "The Dagda's cauldron came from Murias and could feed a whole company without ever being emptied.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "celtic-q03",
+    "story_id": "celtic-01",
+    "question": "Why does Nuada give up the kingship after the first battle?",
+    "choices": ["He is wounded, and a king must be unblemished", "He decides to become a druid", "The Tuatha Dé choose Bres by lot", "He is killed by the Fir Bolg"],
+    "correct_index": 0,
+    "explanation": "Nuada loses his hand in the fighting, and the law of the Tuatha Dé requires a king without blemish.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "celtic-q04",
+    "story_id": "celtic-01",
+    "question": "Whom do the Tuatha Dé fight at the first battle of Mag Tuired?",
+    "choices": ["The Milesians", "The Fomorians", "The Fir Bolg", "The Ulaid"],
+    "correct_index": 2,
+    "explanation": "The first battle is fought against the Fir Bolg, while the second is fought against the Fomorians.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "celtic-q05",
+    "story_id": "celtic-02",
+    "question": "Who is Lugh's grandfather in the story?",
+    "choices": ["Nuada", "Balor", "The Dagda", "Manannán mac Lir"],
+    "correct_index": 1,
+    "explanation": "Lugh's mother is Ethniu, daughter of Balor, which makes the Fomorian leader his grandfather.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "celtic-q06",
+    "story_id": "celtic-02",
+    "question": "How does Lugh get past the doorkeeper at Tara?",
+    "choices": ["He shows the four treasures", "He proves he is master of every craft", "He arrives with an army", "He is carried in by the Dagda"],
+    "correct_index": 1,
+    "explanation": "The Tuatha Dé already have a specialist in each craft, but Lugh is the one man who possesses them all.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "celtic-q07",
+    "story_id": "celtic-02",
+    "question": "What does Bres promise the Tuatha Dé in exchange for his life?",
+    "choices": ["The secret of Balor's eye", "A share of the Four Treasures", "A tribute of gold from the Fomorians", "Knowledge of when to plough, sow and reap"],
+    "correct_index": 3,
+    "explanation": "Bres is spared on condition that he teaches the people the right seasons for ploughing, sowing and reaping.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "celtic-q08",
+    "story_id": "celtic-03",
+    "question": "What name does Setanta take after the hound dies?",
+    "choices": ["Conall Cernach", "Fergus mac Róich", "Cú Chulainn", "Cathbad"],
+    "correct_index": 2,
+    "explanation": "Cathbad declares the boy Cú Chulainn, the Hound of Culann, and the new name stays with him.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "celtic-q09",
+    "story_id": "celtic-03",
+    "question": "Why does Setanta take the name Cú Chulainn?",
+    "choices": ["He kills Culann's hound and promises to guard the smith's hall", "He wins a contest at Emain Macha", "Cathbad gives it to him at birth", "He is renamed by Conchobar in battle"],
+    "correct_index": 0,
+    "explanation": "After killing the guard dog, he offers to serve as Culann's hound until a replacement pup is raised.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "celtic-q10",
+    "story_id": "celtic-03",
+    "question": "Where is Setanta raised as a boy?",
+    "choices": ["At Medb's court in Cruachan", "At Conchobar's court at Emain Macha", "In Finn Éces's camp by the Boyne", "At Culann's forge"],
+    "correct_index": 1,
+    "explanation": "Setanta grows up at Emain Macha, where his uncle Conchobar is king of Ulster.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "celtic-q11",
+    "story_id": "celtic-04",
+    "question": "Who leads the raid into Ulster?",
+    "choices": ["Medb", "Ailill", "the Morrígan", "Cú Chulainn"],
+    "correct_index": 0,
+    "explanation": "Medb, queen of Connacht, gathers the armies of Connacht and Leinster to seize the Brown Bull of Cooley.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "celtic-q12",
+    "story_id": "celtic-04",
+    "question": "What does the Morrígan do when Cú Chulainn refuses her offer of love?",
+    "choices": ["She offers him the Gáe Bolga", "She tells him the bulls' names", "She warns him that she will hinder him", "She rides ahead to warn Ulster"],
+    "correct_index": 2,
+    "explanation": "Wounded by his refusal, she takes animal shapes and interferes with his fighting until he drives her off.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "celtic-q13",
+    "story_id": "celtic-04",
+    "question": "Why does the raid finally bring Medb nothing?",
+    "choices": ["Cú Chulainn keeps the Brown Bull in Ulster", "The Brown Bull kills the white bull and then dies", "Ailill makes peace with Conchobar", "The Morrígan drives the herd into the sea"],
+    "correct_index": 1,
+    "explanation": "The two bulls fight across the country; the Brown Bull wins but wanders home and dies of its wounds.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "celtic-q14",
+    "story_id": "celtic-05",
+    "question": "What name is Fionn given at birth?",
+    "choices": ["Oisín", "Cumhall", "Goll", "Demne"],
+    "correct_index": 3,
+    "explanation": "He is born Demne and is raised in hiding before he becomes known as Fionn.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "celtic-q15",
+    "story_id": "celtic-05",
+    "question": "Who spends seven years trying to catch the salmon of knowledge?",
+    "choices": ["Finn Éces", "Fionn mac Cumhaill", "Conchobar", "Cathbad"],
+    "correct_index": 0,
+    "explanation": "The poet Finn Éces waits by the Boyne for seven years, watching the pool where the salmon lives.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "celtic-q16",
+    "story_id": "celtic-05",
+    "question": "How does Fionn first taste the salmon?",
+    "choices": ["Finn Éces gives him a piece", "He catches a second fish", "He burns his thumb on its skin and sucks it", "He dreams about it"],
+    "correct_index": 2,
+    "explanation": "A blister rises as he turns the fish, and he puts his burned thumb in his mouth to cool it.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "celtic-q17",
+    "story_id": "celtic-06",
+    "question": "Who invites Oisín to Tír na nÓg?",
+    "choices": ["Sadb", "Niamh", "the Morrígan", "Medb"],
+    "correct_index": 1,
+    "explanation": "Niamh of the Golden Hair, daughter of Manannán mac Lir, arrives on a white horse to bring him there.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "celtic-q18",
+    "story_id": "celtic-06",
+    "question": "What does Oisín find when he returns to Ireland?",
+    "choices": ["The Fianna are waiting for him", "Niamh has followed him", "St Patrick has banished the Fianna", "The Fianna are gone and only stories remain"],
+    "correct_index": 3,
+    "explanation": "The hills are familiar, but the people are smaller and speak of the Fianna as a legend long dead.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "celtic-q19",
+    "story_id": "celtic-06",
+    "question": "How many years pass in Ireland while Oisín is away?",
+    "choices": ["Three hundred", "Three", "Thirty", "A thousand"],
+    "correct_index": 0,
+    "explanation": "What feels to Oisín like three years becomes three hundred years in Ireland.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "celtic-q20",
+    "story_id": "celtic-06",
+    "question": "What makes Oisín grow old the moment he returns?",
+    "choices": ["He eats food from an Irish hearth", "He touches the ground when his saddle girth breaks", "Niamh takes back her white horse", "St Patrick blesses him"],
+    "correct_index": 1,
+    "explanation": "He leans down to help move a stone, the girth snaps, and he falls onto Irish soil, where the lost years catch him.",
+    "difficulty": "hard",
+    "verified": false
+  }
+]

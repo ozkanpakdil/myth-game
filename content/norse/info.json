@@ -1,0 +1,73 @@
+{
+  "id": "norse",
+  "name": "Norse",
+  "intro": "Norse myth reaches us mainly through two medieval Icelandic books: the Poetic Edda, a collection of older poems, and the Prose Edda, a handbook compiled by the scholar Snorri Sturluson. Both were written down in Christian Iceland in the thirteenth century, long after the pre-Christian religion had faded, so they preserve old material through a medieval lens. The stories describe nine worlds held together by the ash tree Yggdrasil: Asgard for the gods, Midgard for humans, Jotunheim for the giants, and others beneath and beyond. Their gods are not all-powerful. Odin gives an eye for wisdom and knows he will die at Ragnarök; Thor defends the worlds with his hammer; Loki both helps the gods and destroys them. Again and again these myths ask how people should act when the ending is already known. Their answer is courage, and luck.",
+  "timeline": [
+    {
+      "label": "Earliest traces",
+      "year_text": "c. 1–500 CE",
+      "note": "Runic inscriptions, coins, and helmet plates from Scandinavia and northern Europe hint at gods who would later be named Odin, Thor, and Freyr."
+    },
+    {
+      "label": "Viking Age",
+      "year_text": "c. 793–1066 CE",
+      "note": "Norse religion is practised across Scandinavia and in every place Norse ships trade and raid; poems about gods and heroes circulate orally."
+    },
+    {
+      "label": "Christian conversion",
+      "year_text": "c. 1000 CE",
+      "note": "Iceland and Norway formally adopt Christianity; traditional stories survive in poetry, law, and custom rather than in temple worship."
+    },
+    {
+      "label": "Prose Edda written",
+      "year_text": "c. 1220 CE",
+      "note": "Snorri Sturluson writes Gylfaginning and Skáldskaparmál, retelling many myths and quoting older verse."
+    },
+    {
+      "label": "Poetic Edda compiled",
+      "year_text": "c. 1270 CE",
+      "note": "An anonymous Icelandic manuscript, the Codex Regius, gathers older poems including Völuspá, Hávamál, and Þrymskviða."
+    },
+    {
+      "label": "Modern rediscovery",
+      "year_text": "17th century onward",
+      "note": "Manuscripts are collected and printed, and Norse myth becomes a major influence on European literature, art, and music."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Poetic Edda, Völuspá",
+      "note": "The seeress's vision of creation and Ragnarök, and the main surviving poetic account of the world's end."
+    },
+    {
+      "title": "Poetic Edda, Hávamál",
+      "note": "A collection of wisdom sayings that includes Odin's own account of hanging on the tree to win the runes."
+    },
+    {
+      "title": "Poetic Edda, Þrymskviða",
+      "note": "The comic poem of Thor's stolen hammer, the bridal disguise, and the wedding feast in Jotunheim."
+    },
+    {
+      "title": "Poetic Edda, Lokasenna",
+      "note": "Loki's insult contest with the gods at Ægir's hall, the scene that leads to his binding."
+    },
+    {
+      "title": "Poetic Edda, Baldrs draumar",
+      "note": "Odin rides to the underworld and learns what the seeress knows about Baldr's coming death."
+    },
+    {
+      "title": "Prose Edda, Gylfaginning",
+      "note": "Snorri Sturluson's systematic retelling of creation, the gods, Baldr's death, and Ragnarök."
+    },
+    {
+      "title": "Prose Edda, Skáldskaparmál",
+      "note": "Snorri's guide to poetic language, which preserves many myths in the quotations it uses as examples."
+    },
+    {
+      "title": "Codex Regius manuscript",
+      "note": "The thirteenth-century manuscript that preserves most of the Poetic Edda, copied in Christian Iceland."
+    }
+  ],
+  "sensitivity": "low",
+  "verified": false
+}

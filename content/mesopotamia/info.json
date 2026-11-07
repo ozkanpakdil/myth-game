@@ -1,0 +1,74 @@
+{
+  "id": "mesopotamia",
+  "name": "Mesopotamian",
+  "intro": "Mesopotamia, the land between the Tigris and Euphrates rivers, is where some of the world's earliest cities, writing, and literature appeared. Its myths come from Sumerian city-states such as Uruk and Eridu and from the later Akkadian and Babylonian kingdoms that inherited them. The stories were written in cuneiform on clay tablets, copied by scribes for well over a thousand years, and often survive only in fragments. They tell of gods who shaped the world from a defeated sea, of a queen who walked into the underworld, and of a king who could not accept that he must die. Because the texts were retold across centuries and several languages, versions differ, and scholars still debate the details. The stories below are modern retellings, with the older sources noted.",
+  "timeline": [
+    {
+      "label": "First cities and writing",
+      "year_text": "about 3500–3000 BCE",
+      "note": "Uruk and other Sumerian cities grow large, and cuneiform writing develops for accounting before it is used for literature."
+    },
+    {
+      "label": "Sumerian Gilgamesh poems",
+      "year_text": "about 2100–1900 BCE",
+      "note": "Five separate Sumerian poems about the king Bilgames are copied on clay tablets, with episodes that later enter the Akkadian epic."
+    },
+    {
+      "label": "Old Babylonian epic",
+      "year_text": "about 1800–1600 BCE",
+      "note": "Scribes combine older tales into a connected Akkadian epic of Gilgamesh; the flood story also appears in the poem Atrahasis."
+    },
+    {
+      "label": "Enuma Elish",
+      "year_text": "about 1100 BCE, surviving copies later",
+      "note": "The Babylonian creation poem is composed and becomes the text recited at the New Year festival in Babylon."
+    },
+    {
+      "label": "Standard Babylonian Gilgamesh",
+      "year_text": "about 1200–800 BCE",
+      "note": "The epic is arranged into twelve tablets, traditionally credited to the scholar Sin-leqi-unninni, and this version becomes the best known."
+    },
+    {
+      "label": "Library of Ashurbanipal",
+      "year_text": "about 650 BCE",
+      "note": "Tablets from the Assyrian royal library at Nineveh preserve much of the epic; most of what scholars read today comes from these copies."
+    },
+    {
+      "label": "End of the cuneiform tradition",
+      "year_text": "about 100 BCE–100 CE",
+      "note": "The last dated cuneiform tablets are written; after this the myths survive only in later references and in the tablets archaeologists recover."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Epic of Gilgamesh, Standard Babylonian version, tablets I–XI",
+      "note": "The main surviving text, reconstructed from tablets found at Nineveh and other sites; it was copied and edited over many centuries and no single copy is complete."
+    },
+    {
+      "title": "Enuma Elish",
+      "note": "The Babylonian creation poem, known from copies made between roughly the ninth and second centuries BCE and recited at the New Year festival."
+    },
+    {
+      "title": "The Descent of Inanna",
+      "note": "A Sumerian poem about Inanna's journey to the underworld, preserved in copies from around 1900–1600 BCE that differ from one another."
+    },
+    {
+      "title": "Atrahasis",
+      "note": "An Old Babylonian poem about the creation of humans and the flood, with a hero called Atrahasis rather than Utnapishtim."
+    },
+    {
+      "title": "Sumerian King List",
+      "note": "A list of kings and dynasties that mixes legendary reigns of thousands of years with historical rulers, showing how Mesopotamians imagined their past."
+    },
+    {
+      "title": "Sumerian Gilgamesh poems",
+      "note": "Five Sumerian poems about Bilgames, including separate episodes about the Cedar Forest and the bull of heaven, older than the connected epic."
+    },
+    {
+      "title": "Andrew George, The Babylonian Gilgamesh Epic (2003)",
+      "note": "A modern critical edition and translation that sets out the surviving fragments and the debates about how they fit together."
+    }
+  ],
+  "sensitivity": "low",
+  "verified": false
+}

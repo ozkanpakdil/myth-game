@@ -1,0 +1,92 @@
+[
+  {
+    "id": "celtic-01",
+    "title": "The People of the Goddess Danu",
+    "source_ref": "Cath Maige Tuired; Lebor Gabála Érenn",
+    "paragraphs": [
+      "The Tuatha Dé Danann, the People of the Goddess Danu, came to Ireland out of the north, hidden in a mist that kept them from the coastlands. They were masters of craft, poetry and magic, and they brought four treasures from four cities: the stone of Fál, which cried out beneath a rightful king; the sword of Nuada, from which no enemy escaped; the spear of Lugh, which never missed its mark; and the cauldron of the Dagda, which never left a company unsatisfied.",
+      "Nuada was their king, and he led them against the Fir Bolg, the people already living in Ireland. The two hosts met on the plain of Mag Tuired, and the battle lasted for days. Losses were heavy on both sides. In the fighting Nuada's right hand was cut off, and though the physician Dian Cecht replaced it with a working hand of silver, the law of the Tuatha Dé required a king without blemish.",
+      "So Nuada stepped down, and the kingship passed to Bres, son of a Fomorian prince and a woman of the Tuatha Dé. Bres ruled harshly, taxed his people and neglected the poets, and dissatisfaction spread. When Nuada's hand was later restored with living flesh, he took the kingship back, and Bres turned to the Fomorians for support.",
+      "The first battle of Mag Tuired ended with the Fir Bolg defeated and the survivors granted a province of their own, but it set the pattern for the greater war that followed. The tale survives in several versions, and the treasures are sometimes given to different keepers; the mist, the stone and the silver hand are the parts that stay."
+    ],
+    "characters": ["nuada", "dagda"],
+    "themes": ["arrival", "kingship", "sovereignty", "craft"],
+    "uncertain": false,
+    "verified": false
+  },
+  {
+    "id": "celtic-02",
+    "title": "Lugh and Balor",
+    "source_ref": "Cath Maige Tuired",
+    "paragraphs": [
+      "Lugh came to Tara when the Tuatha Dé were preparing for war with the Fomorians. The doorkeeper asked his name and his business, as the law of the court required. Lugh answered that he was a carpenter, a smith, a warrior, a harper, a poet, a historian, a sorcerer and a physician, a master of every craft. Each time the doorkeeper said the Tuatha Dé already had a man of that skill, Lugh asked whether they had one man who had them all. They did not, and the gate was opened.",
+      "By his own account he was the son of Cian and of Ethniu, daughter of Balor, the Fomorian leader. Balor had once been told that his own grandson would kill him, and he had tried to prevent it. The prophecy held.",
+      "Balor's eye was his weapon. Its lid was so heavy that servants had to lever it up with props, and when the eye opened, its gaze withered whatever it looked upon. At the second battle of Mag Tuired the Fomorians brought Balor to the field. Lugh circled the battle and came at him from the side, out of the eye's path.",
+      "He fitted a stone to his sling and loosed it. The stone struck Balor's eye, and the giant fell; his deadly gaze was turned on the Fomorian ranks behind him. The Tuatha Dé won the day. In the peace that followed, Bres was spared on condition that he teach the people when to plough, when to sow and when to reap. Versions differ on many of these details, but the sling and the eye are constant."
+    ],
+    "characters": ["lugh", "balor"],
+    "themes": ["fate", "skill", "prophecy", "war"],
+    "uncertain": false,
+    "verified": false
+  },
+  {
+    "id": "celtic-03",
+    "title": "The Boyhood of Cú Chulainn",
+    "source_ref": "Táin Bó Cúailnge; Tochmarc Emire",
+    "paragraphs": [
+      "The boy was called Setanta. He was raised in Ulster at Emain Macha, the court of King Conchobar, and from the first he was faster and fiercer than any child around him. His mother Deichtine was the king's sister, so the court was home to him, and the heroes there were his models.",
+      "One evening Conchobar rode to the hall of Culann the smith, and Setanta stayed behind to finish a game of hurling with the other boys. He promised to follow, but he arrived late, after the gate had been closed and the smith's great hound loosed to guard the hall. The hound charged him. Setanta had only his hurley and his ball; he drove the ball into the hound's mouth and struck it down, and the beast did not rise.",
+      "Culann grieved for his guard. Setanta said that he would guard the smith's door and cattle himself until a pup of the same line was old enough to take the hound's place. The druid Cathbad declared that his name would be Cú Chulainn, the Hound of Culann, and the name stayed with him.",
+      "Not long afterwards Setanta asked Conchobar for arms. Cathbad, who had read the omens, warned that a boy who took arms that day would win great fame and die young. Setanta took them anyway. Some tellings put the prophecy at the moment he takes his new name, others at the day he first arms himself. All agree that Ulster's greatest hero was still a child when he chose his fate."
+    ],
+    "characters": ["cuchulainn", "conchobar"],
+    "themes": ["naming", "courage", "destiny", "loyalty"],
+    "uncertain": false,
+    "verified": false
+  },
+  {
+    "id": "celtic-04",
+    "title": "The Cattle Raid of Cooley",
+    "source_ref": "Táin Bó Cúailnge",
+    "paragraphs": [
+      "Medb, queen of Connacht, and her husband Ailill argued over which of them was richer. The one treasure Ailill owned that Medb did not was a great white bull. Medb resolved to take the Brown Bull of Cooley, the only beast in Ireland that could match it, and she gathered the armies of Connacht and Leinster for the raid.",
+      "Ulster's warriors were laid low by a curse, and for a long time only Cú Chulainn could stand against the invasion. He held the fords and challenged the champions of the enemy army one by one. Before the fighting, the Morrígan came to him in the shape of a woman and offered him her love. He refused her. She told him that she would hinder him, and she did, as an eel in the water, a wolf on the land and a heifer leading cattle astray. Each time Cú Chulainn wounded her and drove her off.",
+      "The hardest combat was against Ferdiad, his foster-brother and friend, who met him at the ford for three days. Cú Chulainn finally used the Gáe Bolga, the barbed spear, and Ferdiad died. Cú Chulainn mourned him and said that the battle had lost its joy.",
+      "In the end the Brown Bull was driven into Connacht. There it met Ailill's white bull, and the two fought across the country. The Brown Bull killed the white one, then wandered home and died of its wounds. Medb had won the raid and gained nothing. The Táin is a story about the cost of pride as much as about cattle, and its tellers did not soften that cost. The tale survives in several versions, and the order of some episodes differs between them."
+    ],
+    "characters": ["cuchulainn", "morrigan"],
+    "themes": ["pride", "loss", "war", "friendship"],
+    "uncertain": false,
+    "verified": false
+  },
+  {
+    "id": "celtic-05",
+    "title": "Fionn and the Salmon of Knowledge",
+    "source_ref": "Fenian Cycle; later folklore",
+    "paragraphs": [
+      "Fionn mac Cumhaill was born Demne and raised in hiding among the hills above the Boyne. His father Cumhall had been killed by Goll mac Morna, and the boy's life was in danger. Two foster-mothers, one of them a druidess, taught him to hunt, to run and to keep silent, and when he was old enough he was sent to a poet named Finn Éces.",
+      "Finn Éces had camped by the Boyne for seven years, watching a pool for the salmon of knowledge. It was said that the salmon had eaten the nuts of the nine hazels of wisdom that grow around the well of the Otherworld, and that whoever ate its flesh would know all things. Finn Éces had been told that he would catch the fish, but not that he would eat it.",
+      "At last the salmon came. Finn Éces gave it to the boy to cook and warned him not to taste a morsel. As Fionn turned the fish over the fire, a blister rose on its skin, and he pressed it with his thumb and then put the thumb in his mouth to cool the burn. When Finn Éces saw the boy's face, he understood what had happened and gave the whole salmon to Fionn, saying that the prophecy had not named the eater.",
+      "From that day Fionn had only to put his thumb between his teeth to recover hidden knowledge. He grew up to lead the Fianna, the warrior band of Ireland. The story is told in several ways: in some versions Finn Éces is a druid, in others a poet, and the name of the pool changes. The burned thumb and the shared salmon remain."
+    ],
+    "characters": ["fionn"],
+    "themes": ["wisdom", "patience", "destiny", "apprenticeship"],
+    "uncertain": false,
+    "verified": false
+  },
+  {
+    "id": "celtic-06",
+    "title": "Oisín in the Land of Youth",
+    "source_ref": "Fenian Cycle; later folklore (Acallam na Senórach and later ballads)",
+    "paragraphs": [
+      "Oisín was the son of Fionn mac Cumhaill and a poet of the Fianna. One day, hunting with the band beside a lake, he saw a woman on a white horse. She was Niamh of the Golden Hair, daughter of Manannán mac Lir, the sea-god, and she had come to bring him to Tír na nÓg, the Land of the Young.",
+      "There is no winter there, she said, no sickness and no death; the trees carry blossom and fruit at once, and a feast never ends. Oisín went with her, and they rode over the sea. He found the island more beautiful than anything he had known. He hunted, feasted and lived with Niamh, and time passed without any sign of it.",
+      "After what felt like three years, Oisín grew restless and asked to see Ireland again. Niamh warned him that if he set foot on Irish soil the years would fall on him all at once. She lent him her white horse and told him not to dismount. He crossed the sea and found the hills he knew, but the people were smaller and spoke of the Fianna as a legend long dead.",
+      "At a place where men were trying to move a great stone, Oisín leaned down to help. The saddle girth broke and he fell to the ground. In an instant three hundred years caught up with him: his hair went white and his strength left him. The men carried him to St Patrick, and it was as an old man that Oisín told the stories of Fionn and the Fianna. The tale survives in several forms, and the oldest tellings do not agree on every detail."
+    ],
+    "characters": ["oisin", "niamh"],
+    "themes": ["time", "love", "exile", "memory"],
+    "uncertain": false,
+    "verified": false
+  }
+]

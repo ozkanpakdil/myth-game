@@ -1,0 +1,92 @@
+[
+  {
+    "id": "amaterasu",
+    "name": "Amaterasu",
+    "role": "Sun kami and ancestress of the imperial line",
+    "domain": ["the sun", "light", "weaving and rice fields"],
+    "symbols": ["the mirror", "the rising sun"],
+    "fun_fact": "Her principal shrine at Ise is rebuilt every twenty years in a ceremony called shikinen sengū.",
+    "verified": false
+  },
+  {
+    "id": "susanoo",
+    "name": "Susanoo",
+    "role": "Storm kami, brother of the sun, and hero of Izumo",
+    "domain": ["storms", "the sea", "Izumo"],
+    "symbols": ["the Kusanagi sword", "storm clouds"],
+    "fun_fact": "He is credited in the Kojiki with the first recorded Japanese poem, about eight clouds rising over Izumo.",
+    "verified": false
+  },
+  {
+    "id": "izanagi",
+    "name": "Izanagi",
+    "role": "Creator kami who shaped the islands and fathered the great three",
+    "domain": ["creation", "purification"],
+    "symbols": ["the jewelled spear Amenonuhoko", "the river of purification"],
+    "fun_fact": "His bath after returning from Yomi is recalled in harae, the Shinto rites of purification.",
+    "verified": false
+  },
+  {
+    "id": "izanami",
+    "name": "Izanami",
+    "role": "Creator kami of the islands and ruler of the land of the dead",
+    "domain": ["creation", "death", "Yomi"],
+    "symbols": ["the boulder that sealed the pass", "the shadowy gate"],
+    "fun_fact": "The Kojiki says her death came from giving birth to Kagutsuchi, the kami of fire.",
+    "verified": false
+  },
+  {
+    "id": "tsukuyomi",
+    "name": "Tsukuyomi",
+    "role": "Moon kami and brother of the sun",
+    "domain": ["the moon", "night", "the calendar"],
+    "symbols": ["the moon"],
+    "fun_fact": "Few shrines are dedicated to him, and he appears in only a handful of surviving myths.",
+    "verified": false
+  },
+  {
+    "id": "okuninushi",
+    "name": "Ōkuninushi",
+    "role": "Kami of Izumo who helped shape the land and its people",
+    "domain": ["the earth", "medicine", "marriage"],
+    "symbols": ["the white rabbit", "the great shrine of Izumo"],
+    "fun_fact": "Izumo Taisha is dedicated to him, and in the tenth month the kami are said to gather there.",
+    "verified": false
+  },
+  {
+    "id": "ninigi",
+    "name": "Ninigi-no-Mikoto",
+    "role": "Heavenly grandchild sent to rule the islands",
+    "domain": ["heavenly descent", "imperial ancestry"],
+    "symbols": ["the three sacred treasures"],
+    "fun_fact": "He is remembered as the great-grandfather of Emperor Jimmu, the legendary first emperor.",
+    "verified": false
+  },
+  {
+    "id": "kushinada",
+    "name": "Kushinada-hime",
+    "role": "Princess of Izumo saved from the eight-headed serpent",
+    "domain": ["the Izumo coast", "marriage"],
+    "symbols": ["a fine comb"],
+    "fun_fact": "Her name echoes the word kushi, 'comb', and Susanoo hid her as a comb during the serpent's attack.",
+    "verified": false
+  },
+  {
+    "id": "yamata_no_orochi",
+    "name": "Yamata no Orochi",
+    "role": "Eight-headed serpent of the Izumo mountains",
+    "domain": ["rivers", "mountains", "dread"],
+    "symbols": ["eight heads", "the sword in its tail"],
+    "fun_fact": "Its name is often explained as 'eight-forked great serpent', and the Kusanagi sword was found in one of its tails.",
+    "verified": false
+  },
+  {
+    "id": "sarutahiko",
+    "name": "Sarutahiko Ōkami",
+    "role": "Kami of the crossroads who guided Ninigi",
+    "domain": ["paths", "crossroads", "guidance"],
+    "symbols": ["a staff", "the sacred rope"],
+    "fun_fact": "Travellers and martial artists still honour him, and a shrine near Ise marks the crossroads where he met Ninigi.",
+    "verified": false
+  }
+]

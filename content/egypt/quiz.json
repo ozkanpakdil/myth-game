@@ -1,0 +1,202 @@
+[
+  {
+    "id": "egypt-q01",
+    "story_id": "egypt-01",
+    "question": "In the Egyptian creation account, what existed before the world began?",
+    "choices": ["A golden palace of the gods", "The dark waters of Nun", "A desert without end", "A single flame in the sky"],
+    "correct_index": 1,
+    "explanation": "The Heliopolitan tradition begins with Nun, the inert primeval water from which the first land rose.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "egypt-q02",
+    "story_id": "egypt-01",
+    "question": "On what did the creator first appear?",
+    "choices": ["A reed boat on the river", "The back of a giant serpent", "A mound called the benben", "A staircase of stars"],
+    "correct_index": 2,
+    "explanation": "The benben mound was the first land to emerge from Nun, and it became a model for pyramid and temple architecture.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "egypt-q03",
+    "story_id": "egypt-01",
+    "question": "Which nine deities formed the company worshipped at Heliopolis?",
+    "choices": ["The Ennead", "The Ogdoad", "The Decans", "The Assessors"],
+    "correct_index": 0,
+    "explanation": "The Ennead was the group of nine gods descended from Atum, central to the Heliopolitan creation story.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "egypt-q04",
+    "story_id": "egypt-01",
+    "question": "According to the Heliopolitan account, whom did Atum produce first?",
+    "choices": ["Geb and Nut", "Osiris and Isis", "Horus and Set", "Shu and Tefnut"],
+    "correct_index": 3,
+    "explanation": "Atum's first pair were Shu, the air, and Tefnut, moisture; their children were Geb and Nut.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "egypt-q05",
+    "story_id": "egypt-02",
+    "question": "Who killed Osiris and took his throne?",
+    "choices": ["Horus", "Set", "Anubis", "Thoth"],
+    "correct_index": 1,
+    "explanation": "Set, Osiris's brother, trapped him in a fitted chest and later scattered his body.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "egypt-q06",
+    "story_id": "egypt-02",
+    "question": "Which two goddesses searched for Osiris's body?",
+    "choices": ["Isis and Nephthys", "Maat and Hathor", "Sekhmet and Bastet", "Nut and Tefnut"],
+    "correct_index": 0,
+    "explanation": "Isis and her sister Nephthys mourned and searched for Osiris, and their lament shaped Egyptian funeral songs.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "egypt-q07",
+    "story_id": "egypt-02",
+    "question": "How was Horus conceived after Osiris's death?",
+    "choices": ["Set fathered Horus as part of a bargain", "Osiris left Horus inside the chest", "Isis restored Osiris briefly and conceived a son", "Thoth shaped Horus out of clay"],
+    "correct_index": 2,
+    "explanation": "Isis used magic to revive Osiris for a short time, and from that union Horus was conceived.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "egypt-q08",
+    "story_id": "egypt-03",
+    "question": "Whose eye was torn out and then restored in the contendings?",
+    "choices": ["Set", "Ra", "Thoth", "Horus"],
+    "correct_index": 3,
+    "explanation": "Set damaged Horus's eye; Thoth restored it, and it became the wedjat, a sign of wholeness.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "egypt-q09",
+    "story_id": "egypt-03",
+    "question": "Who judged the dispute between Horus and Set?",
+    "choices": ["A council of priests", "The Ennead of the gods", "The pharaoh's court", "The dead in the underworld"],
+    "correct_index": 1,
+    "explanation": "The Ennead, the company of gods, heard the case, though the text shows them bickering and hesitating.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "egypt-q10",
+    "story_id": "egypt-03",
+    "question": "How does Isis turn Set's own words against him?",
+    "choices": ["She disguises herself and makes him rule that a son should inherit", "She steals his weapons before a contest", "She has him banished to the desert", "She persuades Ra to speak for Horus"],
+    "correct_index": 0,
+    "explanation": "Disguised, Isis asked Set to judge a case about inheritance, and his answer condemned his own claim to the throne.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "egypt-q11",
+    "story_id": "egypt-04",
+    "question": "What did Ra sail in across the sky?",
+    "choices": ["A chariot", "A winged horse", "A barque", "A raft of reeds"],
+    "correct_index": 2,
+    "explanation": "The sun god travelled in a barque, crossing the sky by day and the Duat by night.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "egypt-q12",
+    "story_id": "egypt-04",
+    "question": "Which creature attacks the sun god's boat each night?",
+    "choices": ["Ammit, the devourer", "A giant scorpion", "A crocodile god", "Apep, a great serpent"],
+    "correct_index": 3,
+    "explanation": "Apep, the serpent of chaos, tried to stop the barque and swallow the sun.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "egypt-q13",
+    "story_id": "egypt-04",
+    "question": "What is the Duat that Ra crosses at night?",
+    "choices": ["The palace of the pharaoh", "The underworld the sun crosses at night", "The mound of first creation", "The hall of judgement"],
+    "correct_index": 1,
+    "explanation": "The Duat was the hidden realm beneath and beyond the world, travelled by the sun after sunset.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "egypt-q14",
+    "story_id": "egypt-05",
+    "question": "What did Isis want from Ra?",
+    "choices": ["His secret name", "His crown", "His boat", "His staff"],
+    "correct_index": 0,
+    "explanation": "Isis sought Ra's hidden, true name because it carried a share of his power.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "egypt-q15",
+    "story_id": "egypt-05",
+    "question": "How did Isis get Ra to reveal his name?",
+    "choices": ["She stole a scroll from his temple", "She threatened to darken the sun", "She made a serpent whose venom only she could cure", "She bargained with Thoth"],
+    "correct_index": 2,
+    "explanation": "Isis shaped a serpent from dust and spit; its poison forced Ra to trade his name for a cure.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "egypt-q16",
+    "story_id": "egypt-05",
+    "question": "Why did knowing the name give Isis power over Ra?",
+    "choices": ["It proved she was his daughter", "It let her enter the Duat freely", "It made her immortal", "A name shared in a being's own essence, not just a label"],
+    "correct_index": 3,
+    "explanation": "In Egyptian magical thought a true name was part of a person's being, so to know it was to hold leverage over them.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "egypt-q17",
+    "story_id": "egypt-06",
+    "question": "Who places the heart on the scales?",
+    "choices": ["Thoth", "Anubis", "Osiris", "Maat"],
+    "correct_index": 1,
+    "explanation": "Anubis, the jackal-headed embalmer, conducted the weighing of the heart.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "egypt-q18",
+    "story_id": "egypt-06",
+    "question": "What is weighed against the heart?",
+    "choices": ["The feather of Maat", "A gold coin", "A jar of grain", "A scroll of spells"],
+    "correct_index": 0,
+    "explanation": "The heart had to balance against Maat's feather, the symbol of truth and right order.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "egypt-q19",
+    "story_id": "egypt-06",
+    "question": "Who records the result of the judgement?",
+    "choices": ["Anubis", "Horus", "Thoth", "Set"],
+    "correct_index": 2,
+    "explanation": "Thoth, the god of writing and reckoning, wrote down the verdict as the scribe of the gods.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "egypt-q20",
+    "story_id": "egypt-06",
+    "question": "What happens to a heart that fails the test?",
+    "choices": ["It is returned to the body for another life", "It is thrown into the Nile", "It is given to Set as tribute", "It is devoured by Ammit and the person ceases to exist"],
+    "correct_index": 3,
+    "explanation": "Ammit, the devourer, ate the failed heart; the Egyptians imagined this as annihilation rather than punishment.",
+    "difficulty": "hard",
+    "verified": false
+  }
+]

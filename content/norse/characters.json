@@ -1,0 +1,92 @@
+[
+  {
+    "id": "odin",
+    "name": "Odin",
+    "role": "All-Father and god of wisdom, war, and death",
+    "domain": ["wisdom", "war", "poetry"],
+    "symbols": ["his ravens Huginn and Muninn", "the spear Gungnir"],
+    "fun_fact": "Odin's two ravens fly over the world each day and return to tell him what they have seen.",
+    "verified": false
+  },
+  {
+    "id": "thor",
+    "name": "Thor",
+    "role": "god of thunder and protector of gods and humans",
+    "domain": ["thunder", "storms", "protection"],
+    "symbols": ["Mjölnir", "his goats Tanngrisnir and Tanngnjóstr"],
+    "fun_fact": "Thor can kill and eat his two goats, then bring them back to life with his hammer the next morning.",
+    "verified": false
+  },
+  {
+    "id": "loki",
+    "name": "Loki",
+    "role": "trickster and shape-shifter, blood-brother of Odin",
+    "domain": ["trickery", "shape-shifting", "chaos"],
+    "symbols": ["the salmon", "Sleipnir"],
+    "fun_fact": "Loki once turned into a mare and gave birth to Sleipnir, Odin's eight-legged horse.",
+    "verified": false
+  },
+  {
+    "id": "freyja",
+    "name": "Freyja",
+    "role": "Vanir goddess of love, fertility, and battle",
+    "domain": ["love", "fertility", "war"],
+    "symbols": ["the necklace Brísingamen", "her falcon-feather cloak"],
+    "fun_fact": "Freyja travels in a chariot drawn by two cats, and cats were sacred to her.",
+    "verified": false
+  },
+  {
+    "id": "baldur",
+    "name": "Baldr",
+    "role": "god of light, beauty, and joy, whose death foreshadows Ragnarök",
+    "domain": ["light", "beauty", "hope"],
+    "symbols": ["mistletoe", "his ship Hringhorni"],
+    "fun_fact": "Baldr's ship Hringhorni was so large that the gods could not launch it without the giantess Hyrrokkin.",
+    "verified": false
+  },
+  {
+    "id": "frigg",
+    "name": "Frigg",
+    "role": "goddess of marriage, motherhood, and foresight, and Baldr's mother",
+    "domain": ["marriage", "motherhood", "foresight"],
+    "symbols": ["her distaff", "a falcon-feather cloak"],
+    "fun_fact": "Frigg knows the fate of every person, but she never speaks of what she knows.",
+    "verified": false
+  },
+  {
+    "id": "ymir",
+    "name": "Ymir",
+    "role": "the first giant, whose body became the world",
+    "domain": ["primordial chaos", "creation"],
+    "symbols": ["the primeval cow Audhumla", "Ginnungagap"],
+    "fun_fact": "In Norse thought the earth is literally a giant's body, since the mountains are Ymir's bones and the sea is his blood.",
+    "verified": false
+  },
+  {
+    "id": "mimir",
+    "name": "Mimir",
+    "role": "guardian of the well of wisdom and Odin's counsellor",
+    "domain": ["wisdom", "memory", "counsel"],
+    "symbols": ["the well beneath Yggdrasil", "Odin's eye"],
+    "fun_fact": "After Mimir was beheaded in the war between the gods, Odin preserved his head and consulted it for advice.",
+    "verified": false
+  },
+  {
+    "id": "sigyn",
+    "name": "Sigyn",
+    "role": "goddess and Loki's faithful wife",
+    "domain": ["loyalty", "endurance"],
+    "symbols": ["the wooden bowl", "the serpent above Loki"],
+    "fun_fact": "Sigyn catches the serpent's venom in a bowl, and the earth shakes whenever she turns to empty it.",
+    "verified": false
+  },
+  {
+    "id": "jormungandr",
+    "name": "Jörmungandr",
+    "role": "the world serpent, child of Loki and the giantess Angrboða",
+    "domain": ["the sea", "boundaries", "destruction"],
+    "symbols": ["the ocean", "its own tail"],
+    "fun_fact": "Jörmungandr is so long that it circles all of Midgard and can bite its own tail.",
+    "verified": false
+  }
+]

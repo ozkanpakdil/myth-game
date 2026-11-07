@@ -1,0 +1,262 @@
+[
+  {
+    "id": "japan-q01",
+    "story_id": "japan-01",
+    "question": "In the Kojiki, what do Izanagi and Izanami lower into the sea to begin making the islands?",
+    "choices": ["A jewelled spear", "A bronze mirror", "A sacred sword", "A string of beads"],
+    "correct_index": 0,
+    "explanation": "They stir the brine with the spear Amenonuhoko, and drops falling from its tip become the first island, Onogoro.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "japan-q02",
+    "story_id": "japan-01",
+    "question": "Which kami is born from Izanagi's left eye as he bathes after returning from Yomi?",
+    "choices": ["Amaterasu", "Tsukuyomi", "Susanoo", "Izanami"],
+    "correct_index": 0,
+    "explanation": "In the bathing scene Amaterasu comes from the left eye, Tsukuyomi from the right eye and Susanoo from the nose.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "japan-q03",
+    "story_id": "japan-01",
+    "question": "Why does Izanami go down to Yomi, the land of the dead?",
+    "choices": [
+      "The birth of the fire kami Kagutsuchi kills her",
+      "She is carried off by a storm kami",
+      "She breaks a vow at the heavenly river",
+      "She follows Izanagi without permission"
+    ],
+    "correct_index": 0,
+    "explanation": "The flames of Kagutsuchi, the kami of fire, consume her, and she goes to Yomi, which is why Izanagi follows her there.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "japan-q04",
+    "story_id": "japan-01",
+    "question": "What ends Izanagi's attempt to bring Izanami back from Yomi?",
+    "choices": [
+      "He forgets her name at the gate",
+      "The kami of heaven close the cave from outside",
+      "He looks at her after promising not to, and she refuses to return",
+      "She stays because the food of Yomi is sweet"
+    ],
+    "correct_index": 2,
+    "explanation": "She asks him not to look upon her, but he lights a torch and sees that her form has changed, so she will not return with him.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "japan-q05",
+    "story_id": "japan-02",
+    "question": "Which three kami are born from Izanagi's bathing and then shape the world?",
+    "choices": [
+      "Izanagi, Izanami and Kagutsuchi",
+      "Uzume, Sarutahiko and Ninigi",
+      "Amaterasu, Tsukuyomi and Susanoo",
+      "Ōkuninushi, Kushinada and Orochi"
+    ],
+    "correct_index": 2,
+    "explanation": "The sun, the moon and the storm are born from his left eye, his right eye and his nose, and each takes a different part of the world.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "japan-q06",
+    "story_id": "japan-02",
+    "question": "In the story, which domain does Izanagi give to Susanoo?",
+    "choices": ["The moon and the night", "The sea and the storms", "The rice fields", "The underworld"],
+    "correct_index": 1,
+    "explanation": "Izanagi entrusts the sea and the storms to Susanoo, but the young kami is restless and is eventually sent away from heaven.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "japan-q07",
+    "story_id": "japan-02",
+    "question": "How does Susanoo's behaviour in Takamagahara harm the heavenly order?",
+    "choices": [
+      "He steals the mirror from the cave",
+      "He breaks the paddy banks and lets a horse loose in the weaving hall",
+      "He refuses to swear an oath to Amaterasu",
+      "He carries the rice harvest down to Izumo"
+    ],
+    "correct_index": 1,
+    "explanation": "His destruction of the fields and the weaving hall attacks the ordered world of rice and cloth, and Amaterasu withdraws in grief.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "japan-q08",
+    "story_id": "japan-03",
+    "question": "Where does Amaterasu hide when she withdraws from the world?",
+    "choices": [
+      "At the bottom of the sea",
+      "On the peak of Mount Takachiho",
+      "In a rock cave",
+      "Inside the heavenly river"
+    ],
+    "correct_index": 2,
+    "explanation": "She shuts herself inside a rock cave, and with the sun hidden the whole world is left in darkness.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "japan-q09",
+    "story_id": "japan-03",
+    "question": "Which object is hung on the sacred tree to draw Amaterasu out of the cave?",
+    "choices": ["The Kusanagi sword", "A great mirror", "A wooden torch", "A white rabbit"],
+    "correct_index": 1,
+    "explanation": "The kami hang a great mirror on the sacred tree, and Amaterasu steps forward when she sees her own radiance reflected in it.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "japan-q10",
+    "story_id": "japan-03",
+    "question": "What does Ame-no-Uzume do that makes the gathered kami laugh?",
+    "choices": [
+      "She sings the first poem about clouds",
+      "She tells the story of the white rabbit",
+      "She hides behind the mirror",
+      "She dances on an overturned tub"
+    ],
+    "correct_index": 3,
+    "explanation": "Uzume turns over a tub and dances on it until the assembled kami roar with laughter, and the noise reaches Amaterasu inside the cave.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "japan-q11",
+    "story_id": "japan-04",
+    "question": "Who is the serpent that demands a young woman each year in Izumo?",
+    "choices": ["Yamata no Orochi", "Kagutsuchi", "Ukemochi", "Sarutahiko"],
+    "correct_index": 0,
+    "explanation": "Yamata no Orochi is the eight-headed serpent that comes down from the mountains, and Kushinada is to be its next victim.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "japan-q12",
+    "story_id": "japan-04",
+    "question": "How does Susanoo make the serpent helpless?",
+    "choices": [
+      "He blinds it with the mirror",
+      "He asks Amaterasu to close the cave",
+      "He sets eight vats of strong sake for it to drink",
+      "He turns Kushinada into a comb and challenges it"
+    ],
+    "correct_index": 2,
+    "explanation": "Eight vats of sake stand behind eight gates, and once the serpent's heads have drunk from them the creature falls asleep.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "japan-q13",
+    "story_id": "japan-04",
+    "question": "According to the story, where does Susanoo find the sword Kusanagi?",
+    "choices": ["In the heavenly river", "In a tail of the serpent", "Inside the mirror at Ise", "In the hands of the old couple"],
+    "correct_index": 1,
+    "explanation": "After cutting the serpent apart he finds the hard blade in one of its tails and names it Kusanagi, the grass-cutter.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "japan-q14",
+    "story_id": "japan-05",
+    "question": "Which kami helps the injured white rabbit on the Inaba coast?",
+    "choices": ["Susanoo", "Ninigi", "Ōkuninushi", "Tsukuyomi"],
+    "correct_index": 2,
+    "explanation": "Ōkuninushi is the younger brother who stops to ask what happened and then tells the rabbit how to heal its skin.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "japan-q15",
+    "story_id": "japan-05",
+    "question": "How is the rabbit first injured in the story?",
+    "choices": [
+      "It is seized by the last crocodile it has tricked",
+      "It falls from the floating bridge of heaven",
+      "It is caught stealing rice from the fields",
+      "It is burned by the fire kami"
+    ],
+    "correct_index": 0,
+    "explanation": "The rabbit tricks the crocodiles into forming a bridge, mocks them at the end, and the last one seizes it and tears away its fur.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "japan-q16",
+    "story_id": "japan-05",
+    "question": "What remedy does Ōkuninushi give the rabbit?",
+    "choices": [
+      "Wash in salt water and dry in the wind",
+      "Sleep in the shade of the sacred tree",
+      "Rub its wounds with sake",
+      "Wash in fresh water and roll in cattail pollen"
+    ],
+    "correct_index": 3,
+    "explanation": "Fresh water and the yellow pollen of the cattails restore the rabbit's fur, unlike the brothers' cruel advice about salt water.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "japan-q17",
+    "story_id": "japan-06",
+    "question": "Which three treasures does Amaterasu give Ninigi before his descent?",
+    "choices": [
+      "The spear, the comb and the mirror",
+      "The sword, the tub and the rope",
+      "The mirror, the magatama jewels and the Kusanagi sword",
+      "The mirror, the rabbit and the sake vats"
+    ],
+    "correct_index": 2,
+    "explanation": "The mirror, the magatama jewels and the Kusanagi sword become the three sacred treasures, the signs of Ninigi's authority.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "japan-q18",
+    "story_id": "japan-06",
+    "question": "Who meets Ninigi at the crossroads and leads him to his new land?",
+    "choices": ["Ōkuninushi", "Sarutahiko", "Yamata no Orochi", "Tsukuyomi"],
+    "correct_index": 1,
+    "explanation": "Sarutahiko Ōkami, the radiant kami of the crossroads, names himself and goes before Ninigi as his guide.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "japan-q19",
+    "story_id": "japan-06",
+    "question": "Why do the court chronicles link Ninigi to the imperial line?",
+    "choices": [
+      "To record the building of the first shrine at Ise",
+      "To explain why Izumo lost its power",
+      "To preserve the rabbit's prophecy",
+      "To show that the emperors descended from the sun kami"
+    ],
+    "correct_index": 3,
+    "explanation": "Ninigi's descendants are presented as the ancestors of Emperor Jimmu, so the line of emperors is tied to the sun kami Amaterasu.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "japan-q20",
+    "story_id": "japan-06",
+    "question": "Which statement best explains why the Kojiki and Nihon Shoki were compiled?",
+    "choices": [
+      "To collect folk tales for children",
+      "To legitimise imperial rule and preserve court genealogy",
+      "To replace local shrine rites with a single liturgy",
+      "To record the words of the kami in a closed scripture"
+    ],
+    "correct_index": 1,
+    "explanation": "Both chronicles were court projects that joined older myths to imperial genealogy, giving the ruling line a sacred and ancient ancestry.",
+    "difficulty": "hard",
+    "verified": false
+  }
+]

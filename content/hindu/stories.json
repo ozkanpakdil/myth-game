@@ -1,0 +1,92 @@
+[
+  {
+    "id": "hindu-01",
+    "title": "The Churning of the Ocean",
+    "source_ref": "Mahabharata, Adi Parva; Bhagavata Purana",
+    "paragraphs": [
+      "In an age before our own, the devas and the asuras were locked in a rivalry neither side could win. Both had heard that the ocean of milk held amrita, the nectar of immortality. Rather than fight for it, they agreed to churn the ocean together, knowing the task was too great for either alone. In these tellings the asuras are a class of powerful divine beings, not simply villains.",
+      "They uprooted Mount Mandara for a churning rod and wound the great serpent Vasuki around it as a rope. When the mountain began to sink, Vishnu became the tortoise Kurma and held it on his back. The devas pulled one end of Vasuki and the asuras the other, and the ocean began to give up what it held.",
+      "The first things to rise were dangerous. A deadly poison, halahala, came up before any treasure, and Shiva is said to have held it in his throat to spare the worlds. Then came jewels, the wish-granting cow, the white horse, the goddess Lakshmi, and at last Dhanvantari with the pot of amrita.",
+      "The churning stopped when the asuras seized the pot. Vishnu took the form of Mohini and offered to divide the nectar, giving it to the devas instead. Versions differ on the order of the treasures, on how the asuras were deceived, and on where the story ends; the Mahabharata and Bhagavata Purana each tell it their own way."
+    ],
+    "characters": ["vishnu"],
+    "themes": ["cooperation and rivalry", "the quest for immortality", "divine intervention"],
+    "uncertain": false,
+    "verified": false
+  },
+  {
+    "id": "hindu-02",
+    "title": "Rama's Exile",
+    "source_ref": "Valmiki Ramayana, Ayodhya Kanda",
+    "paragraphs": [
+      "Dasharatha, king of Ayodhya, had four sons: Rama, Bharata, Lakshmana and Shatrughna. Rama was the eldest and beloved by the people, and Dasharatha prepared to crown him as his heir. Long before, the king had promised Queen Kaikeyi two boons, and she had kept them in reserve.",
+      "Now Kaikeyi's maid Manthara persuaded her to claim them. She asked that her own son Bharata be made king and that Rama be sent into the forest for fourteen years. Dasharatha was devastated, and the Ramayana describes his grief in detail, but a king's word, once given, could not be taken back.",
+      "Rama accepted the sentence without anger, saying that his father's promise must be honoured. Sita, his wife, refused to stay behind, and Lakshmana insisted on going with him. The three left Ayodhya in simple clothes, and the city grieved. Dasharatha died soon afterwards, and Bharata, who had been away, refused the throne until Rama returned.",
+      "The episodes are told differently across regions. Some retellings soften Kaikeyi's motives, others dwell on Manthara's role, and later versions add scenes and dialogues not found in Valmiki. What stays constant is Rama's choice to keep his father's word at great personal cost."
+    ],
+    "characters": ["rama", "sita", "lakshmana"],
+    "themes": ["duty", "promise-keeping", "family loyalty"],
+    "uncertain": false,
+    "verified": false
+  },
+  {
+    "id": "hindu-03",
+    "title": "Sita's Abduction",
+    "source_ref": "Valmiki Ramayana, Aranya and Sundara Kandas",
+    "paragraphs": [
+      "Rama, Sita and Lakshmana lived in the forest of Panchavati, and for a time their exile was peaceful. Then a golden deer appeared near their hut. Sita was enchanted by it and asked Rama to bring it to her. Rama asked Lakshmana to guard her and followed the deer, which was really the demon Maricha in disguise.",
+      "When Rama caught up, Maricha cried out in Rama's voice, as if wounded. Sita urged Lakshmana to go to him. Lakshmana hesitated, and many retellings add a protective line drawn around the hut, though Valmiki's Sanskrit text does not include it. In the end he followed, and Ravana came to the empty hut disguised as a wandering ascetic.",
+      "Ravana, the ten-headed king of Lanka, seized Sita and carried her away in his flying chariot. The vulture king Jatayu tried to stop him and was gravely wounded. Ravana held Sita in a grove in Lanka and urged her to marry him; she refused and kept her hope in Rama.",
+      "Rama and Lakshmana searched and were helped by the vanaras, the monkey people. Hanuman, their mightiest, crossed the sea to Lanka, found Sita, and offered to carry her back. She declined, saying that Rama should come for her himself. Hanuman gave her Rama's ring and took her jewel as a token, then returned with the news."
+    ],
+    "characters": ["sita", "ravana", "hanuman"],
+    "themes": ["deception", "loyalty", "courage in captivity"],
+    "uncertain": false,
+    "verified": false
+  },
+  {
+    "id": "hindu-04",
+    "title": "The Bridge and the Battle",
+    "source_ref": "Valmiki Ramayana, Yuddha Kanda",
+    "paragraphs": [
+      "With Hanuman's report, Rama gathered the vanara armies and marched south. To reach Lanka they built a bridge of stones and trees across the sea, with the monkeys carrying rocks, and the army crossed. The Ramayana presents this as a feat of devotion and engineering, and later traditions point to a chain of shoals as its remains, though that is a matter of belief rather than settled history.",
+      "Ravana refused to return Sita. His brother Vibhishana left him and joined Rama, and the war that followed was long. Many warriors on both sides fell, and the Ramayana mourns them as it celebrates its heroes. Ravana was a formidable opponent, learned and powerful, and the epic does not make him a mere monster.",
+      "Rama finally struck Ravana down with a divine arrow, and Lanka's resistance ended. Sita and Rama were reunited, but Valmiki's telling does not stop there: Sita is asked to undergo a trial by fire to show that she was faithful, and she emerges unharmed. Many retellings keep this scene, others soften or leave it out, and many devotees read it as a test of the world's suspicion rather than of Sita.",
+      "Later portions of the epic add another chapter, in which Sita leaves for the forest and raises her sons there. The questions the tradition keeps asking are not about who won, but about duty, reputation, and what innocent people pay for the choices of the powerful."
+    ],
+    "characters": ["rama", "hanuman", "ravana"],
+    "themes": ["devotion", "the cost of war", "reputation and justice"],
+    "uncertain": false,
+    "verified": false
+  },
+  {
+    "id": "hindu-05",
+    "title": "The Bhagavad Gita",
+    "source_ref": "Bhagavad Gita, part of the Mahabharata",
+    "paragraphs": [
+      "The Bhagavad Gita is a dialogue of about seven hundred verses set inside the Mahabharata. Two branches of one royal family, the Pandavas and the Kauravas, stand ready for battle at Kurukshetra. Arjuna, the Pandavas' greatest archer, rides in a chariot driven by his friend and kinsman Krishna, who is also the god Vishnu in human form.",
+      "As the armies form, Arjuna asks Krishna to drive between them. He sees teachers, cousins and elders on both sides, and his resolve collapses. He drops his bow and says he would rather give up the kingdom than fight. The Gita's first chapter is his despair, and the poem treats it not as cowardice but as a genuine moral crisis.",
+      "Krishna's answer is long and many-sided. He speaks of the self, atman, which is not born and does not die when the body is killed; of svadharma, the duty that fits one's nature and station; and of action performed without clinging to its fruits. He praises discipline, knowledge and devotion, and describes himself as the source and end of all things.",
+      "Arjuna takes up his bow. The Gita has been read in different ways since: as a call to duty, as a teaching on renunciation, as a devotional text. Commentators disagree sharply, and the poem is recited differently across traditions. What it insists on is a conversation: a person in doubt, a teacher, and an answer that must be lived, not merely known."
+    ],
+    "characters": ["arjuna", "krishna"],
+    "themes": ["duty", "action without attachment", "the immortal self"],
+    "uncertain": false,
+    "verified": false
+  },
+  {
+    "id": "hindu-06",
+    "title": "Durga and Mahishasura",
+    "source_ref": "Devi Mahatmya (Markandeya Purana)",
+    "paragraphs": [
+      "Mahishasura was a buffalo demon of great strength. Through austerity he won a boon that no male being could kill him, and, trusting in that promise, he conquered the heavens and drove the gods from their seats. The gods appealed to Vishnu and Shiva, and their anger and power poured out of them.",
+      "That gathered energy took the form of a woman: Durga, the warrior goddess, armed by the gods with their own weapons. She rode a lion, and the three worlds turned to her. The Devi Mahatmya describes her laughter as the sound that unsettles the demons, and her beauty and ferocity are held together rather than opposed.",
+      "Mahishasura's forces met her in battle. He changed form repeatedly, becoming a buffalo, a lion, an elephant and a man, and each time she answered him. The fight is said to have lasted nine days and nights, and on the tenth she pressed him down beneath her foot. Because his boon had protected him from every male being, a goddess was the one who could end him.",
+      "The Devi Mahatmya is a portion of the Markandeya Purana, and the festival of Navaratri, with Durga Puja in Bengal, commemorates the nine nights of the battle. Different regions identify Durga with different forms of the Goddess, and some tellings make her the supreme power from which the gods themselves draw their strength."
+    ],
+    "characters": ["durga", "mahishasura"],
+    "themes": ["divine power", "the defeat of tyranny", "the Goddess"],
+    "uncertain": false,
+    "verified": false
+  }
+]

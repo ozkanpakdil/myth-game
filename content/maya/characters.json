@@ -1,0 +1,92 @@
+[
+  {
+    "id": "hunahpu",
+    "name": "Hunahpu",
+    "role": "One of the Hero Twins of the Popol Vuh, a hunter and ballplayer who helps defeat Seven Macaw and the lords of Xibalba.",
+    "domain": ["hunting", "ball game", "underworld journeys"],
+    "symbols": ["blowgun", "jaguar"],
+    "fun_fact": "Hunahpu loses an arm to Seven Macaw in the Popol Vuh, and the twins win it back through cleverness rather than force.",
+    "verified": false
+  },
+  {
+    "id": "xbalanque",
+    "name": "Xbalanque",
+    "role": "The second Hero Twin, Hunahpu's brother, known for trickery and skill at the ball game.",
+    "domain": ["ball game", "underworld", "trickery"],
+    "symbols": ["jaguar", "ball court"],
+    "fun_fact": "His name is usually explained with reference to the jaguar (balan), and he is often portrayed as the more cunning of the twins.",
+    "verified": false
+  },
+  {
+    "id": "hun_hunahpu",
+    "name": "Hun Hunahpu",
+    "role": "Father of the Hero Twins and one of the first ballplayers, whose journey to Xibalba sets the whole story in motion.",
+    "domain": ["ball game", "maize", "ancestry"],
+    "symbols": ["calabash tree", "ball court"],
+    "fun_fact": "After his death his head is placed in a calabash tree, and it is from that tree that his sons are conceived.",
+    "verified": false
+  },
+  {
+    "id": "vucub_hunahpu",
+    "name": "Vucub Hunahpu",
+    "role": "Hun Hunahpu's brother, who plays ball with him and travels with him to the underworld.",
+    "domain": ["ball game", "underworld"],
+    "symbols": ["rubber ball", "ball court"],
+    "fun_fact": "He shares his brother's fate in Xibalba, and the two are remembered together as the first ballplayers.",
+    "verified": false
+  },
+  {
+    "id": "xquic",
+    "name": "Xquic",
+    "role": "A daughter of a Xibalba lord who becomes the mother of the Hero Twins.",
+    "domain": ["dawn", "motherhood", "maize"],
+    "symbols": ["calabash tree", "moon"],
+    "fun_fact": "Her name is often translated as 'Blood Moon' or 'Blood Woman', and some communities associate her with the moon.",
+    "verified": false
+  },
+  {
+    "id": "vucub_caquix",
+    "name": "Vucub Caquix",
+    "role": "A boastful bird-being who claims to be the sun and the moon and is defeated by the Hero Twins.",
+    "domain": ["sky", "false splendour", "pride"],
+    "symbols": ["jade teeth", "metal mirror"],
+    "fun_fact": "His name means 'Seven Macaw', and his sons Zipacna and Cabracan are also overcome by the twins.",
+    "verified": false
+  },
+  {
+    "id": "tepeu",
+    "name": "Tepeu",
+    "role": "One of the creator pair in the Popol Vuh, who plans the making of human beings together with Gucumatz.",
+    "domain": ["creation", "sovereignty", "sky"],
+    "symbols": ["sky", "word"],
+    "fun_fact": "His name is usually translated as 'Sovereign' or 'Ruler', and he is paired with Gucumatz in the creation dialogues.",
+    "verified": false
+  },
+  {
+    "id": "gucumatz",
+    "name": "Gucumatz",
+    "role": "The Feathered Serpent, a creator being who helps shape the world and the first people.",
+    "domain": ["creation", "water", "wind"],
+    "symbols": ["feathered serpent", "water"],
+    "fun_fact": "His name means 'Feathered Serpent' in K'iche', and he is often compared with Quetzalcoatl of central Mexico.",
+    "verified": false
+  },
+  {
+    "id": "huracan",
+    "name": "Huracan",
+    "role": "Heart of Sky, a storm-like creator whose word brings the world into being.",
+    "domain": ["sky", "storm", "creation"],
+    "symbols": ["lightning", "wind"],
+    "fun_fact": "Popular writers connect his name with the word 'hurricane', though that word reached English through Spanish from the Taíno language of the Caribbean.",
+    "verified": false
+  },
+  {
+    "id": "hun_came",
+    "name": "Hun Came",
+    "role": "One Death, a chief lord of Xibalba who summons the ballplayers and rules the underworld with Vucub Came.",
+    "domain": ["death", "underworld", "tests"],
+    "symbols": ["skull", "cave"],
+    "fun_fact": "His name pairs with Vucub Came, 'Seven Death', and together they lead the council of Xibalba.",
+    "verified": false
+  }
+]

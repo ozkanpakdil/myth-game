@@ -1,0 +1,202 @@
+[
+  {
+    "id": "norse-q01",
+    "story_id": "norse-01",
+    "question": "In the Norse creation story, who was the first giant to emerge from the melting ice?",
+    "choices": ["Ymir", "Búri", "Bergelmir", "Surtr"],
+    "correct_index": 0,
+    "explanation": "Ymir formed from the drops where the ice of the north met the sparks of the south, and the giants were said to descend from him.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "norse-q02",
+    "story_id": "norse-01",
+    "question": "What was the name of the primeval cow that fed Ymir?",
+    "choices": ["Freyja", "Nanna", "Audhumla", "Hyrrokkin"],
+    "correct_index": 2,
+    "explanation": "Audhumla licked the salty ice and revealed Búri, ancestor of the gods, while Ymir drank her milk.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "norse-q03",
+    "story_id": "norse-01",
+    "question": "According to the Prose Edda, what did the gods make from Ymir's skull?",
+    "choices": ["The sea", "The mountains", "The sky", "The first humans"],
+    "correct_index": 2,
+    "explanation": "Four dwarfs held up Ymir's skull to form the sky, while his brains became the clouds and his blood the seas.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "norse-q04",
+    "story_id": "norse-01",
+    "question": "Whom did the gods create as the first human pair?",
+    "choices": ["Búri and Audhumla", "Ask and Embla", "Odin and Frigg", "Ymir and Nanna"],
+    "correct_index": 1,
+    "explanation": "The gods found two trees on the shore and shaped them into Ask and Embla, giving them breath, thought, and warmth.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "norse-q05",
+    "story_id": "norse-02",
+    "question": "What did Odin give Mimir in exchange for a drink from the well of wisdom?",
+    "choices": ["His spear Gungnir", "His ravens", "Nine nights of service", "One of his eyes"],
+    "correct_index": 3,
+    "explanation": "Odin dropped one eye into Mimir's well as payment, and afterwards he was known as the one-eyed god.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "norse-q06",
+    "story_id": "norse-02",
+    "question": "How many nights did Odin say he hung on the tree before taking up the runes?",
+    "choices": ["Three", "Nine", "Twelve", "Forty"],
+    "correct_index": 1,
+    "explanation": "In Hávamál, Odin hangs for nine nights, wounded by a spear, and seizes the runes with a cry.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "norse-q07",
+    "story_id": "norse-02",
+    "question": "Which poem contains Odin's own account of how he won the runes?",
+    "choices": ["Völuspá", "Þrymskviða", "Hávamál", "Baldrs draumar"],
+    "correct_index": 2,
+    "explanation": "Hávamál preserves the speech in which Odin describes his nine-night sacrifice on the tree and the spells he learned.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "norse-q08",
+    "story_id": "norse-03",
+    "question": "Who stole Thor's hammer, Mjölnir?",
+    "choices": ["Loki", "Thrym", "Fenrir", "Surtr"],
+    "correct_index": 1,
+    "explanation": "Thrym, lord of the giants, took the hammer and demanded Freyja as his bride in return.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "norse-q09",
+    "story_id": "norse-03",
+    "question": "How does Thor travel to Jotunheim to recover his hammer?",
+    "choices": ["As a falcon", "As a salmon", "Dressed as a bride", "Disguised as an old giant"],
+    "correct_index": 2,
+    "explanation": "Heimdall suggests dressing Thor in a veil and bridal clothes, with Loki posing as his maidservant.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "norse-q10",
+    "story_id": "norse-03",
+    "question": "What makes Thrym suspect that his bride is not really Freyja?",
+    "choices": ["Her deep voice", "Her appetite and burning eyes", "Her knowledge of runes", "Her missing necklace"],
+    "correct_index": 1,
+    "explanation": "The bride eats an ox, eight salmon, and all the cakes, and her eyes blaze when Thrym lifts the veil.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "norse-q11",
+    "story_id": "norse-04",
+    "question": "How did Frigg try to protect Baldr from harm?",
+    "choices": ["She made everything swear an oath", "She hid him in a cave", "She gave him a magic sword", "She sent him to Hel"],
+    "correct_index": 0,
+    "explanation": "Frigg asked fire, water, metals, stones, trees, sickness, and every creature to swear not to hurt Baldr.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "norse-q12",
+    "story_id": "norse-04",
+    "question": "Who actually threw the mistletoe that killed Baldr?",
+    "choices": ["Loki", "Fenrir", "Thrym", "Höðr"],
+    "correct_index": 3,
+    "explanation": "Loki placed the mistletoe in the hand of Höðr, Baldr's blind brother, and guided his aim.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "norse-q13",
+    "story_id": "norse-04",
+    "question": "How did Loki learn that mistletoe had not sworn to spare Baldr?",
+    "choices": ["He read it in the runes", "He overheard the gods talking", "Frigg told him while he was disguised as a woman", "Hel revealed it in a dream"],
+    "correct_index": 2,
+    "explanation": "Loki went to Fensalir in the shape of a woman, and Frigg explained that only mistletoe had been left out.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "norse-q14",
+    "story_id": "norse-05",
+    "question": "What is the name of the terrible winter that comes before Ragnarök?",
+    "choices": ["Ginnungagap", "Yggdrasil", "Fensalir", "Fimbulwinter"],
+    "correct_index": 3,
+    "explanation": "Fimbulwinter means the great winter: three winters in a row with no summer between them.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "norse-q15",
+    "story_id": "norse-05",
+    "question": "At Ragnarök, which creature swallows Odin?",
+    "choices": ["Fenrir", "Jörmungandr", "Surtr", "Níðhöggr"],
+    "correct_index": 0,
+    "explanation": "The wolf Fenrir breaks free of his bonds and swallows Odin; his son Víðarr then tears the wolf apart.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "norse-q16",
+    "story_id": "norse-05",
+    "question": "Whom does Thor kill at Ragnarök before dying of venom?",
+    "choices": ["Fenrir", "Loki", "Jörmungandr", "Surtr"],
+    "correct_index": 2,
+    "explanation": "Thor strikes down the world serpent with Mjölnir, then falls dead after nine paces, overcome by its poison.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "norse-q17",
+    "story_id": "norse-06",
+    "question": "Who is Loki's wife, who stays beside him in his punishment?",
+    "choices": ["Freyja", "Sigyn", "Frigg", "Nanna"],
+    "correct_index": 1,
+    "explanation": "Sigyn remains with Loki in the cave and catches the serpent's venom so that it does not fall on him.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "norse-q18",
+    "story_id": "norse-06",
+    "question": "What does Sigyn use to catch the venom dripping onto Loki?",
+    "choices": ["A shield", "A cloth", "A horn", "A wooden bowl"],
+    "correct_index": 3,
+    "explanation": "She holds a bowl above his face, and when it fills she must turn away to empty it.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "norse-q19",
+    "story_id": "norse-06",
+    "question": "According to the Prose Edda, what did the gods use to bind Loki?",
+    "choices": ["A chain forged by dwarfs", "His own sword", "The entrails of his son Narfi", "A net of silver"],
+    "correct_index": 2,
+    "explanation": "The gods hardened Narfi's entrails like iron and used them to tie Loki to the rocks in the cave.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "norse-q20",
+    "story_id": "norse-06",
+    "question": "Why does the earth shake when Sigyn leaves Loki's side?",
+    "choices": ["The venom strikes him and he writhes in pain", "Thor strikes the ground with his hammer", "Fenrir howls in the distance", "The serpent falls from the ceiling"],
+    "correct_index": 0,
+    "explanation": "When she turns to empty the bowl, poison drips onto Loki's face, and his violent struggle is said to cause earthquakes.",
+    "difficulty": "hard",
+    "verified": false
+  }
+]

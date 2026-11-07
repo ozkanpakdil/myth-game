@@ -1,0 +1,92 @@
+[
+  {
+    "id": "rama",
+    "name": "Rama",
+    "role": "Prince of Ayodhya and the hero of the Ramayana, honoured as the seventh avatara of Vishnu and as an embodiment of dharma.",
+    "domain": ["dharma", "kingship", "protection"],
+    "symbols": ["bow and arrow", "the name Rama"],
+    "fun_fact": "Rama's story is retold in dozens of languages, and the chanting of his name is an everyday devotional practice for millions of people.",
+    "verified": false
+  },
+  {
+    "id": "sita",
+    "name": "Sita",
+    "role": "Wife of Rama and queen of Ayodhya, daughter of King Janaka, and in many traditions an avatara of the goddess Lakshmi.",
+    "domain": ["marriage", "endurance", "the earth"],
+    "symbols": ["the furrow", "a lotus"],
+    "fun_fact": "Her name is traditionally linked to the Sanskrit word sita, meaning furrow, because she was said to have been found in a ploughed field.",
+    "verified": false
+  },
+  {
+    "id": "hanuman",
+    "name": "Hanuman",
+    "role": "Vanara hero and devoted servant of Rama, famous for his strength, his leap to Lanka and his unwavering loyalty.",
+    "domain": ["devotion", "strength", "service"],
+    "symbols": ["mace", "mountain of herbs"],
+    "fun_fact": "Hanuman is counted among the Chiranjivis, beings said to remain alive through the ages, and he is honoured at gyms and wrestling halls across India.",
+    "verified": false
+  },
+  {
+    "id": "ravana",
+    "name": "Ravana",
+    "role": "Ten-headed king of Lanka, a learned and powerful rakshasa who abducts Sita and is finally defeated by Rama.",
+    "domain": ["kingship", "scholarship", "power"],
+    "symbols": ["ten heads", "the veena"],
+    "fun_fact": "Tradition remembers Ravana as a great scholar and devotee of Shiva, and hymns such as the Shiva Tandava Stotram are attributed to him.",
+    "verified": false
+  },
+  {
+    "id": "krishna",
+    "name": "Krishna",
+    "role": "The eighth avatara of Vishnu, Arjuna's charioteer and teacher in the Bhagavad Gita, and the beloved child of Vrindavan.",
+    "domain": ["divine teaching", "protection", "love"],
+    "symbols": ["flute", "peacock feather"],
+    "fun_fact": "Krishna's childhood pranks, his flute and his butter theft are told with affection in the Bhagavata Purana and in poetry across India.",
+    "verified": false
+  },
+  {
+    "id": "arjuna",
+    "name": "Arjuna",
+    "role": "The third of the five Pandava brothers and the greatest archer of the Mahabharata, who receives Krishna's teaching on the battlefield.",
+    "domain": ["archery", "duty", "friendship"],
+    "symbols": ["Gandiva bow", "chariot"],
+    "fun_fact": "Arjuna's bow is called Gandiva, and he is often given the epithet Savyasachin, the one who can shoot with either hand.",
+    "verified": false
+  },
+  {
+    "id": "durga",
+    "name": "Durga",
+    "role": "Warrior goddess who defeats Mahishasura, honoured as a form of the great Goddess and as a protector of the worlds.",
+    "domain": ["victory", "protection", "the divine feminine"],
+    "symbols": ["lion", "trident"],
+    "fun_fact": "Durga is celebrated in the nine-night festival of Navaratri, and her autumn worship is especially elaborate in Bengal's Durga Puja.",
+    "verified": false
+  },
+  {
+    "id": "vishnu",
+    "name": "Vishnu",
+    "role": "One of the great gods, the preserver who sustains the world and takes avatara forms such as Rama, Krishna and the tortoise Kurma.",
+    "domain": ["preservation", "order", "avatars"],
+    "symbols": ["conch", "discus"],
+    "fun_fact": "Vishnu's avatars are commonly counted as ten, and the tenth, Kalki, is expected to appear in a future age.",
+    "verified": false
+  },
+  {
+    "id": "lakshmana",
+    "name": "Lakshmana",
+    "role": "Rama's younger brother and constant companion in exile, whose loyalty carries him through the forest and the war in Lanka.",
+    "domain": ["loyalty", "protection", "service"],
+    "symbols": ["bow", "protective line"],
+    "fun_fact": "Lakshmana is traditionally identified as an incarnation of Shesha, the great serpent on whom Vishnu rests.",
+    "verified": false
+  },
+  {
+    "id": "mahishasura",
+    "name": "Mahishasura",
+    "role": "Buffalo demon whose boon and conquests prompt the gods to create Durga, who ends his rule.",
+    "domain": ["demonic power", "shapeshifting", "tyranny"],
+    "symbols": ["buffalo", "mace"],
+    "fun_fact": "His name comes from mahisha, the Sanskrit word for buffalo, and his defeat is recalled each year during Navaratri.",
+    "verified": false
+  }
+]

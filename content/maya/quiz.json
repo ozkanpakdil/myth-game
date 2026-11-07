@@ -1,0 +1,202 @@
+[
+  {
+    "id": "maya-q01",
+    "story_id": "maya-01",
+    "question": "In the Popol Vuh creation story, what existed before the world was made?",
+    "choices": ["Only sky and sea, silent and dark", "A great stone city", "A council of Xibalba lords", "A field of ripe maize"],
+    "correct_index": 0,
+    "explanation": "The Popol Vuh opens with an empty, dark sky and sea before the makers begin their work.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "maya-q02",
+    "story_id": "maya-01",
+    "question": "Which two makers plan creation together with Huracan, Heart of Sky?",
+    "choices": ["Hunahpu and Xbalanque", "Tepeu and Gucumatz", "Hun Came and Vucub Came", "Balam Quitze and Iqui Balam"],
+    "correct_index": 1,
+    "explanation": "Tepeu, meaning Sovereign, and Gucumatz, the Feathered Serpent, plan creation together with Huracan.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "maya-q03",
+    "story_id": "maya-01",
+    "question": "Why did the makers decide the animals could not be the beings they wanted?",
+    "choices": ["They were too large to live on land", "They refused to eat maize", "They could not speak or name the gods", "They were made without eyes"],
+    "correct_index": 2,
+    "explanation": "The animals could only cry out, so they could not name the gods or offer thanks; they were sent to live in the wild.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "maya-q04",
+    "story_id": "maya-01",
+    "question": "What happened to the people made of wood?",
+    "choices": ["They sailed away to found a new city", "They became the first lords of Xibalba", "They were turned into stars", "They were removed in a flood, and the animals turned against them"],
+    "correct_index": 3,
+    "explanation": "The wooden people had no hearts or minds, so a flood came and the animals turned against them; the monkeys are said to be their descendants.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "maya-q05",
+    "story_id": "maya-02",
+    "question": "What did Vucub Caquix, or Seven Macaw, boast that he was?",
+    "choices": ["The lord of maize", "The sun and the moon", "The first ballplayer", "The keeper of the underworld"],
+    "correct_index": 1,
+    "explanation": "Seven Macaw boasted that he was the sun and the moon, though the world was still dark.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "maya-q06",
+    "story_id": "maya-02",
+    "question": "How did the Hero Twins first wound Seven Macaw?",
+    "choices": ["They shot him with a blowgun from beneath his tree", "They trapped him in a net", "They challenged him to a ball game", "They set his feathers on fire"],
+    "correct_index": 0,
+    "explanation": "The twins hid under the tree where he fed, and Hunahpu shot him with a blowgun.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "maya-q07",
+    "story_id": "maya-02",
+    "question": "How did the twins get Seven Macaw to give up his jade teeth and metal eyes?",
+    "choices": ["They stole them while he slept", "They traded him maize for them", "They disguised themselves as healers and convinced him they were curing him", "They asked the Xibalba lords to take them"],
+    "correct_index": 2,
+    "explanation": "They posed as an old man and an old woman, claimed his teeth and eyes were diseased, and removed them.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "maya-q08",
+    "story_id": "maya-03",
+    "question": "Who were the two brothers who played ball and were summoned to Xibalba?",
+    "choices": ["Hunahpu and Xbalanque", "Hun Came and Vucub Came", "Tepeu and Gucumatz", "Hun Hunahpu and Vucub Hunahpu"],
+    "correct_index": 3,
+    "explanation": "Hun Hunahpu and Vucub Hunahpu were the first ballplayers, and their game drew the attention of Xibalba.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "maya-q09",
+    "story_id": "maya-03",
+    "question": "Who summoned the ballplayers to the underworld?",
+    "choices": ["The lords of Xibalba, offended by the noise", "The grandmother Xmucane", "The makers Tepeu and Gucumatz", "The animals of the forest"],
+    "correct_index": 0,
+    "explanation": "The lords of Xibalba heard the ball game and were offended by the noise, so they sent owls to summon the brothers.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "maya-q10",
+    "story_id": "maya-03",
+    "question": "What happened to Hun Hunahpu's head after he was killed?",
+    "choices": ["It was buried under the ball court", "It was hung in a calabash tree", "It was taken to the sky as a star", "It was given to Xmucane"],
+    "correct_index": 1,
+    "explanation": "The lords hung Hun Hunahpu's head in a calabash tree and forbade anyone to approach it.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "maya-q11",
+    "story_id": "maya-04",
+    "question": "Who was Xquic in the story of the Hero Twins?",
+    "choices": ["The grandmother of the Hero Twins", "A maize farmer from the surface", "A daughter of a lord of Xibalba", "The wife of Seven Macaw"],
+    "correct_index": 2,
+    "explanation": "Xquic was a daughter of Cuchumaquic, one of the lords of Xibalba.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "maya-q12",
+    "story_id": "maya-04",
+    "question": "How did Xquic become pregnant?",
+    "choices": ["She ate maize from the garden", "She drank from a river of blood", "The owls gave her a magic fruit", "The head of Hun Hunahpu spoke to her and spat into her hand"],
+    "correct_index": 3,
+    "explanation": "The head of Hun Hunahpu spoke to Xquic and spat into her hand, and she conceived the twins.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "maya-q13",
+    "story_id": "maya-04",
+    "question": "What test did Xmucane set for Xquic?",
+    "choices": ["She had to fill a net with maize from the garden", "She had to name every lord of Xibalba", "She had to survive the House of Bats", "She had to defeat Seven Macaw"],
+    "correct_index": 0,
+    "explanation": "Xmucane asked Xquic to fill a net with maize, and the garden provided enough to prove her story.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "maya-q14",
+    "story_id": "maya-05",
+    "question": "What did the twins send ahead to learn the names of the Xibalba lords?",
+    "choices": ["An owl", "A mosquito", "A jaguar", "A firefly"],
+    "correct_index": 1,
+    "explanation": "The twins sent a mosquito ahead to learn the names of the lords so they could greet each one correctly.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "maya-q15",
+    "story_id": "maya-05",
+    "question": "How did the twins keep the cigars and torches burning in the House of Darkness?",
+    "choices": ["They hid them under a stone", "They used wet wood", "They put fireflies on the tips", "The lords forgot to check them"],
+    "correct_index": 2,
+    "explanation": "They placed fireflies on the tips of the cigars and torches so the lords saw a glow while the objects stayed whole.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "maya-q16",
+    "story_id": "maya-05",
+    "question": "Who were the chief lords of Xibalba defeated by the twins?",
+    "choices": ["Tepeu and Gucumatz", "Hun Hunahpu and Vucub Hunahpu", "Balam Quitze and Balam Acab", "Hun Came and Vucub Came"],
+    "correct_index": 3,
+    "explanation": "Hun Came (One Death) and Vucub Came (Seven Death) were the chief lords of Xibalba.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "maya-q17",
+    "story_id": "maya-06",
+    "question": "What material did the makers use for the first true people?",
+    "choices": ["Maize", "Mud", "Wood", "Stone"],
+    "correct_index": 0,
+    "explanation": "The first true people were made from maize dough, after the failed attempts with mud and wood.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "maya-q18",
+    "story_id": "maya-06",
+    "question": "Who ground the maize into dough?",
+    "choices": ["Xquic", "Xmucane, the grandmother", "Xbalanque", "Huracan"],
+    "correct_index": 1,
+    "explanation": "Xmucane, the grandmother, ground the yellow and white maize nine times until it became dough.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "maya-q19",
+    "story_id": "maya-06",
+    "question": "How many people were shaped from the maize dough?",
+    "choices": ["Two", "Seven", "Four", "Ten"],
+    "correct_index": 2,
+    "explanation": "Four people were shaped: Balam Quitze, Balam Acab, Mahucutah and Iqui Balam.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "maya-q20",
+    "story_id": "maya-06",
+    "question": "Why did the makers cloud the first people's eyes?",
+    "choices": ["The people were afraid of the dark", "The people had become blind", "The people asked to see less", "The people could see too far, like the gods"],
+    "correct_index": 3,
+    "explanation": "The first people could see as far as the gods, so the makers clouded their eyes a little.",
+    "difficulty": "medium",
+    "verified": false
+  }
+]

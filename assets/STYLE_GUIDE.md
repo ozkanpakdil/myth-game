@@ -124,6 +124,64 @@ meaning: pair it with a label, shape or text.
 - Motion is limited to short fades and transforms; `prefers-reduced-motion`
   disables it.
 
+
+## Story scenes, quiz clues and character portraits
+
+`js/scene.js` extends the same palette into three deterministic SVG forms. They
+are generated in the browser and are never fetched as image files.
+
+### Story scenes
+
+- A 64 × 36 grid at 5 px per cell (a 320 × 180 viewBox), built from a two-band
+  sky, stars, a sun or moon, blocky peaks, ground/water and one foreground motif.
+- `STORY_MOTIFS` maps every story id to a motif (dragon, gate, tree, boat,
+  scales, labyrinth, hammer, lotus, maize, and so on). The motif must match the
+  story's central image, not merely its tradition.
+- The paragraph number shifts the sun and motif by a few cells, so the scene
+  subtly changes as the reader moves through the telling. It is still the same
+  symbolic place, not a new illustration for every paragraph.
+- Always label the panel `A symbolic scene, not a literal illustration.` Do not
+  imply that the pixel composition is a historical reconstruction.
+
+### Quiz clues
+
+- `questionScene()` checks the question, the correct answer and the explanation
+  for concrete nouns (sun, sea, serpent, gate, hammer, scales, maize, bridge,
+  etc.) and selects the matching motif. If there is no match it falls back to
+  the story motif.
+- The art is a clue, not an answer key. Do not render the correct choice's text
+  inside the SVG.
+- Quiz SVG art must have `role="img"` and an aria-label; the visible caption
+  names the clue and the source story.
+
+### Character portraits
+
+- 16 × 16 grid at 2 px per cell (a 32 × 32 viewBox), transparent background.
+- Six archetypes: crown, veil, hood, halo, horns, helm. They are chosen from the
+  character's role/domain/symbols, then colour-varied by a stable hash.
+- The portrait is an abstract bust with an emblem, **not a likeness**. Do not
+  add faces to sacred figures, and do not use portraits as a claim about how a
+  deity was depicted historically.
+- Portraits appear in the codex, in story figure chips, and in quiz answers only
+  when **every** choice is an exact character name. Showing a portrait for only
+  one choice would leak the answer, so the UI deliberately falls back to letter
+  medallions in mixed-choice questions.
+
+### Colour and contrast
+
+- Keep to the table above; the only additions are the UI's dark background
+  (`#0e1310`) and ink outline (`#171712`).
+- Each scene needs one warm focal colour (gold, terracotta or light gold) so it
+  reads at 320 px wide and on a phone.
+- Check every new motif in both themes. A scene may look darker on the light
+  theme's surrounding page; the art itself does not switch palettes.
+
+### Audio
+
+There is no audio art. Narration uses the browser's SpeechSynthesis engine only;
+there are no voice files, no celebrity voices and no voice cloning. Never label
+a system voice as a real person.
+
 ## Review checklist for new art
 
 - [ ] 16 × 16, one-pixel outline, transparent padding.

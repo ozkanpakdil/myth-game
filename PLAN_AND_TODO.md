@@ -366,7 +366,7 @@ An AI that writes text can create pixel art as **text grids**, one character per
 - [x] **T212** Map tile sprites (16 × 16): water, grass, sand, mountain, ice, forest.
 - [x] **T213** Region marker icon (16 × 16) and a "locked" version.
 - [x] **T214** One icon per MVP mythology (16 × 16), each with a simple symbol (Norse = hammer, Egyptian = ankh, Greek = column, Maya = stepped pyramid, Celtic = knot-like cross shape, Japanese = torii gate, Hindu = lotus, Mesopotamian = ziggurat).
-- [ ] **T215** Character sprites (16 × 16), simple blocky figures for the 10 characters of each MVP mythology (start with Greek, then one mythology per task). *(Deferred: Codex cards use the mythology sigil instead, to avoid depicting sacred figures.)*
+- [x] **T215** Character sprites (16 × 16), simple blocky figures for the 10 characters of each MVP mythology (start with Greek, then one mythology per task). *(Implemented as abstract 16 × 16 portrait busts with archetype headgear; no sacred faces.)*
 - [x] **T216** Show sprites in Codex cards and in the story reader header.
 - [ ] **T217** **NEEDS HUMAN**: review art for stereotypes or disrespectful depictions, especially sacred figures. For sensitive traditions prefer symbols and objects over faces.
 - [ ] **T218** Optional: simple 2-frame idle animation for the map markers.
@@ -384,6 +384,13 @@ An AI that writes text can create pixel art as **text grids**, one character per
 - [x] **T402** Use SVG for all images (mythology icons, map markers, map, wordmark); provide a build pipeline from text pixel grids to SVG.
 - [x] **T403** Add npm scripts and a zero-dependency static dev server; document test and build commands.
 
+### Phase 9: Visual storytelling, audio and publishing (follow-up request)
+- [x] **T500** Add a deterministic pixel-art scene engine for story illustrations, quiz clues and character portraits; keep every image SVG.
+- [x] **T501** Add optional browser narration (SpeechSynthesis) with a header toggle and per-story/per-question Listen controls; no recorded or celebrity voices.
+- [x] **T502** Add Google Analytics 4 (`G-NSB9K61M5S`) on published hosts, with localhost disabled for development and tests.
+- [x] **T503** Add a GitHub Actions Pages workflow and verify the assembled static artifact under a project-style path.
+- [ ] **T504** **NEEDS HUMAN**: review the new symbolic scenes and portrait archetypes for cultural sensitivity and visual quality. Do not treat generated portraits as historical likenesses.
+
 ---
 
 ## 8. Definition of Done
@@ -398,7 +405,7 @@ An AI that writes text can create pixel art as **text grids**, one character per
 
 **Version 2 (graphics):**
 - [x] Clickable pixel-art world map
-- [ ] Icons for all MVP mythologies, sprites for characters
+- [x] Icons for all MVP mythologies, sprites for characters
 - [ ] Art reviewed by a human
 - [x] List view still works as fallback
 
@@ -423,6 +430,7 @@ Add one line per finished task. Newest at the bottom.
 | 2026-11-07 | T100–T105 | Timeline Builder, Pantheon Match, Which Culture?, timeline screen, badges and results/progress. |
 | 2026-11-07 | T110–T113 | Automated route pass across all eight traditions; accessibility controls; CREDITS.md, README.md and in-game credits/sources. |
 | 2026-11-07 | T202–T204 | Accessible inline SVG map with focusable regions, eight markers and a text list fallback. |
-| 2026-11-07 | T210–T214, T216 | 16-key palette and style guide, sprite compiler, eight mythology sigils, map markers, story/codex sigils. Character sprites remain deferred (T215). |
+| 2026-11-07 | T210–T214, T216 | 16-key palette and style guide, sprite compiler, eight mythology sigils, map markers, story/codex sigils. Character portrait sprites added (T215). |
 | 2026-11-07 | T400–T403 | Git history, Playwright suite, all-SVG art and zero-dependency dev server documented. |
-| 2026-11-07 | Verification | `node tools/validate_content.js` clean; 37 Playwright tests pass headlessly; no console errors on the checked routes. |
+| 2026-11-07 | T500–T503 | Story/quiz scenes, answer portraits, browser narration, GA4 on published hosts, and GitHub Pages workflow. |
+| 2026-11-07 | Verification | `node tools/validate_content.js` clean; 40 Playwright tests pass headlessly; no console errors on the checked routes; assembled Pages artifact verified. |

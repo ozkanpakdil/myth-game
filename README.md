@@ -2,10 +2,13 @@
 
 A text-first educational game for ages 12+. Read short retellings from eight
 world traditions, answer quizzes, unlock a codex of figures and terms, and
-explore a stylised world map and timeline.
+explore a stylised world map and timeline. Stories and questions carry original
+pixel-art SVG scenes, and optional browser narration reads the text aloud.
 
-There is no build step, no framework, no account and no tracking. Content lives
-in JSON, the interface is HTML/CSS/vanilla ES modules, and every image is SVG.
+There is no build step and no framework. Content lives in JSON, the interface is
+HTML/CSS/vanilla ES modules, and every image is SVG. Progress stays in the
+browser; the published site uses Google Analytics for aggregate usage and no
+other third-party script.
 
 ## Quick start
 
@@ -94,6 +97,9 @@ js/
   challenges.js         timeline, match and culture challenges
   badges.js             badge catalogue and evaluator
   map.js                accessible inline SVG world map
+  scene.js              deterministic pixel-art story scenes, quiz clues and
+                        character portraits
+  narration.js          optional browser speech synthesis
   ui.js                 shared escaping, formatting and dialog helpers
 content/
   mythologies.json      35-tradition catalogue; `mvp: true` for the eight
@@ -171,7 +177,9 @@ assets/sprites/icons/greek.txt  →  node tools/render_sprites.js
 Each horizontal run of one palette key becomes a single `<rect>`, so the SVGs
 stay small and crisp at any size. The map is not a bitmap: `js/map.js` reads
 `assets/map/world.txt` and emits merged-run SVG tiles, with region overlays and
-inline SVG markers. See `assets/STYLE_GUIDE.md` for the palette and grid rules.
+inline SVG markers. Story scenes, quiz clues and character portraits are
+generated deterministically by `js/scene.js` from the same palette; they are
+not fetched images. See `assets/STYLE_GUIDE.md` for the palette and grid rules.
 
 ## Accessibility notes
 
@@ -181,16 +189,18 @@ inline SVG markers. See `assets/STYLE_GUIDE.md` for the palette and grid rules.
 - The map has focusable regions, a list view and a horizontally scrollable
   mobile view; region details are announced in a live region.
 - Text-size control (`Aa`) cycles 100 / 112.5 / 125%, persisted locally.
+- Optional narration uses the browser's SpeechSynthesis API. It never autoplays,
+  stops on navigation, and has a header on/off control.
 - `prefers-reduced-motion` removes animations.
 - All decorative sigils have empty `alt`; labels are in text.
 
 ## Testing
 
-The suite covers the shell, every route, the Greek read → quiz → unlock →
-persistence loop, failed quiz and retry, the final challenge, codex unlocks,
-timeline, all three challenges, the map and its mobile scroll, theme/font
-persistence, reset confirmation, responsive overflow, skip link and quiz
-keyboard feedback.
+The suite covers the shell, every route, all eight traditions, the Greek read →
+quiz → unlock → persistence loop, failed quiz and retry, the final challenge,
+codex unlocks, timeline, all three challenges, the map and its mobile scroll,
+story and quiz SVG scenes, narration controls, theme/font persistence, reset
+confirmation, responsive overflow, skip link and quiz keyboard feedback.
 
 ```bash
 npm test
@@ -201,13 +211,37 @@ If Chromium is not already cached, install it once with
 
 ## Deployment
 
-Upload the repository root to any static host (GitHub Pages, Netlify, S3,
-nginx). The app uses hash routes, so no server rewrite rules are needed. Keep
-the `content/`, `assets/`, `css/` and `js/` directories at the same relative
-level as `index.html`.
+### GitHub Pages
+
+The repository includes `.github/workflows/pages.yml`, which publishes the
+static site through GitHub Actions on every push to `main`.
+
+1. Push the repository to GitHub.
+2. In **Settings → Pages**, set **Source** to **GitHub Actions**.
+3. Run the workflow (or push to `main`).
+
+The public URL is `https://<user>.github.io/<repo>/` for a project repository,
+or `https://<user>.github.io/` if the repository is named
+`<user>.github.io`. All asset paths are relative, so both work without a base
+path. To publish at `https://ozkanpakdil.github.io/`, the repository must be
+named `ozkanpakdil.github.io`.
+
+The workflow copies only the runtime files (`index.html`, `css`, `js`,
+`content`, `assets`, `.nojekyll`) into the Pages artifact. Any static host
+(Netlify, S3, nginx) also works: upload those files and keep their relative
+layout. Hash routes need no rewrite rules.
+
+### Analytics and privacy
+
+The published build loads Google Analytics 4 with measurement ID
+`G-NSB9K61M5S`. The tag is deliberately skipped on `localhost`/`127.0.0.1` so
+local development and the Playwright suite stay quiet. Progress and settings
+remain in `localStorage`; no game progress is sent to analytics. Add a consent
+banner before promoting the site if your audience or jurisdiction requires one.
 
 ## Licence and credits
 
 Code and original SVG art: the Mythos project. Retellings are new summaries,
 not translations; source notes are listed per tradition in `CREDITS.md` and in
-the game. No third-party fonts, images or trackers are used.
+the game. No third-party fonts or images are used. Google Analytics is the
+only third-party script on the published site.

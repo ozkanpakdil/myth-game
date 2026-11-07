@@ -5,8 +5,9 @@ Mythos is an educational draft. The retellings are new, short summaries in moder
 ## Project
 
 - Design, code and retellings: the Mythos project.
-- Built with HTML, CSS and vanilla JavaScript. No frameworks, no build step, no trackers.
-- All images are original SVG: 16×16 text-grid sigils compiled by `tools/render_sprites.js`, plus an inline SVG map generated from a text tile grid.
+- Built with HTML, CSS and vanilla JavaScript. No frameworks, no build step. Google Analytics is the only third-party script and is disabled on localhost.
+- All images are original SVG: 16×16 text-grid sigils compiled by `tools/render_sprites.js`, procedural story scenes and character portraits from `js/scene.js`, plus an inline SVG map generated from a text tile grid.
+- Narration uses the browser's SpeechSynthesis API. No recorded voice files, no celebrity voices and no voice cloning are used.
 - Fonts are the operating system serif and sans-serif stacks. No external fonts or assets are loaded.
 
 ## Sources by tradition

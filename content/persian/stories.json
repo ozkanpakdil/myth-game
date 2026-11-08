@@ -1,0 +1,137 @@
+[
+  {
+    "id": "persian-01",
+    "title": "Ahura Mazda and Angra Mainyu",
+    "source_ref": "Gathas, Yasna 30; Bundahishn",
+    "paragraphs": [
+      "The Gathas, the oldest hymns of the Avesta, open with a vision rather than a narrative. Zarathushtra speaks of two primordial spirits who appeared at the beginning of things, described as twins. One is the holy, life-giving spirit; the other is the destructive spirit, Angra Mainyu. Yasna 30 presents them as a pair, and then asks the hearer to choose between them.",
+      "The choice is between asha, the order and truth that sustain the world, and druj, deceit and disorder. In the hymn the two spirits choose for themselves: one takes life and truth, the other takes the worst that can be thought and done. The Gathas do not describe two equal gods locked in an endless draw. They present a moral decision that shapes all later ones.",
+      "Later Zoroastrian texts expand this into a full cosmology. The Bundahishn, written in Middle Persian many centuries after the Gathas, tells how Ohrmazd created the world in a spiritual and then a material form, and how Ahriman invaded it. The conflict runs through all of creation and ends in the renovation of the world. This grand narrative is a later development, not the original setting of the hymns.",
+      "For Zoroastrians the story is not a relic. It frames a daily discipline: good thoughts, good words, good deeds, and the refusal of the lie. The two spirits are not a simple portrait of two gods. Ahura Mazda is the Wise Lord and creator, and Angra Mainyu is the adversary who ruins what is good. The point of the old hymn is the choice each person is asked to make."
+    ],
+    "characters": [
+      "ahura_mazda",
+      "angra_mainyu"
+    ],
+    "themes": [
+      "dualism",
+      "choice",
+      "truth and deceit"
+    ],
+    "notes": "The Gathas present the two spirits and the human choice; the Bundahishn, centuries later, expands this into a cosmic history. The two layers should not be blended.",
+    "uncertain": false,
+    "verified": false
+  },
+  {
+    "id": "persian-02",
+    "title": "Yima and the Vara",
+    "source_ref": "Vendidad, Fargard 2; Shahnameh",
+    "paragraphs": [
+      "The Vendidad opens with a conversation between Ahura Mazda and Zarathushtra about Yima, son of Vivanghvant, the first king of the world. Ahura Mazda asks Yima to receive the religion and carry it to others. Yima refuses. He says he is not the one to teach it, but he offers to make the world grow, to guard it and to keep it fruitful.",
+      "Under Yima the earth fills with people, cattle and flocks. Each time it grows too full, Yima presses the earth with a golden seal and it widens, and he does this three times. His reign is remembered as a golden age, when food was plentiful and illness and death were held back. In the Avesta Yima is a keeper of life rather than a prophet.",
+      "Then Ahura Mazda warns him of a winter unlike any other. Snow will fall deep and ice will cover the world. Yima must build a vara, a square enclosure underground, large enough to hold the best of every living kind. He brings pairs of animals, the seeds of plants, fire, and chosen men and women, so that life can continue when the surface freezes.",
+      "The Vendidad gives the building of the shelter in careful detail, but it does not tell the king's later fall. In the Shahnameh, Yima is Jamshid, who grows proud, claims divine honours and loses his royal glory; Zahhak defeats him and has him cut in two. The wise builder of the vara and the fallen king are the same figure, remembered in two ways."
+    ],
+    "characters": [
+      "yima",
+      "ahura_mazda"
+    ],
+    "themes": [
+      "preservation",
+      "kingship",
+      "hubris"
+    ],
+    "notes": "The vara comes from Vendidad 2; the loss of Yima's glory belongs to later legend and to Ferdowsi's Shahnameh.",
+    "uncertain": false,
+    "verified": false
+  },
+  {
+    "id": "persian-03",
+    "title": "Zarathushtra's Call",
+    "source_ref": "Gathas; Denkard and Zadspram (later hagiography)",
+    "paragraphs": [
+      "Zarathushtra was born into a priestly family of the Spitama clan, according to later tradition, in a world of herding and ritual. His father was Pourushaspa and his mother Dughdova. The Gathas themselves say very little about his life. They are hymns, attributed to the prophet, and they preserve his religious voice far more than a biography. Later texts fill in the missing years.",
+      "At about thirty, during a festival, he went to fetch water from a river before dawn. A shining figure appeared: Vohu Manah, Good Mind, one of the Amesha Spentas. Vohu Manah led him before Ahura Mazda, and Zarathushtra received the teaching he would preach. In the Gathas he recalls being taught the good doctrine and choosing to serve the Wise Lord with thought, word and deed.",
+      "The Gathas are not a chronicle. They are poems of praise, prayer and argument, in which the prophet asks Ahura Mazda about creation, truth, justice and the fate of the wicked. They also show a preacher who met resistance. Zarathushtra says his own people did not receive him, and that he turned for protection to the household of Vishtaspa, a prince who became his patron.",
+      "Later hagiography adds the details later generations loved: the first convert, Maidhyoimaongha; the queen Hutaosa; the king's support for the prophet; and a long ministry ending in his death. These stories are centuries younger than the hymns and should be read as tradition, not report. What remains is the voice: the Gathas are still recited in Zoroastrian worship, and the prophet is remembered as their author."
+    ],
+    "characters": [
+      "zarathushtra",
+      "ahura_mazda"
+    ],
+    "themes": [
+      "revelation",
+      "prophecy",
+      "tradition"
+    ],
+    "notes": "The Gathas are hymns, not an autobiography. The narrative of Zarathushtra's life comes mainly from much later Pahlavi texts.",
+    "uncertain": false,
+    "verified": false
+  },
+  {
+    "id": "persian-04",
+    "title": "Kaveh and Zahhak",
+    "source_ref": "Ferdowsi, Shahnameh",
+    "paragraphs": [
+      "Zahhak was a prince of the desert, son of Mardas, and he wanted the world. In the Shahnameh the tempter is Ahriman, who comes to him in disguise, persuades him to kill his father and seize the throne, and then asks for a kiss on each shoulder. From those kisses two black serpents grow, and they must be fed every day on human brains.",
+      "For a thousand years Zahhak rules Iran, and each day two young men die to feed the serpents. His cooks, more merciful than their master, save one of the two and substitute a sheep's brain, so that some families survive in hiding. The land lives in fear. The epic makes the tyrant's appetite a picture of what unchecked power does to a country.",
+      "Kaveh the blacksmith has lost seventeen sons to the serpents. When the eighteenth is taken, he goes to the palace and protests. Zahhak, uneasy, spares the boy and orders Kaveh to declare him just. Kaveh refuses and curses the king, then takes his leather apron, fixes it to a spear, and calls the people to rise. The apron becomes a banner.",
+      "Kaveh's call reaches Fereydun, a young prince of the line of Jamshid, and the people gather around them. Fereydun defeats Zahhak, binds him in chains and imprisons him in Mount Damavand. Kaveh's apron is kept as the royal standard, the Derafsh Kaviani. The Shahnameh tells the story as a moral epic, in which a craftsman's anger becomes the turning point of a nation's history."
+    ],
+    "characters": [
+      "kaveh",
+      "zahhak"
+    ],
+    "themes": [
+      "tyranny",
+      "resistance",
+      "justice"
+    ],
+    "uncertain": false,
+    "verified": false
+  },
+  {
+    "id": "persian-05",
+    "title": "Rostam and the White Demon",
+    "source_ref": "Ferdowsi, Shahnameh",
+    "paragraphs": [
+      "Rostam was the son of Zal and Rudabeh, raised in Sistan, and his horse was Rakhsh, a stallion no other man could ride. When Kay Kavus, the king of Iran, marched into Mazandaran with his army, the White Demon struck it with blindness and defeat. Rostam was not with the army. Messengers reached him, and he set out with Rakhsh to rescue the king.",
+      "The road to Mazandaran was guarded by seven trials. Among them, the Shahnameh names a lion in the reed bed, a waterless desert, a dragon, a witch who offers him wine, and the demon Arzhang, forced to reveal the enemy's camp. The horse Rakhsh warns him of the dragon and fights beside him, so the trials belong to the pair, not to the man alone.",
+      "At the end of the road stood the White Demon's cave. The demon fought with stones and claws, and Rostam met it in the darkness until he struck the killing blow. With the demon dead, the spell on Kay Kavus broke, and the king and his army were freed. Rostam returned to Iran with the honours of a champion, and the court celebrated a victory that had seemed impossible.",
+      "The Shahnameh gives Rostam a strength that is almost too large for the court, and the seven trials are the clearest sign of it. He is loyal to a series of kings, saves them from their own pride, and remains the one they call when nothing else works. The White Demon is one of his great victories, but the epic's sadness is that victory never makes him wise or happy."
+    ],
+    "characters": [
+      "rostam",
+      "rakhsh"
+    ],
+    "themes": [
+      "heroism",
+      "loyalty",
+      "trial"
+    ],
+    "uncertain": false,
+    "verified": false
+  },
+  {
+    "id": "persian-06",
+    "title": "Zal and the Simurgh",
+    "source_ref": "Ferdowsi, Shahnameh",
+    "paragraphs": [
+      "Sam, a warrior of the house of Nariman, had a son whose hair was white as snow and whose skin was pale. The court read the child's colour as an ill omen. Sam, ashamed, ordered the baby carried to a remote mountainside and left there. The mother could not stop him. In the Shahnameh the scene is brief and terrible: a father's fear of difference turns into abandonment.",
+      "The Simurgh, the great bird of the mountains, found the child in her nest. She did not harm him. She fed him and raised him among her own chicks, and the boy grew up on the crag, speaking with the bird and learning the mountain. He was called Zal, and his white hair, which had been a curse at court, was simply part of him there.",
+      "Years later Sam was troubled by what he had done. He came to the mountain, and the Simurgh appeared with the young man and gave him back. Before Zal left, she gave him a feather from her breast: burn it in need, and she would come. Zal returned to his father's court, where his white hair now marked him out as someone the wild had touched.",
+      "Zal grew into a knight. He loved Rudabeh, a princess of Kabul, and their son was Rostam, whose birth the Simurgh helped to save. The story joins the wild and the courtly without making the bird a monster or the court a paradise. Zal is not rescued from the mountain so much as carried between two worlds, and the Shahnameh lets both of them keep a claim on him."
+    ],
+    "characters": [
+      "zal",
+      "simurgh"
+    ],
+    "themes": [
+      "abandonment",
+      "nurture",
+      "belonging"
+    ],
+    "uncertain": false,
+    "verified": false
+  }
+]

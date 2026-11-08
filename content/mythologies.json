@@ -60,7 +60,7 @@
     "start_year": -1500,
     "end_year": 2026,
     "summary": "Zoroastrian sacred tradition sets truth against the lie, while the Shahnameh turns ancient heroic legend into a national epic.",
-    "mvp": false,
+    "mvp": true,
     "sensitivity": "low",
     "verified": false
   },

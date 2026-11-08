@@ -1,0 +1,172 @@
+[
+  {
+    "id": "ahura_mazda",
+    "name": "Ahura Mazda",
+    "role": "Supreme god, the Wise Lord, creator and source of asha",
+    "domain": [
+      "creation",
+      "truth",
+      "wisdom"
+    ],
+    "symbols": [
+      "light",
+      "fire",
+      "the sky"
+    ],
+    "fun_fact": "Zoroastrians honour Ahura Mazda through fire, but the fire is a symbol and focus of purity rather than the god himself.",
+    "verified": false
+  },
+  {
+    "id": "angra_mainyu",
+    "name": "Angra Mainyu",
+    "role": "The destructive spirit, adversary of Ahura Mazda and source of druj",
+    "domain": [
+      "destruction",
+      "deceit",
+      "chaos"
+    ],
+    "symbols": [
+      "darkness",
+      "the lie",
+      "the serpent"
+    ],
+    "fun_fact": "In the Gathas Angra Mainyu is the evil spirit who chose destruction; the later Bundahishn calls him Ahriman and makes him the leader of a host of demons.",
+    "verified": false
+  },
+  {
+    "id": "yima",
+    "name": "Yima",
+    "role": "Early king and culture hero, called Jamshid in later Persian tradition",
+    "domain": [
+      "kingship",
+      "abundance",
+      "preservation"
+    ],
+    "symbols": [
+      "the vara",
+      "the golden seal",
+      "the throne"
+    ],
+    "fun_fact": "Yima is remembered both as a king who made the world flourish and, in later legend, as a ruler whose pride cost him his royal glory.",
+    "verified": false
+  },
+  {
+    "id": "zarathushtra",
+    "name": "Zarathushtra",
+    "role": "Prophet and poet, the founding voice of the Gathas",
+    "domain": [
+      "revelation",
+      "truth",
+      "priesthood"
+    ],
+    "symbols": [
+      "the sacred fire",
+      "the Gathas",
+      "the dawn"
+    ],
+    "fun_fact": "His Greek name Zoroaster gave the religion its English name, and his hymns are still recited in Zoroastrian ritual today.",
+    "verified": false
+  },
+  {
+    "id": "kaveh",
+    "name": "Kaveh",
+    "role": "Blacksmith who raises the people against Zahhak",
+    "domain": [
+      "resistance",
+      "craft",
+      "freedom"
+    ],
+    "symbols": [
+      "the leather apron",
+      "the blacksmith's hammer",
+      "the banner"
+    ],
+    "fun_fact": "Kaveh's apron became the Derafsh Kaviani, the royal standard of Iran, and his name remains a byword for resistance to tyranny in Persian tradition.",
+    "verified": false
+  },
+  {
+    "id": "zahhak",
+    "name": "Zahhak",
+    "role": "Tyrannical king with two serpents on his shoulders",
+    "domain": [
+      "tyranny",
+      "deceit",
+      "hunger"
+    ],
+    "symbols": [
+      "the two serpents",
+      "the throne",
+      "Mount Damavand"
+    ],
+    "fun_fact": "Zahhak grows from an older Avestan dragon, Azi Dahaka, into a human king in the Shahnameh, showing how epic poetry reshaped ancient myth.",
+    "verified": false
+  },
+  {
+    "id": "rostam",
+    "name": "Rostam",
+    "role": "Greatest hero of the Shahnameh, prince of Sistan",
+    "domain": [
+      "strength",
+      "heroism",
+      "loyalty"
+    ],
+    "symbols": [
+      "the mace",
+      "the tiger-skin coat",
+      "Rakhsh"
+    ],
+    "fun_fact": "Rostam's seven trials are called the Haft Khan, and his horse Rakhsh is as famous in Persian art as the hero himself.",
+    "verified": false
+  },
+  {
+    "id": "rakhsh",
+    "name": "Rakhsh",
+    "role": "Rostam's stallion and companion in battle",
+    "domain": [
+      "speed",
+      "battle",
+      "fidelity"
+    ],
+    "symbols": [
+      "his bright coat",
+      "his swift hooves",
+      "the desert road"
+    ],
+    "fun_fact": "Rakhsh is no ordinary mount: he fights beside Rostam, warns him of danger, and shares the hardship of the seven trials.",
+    "verified": false
+  },
+  {
+    "id": "zal",
+    "name": "Zal",
+    "role": "White-haired hero and father of Rostam",
+    "domain": [
+      "endurance",
+      "wisdom",
+      "exile"
+    ],
+    "symbols": [
+      "white hair",
+      "the Simurgh's feather",
+      "the mountain crag"
+    ],
+    "fun_fact": "Zal's white hair, once taken as a bad omen, became a mark of his special place among heroes.",
+    "verified": false
+  },
+  {
+    "id": "simurgh",
+    "name": "Simurgh",
+    "role": "Great benevolent bird of Iranian myth",
+    "domain": [
+      "healing",
+      "protection",
+      "wisdom"
+    ],
+    "symbols": [
+      "the feather",
+      "the mountain nest",
+      "the healing herb"
+    ],
+    "fun_fact": "The Simurgh is far older than the Shahnameh: a bird called Saena appears in the Avesta, and the epic makes her the protector of Zal and his family.",
+    "verified": false
+  }
+]

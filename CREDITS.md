@@ -129,6 +129,15 @@ Mythos is an educational draft. The retellings are new, short summaries in moder
 - **Apuleius, The Golden Ass** — A second-century novel containing the tale of Cupid and Psyche, told as a story within a story.
 - **Mary Beard, John North and Simon Price, Religions of Rome** — A standard modern study of Roman religious practice, priesthoods, festivals and the relationship between cult and politics.
 
+### Persian / Zoroastrian
+
+- **The Gathas (Avesta, Yasna 28–53)** — The oldest hymns of the Avesta, attributed to Zarathushtra; Yasna 30 is the key text for the two primordial spirits.
+- **The Vendidad (Avesta)** — A book of law, purity and myth whose second fargard preserves the story of Yima and the vara.
+- **The Bundahishn** — A Middle Persian account of creation, Ahriman's assault and the final renovation of the world.
+- **Ferdowsi, Shahnameh** — The Persian Book of Kings, completed around 1010 CE, and the main source for Kaveh, Zahhak, Rostam and Zal.
+- **Denkard and Zatspram** — Later Middle Persian texts that narrate Zarathushtra's birth, call and ministry; they are tradition, not contemporary biography.
+- **Mary Boyce, Zoroastrians: Their Religious Beliefs and Practices** — A standard scholarly introduction written with attention to the living community.
+
 ## Review and sensitivity status
 
 | Tradition | Sensitivity | Verified |
@@ -143,8 +152,9 @@ Mythos is an educational draft. The retellings are new, short summaries in moder
 | Maya | medium | false |
 | Chinese | medium | false |
 | Roman | low | false |
+| Persian / Zoroastrian | low | false |
 
-Hindu stories are a living sacred tradition and are marked **high** sensitivity. Shinto (Japanese), Maya and Chinese traditions are marked **medium**. All ten traditions need a human fact-check of dates, names, spellings, answer keys and source notes before release. The Hindu, Shinto, Maya and Chinese material also needs a sensitivity review by someone with relevant community or scholarly knowledge.
+Hindu stories are a living sacred tradition and are marked **high** sensitivity. Shinto (Japanese), Maya and Chinese traditions are marked **medium**. All eleven traditions need a human fact-check of dates, names, spellings, answer keys and source notes before release. The Hindu, Shinto, Maya and Chinese material also needs a sensitivity review by someone with relevant community or scholarly knowledge.
 
 If a retelling is inaccurate or disrespectful, the correct response is to revise or remove it — not to defend the text. See the `NEEDS HUMAN` tasks in `PLAN_AND_TODO.md`.
 

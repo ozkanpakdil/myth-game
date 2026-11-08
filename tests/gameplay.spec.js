@@ -8,9 +8,11 @@ import {
   quizRecord,
   seededGreekFinalState,
   playable,
+  mythologies,
 } from './helpers.js';
 
 const codexTotal = playable.length * 20;
+const firstUnplayable = mythologies.find((meta) => !meta.mvp);
 
 test.describe('the Greek story loop', () => {
   test('read, pass, unlock, persist and award badges', async ({ page }) => {
@@ -119,7 +121,9 @@ test.describe('timeline', () => {
     await expect(page.locator('.timeline-row')).toHaveCount(35);
     await expect(page.getByTestId('timeline-row-greek')).toHaveClass(/is-playable/);
     await expect(page.getByTestId('timeline-row-greek').locator('h3 a')).toHaveAttribute('href', '#/myth/greek');
-    await expect(page.getByTestId('timeline-row-canaan')).not.toHaveClass(/is-playable/);
+    if (firstUnplayable) {
+      await expect(page.getByTestId(`timeline-row-${firstUnplayable.id}`)).not.toHaveClass(/is-playable/);
+    }
     await expect(page.getByTestId('timeline-page')).toContainText('35 traditions');
   });
 });

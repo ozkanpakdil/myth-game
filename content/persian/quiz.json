@@ -1,0 +1,302 @@
+[
+  {
+    "id": "persian-q01",
+    "story_id": "persian-01",
+    "question": "In Yasna 30, how are the two primordial spirits described?",
+    "choices": [
+      "As twins who choose between truth and deceit",
+      "As a king and his vizier",
+      "As the sun and the moon",
+      "As two brothers who build the world together"
+    ],
+    "correct_index": 0,
+    "explanation": "The Gathas call them twins and show each choosing: one takes life and truth, the other takes the worst that can be thought and done.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "persian-q02",
+    "story_id": "persian-01",
+    "question": "What does the term asha mean in the Gathas?",
+    "choices": [
+      "Order, truth and rightness",
+      "Fire and sacrifice",
+      "Royal glory",
+      "A hymn of praise"
+    ],
+    "correct_index": 0,
+    "explanation": "Asha is the order and truth that sustain the world; it is the moral opposite of druj, deceit and disorder.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "persian-q03",
+    "story_id": "persian-01",
+    "question": "Which later text expands the two spirits into a full cosmology?",
+    "choices": [
+      "The Bundahishn",
+      "The Shahnameh",
+      "The Aeneid",
+      "The Rig Veda"
+    ],
+    "correct_index": 0,
+    "explanation": "The Bundahishn, written in Middle Persian, tells of Ohrmazd's creation, Ahriman's invasion and the final renovation of the world.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "persian-q04",
+    "story_id": "persian-01",
+    "question": "How should readers relate the Gathas to the Bundahishn?",
+    "choices": [
+      "The Gathas are older hymns; the Bundahishn retells the conflict centuries later",
+      "The Bundahishn is older and the Gathas quote it",
+      "Both are chapters of the Shahnameh",
+      "The Gathas are a Greek summary of the Bundahishn"
+    ],
+    "correct_index": 0,
+    "explanation": "The Gathas belong to the oldest layer of the Avesta, while the Bundahishn is a Middle Persian work that develops the dualism far beyond the hymns.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "persian-q05",
+    "story_id": "persian-02",
+    "question": "Who warns Yima about the coming winter?",
+    "choices": [
+      "Ahura Mazda",
+      "Angra Mainyu",
+      "Zahhak",
+      "The Simurgh"
+    ],
+    "correct_index": 0,
+    "explanation": "In the Vendidad, Ahura Mazda tells Yima of the devastating winter and instructs him to build the enclosure.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "persian-q06",
+    "story_id": "persian-02",
+    "question": "What disaster does the vara protect life from?",
+    "choices": [
+      "A winter of deep snow and ice",
+      "A great flood",
+      "An invading army",
+      "A fire that covers the earth"
+    ],
+    "correct_index": 0,
+    "explanation": "Ahura Mazda foretells a winter of severe frost in which snow and ice will cover the world, and the vara is built to outlast it.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "persian-q07",
+    "story_id": "persian-02",
+    "question": "What does Yima refuse when Ahura Mazda first calls him?",
+    "choices": [
+      "To be the bearer and teacher of the religion",
+      "To rule as king",
+      "To build the vara",
+      "To marry and have children"
+    ],
+    "correct_index": 0,
+    "explanation": "Yima says he is not the one to carry the religion, but he offers instead to make the world grow and to keep it fruitful.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "persian-q08",
+    "story_id": "persian-03",
+    "question": "Through which figure does Ahura Mazda first reach Zarathushtra?",
+    "choices": [
+      "Vohu Manah, Good Mind",
+      "Angra Mainyu",
+      "The Simurgh",
+      "Yima"
+    ],
+    "correct_index": 0,
+    "explanation": "Vohu Manah, one of the Amesha Spentas, appears to Zarathushtra and leads him before Ahura Mazda.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "persian-q09",
+    "story_id": "persian-03",
+    "question": "At what age does later tradition say Zarathushtra received his call?",
+    "choices": [
+      "About thirty",
+      "About fifteen",
+      "About fifty",
+      "About seventy"
+    ],
+    "correct_index": 0,
+    "explanation": "Later hagiography places the revelation at about thirty, during a festival by the river before dawn.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "persian-q10",
+    "story_id": "persian-03",
+    "question": "What can the Gathas tell us about Zarathushtra?",
+    "choices": [
+      "His religious vision in his own voice, but not a connected life story",
+      "A complete biography from birth to death",
+      "Only the names of his enemies",
+      "Nothing at all, since they concern other people"
+    ],
+    "correct_index": 0,
+    "explanation": "The Gathas are hymns attributed to the prophet; they preserve his prayers and arguments but not a narrative of his life, which later texts supply.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "persian-q11",
+    "story_id": "persian-04",
+    "question": "What do Zahhak's two serpents demand each day?",
+    "choices": [
+      "Human brains",
+      "Gold and jewels",
+      "Milk and bread",
+      "The heads of horses"
+    ],
+    "correct_index": 0,
+    "explanation": "The serpents that grow from Zahhak's shoulders must be fed on human brains, and two young men are killed for them each day.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "persian-q12",
+    "story_id": "persian-04",
+    "question": "What craft does Kaveh practise in the Shahnameh?",
+    "choices": [
+      "Blacksmithing",
+      "Weaving",
+      "Writing",
+      "Gardening"
+    ],
+    "correct_index": 0,
+    "explanation": "Kaveh is a blacksmith, and his leather work apron becomes the banner of the rising against Zahhak.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "persian-q13",
+    "story_id": "persian-04",
+    "question": "Who defeats Zahhak and ends his tyranny?",
+    "choices": [
+      "Fereydun",
+      "Kaveh's eldest son",
+      "Jamshid",
+      "Kay Kavus"
+    ],
+    "correct_index": 0,
+    "explanation": "Fereydun, a young prince of the line of Jamshid, joins Kaveh's rising, defeats the tyrant and takes the throne.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "persian-q14",
+    "story_id": "persian-04",
+    "question": "How does the Shahnameh dispose of Zahhak at the end?",
+    "choices": [
+      "He is bound and imprisoned in Mount Damavand",
+      "He is beheaded in his throne room",
+      "He escapes to India",
+      "He is forgiven and restored to the throne"
+    ],
+    "correct_index": 0,
+    "explanation": "Fereydun chains Zahhak and imprisons him in Mount Damavand rather than killing him, so that the tyrant remains a warning.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "persian-q15",
+    "story_id": "persian-05",
+    "question": "What is the name of Rostam's horse?",
+    "choices": [
+      "Rakhsh",
+      "Tahmineh",
+      "Sohrab",
+      "Zal"
+    ],
+    "correct_index": 0,
+    "explanation": "Rakhsh is Rostam's stallion, and the epic treats the horse as a companion in the trials rather than a mere mount.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "persian-q16",
+    "story_id": "persian-05",
+    "question": "In which region does Rostam fight the White Demon?",
+    "choices": [
+      "Mazandaran",
+      "Sistan",
+      "Kabul",
+      "Fars"
+    ],
+    "correct_index": 0,
+    "explanation": "Kay Kavus's army marches into Mazandaran, and Rostam follows to free the king from the White Demon.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "persian-q17",
+    "story_id": "persian-05",
+    "question": "Which of these is not one of Rostam's seven trials?",
+    "choices": [
+      "A sea serpent",
+      "A lion",
+      "A dragon",
+      "A witch"
+    ],
+    "correct_index": 0,
+    "explanation": "The Shahnameh's trials include a lion, a dragon, a witch and demons; a sea serpent is not among them.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "persian-q18",
+    "story_id": "persian-06",
+    "question": "Why does Sam abandon his infant son?",
+    "choices": [
+      "The boy is born with white hair and pale skin",
+      "The boy is born blind",
+      "An oracle says the boy will kill him",
+      "The boy refuses to cry"
+    ],
+    "correct_index": 0,
+    "explanation": "Zal is born albino, and Sam reads the white hair as an ill omen and orders the child left on a mountainside.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "persian-q19",
+    "story_id": "persian-06",
+    "question": "Who raises Zal on the mountain?",
+    "choices": [
+      "The Simurgh",
+      "A shepherd",
+      "Rudabeh",
+      "The White Demon"
+    ],
+    "correct_index": 0,
+    "explanation": "The Simurgh finds the abandoned baby, feeds him and raises him in her nest among the crags.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "persian-q20",
+    "story_id": "persian-06",
+    "question": "What gift does the Simurgh give Zal?",
+    "choices": [
+      "A feather to burn when he needs her",
+      "A golden crown",
+      "A magic sword",
+      "A ring of invisibility"
+    ],
+    "correct_index": 0,
+    "explanation": "The Simurgh gives Zal a feather from her breast; burning it calls her to his aid, and she later helps at Rostam's birth.",
+    "difficulty": "medium",
+    "verified": false
+  }
+]

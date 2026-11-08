@@ -1,6 +1,6 @@
 # Mythos — a world mythology game
 
-A text-first educational game for ages 12+. Read short retellings from ten
+A text-first educational game for ages 12+. Read short retellings from eleven
 world traditions, answer quizzes, unlock a codex of figures and terms, and
 explore a stylised world map and timeline. A separate branching saga,
 **The Ash-Seed**, lets you walk a Norse myth as a mortal of your own naming,
@@ -50,8 +50,9 @@ any static host.
 | Celtic | 6 | 20 | 10 | 10 |
 | Chinese | 6 | 20 | 10 | 10 |
 | Roman | 6 | 20 | 10 | 10 |
+| Persian / Zoroastrian | 6 | 20 | 10 | 10 |
 
-The timeline catalogues 35 traditions. The other 25 are marked as planned for
+The timeline catalogues 35 traditions. The other 24 are marked as planned for
 later editions and are not playable yet.
 
 ### The Ash-Seed (branching saga)
@@ -130,7 +131,7 @@ js/
   narration.js          studio-clip playback with browser speech fallback
   ui.js                 shared escaping, formatting and dialog helpers
 content/
-  mythologies.json      35-tradition catalogue; `mvp: true` for the ten
+  mythologies.json      35-tradition catalogue; `mvp: true` for the eleven
   greek/ ...            five JSON files per playable tradition
   saga/norse.json       the branching Ash-Seed story graph, paths and endings
 schemas/                JSON Schema documents for every content file
@@ -247,7 +248,7 @@ not fetched images. See `assets/STYLE_GUIDE.md` for the palette and grid rules.
 
 ## Testing
 
-The suite covers the shell, every route, all ten traditions, the Greek read →
+The suite covers the shell, every route, all eleven traditions, the Greek read →
 quiz → unlock → persistence loop, failed quiz and retry, the final challenge,
 codex unlocks, timeline, all three challenges, the map and its mobile scroll,
 story and quiz SVG scenes, answer icons, narration controls, studio-clip playback,

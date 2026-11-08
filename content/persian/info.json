@@ -1,0 +1,69 @@
+{
+  "id": "persian",
+  "name": "Persian / Zoroastrian",
+  "intro": "Zoroastrianism is one of the world's oldest living religions, and its stories survive in a small, precious library of texts composed over more than two thousand years. The Gathas, hymns attributed to the prophet Zarathushtra, are the oldest layer of the Avesta; the Vendidad and the Yashts add law, ritual and myth, while the Middle Persian Bundahishn retells creation and the end of time. Zoroastrians worship Ahura Mazda, the Wise Lord, and orient their lives around asha, order and truth, against druj, deceit. Fire is honoured as a symbol of purity, not worshipped as a god. After the Arab conquest of Iran, many Zoroastrians settled in India as Parsis, and communities remain in Iran and the diaspora. Persian epic poetry, above all Ferdowsi's Shahnameh, preserves a related world of kings, heroes and demons, and the six stories here move between scripture and epic.",
+  "timeline": [
+    {
+      "label": "Indo-Iranian heritage",
+      "year_text": "c. 1500–1000 BCE",
+      "note": "Iranian-speaking peoples share a body of myth and ritual with early India, including fire, cattle and the idea of a cosmic order. Ahura Mazda and asha emerge from this world."
+    },
+    {
+      "label": "Zarathushtra",
+      "year_text": "c. 1200–1000 BCE (dates debated)",
+      "note": "The Gathas are composed and attributed to Zarathushtra, who preaches the worship of Ahura Mazda and the choice between truth and the lie."
+    },
+    {
+      "label": "Achaemenid empire",
+      "year_text": "550–330 BCE",
+      "note": "Persian kings such as Darius and Xerxes invoke Ahura Mazda in royal inscriptions, presenting him as the god who grants kingship and order."
+    },
+    {
+      "label": "Parthian and Sasanian",
+      "year_text": "247 BCE–651 CE",
+      "note": "The Avesta is collected and edited, and Middle Persian works such as the Bundahishn and Denkard set out creation, law and the end of time. Zoroastrianism is the state religion under the Sasanians."
+    },
+    {
+      "label": "Arab conquest and the Persian epic",
+      "year_text": "7th–11th century CE",
+      "note": "After the Arab conquest, Zoroastrians become a protected minority in Iran. Ferdowsi completes the Shahnameh around 1010 CE, preserving pre-Islamic kings and heroes in Persian verse."
+    },
+    {
+      "label": "Modern communities",
+      "year_text": "19th–21st century",
+      "note": "Parsi communities flourish in India, and Zoroastrians continue to live in Iran and across the diaspora, maintaining fire temples, priesthood and the recitation of the Gathas."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Gathas (Avesta, Yasna 28–53)",
+      "note": "The oldest hymns of the Avesta, attributed to Zarathushtra. Yasna 30 is the key text for the two primordial spirits and the choice between asha and druj."
+    },
+    {
+      "title": "The Vendidad (Avesta)",
+      "note": "A book of law, purity and myth. Its second fargard preserves the story of Yima, the coming winter and the building of the vara."
+    },
+    {
+      "title": "The Bundahishn",
+      "note": "A Middle Persian account of creation, the assault of Ahriman and the final renovation, which expands the dualism of the Gathas into a cosmic history."
+    },
+    {
+      "title": "Ferdowsi, Shahnameh",
+      "note": "The Persian Book of Kings, completed around 1010 CE. It is the main source for Kaveh and Zahhak, Rostam and the White Demon, and Zal and the Simurgh."
+    },
+    {
+      "title": "Denkard and Zadspram (Pahlavi hagiography)",
+      "note": "Later Middle Persian texts that narrate Zarathushtra's birth, call and ministry. They are centuries younger than the Gathas and belong to tradition rather than biography."
+    },
+    {
+      "title": "Mary Boyce, Zoroastrians: Their Religious Beliefs and Practices",
+      "note": "A standard scholarly introduction to Zoroastrian history, ritual and belief, written with attention to the living community."
+    },
+    {
+      "title": "John Hinnells, Persian Mythology",
+      "note": "An illustrated overview of Zoroastrian myth and Persian epic, useful for general readers moving between scripture and the Shahnameh."
+    }
+  ],
+  "sensitivity": "low",
+  "verified": false
+}

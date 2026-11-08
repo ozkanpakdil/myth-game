@@ -13,7 +13,7 @@ import {
   countWords,
   REGION_ORDER,
   SENSITIVITY_LABEL,
-} from './content.js?v=20261108-3';
+} from './content.js?v=20261108-4';
 import {
   getState,
   getSettings,
@@ -24,7 +24,7 @@ import {
   recordStoryRead,
   awardBadges,
   resetProgress,
-} from './storage.js?v=20261108-3';
+} from './storage.js?v=20261108-4';
 import {
   mythStats,
   overallStats,
@@ -33,8 +33,8 @@ import {
   glossaryUnlockedCount,
   allStoryQuizzesPassed,
   isStoryUnlocked,
-} from './progress.js?v=20261108-3';
-import { badgeCatalog, evaluateBadges } from './badges.js?v=20261108-3';
+} from './progress.js?v=20261108-4';
+import { badgeCatalog, evaluateBadges } from './badges.js?v=20261108-4';
 import {
   escapeHtml,
   iconImg,
@@ -50,19 +50,19 @@ import {
   toast,
   confirmDialog,
   emptyState,
-} from './ui.js?v=20261108-3';
-import { renderQuiz } from './quiz.js?v=20261108-3';
+} from './ui.js?v=20261108-4';
+import { renderQuiz } from './quiz.js?v=20261108-4';
 import {
   renderChallengeHub,
   renderTimelineChallenge,
   renderMatchChallenge,
   renderCultureChallenge,
-} from './challenges.js?v=20261108-3';
-import { renderMap } from './map.js?v=20261108-3';
-import { storyScene, characterPortrait } from './scene.js?v=20261108-3';
-import { sagaScene } from './saga-art.js?v=20261108-3';
-import { renderSaga, sagaContinueHref, sagaSummary } from './saga.js?v=20261108-3';
-import { narrate, stopNarration, speechSupported, availableVoices, narrationSupported, studioAudioUrl } from './narration.js?v=20261108-3';
+} from './challenges.js?v=20261108-4';
+import { renderMap } from './map.js?v=20261108-4';
+import { storyScene, characterPortrait } from './scene.js?v=20261108-4';
+import { sagaScene } from './saga-art.js?v=20261108-4';
+import { renderSaga, sagaContinueHref, sagaSummary } from './saga.js?v=20261108-4';
+import { narrate, stopNarration, speechSupported, availableVoices, narrationSupported, studioAudioUrl } from './narration.js?v=20261108-4';
 
 const app = document.getElementById('app');
 const nav = document.querySelector('.main-nav');
@@ -482,7 +482,7 @@ async function renderHome() {
       <div class="hero__copy">
         <p class="eyebrow"><span class="eyebrow__rule" aria-hidden="true"></span> A world mythology game</p>
         <h1 id="page-title">Stories that<br><em>shaped the world.</em></h1>
-        <p class="lede">Walk <em>The Ash-Seed</em>, a choose-your-path Norse saga, or read short retellings from eight traditions and build a codex of figures and terms. The myths are the same. The road you take is yours.</p>
+        <p class="lede">Walk <em>The Ash-Seed</em>, a choose-your-path Norse saga, or read short retellings from ${playable.length} traditions and build a codex of figures and terms. The myths are the same. The road you take is yours.</p>
         <div class="hero__actions">
           <a class="button button--primary" href="${sagaHref}" data-testid="home-saga-primary">${saga ? `Continue as ${escapeHtml(saga.name)}` : 'Begin the saga'} <span aria-hidden="true">→</span></a>
           <a class="button button--ghost" href="#/myths">Explore the archive</a>
@@ -545,7 +545,7 @@ async function renderHome() {
     <section class="section" aria-labelledby="traditions-title">
       <div class="section-head">
         <div>
-          <p class="eyebrow">The eight</p>
+          <p class="eyebrow">The traditions</p>
           <h2 id="traditions-title">Choose a tradition</h2>
         </div>
         <a class="text-link" href="#/myths">All traditions and filters</a>
@@ -582,7 +582,7 @@ async function renderHome() {
     <section class="panel panel--soft home-note">
       <h2>An archive, not an authority</h2>
       <p>Every tradition here has many versions. These retellings are short introductions for learners, not definitive texts. Dates are approximate, and the content is marked <strong>awaiting human review</strong> until a named reviewer checks it.</p>
-      <p class="small muted">Living traditions — including Hindu and Shinto sacred stories — are presented as traditions, with respect. <a class="text-link" href="#/about">Read the content notes</a>.</p>
+      <p class="small muted">Living traditions — including Hindu, Shinto, Maya and Chinese traditions — are presented as traditions, with respect. <a class="text-link" href="#/about">Read the content notes</a>.</p>
     </section>
   </div>`;
 }
@@ -635,7 +635,7 @@ async function renderMyths() {
       <div>
         <p class="eyebrow">The archive</p>
         <h1 id="page-title">Traditions</h1>
-        <p class="lede">Eight playable traditions from the ${mythologies.length} catalogued in the timeline. Each has six stories, a twenty-question final challenge, ten figures and ten glossary terms.</p>
+        <p class="lede">${playable.length} playable traditions from the ${mythologies.length} catalogued in the timeline. Each has six stories, a twenty-question final challenge, ten figures and ten glossary terms.</p>
       </div>
       <div class="list-tools">
         <label class="search">
@@ -1311,13 +1311,13 @@ async function renderAbout() {
     </header>
     <section class="panel prose">
       <h2>What the game is</h2>
-      <p>Eight traditions are playable: Greek, Norse, Egyptian, Mesopotamian, Hindu, Japanese, Maya and Celtic. Each has six short retellings, a five-question quiz after every story, a twenty-question final challenge, ten character cards and ten glossary terms. A stylised map and three challenges offer other ways into the material.</p>
+      <p>${playable.length} traditions are playable: ${playable.map((meta) => escapeHtml(meta.name)).join(', ')}. Each has six short retellings, a five-question quiz after every story, a twenty-question final challenge, ten character cards and ten glossary terms. A stylised map and three challenges offer other ways into the material.</p>
       <p>Progress is stored locally in your browser. There is no account and no game server. The published site loads Google Analytics (measurement ID <code>G-NSB9K61M5S</code>) to understand aggregate use; analytics is disabled on localhost.</p>
       <h2>How the content is written</h2>
       <p>Retellings are short summaries in new words, not translations. They point to named sources and note when a story has several versions. Dates are approximate: the date a story was first written down is usually much later than the oral tradition behind it.</p>
       <p><strong>Review status:</strong> every story, quiz, character and glossary entry is marked <code>verified: false</code>. The material has not yet been checked line by line by a named human reviewer. Treat it as a learning draft.</p>
       <h2>Living traditions</h2>
-      <p>Hindu and Shinto sacred stories, and Maya traditions, are living traditions, not relics. They are presented as traditions and with respect. The game does not depict deities' faces; it uses objects and symbols. If you belong to one of these traditions and find something inaccurate or disrespectful, the correct response is to remove or revise it, not to defend the text.</p>
+      <p>Hindu, Shinto, Maya and Chinese traditions are living traditions, not relics. They are presented as traditions and with respect. The game does not depict deities' faces; it uses objects and symbols. If you belong to one of these traditions and find something inaccurate or disrespectful, the correct response is to remove or revise it, not to defend the text.</p>
       <p>Sensitivity is marked on each tradition: <span class="pill pill--quiet">General tradition</span> <span class="pill pill--gold">Living tradition</span>. The Hindu entries are marked high sensitivity and need a dedicated human review before release.</p>
       <h2>Accessibility</h2>
       <p>The game uses native links and buttons, a skip link, visible focus styles, quiz results that take focus so they are read aloud, keyboard-operable challenges and a text-size control. Animations are minimal and respect <code>prefers-reduced-motion</code>. The world map has a list-view alternative.</p>

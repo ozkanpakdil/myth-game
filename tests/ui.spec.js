@@ -31,18 +31,18 @@ test.describe('progress reset', () => {
     });
     await seedProgress(page, state);
     await page.goto('/#/results');
-    await expect(page.getByTestId('results-page')).toContainText('1/48');
+    await expect(page.getByTestId('results-page')).toContainText('1/54');
 
     await page.getByTestId('reset-progress').click();
     const dialog = page.getByRole('dialog');
     await expect(dialog).toBeVisible();
     await dialog.getByRole('button', { name: 'Cancel' }).click();
     await expect(dialog).toHaveCount(0);
-    await expect(page.getByTestId('results-page')).toContainText('1/48');
+    await expect(page.getByTestId('results-page')).toContainText('1/54');
 
     await page.getByTestId('reset-progress').click();
     await page.getByRole('dialog').getByRole('button', { name: 'Reset progress' }).click();
-    await expect(page.getByTestId('results-page')).toContainText('0/48');
+    await expect(page.getByTestId('results-page')).toContainText('0/54');
     const stored = await page.evaluate(() => JSON.parse(localStorage.getItem('mythos.progress.v1')));
     expect(stored.storiesRead).toEqual({});
     expect(stored.quizBest).toEqual({});
@@ -226,6 +226,24 @@ test.describe('visual storytelling and narration', () => {
     await page.getByTestId('quiz-listen').click();
     await quizClip;
     await expect.poll(() => page.evaluate(() => document.querySelector('audio[aria-hidden="true"]')?.readyState || 0)).toBeGreaterThan(1);
+  });
+
+  test('Chinese story and quiz clips are present and play through Morgan', async ({ page }) => {
+    await page.goto('/#/');
+    await page.locator('#audio-toggle').click();
+    await expect(page.getByTestId('studio-voice-morgan')).toBeChecked();
+    await page.getByTestId('voice-close').click();
+
+    await page.goto('/#/myth/chinese/story/chinese-01');
+    const storyClip = page.waitForRequest((request) => request.url().includes('/audio/voices/morgan/story/chinese-01-0.mp3'));
+    await page.getByTestId('story-listen').click();
+    await storyClip;
+    await expect.poll(() => page.evaluate(() => document.querySelector('audio[aria-hidden="true"]')?.readyState || 0)).toBeGreaterThan(1);
+
+    await page.goto('/#/myth/chinese/quiz/chinese-01');
+    const quizClip = page.waitForRequest((request) => request.url().includes('/audio/voices/morgan/quiz/chinese-q01.mp3'));
+    await page.getByTestId('quiz-listen').click();
+    await quizClip;
   });
 
   test('the XTTS narrator is selectable, disclosed and plays its own clips', async ({ page }) => {

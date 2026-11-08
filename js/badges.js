@@ -5,7 +5,7 @@
  * all describe them the same way. Evaluation is derived from stored progress;
  * nothing extra needs to be saved when a badge is earned.
  */
-import { getState } from './storage.js?v=20261108-3';
+import { getState } from './storage.js?v=20261108-4';
 
 export const STATIC_BADGES = [
   { id: 'first-story', name: 'First Steps', description: 'Read your first story.', icon: '✦' },
@@ -15,7 +15,7 @@ export const STATIC_BADGES = [
   { id: 'matchmaker', name: 'Matchmaker', description: 'Match every deity, domain and tradition.', icon: '⚖' },
   { id: 'culture-detective', name: 'Culture Detective', description: 'Identify every culture from its story.', icon: '❖' },
   { id: 'codex-keeper', name: 'Codex Keeper', description: 'Unlock 25 codex cards.', icon: '◈' },
-  { id: 'mythologist', name: 'Mythologist', description: 'Finish all eight playable traditions.', icon: '✷' },
+  { id: 'mythologist', name: 'Mythologist', description: 'Finish every playable tradition.', icon: '✷' },
 ];
 
 export function badgeCatalog(playable = []) {

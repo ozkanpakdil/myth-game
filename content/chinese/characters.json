@@ -1,0 +1,92 @@
+[
+  {
+    "id": "pangu",
+    "name": "Pangu",
+    "role": "Creator giant who separated sky and earth",
+    "domain": ["creation", "cosmos"],
+    "symbols": ["the cosmic egg", "his body becoming the landscape"],
+    "fun_fact": "In the best-known version, Pangu grows ten feet taller every day so that the sky and earth can never close together again.",
+    "verified": false
+  },
+  {
+    "id": "nuwa",
+    "name": "Nüwa",
+    "role": "Primordial goddess who repaired the sky and shaped humans",
+    "domain": ["creation", "repair", "sovereignty"],
+    "symbols": ["five-coloured stones", "the legs of a giant turtle"],
+    "fun_fact": "Nüwa is often shown holding a compass, while her consort Fuxi holds a square, together representing order in heaven and earth.",
+    "verified": false
+  },
+  {
+    "id": "gonggong",
+    "name": "Gonggong",
+    "role": "Water god whose battle broke the sky pillar",
+    "domain": ["water", "strife"],
+    "symbols": ["Buzhou Mountain", "floodwaters"],
+    "fun_fact": "Gonggong is sometimes depicted with a human face and a snake's body, and his name is linked to catastrophic flooding.",
+    "verified": false
+  },
+  {
+    "id": "houyi",
+    "name": "Hou Yi",
+    "role": "Master archer who shot down nine suns",
+    "domain": ["archery", "order", "heroism"],
+    "symbols": ["bow and arrows", "the one remaining sun"],
+    "fun_fact": "Hou Yi's story changes with the teller: he can be a selfless hero, a grieving husband, or a ruler who becomes a tyrant.",
+    "verified": false
+  },
+  {
+    "id": "change",
+    "name": "Chang'e",
+    "role": "Moon goddess who swallowed the elixir of immortality",
+    "domain": ["moon", "immortality"],
+    "symbols": ["the full moon", "the elixir", "a jade rabbit"],
+    "fun_fact": "The Mid-Autumn Festival is associated with Chang'e, and mooncakes are shared while families look for her figure in the moon.",
+    "verified": false
+  },
+  {
+    "id": "yu",
+    "name": "Yu the Great",
+    "role": "Flood hero and legendary founder of the Xia dynasty",
+    "domain": ["flood control", "kingship", "perseverance"],
+    "symbols": ["dredged rivers", "the door he passed three times"],
+    "fun_fact": "The saying that Yu passed his own door three times without entering became a model of public duty in Chinese political thought.",
+    "verified": false
+  },
+  {
+    "id": "yinglong",
+    "name": "Yinglong",
+    "role": "Winged dragon who helped Yu trace river channels",
+    "domain": ["rain", "rivers", "service"],
+    "symbols": ["wings", "a tail drawing channels in the earth"],
+    "fun_fact": "Yinglong means 'responsive dragon'; in some versions the dragon's tail becomes the map that Yu follows.",
+    "verified": false
+  },
+  {
+    "id": "nezha",
+    "name": "Nezha",
+    "role": "Child warrior reborn in a lotus body",
+    "domain": ["rebellion", "protection", "fire"],
+    "symbols": ["the Universe Ring", "the Red Armillary Sash", "lotus flowers"],
+    "fun_fact": "Nezha is often shown with flaming wheels under his feet and a spear in his hand, a favourite figure in opera and temple festivals.",
+    "verified": false
+  },
+  {
+    "id": "ao_guang",
+    "name": "Ao Guang",
+    "role": "Dragon King of the Eastern Sea",
+    "domain": ["sea", "rain", "treasure"],
+    "symbols": ["the dragon palace", "the Ruyi Jingu Bang"],
+    "fun_fact": "Ao Guang's underwater palace is a treasury in myth, and his staff becomes Sun Wukong's most famous weapon.",
+    "verified": false
+  },
+  {
+    "id": "sun_wukong",
+    "name": "Sun Wukong",
+    "role": "Stone-born monkey who became the Great Sage Equal to Heaven",
+    "domain": ["trickery", "strength", "pilgrimage"],
+    "symbols": ["the Ruyi Jingu Bang", "the somersault cloud", "the golden headband"],
+    "fun_fact": "Sun Wukong can travel 108,000 li on a single somersault cloud, a distance tied to Buddhist cosmology in the novel.",
+    "verified": false
+  }
+]

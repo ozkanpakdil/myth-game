@@ -1,0 +1,95 @@
+[
+  {
+    "id": "chinese-01",
+    "title": "Pangu and the Cosmic Egg",
+    "source_ref": "Sanwu Liji (third century CE), as later retold",
+    "paragraphs": [
+      "At the beginning there was no sky and no earth, only a dark egg holding a single being. Pangu slept inside it for eighteen thousand years. When he woke, he cracked the shell. The light, clear part rose and became the sky; the heavy, muddy part sank and became the earth.",
+      "Pangu stood between them. Every day the sky grew ten feet higher, the earth ten feet thicker, and Pangu ten feet taller. For another eighteen thousand years he held them apart, so that they could never close again. The world took shape around him.",
+      "When Pangu died, his body became the landscape. His breath became wind and clouds, his voice thunder, his left eye the sun and his right eye the moon. His blood flowed into rivers, his hair into forests and stars, his bones into mountains. In some tellings, the fleas on his body became the first people.",
+      "The story is first recorded centuries after it was told, and versions disagree about the details. What remains constant is the idea that the world is not made from nothing but from a living body, and that creation is also a death."
+    ],
+    "characters": ["pangu"],
+    "themes": ["creation", "sacrifice", "cosmology"],
+    "uncertain": false,
+    "verified": false
+  },
+  {
+    "id": "chinese-02",
+    "title": "Nüwa Mends the Sky",
+    "source_ref": "Huainanzi (second century BCE); Shan Hai Jing",
+    "paragraphs": [
+      "Nüwa was a primordial goddess who shaped people from yellow earth, breathing life into the figures she made. By the time she ruled, the world was already old and fragile. The water god Gonggong fought the god Zhuanxu for mastery of heaven and knocked over the mountain pillar Buzhou, which held up the sky.",
+      "The sky tore open. Fire swept the forests, floodwater poured across the land, and beasts came out to hunt the people. Nüwa gathered stones of five colours and melted them in a great fire, then used the molten rock to patch the broken sky.",
+      "She cut off the legs of a giant turtle and set them at the four corners of the world to hold up the heavens. She killed the black dragon that was ravaging the land, and piled up reeds to burn and block the flood. The world grew quiet enough to live in again.",
+      "The repair was not perfect. The sky stayed slightly tilted, so the sun, moon and stars move across it, and the earth tilted too, so rivers run east to the sea. In older accounts Nüwa is the repairer; the story of her making humans from clay is told in later texts."
+    ],
+    "characters": ["nuwa", "gonggong"],
+    "themes": ["creation", "repair", "disaster"],
+    "notes": "The earliest surviving account focuses on the repair of the sky; the human-creation episode and some details vary between later texts.",
+    "uncertain": false,
+    "verified": false
+  },
+  {
+    "id": "chinese-03",
+    "title": "Hou Yi and the Ten Suns",
+    "source_ref": "Huainanzi; Chu Ci, 'Tianwen'; Shan Hai Jing",
+    "paragraphs": [
+      "In the eastern sea stood the Fusang tree, where ten suns rested. They were the children of the sky god Di Jun, and each day one of them rose while the others waited. Then, one day, all ten rose together. Their heat scorched the fields, dried the rivers and cracked the earth.",
+      "The emperor Yao called on Hou Yi, a master archer. Yi climbed a mountain and shot nine of the suns from the sky, one after another. The last sun begged for its life, and Yao stopped him, because the world needed light and warmth. The remaining sun still crosses the sky each day.",
+      "For his reward, Yi received an elixir of immortality from the Queen Mother of the West, Xiwangmu. He did not drink it at once. His wife, Chang'e, found it and swallowed it, either to keep it from a thief or because she wanted to return to heaven; the stories disagree.",
+      "The elixir made Chang'e light enough to float to the moon, where she has lived ever since. Yi was left on earth, and in some versions he becomes a tyrant; in others he remains a grieving hero. At the Mid-Autumn Festival, families still tell of Chang'e in the moon."
+    ],
+    "characters": ["houyi", "change"],
+    "themes": ["hubris", "archery", "the moon"],
+    "notes": "The relationship between Hou Yi and Chang'e, and the reason she takes the elixir, differ across early and later tellings.",
+    "uncertain": false,
+    "verified": false
+  },
+  {
+    "id": "chinese-04",
+    "title": "Yu the Great and the Flood",
+    "source_ref": "Shujing, 'Tribute of Yu'; Shiji; Huainanzi",
+    "paragraphs": [
+      "For generations the rivers of China overflowed. The waters covered fields and villages, and the people climbed to the hills. The emperor Shun gave the task of controlling the flood to Gun, who tried to block the water with high dikes. The dikes broke, and Gun failed.",
+      "Gun's son Yu took up the work. Instead of building walls against the water, he studied the rivers. He cut channels through the hills, dredged the beds and led the floods out to the sea. In later tellings a winged dragon, Yinglong, traced the channels with its tail, and a tortoise carried a sacred chart.",
+      "Yu worked for thirteen years. He passed the door of his own home three times but did not go in, because the work was not finished. He divided the land, measured the fields and established tribute. The waters receded, and people returned to the plains.",
+      "Tradition credits Yu with founding the Xia dynasty, the first hereditary dynasty in Chinese history. Historians debate how much of the story is literal and how much is a later explanation of kingship. What the myth makes clear is that a ruler earns authority by ending disaster, not by claiming it."
+    ],
+    "characters": ["yu", "yinglong"],
+    "themes": ["flood", "kingship", "perseverance"],
+    "notes": "The historical reality of the Xia dynasty is debated; the flood narrative is a later literary and political tradition.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "chinese-05",
+    "title": "Nezha and the Dragon Prince",
+    "source_ref": "Fengshen Yanyi (sixteenth century), drawing on earlier Buddhist and folk material",
+    "paragraphs": [
+      "Nezha was the third son of Li Jing, a commander in the Shang dynasty. At seven he was already strong and reckless. One hot day he bathed in the river and stirred the sea with his magic sash, shaking the palace of Ao Guang, the Dragon King of the Eastern Sea.",
+      "Ao Guang sent his son, the dragon prince Ao Bing, to punish the boy. Nezha met him with a ring and a red sash, and in the fight he killed Ao Bing. He pulled out the dragon's sinews, thinking he could use them as a gift for his father. The sea boiled with anger.",
+      "Ao Guang demanded justice from the Jade Emperor. To save his parents from the dragon's vengeance, Nezha gave back his flesh and bones and died. His teacher, Taiyi Zhenren, gathered lotus roots and flowers and shaped a new body for him, and Nezha returned to life.",
+      "Reborn, Nezha was more powerful than before. He defeated the Dragon King and his armies, and later fought on the side of the Zhou against the Shang. His story is one of the most popular in Chinese opera and children's tales: a child who breaks the rules, pays for it, and comes back changed."
+    ],
+    "characters": ["nezha", "ao_guang"],
+    "themes": ["rebellion", "sacrifice", "rebirth"],
+    "uncertain": false,
+    "verified": false
+  },
+  {
+    "id": "chinese-06",
+    "title": "Sun Wukong in the Palace of Heaven",
+    "source_ref": "Journey to the West (sixteenth century), attributed to Wu Cheng'en",
+    "paragraphs": [
+      "On the Mountain of Flowers and Fruit, a stone egg split open and a monkey was born. He was clever and fearless. He learned magic from a Daoist master, gained the power to change shape and to ride a cloud, and took the name Sun Wukong, 'Monkey Awakened to Emptiness.'",
+      "Sun Wukong went to the Dragon King of the Eastern Sea and demanded a weapon. He took the Ruyi Jingu Bang, a staff that could grow or shrink, and used it to bully the dragons. He also erased his name from the register of the dead, so that he could not die.",
+      "Heaven tried to control him by giving him a minor post, keeper of the imperial stables. When he learned the job was beneath him, he rebelled, called himself the Great Sage Equal to Heaven, and wrecked the peach banquet. The Jade Emperor's armies could not stop him.",
+      "The Buddha made a wager with him and trapped him under the Five Elements Mountain for five hundred years. Later, the pilgrim monk Tripitaka freed him, and Sun Wukong became the protector of the journey west. The novel turns an old trickster into a guard, but never makes him tame."
+    ],
+    "characters": ["sun_wukong", "ao_guang"],
+    "themes": ["rebellion", "trickster", "pilgrimage"],
+    "uncertain": false,
+    "verified": false
+  }
+]

@@ -109,6 +109,17 @@ Mythos is an educational draft. The retellings are new, short summaries in moder
 - **David Freidel, Linda Schele and Joy Parker, Maya Cosmos: Three Thousand Years on the Shaman's Path (1993)** — A wide-ranging study of Maya cosmology and ritual that draws on archaeology, inscriptions and living communities.
 - **Mary Miller and Karl Taube, An Illustrated Dictionary of the Gods and Symbols of Ancient Mexico and the Maya (1993)** — A reference work on Maya and central Mexican deities, symbols and iconography.
 
+### Chinese
+
+- **Shan Hai Jing (Classic of Mountains and Seas)** — A composite text compiled over several centuries, describing mountains, seas, creatures, gods and rituals; it preserves some of the oldest surviving mythic material.
+- **Huainanzi, translated by John S. Major, Sarah A. Queen, Andrew Seth Meyer and Harold D. Roth (2010)** — A Han-dynasty philosophical compilation and the main early source for Nüwa repairing the sky and Hou Yi shooting the suns.
+- **Chu Ci, 'Tianwen' (Questions of Heaven), translated by David Hawkes in The Songs of the South (1959; revised 1985)** — An ancient poem of cosmological questions that preserves early speculation about the suns, moon and ordering of the world.
+- **Shujing (Book of Documents), 'Tribute of Yu'** — A classical text describing Yu's river work and the ordering of the land; its historical layers and dating are debated.
+- **Shiji (Records of the Grand Historian) by Sima Qian** — The Han-dynasty history that retells the flood and the Xia dynasty, combining earlier traditions with a political narrative.
+- **Journey to the West, translated by Anthony C. Yu (1977–1983; revised 2012)** — The sixteenth-century novel attributed to Wu Cheng'en, the main source for Sun Wukong's rebellion and pilgrimage.
+- **Fengshen Yanyi (Investiture of the Gods)** — A sixteenth-century novel that develops the story of Nezha, the dragon kings and the war between the Shang and Zhou.
+- **Sanwu Liji** — A third-century CE text, quoted in later encyclopedias, that provides the earliest surviving written form of the Pangu creation story.
+
 ## Review and sensitivity status
 
 | Tradition | Sensitivity | Verified |
@@ -121,8 +132,9 @@ Mythos is an educational draft. The retellings are new, short summaries in moder
 | Hindu | high | false |
 | Japanese | medium | false |
 | Maya | medium | false |
+| Chinese | medium | false |
 
-Hindu stories are a living sacred tradition and are marked **high** sensitivity. Shinto (Japanese) and Maya traditions are marked **medium**. All eight traditions need a human fact-check of dates, names, spellings, answer keys and source notes before release. The Hindu, Shinto and Maya material also needs a sensitivity review by someone with relevant community or scholarly knowledge.
+Hindu stories are a living sacred tradition and are marked **high** sensitivity. Shinto (Japanese), Maya and Chinese traditions are marked **medium**. All nine traditions need a human fact-check of dates, names, spellings, answer keys and source notes before release. The Hindu, Shinto, Maya and Chinese material also needs a sensitivity review by someone with relevant community or scholarly knowledge.
 
 If a retelling is inaccurate or disrespectful, the correct response is to revise or remove it — not to defend the text. See the `NEEDS HUMAN` tasks in `PLAN_AND_TODO.md`.
 

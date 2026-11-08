@@ -1,0 +1,73 @@
+{
+  "id": "chinese",
+  "name": "Chinese",
+  "intro": "Chinese mythology is not one book or one faith. It gathers Shang-era divination and ancestor offerings, Daoist ideas about cosmic order and immortality, Buddhist stories arriving from India, and countless local temple and family traditions. The earliest written traces are oracle-bone inscriptions from about 1250 BCE, but most familiar narratives were shaped much later. The Shan Hai Jing, a strange geography of mountains and seas, preserves gods and monsters; Han writers such as the compilers of the Huainanzi retold creation and flood stories; Ming novels turned older material into the adventures of Nezha and Sun Wukong. Heaven could be imagined as a bureaucracy, with a Jade Emperor, ministries and dragon kings, while local gods varied from village to village. The stories here are a selection, not a single canon.",
+  "timeline": [
+    {
+      "label": "Shang divination",
+      "year_text": "c. 1250–1046 BCE",
+      "note": "Oracle-bone inscriptions record questions to royal ancestors and to Di, a high sky power. These are the earliest surviving Chinese written traces of religious practice."
+    },
+    {
+      "label": "Warring States and Han",
+      "year_text": "475 BCE–220 CE",
+      "note": "Texts such as the Shan Hai Jing, the Chu Ci and the Huainanzi collect or retell creation, flood and hero stories, often from older oral traditions."
+    },
+    {
+      "label": "Buddhism and pilgrimage",
+      "year_text": "4th–10th century CE",
+      "note": "Buddhist stories and deities enter China. The historical monk Xuanzang travels to India, and his journey later becomes the frame for the Monkey King's adventures."
+    },
+    {
+      "label": "Ming novels",
+      "year_text": "16th century CE",
+      "note": "Journey to the West and Investiture of the Gods turn older religious and folk material into long vernacular novels read across East Asia."
+    },
+    {
+      "label": "Local cults and festivals",
+      "year_text": "17th–20th century CE",
+      "note": "Temple worship, ancestor rites and festivals honour a vast range of local gods, including dragon kings, city gods and immortals."
+    },
+    {
+      "label": "Modern study and retelling",
+      "year_text": "20th century–present",
+      "note": "Scholars compare textual and regional versions, while film, television, opera and games give the stories new audiences."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Shan Hai Jing (Classic of Mountains and Seas)",
+      "note": "A composite text, compiled over centuries, describing strange lands, creatures, gods and rituals. It preserves some of the oldest surviving mythic material."
+    },
+    {
+      "title": "Huainanzi",
+      "note": "A Han-dynasty philosophical compilation that preserves the best-known accounts of Nüwa repairing the sky and Hou Yi shooting the suns."
+    },
+    {
+      "title": "Chu Ci, 'Tianwen' (Questions of Heaven)",
+      "note": "An ancient poem that poses a series of cosmological questions, including questions about the suns, the moon and the ordering of the world."
+    },
+    {
+      "title": "Shujing, 'Tribute of Yu'",
+      "note": "A classical text describing Yu's work on the rivers and the ordering of the land; its historical layers are debated."
+    },
+    {
+      "title": "Shiji (Records of the Grand Historian)",
+      "note": "Sima Qian's Han-dynasty history retells the flood and the Xia dynasty, combining earlier traditions with a political narrative."
+    },
+    {
+      "title": "Journey to the West",
+      "note": "A sixteenth-century novel attributed to Wu Cheng'en, following the monk Tripitaka and his companions, including Sun Wukong."
+    },
+    {
+      "title": "Fengshen Yanyi (Investiture of the Gods)",
+      "note": "A sixteenth-century novel that develops the story of Nezha, the dragon kings and the war between the Shang and Zhou."
+    },
+    {
+      "title": "Sanwu Liji",
+      "note": "A third-century CE text, quoted in later encyclopedias, that provides the earliest surviving written form of the Pangu creation story."
+    }
+  ],
+  "sensitivity": "medium",
+  "verified": false
+}

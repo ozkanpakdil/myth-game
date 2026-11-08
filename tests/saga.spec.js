@@ -2,6 +2,13 @@ import { test, expect } from '@playwright/test';
 import { readJson } from './helpers.js';
 
 const saga = readJson('content/saga/norse.json');
+
+async function chooseSaga(page, index) {
+  const choice = page.getByTestId(`saga-choice-${index}`);
+  await choice.scrollIntoViewIfNeeded();
+  await page.waitForTimeout(250);
+  await choice.click({ force: true });
+}
 const SAGA_KEY = 'mythos.saga.v1';
 
 function sagaState(overrides = {}) {
@@ -184,7 +191,7 @@ test.describe('branching play', () => {
       await expect(page.getByTestId(`saga-listen-${index}`)).toBeVisible();
     }
 
-    await page.getByTestId('saga-choice-0').click();
+    await chooseSaga(page, 0);
     await expect(page.getByTestId('saga-page')).toHaveAttribute('data-node', 'raven-1');
     await expect(page.getByTestId('saga-scene')).toHaveAttribute('data-art', 'circle');
     await expect(page.getByTestId('saga-text').locator('.saga-paragraph').first()).toContainText('raven flew low');
@@ -203,7 +210,7 @@ test.describe('branching play', () => {
     await page.getByTestId('saga-name').fill('Jason');
     await page.getByTestId('saga-begin').click();
     await page.getByTestId('saga-skip').click();
-    await page.getByTestId('saga-choice-2').click();
+    await chooseSaga(page, 2);
 
     await expect(page.getByTestId('saga-page')).toHaveAttribute('data-node', 'forge-1');
     await page.reload();
@@ -247,7 +254,7 @@ test.describe('endings and reset', () => {
     await page.goto('/#/saga/root-1');
     await expect(page.getByTestId('saga-page')).toHaveAttribute('data-node', 'root-1');
     await page.getByTestId('saga-skip').click();
-    await page.getByTestId('saga-choice-0').click();
+    await chooseSaga(page, 0);
 
     await expect(page.getByTestId('saga-page')).toHaveAttribute('data-ending', 'true');
     await expect(page.getByTestId('saga-ending')).toBeVisible();

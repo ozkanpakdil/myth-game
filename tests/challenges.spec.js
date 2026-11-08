@@ -98,7 +98,7 @@ test.describe('map', () => {
     await page.goto('/#/map');
     await expect(page.getByTestId('map-page')).toBeVisible();
     await expect(page.locator('.map-region')).toHaveCount(6);
-    await expect(page.locator('.map-marker')).toHaveCount(8);
+    await expect(page.locator('.map-marker')).toHaveCount(9);
 
     await page.getByTestId('map-region-europe').focus();
     await page.keyboard.press('Enter');
@@ -127,6 +127,6 @@ test.describe('map', () => {
     expect(metrics.doc).toBe(metrics.viewport);
     expect(metrics.scroll).toBeGreaterThan(metrics.box);
     await expect(page.locator('.map-scroll-hint')).toBeVisible();
-    await expect(page.locator('.map-list__item')).toHaveCount(8);
+    await expect(page.locator('.map-list__item')).toHaveCount(9);
   });
 });

@@ -105,7 +105,7 @@ meaning: pair it with a label, shape or text.
   `f` forest. Flat SVG colours are intentional; the map is a diagram, not a
   satellite image.
 - `assets/map/regions.json` supplies six region rectangles, label anchors,
-  `--region-color` values, and the eight playable marker positions.
+  `--region-color` values, and the playable marker positions.
 - The map shows **no modern borders** and is not to scale. Region rectangles
   are interaction targets, not political geography.
 - Markers use the tradition's own 16×16 sigil inside a gold halo. The halo is

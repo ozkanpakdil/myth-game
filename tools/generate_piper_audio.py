@@ -151,6 +151,7 @@ def main():
     parser.add_argument("--voice", required=True, help="short voice id, e.g. joe")
     parser.add_argument("--model", required=True)
     parser.add_argument("--config", required=True)
+    parser.add_argument("--model-label", default="", help="optional manifest label when one clip set uses more than one engine")
     parser.add_argument("--label", required=True)
     parser.add_argument("--license", required=True)
     parser.add_argument("--language", required=True)
@@ -193,7 +194,7 @@ def main():
         "label": args.label,
         "language": args.language,
         "license": args.license,
-        "model": Path(args.model).name,
+        "model": args.model_label or Path(args.model).name,
         "clips": written,
         "generatedAt": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
     }, indent=2) + "\n", encoding="utf-8")

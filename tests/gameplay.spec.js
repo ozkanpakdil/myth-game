@@ -91,7 +91,7 @@ test.describe('codex unlocks', () => {
   test('one read story unlocks its figure and two terms; a final pass unlocks the whole tradition', async ({ page }) => {
     await seedProgress(page, freshState({ storiesRead: { greek: ['greek-01'] } }));
     await page.goto('/#/codex');
-    await expect(page.getByTestId('codex-count')).toContainText('3 / 160');
+    await expect(page.getByTestId('codex-count')).toContainText('3 / 180');
     await expect(page.getByTestId('codex-card-greek-zeus')).not.toHaveClass(/is-locked/);
     await expect(page.getByTestId('codex-card-greek-hades')).toHaveClass(/is-locked/);
     await expect(page.getByTestId('codex-term-greek-0')).not.toHaveClass(/is-locked/);
@@ -104,7 +104,7 @@ test.describe('codex unlocks', () => {
     const finalState = freshState({ storiesRead: { greek: ['greek-01'] }, finalQuiz: { greek: quizRecord({ score: 20, total: 20 }) } });
     await seedProgress(page, finalState);
     await page.goto('/#/codex');
-    await expect(page.getByTestId('codex-count')).toContainText('20 / 160');
+    await expect(page.getByTestId('codex-count')).toContainText('20 / 180');
     await expect(page.getByTestId('codex-card-greek-hades')).not.toHaveClass(/is-locked/);
   });
 });

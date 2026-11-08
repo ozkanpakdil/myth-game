@@ -9,7 +9,7 @@
  * story JSON.
  */
 
-import { loadSaga } from './content.js?v=20261108-3';
+import { loadSaga } from './content.js?v=20261108-4';
 import {
   escapeHtml,
   progressBar,
@@ -17,8 +17,8 @@ import {
   confirmDialog,
   setDocumentTitle,
   listenButtonContent,
-} from './ui.js?v=20261108-3';
-import { sagaScene, sagaGlyph } from './saga-art.js?v=20261108-3';
+} from './ui.js?v=20261108-4';
+import { sagaScene, sagaGlyph } from './saga-art.js?v=20261108-4';
 import {
   narrate,
   narrateSequence,
@@ -29,7 +29,7 @@ import {
   selectedStudioVoice,
   voiceChosen,
   sagaAudioUrl,
-} from './narration.js?v=20261108-3';
+} from './narration.js?v=20261108-4';
 import {
   loadSaga as loadSagaState,
   saveSaga,
@@ -37,7 +37,7 @@ import {
   pushHistory,
   applyEffects,
   cleanName,
-} from './saga-state.js?v=20261108-3';
+} from './saga-state.js?v=20261108-4';
 
 const STAT_LABELS = { insight: 'Insight', courage: 'Courage', cunning: 'Cunning' };
 const MAX_PIPS = 5;

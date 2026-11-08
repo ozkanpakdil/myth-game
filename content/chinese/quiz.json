@@ -1,0 +1,202 @@
+[
+  {
+    "id": "chinese-q01",
+    "story_id": "chinese-01",
+    "question": "What did Pangu wake inside at the beginning of the Chinese creation story?",
+    "choices": ["A cosmic egg", "A bamboo grove", "A dragon's palace", "The moon"],
+    "correct_index": 0,
+    "explanation": "Pangu slept inside a dark egg before he cracked it and separated the clear sky from the heavy earth.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "chinese-q02",
+    "story_id": "chinese-01",
+    "question": "What happened to the clear part of the egg when Pangu cracked it?",
+    "choices": ["It became the sky", "It became the sea", "It became the sun", "It became the first human"],
+    "correct_index": 0,
+    "explanation": "The light, clear part rose and became the sky, while the heavy, muddy part sank and became the earth.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "chinese-q03",
+    "story_id": "chinese-01",
+    "question": "According to the story, what did Pangu's body become after he died?",
+    "choices": ["The landscape and natural world", "A dragon that guarded the sea", "The first emperor of China", "A star that never moved"],
+    "correct_index": 0,
+    "explanation": "His breath became wind, his eyes became the sun and moon, his blood became rivers, and his bones became mountains.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "chinese-q04",
+    "story_id": "chinese-02",
+    "question": "Who was Nüwa in the story?",
+    "choices": ["A primordial goddess", "A dragon king", "A mortal archer", "A Shang emperor"],
+    "correct_index": 0,
+    "explanation": "Nüwa is a primordial goddess who shaped people from yellow earth and later repaired the broken sky.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "chinese-q05",
+    "story_id": "chinese-02",
+    "question": "Which mountain pillar did Gonggong knock over?",
+    "choices": ["Buzhou", "Kunlun", "Tai", "The Five Elements Mountain"],
+    "correct_index": 0,
+    "explanation": "Gonggong knocked over Buzhou, the pillar that held up the sky, and the sky tore open.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "chinese-q06",
+    "story_id": "chinese-02",
+    "question": "How did Nüwa repair the torn sky?",
+    "choices": ["She melted five-coloured stones", "She wove a silk net", "She asked the Jade Emperor", "She built a wall of earth"],
+    "correct_index": 0,
+    "explanation": "Nüwa gathered stones of five colours, melted them in a great fire, and used the molten rock to patch the sky.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "chinese-q07",
+    "story_id": "chinese-02",
+    "question": "Why do rivers flow east in the story of Nüwa?",
+    "choices": ["The earth remained tilted after the repair", "A dragon dug every river", "The moon pulls them east", "Pangu ordered them to flow"],
+    "correct_index": 0,
+    "explanation": "The repair left the earth slightly tilted, and the story explains the eastward flow of rivers through that tilt.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "chinese-q08",
+    "story_id": "chinese-03",
+    "question": "How many suns rose together and scorched the earth?",
+    "choices": ["Ten", "Nine", "Seven", "Twelve"],
+    "correct_index": 0,
+    "explanation": "All ten suns rose together instead of taking turns, and their heat dried the rivers and cracked the earth.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "chinese-q09",
+    "story_id": "chinese-03",
+    "question": "Who shot down the extra suns?",
+    "choices": ["Hou Yi", "Yu the Great", "Pangu", "Sun Wukong"],
+    "correct_index": 0,
+    "explanation": "The emperor Yao called on Hou Yi, a master archer, who shot nine of the ten suns from the sky.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "chinese-q10",
+    "story_id": "chinese-03",
+    "question": "What did Chang'e do with the elixir of immortality?",
+    "choices": ["She swallowed it and floated to the moon", "She gave it to the Jade Emperor", "She threw it into the sea", "She buried it under a mountain"],
+    "correct_index": 0,
+    "explanation": "Chang'e swallowed the elixir, became light enough to float, and has lived on the moon ever since.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "chinese-q11",
+    "story_id": "chinese-03",
+    "question": "Why did Yao stop Hou Yi from shooting the last sun?",
+    "choices": ["The world needed light and warmth", "The last sun was his son", "Yi had run out of arrows", "The sun promised to stop moving"],
+    "correct_index": 0,
+    "explanation": "Yao stopped him because the world needed the remaining sun's light and warmth; the story does not say it was his son.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "chinese-q12",
+    "story_id": "chinese-04",
+    "question": "How did Yu try to control the flood?",
+    "choices": ["He cut channels and dredged rivers", "He built higher dikes", "He prayed for the waters to stop", "He set fire to the forests"],
+    "correct_index": 0,
+    "explanation": "Unlike Gun, who built dikes, Yu cut channels through the hills and led the floodwater out to the sea.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "chinese-q13",
+    "story_id": "chinese-04",
+    "question": "Which creature traced river channels with its tail in later tellings?",
+    "choices": ["Yinglong, a winged dragon", "Ao Guang, the Dragon King", "The black dragon killed by Nüwa", "The turtle that carried the chart"],
+    "correct_index": 0,
+    "explanation": "In later tellings, the winged dragon Yinglong helped Yu by tracing the courses of the channels with its tail.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "chinese-q14",
+    "story_id": "chinese-04",
+    "question": "What does the story suggest gives a ruler legitimate authority?",
+    "choices": ["Ending disaster and caring for the people", "Being born into the royal family", "Defeating every rival in battle", "Owning the largest palace"],
+    "correct_index": 0,
+    "explanation": "The myth presents Yu's authority as earned through the work of ending the flood, not through birth or conquest alone.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "chinese-q15",
+    "story_id": "chinese-05",
+    "question": "Who was Nezha's father in the story?",
+    "choices": ["Li Jing", "Ao Guang", "Taiyi Zhenren", "Yu the Great"],
+    "correct_index": 0,
+    "explanation": "Nezha was the third son of Li Jing, a commander in the Shang dynasty.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "chinese-q16",
+    "story_id": "chinese-05",
+    "question": "How did Nezha kill the dragon prince Ao Bing?",
+    "choices": ["With a magic ring and a red sash", "With a bow and a poisoned arrow", "With a sword made of jade", "With a net woven from silk"],
+    "correct_index": 0,
+    "explanation": "Nezha fought Ao Bing with a magic ring and a red sash, killed him, and pulled out the dragon's sinews.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "chinese-q17",
+    "story_id": "chinese-05",
+    "question": "How was Nezha brought back to life?",
+    "choices": ["Taiyi Zhenren made him a body from lotus roots and flowers", "The Dragon King returned his bones", "The Jade Emperor made him an immortal", "Nüwa molded him from yellow earth"],
+    "correct_index": 0,
+    "explanation": "After Nezha gave back his flesh and bones, his teacher Taiyi Zhenren shaped a new body for him from lotus roots and flowers.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "chinese-q18",
+    "story_id": "chinese-06",
+    "question": "Where was Sun Wukong born?",
+    "choices": ["From a stone egg on the Mountain of Flowers and Fruit", "In the Dragon King's palace", "In the moon palace", "From a peach in the Jade Emperor's garden"],
+    "correct_index": 0,
+    "explanation": "A stone egg on the Mountain of Flowers and Fruit split open, and the monkey who became Sun Wukong was born.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "chinese-q19",
+    "story_id": "chinese-06",
+    "question": "What weapon did Sun Wukong take from the Dragon King of the Eastern Sea?",
+    "choices": ["The Ruyi Jingu Bang", "A spear of lightning", "A fan that raises storms", "A sword of jade"],
+    "correct_index": 0,
+    "explanation": "Sun Wukong demanded a weapon and took the Ruyi Jingu Bang, a staff that could grow or shrink.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "chinese-q20",
+    "story_id": "chinese-06",
+    "question": "What did the Buddha do to Sun Wukong after their wager?",
+    "choices": ["Trapped him under the Five Elements Mountain", "Made him keeper of the heavenly stables", "Turned him into a dragon", "Erased his name from the register of the dead"],
+    "correct_index": 0,
+    "explanation": "The Buddha won the wager and trapped Sun Wukong under the Five Elements Mountain for five hundred years.",
+    "difficulty": "hard",
+    "verified": false
+  }
+]

@@ -2,8 +2,8 @@
  * map.js — a stylised, accessible SVG map built from the text tile grid.
  * Regions are focusable buttons; markers are ordinary links into the game.
  */
-import { escapeHtml, focusPage } from './ui.js?v=20261108-3';
-import { loadMythologies, loadWorldMap, loadMapRegions, iconFor } from './content.js?v=20261108-3';
+import { escapeHtml, focusPage } from './ui.js?v=20261108-4';
+import { loadMythologies, loadWorldMap, loadMapRegions, iconFor } from './content.js?v=20261108-4';
 
 const TILE = 16;
 
@@ -144,7 +144,7 @@ export async function renderMap(root) {
           </svg>
           </div>
           <p class="map-scroll-hint muted small">Scroll sideways to explore the whole map.</p>
-          <p class="map-caption muted small">Terrain is simplified: green plains, sand deserts, dark forest, grey mountains, pale ice. Markers show the eight playable traditions.</p>
+          <p class="map-caption muted small">Terrain is simplified: green plains, sand deserts, dark forest, grey mountains, pale ice. Markers show the playable traditions.</p>
         </div>
         <aside class="map-panel" id="map-panel" aria-label="Region details">${regionPanel(null)}</aside>
       </div>

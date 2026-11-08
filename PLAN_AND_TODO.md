@@ -27,7 +27,7 @@ An educational game about world myths. Players pick a mythology, read short stor
 | Version 2 (Phases 5–6) | World map for choosing a myth, plus simple pixel art |
 | Audience | Ages 12+ |
 | Tech | Static website: HTML + CSS + vanilla JavaScript. Content in JSON files. No server |
-| MVP content | 8 mythologies, 6 stories each, 20 quiz questions each |
+| MVP content | 9 mythologies, 6 stories each, 20 quiz questions each |
 
 **Implementation note (this build):** images are delivered as **SVG** (not PNG).
 Pixel-art sprites are authored as text grids and compiled to SVG by
@@ -58,7 +58,7 @@ Dates are approximate and must be treated as `verified: false`. "Record" means w
 | 15 | Caucasian (Georgian, Armenian, Nart) | ancient oral | Nart sagas (collected 19th c.) | Europe/Asia |
 | 16 | Vedic / Hindu | ~1500 BCE–present | Rigveda, Ramayana, Mahabharata, Puranas | Asia |
 | 17 | Buddhist narratives | ~500 BCE–present | Jataka tales | Asia |
-| 18 | Chinese | ~2000 BCE–present | Shan Hai Jing, Journey to the West | Asia |
+| 18 | Chinese | ~1250 BCE–present | Shang oracle bones; Shan Hai Jing; Journey to the West | Asia |
 | 19 | Japanese (Shinto) | ancient–present | Kojiki (712 CE) | Asia |
 | 20 | Korean | ancient–present | Samguk Yusa (~1280s CE) | Asia |
 | 21 | Tibetan / Bon | ancient–present | Bon and Buddhist texts | Asia |
@@ -79,7 +79,7 @@ Dates are approximate and must be treated as `verified: false`. "Record" means w
 
 Optional and sensitive (decide with a human before including): Abrahamic narratives. Use neutral wording such as "sacred narratives", or leave them out.
 
-**MVP set (build these first):** Greek, Norse, Egyptian, Mesopotamian, Hindu, Japanese, Maya, Celtic.
+**MVP set (build these first):** Greek, Norse, Egyptian, Mesopotamian, Hindu, Japanese, Maya, Celtic, Chinese.
 Yoruba and other living-tradition content come later, after human review.
 
 ---
@@ -232,7 +232,7 @@ Tasks are in order. Do the first unchecked one. IDs are used in the PROGRESS LOG
 
 ### Phase 0: Setup
 - [x] **T001** Create the folder structure from Section 4 with empty placeholder files.
-- [x] **T002** Write `content/mythologies.json` from the Section 2 table (all 35 entries, `mvp: true` for the 8 MVP ones, `verified: false`).
+- [x] **T002** Write `content/mythologies.json` from the Section 2 table (all 35 entries, `mvp: true` for the 9 MVP ones, `verified: false`).
 - [x] **T003** Write `schemas/` files describing each JSON format in Section 4.
 - [x] **T004** Write `tools/validate_content.js`: checks all JSON files for required fields, 4 quiz choices, valid `correct_index`, and that every `story_id` and character id exists. Prints a clear error list.
 
@@ -365,7 +365,7 @@ An AI that writes text can create pixel art as **text grids**, one character per
 - [x] **T211** `tools/render_sprites.js`: reads `assets/sprites/*.txt` grids, validates size and palette keys, outputs SVG files to `assets/svg/`, scaled up 4× with crisp edges.
 - [x] **T212** Map tile sprites (16 × 16): water, grass, sand, mountain, ice, forest.
 - [x] **T213** Region marker icon (16 × 16) and a "locked" version.
-- [x] **T214** One icon per MVP mythology (16 × 16), each with a simple symbol (Norse = hammer, Egyptian = ankh, Greek = column, Maya = stepped pyramid, Celtic = knot-like cross shape, Japanese = torii gate, Hindu = lotus, Mesopotamian = ziggurat).
+- [x] **T214** One icon per MVP mythology (16 × 16), each with a simple symbol (Norse = hammer, Egyptian = ankh, Greek = column, Maya = stepped pyramid, Celtic = knot-like cross shape, Japanese = torii gate, Hindu = lotus, Mesopotamian = ziggurat, Chinese = dragon face).
 - [x] **T215** Character sprites (16 × 16), simple blocky figures for the 10 characters of each MVP mythology (start with Greek, then one mythology per task). *(Implemented as abstract 16 × 16 portrait busts with archetype headgear; no sacred faces.)*
 - [x] **T216** Show sprites in Codex cards and in the story reader header.
 - [ ] **T217** **NEEDS HUMAN**: review art for stereotypes or disrespectful depictions, especially sacred figures. For sensitive traditions prefer symbols and objects over faces.
@@ -403,7 +403,7 @@ An AI that writes text can create pixel art as **text grids**, one character per
 ## 8. Definition of Done
 
 **Version 1 (text):**
-- [x] 8 MVP mythologies complete (6 stories, 20 quiz questions, 10 characters, 10 glossary terms each)
+- [x] 9 MVP mythologies complete (6 stories, 20 quiz questions, 10 characters, 10 glossary terms each)
 - [x] `validate_content.js` passes with no errors
 - [x] All screens work on desktop and mobile
 - [x] Progress saves and loads correctly
@@ -445,3 +445,4 @@ Add one line per finished task. Newest at the bottom.
 | 2026-11-07 | T506 | Accessibility pass: axe scan clean on 11 routes (WCAG 2.1/2.2 A–AA), focus moves to quiz and challenge results, timeline reorder announcements, deduplicated portrait labels, 24px standalone link. |
 | 2026-11-07 | Verification | `node tools/validate_content.js` clean; 43 Playwright tests pass headlessly; 1062 generated narration clips validated (708 Piper + 354 XTTS, filename parity and non-empty audio); no console errors on the checked routes; assembled Pages artifact verified. |
 | 2026-11-08 | T601 | Shortened saga prose, added per-paragraph Listen controls, preselected Morgan with a first-use voice picker, switched on voice change, and generated 126 saga clips per studio voice (378 total). |
+| 2026-11-08 | T602 | Added Chinese as the ninth playable tradition: Pangu, Nüwa, Hou Yi, Yu the Great, Nezha and Sun Wukong, with 20 questions, 10 figures, 10 terms, a dragon sigil, map marker and 44 studio clips per voice. |

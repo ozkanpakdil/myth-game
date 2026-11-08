@@ -90,6 +90,7 @@ done
 
 python3 tools/generate_piper_audio.py \
   --voice morgan --kind saga --bitrate 48k \
+  --model-label "xtts-v2 (archive) + piper (saga)" \
   --model /tmp/piper-morgan/model.onnx \
   --config /tmp/piper-morgan/model.onnx.json \
   --label Morgan --license "Non-commercial (voice clone)" \

@@ -1,0 +1,202 @@
+[
+  {
+    "id": "etruscan-q01",
+    "story_id": "etruscan-01",
+    "question": "Who is the supreme sky god in Etruscan religion?",
+    "choices": ["Tinia", "Uni", "Turms", "Charun"],
+    "correct_index": 0,
+    "explanation": "Tinia is the Etruscan sky god and the counterpart of Roman Jupiter, while Uni, Turms and Charun belong to other roles.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "etruscan-q02",
+    "story_id": "etruscan-01",
+    "question": "Which two goddesses share the triad with Tinia?",
+    "choices": ["Vanth and Uni", "Uni and Menerva", "Menerva and Turms", "Tanaquil and Vanth"],
+    "correct_index": 1,
+    "explanation": "Tinia, Uni and Menerva form the Etruscan triad, and their three-cella temple plan passed into Roman architecture.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "etruscan-q03",
+    "story_id": "etruscan-01",
+    "question": "How many kinds of lightning did later Roman sources assign to Tinia?",
+    "choices": ["Three", "Nine", "Eleven", "One"],
+    "correct_index": 0,
+    "explanation": "Roman writers say Tinia sent three of the eleven kinds of lightning, a tidy scheme that is probably a later systematisation.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "etruscan-q04",
+    "story_id": "etruscan-02",
+    "question": "Whom did the Romans identify Uni with?",
+    "choices": ["Minerva", "Venus", "Juno", "Diana"],
+    "correct_index": 2,
+    "explanation": "Roman writers identified Uni with Juno, and her sanctuary at Pyrgi links her with the Phoenician goddess Astarte as well.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "etruscan-q05",
+    "story_id": "etruscan-02",
+    "question": "Where were the Pyrgi tablets found?",
+    "choices": ["At Pyrgi, the port of Caere", "In the Tomb of the Augurs", "Near Piacenza", "On the Capitoline"],
+    "correct_index": 0,
+    "explanation": "The gold tablets came from the coastal sanctuary of Pyrgi, in the territory of the Etruscan city of Caere.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "etruscan-q06",
+    "story_id": "etruscan-02",
+    "question": "Which goddess does the Phoenician text of the Pyrgi tablets address?",
+    "choices": ["Hera", "Astarte", "Athena", "Isis"],
+    "correct_index": 1,
+    "explanation": "The Phoenician leaf addresses Astarte, while the Etruscan leaves name Uni, so the dedication sets the two goddesses in parallel.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "etruscan-q07",
+    "story_id": "etruscan-03",
+    "question": "Whom does Turms guide in Etruscan tomb art?",
+    "choices": ["The dead to the underworld", "The gods to war", "Sailors across the sea", "Kings to their coronation"],
+    "correct_index": 0,
+    "explanation": "Turms is a psychopomp: he leads the deceased toward the underworld in tomb paintings and on sarcophagi.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "etruscan-q08",
+    "story_id": "etruscan-03",
+    "question": "What does Vanth often carry in tomb scenes?",
+    "choices": ["A hammer and a key", "A bow and arrows", "A torch and a scroll", "A shield and spear"],
+    "correct_index": 2,
+    "explanation": "Vanth is shown as a winged guide with a torch, often with a scroll and a snake coiled around her arm.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "etruscan-q09",
+    "story_id": "etruscan-03",
+    "question": "Which title identifies Turms as a god of the underworld?",
+    "choices": ["Turms Aitas", "Turms Menerva", "Turms Uni", "Turms Phersu"],
+    "correct_index": 0,
+    "explanation": "Inscriptions and mirrors give the form Turms Aitas, linking the messenger god with Aita, the underworld.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "etruscan-q10",
+    "story_id": "etruscan-03",
+    "question": "How is the Etruscan Charun different from the Greek Charon?",
+    "choices": ["He is a winged female guide", "He is a hammer-bearing death demon, not a ferryman", "He is the king of the underworld", "He is a mortal priest"],
+    "correct_index": 1,
+    "explanation": "Charun appears as a squat demon with a hammer; the ferryman who crosses the Styx is a Greek figure, not his Etruscan role.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "etruscan-q11",
+    "story_id": "etruscan-04",
+    "question": "Who was Tanaquil married to?",
+    "choices": ["Servius Tullius", "Mastarna", "Lucius Tarquinius Priscus", "Lars Porsena"],
+    "correct_index": 2,
+    "explanation": "Tanaquil married Lucius Tarquinius Priscus, the Etruscan king of Rome, and her omen-reading advanced his career.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "etruscan-q12",
+    "story_id": "etruscan-04",
+    "question": "What did the eagle do with Tarquinius's cap?",
+    "choices": ["It carried it off and returned it", "It dropped it in the Tiber", "It gave it to Tanaquil", "It tore it apart"],
+    "correct_index": 0,
+    "explanation": "The eagle lifted his cap, circled, and put it back on his head; Tanaquil read this as a sign of kingship.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "etruscan-q13",
+    "story_id": "etruscan-04",
+    "question": "What did Tanaquil see around the sleeping Servius?",
+    "choices": ["An eagle", "A snake", "A star", "A flame"],
+    "correct_index": 3,
+    "explanation": "She saw his head wreathed in fire, stopped the servants from dousing it, and treated the flame as an omen of greatness.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "etruscan-q14",
+    "story_id": "etruscan-05",
+    "question": "Whose liver does the Piacenza bronze model represent?",
+    "choices": ["A sheep", "A bull", "A pig", "A goat"],
+    "correct_index": 0,
+    "explanation": "The bronze model is shaped like a sheep's liver and divided into fields inscribed with the names of gods.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "etruscan-q15",
+    "story_id": "etruscan-05",
+    "question": "What is the Piacenza liver probably used for?",
+    "choices": ["Mixing perfume", "Teaching or guiding divination", "Weighing grain", "Recording a treaty"],
+    "correct_index": 1,
+    "explanation": "Its inscribed regions suggest a model for interpreting the liver, though whether it was a teaching aid or a votive is debated.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "etruscan-q16",
+    "story_id": "etruscan-05",
+    "question": "What did the Etrusca disciplina mainly deal with?",
+    "choices": ["Writing epic poetry", "Building roads and aqueducts", "Reading signs such as lightning and entrails", "Training gladiators"],
+    "correct_index": 2,
+    "explanation": "The disciplina was the body of rules for interpreting prodigies, especially lightning and the organs of sacrificed animals.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "etruscan-q17",
+    "story_id": "etruscan-06",
+    "question": "Which tomb is famous for the masked figure Phersu?",
+    "choices": ["The Tomb of the Leopards", "The Tomb of the Triclinium", "The Tomb of the Reliefs", "The Tomb of the Augurs"],
+    "correct_index": 3,
+    "explanation": "The Tomb of the Augurs at Tarquinia contains the scene labelled with the name Phersu.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "etruscan-q18",
+    "story_id": "etruscan-06",
+    "question": "What is happening in the Phersu scene?",
+    "choices": ["A masked figure sets a dog on a hooded man", "A priest reads a liver", "A couple reclines at a banquet", "A warrior sails to Italy"],
+    "correct_index": 0,
+    "explanation": "Phersu holds the leash while a dog attacks a man whose head is covered, a scene whose meaning is disputed.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "etruscan-q19",
+    "story_id": "etruscan-06",
+    "question": "What does the Sarcophagus of the Spouses show?",
+    "choices": ["A battle between Etruscans and Greeks", "A procession to the underworld", "A couple reclining together at a banquet", "A haruspex reading a liver"],
+    "correct_index": 2,
+    "explanation": "The famous sarcophagus from Caere shows a man and woman sharing a banqueting couch, a key image of Etruscan afterlife art.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "etruscan-q20",
+    "story_id": "etruscan-06",
+    "question": "Why is the banquet imagery in Etruscan tombs hard to interpret?",
+    "choices": ["It is painted in a language no one can read", "It may show a funeral feast, an afterlife meal, or an aristocratic ideal", "It always depicts the same historical event", "It was added by Roman restorers"],
+    "correct_index": 1,
+    "explanation": "The paintings rarely explain themselves, and scholars disagree whether they depict the funeral, the afterlife or a social ideal.",
+    "difficulty": "hard",
+    "verified": false
+  }
+]

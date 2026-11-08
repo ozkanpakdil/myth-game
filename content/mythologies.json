@@ -99,7 +99,7 @@
     "start_year": -800,
     "end_year": -100,
     "summary": "Etruscan religion read the will of the gods in lightning and the livers of sacrificed animals, and passed much of its divination to Rome.",
-    "mvp": false,
+    "mvp": true,
     "sensitivity": "low",
     "verified": false
   },

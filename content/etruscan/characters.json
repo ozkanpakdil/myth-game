@@ -1,0 +1,92 @@
+[
+  {
+    "id": "tinia",
+    "name": "Tinia",
+    "role": "Supreme Etruscan sky god and lord of lightning",
+    "domain": ["sky", "lightning", "boundaries"],
+    "symbols": ["the thunderbolt", "the three-cella temple", "the boundary stone"],
+    "fun_fact": "Roman writers identified Tinia with Jupiter, and his three thunderbolts were later fitted into a system of eleven kinds of lightning.",
+    "verified": false
+  },
+  {
+    "id": "uni",
+    "name": "Uni",
+    "role": "Etruscan queen of the gods and patron of women and cities",
+    "domain": ["marriage", "women", "sovereignty"],
+    "symbols": ["the diadem", "the pomegranate", "the temple"],
+    "fun_fact": "At Pyrgi her sanctuary produced gold tablets in Etruscan and Phoenician that address her and Astarte in parallel.",
+    "verified": false
+  },
+  {
+    "id": "menerva",
+    "name": "Menerva",
+    "role": "Etruscan goddess of wisdom, craft and war",
+    "domain": ["wisdom", "craft", "war"],
+    "symbols": ["the helmet", "the spear", "the owl"],
+    "fun_fact": "Menerva was identified with Roman Minerva and shared the three-cella temple with Tinia and Uni, a plan Rome copied on the Capitoline.",
+    "verified": false
+  },
+  {
+    "id": "turms",
+    "name": "Turms",
+    "role": "Etruscan messenger god and guide of the dead",
+    "domain": ["messengers", "travel", "the dead"],
+    "symbols": ["winged sandals", "the herald's staff", "the underworld gate"],
+    "fun_fact": "Inscriptions give the title Turms Aitas, Turms of the underworld, for the god who leads the dead.",
+    "verified": false
+  },
+  {
+    "id": "vanth",
+    "name": "Vanth",
+    "role": "Winged Etruscan guide of the dead",
+    "domain": ["death", "fate", "the journey"],
+    "symbols": ["the torch", "the scroll", "the snake"],
+    "fun_fact": "Vanth often appears with a snake coiled around her arm and a scroll that may record the fate of the dead.",
+    "verified": false
+  },
+  {
+    "id": "charun",
+    "name": "Charun",
+    "role": "Etruscan death demon and guardian of the underworld",
+    "domain": ["death", "the underworld", "guardianship"],
+    "symbols": ["the hammer", "the pointed ears", "the snake"],
+    "fun_fact": "Despite the similar name, Etruscan Charun is not the ferryman of Greek myth but a hammer-wielding demon who guards the way to the underworld.",
+    "verified": false
+  },
+  {
+    "id": "tanaquil",
+    "name": "Tanaquil",
+    "role": "Etruscan queen and interpreter of omens",
+    "domain": ["omen-reading", "kingship", "patronage"],
+    "symbols": ["the eagle", "the cap", "the flame"],
+    "fun_fact": "Livy says she was skilled in celestial prodigies, and she used that skill to place her pupil Servius Tullius on the Roman throne.",
+    "verified": false
+  },
+  {
+    "id": "servius",
+    "name": "Servius Tullius",
+    "role": "Sixth king of Rome, raised in the Tarquin household",
+    "domain": ["kingship", "law", "the city"],
+    "symbols": ["the flame", "the census", "the city wall"],
+    "fun_fact": "Roman tradition credits Servius with the census and the first city wall, while an Etruscan tomb at Vulci calls him Mastarna.",
+    "verified": false
+  },
+  {
+    "id": "haruspex",
+    "name": "Haruspex",
+    "role": "Etruscan diviner who read the gods' will in entrails and lightning",
+    "domain": ["divination", "sacrifice", "prodigies"],
+    "symbols": ["the liver", "the knife", "the sacrificial sheep"],
+    "fun_fact": "The Etruscan word for the office was netsvis, and Roman magistrates kept Etruscan haruspices on call for public prodigies.",
+    "verified": false
+  },
+  {
+    "id": "phersu",
+    "name": "Phersu",
+    "role": "Masked figure in the Tomb of the Augurs at Tarquinia",
+    "domain": ["masking", "death", "performance"],
+    "symbols": ["the mask", "the dog", "the leash"],
+    "fun_fact": "The name Phersu is often linked to Latin persona, the word for a mask, but the connection is debated.",
+    "verified": false
+  }
+]

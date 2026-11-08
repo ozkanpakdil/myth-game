@@ -1,0 +1,69 @@
+{
+  "id": "etruscan",
+  "name": "Etruscan",
+  "intro": "Etruscan religion flourished in central Italy from about 800 to 100 BCE, in a network of city-states whose language and culture were distinct from those of their Greek and Latin neighbours. It survives less as a cycle of stories than as a set of practices: reading lightning, inspecting the livers of sacrificed animals, founding cities according to sacred rules, and honouring gods in three-cella temples. Tomb paintings, bronze mirrors, inscriptions and votive offerings give us images and names, while Roman writers preserve reports of the Etrusca disciplina. There is no Etruscan Homer or Virgil, and no connected epic. What follows is therefore a careful reconstruction, drawing on objects and on later Roman testimony, and it treats the gaps as part of the evidence.",
+  "timeline": [
+    {
+      "label": "Villanovan beginnings",
+      "year_text": "c. 1000-700 BCE",
+      "note": "Early Iron Age communities in central Italy bury their dead with grave goods, and the culture later called Etruscan begins to take shape."
+    },
+    {
+      "label": "Orientalizing tombs",
+      "year_text": "c. 700-580 BCE",
+      "note": "Contact with Greek and Phoenician traders brings luxury goods, alphabetic writing and new tomb styles; the earliest Etruscan inscriptions appear."
+    },
+    {
+      "label": "Archaic city-states",
+      "year_text": "c. 580-480 BCE",
+      "note": "Etruscan cities expand, the Tarquin kings rule Rome, and the Pyrgi tablets record a royal dedication to Uni. Tomb painting and bronze mirrors flourish."
+    },
+    {
+      "label": "Classical Etruria",
+      "year_text": "c. 480-400 BCE",
+      "note": "Etruscan power in the south weakens after naval defeats, but Tarquinian tombs such as the Tomb of the Triclinium show a confident painted culture."
+    },
+    {
+      "label": "Hellenistic Etruria",
+      "year_text": "c. 400-100 BCE",
+      "note": "Etruscan cities come under Roman pressure; the Piacenza liver, inscribed with divine names, belongs to this period, and Roman officials increasingly consult Etruscan diviners."
+    },
+    {
+      "label": "Roman absorption",
+      "year_text": "1st century BCE-1st century CE",
+      "note": "Etruscan language and political independence fade, but the disciplina survives; the emperor Claudius writes a history of the Etruscans and Etruscan haruspices remain in demand."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Etruscan bronze mirrors",
+      "note": "Engraved mirrors, often inscribed with divine names, are a major source for Etruscan iconography and for the identification of gods such as Turms and Vanth."
+    },
+    {
+      "title": "Etruscan tomb painting",
+      "note": "The painted tombs of Tarquinia and other centres show banquets, games, processions and underworld guides, but they rarely explain what the scenes mean."
+    },
+    {
+      "title": "Pyrgi tablets",
+      "note": "Three gold leaves from the sanctuary of Uni at Pyrgi, inscribed in Etruscan and Phoenician around 500 BCE, recording a dedication by Thefarie Velianas of Caere."
+    },
+    {
+      "title": "Livy, Ab Urbe Condita",
+      "note": "The Roman history preserves the stories of the Etruscan kings at Rome, including Tanaquil, the eagle omen and the rise of Servius Tullius."
+    },
+    {
+      "title": "Liver of Piacenza",
+      "note": "A bronze model of a sheep's liver, inscribed with the names of gods, found near Piacenza in 1877 and dated to about the second century BCE."
+    },
+    {
+      "title": "Massimo Pallottino, The Etruscans",
+      "note": "A foundational modern study of Etruscan culture, language and religion, first published in Italian and widely translated."
+    },
+    {
+      "title": "Larissa Bonfante, Etruscan Life and Afterlife",
+      "note": "An illustrated study of Etruscan daily life, death and the afterlife, with close attention to tombs, sarcophagi and images."
+    }
+  ],
+  "sensitivity": "low",
+  "verified": false
+}

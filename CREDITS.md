@@ -174,6 +174,16 @@ Mythos is an educational draft. The retellings are new, short summaries in moder
 - **Natalie Kononenko, Slavic Folklore: A Handbook** — An introduction to the genres, collectors and regional variation of Slavic folk narrative.
 - **Joanna Hubbs, Mother Russia: The Feminine Myth in Russian Culture** — A wide-ranging interpretation of the feminine figures in Russian myth and folklore, to be used critically.
 
+### Etruscan
+
+- **Etruscan bronze mirrors** — Engraved mirrors show gods and heroes with Etruscan names and attributes; they are a major source for iconography, not connected narrative.
+- **Etruscan tomb painting** — The painted tombs at Tarquinia and elsewhere preserve banquets, games, demons and processions, but rarely explain them in words.
+- **The Pyrgi tablets** — Three gold leaves from a sanctuary at Caere, written in Etruscan and Phoenician around 500 BCE, recording a dedication to Uni/Astarte.
+- **Livy, Ab Urbe Condita** — The Roman history that preserves the stories of Tanaquil, Tarquinius Priscus and Servius Tullius.
+- **The Liver of Piacenza** — A bronze model of a sheep's liver divided into regions named for gods, probably used in divination or teaching.
+- **Massimo Pallottino, The Etruscans** — A foundational modern study of Etruscan civilisation, language and religion.
+- **Larissa Bonfante, Etruscan Life and Afterlife** — A well-illustrated introduction to Etruscan daily life, tombs and afterlife beliefs.
+
 ## Review and sensitivity status
 
 | Tradition | Sensitivity | Verified |
@@ -193,8 +203,9 @@ Mythos is an educational draft. The retellings are new, short summaries in moder
 | Minoan / Mycenaean | low | false |
 | Hittite / Hurrian | low | false |
 | Slavic | low | false |
+| Etruscan | low | false |
 
-Hindu stories are a living sacred tradition and are marked **high** sensitivity. Shinto (Japanese), Maya and Chinese traditions are marked **medium**. All fifteen traditions need a human fact-check of dates, names, spellings, answer keys and source notes before release. The Hindu, Shinto, Maya and Chinese material also needs a sensitivity review by someone with relevant community or scholarly knowledge.
+Hindu stories are a living sacred tradition and are marked **high** sensitivity. Shinto (Japanese), Maya and Chinese traditions are marked **medium**. All sixteen traditions need a human fact-check of dates, names, spellings, answer keys and source notes before release. The Hindu, Shinto, Maya and Chinese material also needs a sensitivity review by someone with relevant community or scholarly knowledge.
 
 If a retelling is inaccurate or disrespectful, the correct response is to revise or remove it — not to defend the text. See the `NEEDS HUMAN` tasks in `PLAN_AND_TODO.md`.
 

@@ -1,0 +1,98 @@
+[
+  {
+    "id": "etruscan-01",
+    "title": "Tinia and the Thunderbolts",
+    "source_ref": "Etruscan mirrors and the Etrusca disciplina; Pliny, Natural History; Seneca, Natural Questions",
+    "paragraphs": [
+      "Tinia was the supreme god of the Etruscan sky, the lord of lightning and guardian of boundaries. His name appears on bronze mirrors and votive inscriptions, often beside Uni and Menerva, the two goddesses who shared his temple. Etruscan sanctuaries housed the triad in three rooms, and Roman writers recognised in it their own Jupiter, Juno and Minerva.",
+      "The Etrusca disciplina, the body of rules for reading the gods' will, treated lightning as a language. A bolt was not random weather but a message, and its meaning depended on the god who sent it, the place where it struck and the time it fell. Specialists called fulguratores kept this knowledge. Tinia stood at the centre of the system, and Roman writers later credited the art to a revealed book.",
+      "Later Roman sources, including Pliny the Elder and Seneca, report that the Etruscans counted eleven kinds of lightning, sent by nine gods, and that three belonged to Tinia. The three are often described as a warning bolt, a bolt that may help or harm, and a third that destroys whatever it touches. This tidy scheme is a later systematisation: the sources disagree, and no Etruscan text sets it out in full.",
+      "The doctrine mattered because it could be acted on. When a prodigy occurred, a Roman magistrate might call an Etruscan haruspex to say which god was angry and what sacrifice would restore the peace. Tinia's bolts belonged less to story than to procedure: a way of turning a sudden death or a burnt tree into a message that could be answered."
+    ],
+    "characters": ["tinia", "uni", "menerva"],
+    "themes": ["lightning", "divination", "divine order"],
+    "notes": "No Etruscan narrative of Tinia survives. The god is known from inscriptions, mirrors and votive material, and the doctrine of lightning comes from Roman authors such as Pliny the Elder and Seneca, who were summarising a tradition they knew at second hand. The eleven kinds and Tinia's three bolts are a later systematisation, and the sources do not agree on the details. The triad with Uni and Menerva is attested mainly through cult.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "etruscan-02",
+    "title": "Uni and the Etruscan Triad",
+    "source_ref": "Etruscan votive inscriptions and mirrors; the Pyrgi tablets; Livy, Ab Urbe Condita",
+    "paragraphs": [
+      "Uni was the Etruscan queen of the gods, the counterpart of Roman Juno and Greek Hera. Her name appears on mirrors, votive gifts and temple dedications, and she was honoured as a protector of women, marriage and the prosperity of the city. She shared a temple with Tinia and Menerva, and the three formed the Etruscan triad that Roman builders later reproduced on the Capitoline.",
+      "The triad is known mainly from cult, not from story. Temples of the triad had three cells, one for each deity, and the Roman temple of Jupiter Optimus Maximus followed the same plan. Worshippers brought offerings to each god in turn; the three were a cultic company rather than a cast of characters, and no Etruscan poem explains how they came to share a house.",
+      "The best document of Uni's cult is the Pyrgi tablets, three gold leaves from the sanctuary at Pyrgi, the port of Caere, written in Etruscan and Phoenician around 500 BCE. They record a dedication by Thefarie Velianas, king of Caere, to Uni, while the Phoenician version addresses the goddess as Astarte. The goddess could be addressed in more than one language and under more than one name.",
+      "Votive deposits show what people asked of Uni: health, childbirth, safe passage through marriage, the prosperity of a household. Later Roman writers identified her with Juno and gave her a place in the story of Rome's Etruscan kings, but their portraits are filtered through Roman ideas about queenship. The Etruscan goddess herself survives mainly as a name on offerings and a face on bronze."
+    ],
+    "characters": ["uni", "tinia", "menerva"],
+    "themes": ["goddess", "cult", "triad"],
+    "notes": "Uni is known from inscriptions, votive deposits, mirrors and the Pyrgi tablets, not from a connected myth. The identification with Juno is conventional, and the Pyrgi tablets set Uni beside Astarte, but the details of her cult and her relationship to Tinia and Menerva are reconstructed. The triad is attested mainly through temple plans and dedications; Roman writers supply most of the narrative colour.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "etruscan-03",
+    "title": "Turms and the Road to the Underworld",
+    "source_ref": "Etruscan tomb paintings and sarcophagi; inscribed bronze mirrors",
+    "paragraphs": [
+      "Turms was the Etruscan messenger god, the counterpart of Greek Hermes and Roman Mercury. On bronze mirrors he appears with winged sandals and a herald's staff, often standing beside a goddess or a dying hero. His most serious role was to guide the dead: in tomb paintings and on sarcophagi he leads the deceased toward the underworld, sometimes under the title Turms Aitas, Turms of the underworld.",
+      "Turms did not travel alone. A winged female figure called Vanth often walks beside him, carrying a torch and sometimes a scroll, with a snake coiled around her arm. Charun, a squat demon with pointed ears, heavy brow and a hammer, waits at the gate. These are guides and guardians, not a fixed cast in a single story; their names and attributes vary from one tomb to the next.",
+      "The journey appears as a procession. On the walls of tombs at Tarquinia and on painted sarcophagi, the dead man or woman is shown setting out, greeted by winged figures and received into a company of the dead. The scenes compress a hoped-for route into a single image: leave the house, pass the gate, join the banquet. They do not narrate events in order, and no Etruscan text describes what happens after death.",
+      "The figures are best read as helpers rather than as a single fixed plot. A tomb might show Turms with Vanth, or Vanth alone, or Charun with his hammer at the door; the choice depended on the family, the workshop and the century. Roman writers later simplified Turms into Mercury and Charun into Charon, but the Etruscan guides keep their own names and their own unsettling faces."
+    ],
+    "characters": ["turms", "vanth", "charun"],
+    "themes": ["death", "guides", "underworld"],
+    "notes": "No Etruscan narrative explains the journey of the dead. The reconstruction comes from tomb paintings, sarcophagi and inscribed mirrors, where the same figures appear in different combinations. Vanth's functions and the meaning of her scroll are debated, and Charun is not simply the Greek ferryman Charon: he is a death demon with a hammer. The title Turms Aitas is known from inscriptions, but its precise sense is uncertain.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "etruscan-04",
+    "title": "Tanaquil and the Eagle",
+    "source_ref": "Livy, Ab Urbe Condita 1.34-1.41",
+    "paragraphs": [
+      "Tanaquil was an Etruscan noblewoman who married Lucius Tarquinius Priscus and came with him to Rome. Roman writers describe her as expert in reading signs, a skill they associated with Etruscan priests. Her husband was an outsider with a Greek father and an Etruscan mother, and the couple's ambition would give Rome two of its kings. The story of her rise is told by Livy, a Roman historian writing centuries later.",
+      "As Tarquinius approached the city, an eagle swooped down and carried off his cap. It rose into the sky, then returned and dropped the cap back onto his head. Tanaquil read the sign at once: the bird had taken the crown of his fortune and given it back, so her husband would become king. The omen is a classic Roman prodigy, and Livy uses it to explain a political future.",
+      "In the royal household a slave woman's son, Servius Tullius, slept one night with his head wrapped in flames. The other servants ran for water, but Tanaquil stopped them. She saw a sign of greatness and told her husband to raise the boy as their own. Servius grew up in the palace, and Tanaquil's reading of the fire made him a candidate for the throne.",
+      "When Tarquinius was killed, Tanaquil hid the death from the people and had Servius take charge, saying the king was recovering. By the time the truth came out, Servius was too firmly in power to be removed. Livy's account is Roman literary tradition about an Etruscan royal house; an Etruscan tomb at Vulci shows a figure called Mastarna, whom the emperor Claudius later identified with Servius."
+    ],
+    "characters": ["tanaquil", "servius"],
+    "themes": ["omen", "kingship", "succession"],
+    "notes": "The story is preserved by Livy and, in less detail, by other Roman writers; no Etruscan version survives. The eagle and flame omens are literary devices that explain a political succession, and historians treat the details with caution. The identification of Servius with Mastarna depends on a tomb painting at Vulci and on a speech of the emperor Claudius, and it is not certain.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "etruscan-05",
+    "title": "The Haruspex and the Bronze Liver",
+    "source_ref": "The Liver of Piacenza; Pliny, Natural History; Etruscan inscriptions",
+    "paragraphs": [
+      "A haruspex was a specialist who read the will of the gods in the bodies of sacrificed animals, above all in the liver. The Etruscan word for the office was netsvis, and Roman writers treated the art as Etruscan in origin. Haruspices inspected the organ for shape, colour and unusual marks, then matched what they saw to a map of the sky. This is a description of a profession, not a story with a plot.",
+      "The Liver of Piacenza is a bronze model of a sheep's liver, found in 1877 near Piacenza and dated to about the second century BCE. Its surface is divided into small fields, most of which carry the name of a god. It is probably a teaching model or a votive offering, and it lets us see how the Etruscans mapped the heavens onto the organ.",
+      "The same logic governed lightning. A priest marked the sky into regions, watched where a bolt fell, and asked which god had spoken. The liver and the sky were two versions of one ordered world, and the expert's task was to find the correspondence. The Romans called this body of rules the Etrusca disciplina and consulted Etruscan specialists when their own signs went wrong.",
+      "Roman generals and emperors kept haruspices, and the emperor Claudius wrote a history of the Etruscans in twenty books. The discipline survived the loss of the language, though its details were increasingly garbled by late writers. We know the practice from the bronze liver, from Roman reports and from a few Etruscan inscriptions; we do not have the priests' own manuals."
+    ],
+    "characters": ["haruspex"],
+    "themes": ["divination", "priesthood", "ritual"],
+    "notes": "This is a description of practice, not a narrative. The bronze liver is an object without a surviving explanation: its use as a teaching model is an inference, and the reading of its regions is debated. The Etruscan manuals, the libri, are lost, and our knowledge of the disciplina comes largely from Roman writers such as Pliny, Seneca and Cicero, who simplified or moralised it.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "etruscan-06",
+    "title": "The Banquet of the Dead",
+    "source_ref": "The Tomb of the Augurs and related tombs at Tarquinia; Etruscan sarcophagi",
+    "paragraphs": [
+      "Etruscan tombs are full of banquets. On the walls of the Tomb of the Triclinium and the Tomb of the Leopards at Tarquinia, men and women recline on couches, share food and wine, and listen to music. The Sarcophagus of the Spouses from Caere shows a couple lying together at the same meal. The scenes are serene, sociable and richly coloured.",
+      "The Tomb of the Augurs, painted about 520 BCE, adds a darker scene. A masked figure labelled Phersu holds a dog on a leash while it attacks a man whose head is covered. Nearby, athletes wrestle and box, and an augur reads a sign. The painting may show funeral games, a punishment, or a myth; the tomb gives no explanation, and the word Phersu itself is not securely understood.",
+      "The banquet may picture the funeral feast that honoured the dead, or the meal the dead continue to enjoy, or an aristocratic ideal projected onto the tomb. Some scholars see a symposium in the Greek sense, with its music and wine; others stress the family and the ancestors. The scenes are not photographs of daily life, and they are not a single doctrine of the afterlife.",
+      "Phersu remains the hardest figure to explain. His mask, the attacking dog and the covered victim have been read as a game, a sacrifice, a punishment in the underworld and a theatrical performance. Because the tomb paintings have no captions beyond names, each reading depends on comparison with Greek and Roman images. The safest conclusion is that the Etruscans imagined death as both a banquet and a danger."
+    ],
+    "characters": ["phersu"],
+    "themes": ["afterlife", "banquet", "interpretation"],
+    "notes": "The interpretation of Etruscan banquet scenes is disputed. They may represent the funeral feast, a continued existence in the tomb, a Greek-style symposium, or an idealised aristocratic life; the paintings rarely label their subjects. The Phersu scene in the Tomb of the Augurs is especially obscure: it has been read as a funeral game, a punishment, a sacrifice or a theatrical performance, and the word Phersu is often linked to Latin persona, meaning a mask, but the etymology is not certain.",
+    "uncertain": true,
+    "verified": false
+  }
+]

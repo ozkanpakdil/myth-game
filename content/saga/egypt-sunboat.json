@@ -1,0 +1,769 @@
+{
+  "id": "egypt-sunboat",
+  "studio_clips": false,
+  "cover_art": "sunboat",
+  "cover_caption": "The night boat of Ra",
+  "source_note": "This is an original interactive retelling, not a translation. The myth notes point to the real sources and explain where tellings differ. The young protagonist and the choices are invented for the game.",
+  "tradition": "Egyptian",
+  "title": "The Boat of the Sun",
+  "subtitle": "A choose-your-path story through the Egyptian night",
+  "tagline": "The sun must cross the dark before morning. Tonight, you are carrying the light.",
+  "intro": "Every evening the sun god Ra sails into the Duat, the hidden world beneath the sky. Every morning he comes out the other side. Tonight the temple has run out of grown-up lamp-keepers, and the little clay lamp is in your hands. Three ways can help you guard it: keep it close, learn the sky, or speak the true names of what you meet. Apep, the storm of chaos, is waiting somewhere in the dark.",
+  "setting": "The temple of Ra at Heliopolis, and the Duat — the hidden world the sun passes through at night",
+  "default_name": "Mery",
+  "name_suggestions": [
+    "Mery",
+    "Nefi",
+    "Ani",
+    "Sara"
+  ],
+  "start": "start",
+  "acts": [
+    {
+      "id": 1,
+      "title": "The Last Lamp"
+    },
+    {
+      "id": 2,
+      "title": "The Hidden World"
+    },
+    {
+      "id": 3,
+      "title": "Before Dawn"
+    }
+  ],
+  "paths": [
+    {
+      "id": "lamp",
+      "title": "Keep the Lamp",
+      "glyph": "lamp",
+      "blurb": "Carry the temple flame onto the night boat. Guard it through wind, gates and storm, and learn what a small light can do."
+    },
+    {
+      "id": "stars",
+      "title": "Read the Stars",
+      "glyph": "star",
+      "blurb": "Let Thoth teach you the decans and the twelve gates. Steer by the sky, and find the one star that does not move."
+    },
+    {
+      "id": "names",
+      "title": "Speak the Names",
+      "glyph": "reed",
+      "blurb": "In the Duat, a true name is a key. Learn the names of boat and wind, and find the kindest name for the storm."
+    }
+  ],
+  "boons": {
+    "pathLamp": "The lamp path",
+    "pathStars": "The star path",
+    "pathNames": "The name path",
+    "keptLamp": "Kept the lamp singing",
+    "askedCrew": "Asked the crew",
+    "shieldedFlame": "Shielded the flame",
+    "gatePermission": "The gate's permission",
+    "breadOffered": "Bread shared",
+    "readWarning": "Read the warning",
+    "gaveSpark": "A spark given",
+    "calmedStorm": "Held steady in the storm",
+    "turnedBack": "Turned for home",
+    "readDecans": "Read the decans",
+    "askedThoth": "Asked Thoth",
+    "usedShadow": "The shadow's bearing",
+    "readClock": "Read the star clock",
+    "askedGate": "The gate listened",
+    "trustedThoth": "Trusted the scribe",
+    "steadyStar": "Steered by the steady star",
+    "choseStar": "Chose to become a star",
+    "namedStorm": "Named the storm from the stars",
+    "boatName": "The boat's true name",
+    "windName": "The wind's true name",
+    "keptName": "Kept your own name",
+    "namedApep": "Named the storm kindly",
+    "maatSpoken": "Spoke Ma'at's name",
+    "gaveName": "Gave your name away"
+  },
+  "endings": [
+    {
+      "id": "dawn",
+      "title": "The Dawn Comes",
+      "rank": "Hopeful ending",
+      "blurb": "You kept the flame through the whole night. The sun rose, and the temple had a story for years.",
+      "node": "ending-dawn"
+    },
+    {
+      "id": "star",
+      "title": "A New Star",
+      "rank": "Wondrous ending",
+      "blurb": "Your little flame rose into the sky and became a star that guides every night boat.",
+      "node": "ending-star"
+    },
+    {
+      "id": "share",
+      "title": "The Sun Shares Its Light",
+      "rank": "Best ending",
+      "blurb": "You offered the storm a spark. Now every lamp in the city carries a piece of the sun.",
+      "node": "ending-share"
+    },
+    {
+      "id": "back",
+      "title": "The Boat Turns Back",
+      "rank": "Bittersweet ending",
+      "blurb": "You turned for home. Dawn came late, and you learned the lamps well enough to try again.",
+      "node": "ending-back"
+    }
+  ],
+  "nodes": {
+    "start": {
+      "id": "start",
+      "act": 1,
+      "chapter": "1",
+      "title": "The Last Lamp of the Day",
+      "location": "Temple of Ra, Heliopolis",
+      "art": "sunboat",
+      "artCaption": "A small clay lamp beside the golden night boat of Ra",
+      "text": [
+        "The sun is low, and the temple lamps are being lit one by one. You are {name}, the youngest lamp-keeper at the temple of Ra. Your work is important: keep a flame alive until morning.",
+        "Tonight a priestess in white finds you at the door. Behind her the river is dark. 'Ra's night boat is ready,' she says. 'The crew needs a lamp-keeper. The flame must not go out.'",
+        "You know the story. Each night the sun sails through the Duat, the hidden world under the sky. Each dawn he comes out the other side. The boat is called the Mesektet. It smells of cedar, dust and warm oil.",
+        "The priestess holds out a small clay lamp. Inside, one flame leans like grass in wind. 'Three things help a lamp,' she says. 'Keep it close. Learn the sky. Or speak the names of what you meet.' Which do you choose?"
+      ],
+      "lore": {
+        "title": "Ra and the night boat",
+        "body": "Egyptian texts describe the sun god Ra travelling in two boats. By day he crosses the sky in the Mandjet; by night he sails through the Duat in the Mesektet. The Duat is the hidden world the sun passes through after sunset, not a place of punishment. The Book of the Dead and the Amduat describe this journey and the dangers along the way.",
+        "source": "Book of the Dead; Amduat"
+      },
+      "choices": [
+        {
+          "label": "Keep the lamp close and climb into the boat",
+          "to": "lamp-1",
+          "tag": "Keep the lamp · +1 courage",
+          "effects": {
+            "add": {
+              "courage": 1
+            },
+            "set": {
+              "pathLamp": true
+            }
+          }
+        },
+        {
+          "label": "Stay on the bank and learn the stars first",
+          "to": "stars-1",
+          "tag": "Read the stars · +1 insight",
+          "effects": {
+            "add": {
+              "insight": 1
+            },
+            "set": {
+              "pathStars": true
+            }
+          }
+        },
+        {
+          "label": "Ask the priestess to teach you the names",
+          "to": "names-1",
+          "tag": "Speak the names · +1 insight",
+          "effects": {
+            "add": {
+              "insight": 1
+            },
+            "set": {
+              "pathNames": true
+            }
+          }
+        }
+      ]
+    },
+    "lamp-1": {
+      "id": "lamp-1",
+      "act": 2,
+      "chapter": "2",
+      "title": "The Wind That Wants the Flame",
+      "location": "The Mesektet, first hour of the night",
+      "art": "sunboat",
+      "artCaption": "A cedar boat on a dark river, one lamp burning",
+      "text": [
+        "The boat slides away from the temple steps. The river beneath it is not the Nile anymore. It is wide and black and full of slow stars.",
+        "The crew works quietly. Thoth the ibis-headed scribe sits with a reed pen. Hu and Sia, whose names mean Speech and Perception, watch the dark. At the prow, a tall red-haired figure keeps the water moving.",
+        "A wind rises from nowhere. It smells of hot sand and rain. Your little flame bends flat, then springs up again. The crew looks at you. The lamp is yours to keep.",
+        "Hu says something brave. Sia says something true. Nobody agrees. You have one breath to decide how to guard the flame."
+      ],
+      "lore": {
+        "title": "The crew of the sun boat",
+        "body": "The sun boat carries a busy crew. Thoth is the god of writing, wisdom and sacred speech. Hu is spoken word and Sia is perception; together they help Ra speak and understand. The god Set stands at the prow to drive back chaos. In the Book of the Dead, the boat is a place of hymns, names and careful attention as much as a battlefield.",
+        "source": "Book of the Dead; Amduat"
+      },
+      "choices": [
+        {
+          "label": "Cup the flame and sing the old lamp song",
+          "to": "lamp-2",
+          "tag": "Lamp song · +1 courage",
+          "effects": {
+            "add": {
+              "courage": 1
+            },
+            "set": {
+              "keptLamp": true
+            }
+          }
+        },
+        {
+          "label": "Ask Thoth how the boat finds its way",
+          "to": "lamp-2",
+          "tag": "Ask the scribe · +1 insight",
+          "effects": {
+            "add": {
+              "insight": 1
+            },
+            "set": {
+              "askedCrew": true
+            }
+          }
+        },
+        {
+          "label": "Shield the flame with the edge of your cloak",
+          "to": "lamp-2",
+          "tag": "Shield the flame · +1 cunning",
+          "effects": {
+            "add": {
+              "cunning": 1
+            },
+            "set": {
+              "shieldedFlame": true
+            }
+          }
+        }
+      ]
+    },
+    "lamp-2": {
+      "id": "lamp-2",
+      "act": 2,
+      "chapter": "3",
+      "title": "The Gate of the Jackal",
+      "location": "The second gate of the Duat",
+      "art": "sunboat",
+      "artCaption": "A narrow stone gate above a starless river",
+      "text": [
+        "The river narrows. Two cliffs lean together, and between them stands a gate of black stone. A jackal-headed guardian waits with a staff and a very bored expression.",
+        "The gate is barely wider than the boat. On the lintel, a line of little pictures warns: LIGHT PASSES ONLY IN A STEADY HAND.",
+        "Thoth looks up from his scroll. 'The guardian likes bread,' he says. 'He also likes being asked nicely. He does not like people who pretend to know everything.'",
+        "The lamp flame shrinks as the boat drifts closer. The gate is waiting, patient as stone."
+      ],
+      "lore": {
+        "title": "The gates of the night",
+        "body": "Underworld books describe twelve hours of night, each with its own gate and guardian. The Amduat names the gods, snakes and demons of each hour, and the Book of Gates shows a gate for each hour. These guardians are not simply monsters. They test whether the traveller knows the right words and arrives in the right order.",
+        "source": "Amduat; Book of Gates"
+      },
+      "choices": [
+        {
+          "label": "Hold the lamp high and ask the guardian's permission",
+          "to": "lamp-3",
+          "tag": "Ask the gate · +1 courage",
+          "effects": {
+            "add": {
+              "courage": 1
+            },
+            "set": {
+              "gatePermission": true
+            }
+          }
+        },
+        {
+          "label": "Offer the guardian half your bread",
+          "to": "lamp-3",
+          "tag": "Bread for the gate · +1 insight",
+          "effects": {
+            "add": {
+              "insight": 1
+            },
+            "set": {
+              "breadOffered": true
+            }
+          }
+        },
+        {
+          "label": "Read the warning aloud and keep the flame steady",
+          "to": "lamp-3",
+          "tag": "Read the warning · +1 cunning",
+          "effects": {
+            "add": {
+              "cunning": 1
+            },
+            "set": {
+              "readWarning": true
+            }
+          }
+        }
+      ]
+    },
+    "lamp-3": {
+      "id": "lamp-3",
+      "act": 3,
+      "chapter": "4",
+      "title": "The Storm With Scales",
+      "location": "The ninth hour of the night",
+      "art": "sunboat",
+      "artCaption": "A coiled storm above the boat and one small flame",
+      "text": [
+        "The ninth hour is a narrow place. Stars hang low. The river turns the colour of ink.",
+        "Then the storm comes. It rises from the water in a long coil, like a snake made of wind and thunder. Its eyes are two lamps of green lightning. The crew calls it Apep: chaos in scales, the thing that hates the dawn.",
+        "The boat rocks hard. Your lamp is the only warm thing on the whole dark river. Apep does not want to eat you. It wants the night to last forever.",
+        "You can hide the flame and slip past. You can sing. Or you can open your hand and let one small spark go into the storm."
+      ],
+      "lore": {
+        "title": "Apep, the storm of chaos",
+        "body": "Apep is the great serpent of chaos in Egyptian myth. Each night he attacks the sun boat and tries to stop the sun from rising. The crew fights him with spells, spears and the help of gods such as Set and the coiled serpent Mehen. The sun always comes up. The point of the story is not that darkness wins, but that the light keeps travelling.",
+        "source": "Book of the Dead; Amduat"
+      },
+      "choices": [
+        {
+          "label": "Open your hand and offer the storm a spark of light",
+          "to": "ending-share",
+          "tag": "Share the light · +1 insight",
+          "effects": {
+            "add": {
+              "insight": 1
+            },
+            "set": {
+              "gaveSpark": true
+            }
+          }
+        },
+        {
+          "label": "Sing the lamp song and hold the flame steady",
+          "to": "ending-dawn",
+          "tag": "Hold steady · +1 courage",
+          "effects": {
+            "add": {
+              "courage": 1
+            },
+            "set": {
+              "calmedStorm": true
+            }
+          }
+        },
+        {
+          "label": "Ask the boat to turn back before the storm",
+          "to": "ending-back",
+          "tag": "Turn for home · +1 cunning",
+          "effects": {
+            "add": {
+              "cunning": 1
+            },
+            "set": {
+              "turnedBack": true
+            }
+          }
+        }
+      ]
+    },
+    "stars-1": {
+      "id": "stars-1",
+      "act": 2,
+      "chapter": "2",
+      "title": "The Sky in the Water",
+      "location": "The Mesektet, second hour of the night",
+      "art": "sky",
+      "artCaption": "A dark river full of stars and a moon-white reed pen",
+      "text": [
+        "The river is so calm that the whole sky falls into it. You see stars below the boat and stars above. For a moment you cannot tell which way is up.",
+        "Thoth sits beside you, writing on a strip of linen. His beak is long and his voice is dry, like paper. 'The sky is a clock,' he says. 'It is also a map. It is also a story. Try not to read it all at once.'",
+        "He points out a bright star, then another. 'Those are decans,' he says. 'They rise in turn and tell the night how far it has gone. A good lamp-keeper learns them by heart.'",
+        "You have only a little time before the current turns."
+      ],
+      "lore": {
+        "title": "Decans and star clocks",
+        "body": "Egyptian astronomers divided the night sky into groups of stars called decans. As the earth turned, different decans rose above the horizon, marking the hours of the night. Star tables were painted on coffin lids and temple ceilings so the sky could be read indoors. This is one of the oldest known systems for telling time by the stars.",
+        "source": "Coffin Texts; Egyptian star clocks"
+      },
+      "choices": [
+        {
+          "label": "Count the decans and name the brightest",
+          "to": "stars-2",
+          "tag": "Read the sky · +1 insight",
+          "effects": {
+            "add": {
+              "insight": 1
+            },
+            "set": {
+              "readDecans": true
+            }
+          }
+        },
+        {
+          "label": "Ask Thoth why the sky moves at all",
+          "to": "stars-2",
+          "tag": "Ask Thoth · +1 insight",
+          "effects": {
+            "add": {
+              "insight": 1
+            },
+            "set": {
+              "askedThoth": true
+            }
+          }
+        },
+        {
+          "label": "Watch where the boat's shadow points",
+          "to": "stars-2",
+          "tag": "Follow the shadow · +1 cunning",
+          "effects": {
+            "add": {
+              "cunning": 1
+            },
+            "set": {
+              "usedShadow": true
+            }
+          }
+        }
+      ]
+    },
+    "stars-2": {
+      "id": "stars-2",
+      "act": 2,
+      "chapter": "3",
+      "title": "The Twelve Gates",
+      "location": "The seventh hour of the night",
+      "art": "sky",
+      "artCaption": "Twelve doors of light along a starry river",
+      "text": [
+        "The river opens into a hall with no walls. Twelve gates stand in a curve, each one a different colour, each one guarded by a shape you cannot quite see.",
+        "Thoth taps his scroll. 'The night has twelve hours. We are late for the seventh. If the gate closes before we pass, the boat must wait, and waiting is how the dark gets longer.'",
+        "On the ceiling of the hall, stars are painted in rows. One row is brighter. It is a star clock, older than the temple, older than the boat.",
+        "The seventh gate begins to swing shut."
+      ],
+      "lore": {
+        "title": "The twelve hours of the night",
+        "body": "The Amduat, whose name means 'That Which Is in the Underworld', describes the sun's journey through twelve hours of night. Each hour has a gate, a region and its own gods. The book was often painted inside royal tombs, a map for the dead and for the sun. It treats the night as a journey to be completed, not a place to stay.",
+        "source": "Amduat (Book of the Hidden Chamber)"
+      },
+      "choices": [
+        {
+          "label": "Read the star clock and call the true hour",
+          "to": "stars-3",
+          "tag": "Read the clock · +2 insight",
+          "effects": {
+            "add": {
+              "insight": 2
+            },
+            "set": {
+              "readClock": true
+            }
+          }
+        },
+        {
+          "label": "Ask the gate to wait, politely",
+          "to": "stars-3",
+          "tag": "Ask the gate · +1 courage",
+          "effects": {
+            "add": {
+              "courage": 1
+            },
+            "set": {
+              "askedGate": true
+            }
+          }
+        },
+        {
+          "label": "Let Thoth write the hour in his book",
+          "to": "stars-3",
+          "tag": "Trust the scribe · +1 cunning",
+          "effects": {
+            "add": {
+              "cunning": 1
+            },
+            "set": {
+              "trustedThoth": true
+            }
+          }
+        }
+      ]
+    },
+    "stars-3": {
+      "id": "stars-3",
+      "act": 3,
+      "chapter": "4",
+      "title": "The Storm Between Stars",
+      "location": "The ninth hour of the night",
+      "art": "sky",
+      "artCaption": "A coiled dark storm between two steady stars",
+      "text": [
+        "Between the ninth gate and the tenth, the stars go out. Not all of them. Just enough to leave a hole in the sky shaped like a curled snake.",
+        "Apep pours through the hole. It is wind and thunder and a long green flicker. It wraps the boat in noise. The crew shouts, but you cannot hear them.",
+        "Thoth's voice comes through, calm and thin. 'It hates the dawn. It cannot be killed, only outlasted. Find one star that does not move and steer by it.'",
+        "You look up. One small star is still burning, steady as a lamp wick. You have three ways to use it."
+      ],
+      "lore": {
+        "title": "The imperishable stars",
+        "body": "The Pyramid Texts speak of the 'imperishable stars', the circumpolar stars that never set. Because they circle the pole without sinking below the horizon, they became an image of endurance and of the blessed dead. Egyptian sky lore did not divide the world into 'natural' and 'sacred'. A star could be a god, a clock, a promise and a guide at once.",
+        "source": "Pyramid Texts"
+      },
+      "choices": [
+        {
+          "label": "Steer by the steady star and hold the course for dawn",
+          "to": "ending-dawn",
+          "tag": "Steady star · +1 courage",
+          "effects": {
+            "add": {
+              "courage": 1
+            },
+            "set": {
+              "steadyStar": true
+            }
+          }
+        },
+        {
+          "label": "Let your lamp rise into the sky and become a star",
+          "to": "ending-star",
+          "tag": "Become the light · +1 insight",
+          "effects": {
+            "add": {
+              "insight": 1
+            },
+            "set": {
+              "choseStar": true
+            }
+          }
+        },
+        {
+          "label": "Read the storm's name in the stars and speak it",
+          "to": "ending-share",
+          "tag": "Name the storm · +1 insight",
+          "effects": {
+            "add": {
+              "insight": 1
+            },
+            "set": {
+              "namedStorm": true
+            }
+          }
+        }
+      ]
+    },
+    "names-1": {
+      "id": "names-1",
+      "act": 2,
+      "chapter": "2",
+      "title": "The Name in the Reed",
+      "location": "The Mesektet, third hour of the night",
+      "art": "sunboat",
+      "artCaption": "A reed pen, a clay lamp and a book of names",
+      "text": [
+        "The boat passes a field of reeds that grows out of the water. Each reed has a name written on it in green light. The writing moves when you look away.",
+        "Thoth hands you his reed pen. 'In the Duat, names are not labels,' he says. 'They are handles. A true name tells you what a thing is for. Use one kindly and doors open. Use one carelessly and you will hurt something.'",
+        "A wind tugs at your sleeve. The boat creaks. Somewhere ahead, thunder clears its throat.",
+        "Thoth waits. 'Which name will you learn first?'"
+      ],
+      "lore": {
+        "title": "Names and true names",
+        "body": "Names mattered deeply in Egyptian religion. A person's name was part of their soul and could live on in inscriptions. The Book of the Dead supplies spells that address gatekeepers and gods by their correct names and titles, because a traveller who knows the right name is understood. Knowing a name in this tradition means paying attention, not gaining power over someone.",
+        "source": "Book of the Dead; Pyramid Texts"
+      },
+      "choices": [
+        {
+          "label": "Learn the true name of the boat",
+          "to": "names-2",
+          "tag": "The boat's name · +1 insight",
+          "effects": {
+            "add": {
+              "insight": 1
+            },
+            "set": {
+              "boatName": true
+            }
+          }
+        },
+        {
+          "label": "Ask the wind for its name",
+          "to": "names-2",
+          "tag": "The wind's name · +1 cunning",
+          "effects": {
+            "add": {
+              "cunning": 1
+            },
+            "set": {
+              "windName": true
+            }
+          }
+        },
+        {
+          "label": "Keep your own name to yourself",
+          "to": "names-2",
+          "tag": "Keep your name · +1 courage",
+          "effects": {
+            "add": {
+              "courage": 1
+            },
+            "set": {
+              "keptName": true
+            }
+          }
+        }
+      ]
+    },
+    "names-2": {
+      "id": "names-2",
+      "act": 3,
+      "chapter": "4",
+      "title": "The Storm at the Tenth Gate",
+      "location": "The tenth gate of the Duat",
+      "art": "sunboat",
+      "artCaption": "A green storm coiling above a lamp-lit boat",
+      "text": [
+        "At the tenth gate, the storm finds you. It has no mouth, only weather. It coils around the boat and squeezes. The lamp flame stretches thin and blue.",
+        "Thoth holds his scroll against the wind. 'Apep has a hundred names,' he says, 'and none of them are the whole truth. Say one that is true and the night will have to listen.'",
+        "The crew looks at you. Hu is shouting a poem. Sia is watching the sky. Even the gate guardian has stopped being bored.",
+        "You have one clean breath. The flame leans toward your hand."
+      ],
+      "lore": {
+        "title": "Ma'at and the balance",
+        "body": "Ma'at is truth, order and balance. In the judgment of the dead, the heart is weighed against the feather of Ma'at. A heart heavy with wrongdoing tips the scale. The Book of the Dead, spell 125, records the declarations of innocence and the names of the judges. Ma'at is not only a goddess; she is the way things ought to fit together.",
+        "source": "Book of the Dead, spell 125; Pyramid Texts"
+      },
+      "choices": [
+        {
+          "label": "Call the storm 'the one who is afraid of dawn'",
+          "to": "ending-share",
+          "tag": "A true name · +1 insight",
+          "effects": {
+            "add": {
+              "insight": 1
+            },
+            "set": {
+              "namedApep": true
+            }
+          }
+        },
+        {
+          "label": "Speak Ma'at's name and ask the balance to hold",
+          "to": "ending-dawn",
+          "tag": "Ma'at's name · +1 courage",
+          "effects": {
+            "add": {
+              "courage": 1
+            },
+            "set": {
+              "maatSpoken": true
+            }
+          }
+        },
+        {
+          "label": "Offer the storm your own name to carry",
+          "to": "ending-star",
+          "tag": "Give your name · +1 courage",
+          "effects": {
+            "add": {
+              "courage": 1
+            },
+            "set": {
+              "gaveName": true
+            }
+          }
+        }
+      ]
+    },
+    "ending-dawn": {
+      "id": "ending-dawn",
+      "act": 3,
+      "chapter": "5",
+      "title": "The Dawn Comes",
+      "location": "The eastern horizon",
+      "art": "sky",
+      "artCaption": "A gold line of dawn over a calm river",
+      "text": [
+        "The boat slides through the last gate. Ahead, the dark has a thin gold edge, like a page about to turn.",
+        "Apep lets go. The storm breaks into ordinary rain, warm and brief. The crew cheers. Thoth closes his book with a soft thump.",
+        "Ra rises from his seat at the stern. He is tall and bright and smells faintly of cedar. 'You kept the flame,' he says. 'The night is long for everyone. Tonight it was a little shorter because of you.'",
+        "The boat touches the eastern bank. You step out into the morning with your empty lamp. The temple bells are ringing. Your family is running down the path, and the sun is warm on your face."
+      ],
+      "lore": {
+        "title": "Dawn and rebirth",
+        "body": "Egyptians pictured sunrise as a rebirth. The sun god rises as Khepri, the scarab beetle who rolls the sun across the sky. The Pyramid Texts promise the dead king a place in the sun boat and a share in this daily renewal. Dawn is not just a time of day in these texts; it is the proof that chaos did not win.",
+        "source": "Pyramid Texts; Book of the Dead"
+      },
+      "ending": {
+        "id": "dawn",
+        "title": "The Dawn Comes",
+        "rank": "Hopeful ending",
+        "summary": "You kept the lamp through the whole night. The sun rose, the storm let go, and the temple had a story to tell for years."
+      }
+    },
+    "ending-star": {
+      "id": "ending-star",
+      "act": 3,
+      "chapter": "5",
+      "title": "A New Star",
+      "location": "The sky above the Duat",
+      "art": "sky",
+      "artCaption": "One new star above a small dark boat",
+      "text": [
+        "You lift your lamp to the hole in the sky. The flame rises out of the clay, small and sure, and keeps rising.",
+        "It does not burn you. It becomes a star, low and steady, exactly where the boat needs a light. The crew watches it settle into the dark like a bird into a nest.",
+        "Thoth writes something in his book. 'A lamp that stays on the boat lights one night,' he says. 'A lamp that goes into the sky lights every night. You will be hard to miss.'",
+        "From the river you hear your family calling. You cannot answer, but you can shine. Below, a new boat is pushing off into the dark, and its lamp-keeper is already looking up."
+      ],
+      "lore": {
+        "title": "The imperishable stars",
+        "body": "The Pyramid Texts speak of the 'imperishable stars', the circumpolar stars that never set. Because they circle the pole without sinking below the horizon, they became an image of endurance and of the blessed dead. Egyptian sky lore did not divide the world into 'natural' and 'sacred'. A star could be a god, a clock, a promise and a guide at once.",
+        "source": "Pyramid Texts"
+      },
+      "ending": {
+        "id": "star",
+        "title": "A New Star",
+        "rank": "Wondrous ending",
+        "summary": "Your little flame rose into the sky and became a star. Every night boat now has a light to steer by, and yours is the steady one."
+      }
+    },
+    "ending-share": {
+      "id": "ending-share",
+      "act": 3,
+      "chapter": "5",
+      "title": "The Sun Shares Its Light",
+      "location": "The temple of Ra at dawn",
+      "art": "meadow",
+      "artCaption": "Lamp-lit fields under a gold morning",
+      "text": [
+        "You open your hand. One spark floats up, small as a firefly, and touches the storm.",
+        "The storm goes quiet. Not dead, not gone. Quiet. Rain falls, gentle and warm, and the green lightning turns the colour of leaves. 'No one has ever offered it light before,' Thoth says softly, and writes it down.",
+        "At the horizon, Ra laughs. It is a big, rolling, sunrise laugh. 'A spark for the storm,' he says. 'And a spark for every lamp that waits at home.' He touches your empty clay lamp, and it fills with light that does not burn.",
+        "You carry it back to the temple. The priestess sets it among the others. By evening, every lamp in the city has been lit from yours, and every keeper has a story about a storm that was only lonely."
+      ],
+      "lore": {
+        "title": "Light, offering and temple lamps",
+        "body": "Egyptian temples kept lamps burning for the gods, and sunlight was understood as a gift that could be shared rather than hoarded. Hymns to the sun praise Ra for giving light to everyone, not only to kings. The image of a small flame passed from lamp to lamp fits a tradition where daily offerings kept the temple alive.",
+        "source": "Book of the Dead; Pyramid Texts"
+      },
+      "ending": {
+        "id": "share",
+        "title": "The Sun Shares Its Light",
+        "rank": "Best ending",
+        "summary": "You offered the storm a spark, and the sun gave a spark back to every lamp in the city. The light stayed shared."
+      }
+    },
+    "ending-back": {
+      "id": "ending-back",
+      "act": 3,
+      "chapter": "5",
+      "title": "The Boat Turns Back",
+      "location": "The first hour of the night",
+      "art": "sunboat",
+      "artCaption": "A boat returning to a lamp-lit temple",
+      "text": [
+        "You ask the boat to turn back. The night is wide, the flame is small, and you are not sure you can carry it to the end.",
+        "The crew does not argue. Set lowers his spear. Thoth marks the hour in his book, and the boat turns, slow as a door, back toward the temple steps.",
+        "Dawn comes late, thin and grey, as if it had climbed a longer stair. The priestess meets you on the shore. She looks at the lamp, burning, and does not scold you. 'Some nights are for learning,' she says. 'The sun rose. It always does. But it rose without its little keeper.'",
+        "For years you keep the temple lamps. You learn every wick and wind. Then one evening a new keeper asks to come along. You show her how to cup a flame. 'Next time,' you tell her, 'I will go all the way.'"
+      ],
+      "lore": {
+        "title": "The night journey and second chances",
+        "body": "Egyptian texts do not treat one failed night as the end of the world. The sun's journey is repeated eternally: sunset, danger, dawn. The Book of the Dead promises the dead a place on the sun boat, and the daily cycle gave Egyptians a picture of endurance and renewal. A story can end at the shore and still leave the next boat waiting.",
+        "source": "Book of the Dead; Pyramid Texts"
+      },
+      "ending": {
+        "id": "back",
+        "title": "The Boat Turns Back",
+        "rank": "Bittersweet ending",
+        "summary": "You turned for home. Dawn came late and grey, and you were not on the boat. But you learned the lamps well, and the next keeper will go further."
+      }
+    }
+  }
+}

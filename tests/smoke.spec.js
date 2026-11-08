@@ -21,7 +21,9 @@ test.describe('shell and routing', () => {
 
   const routes = [
     ['/#/', 'home-page'],
-    ['/#/saga', 'saga-landing'],
+    ['/#/saga', 'saga-library'],
+    ['/#/saga/greek-olive', 'saga-landing'],
+    ['/#/saga/norse', 'saga-landing'],
     ['/#/myths', 'myths-page'],
     ['/#/map', 'map-page'],
     ['/#/timeline', 'timeline-page'],

@@ -49,7 +49,8 @@ async function fetchText(path) {
 }
 
 export const loadMythologies = () => fetchJSON('content/mythologies.json');
-export const loadSaga = () => fetchJSON('content/saga/norse.json');
+export const loadSagaCatalog = () => fetchJSON('content/sagas.json');
+export const loadSagaStory = (file) => fetchJSON(`content/saga/${file}`);
 
 export const loadWorldMap = () => fetchText('assets/map/world.txt');
 export const loadMapRegions = () => fetchJSON('assets/map/regions.json');

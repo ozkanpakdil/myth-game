@@ -13,7 +13,7 @@ import {
   countWords,
   REGION_ORDER,
   SENSITIVITY_LABEL,
-} from './content.js?v=20261108-6';
+} from './content.js?v=20261108-7';
 import {
   getState,
   getSettings,
@@ -24,7 +24,7 @@ import {
   recordStoryRead,
   awardBadges,
   resetProgress,
-} from './storage.js?v=20261108-6';
+} from './storage.js?v=20261108-7';
 import {
   mythStats,
   overallStats,
@@ -33,8 +33,8 @@ import {
   glossaryUnlockedCount,
   allStoryQuizzesPassed,
   isStoryUnlocked,
-} from './progress.js?v=20261108-6';
-import { badgeCatalog, evaluateBadges } from './badges.js?v=20261108-6';
+} from './progress.js?v=20261108-7';
+import { badgeCatalog, evaluateBadges } from './badges.js?v=20261108-7';
 import {
   escapeHtml,
   iconImg,
@@ -50,19 +50,19 @@ import {
   toast,
   confirmDialog,
   emptyState,
-} from './ui.js?v=20261108-6';
-import { renderQuiz } from './quiz.js?v=20261108-6';
+} from './ui.js?v=20261108-7';
+import { renderQuiz } from './quiz.js?v=20261108-7';
 import {
   renderChallengeHub,
   renderTimelineChallenge,
   renderMatchChallenge,
   renderCultureChallenge,
-} from './challenges.js?v=20261108-6';
-import { renderMap } from './map.js?v=20261108-6';
-import { storyScene, characterPortrait } from './scene.js?v=20261108-6';
-import { sagaScene } from './saga-art.js?v=20261108-6';
-import { renderSaga, sagaContinueHref, sagaSummary } from './saga.js?v=20261108-6';
-import { narrate, stopNarration, speechSupported, availableVoices, narrationSupported, studioAudioUrl } from './narration.js?v=20261108-6';
+} from './challenges.js?v=20261108-7';
+import { renderMap } from './map.js?v=20261108-7';
+import { storyScene, characterPortrait } from './scene.js?v=20261108-7';
+import { sagaScene } from './saga-art.js?v=20261108-7';
+import { renderSaga, sagaContinueHref, sagaSummary } from './saga.js?v=20261108-7';
+import { narrate, stopNarration, speechSupported, availableVoices, narrationSupported, studioAudioUrl } from './narration.js?v=20261108-7';
 
 const app = document.getElementById('app');
 const nav = document.querySelector('.main-nav');
@@ -126,8 +126,8 @@ function updateStudioVoiceUI() {
   const status = document.getElementById('studio-voice-status');
   if (!status) return;
   status.textContent = saved
-    ? `${STUDIO_LABELS[saved] || saved} is selected. Listen uses ${STUDIO_LABELS[saved] || saved}'s recorded narration for stories and the saga, with your system voice as fallback.`
-    : 'System voice selected. Listen uses your installed voice.';
+    ? `${STUDIO_LABELS[saved] || saved} is selected. Listen uses ${STUDIO_LABELS[saved] || saved}'s recorded narration for stories and the Norse saga. The new story paths use your browser voice so they can grow without new recordings.`
+    : 'System voice selected. Listen uses your installed voice. The new story paths always use your browser voice.';
 }
 
 function chooseStudioVoice(input) {
@@ -366,7 +366,7 @@ function parseRoute() {
     return { name: 'challenges', sub: parts[1] || '', parts, query };
   }
   if (parts[0] === 'saga') {
-    return { name: 'saga', nodeId: parts[1] || null, parts, query };
+    return { name: 'saga', sagaId: parts[1] || null, nodeId: parts[2] || null, parts, query };
   }
   if (parts[0] === 'myth' && parts[1]) {
     if (parts[2] === 'story' && parts[3]) return { name: 'story', mythId: parts[1], storyId: parts[3], parts, query };
@@ -491,12 +491,12 @@ async function renderHome() {
       <div class="hero__copy">
         <p class="eyebrow"><span class="eyebrow__rule" aria-hidden="true"></span> A world mythology game</p>
         <h1 id="page-title">Stories that<br><em>shaped the world.</em></h1>
-        <p class="lede">Walk <em>The Ash-Seed</em>, a choose-your-path Norse saga, or read short retellings from ${playable.length} traditions and build a codex of figures and terms. The myths are the same. The road you take is yours.</p>
+        <p class="lede">Step into a choose-your-path story from world myth, or read short retellings from ${playable.length} traditions and build a codex of figures and terms. The myths are the same. The road you take is yours.</p>
         <div class="hero__actions">
-          <a class="button button--primary" href="${sagaHref}" data-testid="home-saga-primary">${saga ? `Continue as ${escapeHtml(saga.name)}` : 'Begin the saga'} <span aria-hidden="true">→</span></a>
+          <a class="button button--primary" href="${sagaHref}" data-testid="home-saga-primary">${saga ? `Continue as ${escapeHtml(saga.name)}` : 'Choose a story'} <span aria-hidden="true">→</span></a>
           <a class="button button--ghost" href="#/myths">Explore the archive</a>
         </div>
-        <p class="small muted hero__aside-link"><a class="text-link" href="#/map">Open the world map</a> · <a class="text-link" href="#/saga">About the saga</a></p>
+        <p class="small muted hero__aside-link"><a class="text-link" href="#/map">Open the world map</a> · <a class="text-link" href="#/saga">Browse story paths</a></p>
         <dl class="hero__stats">
           <div><dt>Traditions</dt><dd>${playable.length}</dd></div>
           <div><dt>Stories</dt><dd>${playable.length * 6}</dd></div>
@@ -529,25 +529,25 @@ async function renderHome() {
 
     <section class="saga-home" aria-labelledby="saga-home-title" data-testid="home-saga">
       <figure class="pixel-frame saga-home__art" data-testid="home-saga-art">
-        ${sagaScene('fjord')}
+        ${sagaScene('suncave')}
         <figcaption class="story-art__caption">
-          <strong>Raven Bay, the last autumn</strong>
+          <strong>Stories for younger readers</strong>
         </figcaption>
       </figure>
       <div class="saga-home__copy">
-        <p class="eyebrow">New · a branching saga</p>
-        <h2 id="saga-home-title">The Ash-Seed</h2>
-        <p class="lede">A raven drops the seed of the World Tree into your hand. Three winters are coming. Choose the raven's road of wisdom, the wolf's road of cunning or the hammer's road of courage — and live with what the myths ask of you.</p>
+        <p class="eyebrow">Choose-your-path stories</p>
+        <h2 id="saga-home-title">Stories you can step inside.</h2>
+        <p class="lede">Six short adventures from Greek, Japanese, Maya, Hindu, Egyptian and Norse myth. Read one scene at a time, make a choice, and find out where your story goes. Written for younger readers, with a myth note at every stop.</p>
         <ul class="saga-home__facts">
-          <li><strong>3</strong><span>roads through Norse myth</span></li>
-          <li><strong>20</strong><span>scenes in one run</span></li>
-          <li><strong>5</strong><span>endings to discover</span></li>
+          <li><strong>6</strong><span>story paths from world myth</span></li>
+          <li><strong>8+</strong><span>starting age, with older sagas too</span></li>
+          <li><strong>4</strong><span>endings in every new story</span></li>
         </ul>
         <div class="hero__actions">
-          <a class="button button--primary" href="${sagaHref}" data-testid="home-saga-continue">${saga ? `Continue as ${escapeHtml(saga.name)}` : 'Begin the saga'} <span aria-hidden="true">→</span></a>
-          <a class="button button--ghost" href="#/saga">How the saga works</a>
+          <a class="button button--primary" href="${sagaHref}" data-testid="home-saga-continue">${saga ? `Continue as ${escapeHtml(saga.name)}` : 'Choose a story'} <span aria-hidden="true">→</span></a>
+          <a class="button button--ghost" href="#/saga">Browse all story paths</a>
         </div>
-        ${saga ? `<p class="small muted">${saga.endings} of 5 endings found · your path is saved in this browser.</p>` : '<p class="small muted">Use your own name or the default, Michael. Your choices are saved in this browser.</p>'}
+        ${saga ? `<p class="small muted">${saga.endings} ending${saga.endings === 1 ? '' : 's'} found in your saved stories · your place is saved in this browser.</p>` : '<p class="small muted">Use your own name or a suggested one. Your choices are saved in this browser.</p>'}
       </div>
     </section>
 

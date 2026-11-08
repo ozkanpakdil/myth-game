@@ -1,0 +1,74 @@
+[
+  {
+    "id": "greek-olive",
+    "file": "greek-olive.json",
+    "tradition": "Greek",
+    "title": "The Olive Tree Contest",
+    "subtitle": "A choose-your-path story from Greek myth",
+    "tagline": "Two gods want to name your city. Which gift will you choose?",
+    "age": "8+",
+    "minutes": 8,
+    "cover_art": "olive",
+    "cover_caption": "The hill above the young city"
+  },
+  {
+    "id": "japan-sun-cave",
+    "file": "japan-sun-cave.json",
+    "tradition": "Japanese",
+    "title": "The Sun in the Cave",
+    "subtitle": "A choose-your-path story from Japanese myth",
+    "tagline": "The sun has gone into a cave. Can you help bring her back?",
+    "age": "8+",
+    "minutes": 8,
+    "cover_art": "suncave",
+    "cover_caption": "The heavenly rock cave"
+  },
+  {
+    "id": "maya-maize",
+    "file": "maya-maize.json",
+    "tradition": "Maya",
+    "title": "The First Maize",
+    "subtitle": "A choose-your-path story from Maya tradition",
+    "tagline": "The village is hungry. The first maize is hidden in the mountain.",
+    "age": "8+",
+    "minutes": 8,
+    "cover_art": "maize",
+    "cover_caption": "A field waiting for rain"
+  },
+  {
+    "id": "hindu-hanuman",
+    "file": "hindu-hanuman.json",
+    "tradition": "Hindu",
+    "title": "Hanuman and the Sun",
+    "subtitle": "A choose-your-path story from Hindu tradition",
+    "tagline": "The sun looks like a ripe mango. What could possibly go wrong?",
+    "age": "8+",
+    "minutes": 8,
+    "cover_art": "sky",
+    "cover_caption": "High above the world"
+  },
+  {
+    "id": "egypt-sunboat",
+    "file": "egypt-sunboat.json",
+    "tradition": "Egyptian",
+    "title": "The Boat of the Sun",
+    "subtitle": "A choose-your-path story from Egyptian myth",
+    "tagline": "The sun must cross the dark sky before morning. Keep the lamp burning.",
+    "age": "9+",
+    "minutes": 10,
+    "cover_art": "sunboat",
+    "cover_caption": "The night boat of Ra"
+  },
+  {
+    "id": "norse",
+    "file": "norse.json",
+    "tradition": "Norse",
+    "title": "The Ash-Seed",
+    "subtitle": "A choose-your-path saga through Norse myth",
+    "tagline": "The stars are going out. You are carrying the seed of the World Tree.",
+    "age": "10+",
+    "minutes": 20,
+    "cover_art": "fjord",
+    "cover_caption": "Raven Bay, the last autumn"
+  }
+]

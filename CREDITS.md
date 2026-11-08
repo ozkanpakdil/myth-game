@@ -21,6 +21,10 @@ Mythos is an educational draft. The retellings are new, short summaries in moder
     or used to deceive a listener. The `morgan` clips carry a
     `Non-commercial (voice clone)` manifest entry; remove them before any
     commercial distribution.
+  - The five newer story paths do not ship recorded clips. They use the
+    reader's installed browser voice, which keeps the download small and lets
+    the stories change without regenerating audio. The Norse saga and the
+    archive stories keep the recorded voices above.
 - Fonts are the operating system serif and sans-serif stacks. No external fonts or assets are loaded.
 
 ## Sources by tradition
@@ -75,6 +79,14 @@ Mythos is an educational draft. The retellings are new, short summaries in moder
 - **Prose Edda, Gylfaginning** — Snorri Sturluson's systematic retelling of creation, the gods, Baldr's death, and Ragnarök.
 - **Prose Edda, Skáldskaparmál** — Snorri's guide to poetic language, which preserves many myths in the quotations it uses as examples.
 - **Codex Regius manuscript** — The thirteenth-century manuscript that preserves most of the Poetic Edda, copied in Christian Iceland.
+
+### Story paths
+
+The five newer story paths — **The Olive Tree Contest** (Greek), **The Sun in the Cave** (Japanese), **The First Maize** (Maya), **Hanuman and the Sun** (Hindu) and **The Sun Boat** (Egyptian) — are original interactive retellings, not translations. Their child protagonists, supporting villagers and choice structure are invented for the game; the places, figures and stakes come from the sources named in each scene's myth note.
+
+The Greek path follows Apollodorus, Pausanias, Herodotus, Thucydides, Aristotle and Plutarch on the contest for Athens, the sacred olive and the city's democratic life. The Japanese path follows the Kojiki, Nihon Shoki and Fudoki for Amaterasu, the rock cave, Uzume's dance and the mirror and jewels. The Maya path draws on the Popol Vuh, the Books of Chilam Balam, and archaeological and ethnographic knowledge of milpa farming, rain ceremonies and maize; its squirrel and feast episodes are openly marked as story additions rather than ancient text. The Hindu path follows the Valmiki Ramayana (including the Uttara Kanda and Sundara Kanda), the Gayatri mantra of the Rigveda and the Hanuman Chalisa; Hanuman's devotion to Rama and the many tellings of his childhood leap are treated with respect. The Egyptian path follows the Book of the Dead, the Amduat, the Book of Gates, the Coffin Texts, the Pyramid Texts and Egyptian star clocks for Ra's night journey, the Mesektet and the Duat.
+
+These are teaching stories, not scripture, and they do not claim to settle disputed tellings.
 
 ### The Ash-Seed
 

@@ -1,15 +1,15 @@
 /**
- * saga.js — The Ash-Seed, a branching Norse saga.
+ * saga.js — the branching-saga library, landings and scene reader.
  *
- * One run is a single named protagonist moving through a hand-written story
- * graph. The current node lives in the save, the browser hash mirrors it, and
- * each choice pushes a snapshot so the Back button and the in-game "previous
- * scene" control can both rewind cleanly. Scenes are animated inline SVG (see
+ * Each story is a hand-written graph with a named protagonist. The current run
+ * lives in per-story storage, the browser hash mirrors it, and each choice
+ * pushes a snapshot so the Back button and the in-game "previous scene"
+ * control can both rewind cleanly. Scenes are animated inline SVG (see
  * saga-art.js); there are no GIFs and nothing is fetched at runtime except the
- * story JSON.
+ * catalog and one story JSON.
  */
 
-import { loadSaga } from './content.js?v=20261108-6';
+import { loadSagaCatalog, loadSagaStory } from './content.js?v=20261108-7';
 import {
   escapeHtml,
   progressBar,
@@ -17,8 +17,8 @@ import {
   confirmDialog,
   setDocumentTitle,
   listenButtonContent,
-} from './ui.js?v=20261108-6';
-import { sagaScene, sagaGlyph } from './saga-art.js?v=20261108-6';
+} from './ui.js?v=20261108-7';
+import { sagaScene, sagaGlyph } from './saga-art.js?v=20261108-7';
 import {
   narrate,
   narrateSequence,
@@ -29,17 +29,19 @@ import {
   selectedStudioVoice,
   voiceChosen,
   sagaAudioUrl,
-} from './narration.js?v=20261108-6';
+} from './narration.js?v=20261108-7';
 import {
-  loadSaga as loadSagaState,
-  saveSaga,
+  loadSaga as loadSagaRun,
+  saveSaga as saveSagaRun,
+  allSagaProgress,
+  latestSaga,
   newSaga,
   pushHistory,
   applyEffects,
   cleanName,
-} from './saga-state.js?v=20261108-6';
+} from './saga-state.js?v=20261108-7';
 
-const STAT_LABELS = { insight: 'Insight', courage: 'Courage', cunning: 'Cunning' };
+const STAT_LABELS = { insight: 'Insight', courage: 'Courage', cunning: 'Cleverness' };
 const MAX_PIPS = 5;
 
 /* ------------------------------------------------------------------ */
@@ -124,7 +126,7 @@ function resetSagaListen(button) {
   button.innerHTML = listenButtonContent(button.dataset.listenLabel || 'Listen');
 }
 
-function playSagaNarration(button, text, audioUrls = []) {
+function playSagaNarration(button, text, audioUrls = [], { systemOnly = false } = {}) {
   if (!button) return;
   if (button.dataset.speaking === 'true') {
     stopNarration();
@@ -133,19 +135,19 @@ function playSagaNarration(button, text, audioUrls = []) {
     return;
   }
   if (activeSagaListen && activeSagaListen !== button) resetSagaListen(activeSagaListen);
-  if (!voiceChosen()) {
+  if (!systemOnly && !voiceChosen()) {
     document.dispatchEvent(new CustomEvent('mythos:open-voice'));
     toast('Choose a narrator first. Morgan is selected by default.', { tone: 'gold', duration: 3200 });
     return;
   }
-  const urls = audioUrls.filter(Boolean);
+  const urls = systemOnly ? [] : audioUrls.filter(Boolean);
   if (!narrationSupported(urls[0])) {
     toast('Narration is not available in this browser.', { tone: 'warn' });
     return;
   }
   if (!narrationEnabled()) {
     ensureNarration();
-    toast('Narration on. Using your chosen voice.', { tone: 'gold', duration: 2400 });
+    toast(systemOnly ? 'Narration on. Using your browser voice.' : 'Narration on. Using your chosen voice.', { tone: 'gold', duration: 2400 });
   }
   const clean = String(text || '').trim();
   if (!clean) {
@@ -182,10 +184,10 @@ function playSagaNarration(button, text, audioUrls = []) {
 function nameForm(data, saved, { compact = false } = {}) {
   const value = saved?.name || data.default_name;
   return `<form class="saga-name-form${compact ? ' saga-name-form--compact' : ''}" data-testid="saga-name-form">
-    ${compact ? '' : '<label class="saga-name-label" for="saga-name">What will the saga call you?</label>'}
+    ${compact ? '' : '<label class="saga-name-label" for="saga-name">What will the story call you?</label>'}
     <div class="saga-name-row">
       <input class="saga-name-input" id="saga-name" name="saga-name" type="text" maxlength="24" autocomplete="nickname" spellcheck="false" value="${escapeHtml(value)}" aria-label="Your name in the saga" data-testid="saga-name">
-      <button class="button button--primary" type="submit" data-testid="${compact ? 'saga-begin-new' : 'saga-begin'}">Begin the saga <span aria-hidden="true">→</span></button>
+      <button class="button button--primary" type="submit" data-testid="${compact ? 'saga-begin-new' : 'saga-begin'}">Begin the story <span aria-hidden="true">→</span></button>
     </div>
     <div class="saga-name-suggestions" aria-label="Suggested names">
       <span class="small muted">Try:</span>
@@ -222,6 +224,64 @@ function endingGallery(data, found) {
   </section>`;
 }
 
+function sagaHref(sagaId, nodeId) {
+  const base = `#/saga/${encodeURIComponent(sagaId)}`;
+  return nodeId ? `${base}/${encodeURIComponent(nodeId)}` : base;
+}
+
+function titleMarkup(title) {
+  const words = String(title || '').trim().split(/\s+/).filter(Boolean);
+  if (words.length < 2) return `<em>${escapeHtml(title || 'A story')}</em>`;
+  const last = words.pop();
+  return `${escapeHtml(words.join(' '))}<br><em>${escapeHtml(last)}</em>`;
+}
+
+function renderSagaLibrary(app, catalog) {
+  setDocumentTitle('Story paths');
+  const progress = allSagaProgress();
+  app.innerHTML = `<div class="page page--saga" data-testid="saga-library">
+    <header class="saga-library__head">
+      <p class="eyebrow"><span class="eyebrow__rule" aria-hidden="true"></span> Story paths</p>
+      <h1 id="page-title">Pick a story.<br><em>Change the ending.</em></h1>
+      <p class="lede">Short choose-your-path adventures from six myth traditions. Read one scene at a time, make a choice, and see where your story goes. These retellings are written for younger readers, with a myth note at every stop for curious minds.</p>
+      <div class="saga-library__meta">
+        <span class="pill pill--quiet">${catalog.length} stories</span>
+        <span class="pill pill--quiet">Ages 8 and up</span>
+        <span class="pill pill--quiet">Saved in this browser</span>
+      </div>
+    </header>
+
+    <section class="saga-library__grid" aria-label="Choose a story">
+      ${catalog
+        .map((entry) => {
+          const saved = progress[entry.id];
+          const art = entry.cover_art || 'fjord';
+          return `<a class="saga-library-card" href="#/saga/${encodeURIComponent(entry.id)}" data-testid="saga-card-${escapeHtml(entry.id)}">
+            <figure class="pixel-frame saga-library-card__art" data-art="${escapeHtml(art)}">
+              ${sagaScene(art)}
+            </figure>
+            <div class="saga-library-card__body">
+              <div class="saga-library-card__meta">
+                <span class="pill pill--quiet">${escapeHtml(entry.tradition)}</span>
+                <span class="saga-library-card__age">Ages ${escapeHtml(entry.age || '8+')}</span>
+                <span class="saga-library-card__time">about ${escapeHtml(String(entry.minutes || 8))} min</span>
+              </div>
+              <h2>${escapeHtml(entry.title)}</h2>
+              <p>${escapeHtml(entry.tagline)}</p>
+              <span class="saga-library-card__cta">${saved ? `Continue as ${escapeHtml(saved.name)}` : 'Start this story'} <span aria-hidden="true">→</span></span>
+              ${saved ? `<span class="small muted">${saved.endings.length} ending${saved.endings.length === 1 ? '' : 's'} found</span>` : ''}
+            </div>
+          </a>`;
+        })
+        .join('')}
+    </section>
+
+    <aside class="saga-source-note">
+      <p class="small muted"><strong>About these stories.</strong> Each path is an original interactive retelling, not a translation. The myth notes point to the real sources and explain where tellings differ. Names use common English spellings. The stories are made for young readers, but they do not flatten living traditions into cartoons: the notes say when a story is sacred, disputed, or told in many versions.</p>
+    </aside>
+  </div>`;
+}
+
 function renderLanding(app, data, state) {
   setDocumentTitle(data.title);
   const found = new Set(state?.endings || []);
@@ -230,10 +290,11 @@ function renderLanding(app, data, state) {
   const sceneCount = Object.keys(data.nodes).length;
 
   app.innerHTML = `<div class="page page--saga" data-testid="saga-landing">
+    <nav class="breadcrumb saga-breadcrumb" aria-label="Breadcrumb"><a href="#/saga">Story paths</a><span aria-hidden="true">/</span><span aria-current="page">${escapeHtml(data.title)}</span></nav>
     <header class="saga-hero">
       <div class="saga-hero__copy">
-        <p class="eyebrow"><span class="eyebrow__rule" aria-hidden="true"></span> A choose-your-path saga · Norse myth</p>
-        <h1 id="page-title">The<br><em>Ash-Seed.</em></h1>
+        <p class="eyebrow"><span class="eyebrow__rule" aria-hidden="true"></span> A choose-your-path story · ${escapeHtml(data.tradition)} myth</p>
+        <h1 id="page-title">${titleMarkup(data.title)}</h1>
         <p class="lede">${escapeHtml(data.intro)}</p>
         <div class="saga-hero__meta">
           <span class="pill pill--quiet">${sceneCount} scenes</span>
@@ -246,14 +307,14 @@ function renderLanding(app, data, state) {
                 <div class="saga-resume__head">
                   <span class="saga-resume__glyph">${sagaGlyph('seed', { size: 34 })}</span>
                   <div>
-                    <p class="eyebrow">Your thread</p>
+                    <p class="eyebrow">Your story</p>
                     <h2>Continue as ${escapeHtml(state.name)}</h2>
                   </div>
                 </div>
                 <p class="muted small">${escapeHtml(act.title)} · Chapter ${escapeHtml(node.chapter)} · ${escapeHtml(node.title)}</p>
                 <div class="saga-resume__actions">
-                  <a class="button button--primary" href="#/saga/${encodeURIComponent(state.node)}" data-testid="saga-continue">Continue the saga <span aria-hidden="true">→</span></a>
-                  <button class="button button--ghost" type="button" data-testid="saga-restart-landing">Start this thread again</button>
+                  <a class="button button--primary" href="${sagaHref(data.id, state.node)}" data-testid="saga-continue">Continue the story <span aria-hidden="true">→</span></a>
+                  <button class="button button--ghost" type="button" data-testid="saga-restart-landing">Start this story again</button>
                 </div>
               </div>`
             : `<div class="saga-resume saga-resume--new">
@@ -262,15 +323,15 @@ function renderLanding(app, data, state) {
                 ${nameForm(data, null)}
               </div>`
         }
-        ${state ? `<details class="saga-new-thread"><summary>Begin a new thread</summary>${nameForm(data, state, { compact: true })}</details>` : ''}
+        ${state ? `<details class="saga-new-thread"><summary>Start this story again</summary>${nameForm(data, state, { compact: true })}</details>` : ''}
         <div class="saga-intro-listen-wrap">
           <button class="button button--ghost button--small" type="button" data-testid="saga-intro-listen" data-listen-label="Listen to the intro" aria-label="Listen to the introduction">${listenButtonContent('Listen to the intro')}</button>
         </div>
       </div>
-      <figure class="pixel-frame saga-hero__frame" data-testid="saga-hero-art" data-art="fjord">
-        ${sagaScene('fjord')}
+      <figure class="pixel-frame saga-hero__frame" data-testid="saga-hero-art" data-art="${escapeHtml(data.cover_art || 'fjord')}">
+        ${sagaScene(data.cover_art || 'fjord')}
         <figcaption class="story-art__caption">
-          <strong>Raven Bay, the last autumn</strong>
+          <strong>${escapeHtml(data.cover_caption || data.setting)}</strong>
         </figcaption>
       </figure>
     </header>
@@ -278,10 +339,10 @@ function renderLanding(app, data, state) {
     <section class="saga-roads" aria-labelledby="saga-roads-title">
       <div class="section-head">
         <div>
-          <p class="eyebrow">Three roads</p>
-          <h2 id="saga-roads-title">The same seed. Different myths.</h2>
+          <p class="eyebrow">${data.paths.length} roads</p>
+          <h2 id="saga-roads-title">${escapeHtml(data.roads_title || 'Three ways into the story')}</h2>
         </div>
-        <p class="muted small">Choices change who you meet and what the ending costs.</p>
+        <p class="muted small">${escapeHtml(data.roads_note || 'Each road meets different characters and leads to different endings.')}</p>
       </div>
       <div class="saga-road-grid">
         ${data.paths
@@ -299,19 +360,19 @@ function renderLanding(app, data, state) {
     </section>
 
     <section class="saga-how panel panel--soft" aria-labelledby="saga-how-title">
-      <p class="eyebrow">How the saga works</p>
-      <h2 id="saga-how-title">Read a scene. Choose a road. Live with it.</h2>
+      <p class="eyebrow">How it works</p>
+      <h2 id="saga-how-title">Read a little. Choose. See what happens.</h2>
       <ol class="saga-how__steps">
-        <li><span>01</span><div><strong>Read step by step</strong><p>Each scene reveals one paragraph at a time. The myth note appears when the scene is complete.</p></div></li>
-        <li><span>02</span><div><strong>Choose with your instincts</strong><p>Every choice adds a gift or a debt to your thread. Some choices only appear if you have earned them.</p></div></li>
-        <li><span>03</span><div><strong>Find a different ending</strong><p>Progress, gifts found and endings are saved in this browser. Start again to walk another road.</p></div></li>
+        <li><span>01</span><div><strong>One step at a time</strong><p>Each scene opens one paragraph at a time. The myth note appears when the scene is finished.</p></div></li>
+        <li><span>02</span><div><strong>Make a choice</strong><p>Every choice adds something to what you carry. Some choices only appear if you have earned them.</p></div></li>
+        <li><span>03</span><div><strong>Try another path</strong><p>Your place, your gifts and your endings are saved in this browser. Start again to find a different ending.</p></div></li>
       </ol>
     </section>
 
     ${endingGallery(data, found)}
 
     <aside class="saga-source-note">
-      <p class="small muted"><strong>About the myths.</strong> This is an original interactive retelling, not a translation. It follows the Poetic Edda and Prose Edda closely, but invents the mortal protagonist and the choices around them. Names use the common English spellings <em>Odin, Thor, Loki, Fenrir, Yggdrasil</em>; the notes use Old Norse forms where they matter.</p>
+      <p class="small muted"><strong>About the myth.</strong> ${escapeHtml(data.source_note || 'This is an original interactive retelling, not a translation. It follows the surviving sources but invents the young protagonist and the choices around them. The myth notes point to the real texts and explain where tellings differ.')}</p>
     </aside>
   </div>`;
 
@@ -329,23 +390,24 @@ function renderLanding(app, data, state) {
     const name = cleanName(formInput?.value) || data.default_name;
     if (state && isNewThread) {
       const confirmed = await confirmDialog({
-        title: 'Begin a new thread?',
+        title: 'Start this story again?',
         message: `This will replace the saved path for ${state.name}. The endings you have already found stay unlocked.`,
-        confirmLabel: 'Begin again',
-        cancelLabel: 'Keep my thread',
+        confirmLabel: 'Start again',
+        cancelLabel: 'Keep my place',
         danger: true,
       });
       if (!confirmed) return;
     }
-    const next = newSaga(name, { endings: state?.endings || [] });
-    saveSaga(next);
-    toast(`The saga knows you as ${next.name}.`, { duration: 2200 });
-    location.hash = `#/saga/${data.start}`;
+    const next = newSaga(name, { endings: state?.endings || [], start: data.start });
+    saveSagaRun(next, data.id);
+    toast(`The story knows you as ${next.name}.`, { duration: 2200 });
+    location.hash = sagaHref(data.id, data.start);
   }
 
   app.querySelector('[data-testid="saga-intro-listen"]')?.addEventListener('click', (event) => {
-    const studio = selectedStudioVoice();
-    playSagaNarration(event.currentTarget, data.intro, studio ? [sagaAudioUrl(studio, data.intro)] : []);
+    const systemOnly = data.studio_clips === false;
+    const studio = systemOnly ? '' : selectedStudioVoice();
+    playSagaNarration(event.currentTarget, data.intro, studio ? [sagaAudioUrl(studio, data.intro)] : [], { systemOnly });
   });
 
   app.querySelectorAll('form[data-testid="saga-name-form"]').forEach((form) => {
@@ -365,9 +427,9 @@ function renderLanding(app, data, state) {
       danger: true,
     });
     if (!confirmed) return;
-    const next = newSaga(state.name, { endings: state.endings });
-    saveSaga(next);
-    location.hash = `#/saga/${data.start}`;
+    const next = newSaga(state.name, { endings: state.endings, start: data.start });
+    saveSagaRun(next, data.id);
+    location.hash = sagaHref(data.id, data.start);
   });
 }
 
@@ -392,10 +454,10 @@ function loreMarkup(node) {
   </aside>`;
 }
 
-function choiceMarkup(choices, state) {
+function choiceMarkup(choices, state, data) {
   const available = choices.filter((choice) => choiceAvailable(choice, state));
   if (!available.length) {
-    return `<div class="saga-choices" data-testid="saga-choices"><p class="small muted">This path ends here. Return to the saga home to begin another.</p><a class="button button--ghost" href="#/saga">Saga home</a></div>`;
+    return `<div class="saga-choices" data-testid="saga-choices"><p class="small muted">This path ends here. Go back to the story home to begin another.</p><a class="button button--ghost" href="${sagaHref(data.id)}">Story home</a></div>`;
   }
   return `<div class="saga-choices" data-testid="saga-choices" hidden>
     <div class="saga-choices__head">
@@ -421,11 +483,11 @@ function threadCard(data, state, node) {
   const boons = boonList(data, state);
   const trail = pathTrail(data, state);
   const last = state.history[state.history.length - 1];
-  return `<aside class="saga-thread panel" aria-label="Your thread">
+  return `<aside class="saga-thread panel" aria-label="Your story">
     <div class="saga-thread__head">
       <span class="saga-thread__glyph">${sagaGlyph('seed', { size: 34 })}</span>
       <div>
-        <p class="eyebrow">Your thread</p>
+        <p class="eyebrow">Your story</p>
         <h2>${escapeHtml(state.name)}</h2>
       </div>
     </div>
@@ -439,8 +501,8 @@ function threadCard(data, state, node) {
         .join('')}
     </dl>
     <div class="saga-thread__boons">
-      <p class="eyebrow">Gifts &amp; debts</p>
-      ${boons.length ? `<div class="saga-boon-list">${boons.map((boon) => `<span class="pill pill--quiet">${escapeHtml(boon)}</span>`).join('')}</div>` : '<p class="small muted">Nothing yet. Every choice leaves a mark.</p>'}
+      <p class="eyebrow">What you carry</p>
+      ${boons.length ? `<div class="saga-boon-list">${boons.map((boon) => `<span class="pill pill--quiet">${escapeHtml(boon)}</span>`).join('')}</div>` : '<p class="small muted">Nothing yet. Every choice adds something.</p>'}
     </div>
     <details class="saga-trail">
       <summary>Path so far <span class="muted small">${trail.shown.length}${trail.hidden ? ` +${trail.hidden}` : ''} ${trail.shown.length === 1 && !trail.hidden ? 'scene' : 'scenes'}</span></summary>
@@ -464,10 +526,10 @@ function endingMarkup(data, state, node) {
       <span class="pill pill--gold">${escapeHtml(node.ending.rank)}</span>
     </div>
     <p>${escapeHtml(node.ending.summary)}</p>
-    <p class="small muted">You have found ${found.size} of ${data.endings.length} endings. Each road can end more than one way — begin again to pull a different thread.</p>
+    <p class="small muted">You have found ${found.size} of ${data.endings.length} endings. Each road can end more than one way — start again to find another.</p>
     <div class="saga-ending__actions">
-      <button class="button button--primary" type="button" data-testid="saga-again">Begin a new thread <span aria-hidden="true">→</span></button>
-      <a class="button button--ghost" href="#/saga">Saga home</a>
+      <button class="button button--primary" type="button" data-testid="saga-again">Start a new path <span aria-hidden="true">→</span></button>
+      <a class="button button--ghost" href="${sagaHref(data.id)}">Story home</a>
     </div>
   </section>`;
 }
@@ -489,7 +551,7 @@ function renderNode(app, data, state) {
 
   app.innerHTML = `<div class="page page--saga-play" data-testid="saga-page" data-node="${escapeHtml(node.id)}" data-ending="${isEnding ? 'true' : 'false'}">
     <nav class="saga-topbar" aria-label="Saga navigation">
-      <a class="saga-topbar__home" href="#/saga">← The Ash-Seed</a>
+      <a class="saga-topbar__home" href="${sagaHref(data.id)}">← ${escapeHtml(data.title)}</a>
       <div class="saga-topbar__meta">
         <span class="pill pill--quiet">Act ${act.id} · ${escapeHtml(act.title)}</span>
         <span class="pill pill--quiet">Chapter ${escapeHtml(node.chapter)}</span>
@@ -539,7 +601,7 @@ function renderNode(app, data, state) {
 
         <div class="saga-after" ${complete ? '' : 'hidden'}>
           ${loreMarkup(node)}
-          ${isEnding ? endingMarkup(data, state, node) : choiceMarkup(node.choices || [], state)}
+          ${isEnding ? endingMarkup(data, state, node) : choiceMarkup(node.choices || [], state, data)}
         </div>
 
         <div class="saga-controls" ${isEnding || complete ? 'hidden' : ''}>
@@ -636,8 +698,9 @@ function renderNode(app, data, state) {
         speech = text[Number(target.split('-')[1])] || '';
         segments = [speech];
       }
-      const studio = selectedStudioVoice();
-      playSagaNarration(button, speech, studio ? segments.map((part) => sagaAudioUrl(studio, part)) : []);
+      const systemOnly = data.studio_clips === false;
+      const studio = systemOnly ? '' : selectedStudioVoice();
+      playSagaNarration(button, speech, studio ? segments.map((part) => sagaAudioUrl(studio, part)) : [], { systemOnly });
     });
   });
 
@@ -668,14 +731,14 @@ function renderNode(app, data, state) {
       if (target?.ending && !next.endings.includes(target.ending.id)) {
         next.endings = [...next.endings, target.ending.id];
       }
-      saveSaga(next);
-      location.hash = `#/saga/${encodeURIComponent(choice.to)}`;
+      saveSagaRun(next, data.id);
+      location.hash = sagaHref(data.id, choice.to);
     });
   });
 
   app.querySelector('[data-testid="saga-back"]')?.addEventListener('click', () => {
     if (!last) return;
-    location.hash = `#/saga/${encodeURIComponent(last.node)}`;
+    location.hash = sagaHref(data.id, last.node);
   });
 
   app.querySelector('[data-testid="saga-restart"]')?.addEventListener('click', async () => {
@@ -687,20 +750,20 @@ function renderNode(app, data, state) {
       danger: true,
     });
     if (!confirmed) return;
-    const next = newSaga(state.name, { endings: state.endings });
-    saveSaga(next);
-    history.replaceState(null, '', `#/saga/${data.start}`);
+    const next = newSaga(state.name, { endings: state.endings, start: data.start });
+    saveSagaRun(next, data.id);
+    history.replaceState(null, '', sagaHref(data.id, data.start));
     renderNode(app, data, next);
     window.scrollTo(0, 0);
   });
 
   app.querySelector('[data-testid="saga-again"]')?.addEventListener('click', () => {
-    const next = newSaga(state.name, { endings: state.endings });
-    saveSaga(next);
-    history.replaceState(null, '', `#/saga/${data.start}`);
+    const next = newSaga(state.name, { endings: state.endings, start: data.start });
+    saveSagaRun(next, data.id);
+    history.replaceState(null, '', sagaHref(data.id, data.start));
     renderNode(app, data, next);
     window.scrollTo(0, 0);
-    toast('A new thread begins.', { tone: 'gold', duration: 2200 });
+    toast('A new path begins.', { tone: 'gold', duration: 2200 });
   });
 
   updateProgress();
@@ -711,20 +774,54 @@ function renderNode(app, data, state) {
 /* Route entry                                                         */
 /* ------------------------------------------------------------------ */
 
-function redirectToSaved(app, data, state) {
-  if (state) history.replaceState(null, '', `#/saga/${encodeURIComponent(state.node)}`);
+function redirectToSaved(app, data, state, sagaId) {
+  if (state) history.replaceState(null, '', sagaHref(sagaId, state.node));
   renderNode(app, data, state);
 }
 
-export async function renderSaga(app, route = {}) {
-  const data = await loadSaga();
-  let state = loadSagaState();
-  const requested = route.nodeId || '';
+async function findStoryForNode(catalog, nodeId) {
+  const ordered = [...catalog].sort((a, b) => Number(b.id === 'norse') - Number(a.id === 'norse'));
+  for (const entry of ordered) {
+    try {
+      const data = await loadSagaStory(entry.file);
+      if (data?.nodes?.[nodeId]) return { entry, data };
+    } catch {
+      /* try the next story */
+    }
+  }
+  return null;
+}
 
-  if (!state) {
-    renderLanding(app, data, null);
+export async function renderSaga(app, route = {}) {
+  const catalog = await loadSagaCatalog();
+  let sagaId = route.sagaId || '';
+  let requested = route.nodeId || '';
+
+  if (!sagaId) {
+    renderSagaLibrary(app, catalog);
     return;
   }
+
+  let entry = catalog.find((item) => item.id === sagaId);
+  let data = null;
+
+  if (!entry) {
+    // Older links used #/saga/<node>. Keep them working by finding the story
+    // that owns the node, preferring the original Norse saga.
+    const found = await findStoryForNode(catalog, sagaId);
+    if (!found) {
+      renderSagaLibrary(app, catalog);
+      toast('That story is not in the library.', { tone: 'warn' });
+      return;
+    }
+    entry = found.entry;
+    data = found.data;
+    requested = sagaId;
+    sagaId = entry.id;
+  }
+
+  if (!data) data = await loadSagaStory(entry.file);
+  const state = loadSagaRun(sagaId) || null;
 
   if (!requested) {
     renderLanding(app, data, state);
@@ -733,7 +830,12 @@ export async function renderSaga(app, route = {}) {
 
   if (!data.nodes[requested]) {
     renderLanding(app, data, state);
-    toast('That scene is not part of this saga.', { tone: 'warn' });
+    toast('That scene is not part of this story.', { tone: 'warn' });
+    return;
+  }
+
+  if (!state) {
+    renderLanding(app, data, null);
     return;
   }
 
@@ -748,18 +850,21 @@ export async function renderSaga(app, route = {}) {
     }
     if (restoreIndex >= 0) {
       const snapshot = history[restoreIndex];
-      state = saveSaga({
-        ...state,
-        node: snapshot.node,
-        flags: { ...snapshot.flags },
-        stats: { ...snapshot.stats },
-        history: history.slice(0, restoreIndex),
-        visited: [...new Set([...state.visited, snapshot.node])],
-      });
-      renderNode(app, data, state);
+      const restored = saveSagaRun(
+        {
+          ...state,
+          node: snapshot.node,
+          flags: { ...snapshot.flags },
+          stats: { ...snapshot.stats },
+          history: history.slice(0, restoreIndex),
+          visited: [...new Set([...state.visited, snapshot.node])],
+        },
+        sagaId,
+      );
+      renderNode(app, data, restored);
       return;
     }
-    redirectToSaved(app, data, state);
+    redirectToSaved(app, data, state, sagaId);
     return;
   }
 
@@ -767,13 +872,19 @@ export async function renderSaga(app, route = {}) {
 }
 
 export function sagaContinueHref() {
-  const state = loadSagaState();
-  return state ? `#/saga/${encodeURIComponent(state.node)}` : '#/saga';
+  const state = latestSaga();
+  return state ? sagaHref(state.sagaId, state.node) : '#/saga';
 }
 
 export function sagaSummary() {
-  const state = loadSagaState();
+  const state = latestSaga();
   return state
-    ? { name: state.name, node: state.node, endings: state.endings.length, history: state.history.length }
+    ? {
+        sagaId: state.sagaId,
+        name: state.name,
+        node: state.node,
+        endings: state.endings.length,
+        history: state.history.length,
+      }
     : null;
 }

@@ -1,0 +1,636 @@
+{
+  "id": "greek-olive",
+  "studio_clips": false,
+  "cover_art": "olive",
+  "cover_caption": "The hill above the young city",
+  "source_note": "This is an original interactive retelling, not a translation. The myth notes point to the real sources and explain where tellings differ. The young protagonist and the choices are invented for the game.",
+  "tradition": "Greek",
+  "title": "The Olive Tree Contest",
+  "subtitle": "A choose-your-path myth of Athena, Poseidon and one small city",
+  "tagline": "Two gods. Two gifts. One hill. The city is yours to judge.",
+  "intro": "Two gods want to be the patron of one small city. Athena offers an olive tree. Poseidon offers a salt spring and a harbour. King Cecrops is not sure, and the goats are no help at all. You are a villager with a good pair of ears. Climb the hill, look at both gifts, and help decide what kind of city this will be.",
+  "setting": "The hill above a small village in Attica, long before Athens was famous",
+  "default_name": "Alex",
+  "name_suggestions": [
+    "Alex",
+    "Iris",
+    "Niko",
+    "Clio"
+  ],
+  "start": "start",
+  "acts": [
+    {
+      "id": 1,
+      "title": "The Contest on the Hill"
+    },
+    {
+      "id": 2,
+      "title": "Two Gifts"
+    },
+    {
+      "id": 3,
+      "title": "The City Decides"
+    }
+  ],
+  "paths": [
+    {
+      "id": "olive",
+      "title": "The Olive Gift",
+      "glyph": "tree",
+      "blurb": "Sit with Athena, taste an olive and see what a tree can do for a city that has very little."
+    },
+    {
+      "id": "sea",
+      "title": "The Sea Gift",
+      "glyph": "serpent",
+      "blurb": "Follow Poseidon to his salt spring and look at the bay where ships could come in."
+    },
+    {
+      "id": "council",
+      "title": "Ask the People",
+      "glyph": "crown",
+      "blurb": "Climb down into the square and ask the fishers, farmers and children what a city needs."
+    }
+  ],
+  "boons": {
+    "pathOlive": "Walked the olive path",
+    "pathSea": "Walked the sea path",
+    "pathCouncil": "Walked the council path",
+    "askedAthena": "Asked Athena a question",
+    "tastedOlive": "Tasted the first olive",
+    "oliveCutting": "Carried an olive cutting",
+    "askedPoseidon": "Asked Poseidon about the spring",
+    "springJar": "Filled a jar from the spring",
+    "braveSplash": "Splashed your face in the spring",
+    "heardFarmer": "Heard the farmer",
+    "heardFisher": "Heard the fisher",
+    "heardChildren": "Heard the children",
+    "bothGifts": "Kept both gifts",
+    "choseOlive": "Chose the olive tree",
+    "choseHarbour": "Chose the harbour",
+    "peopleVote": "Let the people vote"
+  },
+  "endings": [
+    {
+      "id": "two-gifts",
+      "title": "The City of Two Gifts",
+      "rank": "Best ending",
+      "blurb": "Keep the tree and the harbour. The city grows between two gods, and nobody has to lose.",
+      "node": "ending-two-gifts"
+    },
+    {
+      "id": "olive",
+      "title": "The City of the Olive",
+      "rank": "Green ending",
+      "blurb": "Choose Athena's tree. Small, green and dusty, the city smells of oil and warm stone.",
+      "node": "ending-olive"
+    },
+    {
+      "id": "harbour",
+      "title": "The City of the Harbour",
+      "rank": "Trading ending",
+      "blurb": "Choose Poseidon's bay. Ships bring grain, news and trouble, and the city grows loud.",
+      "node": "ending-harbour"
+    },
+    {
+      "id": "chooses",
+      "title": "The City Chooses",
+      "rank": "Shared ending",
+      "blurb": "Let the villagers vote. The city keeps arguing, keeps choosing and keeps interrupting the owl.",
+      "node": "ending-chooses"
+    }
+  ],
+  "nodes": {
+    "start": {
+      "id": "start",
+      "act": 1,
+      "chapter": "1",
+      "title": "Two Gods on One Hill",
+      "location": "The hill above the village, Attica",
+      "art": "olive",
+      "artCaption": "A bare hill above the sea, where two gods are arguing",
+      "text": [
+        "You are {name}, and you are late. The whole village is climbing the hill above the sea. Two gods are standing on the top of it, and they are arguing.",
+        "One wears a helmet and carries a spear. An owl sits on a rock beside her and looks unimpressed. The other god has a trident and a very loud voice. The waves below lean in to listen.",
+        "King Cecrops has a snake's tail and a judge's frown. He sees you. 'You,' he says. 'You are small, and you are not a god. Come and help me decide.'",
+        "Athena holds out an olive branch. Poseidon lifts his trident. The ground is waiting."
+      ],
+      "lore": {
+        "title": "The contest for Athens",
+        "body": "Athena and Poseidon both wanted to be patron of the city. Each offered a gift. Athena's was the olive tree. Poseidon's was a salt spring, or in some versions a horse. The people judged the gifts, or in other tellings King Cecrops did. The city took Athena's name, and the olive still grows on Athenian hills.",
+        "source": "Apollodorus, Library 3.14; Pausanias, Description of Greece 1.24"
+      },
+      "choices": [
+        {
+          "label": "Kneel and look closely at Athena's olive tree",
+          "to": "olive-1",
+          "tag": "The olive road · +1 insight",
+          "effects": {
+            "add": {
+              "insight": 1
+            },
+            "set": {
+              "pathOlive": true
+            }
+          }
+        },
+        {
+          "label": "Follow the rumble to Poseidon's spring",
+          "to": "sea-1",
+          "tag": "The sea road · +1 courage",
+          "effects": {
+            "add": {
+              "courage": 1
+            },
+            "set": {
+              "pathSea": true
+            }
+          }
+        },
+        {
+          "label": "Climb down and ask the villagers what they want",
+          "to": "council-1",
+          "tag": "Ask the people · +1 cunning",
+          "effects": {
+            "add": {
+              "cunning": 1
+            },
+            "set": {
+              "pathCouncil": true
+            }
+          }
+        }
+      ]
+    },
+    "olive-1": {
+      "id": "olive-1",
+      "act": 2,
+      "chapter": "2",
+      "title": "Athena's Little Tree",
+      "location": "The rocky hill, Attica",
+      "art": "olive",
+      "artCaption": "A small silver-leaved olive tree in a crack of dry stone",
+      "text": [
+        "Athena's gift is not a palace. It is a small tree with silver leaves, growing out of a crack in the rock. It looks as if it has been waiting for you.",
+        "She kneels and presses one hand to the dry earth. 'It will not need much,' she says. 'Sun, stone, and someone who remembers to water it.' The owl hoots, as if this is obvious.",
+        "Poseidon's spring is roaring on the other side of the hill. The tree does not roar. It holds up one green branch and waits to be judged.",
+        "You have never judged a god before. You have never even judged a goat. You look at the tree. The tree looks back, patiently."
+      ],
+      "lore": {
+        "title": "Why the olive mattered",
+        "body": "The olive was the foundation of Athenian life: food, lamp oil, soap and perfume. Athena was said to have planted the first one on the Acropolis. Pausanias describes a sacred olive in her temple, and Herodotus says that when the Persians burned the Acropolis in 480 BCE, the stump sprouted again the same day.",
+        "source": "Pausanias, Description of Greece 1.27; Herodotus, Histories 8.55"
+      },
+      "choices": [
+        {
+          "label": "Ask Athena what the tree will give the city",
+          "to": "olive-2",
+          "tag": "Listen well · +1 insight",
+          "effects": {
+            "add": {
+              "insight": 1
+            },
+            "set": {
+              "askedAthena": true
+            }
+          }
+        },
+        {
+          "label": "Pick one olive and taste it",
+          "to": "olive-2",
+          "tag": "Try the gift · +1 courage",
+          "effects": {
+            "add": {
+              "courage": 1
+            },
+            "set": {
+              "tastedOlive": true
+            }
+          }
+        },
+        {
+          "label": "Take a small cutting to show the king",
+          "to": "olive-2",
+          "tag": "Plan ahead · +1 cunning",
+          "effects": {
+            "add": {
+              "cunning": 1
+            },
+            "set": {
+              "oliveCutting": true
+            }
+          }
+        }
+      ]
+    },
+    "olive-2": {
+      "id": "olive-2",
+      "act": 2,
+      "chapter": "3",
+      "title": "The Tree in the Shade",
+      "location": "The hill above the village",
+      "art": "olive",
+      "artCaption": "An olive tree in full leaf, with the sea shining behind it",
+      "text": [
+        "The cutting is in your hand. The moment you hold it up, the tree on the hill grows. It grows out of the rock. It grows out of the story too. Soon the whole village stands in its shade.",
+        "Athena does not smile exactly. Gods are bad at smiling. 'Oil for lamps,' she says. 'Food in a hard year. Wood that smells good when it burns. A reason to stay on this hill.'",
+        "Poseidon's spring still roars. King Cecrops looks at the tree, then at the spring, then at you. 'Well, small judge,' he says. 'What does a city need?'",
+        "The villagers are watching. So is the owl. So, probably, is the sea."
+      ],
+      "lore": {
+        "title": "What the olive gave",
+        "body": "Athena's gift was practical. Olive oil lit lamps, cooked food, cleaned skin and was traded across the Mediterranean. At the Panathenaia, Athens' great festival, a new robe was carried up to Athena's statue and athletes won jars of oil. The tree was not only a symbol of peace. It was a crop, a business and a reason the city could feed itself.",
+        "source": "Pausanias, Description of Greece 1.27; Aristotle, Constitution of the Athenians 60"
+      },
+      "choices": [
+        {
+          "label": "Plant Athena's tree in the middle of the city",
+          "to": "ending-olive",
+          "tag": "Choose the olive · +1 courage",
+          "effects": {
+            "add": {
+              "courage": 1
+            },
+            "set": {
+              "choseOlive": true
+            }
+          }
+        },
+        {
+          "label": "Give both gifts a place — the tree and the spring",
+          "to": "ending-two-gifts",
+          "tag": "Keep both gifts · +2 insight",
+          "effects": {
+            "add": {
+              "insight": 2
+            },
+            "set": {
+              "bothGifts": true
+            }
+          }
+        },
+        {
+          "label": "Step back and let the villagers vote",
+          "to": "ending-chooses",
+          "tag": "Trust the people · +1 cunning",
+          "effects": {
+            "add": {
+              "cunning": 1
+            },
+            "set": {
+              "peopleVote": true
+            }
+          }
+        }
+      ]
+    },
+    "sea-1": {
+      "id": "sea-1",
+      "act": 2,
+      "chapter": "2",
+      "title": "The Salty Spring",
+      "location": "The cliff side of the hill",
+      "art": "meadow",
+      "artCaption": "A spring bursting out of grey rock, with the sea far below",
+      "text": [
+        "Poseidon does not do small. He strikes the rock with his trident, and a spring jumps out of it. Water goes everywhere. Two goats leave.",
+        "'Fresh water,' he says, 'from the sea itself. Salt enough to keep fish and clean a wound.' Behind him, the waves rise to get a better look.",
+        "The water is warm. It tastes like trouble and also a little like soup. Poseidon folds his arms. 'Tell the king this is a gift. A harbour needs a spring, and a spring needs a god who can hit rocks.'",
+        "The olive tree on the hill is very quiet."
+      ],
+      "lore": {
+        "title": "Poseidon's salt spring",
+        "body": "The contest gives Poseidon two possible gifts: a salt spring struck from the rock, or a horse. A salt spring is useless for drinking, but it proved the god's power. The Erechtheion on the Acropolis kept a pool said to be the sea, and Pausanias says it sounded like waves when the wind blew.",
+        "source": "Apollodorus, Library 3.14; Pausanias, Description of Greece 1.26"
+      },
+      "choices": [
+        {
+          "label": "Ask Poseidon why the spring is salty",
+          "to": "sea-2",
+          "tag": "Ask politely · +1 insight",
+          "effects": {
+            "add": {
+              "insight": 1
+            },
+            "set": {
+              "askedPoseidon": true
+            }
+          }
+        },
+        {
+          "label": "Fill a jar and carry it to King Cecrops",
+          "to": "sea-2",
+          "tag": "Plan ahead · +1 cunning",
+          "effects": {
+            "add": {
+              "cunning": 1
+            },
+            "set": {
+              "springJar": true
+            }
+          }
+        },
+        {
+          "label": "Splash your face with the cold water",
+          "to": "sea-2",
+          "tag": "Test the gift · +1 courage",
+          "effects": {
+            "add": {
+              "courage": 1
+            },
+            "set": {
+              "braveSplash": true
+            }
+          }
+        }
+      ]
+    },
+    "sea-2": {
+      "id": "sea-2",
+      "act": 2,
+      "chapter": "3",
+      "title": "What the Sea Brings",
+      "location": "The cliff above the little harbour",
+      "art": "meadow",
+      "artCaption": "A bay full of small boats and one very proud god",
+      "text": [
+        "From the cliff you can see boats. Tiny ones, drawn up on the beach. Poseidon spreads his hands and the whole bay seems to open like a door. 'Ships,' he says. 'Fish. Trade. News from Egypt. All of it comes by water.'",
+        "A fisher below is mending a net. She waves. 'Salt spring's no good for drinking,' she calls, 'but the fish don't mind it.'",
+        "King Cecrops has climbed up to see. He is out of breath and trying not to show it. 'A city needs food,' he says. 'It also needs a road to the rest of the world.'",
+        "The owl has followed you. It sits on a rock and refuses to comment."
+      ],
+      "lore": {
+        "title": "Why a harbour mattered",
+        "body": "Athens' port, Piraeus, lay about seven kilometres from the city. In the fifth century BCE the Athenians built the Long Walls to connect the two, so grain ships could unload even during a siege. The navy, paid for by silver from Laurion, made Athens powerful. A harbour was not glamorous. It was bread, timber and safety.",
+        "source": "Thucydides, History of the Peloponnesian War 1.107; Herodotus, Histories 7.144"
+      },
+      "choices": [
+        {
+          "label": "Choose the harbour, and the sea road with it",
+          "to": "ending-harbour",
+          "tag": "Choose the sea · +1 courage",
+          "effects": {
+            "add": {
+              "courage": 1
+            },
+            "set": {
+              "choseHarbour": true
+            }
+          }
+        },
+        {
+          "label": "Keep both gifts — the olive and the harbour",
+          "to": "ending-two-gifts",
+          "tag": "Keep both gifts · +2 insight",
+          "effects": {
+            "add": {
+              "insight": 2
+            },
+            "set": {
+              "bothGifts": true
+            }
+          }
+        },
+        {
+          "label": "Let the village decide",
+          "to": "ending-chooses",
+          "tag": "Trust the people · +1 cunning",
+          "effects": {
+            "add": {
+              "cunning": 1
+            },
+            "set": {
+              "peopleVote": true
+            }
+          }
+        }
+      ]
+    },
+    "council-1": {
+      "id": "council-1",
+      "act": 2,
+      "chapter": "2",
+      "title": "Ask the People",
+      "location": "The village square, Attica",
+      "art": "meadow",
+      "artCaption": "A dusty square, a stone well and a great many opinions",
+      "text": [
+        "You walk down the hill and do something the gods did not expect. You ask. 'What does a city need?' you say. The square goes quiet, then very loud.",
+        "A fisher says fish. A farmer says soil. A potter says clay, and also a market, and also fewer goats in the street. A child says a tree to climb.",
+        "They all have a point. That is the trouble with people. You try to write it on a broken pot. The potter takes it away because your writing is bad.",
+        "Behind you, someone laughs. It is a woman with grey eyes and an owl on her shoulder."
+      ],
+      "lore": {
+        "title": "Athens and its assembly",
+        "body": "Athenian citizens gathered on the Pnyx hill to vote in the ekklesia, the assembly. In the fifth century BCE perhaps six thousand men could attend. They voted by show of hands, and citizen juries decided court cases. It was not democracy as we know it: women, enslaved people and foreigners could not vote. Still, the idea that a city's people should decide was new and powerful.",
+        "source": "Aristotle, Constitution of the Athenians 43; Thucydides, History of the Peloponnesian War 2.40"
+      },
+      "choices": [
+        {
+          "label": "Listen to the farmer",
+          "to": "council-2",
+          "tag": "Listen well · +1 insight",
+          "effects": {
+            "add": {
+              "insight": 1
+            },
+            "set": {
+              "heardFarmer": true
+            }
+          }
+        },
+        {
+          "label": "Listen to the fisher",
+          "to": "council-2",
+          "tag": "Listen well · +1 courage",
+          "effects": {
+            "add": {
+              "courage": 1
+            },
+            "set": {
+              "heardFisher": true
+            }
+          }
+        },
+        {
+          "label": "Listen to the child",
+          "to": "council-2",
+          "tag": "Hear the smallest voice · +2 insight",
+          "effects": {
+            "add": {
+              "insight": 2
+            },
+            "set": {
+              "heardChildren": true
+            }
+          }
+        }
+      ]
+    },
+    "council-2": {
+      "id": "council-2",
+      "act": 2,
+      "chapter": "3",
+      "title": "The Vote on the Hill",
+      "location": "The hill above the village",
+      "art": "olive",
+      "artCaption": "A crowd on a hill, hands raised, one owl unimpressed",
+      "text": [
+        "Everyone climbs the hill. This takes a while. The goats come too. King Cecrops stands on a stone and holds up his hands until the noise stops.",
+        "'Two gods have offered gifts,' he says. 'The olive tree feeds us. The spring and the bay could bring ships. I am only one king. I would like some help.'",
+        "Hands go up. Not all at once. A fisher raises a hand for the harbour. A farmer raises both hands for the tree. The potter wants a market and has opinions about the goats.",
+        "Athena and Poseidon watch from the top of the hill. Neither of them is allowed to vote. The owl, sensibly, has fallen asleep."
+      ],
+      "lore": {
+        "title": "Who judged the contest?",
+        "body": "Ancient writers tell the contest differently. Apollodorus says Cecrops judged, with Zeus or the twelve gods as arbiters. Other versions let the citizens decide. Pausanias mentions the sacred olive in the Erechtheion. The story explained the city's name, its sacred tree and its bond with Athena. Even in antiquity, people argued about who got to choose.",
+        "source": "Apollodorus, Library 3.14; Pausanias, Description of Greece 1.24"
+      },
+      "choices": [
+        {
+          "label": "Count the hands, then keep both gifts",
+          "to": "ending-two-gifts",
+          "tag": "Keep both gifts · +2 insight",
+          "effects": {
+            "add": {
+              "insight": 2
+            },
+            "set": {
+              "bothGifts": true
+            }
+          }
+        },
+        {
+          "label": "Let the vote decide, whatever it says",
+          "to": "ending-chooses",
+          "tag": "Trust the people · +1 courage",
+          "effects": {
+            "add": {
+              "courage": 1
+            },
+            "set": {
+              "peopleVote": true
+            }
+          }
+        },
+        {
+          "label": "Choose Athena's olive tree",
+          "to": "ending-olive",
+          "tag": "Choose the olive · +1 insight",
+          "effects": {
+            "add": {
+              "insight": 1
+            },
+            "set": {
+              "choseOlive": true
+            }
+          }
+        }
+      ]
+    },
+    "ending-two-gifts": {
+      "id": "ending-two-gifts",
+      "act": 3,
+      "chapter": "4",
+      "title": "The City of Two Gifts",
+      "location": "The hill above the new city",
+      "art": "olive",
+      "artCaption": "Olive trees and rooftops, with ships coming into the bay",
+      "text": [
+        "You do not choose. You do something harder. You ask each god to keep their gift and share the hill. Poseidon laughs so loudly that a wave slaps the beach. Athena tilts her head.",
+        "'A tree and a harbour,' says King Cecrops. 'The olive feeds the city. The ships bring it news. I can live with that.' The villagers cheer. A goat eats a sacred branch and is forgiven.",
+        "Athena plants her tree beside the spring. Poseidon draws a line in the sand for the harbour. The city grows between them: white houses, a market, a temple, a smell of fish and olive oil.",
+        "People call it Athens, after the goddess. But the spring still runs, and the boats still come in. On the hill, an owl and a very large seagull have a staring contest. The owl wins."
+      ],
+      "lore": {
+        "title": "A city with two patrons",
+        "body": "Athens honoured many gods. Athena was its patron, but Poseidon was worshipped too. The Erechtheion, her temple on the Acropolis, also contained the salt spring and the trident mark linked to him. Greek religion was not exclusive: a city could keep a favourite god and still build altars to others. The contest story explained preference, not a ban.",
+        "source": "Pausanias, Description of Greece 1.26; Apollodorus, Library 3.14"
+      },
+      "ending": {
+        "id": "two-gifts",
+        "title": "The City of Two Gifts",
+        "rank": "Best ending",
+        "summary": "You kept both gifts. The olive fed the city, the harbour connected it to the world, and nobody had to lose."
+      }
+    },
+    "ending-olive": {
+      "id": "ending-olive",
+      "act": 3,
+      "chapter": "4",
+      "title": "The City of the Olive",
+      "location": "The green hill, years later",
+      "art": "olive",
+      "artCaption": "An olive grove on a sunlit hill, with clay lamps in the windows",
+      "text": [
+        "You choose the tree. Poseidon takes his spring back to the sea with a grumble that sounds like a wave pulling stones.",
+        "Athena's olive grows. Its roots hold the hill together. Its oil burns in clay lamps, and the lamps make the streets feel safe at night.",
+        "In a bad year, the olives still come. In a good year, there is enough to trade. The city stays small, and green, and a little dusty, and it smells of oil and warm stone.",
+        "Sailors complain that there is no harbour. They row to the next bay and come back anyway, because the oil is good. Every year the city gives Athena a new cloak and a basket of olives. The owl gets the first olive. Always."
+      ],
+      "lore": {
+        "title": "The sacred olive",
+        "body": "Athena's olive on the Acropolis was called the moria, and its oil was kept for sacred use. Priests and city officials looked after it. Olive oil was so important that Athens regulated its export and gave jars of it as prizes at the Panathenaia. A city of the olive is a city that plans for winter.",
+        "source": "Pausanias, Description of Greece 1.27; Aristotle, Constitution of the Athenians 60"
+      },
+      "ending": {
+        "id": "olive",
+        "title": "The City of the Olive",
+        "rank": "Green ending",
+        "summary": "You chose the tree. The city stayed small and green, smelled of oil and warm stone, and never ran out of olives."
+      }
+    },
+    "ending-harbour": {
+      "id": "ending-harbour",
+      "act": 3,
+      "chapter": "4",
+      "title": "The City of the Harbour",
+      "location": "The busy bay, years later",
+      "art": "meadow",
+      "artCaption": "A crowded harbour at dusk, masts and lanterns and gulls",
+      "text": [
+        "You choose the harbour. Athena does not argue. She folds her arms and looks at her tree. The tree looks back. Neither of them says anything.",
+        "The bay fills with boats. First fishing boats. Then traders. Then a ship from Egypt with grain and a very confused cat.",
+        "The city grows fast and loud. New streets, new accents, new arguments about where to put the fish market. Poseidon is delighted. He keeps sending weather.",
+        "On the hill, someone plants an olive tree anyway. It is small, and it grows in the shade of the new walls. The goddess notices. She does not say thank you. She lets it live."
+      ],
+      "lore": {
+        "title": "Piraeus and the sea",
+        "body": "Athens' port, Piraeus, was about seven kilometres from the city. In the 450s BCE the Athenians built the Long Walls to connect the two, so grain ships could unload even in wartime. The navy, paid for by silver from Laurion, made Athens a power. A harbour was not romantic. It was bread, timber and safety.",
+        "source": "Thucydides, History of the Peloponnesian War 1.107; Herodotus, Histories 7.144"
+      },
+      "ending": {
+        "id": "harbour",
+        "title": "The City of the Harbour",
+        "rank": "Trading ending",
+        "summary": "You chose the sea. Ships brought grain, news and trouble, and a small olive tree grew quietly on the hill."
+      }
+    },
+    "ending-chooses": {
+      "id": "ending-chooses",
+      "act": 3,
+      "chapter": "4",
+      "title": "The City Chooses",
+      "location": "The hill above the village, years later",
+      "art": "olive",
+      "artCaption": "A crowd on a hill at sunset, hands raised, an owl watching",
+      "text": [
+        "You count the hands. It is close. In the end, the village chooses the olive tree. It also chooses a harbour on the side, and a market in the middle. People are like that.",
+        "King Cecrops writes it down on a clay tablet. His handwriting is terrible. The potter rewrites it, and everyone agrees it looks official.",
+        "The gods accept the vote. Poseidon says he has other cities. Athena says she has other owls. They both stay for dinner, which is awkward, because gods do not eat much.",
+        "Years later, when the city is big, people still argue on the same hill. That is the point. The city keeps choosing. The olive tree keeps growing. The owl keeps interrupting."
+      ],
+      "lore": {
+        "title": "Voting in Athens",
+        "body": "Athenian citizens voted by show of hands in the assembly, and juries used bronze ballots. They could also exile a politician for ten years by scratching his name on a broken pot: ostracism. The system excluded women, enslaved people and foreigners, but the habit of public argument was real. The contest myth imagines a city deciding what kind of place it wants to be.",
+        "source": "Aristotle, Constitution of the Athenians 22; Plutarch, Life of Aristides 7"
+      },
+      "ending": {
+        "id": "chooses",
+        "title": "The City Chooses",
+        "rank": "Shared ending",
+        "summary": "You let the people decide. The city kept arguing, kept choosing and kept growing, and the owl kept interrupting."
+      }
+    }
+  }
+}

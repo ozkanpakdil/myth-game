@@ -334,14 +334,24 @@ async function validateMythology(meta, dir) {
 const SAGA_SCENES = new Set([
   'fjord', 'circle', 'well', 'tree', 'asgard', 'forge', 'jotunheim',
   'sea', 'pinewood', 'cave', 'wolf', 'ragnarok', 'meadow', 'empty',
+  'olive', 'sunboat', 'suncave', 'maize', 'sky', 'greyfield', 'dryfield', 'grove', 'court', 'window',
 ]);
 
 async function validateSagaFile(file) {
   const data = await loadJSON(file);
-  if (!data) return;
+  if (!data) return null;
 
   for (const field of ['id', 'title', 'tradition', 'subtitle', 'tagline', 'intro', 'setting', 'default_name', 'start']) {
     if (!isNonEmptyString(data[field])) fail(file, `missing ${field}`);
+  }
+  if ('studio_clips' in data && typeof data.studio_clips !== 'boolean') {
+    fail(file, 'studio_clips must be true or false when present');
+  }
+  if (isNonEmptyString(data.cover_art) && !SAGA_SCENES.has(data.cover_art)) {
+    fail(file, `unknown cover_art "${data.cover_art}"`);
+  }
+  if (data.cover_caption != null && !isNonEmptyString(data.cover_caption)) {
+    fail(file, 'cover_caption must be a non-empty string when present');
   }
   if (!isStringArray(data.name_suggestions, 1)) fail(file, 'name_suggestions must be a non-empty string array');
   if (isNonEmptyString(data.intro) && wordCount(data.intro) < 40) warn(file, 'intro is very short for a saga landing page');
@@ -569,6 +579,7 @@ async function validateSagaFile(file) {
   if (VERBOSE) {
     console.log(`Saga "${data.title}": ${sceneCount} scenes, ${choiceCount} choices, ${endingNodes.size} endings.`);
   }
+  return data;
 }
 
 async function validateSagas() {
@@ -580,7 +591,54 @@ async function validateSagas() {
     warn(dir, 'saga folder has no .json files');
     return;
   }
-  for (const file of files.sort()) await validateSagaFile(file);
+
+  const stories = new Map();
+  for (const file of files.sort()) {
+    const data = await validateSagaFile(file);
+    if (data?.id) stories.set(data.id, { data, file });
+  }
+
+  const catalogFile = path.join(CONTENT_DIR, 'sagas.json');
+  const catalog = await loadJSON(catalogFile);
+  if (!Array.isArray(catalog)) {
+    fail(catalogFile, 'sagas.json must be an array');
+    return;
+  }
+  const seen = new Set();
+  const listedFiles = new Set();
+  for (const [index, entry] of catalog.entries()) {
+    const at = `entry ${index + 1}${entry?.id ? ` (${entry.id})` : ''}`;
+    for (const field of ['id', 'file', 'tradition', 'title', 'tagline', 'age', 'cover_art']) {
+      if (!isNonEmptyString(entry?.[field])) fail(catalogFile, `${at}: missing ${field}`);
+    }
+    if (!/^[a-z0-9-]+$/.test(entry?.id || '')) fail(catalogFile, `${at}: id must be lowercase letters, digits or dashes`);
+    else if (seen.has(entry.id)) fail(catalogFile, `${at}: duplicate id`);
+    else seen.add(entry.id);
+    if (!Number.isInteger(entry?.minutes) || entry.minutes < 1) fail(catalogFile, `${at}: minutes must be a positive integer`);
+    if (!/^\d+\+$/.test(entry?.age || '')) fail(catalogFile, `${at}: age must look like "8+"`);
+    if (isNonEmptyString(entry?.cover_art) && !SAGA_SCENES.has(entry.cover_art)) {
+      fail(catalogFile, `${at}: unknown cover_art "${entry.cover_art}"`);
+    }
+    if (!isNonEmptyString(entry?.file) || !/^[a-z0-9-]+\.json$/.test(entry.file)) {
+      fail(catalogFile, `${at}: file must be a simple .json filename`);
+      continue;
+    }
+    listedFiles.add(entry.file);
+    const story = stories.get(entry.id);
+    if (!story) {
+      fail(catalogFile, `${at}: no saga file has id "${entry.id}"`);
+    } else if (path.basename(story.file) !== entry.file) {
+      fail(catalogFile, `${at}: file should be "${path.basename(story.file)}"`);
+    } else if (story.data.title !== entry.title) {
+      fail(catalogFile, `${at}: title does not match the saga file`);
+    } else if (story.data.tradition !== entry.tradition) {
+      fail(catalogFile, `${at}: tradition does not match the saga file`);
+    }
+  }
+  for (const [id, story] of stories) {
+    if (!seen.has(id)) fail(catalogFile, `saga "${id}" is not listed in sagas.json`);
+    if (!listedFiles.has(path.basename(story.file))) fail(catalogFile, `saga file "${path.basename(story.file)}" is not listed in sagas.json`);
+  }
 }
 
 /* ------------------------------------------------------------------ */

@@ -1,5 +1,5 @@
 /**
- * saga-art.js — animated pixel-art scenes for the Ash-Seed saga.
+ * saga-art.js — animated pixel-art scenes for the saga library.
  *
  * Each scene is a 96×54 colour grid rendered to inline SVG, plus a handful of
  * pixel-sized overlay groups animated with CSS (see the `.saga-*` rules in
@@ -1158,6 +1158,459 @@ const scenes = {
       group('saga-glow', r(42, 35, 8, 10, C.gold2, 'saga-fire-glow', 'opacity:.14') + r(73, 33, 9, 8, C.gold2, 'saga-fire-glow', 'opacity:.1')) +
       group('saga-mist', r(0, 33, W, 2, C.ice, 'saga-mist-pixel', 'opacity:.1'));
   },
+
+  greyfield(g) {
+    // A sunless morning: grey paddies, a muted torii and no warmth anywhere.
+    skyBands(g, ['#3c474f', '#525f66', '#69757a', '#858f90', '#b5b5a9'], 30);
+    cloudBank(g, 'grey-clouds', { y: 3, count: 10, color: '#7f8b8f' });
+    cloudBank(g, 'grey-clouds-low', { y: 17, count: 6, color: '#9aa3a1' });
+    mountains(g, { baseY: 32, color: '#485257', seed: 'grey-hills', maxHeight: 8, minHeight: 3, snowColor: '#9ba5a2' });
+    // flooded rice paddies in bands
+    g.rect(0, 31, W, H - 31, '#5f6c58');
+    g.rect(0, 36, W, 5, '#53675f');
+    g.rect(0, 41, W, H - 41, '#465a4e');
+    for (let row = 0; row < 4; row += 1) {
+      g.rect(0, 34 + row * 5, W, 1, '#77836b');
+      for (let x = 2 + (row % 3); x < W; x += 17) {
+        g.rect(x, 35 + row * 5, 9, 2, '#6d8884', 'saga-water-glint', `opacity:${(0.18 + row * 0.04).toFixed(2)}`);
+      }
+    }
+    // low village roofs
+    for (const [x, y, width] of [[6, 36, 16], [27, 38, 12], [80, 37, 11]]) {
+      g.rect(x, y, width, 2, '#3a3a34');
+      g.rect(x + 2, y + 2, width - 4, 3, '#5d5548');
+      g.rect(x + 3, y + 3, 2, 1, '#8d806a');
+    }
+    // bare tree on the left
+    g.rect(9, 26, 2, 11, '#4b4036');
+    g.rect(6, 24, 3, 1, '#4b4036');
+    g.rect(11, 21, 1, 4, '#4b4036');
+    g.rect(5, 20, 4, 1, '#3c342d');
+    g.rect(12, 18, 3, 1, '#3c342d');
+    // torii on the far bank, faded by the grey light
+    g.rect(69, 28, 2, 8, '#8d4f46');
+    g.rect(79, 28, 2, 8, '#8d4f46');
+    g.rect(66, 26, 18, 2, '#9d5a4e');
+    g.rect(68, 23, 14, 1, '#a96858');
+    // a small figure with a hoe, looking at the empty sky
+    g.rect(41, 38, 3, 7, '#4d5b6b');
+    g.rect(42, 35, 2, 3, C.skin);
+    g.rect(41, 34, 4, 2, '#2d2925');
+    g.rect(46, 35, 1, 10, C.wood);
+    g.rect(46, 34, 3, 1, C.iron);
+    return group('saga-mist', r(0, 30, W, 4, '#d2d8d4', 'saga-mist-pixel', 'opacity:.2')) +
+      group('saga-birds', r(24, 13, 2, 1, '#3b4448', 'saga-bird') + r(31, 17, 2, 1, '#3b4448', 'saga-bird', 'animation-delay:-1.4s'));
+  },
+
+  dryfield(g) {
+    // The hungry season: cracked earth, dead stalks and an empty cooking pot.
+    skyBands(g, ['#6d7f8e', '#8e9d9c', '#b6b49b', '#d3c39b', '#e6d2a3'], 27);
+    cloudBank(g, 'dry-clouds', { y: 3, count: 7, color: '#d3d3c0' });
+    // distant volcano, dusty rather than green
+    g.rect(54, 16, 32, 11, '#6d6252');
+    g.rect(61, 13, 18, 4, '#81745e');
+    g.rect(68, 10, 5, 4, '#9b8b70');
+    g.rect(69, 9, 3, 1, '#d4c8a8');
+    // baked earth
+    g.rect(0, 26, W, H - 26, '#9a7b50');
+    g.rect(0, 35, W, H - 35, '#85683f');
+    g.rect(0, 45, W, H - 45, '#745a36');
+    for (let i = 0; i < 16; i += 1) {
+      const x = (i * 29) % W;
+      const y = 29 + ((i * 11) % 20);
+      g.rect(x, y, 6 + (i % 4), 1, '#6d5435');
+      g.rect(x + 2, y + 1, 1, 3, '#6d5435');
+      g.rect(x + 5, y - 1, 1, 2, '#6d5435');
+    }
+    // dead maize stalks
+    for (const [x, height] of [[13, 15], [22, 11], [72, 13], [82, 9], [89, 16]]) {
+      g.rect(x, 45 - height, 1, height, '#79603b');
+      g.rect(x - 3, 45 - height + 5, 3, 1, '#8c7143');
+      g.rect(x + 1, 45 - height + 8, 3, 1, '#8c7143');
+      g.rect(x, 45 - height - 1, 1, 2, '#a58a55');
+    }
+    // clay pot, tipped over, with nothing inside
+    g.rect(40, 37, 12, 8, '#a66d43');
+    g.rect(39, 35, 14, 2, '#c18454');
+    g.rect(42, 38, 8, 1, '#8a5836');
+    g.rect(41, 40, 10, 2, '#b77a4b');
+    g.rect(50, 44, 3, 1, '#8a5836');
+    // a small figure kneeling by the pot
+    g.rect(55, 39, 3, 7, '#8c4e3c');
+    g.rect(56, 36, 2, 3, C.skin);
+    g.rect(55, 35, 4, 2, '#33261f');
+    g.rect(58, 42, 3, 1, C.skin);
+    return group('saga-motes', Array.from({ length: 9 }, (_, index) => r(4 + ((index * 17) % 78), 30 + ((index * 7) % 13), 1, 1, '#e3cfa0', 'saga-mote', `animation-delay:-${(index * 0.6).toFixed(1)}s`)).join('')) +
+      group('saga-birds', r(31, 12, 2, 1, '#4b4a42', 'saga-bird') + r(38, 16, 2, 1, '#4b4a42', 'saga-bird', 'animation-delay:-1.1s'));
+  },
+
+  grove(g) {
+    // A warm forest at first light: broad mango trees, a path, and a small
+    // monkey-shaped shadow in the branches.
+    skyBands(g, ['#3f5f7a', '#6f8790', '#b98f78', '#e8b482', '#f6d89e'], 28);
+    cloudBank(g, 'grove-clouds', { y: 4, count: 6, color: '#e9c9b3' });
+    // low sun behind the trees
+    disc(g, 72, 15, 8, C.goldDim);
+    disc(g, 72, 14, 6, C.gold2);
+    // forest floor
+    g.rect(0, 34, W, H - 34, '#4d6b47');
+    g.rect(0, 41, W, H - 41, '#3d573c');
+    // winding path
+    for (let y = 36; y < H; y += 2) {
+      const x = 46 - Math.round((y - 36) * 0.4);
+      g.rect(x, y, 8 + Math.round((y - 36) * 0.5), 2, '#a88c60');
+    }
+    const mangoTree = (x, base) => {
+      g.rect(x + 4, base - 18, 3, 18, '#5a3f2d');
+      g.rect(x, base - 25, 18, 8, '#2f5738');
+      g.rect(x + 3, base - 29, 12, 7, '#3f7146');
+      g.rect(x + 6, base - 32, 7, 5, '#548a51');
+      g.rect(x + 10, base - 24, 9, 5, '#35603c');
+      for (let i = 0; i < 7; i += 1) {
+        const fx = x + 4 + ((i * 7) % 12);
+        const fy = base - 22 - ((i * 5) % 7);
+        g.rect(fx, fy, 2, 2, i % 2 ? '#e8b44f' : '#f4cf72');
+      }
+    };
+    mangoTree(2, 51);
+    mangoTree(77, 50);
+    // broad leaves framing the top edge
+    for (const [x, y, w] of [[0, 0, 18], [18, 2, 12], [76, 0, 20], [64, 4, 10]]) {
+      g.rect(x, y, w, 5, '#2d5138');
+      g.rect(x + 2, y + 5, Math.max(4, w - 4), 3, '#3e6a44');
+    }
+    // a small figure with a basket, setting out at dawn
+    g.rect(38, 39, 3, 7, '#b35d45');
+    g.rect(39, 36, 2, 3, C.skin);
+    g.rect(38, 35, 4, 2, '#2b241f');
+    g.rect(42, 42, 3, 3, C.gold);
+    // Hanuman as a small monkey shadow in the high branches
+    g.rect(71, 24, 3, 4, '#2a2521');
+    g.rect(72, 22, 2, 2, '#2a2521');
+    g.rect(75, 23, 2, 1, '#2a2521');
+    g.rect(69, 27, 2, 1, '#2a2521');
+    g.rect(74, 28, 3, 1, '#2a2521');
+    return group('saga-glow', r(64, 8, 18, 16, C.gold2, 'saga-glow-soft', 'opacity:.1')) +
+      group('saga-motes', Array.from({ length: 10 }, (_, index) => r(8 + ((index * 13) % 76), 30 + ((index * 7) % 12), 1, 1, '#ffe2a4', 'saga-mote', `animation-delay:-${(index * 0.5).toFixed(1)}s`)).join(''));
+  },
+
+  court(g) {
+    // Indra's court: a bright terrace of gold and white, with Airavata and
+    // the vajra at rest. Deliberately unlike the Norse halls.
+    skyBands(g, ['#5e7fa8', '#8aa6b9', '#d2b18c', '#f0cf9e', '#f8e4b6'], 25);
+    cloudBank(g, 'court-clouds', { y: 3, count: 7, color: '#f6e7c8' });
+    cloudBank(g, 'court-clouds-low', { y: 25, count: 5, color: '#e5d3ad' });
+    // pale marble terrace
+    g.rect(0, 33, W, H - 33, '#e4dcc6');
+    g.rect(0, 37, W, 2, '#c9bda2');
+    g.rect(0, 46, W, H - 46, '#d5cab1');
+    // gold pillars with lotus capitals
+    for (const x of [9, 27, 69, 87]) {
+      g.rect(x, 15, 4, 22, '#d7ad55');
+      g.rect(x, 15, 1, 22, '#f7e0a0');
+      g.rect(x + 3, 15, 1, 22, '#a98034');
+      g.rect(x - 2, 13, 8, 2, '#f0cf7a');
+      g.rect(x - 1, 11, 6, 2, '#c79a43');
+      g.rect(x - 2, 36, 8, 2, '#b98d3f');
+    }
+    // scalloped arch across the back
+    g.rect(31, 12, 34, 2, '#caa04e');
+    g.rect(35, 9, 26, 3, '#e6c579');
+    g.rect(39, 7, 18, 2, '#f2d99b');
+    // low throne
+    g.rect(40, 27, 16, 8, '#c49a45');
+    g.rect(42, 25, 12, 3, '#e8c778');
+    g.rect(43, 28, 10, 4, '#9d7430');
+    // white elephant, Airavata, with a red and gold cloth
+    g.rect(61, 34, 15, 7, '#f2eee2');
+    g.rect(74, 32, 6, 8, '#f2eee2');
+    g.rect(77, 40, 2, 4, '#e3ddcf');
+    g.rect(66, 41, 3, 4, '#e3ddcf');
+    g.rect(71, 41, 3, 4, '#e3ddcf');
+    g.rect(63, 32, 3, 7, '#f8f5ea');
+    g.rect(75, 33, 2, 1, '#4d4438');
+    g.rect(72, 29, 9, 4, '#b84f3f');
+    g.rect(73, 28, 7, 1, '#e4b85d');
+    g.rect(69, 36, 2, 2, '#b84f3f');
+    // the vajra on its stand
+    g.rect(22, 39, 3, 7, '#8f6a2f');
+    g.rect(18, 37, 11, 2, '#e8c778');
+    g.rect(21, 34, 5, 3, '#f4dfa5');
+    g.rect(19, 33, 2, 1, '#f4dfa5');
+    g.rect(26, 33, 2, 1, '#f4dfa5');
+    // a small figure looking up
+    g.rect(49, 38, 3, 7, '#8e5a43');
+    g.rect(50, 35, 2, 3, C.skin);
+    g.rect(49, 34, 4, 2, '#33251e');
+    // flower petals on the marble
+    for (let i = 0; i < 12; i += 1) {
+      g.rect(4 + ((i * 19) % 88), 45 + ((i * 7) % 6), 1, 1, i % 2 ? '#d87958' : '#f2d78c');
+    }
+    return group('saga-glow', r(4, 6, 88, 16, C.gold2, 'saga-glow-soft', 'opacity:.08')) +
+      group('saga-motes', Array.from({ length: 9 }, (_, index) => r(6 + ((index * 17) % 82), 8 + ((index * 11) % 30), 1, 1, '#fff0bd', 'saga-mote', `animation-delay:-${(index * 0.6).toFixed(1)}s`)).join(''));
+  },
+
+  window(g) {
+    // A quiet room at dusk: the last light in a hand mirror on the sill.
+    g.rect(0, 0, W, H, '#2a2436');
+    g.rect(0, 0, W, 6, '#372d43');
+    g.rect(0, 46, W, H - 46, '#3b2f3d');
+    // window opening
+    g.rect(25, 7, 46, 35, '#191a2b');
+    g.rect(28, 10, 40, 29, '#3b4b68');
+    // dusk bands and a low sun outside
+    g.rect(28, 10, 40, 7, '#425a7a');
+    g.rect(28, 17, 40, 8, '#7a7189');
+    g.rect(28, 25, 40, 7, '#c68b7b');
+    g.rect(28, 32, 40, 7, '#e7b98b');
+    disc(g, 57, 31, 4, C.gold2);
+    // rooftops and a tree beyond the glass
+    g.rect(28, 36, 12, 3, '#2b3342');
+    g.rect(43, 34, 9, 5, '#303a4a');
+    g.rect(53, 37, 10, 2, '#29313f');
+    g.rect(35, 30, 1, 6, '#2c2b32');
+    g.rect(32, 28, 7, 3, '#33402f');
+    // window frame and sill
+    g.rect(25, 7, 3, 36, '#5a4437');
+    g.rect(68, 7, 3, 36, '#5a4437');
+    g.rect(25, 7, 46, 3, '#5a4437');
+    g.rect(45, 10, 2, 30, '#5a4437');
+    g.rect(28, 24, 40, 2, '#5a4437');
+    g.rect(22, 42, 52, 4, '#6b4d3c');
+    g.rect(22, 42, 52, 1, '#8c684e');
+    // curtains
+    g.rect(16, 4, 9, 42, '#4b3442');
+    g.rect(18, 6, 5, 36, '#5d4050');
+    g.rect(71, 4, 9, 42, '#4b3442');
+    g.rect(73, 6, 5, 36, '#5d4050');
+    // the hand mirror, catching the last light
+    g.rect(35, 36, 12, 7, '#b78a4e');
+    g.rect(36, 35, 10, 2, '#d9b36b');
+    g.rect(37, 37, 8, 5, '#f4dfb0');
+    g.rect(39, 38, 4, 2, '#fff3cf');
+    g.rect(45, 41, 3, 1, '#8f6a3c');
+    // a small plant on the sill
+    g.rect(56, 39, 4, 4, '#6e4d3b');
+    g.rect(54, 36, 2, 3, '#4d754c');
+    g.rect(58, 34, 2, 5, '#5a8352');
+    g.rect(61, 37, 2, 3, '#4d754c');
+    return group('saga-glow', r(34, 34, 18, 12, C.gold2, 'saga-glow-soft', 'opacity:.1')) +
+      group('saga-motes', Array.from({ length: 7 }, (_, index) => r(36 + ((index * 11) % 16), 10 + ((index * 7) % 24), 1, 1, '#ffe9b3', 'saga-mote', `animation-delay:-${(index * 0.7).toFixed(1)}s`)).join(''));
+  },
+
+  olive(g) {
+    skyBands(g, ['#1c2a43', '#384a67', '#7d6570', '#cf9270', '#f2ca8b'], 30);
+    cloudBank(g, 'olive-clouds', { y: 3, count: 7, color: '#8d6f72' });
+    mountains(g, { baseY: 31, color: '#4b4a5c', seed: 'olive-far', maxHeight: 8, minHeight: 2, snowColor: '#e8c9a0' });
+    // sea behind the hill
+    water(g, { y: 31, color: '#2d5261', shade: '#3f7180', foam: '#c9e0d2', seed: 'olive-sea' });
+    g.rect(0, 35, W, H - 35, '#4c6a43');
+    g.rect(0, 43, W, H - 43, '#5f7d4b');
+    // terraces
+    for (let row = 0; row < 4; row += 1) {
+      g.rect(0, 38 + row * 4, W, 1, row % 2 ? '#75905a' : '#3d5838');
+    }
+    // white columns and a low temple front on the right
+    g.rect(68, 23, 22, 2, C.stone);
+    g.rect(66, 21, 26, 3, C.bone);
+    for (const x of [69, 76, 83]) {
+      g.rect(x, 25, 3, 12, C.stone);
+      g.rect(x, 25, 1, 12, C.bone);
+      g.rect(x - 1, 24, 5, 1, C.bone);
+    }
+    g.rect(67, 37, 24, 2, C.snowShade);
+    // olive tree on the left: twisted trunk and silver-green canopy
+    g.rect(18, 28, 3, 12, C.wood);
+    g.rect(20, 24, 2, 6, C.woodDark);
+    g.rect(12, 21, 3, 4, C.wood);
+    g.rect(25, 20, 3, 5, C.wood);
+    g.rect(9, 18, 9, 3, '#7d9a67');
+    g.rect(15, 15, 12, 4, '#8fae76');
+    g.rect(21, 18, 13, 3, '#6f8e5f');
+    g.rect(7, 20, 7, 3, '#6f8e5f');
+    g.rect(13, 17, 5, 2, '#a9c18a');
+    g.rect(23, 16, 5, 2, '#a9c18a');
+    for (let i = 0; i < 10; i += 1) {
+      g.rect(8 + ((i * 13) % 24), 18 + ((i * 5) % 6), 1, 1, '#c7d8a5');
+    }
+    // little olives
+    for (let i = 0; i < 6; i += 1) {
+      g.rect(12 + ((i * 11) % 20), 20 + ((i * 7) % 5), 1, 1, '#2f3d28');
+    }
+    // two small figures on the path
+    g.rect(49, 36, 2, 6, C.cloak);
+    g.rect(49, 34, 2, 2, C.skin);
+    g.rect(54, 37, 2, 5, C.woodDark);
+    g.rect(54, 35, 2, 2, C.skin);
+    return group('saga-birds', r(54, 7, 2, 1, C.black, 'saga-bird') + r(59, 5, 2, 1, C.black, 'saga-bird', 'animation-delay:-1.8s')) +
+      group('saga-leaves', r(11, 19, 1, 1, '#c7d8a5', 'saga-leaf') + r(27, 20, 1, 1, '#c7d8a5', 'saga-leaf', 'animation-delay:-2.2s')) +
+      group('saga-butterflies', r(44, 32, 2, 1, C.gold2, 'saga-butterfly') + r(60, 34, 2, 1, C.white, 'saga-butterfly', 'animation-delay:-2s'));
+  },
+
+  sunboat(g) {
+    skyBands(g, ['#080b1a', '#11172f', '#1d2545', '#2d3157', '#4a3866'], 30);
+    starField('sunboat-stars', 50, 28);
+    // the sun barque on a dark river
+    water(g, { y: 30, color: '#101f34', shade: '#1c3550', foam: '#c6a75e', seed: 'sunboat-water' });
+    g.rect(0, 30, W, 1, '#6d5a74');
+    // sun disk behind the boat
+    disc(g, 64, 11, 7, C.goldDim);
+    disc(g, 64, 10, 6, C.gold2);
+    g.rect(61, 7, 3, 2, C.gold);
+    // barque hull with high prow and stern
+    g.rect(30, 31, 32, 3, C.woodDark);
+    g.rect(32, 30, 28, 2, C.gold);
+    g.rect(30, 28, 3, 4, C.gold2);
+    g.rect(59, 27, 3, 5, C.gold2);
+    g.rect(32, 31, 28, 1, C.gold2);
+    // mast and solar sail
+    g.rect(46, 18, 1, 13, C.woodDark);
+    g.rect(38, 19, 17, 10, C.bone);
+    g.rect(40, 21, 13, 1, C.gold);
+    g.rect(40, 25, 13, 1, C.gold);
+    g.rect(38, 19, 17, 1, C.gold2);
+    // oars
+    for (let x = 34; x < 58; x += 4) g.rect(x, 34, 3, 1, C.wood);
+    // reflected gold on the river
+    for (let y = 35; y < 44; y += 2) {
+      g.rect(62 + (y % 3), y, 4, 1, C.gold2, 'saga-water-glint', `opacity:${(0.2 + (y % 3) * 0.08).toFixed(2)}`);
+    }
+    // reeds at the bank
+    for (let x = 2; x < 18; x += 3) {
+      g.rect(x, 28 - (x % 3), 1, 14, '#355d4b');
+      g.rect(x + 1, 25 - (x % 4), 1, 4, '#4f7a5c');
+    }
+    for (let x = 82; x < 94; x += 3) {
+      g.rect(x, 29 - (x % 3), 1, 12, '#355d4b');
+      g.rect(x + 1, 26 - (x % 4), 1, 4, '#4f7a5c');
+    }
+    return group('saga-glow', r(56, 4, 18, 14, C.gold2, 'saga-glow-soft', 'opacity:.12')) +
+      group('saga-motes', Array.from({ length: 12 }, (_, index) => r(18 + ((index * 17) % 60), 12 + ((index * 9) % 14), 1, 1, C.gold2, 'saga-mote', `animation-delay:-${(index * 0.5).toFixed(1)}s`)).join('')) +
+      group('saga-wave', r(30, 34, 10, 1, C.gold2, 'saga-wave-pixel', 'opacity:.3'));
+  },
+
+  suncave(g) {
+    // dark rock frame with a bright world outside
+    g.rect(0, 0, W, H, '#11171a');
+    g.rect(36, 5, 58, 40, '#e9c77f');
+    g.rect(36, 5, 58, 4, '#f7e4ad');
+    g.rect(50, 5, 44, 40, '#f2d494');
+    // sun outside
+    disc(g, 72, 16, 6, C.gold2);
+    disc(g, 72, 15, 4, C.white);
+    // distant hills and a torii gate
+    g.rect(36, 33, 58, 12, '#6f8a5e');
+    g.rect(36, 39, 58, 6, '#4d6b4b');
+    g.rect(58, 22, 2, 16, '#7a3f35');
+    g.rect(72, 22, 2, 16, '#7a3f35');
+    g.rect(54, 20, 24, 2, '#8e4a3d');
+    g.rect(56, 17, 20, 2, '#a75a47');
+    g.rect(60, 22, 1, 3, '#5b2f29');
+    // rock walls and roof of the cave
+    g.rect(0, 0, 37, H, '#20282b');
+    g.rect(0, 0, W, 6, '#20282b');
+    for (let x = 0; x < W; x += 8) {
+      g.rect(x, 0, 5, 5 + (x % 6), '#2c3537');
+      g.rect(x + 3, 0, 2, 3, '#171d1f');
+    }
+    for (let y = 8; y < 50; y += 6) {
+      g.rect(29 - (y % 5), y, 8, 3, '#2c3537');
+      g.rect(30 - (y % 3), y + 1, 4, 1, '#394244');
+    }
+    g.rect(0, 43, W, H - 43, '#2b2722');
+    g.rect(0, 43, W, 1, '#4a443a');
+    for (let i = 0; i < 18; i += 1) {
+      g.rect((i * 23) % W, 45 + ((i * 7) % 7), 1, 1, '#4a443a');
+    }
+    // a child with a mirror at the cave mouth
+    g.rect(32, 35, 3, 8, '#7b5b8a');
+    g.rect(33, 32, 2, 3, C.skin);
+    g.rect(31, 31, 5, 2, '#3c2b2a');
+    g.rect(36, 37, 3, 3, C.gold2);
+    g.rect(37, 38, 1, 1, C.white);
+    // light spilling into the cave
+    for (let i = 0; i < 5; i += 1) {
+      g.rect(36 + i * 2, 8 + i * 2, 2, 28 - i * 3, C.gold2, 'saga-glow-soft', `opacity:${(0.1 - i * 0.012).toFixed(3)}`);
+    }
+    return group('saga-motes', Array.from({ length: 14 }, (_, index) => r(8 + ((index * 11) % 26), 10 + ((index * 7) % 30), 1, 1, C.gold2, 'saga-mote', `animation-delay:-${(index * 0.4).toFixed(1)}s`)).join('')) +
+      group('saga-leaves', r(62, 30, 1, 1, '#8fae76', 'saga-leaf') + r(78, 27, 1, 1, '#a9c18a', 'saga-leaf', 'animation-delay:-1.8s'));
+  },
+
+  maize(g) {
+    skyBands(g, ['#20364b', '#31556b', '#5a7f7c', '#9fb98a', '#e3d29b'], 26);
+    cloudBank(g, 'maize-clouds', { y: 3, count: 6, color: '#c9d7c1' });
+    // distant volcano
+    g.rect(56, 15, 28, 12, '#4a5d57');
+    g.rect(62, 12, 16, 4, '#5c7066');
+    g.rect(68, 9, 5, 4, '#8b9b8c');
+    g.rect(69, 8, 3, 1, '#d8dfcf');
+    // green terraces
+    g.rect(0, 25, W, H - 25, '#4f7648');
+    g.rect(0, 33, W, H - 33, '#3f633c');
+    g.rect(0, 43, W, H - 43, '#345334');
+    for (let row = 0; row < 4; row += 1) {
+      g.rect(0, 29 + row * 5, W, 1, '#6e9153');
+    }
+    // maize stalks with cobs
+    const stalk = (x, base, height, delay) => {
+      g.rect(x, base - height, 1, height, '#6f8f3f');
+      for (let leaf = 0; leaf < 4; leaf += 1) {
+        const y = base - 5 - leaf * 4;
+        const side = leaf % 2 ? 1 : -1;
+        g.rect(x + (side > 0 ? 1 : -4), y, 4, 1, '#8faa4d');
+        g.rect(x + (side > 0 ? 4 : -5), y + 1, 2, 1, '#5f7d35');
+      }
+      g.rect(x + (x % 2 ? -2 : 2), base - height + 8, 2, 4, C.gold2);
+      g.rect(x + (x % 2 ? -2 : 2), base - height + 7, 1, 1, C.gold);
+      return r(x, base - height - 1, 1, 2, '#c9b25a', 'saga-leaf', `animation-delay:-${delay}s`);
+    };
+    let stems = '';
+    [10, 18, 27, 38, 47, 75, 84, 92].forEach((x, i) => {
+      stems += stalk(x, 50, 18 + (i % 4) * 3, (i * 0.5).toFixed(1));
+    });
+    // a little farmer with a basket
+    g.rect(58, 37, 3, 7, '#8f5a43');
+    g.rect(59, 34, 2, 3, C.skin);
+    g.rect(58, 33, 4, 2, '#3c2b2a');
+    g.rect(55, 40, 3, 3, C.gold);
+    // sun and birds
+    disc(g, 18, 12, 5, C.gold2);
+    disc(g, 18, 11, 4, C.white);
+    return stems +
+      group('saga-birds', r(40, 8, 2, 1, C.black, 'saga-bird') + r(45, 6, 2, 1, C.black, 'saga-bird', 'animation-delay:-1.5s')) +
+      group('saga-butterflies', r(32, 32, 2, 1, C.gold2, 'saga-butterfly') + r(66, 29, 2, 1, C.white, 'saga-butterfly', 'animation-delay:-2.1s')) +
+      group('saga-leaves', r(20, 30, 1, 1, '#c9b25a', 'saga-leaf') + r(79, 34, 1, 1, '#c9b25a', 'saga-leaf', 'animation-delay:-1.4s'));
+  },
+
+  sky(g) {
+    skyBands(g, ['#2e5a83', '#4f83a6', '#86b3bf', '#c9d8bd', '#f1d69b'], 34);
+    cloudBank(g, 'sky-clouds', { y: 27, count: 9, color: '#e9efe0' });
+    cloudBank(g, 'sky-clouds-low', { y: 38, count: 7, color: '#d5e0d2' });
+    // big friendly sun
+    disc(g, 68, 13, 9, C.goldDim);
+    disc(g, 68, 12, 8, C.gold2);
+    disc(g, 68, 11, 5, C.white);
+    // sun rays
+    for (let i = 0; i < 12; i += 1) {
+      const angle = (i / 12) * Math.PI * 2;
+      const x = Math.round(68 + Math.cos(angle) * 12);
+      const y = Math.round(12 + Math.sin(angle) * 12);
+      g.rect(x, y, 2, 1, C.gold2, 'saga-twinkle', `animation-delay:-${(i * 0.3).toFixed(1)}s`);
+    }
+    // tiny monkey silhouette leaping toward the sun
+    g.rect(44, 24, 4, 5, '#2a2521');
+    g.rect(45, 21, 3, 3, '#2a2521');
+    g.rect(48, 21, 2, 1, '#2a2521');
+    g.rect(42, 26, 2, 1, '#2a2521');
+    g.rect(48, 28, 4, 1, '#2a2521');
+    g.rect(52, 26, 2, 1, '#2a2521');
+    g.rect(54, 24, 1, 2, '#2a2521');
+    g.rect(49, 30, 2, 1, '#2a2521');
+    // birds far below
+    return group('saga-glow', r(54, 2, 30, 22, C.gold2, 'saga-glow-soft', 'opacity:.12')) +
+      group('saga-birds', r(20, 18, 2, 1, C.black, 'saga-bird') + r(26, 22, 2, 1, C.black, 'saga-bird', 'animation-delay:-1.2s') + r(31, 17, 2, 1, C.black, 'saga-bird', 'animation-delay:-2.3s')) +
+      group('saga-motes', Array.from({ length: 10 }, (_, index) => r(6 + ((index * 13) % 40), 8 + ((index * 9) % 26), 1, 1, C.white, 'saga-mote', `animation-delay:-${(index * 0.7).toFixed(1)}s`)).join(''));
+  },
 };
 
 const sceneKeys = Object.keys(scenes);
@@ -1337,6 +1790,221 @@ const SIGILS = {
     '..gg............',
     '..gg............',
     '...gg...........',
+    '................',
+    '................',
+  ],
+  lamp: [
+    '................',
+    '.......y........',
+    '......yyy.......',
+    '.....yyyyy......',
+    '.....yyyyy......',
+    '......yyy.......',
+    '.......y........',
+    '....iiiiiii.....',
+    '...i.......i....',
+    '...i.......i....',
+    '....iiiiiii.....',
+    '................',
+    '................',
+    '................',
+    '................',
+    '................',
+  ],
+  star: [
+    '................',
+    '.......y........',
+    '.......y........',
+    '......yyy.......',
+    '......yyy.......',
+    '..yyyyyyyyyyy...',
+    '...yyyyyyyyy....',
+    '....yyyyyyy.....',
+    '.....yyyyy......',
+    '....yyy.yyy.....',
+    '...yy.....yy....',
+    '..y.........y...',
+    '................',
+    '................',
+    '................',
+    '................',
+  ],
+  reed: [
+    '................',
+    '....g.....g.....',
+    '....g.....g.....',
+    '...gg....gg.....',
+    '....g.....g.....',
+    '....g..b..g.....',
+    '...gg..b.gg.....',
+    '....g..b..g.....',
+    '....g.....g.....',
+    '...gg....gg.....',
+    '....g.....g.....',
+    '....g.....g.....',
+    '...gg....gg.....',
+    '................',
+    '................',
+    '................',
+  ],
+  mirror: [
+    '................',
+    '....yyyyyy......',
+    '...y......y.....',
+    '..y........y....',
+    '..y........y....',
+    '..y........y....',
+    '...y......y.....',
+    '....yyyyyy......',
+    '.......bb.......',
+    '.......bb.......',
+    '.......bb.......',
+    '......bbbb......',
+    '................',
+    '................',
+    '................',
+    '................',
+  ],
+  jewels: [
+    '................',
+    '.....y..y.......',
+    '....yyy.yyy.....',
+    '...yyyyyyyyy....',
+    '....yyyyyyy.....',
+    '.....yyyyy......',
+    '......yyy.......',
+    '.......y........',
+    '...y...y...y....',
+    '..yyy..y..yyy...',
+    '..yyy.....yyy...',
+    '...y.......y....',
+    '................',
+    '................',
+    '................',
+    '................',
+  ],
+  drum: [
+    '................',
+    '....yyyyyyyy....',
+    '...y........y...',
+    '..y..y....y..y..',
+    '..y...y..y...y..',
+    '..y....yy....y..',
+    '..y....yy....y..',
+    '..y...y..y...y..',
+    '..y..y....y..y..',
+    '...y........y...',
+    '....yyyyyyyy....',
+    '.......bb.......',
+    '.......bb.......',
+    '......bbbb......',
+    '................',
+    '................',
+  ],
+  ant: [
+    '................',
+    '................',
+    '.......kk.......',
+    '......kkkk......',
+    '.......kk.......',
+    '....kkkkkkkk....',
+    '...kk.kkkk.kk...',
+    '..k...kkkk...k..',
+    '......kkkk......',
+    '.....kk..kk.....',
+    '....kk....kk....',
+    '...k........k...',
+    '................',
+    '................',
+    '................',
+    '................',
+  ],
+  rain: [
+    '................',
+    '......kkkk......',
+    '....kkkkkkkk....',
+    '...kkkkkkkkkk...',
+    '..kkkkkkkkkkkk..',
+    '..kkkkkkkkkkkk..',
+    '...kkkkkkkkkk...',
+    '................',
+    '...b..b..b..b...',
+    '..b..b..b..b....',
+    '..b..b..b..b....',
+    '...b..b..b..b...',
+    '................',
+    '................',
+    '................',
+    '................',
+  ],
+  owl: [
+    '................',
+    '...kk......kk...',
+    '..kkkk....kkkk..',
+    '..kkyk....kkyk..',
+    '..kkkk....kkkk..',
+    '...kkkkkkkkkk...',
+    '....kkkkkkkk....',
+    '...kkkkkkkkkk...',
+    '...kkk.yy.kkk...',
+    '...kkk.yy.kkk...',
+    '....kkkkkkkk....',
+    '.....kkkkkk.....',
+    '......kkkk......',
+    '................',
+    '................',
+    '................',
+  ],
+  leap: [
+    '................',
+    '..........kk....',
+    '.........kkkk...',
+    '..........kk....',
+    '.....kkkkkkk....',
+    '....kkkkkkkk....',
+    '...kkk.kk.kk....',
+    '..kk...kk..k....',
+    '.......kk.......',
+    '......kk.kk.....',
+    '.....kk...kk....',
+    '....kk.....kk...',
+    '...k.........k..',
+    '................',
+    '................',
+    '................',
+  ],
+  ask: [
+    '................',
+    '...kkkkkkkk.....',
+    '..kkkkkkkkkk....',
+    '..kkk....kkkk...',
+    '..kkk.....kkk...',
+    '..kkk....kkk....',
+    '..kkk...kkk.....',
+    '..kkk...kkk.....',
+    '..kkk...........',
+    '..kkk...kkk.....',
+    '..kkk...kkk.....',
+    '..kkkkkkkkkk....',
+    '...kkkkkkkk.....',
+    '................',
+    '................',
+    '................',
+  ],
+  share: [
+    '................',
+    '....kk....kk....',
+    '...kkkk..kkkk...',
+    '..kk..kkkk..kk..',
+    '..kk...kk...kk..',
+    '..kk...kk...kk..',
+    '...kk..kk..kk...',
+    '....kkkkkkkk....',
+    '.....kkkkkk.....',
+    '......kkkk......',
+    '.......kk.......',
+    '................',
+    '................',
     '................',
     '................',
   ],

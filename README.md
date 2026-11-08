@@ -1,12 +1,12 @@
 # Mythos — a world mythology game
 
-A text-first educational game for ages 12+. Read short retellings from thirty-five
-world traditions, answer quizzes, unlock a codex of figures and terms, and
-explore a stylised world map and timeline. A separate branching saga,
-**The Ash-Seed**, lets you walk a Norse myth as a mortal of your own naming,
-choosing roads that lead to five different endings. Stories and questions carry
-original pixel-art SVG scenes, and optional pre-generated narration reads the
-text aloud.
+A text-first educational game for ages 12+, with choose-your-path story
+retellings written for readers aged 8 and up. Read short retellings from
+thirty-five world traditions, answer quizzes, unlock a codex of figures and
+terms, and explore a stylised world map and timeline. Six branching sagas let
+you step into a myth as a character of your own naming, choosing roads that lead
+to different endings. Stories and questions carry original pixel-art SVG scenes,
+and optional narration reads the text aloud.
 
 There is no build step and no framework. Content lives in JSON, the interface is
 HTML/CSS/vanilla ES modules, and every image is SVG. Progress stays in the
@@ -78,22 +78,40 @@ any static host.
 
 The timeline catalogues all 35 traditions. Every one is now playable.
 
-### The Ash-Seed (branching saga)
+### Story paths (branching sagas)
 
-`#/saga` is a step-by-step choose-your-path retelling of Norse myth. You name
-the protagonist (default **Michael**; suggestions include Jason, Astrid and
-Eirik), then follow one of three roads — the Raven's Road, the Wolf's Road or
-the Hammer's Road — through 20 hand-written scenes to one of five endings.
-Prose is revealed one paragraph at a time, in short scenes. A Listen control
-reads the scene aloud, and every visible paragraph has its own Listen button;
-a myth note and a set of choices appear when the scene is complete. Some choices are gated by the gifts and
-debts you have collected, and every choice is saved as a snapshot so the
-in-game back button and browser history can rewind cleanly.
+`#/saga` is a library of six choose-your-path retellings. Each story has three
+roads and four or five endings, and each is an original interactive retelling,
+not a translation. The five newer paths are written for readers aged 8–11:
+short present-tense scenes, clear choices, no graphic violence, and a short
+myth note at every stop that names the real sources and the points where
+tellings disagree.
 
-Saga progress is stored separately in `mythos.saga.v1`, so a saga run never
-disturbs quiz, codex or challenge progress. The saga is English-only and uses
-the common English spellings of Norse names. It is an original interactive
-retelling, not a translation; its sources are the Poetic Edda and Prose Edda.
+| Story | Tradition | Age | Roads | Endings |
+| --- | --- | ---: | --- | ---: |
+| The Olive Tree Contest | Greek | 8+ | olive, sea, council | 4 |
+| The Sun in the Cave | Japanese | 8+ | mirror, jewels, dance | 4 |
+| The First Maize | Maya | 8+ | ants, rain, owl | 4 |
+| Hanuman and the Sun | Hindu | 8+ | leap, ask, share | 4 |
+| The Boat of the Sun | Egyptian | 9+ | lamp, stars, names | 4 |
+| The Ash-Seed | Norse | 10+ | raven, wolf, hammer | 5 |
+
+You name the protagonist, then read one short scene at a time. A Listen control
+reads the scene aloud, and every visible paragraph has its own Listen button; a
+myth note and a set of choices appear when the scene is complete. Some choices
+are gated by gifts and debts collected earlier, and every choice is saved as a
+snapshot so the in-game back button and browser history can rewind cleanly. The
+Norse story is a longer, older-reader path with 20 scenes; the new stories are
+shorter and use simpler language.
+
+A run is stored per story in `mythos.saga.v2`, so one path never overwrites
+another and saga runs never disturb quiz, codex or challenge progress. The old
+single-story key, `mythos.saga.v1`, is migrated automatically on first read.
+The five new stories use the browser's installed voice for narration; the
+existing stories and the Norse saga also offer the recorded studio voices. The
+sagas are English-only. Names use common English spellings, and living
+traditions are presented with care: the Hindu and Japanese notes explain
+multiple tellings and treat the figures with respect.
 
 ### Game rules
 
@@ -105,14 +123,15 @@ retelling, not a translation; its sources are the Poetic Edda and Prose Edda.
   tradition's codex.
 - Progress, quiz bests, challenge results and badges are stored in
   `localStorage` under `mythos.progress.v1`. Theme and text size are stored in
-  `mythos.settings.v1`. Saga runs use `mythos.saga.v1`.
+  `mythos.settings.v1`. Saga runs use `mythos.saga.v2` (one entry per story,
+  migrated from `mythos.saga.v1` when needed).
 - The palette follows the OS `prefers-color-scheme` until the reader presses
   the theme button; that explicit light/dark choice is then stored as
   `themeMode` and wins on later visits. OS changes are mirrored live only while
   no explicit choice exists.
-- The saga has no quiz gate: it is a story-first mode. Its choices filter on
-  flags earned earlier in the same run, and its five endings are collected in a
-  gallery on `#/saga`.
+- The sagas have no quiz gate: they are a story-first mode. Choices filter on
+  flags earned earlier in the same run, endings are collected per story, and
+  the library at `#/saga` shows which paths you have started or finished.
 - The three challenges (Timeline Builder, Pantheon Match, Which Culture?) and
   the results/badges screen are optional practice.
 
@@ -152,15 +171,21 @@ js/
   map.js                accessible inline SVG world map
   scene.js              deterministic pixel-art story scenes, quiz clues,
                         answer icons and character portraits
-  saga.js               The Ash-Seed landing, scene reader, choices and endings
-  saga-art.js           14 animated inline-SVG saga scenes and path glyphs
-  saga-state.js         defensive save/rewind/effects for the saga run
+  saga.js               story library, per-saga landing, scene reader, choices and endings
+  saga-art.js           animated inline-SVG saga scenes and path glyphs
+  saga-state.js         per-story save/rewind/effects with v1 migration
   narration.js          studio-clip playback with browser speech fallback
   ui.js                 shared escaping, formatting and dialog helpers
 content/
   mythologies.json      35-tradition catalogue; `mvp: true` for all thirty-five
   greek/ ...            five JSON files per playable tradition
+  sagas.json            story-library catalog: titles, covers, ages and files
   saga/norse.json       the branching Ash-Seed story graph, paths and endings
+  saga/greek-olive.json the Greek olive-contest story graph
+  saga/japan-sun-cave.json
+  saga/maya-maize.json
+  saga/hindu-hanuman.json
+  saga/egypt-sunboat.json
 schemas/                JSON Schema documents for every content file
 audio/
   voices/               joe, cori and morgan narration clips
@@ -198,12 +223,14 @@ IDs follow the pattern `<mythology-id>-01` for stories and
 `<mythology-id>-q01` for questions. Character references in stories must exist in
 that tradition's `characters.json`.
 
-Branching sagas live under `content/saga/`. Each file declares its `start` node,
-acts, named paths, a `boons` label map and an `endings` list. `nodes` is keyed by
-scene id; a node contains prose paragraphs, an `art` scene key, an optional lore
-note, and either 2–5 `choices` (`to`, `tag`, `effects`, `requires.anyFlags`) or
-an `ending`. The validator checks targets, flags, stats, reachable scenes and
-every route's ability to reach an ending.
+Branching sagas live under `content/saga/`, and `content/sagas.json` lists them
+in display order. Each story file declares its `start` node, acts, named paths,
+a `boons` label map and an `endings` list. `nodes` is keyed by scene id; a node
+contains prose paragraphs, an `art` scene key, an optional lore note, and either
+2–5 `choices` (`to`, `tag`, `effects`, `requires.anyFlags`) or an `ending`. The
+validator checks every story graph, its endings and reachability, and also
+checks that the catalog and the files agree on ids, titles, traditions and
+cover art.
 
 ### Adding a tradition
 
@@ -280,10 +307,12 @@ quiz → unlock → persistence loop, failed quiz and retry, the final challenge
 codex unlocks, timeline, all three challenges, the map and its mobile scroll,
 story and quiz SVG scenes, answer icons, narration controls, studio-clip playback,
 system-voice selection, theme/font persistence, OS `prefers-color-scheme` defaults, reset confirmation, responsive overflow, skip
-link and quiz keyboard feedback. The saga suite covers name entry and the
-default protagonist, progressive reveal, scene and paragraph narration, the
-myth note, gated choices, persistence and resume, in-game back, restart
-confirmation, ending collection and mobile overflow.
+link and quiz keyboard feedback. The saga suite covers the six-story library,
+per-story state, a complete Greek path, browser-voice narration for the new
+stories, legacy-link migration, name entry and the default protagonist,
+progressive reveal, scene and paragraph narration, the myth note, gated
+choices, persistence and resume, in-game back, restart confirmation, ending
+collection and mobile overflow.
 
 ```bash
 npm test

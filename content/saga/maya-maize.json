@@ -1,0 +1,555 @@
+{
+  "id": "maya-maize",
+  "studio_clips": false,
+  "cover_art": "maize",
+  "cover_caption": "A field waiting for rain",
+  "source_note": "This is an original interactive retelling, not a translation. The myth notes point to the real sources and explain where tellings differ. The young protagonist and the choices are invented for the game.",
+  "tradition": "Maya",
+  "title": "The First Maize",
+  "subtitle": "A choose-your-path story of maize, rain and patient farmers",
+  "tagline": "The village is hungry. The maize is hidden. Three trails lead up the mountain.",
+  "intro": "Your village has eaten the last of the old corn. The rains are late, and the mountain is keeping a secret. Three trails lead up from the dry milpa: one with ants, one to the rain shrine, and one where an owl calls. You are small, hungry and very good at noticing things. Choose a trail, ask good questions, and decide what a seed is really for.",
+  "setting": "A Maya village below the mountain, before this year's first harvest",
+  "default_name": "Ixchel",
+  "name_suggestions": [
+    "Ixchel",
+    "K'in",
+    "Nali",
+    "Balam"
+  ],
+  "start": "empty-pot",
+  "acts": [
+    {
+      "id": 1,
+      "title": "The Empty Pot"
+    },
+    {
+      "id": 2,
+      "title": "Three Trails"
+    },
+    {
+      "id": 3,
+      "title": "What the Seed Is For"
+    }
+  ],
+  "paths": [
+    {
+      "id": "ants",
+      "title": "Follow the Ants",
+      "glyph": "ant",
+      "blurb": "Follow the leaf-cutters under the mountain, meet the old woman with the seed basket, and decide who gets the first ear."
+    },
+    {
+      "id": "rain",
+      "title": "Ask the Rain",
+      "glyph": "rain",
+      "blurb": "Climb to the hilltop shrine, share your water, and listen to what the cloud remembers about hidden fields."
+    },
+    {
+      "id": "owl",
+      "title": "Follow the Owl",
+      "glyph": "owl",
+      "blurb": "Pay the owl's toll in honesty or tortillas, then find the field that has been waiting for patient hands."
+    }
+  ],
+  "boons": {
+    "followedAnts": "Took the ants' trail",
+    "askedRain": "Asked the rain for help",
+    "followedOwl": "Paid the owl's toll",
+    "wentUnderground": "Went under the stone",
+    "watchedAnts": "Watched before walking",
+    "sharedWater": "Shared your water",
+    "climbedHigher": "Climbed into the cloud",
+    "honestOwl": "Told the owl the truth",
+    "sharedTortilla": "Fed the owl",
+    "askedOwl": "Asked the owl a question"
+  },
+  "endings": [
+    {
+      "id": "first-harvest",
+      "title": "The First Harvest",
+      "rank": "Best ending",
+      "blurb": "Plant the seed with the whole village, tend it, and taste the first ear together.",
+      "node": "ending-first-harvest"
+    },
+    {
+      "id": "maize-for-everyone",
+      "title": "Maize for Everyone",
+      "rank": "Shared ending",
+      "blurb": "Divide the ear among the families and watch the mountain maize spread.",
+      "node": "ending-maize-everyone"
+    },
+    {
+      "id": "seed-keeper",
+      "title": "The Seed Keeper",
+      "rank": "Quiet ending",
+      "blurb": "Keep the seed safe in a jar, and open it when the village needs it most.",
+      "node": "ending-seed-keeper"
+    },
+    {
+      "id": "mountain-secret",
+      "title": "The Mountain Keeps Its Secret",
+      "rank": "Bittersweet ending",
+      "blurb": "Take nothing, leave the hidden field in peace, and come back with a friend.",
+      "node": "ending-mountain-secret"
+    }
+  ],
+  "nodes": {
+    "empty-pot": {
+      "id": "empty-pot",
+      "act": 1,
+      "chapter": "1",
+      "title": "The Empty Pot",
+      "location": "Your village, below the mountain",
+      "art": "dryfield",
+      "artCaption": "Cracked earth, dead maize stalks and an empty clay pot",
+      "text": [
+        "The pot is empty. You are {name}, and you scrape the last handful of maize into your mother's bowl and lick the spoon.",
+        "Your little brother asks if there will be tortillas tomorrow. Nobody answers. Outside, the milpa is dry, and the rain has not come.",
+        "Grandmother takes your hand. 'When I was small, the first maize was hidden in the mountain,' she says. 'The story says a child found it. Maybe a child still can.'",
+        "Three trails leave the village. Ants march along the first. The second climbs to the rain shrine. An owl calls from the third.",
+        "'Choose carefully,' Grandmother says. 'A full belly is not the only thing worth finding.'"
+      ],
+      "lore": {
+        "title": "Maize and the milpa",
+        "body": "Maya farmers grow maize in the milpa, a field shared with beans and squash. The beans climb the corn and feed the soil; the squash leaves shade the ground. Maize was not found ready-made. Over thousands of years, farmers bred it from a wild grass called teosinte, choosing bigger ears season after season.",
+        "source": "Maya milpa farming; archaeological and ethnographic knowledge of maize domestication"
+      },
+      "choices": [
+        {
+          "label": "Follow the ants along the warm stone path",
+          "to": "ants-1",
+          "tag": "Ants' trail · +1 cunning",
+          "effects": {
+            "add": {
+              "cunning": 1
+            },
+            "set": {
+              "followedAnts": true
+            }
+          }
+        },
+        {
+          "label": "Climb to the rain shrine and ask for help",
+          "to": "rain-1",
+          "tag": "Rain's road · +1 insight",
+          "effects": {
+            "add": {
+              "insight": 1
+            },
+            "set": {
+              "askedRain": true
+            }
+          }
+        },
+        {
+          "label": "Follow the owl's call into the tall grass",
+          "to": "owl-1",
+          "tag": "Owl's road · +1 courage",
+          "effects": {
+            "add": {
+              "courage": 1
+            },
+            "set": {
+              "followedOwl": true
+            }
+          }
+        }
+      ]
+    },
+    "ants-1": {
+      "id": "ants-1",
+      "act": 2,
+      "chapter": "2",
+      "title": "The Ants' Road",
+      "location": "A stone trail above the village",
+      "art": "maize",
+      "artCaption": "A line of leaf-cutter ants carrying green pieces",
+      "text": [
+        "The ants are leaf-cutters. Each one carries a green piece bigger than its own body. They march between the stones like a small, busy river.",
+        "You follow them past the last house. The trail is warm under your feet. The ants never stop and never argue.",
+        "A grey armadillo is digging beside the path. It stops, sniffs, and looks at you with one bright eye. 'You are late,' it says. 'The field has been waiting all morning.'",
+        "'What field?' you ask. The armadillo flicks its tail. 'The one under the mountain. The ants keep the door. They are very good at doors.'",
+        "The ant line disappears into a crack between two roots. It is just wide enough for a child."
+      ],
+      "lore": {
+        "title": "Ants, animals and hidden maize",
+        "body": "In the Popol Vuh, a K'iche' Maya text, the hero twins find maize with the help of small creatures: ants carry kernels, and animals lead the way to Paxil, the place where maize is kept. The grain is hidden, then shared. The Popol Vuh is one K'iche' telling, and Maya communities tell many maize stories of their own.",
+        "source": "Popol Vuh (K'iche' Maya)"
+      },
+      "choices": [
+        {
+          "label": "Crawl through the crack and follow the ants",
+          "to": "ants-2",
+          "tag": "Underground path · +1 courage",
+          "effects": {
+            "add": {
+              "courage": 1
+            },
+            "set": {
+              "wentUnderground": true
+            }
+          }
+        },
+        {
+          "label": "Wait quietly and watch where the ants carry the seeds",
+          "to": "ants-2",
+          "tag": "Patience · +2 insight",
+          "effects": {
+            "add": {
+              "insight": 2
+            },
+            "set": {
+              "watchedAnts": true
+            }
+          }
+        }
+      ]
+    },
+    "ants-2": {
+      "id": "ants-2",
+      "act": 2,
+      "chapter": "3",
+      "title": "The Field in the Mountain",
+      "location": "A sunlit hollow under the mountain",
+      "art": "maize",
+      "artCaption": "A hidden field of red, white, yellow and blue maize",
+      "text": [
+        "The crack opens into a hollow full of light. Sunlight falls through a hole in the roof onto a field of maize.",
+        "The stalks are taller than your father. The ears are red, white, yellow and blue. You have never seen so much food in one place.",
+        "An old woman sits on a stone, shelling kernels into a basket. Her hands are quick. Her smile is missing two teeth. 'Took you long enough,' she says. 'The ants said you were coming.'",
+        "She holds out one ear. 'This is seed, not dinner. One ear can fill a field. A field can fill a village.' She waits. 'What will you do with it?'"
+      ],
+      "lore": {
+        "title": "Many kinds of maize",
+        "body": "Maya farmers grow many kinds of maize, called landraces: white, yellow, red and dark blue, each suited to different soil, rain and height. Families choose the best ears every year and keep the seed. Over generations, this careful choosing shapes the crop. Maize is a partnership between plants and people.",
+        "source": "Ethnographic knowledge of Maya maize farming"
+      },
+      "choices": [
+        {
+          "label": "Plant it in the village milpa and tend it with everyone",
+          "to": "ending-first-harvest",
+          "tag": "The careful planting · +1 insight",
+          "effects": {
+            "add": {
+              "insight": 1
+            }
+          }
+        },
+        {
+          "label": "Share the kernels with every family in the village",
+          "to": "ending-maize-everyone",
+          "tag": "A handful for each house · +1 courage",
+          "effects": {
+            "add": {
+              "courage": 1
+            }
+          }
+        }
+      ]
+    },
+    "rain-1": {
+      "id": "rain-1",
+      "act": 2,
+      "chapter": "2",
+      "title": "The Rain Shrine",
+      "location": "A hilltop shrine above the milpa",
+      "art": "sky",
+      "artCaption": "A low stone shrine under a wide, waiting sky",
+      "text": [
+        "The trail ends at a low stone shrine. Someone has left three corn cobs and a gourd of water on the ledge.",
+        "The sky is huge and empty. You feel small in the good way, like a seed in a wide field.",
+        "You pour your water on the stone and say the words Grandmother taught you. They are old and plain. 'We are here. We are hungry. Help us grow.'",
+        "A cloud gathers. One drop hits your nose, then another. A girl your age is sitting behind the shrine with a gourd. 'I have been asking for three days,' she says. 'You are very loud.'"
+      ],
+      "lore": {
+        "title": "Chaac and the living rain ceremonies",
+        "body": "The Maya rain god is called Chaac in Yucatec Maya and has many names in other Maya languages. He carries a lightning axe and brings the storms that feed the milpa. Farmers still ask for rain at shrines, springs and fields. These are living ceremonies, not lost mysteries, and they vary from community to community.",
+        "source": "Ethnographic knowledge of Maya rain ceremonies; Books of Chilam Balam"
+      },
+      "choices": [
+        {
+          "label": "Share your water and wait with her",
+          "to": "rain-2",
+          "tag": "Shared water · +1 insight",
+          "effects": {
+            "add": {
+              "insight": 1
+            },
+            "set": {
+              "sharedWater": true
+            }
+          }
+        },
+        {
+          "label": "Climb higher, into the cloud, and ask again",
+          "to": "rain-2",
+          "tag": "A bolder prayer · +1 courage",
+          "effects": {
+            "add": {
+              "courage": 1
+            },
+            "set": {
+              "climbedHigher": true
+            }
+          }
+        }
+      ]
+    },
+    "rain-2": {
+      "id": "rain-2",
+      "act": 2,
+      "chapter": "3",
+      "title": "What the Rain Remembers",
+      "location": "The shoulder of the cloud",
+      "art": "sky",
+      "artCaption": "Grey cloud, green field and a village far below",
+      "text": [
+        "The cloud is cool and grey, like a wet blanket. Inside it, you can hear the rain deciding.",
+        "It speaks in a hundred small voices. It remembers every field it has fed and every field it has missed.",
+        "'We do not make maize,' the rain says. 'We only water it. The seed does the work. The farmer does the waiting.'",
+        "It shows you a hidden milpa on the mountain, green in the grey. 'The first farmers kept seed there when the weather failed. Go and see. Then decide who eats.'",
+        "The cloud thins. Below, the village looks very small, and the mountain looks very patient."
+      ],
+      "lore": {
+        "title": "Water, soil and patience",
+        "body": "Maya farmers have long managed water as carefully as soil. They built terraces on slopes, canals and reservoirs near cities, and raised fields in wet lowlands. Maize needs rain at the right moment, not just a lot of it. Farming here is a long conversation with weather, water and land.",
+        "source": "Archaeological knowledge of Maya agriculture"
+      },
+      "choices": [
+        {
+          "label": "Take one ear and plant it carefully in the village milpa",
+          "to": "ending-first-harvest",
+          "tag": "Seed for the home field · +1 insight",
+          "effects": {
+            "add": {
+              "insight": 1
+            }
+          }
+        },
+        {
+          "label": "Carry seed to the hungry villages downriver",
+          "to": "ending-maize-everyone",
+          "tag": "Seed for the river · +1 courage",
+          "effects": {
+            "add": {
+              "courage": 1
+            }
+          }
+        }
+      ]
+    },
+    "owl-1": {
+      "id": "owl-1",
+      "act": 2,
+      "chapter": "2",
+      "title": "The Owl's Question",
+      "location": "The tall grass at the mountain's foot",
+      "art": "maize",
+      "artCaption": "A small brown owl on a fence post at dusk",
+      "text": [
+        "The owl is small and brown, with eyes like two cups of warm tea. It watches you from a fence post.",
+        "You try to walk past. It clicks its beak. 'Not so fast,' it says. 'Night visitors pay a toll. One question.'",
+        "'What did you bring to the field today?' Its voice is soft and a little amused.",
+        "You think about your empty pot. 'Nothing,' you say. 'Good,' says the owl. 'The field does not need your cleverness. It needs your hands and your patience.'",
+        "It spreads its wings and glides into the tall grass. Then it waits, head turned, clearly expecting you to follow."
+      ],
+      "lore": {
+        "title": "Owls as watchers",
+        "body": "In Classic Maya art, a bird called the moan bird is often shown as a night messenger. Owls see in the dark, and many Maya stories give them a role as watchers and questioners. The details differ from one community to another. Respectful retellings usually keep the local meaning and credit the tellers.",
+        "source": "Classic Maya art; ethnographic knowledge of Maya storytelling"
+      },
+      "choices": [
+        {
+          "label": "Tell the truth: you brought nothing but empty hands",
+          "to": "owl-2",
+          "tag": "Honest answer · +1 insight",
+          "effects": {
+            "add": {
+              "insight": 1
+            },
+            "set": {
+              "honestOwl": true
+            }
+          }
+        },
+        {
+          "label": "Offer the owl the last tortilla in your pocket",
+          "to": "owl-2",
+          "tag": "A small gift · +1 courage",
+          "effects": {
+            "add": {
+              "courage": 1
+            },
+            "set": {
+              "sharedTortilla": true
+            }
+          }
+        },
+        {
+          "label": "Ask the owl what it would rather have",
+          "to": "owl-2",
+          "tag": "A clever question · +1 cunning",
+          "effects": {
+            "add": {
+              "cunning": 1
+            },
+            "set": {
+              "askedOwl": true
+            }
+          }
+        }
+      ]
+    },
+    "owl-2": {
+      "id": "owl-2",
+      "act": 2,
+      "chapter": "3",
+      "title": "The Field That Waits",
+      "location": "A hidden milpa on the mountain",
+      "art": "maize",
+      "artCaption": "A green hillside field with beans climbing the corn",
+      "text": [
+        "The owl leads you up a trail you have never seen. The grass closes behind it like a curtain.",
+        "On a shelf of hillside, someone has cleared a field. Maize grows in rows, tall and green, with beans climbing the stalks.",
+        "Three stone tools lie by the path: a planting stick, a hoe, and a jar. The earth is still damp. Someone was here very recently.",
+        "The owl lands on a stump. 'This field fed a village once,' it says. 'Then the young people left for the town. The seed stayed. Someone must decide what it is for.'",
+        "The jar is full of kernels. The kernels are cool in your hand."
+      ],
+      "lore": {
+        "title": "The milpa that rests",
+        "body": "Maya milpa farming often moves: a field is planted for a few years, then left to rest and regrow while the family clears another. Fallow land is not wasted land. It recovers soil, feeds animals and holds seed. Today many Maya farmers combine this older rhythm with new crops and markets.",
+        "source": "Ethnographic knowledge of Maya milpa farming"
+      },
+      "choices": [
+        {
+          "label": "Fill the jar and keep the seed safe for the village",
+          "to": "ending-seed-keeper",
+          "tag": "The keeper's jar · +1 insight",
+          "effects": {
+            "add": {
+              "insight": 1
+            }
+          }
+        },
+        {
+          "label": "Leave the field alone and tell the village it is waiting",
+          "to": "ending-mountain-secret",
+          "tag": "A field at rest · +1 courage",
+          "effects": {
+            "add": {
+              "courage": 1
+            }
+          }
+        }
+      ]
+    },
+    "ending-first-harvest": {
+      "id": "ending-first-harvest",
+      "act": 3,
+      "chapter": "4",
+      "title": "The First Harvest",
+      "location": "The village milpa",
+      "art": "maize",
+      "artCaption": "The first golden ear, held up in two hands",
+      "text": [
+        "You plant the seed in the village milpa. The whole village helps. Your mother digs, Grandmother sings, and your little brother drops kernels into each hole.",
+        "The rain comes late, but it comes. Green blades push up. You sleep at the edge of the field to scare off birds, and you carry water in a gourd.",
+        "The first ear is small and perfect. You roast it over the fire and break it into tiny pieces so everyone tastes it. Your brother gets the longest piece.",
+        "That harvest is thin. The next is better, and the next better again. You keep seed from the best ears, as farmers here have done for thousands of years."
+      ],
+      "lore": {
+        "title": "Nixtamal, the old kitchen science",
+        "body": "Maya cooks soak maize in water with lime or wood ash before grinding it. The practice is called nixtamalization. It softens the grain, makes its nutrients easier to use, and helps the body take up niacin. This is farming and cooking knowledge refined over thousands of years by generations of Maya families.",
+        "source": "Archaeological and ethnographic knowledge of Maya foodways"
+      },
+      "ending": {
+        "id": "first-harvest",
+        "title": "The First Harvest",
+        "rank": "Best ending",
+        "summary": "You planted the hidden seed with the whole village and tended it. The first harvest was small, and it was shared."
+      }
+    },
+    "ending-maize-everyone": {
+      "id": "ending-maize-everyone",
+      "act": 3,
+      "chapter": "4",
+      "title": "Maize for Everyone",
+      "location": "The villages along the river",
+      "art": "maize",
+      "artCaption": "Small bundles of seed passed from hand to hand",
+      "text": [
+        "You divide the ear. A handful of kernels for each family, wrapped in a maize leaf.",
+        "Some families plant them that week. Others keep half for eating and half for seed.",
+        "By the next year, six villages grow the mountain maize. It is not the same everywhere. It changes in every field, as maize always does.",
+        "People begin to ask you for seed. You learn to say, 'This one likes dry land,' and, 'This one likes the river.' A full belly is good. A full village is better.",
+        "You are not a hero in a story. You are the person with the good jar and the frank answer."
+      ],
+      "lore": {
+        "title": "Seed travels",
+        "body": "Maya farmers today still exchange seed across families and villages. A variety that fails in one field may thrive in another, so sharing is practical as well as generous. Community seed banks and seed savers keep many maize varieties alive. The knowledge travels with the kernels.",
+        "source": "Ethnographic knowledge of Maya seed saving"
+      },
+      "ending": {
+        "id": "maize-for-everyone",
+        "title": "Maize for Everyone",
+        "rank": "Shared ending",
+        "summary": "You divided the ear instead of hoarding it. The mountain maize spread along the river, changing in every field."
+      }
+    },
+    "ending-seed-keeper": {
+      "id": "ending-seed-keeper",
+      "act": 3,
+      "chapter": "4",
+      "title": "The Seed Keeper",
+      "location": "Your house, and the jars in the cool dark",
+      "art": "maize",
+      "artCaption": "A painted clay jar of kernels in a shadowed room",
+      "text": [
+        "You do not plant the seed this year. You put the ear in a clay jar with a painted lid and set it in the cool dark of the house.",
+        "You check it every month. You learn the signs: a damp smell means mould, and a light rattle means a beetle.",
+        "Years pass. Bad seasons come. When the village has nothing, you open the jar and share it, and a field grows again.",
+        "Children ask why you sit with the jars. You tell them: 'A seed is a promise someone made before you were born.'",
+        "You are not famous. You are the quiet reason the seed is still here."
+      ],
+      "lore": {
+        "title": "Keeping seed alive",
+        "body": "Maya families often keep seed in gourds, clay jars or sealed containers, and some communities run seed banks. Good storage means cool, dry, dark conditions and regular checking for insects and mould. A seed keeper holds more than grain: they hold the work of every farmer who chose that ear.",
+        "source": "Ethnographic knowledge of Maya seed keeping"
+      },
+      "ending": {
+        "id": "seed-keeper",
+        "title": "The Seed Keeper",
+        "rank": "Quiet ending",
+        "summary": "You kept the ear in a jar instead of eating it. In a bad year you opened it, and the field began again."
+      }
+    },
+    "ending-mountain-secret": {
+      "id": "ending-mountain-secret",
+      "act": 3,
+      "chapter": "4",
+      "title": "The Mountain Keeps Its Secret",
+      "location": "The hidden milpa, and the village below",
+      "art": "maize",
+      "artCaption": "A green field behind a mended fence, seen from the trail",
+      "text": [
+        "You leave the hidden field alone. You take nothing, not even one kernel. You walk down the mountain with empty hands.",
+        "That year is hard. People eat less and complain more. Your brother cries for tortillas, and you have none to give him.",
+        "In spring you go back. The field is green again, and someone has mended the fence. Another child stands there with a jar, looking at you.",
+        "The mountain was never a secret to be stolen. It was a place to meet. You show the child the planting stick, and together you dig.",
+        "The village does not get rich. But the field is still there, and so is the path, and next year someone else will climb it."
+      ],
+      "lore": {
+        "title": "Places that are left alone",
+        "body": "Not every place is meant to be harvested. Many Maya communities treat particular hills, springs and groves as sacred or protected, and keep farming away from them. Respect is part of the agricultural calendar, not a decoration on it. Knowing when to leave a place alone is also a kind of knowledge.",
+        "source": "Ethnographic knowledge of Maya sacred landscapes"
+      },
+      "ending": {
+        "id": "mountain-secret",
+        "title": "The Mountain Keeps Its Secret",
+        "rank": "Bittersweet ending",
+        "summary": "You took nothing and the village went hungry. The field stayed green, and another child came to learn."
+      }
+    }
+  }
+}

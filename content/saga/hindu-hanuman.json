@@ -1,0 +1,600 @@
+{
+  "id": "hindu-hanuman",
+  "studio_clips": false,
+  "cover_art": "sky",
+  "cover_caption": "High above the world",
+  "source_note": "This is an original interactive retelling, not a translation. The myth notes point to the real sources and explain where tellings differ. The young protagonist and the choices are invented for the game.",
+  "tradition": "Hindu",
+  "title": "Hanuman and the Sun",
+  "subtitle": "A choose-your-path story from Hindu tradition",
+  "tagline": "The sun looks like a ripe mango. What could possibly go wrong?",
+  "intro": "It is the first morning of summer. The sun rises over the hills like one enormous golden mango, and baby Hanuman decides he must have it. He is your best friend, your playmate, and the strongest child in the forest. He is also very hungry. Three paths open before you: leap into the sky beside him, call him back to ask his mother first, or go looking for real mangoes. This beloved story is told in many versions. It is about curiosity, strength, and learning when to ask for help. Hanuman will grow up to serve Rama with all his heart.",
+  "setting": "Anjana's forest, at the foot of the mountains — first light",
+  "default_name": "Aarav",
+  "name_suggestions": [
+    "Aarav",
+    "Anaya",
+    "Vihaan",
+    "Meera"
+  ],
+  "start": "dawn",
+  "acts": [
+    {
+      "id": 1,
+      "title": "The Mango in the Sky"
+    },
+    {
+      "id": 2,
+      "title": "Three Ways Up"
+    },
+    {
+      "id": 3,
+      "title": "What the Sun Taught"
+    }
+  ],
+  "paths": [
+    {
+      "id": "leap",
+      "title": "The Great Leap",
+      "glyph": "leap",
+      "blurb": "Follow Hanuman into the sky. Hold on tight, warn him about the heat, and meet the gods who guard the sun."
+    },
+    {
+      "id": "ask",
+      "title": "Ask First",
+      "glyph": "ask",
+      "blurb": "Call him back. Ask Anjana, send a question on the wind, and put your question to the Sun himself."
+    },
+    {
+      "id": "share",
+      "title": "Bring Mangoes",
+      "glyph": "share",
+      "blurb": "Choose the mango grove instead. Fill a basket, feed the grove, and find out what a feast can teach."
+    }
+  ],
+  "boons": {
+    "pathLeap": "Chose the sky road",
+    "pathAsk": "Chose to ask first",
+    "pathShare": "Chose the mango plan",
+    "sawTheHeat": "Saw the heat before the leap",
+    "heldTail": "Held on in the wind",
+    "foundCloud": "Found a soft landing",
+    "bowedToSun": "Bowed to the Sun",
+    "heldOn": "Held on for the gods",
+    "askedAnjana": "Asked Hanuman's mother",
+    "askedVayu": "Asked the wind",
+    "calledSun": "Called out to the sun",
+    "sunTeacher": "The Sun's promise",
+    "triedSmallLeap": "Tried one small leap",
+    "climbedHigh": "Picked the highest mangoes",
+    "madeSled": "Built a leaf-sled",
+    "invitedAll": "Invited the whole grove",
+    "gaveFirstMango": "Set aside the first mango",
+    "offeredMango": "Offered the Sun a mango"
+  },
+  "endings": [
+    {
+      "id": "suns-friend",
+      "title": "The Sun's Friend",
+      "rank": "Best ending",
+      "blurb": "Bow, promise, or offer a mango. The sun becomes a friend and a teacher.",
+      "node": "ending-suns-friend"
+    },
+    {
+      "id": "mighty-leap",
+      "title": "The Mighty Leap",
+      "rank": "Heroic ending",
+      "blurb": "Hold on. The gods see your courage, and Hanuman receives his boons.",
+      "node": "ending-mighty-leap"
+    },
+    {
+      "id": "mango-feast",
+      "title": "The Mango Feast",
+      "rank": "Warm ending",
+      "blurb": "Choose the real mangoes. Home, friendship, and juice on every chin.",
+      "node": "ending-mango-feast"
+    },
+    {
+      "id": "small-lesson",
+      "title": "A Small Lesson",
+      "rank": "Gentle ending",
+      "blurb": "Try one small leap too many. Come home with a singed tail and a new rule.",
+      "node": "ending-small-lesson"
+    }
+  ],
+  "nodes": {
+    "dawn": {
+      "id": "dawn",
+      "act": 1,
+      "chapter": "1",
+      "title": "The Mango in the Sky",
+      "location": "Anjana's forest, at the foot of the mountains",
+      "art": "grove",
+      "artCaption": "Mango trees, a warm dawn and a small monkey in the branches",
+      "text": [
+        "The sun comes up over the hills like one enormous golden mango. The air smells of wet leaves and ripe fruit. Baby Hanuman sits in the mango tree beside you, tail curled around a branch.",
+        "'Look,' he whispers. 'Breakfast.' You are {name}, his friend and playmate. You know the sun is not a mango. You also know Hanuman is faster than any monkey should be, and hungrier than most.",
+        "His tummy growls. The sun climbs another inch and glows through the leaves. 'It is warm,' he says. 'It is round. It is definitely a mango.'",
+        "'One jump,' says Hanuman. 'I will bring it back. We will share it.' The whole morning waits for your answer."
+      ],
+      "lore": {
+        "title": "Hanuman, son of the wind",
+        "body": "Hanuman is the child of Anjana, a vanara, and Vayu, the wind god. Hindu tradition honours him as the devoted servant of Rama, and the story of his leap at the sun is told in many versions. Some tellings are comic, some solemn; all treat his strength as a gift tied to devotion. The sun is Surya, a god who rides a chariot of seven horses.",
+        "source": "Valmiki Ramayana, Uttara Kanda; Hanuman Chalisa"
+      },
+      "choices": [
+        {
+          "label": "Catch his tail and leap into the sky beside him",
+          "to": "leap-1",
+          "tag": "Leap with him · +1 courage",
+          "effects": {
+            "add": {
+              "courage": 1
+            },
+            "set": {
+              "pathLeap": true
+            }
+          }
+        },
+        {
+          "label": "Hold his hand and say, 'Ask your mother first'",
+          "to": "ask-1",
+          "tag": "Ask first · +1 insight",
+          "effects": {
+            "add": {
+              "insight": 1
+            },
+            "set": {
+              "pathAsk": true
+            }
+          }
+        },
+        {
+          "label": "Point at the grove. 'Real mangoes. Enough for everyone.'",
+          "to": "share-1",
+          "tag": "The mango plan · +1 cunning",
+          "effects": {
+            "add": {
+              "cunning": 1
+            },
+            "set": {
+              "pathShare": true
+            }
+          }
+        }
+      ]
+    },
+    "leap-1": {
+      "id": "leap-1",
+      "act": 2,
+      "chapter": "2",
+      "title": "Into the Blue",
+      "location": "Above the forest",
+      "art": "sky",
+      "artCaption": "Clouds, birds and a small monkey climbing the light",
+      "text": [
+        "Hanuman leaps. The branch snaps back. You grab his tail with both hands. The ground falls away in a rush of green.",
+        "Clouds hit your face like cool wet pillows. Birds fly beside you, then shrink to specks. Hanuman laughs so hard his whole tail wiggles.",
+        "The sun swells. It is not a mango. It is a doorway of fire. Inside waits a chariot. Seven horses pull it. The driver's crown is too bright to look at.",
+        "'Nearly there!' Hanuman shouts. His fingers stretch toward the light. The heat presses on your skin like a hot stone. Far below, a white elephant lifts its head."
+      ],
+      "lore": {
+        "title": "The wind's son",
+        "body": "Vayu, the wind god, is Hanuman's father. In the Ramayana, Hanuman's speed and strength come from that inheritance, and he uses them in the service of Rama. The childhood leap is a favourite episode, retold in Sanskrit, Tamil, Hindi and many other languages. Every telling keeps the same heart: a small child, a big sky, and a lesson about limits.",
+        "source": "Valmiki Ramayana, Uttara Kanda"
+      },
+      "choices": [
+        {
+          "label": "Shout, 'It is the sun, not fruit! Pull back!'",
+          "to": "leap-2",
+          "tag": "Warn him · +1 insight",
+          "effects": {
+            "add": {
+              "insight": 1
+            },
+            "set": {
+              "sawTheHeat": true
+            }
+          }
+        },
+        {
+          "label": "Tighten your grip and help him steer through the clouds",
+          "to": "leap-2",
+          "tag": "Hold on tight · +1 courage",
+          "effects": {
+            "add": {
+              "courage": 1
+            },
+            "set": {
+              "heldTail": true
+            }
+          }
+        },
+        {
+          "label": "Look for a soft cloud in case his hand slips",
+          "to": "leap-2",
+          "tag": "Find a landing · +1 cunning",
+          "effects": {
+            "add": {
+              "cunning": 1
+            },
+            "set": {
+              "foundCloud": true
+            }
+          }
+        }
+      ]
+    },
+    "leap-2": {
+      "id": "leap-2",
+      "act": 3,
+      "chapter": "3",
+      "title": "The Golden Fruit",
+      "location": "The edge of the sky",
+      "art": "sky",
+      "artCaption": "A chariot of fire and a white elephant on a cloud",
+      "text": [
+        "Hanuman's fingers close on the rim of the sun. For one heartbeat the whole world turns gold. Then the light stutters, like a lamp with a hand over it.",
+        "The sun's horses stumble. Their hooves leave dark marks on the blue. A shadow crosses the sky. A white elephant flies toward you. Its rider holds a thunderbolt.",
+        "'Little wind-child,' says Indra. 'Let go.' His voice is not cruel. He is guarding the world's light. The sun speaks too, warm and enormous. 'I am not a mango, small one.'",
+        "The heat hums in your ears. Below, the forest holds its breath. Hanuman looks at you. His hand is shaking. 'What do I do?'"
+      ],
+      "lore": {
+        "title": "Indra and the vajra",
+        "body": "Indra is king of the gods, and his weapon is the vajra, the thunderbolt. In the Uttara Kanda, the eclipse demon Rahu finds baby Hanuman at the sun and hurries to Indra for help. Indra strikes the child to save the sun's light. Many tellings connect the name Hanuman with the jaw, hanu, that the bolt broke. The gods are not bullies here; they are frightened. Hanuman remains Rama's devotee in every telling.",
+        "source": "Valmiki Ramayana, Uttara Kanda"
+      },
+      "choices": [
+        {
+          "label": "Let go, fold your hands, and say sorry to the Sun",
+          "to": "ending-suns-friend",
+          "tag": "Bow to the Sun · +1 insight",
+          "effects": {
+            "add": {
+              "insight": 1
+            },
+            "set": {
+              "bowedToSun": true
+            }
+          }
+        },
+        {
+          "label": "Tell him to hold on. Let the gods see his strength.",
+          "to": "ending-mighty-leap",
+          "tag": "Hold on · +1 courage",
+          "effects": {
+            "add": {
+              "courage": 1
+            },
+            "set": {
+              "heldOn": true
+            }
+          }
+        }
+      ]
+    },
+    "ask-1": {
+      "id": "ask-1",
+      "act": 2,
+      "chapter": "2",
+      "title": "The Question",
+      "location": "Under the mango tree",
+      "art": "grove",
+      "artCaption": "Anjana, her long hair, and a very impatient child",
+      "text": [
+        "You catch Hanuman's hand before he jumps. 'Ask your mother first,' you say. His tail droops. 'But mango.'",
+        "'Ask.' Anjana sits under the big tree, brushing her long hair. She is patient the way rivers are patient. Hanuman asks his question all in one breath.",
+        "Anjana laughs. 'The sun is not a fruit, my love. It is a lamp the gods keep. It burns.' 'Does it have a stone?' Hanuman asks. 'Only mangoes have stones,' she says. 'Then why is it gold?' 'Because it is generous. It gives light to everyone.'",
+        "'Ask the wind. Ask the sky. Ask Surya himself, if you can shout loud enough.' Hanuman's eyes go wide again. This time it is not hunger. It is a question."
+      ],
+      "lore": {
+        "title": "Anjana and the vanaras",
+        "body": "Anjana is Hanuman's mother, a vanara woman in the Ramayana. Vanaras are the monkey people who later help Rama rescue Sita. Hindu families still tell this childhood story at bedtime, and versions differ from region to region. Anjana's advice is the heart of it: strength needs patience, and questions are not weakness. Hanuman grows up to serve Rama with both.",
+        "source": "Valmiki Ramayana, Uttara Kanda"
+      },
+      "choices": [
+        {
+          "label": "Ask Anjana to tell you both more about the Sun",
+          "to": "ask-2",
+          "tag": "Ask his mother · +1 insight",
+          "effects": {
+            "add": {
+              "insight": 1
+            },
+            "set": {
+              "askedAnjana": true
+            }
+          }
+        },
+        {
+          "label": "Ask Vayu to carry your question up on the wind",
+          "to": "ask-2",
+          "tag": "Send it on the wind · +1 cunning",
+          "effects": {
+            "add": {
+              "cunning": 1
+            },
+            "set": {
+              "askedVayu": true
+            }
+          }
+        },
+        {
+          "label": "Climb the hill and shout your question at the sky",
+          "to": "ask-2",
+          "tag": "Shout to the sky · +1 courage",
+          "effects": {
+            "add": {
+              "courage": 1
+            },
+            "set": {
+              "calledSun": true
+            }
+          }
+        }
+      ]
+    },
+    "ask-2": {
+      "id": "ask-2",
+      "act": 3,
+      "chapter": "3",
+      "title": "A Question for the Sun",
+      "location": "The hilltop",
+      "art": "sky",
+      "artCaption": "A small figure shouting at the sun",
+      "text": [
+        "On the hilltop the sun is enormous. Hanuman cups his hands around his mouth. 'Hey! Sun! Are you a mango?'",
+        "The wind carries the question up. The chariot slows. Seven horses turn their heads. An answer comes down, warm as a blanket.",
+        "'No, little one. I am a lamp. I light the world and ripen the mangoes. That is a better job than being fruit.' Hanuman thinks about this. 'Can I learn your job?'",
+        "Surya laughs, and the morning gets brighter. 'When you are older,' he says. 'Come and study with me. Bring your friend.' Indra's elephant watches from a cloud. Nobody has been struck by anything. Hanuman's tail is still."
+      ],
+      "lore": {
+        "title": "Surya, the sun",
+        "body": "Surya is the sun god, honoured every morning in the Gayatri mantra of the Rigveda. He is not a fruit or a monster; he is a power that keeps time and ripens crops. The Uttara Kanda adds that Hanuman later studied with Surya, flying beside the chariot to keep pace with his teacher. The tale is retold in many versions, and Hanuman remains Rama's devotee.",
+        "source": "Rigveda 3.62.10; Valmiki Ramayana, Uttara Kanda"
+      },
+      "choices": [
+        {
+          "label": "Say yes. Promise to come back and learn from the Sun.",
+          "to": "ending-suns-friend",
+          "tag": "The Sun's promise · +1 insight",
+          "effects": {
+            "add": {
+              "insight": 1
+            },
+            "set": {
+              "sunTeacher": true
+            }
+          }
+        },
+        {
+          "label": "Try one small leap, just to feel the edge of the sky",
+          "to": "ending-small-lesson",
+          "tag": "One small leap · +1 courage",
+          "effects": {
+            "add": {
+              "courage": 1
+            },
+            "set": {
+              "triedSmallLeap": true
+            }
+          }
+        }
+      ]
+    },
+    "share-1": {
+      "id": "share-1",
+      "act": 2,
+      "chapter": "2",
+      "title": "The Mango Grove",
+      "location": "The grove below the hill",
+      "art": "grove",
+      "artCaption": "Mangoes falling like rain",
+      "text": [
+        "You point at the grove below the hill. 'Real mangoes,' you say. 'Enough for everyone.' Hanuman looks at the sun. Then at the trees. His tummy decides for him.",
+        "The grove is loud with bees and shade. Hanuman shakes one branch and mangoes fall like rain. Too many. They bounce off your head, roll into the stream, and pile up beside a very small squirrel.",
+        "'Sorry!' Hanuman says. He is already climbing again. The squirrel chatters at him. Hanuman stops. He climbs down slowly. He sets one mango beside the squirrel, gently, as if it were an egg.",
+        "The morning is warm. The basket is half full. The sun waits above the leaves."
+      ],
+      "lore": {
+        "title": "Mangoes and hospitality",
+        "body": "Mangoes are a summer gift across South Asia, and sharing food is a deep virtue in Hindu life. The Ramayana celebrates Hanuman, Rama's devoted servant, more for his service than for his appetite. This childhood tale is told in many versions, and most of them let him be funny, hungry and a little too sure of himself. The squirrel is this story's own small guest, not a scriptural figure.",
+        "source": "Valmiki Ramayana; Hanuman Chalisa"
+      },
+      "choices": [
+        {
+          "label": "Climb to the top branch for the biggest mangoes",
+          "to": "share-2",
+          "tag": "Climb high · +1 courage",
+          "effects": {
+            "add": {
+              "courage": 1
+            },
+            "set": {
+              "climbedHigh": true
+            }
+          }
+        },
+        {
+          "label": "Weave a leaf-sled so one trip can carry them all",
+          "to": "share-2",
+          "tag": "Build a leaf-sled · +1 cunning",
+          "effects": {
+            "add": {
+              "cunning": 1
+            },
+            "set": {
+              "madeSled": true
+            }
+          }
+        },
+        {
+          "label": "Call the other young vanaras to share the fruit",
+          "to": "share-2",
+          "tag": "Invite everyone · +1 insight",
+          "effects": {
+            "add": {
+              "insight": 1
+            },
+            "set": {
+              "invitedAll": true
+            }
+          }
+        }
+      ]
+    },
+    "share-2": {
+      "id": "share-2",
+      "act": 3,
+      "chapter": "3",
+      "title": "The Mango Feast",
+      "location": "The clearing",
+      "art": "grove",
+      "artCaption": "A circle of friends and a mountain of mangoes",
+      "text": [
+        "By mid-morning the clearing smells of cut grass and ripe fruit. The young vanaras come. So does the squirrel. So do three crows who invite themselves.",
+        "Hanuman sets the biggest mango in the middle of the circle. 'For the sun,' he says. 'It ripened these.' Everyone looks up. The sun looks back, gold and quiet.",
+        "Then Hanuman does something funny. He bows to the mango, deeply, the way elders bow at the shrine. His nose bumps the fruit. The little ones shriek with laughter.",
+        "'It is not a god,' says Anjana, smiling. 'But it is a gift.' Hanuman picks up a second mango and holds it toward the sky. 'One more thing,' he says. 'I want to say thank you properly.'"
+      ],
+      "lore": {
+        "title": "Food as offering",
+        "body": "In Hindu practice, food is often offered before it is eaten; what comes back is called prasad. The offering is not for the god's hunger. It is for the giver's attention. Hanuman's feast is a child's version of that habit. The Ramayana and the Hanuman Chalisa remember him as Rama's servant, and popular tellings love his enormous appetite.",
+        "source": "Hanuman Chalisa; Valmiki Ramayana"
+      },
+      "choices": [
+        {
+          "label": "Stay and eat. Let the sun be the sun.",
+          "to": "ending-mango-feast",
+          "tag": "Share the feast · +1 insight",
+          "effects": {
+            "add": {
+              "insight": 1
+            },
+            "set": {
+              "gaveFirstMango": true
+            }
+          }
+        },
+        {
+          "label": "Help him leap once, high enough to offer the Sun a mango",
+          "to": "ending-suns-friend",
+          "tag": "Offer the Sun a mango · +1 courage",
+          "effects": {
+            "add": {
+              "courage": 1
+            },
+            "set": {
+              "offeredMango": true
+            }
+          }
+        }
+      ]
+    },
+    "ending-suns-friend": {
+      "id": "ending-suns-friend",
+      "act": 3,
+      "chapter": "4",
+      "title": "The Sun's Friend",
+      "location": "The edge of the morning sky",
+      "art": "sky",
+      "artCaption": "A thin ray of light resting in a small palm",
+      "text": [
+        "The chariot slows. The seven horses dip their heads. The heat softens into something you can breathe.",
+        "Surya speaks to Hanuman as one small person to another. 'You are strong,' he says. 'Strength is a good gift. Learn to carry it gently.' A thin ray of light curls down and rests in Hanuman's palm. It does not burn. It feels like a hand on his shoulder.",
+        "'Come and study with me when you are older,' says the Sun. 'I will teach you the paths of the sky.' Hanuman bows. You bow too. Far below, Anjana is waving.",
+        "That is how the sun becomes Hanuman's friend. Years later, when a prince named Rama needs help, Hanuman remembers this morning. He remembers that strength can be gentle, and that even the sun likes to be asked."
+      ],
+      "lore": {
+        "title": "The Sun's student",
+        "body": "Surya is one of the oldest gods in the Vedas, and the Gayatri mantra asks for his light to guide the mind. The Uttara Kanda says Hanuman later studied with Surya, flying beside the chariot to keep pace. Hindu tradition treats Hanuman as Rama's devoted servant, and his strength is always shown as service. This childhood story is beloved in many versions.",
+        "source": "Rigveda 3.62.10; Valmiki Ramayana, Uttara Kanda; Hanuman Chalisa"
+      },
+      "ending": {
+        "id": "suns-friend",
+        "title": "The Sun's Friend",
+        "rank": "Best ending",
+        "summary": "You bowed instead of grabbing. Surya offered Hanuman a spark of light and a promise of lessons, and the sun became a friend."
+      }
+    },
+    "ending-mighty-leap": {
+      "id": "ending-mighty-leap",
+      "act": 3,
+      "chapter": "4",
+      "title": "The Mighty Leap",
+      "location": "Indra's court in the sky",
+      "art": "court",
+      "artCaption": "Golden pillars, a white elephant and a thunderbolt at rest",
+      "text": [
+        "Hanuman holds on. Indra's bolt comes down, louder than a drum and gentler than a storm. It touches Hanuman's jaw. He does not cry out.",
+        "He drops. The wind catches him before he touches a cloud. Vayu holds his son and will not let go. The world goes still. Every leaf stops moving.",
+        "Then the gods gather. The world needs its wind back. Brahma speaks a word, and Hanuman opens his eyes. Indra bows his great head. 'Your body will be as hard as my vajra,' he says. 'And your name will be Hanuman, for the jaw.'",
+        "Brahma gives him a long life. Agni gives him safety from fire. Vayu gives him speed. Hanuman blinks. 'Did I get the mango?' Nobody laughs. Then everybody does."
+      ],
+      "lore": {
+        "title": "The boons of the gods",
+        "body": "The Uttara Kanda lists the boons Hanuman receives: long life from Brahma, and safety from fire, water and weapons from the gods. The Hanuman Chalisa calls him bajrangi, whose body is like the vajra. Later the rishis make him forget his own powers until a friend reminds him; in the Sundara Kanda, Jambavan does exactly that. His strength is tied to devotion to Rama and to service.",
+        "source": "Valmiki Ramayana, Uttara Kanda and Sundara Kanda; Hanuman Chalisa"
+      },
+      "ending": {
+        "id": "mighty-leap",
+        "title": "The Mighty Leap",
+        "rank": "Heroic ending",
+        "summary": "You held on. The gods restored Hanuman, gave him boons of strength and long life, and the name that remembers his jaw."
+      }
+    },
+    "ending-mango-feast": {
+      "id": "ending-mango-feast",
+      "act": 3,
+      "chapter": "4",
+      "title": "The Mango Feast",
+      "location": "The clearing at dusk",
+      "art": "grove",
+      "artCaption": "Long shadows, full bellies, one last mango",
+      "text": [
+        "The feast lasts until the shadows grow long. Mango juice runs down every chin. The crows steal the peel. The squirrel falls asleep inside a hollow mango.",
+        "Hanuman eats nine mangoes, then lies on his back with his tummy in the air. 'I have decided,' he announces. 'Mangoes are better than the sun.' 'Is that allowed?' asks a small vanara.",
+        "'Sweeter,' says Anjana. 'Not better.' Hanuman thinks about it. 'Sweeter,' he agrees. 'The sun is a lamp. Mangoes are food. Both are good.' She is laughing too hard to argue.",
+        "When evening comes, the sun goes down behind the hill. Hanuman waves at it. The sun seems to glow a little warmer, as if it is waving back. You walk home together. Tomorrow there will be more questions. Tonight there are mangoes."
+      ],
+      "lore": {
+        "title": "The child in the story",
+        "body": "Stories about Hanuman's childhood are told across India in many versions, and they are allowed to be funny. He is still the devotee of Rama, the servant whose strength becomes service. The mango feast is this story's own invention, built from the tradition's warmth rather than from a single text. Sharing food sits at the centre of Hindu hospitality.",
+        "source": "Valmiki Ramayana; Hanuman Chalisa"
+      },
+      "ending": {
+        "id": "mango-feast",
+        "title": "The Mango Feast",
+        "rank": "Warm ending",
+        "summary": "You chose the grove over the sky. Hanuman ate nine mangoes, fed the whole clearing, and waved the sun goodnight."
+      }
+    },
+    "ending-small-lesson": {
+      "id": "ending-small-lesson",
+      "act": 3,
+      "chapter": "4",
+      "title": "A Small Lesson",
+      "location": "Under the mango tree at dusk",
+      "art": "grove",
+      "artCaption": "A singed tail and a very thoughtful child",
+      "text": [
+        "Hanuman takes one small leap. It is very small. It carries him six feet up and straight into the top of a mango tree.",
+        "The branch bends. The leaves shake. A sun-warm mango drops onto his head. 'Ow.' 'That,' says Anjana from below, 'is why we ask first.'",
+        "Hanuman climbs down with leaves in his fur and a mango in each hand. His tail is a little singed at the tip. He looks at the sun, then at the fruit, then at you.",
+        "'The sky is hot,' he says. 'Very hot,' you agree. 'And the sun is not food.' 'Not food.'",
+        "He sighs, then grins. 'But I can still ask questions.' 'Yes,' says Anjana. 'Ask first. Then leap. And wash your hands.' That night, Hanuman asks eleven questions before bed."
+      ],
+      "lore": {
+        "title": "Ask first, then leap",
+        "body": "The tradition does not hide Hanuman's childhood mistakes; it makes them part of his education. In the Ramayana, his strength grows alongside his devotion, and he learns to place both at Rama's service. Many tellings treat his early boldness with affection. The lesson is not 'never leap'. It is 'learn what you are leaping toward'.",
+        "source": "Valmiki Ramayana, Uttara Kanda; Hanuman Chalisa"
+      },
+      "ending": {
+        "id": "small-lesson",
+        "title": "A Small Lesson",
+        "rank": "Gentle ending",
+        "summary": "You tried one small leap. Hanuman came down with a singed tail, a lump on his head and a new rule: ask first, then leap."
+      }
+    }
+  }
+}

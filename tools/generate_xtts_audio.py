@@ -108,6 +108,7 @@ def main():
     parser.add_argument("--bitrate", default="48k")
     parser.add_argument("--workers", type=int, default=1,
                         help="parallel processes; XTTS is already multi-threaded, keep this at 1")
+    parser.add_argument("--kind", default="", help="only jobs of this kind (story, quiz, saga)")
     parser.add_argument("--limit", type=int, default=0, help="debug: only first N clips")
     parser.add_argument("--only", default="", help="debug: only clips whose id contains this text")
     parser.add_argument("--shard", default="", metavar="I/N",
@@ -120,6 +121,8 @@ def main():
     output_root = ROOT / "audio" / "voices"
     output_root.mkdir(parents=True, exist_ok=True)
     jobs = narration_jobs()
+    if args.kind:
+        jobs = [job for job in jobs if job["kind"] == args.kind]
     if args.only:
         jobs = [job for job in jobs if args.only in job["id"]]
     if args.shard:

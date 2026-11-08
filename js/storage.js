@@ -138,7 +138,7 @@ function loadState() {
 export const STUDIO_VOICES = ['cori', 'joe', 'morgan'];
 
 function defaultSettings() {
-  return { theme: 'dark', fontScale: 'md', audio: true, voice: '', studioVoice: '' };
+  return { theme: 'dark', fontScale: 'md', audio: true, voice: '', studioVoice: 'morgan', voiceChosen: false };
 }
 
 function loadSettings() {
@@ -151,7 +151,12 @@ function loadSettings() {
       fontScale: ['md', 'lg', 'xl'].includes(parsed.fontScale) ? parsed.fontScale : 'md',
       audio: parsed.audio !== false,
       voice: typeof parsed.voice === 'string' ? parsed.voice.slice(0, 200) : '',
-      studioVoice: STUDIO_VOICES.includes(parsed.studioVoice) ? parsed.studioVoice : '',
+      studioVoice: parsed.studioVoice === ''
+        ? ''
+        : (STUDIO_VOICES.includes(parsed.studioVoice) ? parsed.studioVoice : 'morgan'),
+      voiceChosen: typeof parsed.voiceChosen === 'boolean'
+        ? parsed.voiceChosen
+        : (Object.prototype.hasOwnProperty.call(parsed, 'studioVoice') || Boolean(parsed.voice)),
     };
   } catch {
     return defaultSettings();
@@ -186,6 +191,7 @@ export function updateSettings(patch) {
     ...(typeof patch.audio === 'boolean' ? { audio: patch.audio } : {}),
     ...(typeof patch.voice === 'string' ? { voice: patch.voice.slice(0, 200) } : {}),
     ...(typeof patch.studioVoice === 'string' && (patch.studioVoice === '' || STUDIO_VOICES.includes(patch.studioVoice)) ? { studioVoice: patch.studioVoice } : {}),
+    ...(typeof patch.voiceChosen === 'boolean' ? { voiceChosen: patch.voiceChosen } : {}),
   };
   writeRaw(SETTINGS_KEY, JSON.stringify(settings));
   return { ...settings };

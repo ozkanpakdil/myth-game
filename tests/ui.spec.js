@@ -54,7 +54,7 @@ test.describe('progress reset', () => {
 test.describe('responsive layout', () => {
   test('phone screens do not overflow horizontally on the main screens', async ({ page }) => {
     await page.setViewportSize({ width: 390, height: 844 });
-    for (const route of ['/#/', '/#/myths', '/#/myth/greek', '/#/myth/greek/story/greek-01', '/#/myth/greek/quiz/greek-01', '/#/timeline', '/#/codex']) {
+    for (const route of ['/#/', '/#/saga', '/#/myths', '/#/myth/greek', '/#/myth/greek/story/greek-01', '/#/myth/greek/quiz/greek-01', '/#/timeline', '/#/codex']) {
       await page.goto(route);
       const metrics = await page.evaluate(() => ({
         doc: document.documentElement.scrollWidth,
@@ -69,7 +69,7 @@ test.describe('responsive layout', () => {
     await page.setViewportSize({ width: 360, height: 780 });
     await page.goto('/#/');
     await expect(page.locator('.main-nav')).toBeVisible();
-    await expect(page.locator('.main-nav a')).toHaveCount(6);
+    await expect(page.locator('.main-nav a')).toHaveCount(7);
     await page.locator('.main-nav a[data-nav="challenges"]').click();
     await expect(page.getByTestId('challenges-page')).toBeVisible();
   });
@@ -174,7 +174,8 @@ test.describe('visual storytelling and narration', () => {
     const sample = await page.request.get('/audio/samples/en_GB-cori-high.mp3');
     expect(sample.status()).toBe(200);
     expect(sample.headers()['content-type']).toContain('audio');
-    await expect(page.getByTestId('studio-voice-status')).toContainText('System voice selected');
+    await expect(page.getByTestId('studio-voice-morgan')).toBeChecked();
+    await expect(page.getByTestId('studio-voice-status')).toContainText('Morgan is selected');
     await page.getByTestId('studio-voice-joe').check();
     await expect(page.getByTestId('studio-voice-status')).toContainText('Joe is selected. Listen uses Joe');
     const savedStudio = await page.evaluate(() => JSON.parse(localStorage.getItem('mythos.settings.v1')).studioVoice);
@@ -190,17 +191,19 @@ test.describe('visual storytelling and narration', () => {
     await select.selectOption('test-tenor');
     const stored = await page.evaluate(() => JSON.parse(localStorage.getItem('mythos.settings.v1')));
     expect(stored.voice).toBe('test-tenor');
+    expect(stored.studioVoice).toBe('');
+    await expect(page.getByTestId('studio-voice-system')).toBeChecked();
+    await expect(page.getByTestId('studio-voice-status')).toContainText('System voice selected');
 
     await page.getByTestId('voice-close').click();
     await expect(page.getByTestId('voice-dialog')).not.toBeVisible();
     await page.reload();
     await page.locator('#audio-toggle').click();
     await expect(select).toHaveValue('test-tenor');
-    await expect(page.getByTestId('studio-voice-joe')).toBeChecked();
-    await expect(page.getByTestId('studio-voice-status')).toContainText('Joe is selected. Listen uses Joe');
-    await page.getByTestId('studio-voice-system').check();
+    await expect(page.getByTestId('studio-voice-system')).toBeChecked();
     await expect(page.getByTestId('studio-voice-status')).toContainText('System voice selected');
-    expect(await page.evaluate(() => JSON.parse(localStorage.getItem('mythos.settings.v1')).studioVoice)).toBe('');
+    await page.getByTestId('studio-voice-joe').check();
+    await expect(page.getByTestId('studio-voice-status')).toContainText('Joe is selected. Listen uses Joe');
     await page.getByTestId('voice-preview').click();
   });
 
@@ -233,7 +236,9 @@ test.describe('visual storytelling and narration', () => {
     expect(sample.status()).toBe(200);
     expect(sample.headers()['content-type']).toContain('audio');
     await expect(page.getByTestId('studio-voice-disclosure')).toContainText('non-commercial');
+    await expect(page.getByTestId('studio-voice-morgan')).toBeChecked();
 
+    await page.getByTestId('studio-voice-system').check();
     await page.getByTestId('studio-voice-morgan').check();
     await expect(page.getByTestId('studio-voice-status')).toContainText('Listen uses Morgan');
     expect(await page.evaluate(() => JSON.parse(localStorage.getItem('mythos.settings.v1')).studioVoice)).toBe('morgan');

@@ -2,8 +2,11 @@
 
 A text-first educational game for ages 12+. Read short retellings from eight
 world traditions, answer quizzes, unlock a codex of figures and terms, and
-explore a stylised world map and timeline. Stories and questions carry original
-pixel-art SVG scenes, and optional pre-generated narration reads the text aloud.
+explore a stylised world map and timeline. A separate branching saga,
+**The Ash-Seed**, lets you walk a Norse myth as a mortal of your own naming,
+choosing roads that lead to five different endings. Stories and questions carry
+original pixel-art SVG scenes, and optional pre-generated narration reads the
+text aloud.
 
 There is no build step and no framework. Content lives in JSON, the interface is
 HTML/CSS/vanilla ES modules, and every image is SVG. Progress stays in the
@@ -49,6 +52,23 @@ any static host.
 The timeline catalogues 35 traditions. The other 27 are marked as planned for
 later editions and are not playable yet.
 
+### The Ash-Seed (branching saga)
+
+`#/saga` is a step-by-step choose-your-path retelling of Norse myth. You name
+the protagonist (default **Michael**; suggestions include Jason, Astrid and
+Eirik), then follow one of three roads — the Raven's Road, the Wolf's Road or
+the Hammer's Road — through 20 hand-written scenes to one of five endings.
+Prose is revealed one paragraph at a time, in short scenes. A Listen control
+reads the scene aloud, and every visible paragraph has its own Listen button;
+a myth note and a set of choices appear when the scene is complete. Some choices are gated by the gifts and
+debts you have collected, and every choice is saved as a snapshot so the
+in-game back button and browser history can rewind cleanly.
+
+Saga progress is stored separately in `mythos.saga.v1`, so a saga run never
+disturbs quiz, codex or challenge progress. The saga is English-only and uses
+the common English spellings of Norse names. It is an original interactive
+retelling, not a translation; its sources are the Poetic Edda and Prose Edda.
+
 ### Game rules
 
 - Story 1 of each tradition is open. Passing a story quiz (70%, i.e. 3/4 or
@@ -59,7 +79,10 @@ later editions and are not playable yet.
   tradition's codex.
 - Progress, quiz bests, challenge results and badges are stored in
   `localStorage` under `mythos.progress.v1`. Theme and text size are stored in
-  `mythos.settings.v1`.
+  `mythos.settings.v1`. Saga runs use `mythos.saga.v1`.
+- The saga has no quiz gate: it is a story-first mode. Its choices filter on
+  flags earned earlier in the same run, and its five endings are collected in a
+  gallery on `#/saga`.
 - The three challenges (Timeline Builder, Pantheon Match, Which Culture?) and
   the results/badges screen are optional practice.
 
@@ -99,11 +122,15 @@ js/
   map.js                accessible inline SVG world map
   scene.js              deterministic pixel-art story scenes, quiz clues,
                         answer icons and character portraits
+  saga.js               The Ash-Seed landing, scene reader, choices and endings
+  saga-art.js           14 animated inline-SVG saga scenes and path glyphs
+  saga-state.js         defensive save/rewind/effects for the saga run
   narration.js          studio-clip playback with browser speech fallback
   ui.js                 shared escaping, formatting and dialog helpers
 content/
   mythologies.json      35-tradition catalogue; `mvp: true` for the eight
   greek/ ...            five JSON files per playable tradition
+  saga/norse.json       the branching Ash-Seed story graph, paths and endings
 schemas/                JSON Schema documents for every content file
 audio/
   voices/               joe, cori and morgan narration clips
@@ -140,6 +167,13 @@ Each playable tradition has five files under `content/<id>/`:
 IDs follow the pattern `<mythology-id>-01` for stories and
 `<mythology-id>-q01` for questions. Character references in stories must exist in
 that tradition's `characters.json`.
+
+Branching sagas live under `content/saga/`. Each file declares its `start` node,
+acts, named paths, a `boons` label map and an `endings` list. `nodes` is keyed by
+scene id; a node contains prose paragraphs, an `art` scene key, an optional lore
+note, and either 2–5 `choices` (`to`, `tag`, `effects`, `requires.anyFlags`) or
+an `ending`. The validator checks targets, flags, stats, reachable scenes and
+every route's ability to reach an ending.
 
 ### Adding a tradition
 
@@ -197,12 +231,14 @@ not fetched images. See `assets/STYLE_GUIDE.md` for the palette and grid rules.
   mobile view; region details are announced in a live region.
 - Text-size control (`Aa`) cycles 100 / 112.5 / 125%, persisted locally.
 - Optional narration uses pre-generated neural clips — open Piper voices (Joe,
-  Cori) plus a fan-made, non-commercial XTTS v2 clone (Morgan) — or the
-  browser's SpeechSynthesis API as a fallback. It never autoplays and
-  stops on navigation. The header speaker button opens a narration dialog with
-  an on/off switch, a system-voice picker and selectable studio voices. Selecting a studio voice applies immediately and is saved as `studioVoice`;
-  each Listen button plays its clip and falls back to the system voice if the
-  clip is unavailable.
+  Cori) plus a fan-made, non-commercial Morgan clone — or the browser's
+  SpeechSynthesis API as a fallback. Morgan is preselected; the first Listen
+  opens the voice picker so the choice is explicit. It never autoplays and
+  stops on navigation or when the voice is changed. The header speaker button
+  opens a narration dialog with an on/off switch, a fallback system-voice
+  picker and selectable studio voices. Selecting a studio voice applies
+  immediately and is saved as `studioVoice`; each Listen button plays its clip
+  and falls back to the system voice if the clip is unavailable.
   Premium/Enhanced/Natural system voices are grouped first with a ★.
 - `prefers-reduced-motion` removes animations.
 - All decorative sigils have empty `alt`; labels are in text.
@@ -214,7 +250,10 @@ quiz → unlock → persistence loop, failed quiz and retry, the final challenge
 codex unlocks, timeline, all three challenges, the map and its mobile scroll,
 story and quiz SVG scenes, answer icons, narration controls, studio-clip playback,
 system-voice selection, theme/font persistence, reset confirmation, responsive overflow, skip
-link and quiz keyboard feedback.
+link and quiz keyboard feedback. The saga suite covers name entry and the
+default protagonist, progressive reveal, scene and paragraph narration, the
+myth note, gated choices, persistence and resume, in-game back, restart
+confirmation, ending collection and mobile overflow.
 
 ```bash
 npm test

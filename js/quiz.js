@@ -5,15 +5,28 @@
  * review questions from the previous stories, so every quiz has 4–5 questions
  * and a passing mark of 70% (3/4 or 4/5). The final challenge uses all 20.
  */
-import { escapeHtml, iconImg, progressBar, toast, focusPage, difficultyClass, percent, listenButtonContent } from './ui.js?v=20261107-13';
-import { getQuizRecord, recordQuizResult, recordFinalQuiz, recordStoryRead, awardBadges, isStoryRead, getSettings } from './storage.js?v=20261107-13';
-import { loadMythology, loadMythologies, storyIndexById, nextStory } from './content.js?v=20261107-13';
-import { allStoryQuizzesPassed, isStoryUnlocked } from './progress.js?v=20261107-13';
-import { evaluateBadges } from './badges.js?v=20261107-13';
-import { questionScene, choiceIcon } from './scene.js?v=20261107-13';
-import { narrate, stopNarration, ensureNarration, narrationSupported, studioAudioUrl } from './narration.js?v=20261107-13';
+import { escapeHtml, iconImg, progressBar, toast, focusPage, difficultyClass, percent, listenButtonContent } from './ui.js?v=20261108-3';
+import { getQuizRecord, recordQuizResult, recordFinalQuiz, recordStoryRead, awardBadges, isStoryRead, getSettings } from './storage.js?v=20261108-3';
+import { loadMythology, loadMythologies, storyIndexById, nextStory } from './content.js?v=20261108-3';
+import { allStoryQuizzesPassed, isStoryUnlocked } from './progress.js?v=20261108-3';
+import { evaluateBadges } from './badges.js?v=20261108-3';
+import { questionScene, choiceIcon } from './scene.js?v=20261108-3';
+import { narrate, stopNarration, ensureNarration, narrationSupported, studioAudioUrl } from './narration.js?v=20261108-3';
 
 const PASS_RATIO = 0.7;
+let activeQuizListen = null;
+
+function resetQuizListen(button) {
+  if (!button) return;
+  button.dataset.speaking = 'false';
+  button.innerHTML = listenButtonContent('Listen');
+}
+
+document.addEventListener('mythos:narration-stop', () => {
+  if (!activeQuizListen) return;
+  resetQuizListen(activeQuizListen);
+  activeQuizListen = null;
+});
 
 function passMark(total) {
   return Math.ceil(total * PASS_RATIO);
@@ -145,10 +158,11 @@ export async function renderQuiz(root, { mythId, storyId }) {
     }
     if (button?.dataset.speaking === 'true') {
       stopNarration();
-      button.dataset.speaking = 'false';
-      button.innerHTML = listenButtonContent('Listen');
+      resetQuizListen(button);
+      if (activeQuizListen === button) activeQuizListen = null;
       return;
     }
+    if (activeQuizListen && activeQuizListen !== button) resetQuizListen(activeQuizListen);
     ensureNarration();
     const text = `${question.question}. ${question.choices
       .map((choice, i) => `${'ABCD'[i]}: ${choice}.`)
@@ -156,14 +170,12 @@ export async function renderQuiz(root, { mythId, storyId }) {
     const started = narrate(text, {
       audioUrl,
       onEnd() {
-        if (!button) return;
-        button.dataset.speaking = 'false';
-        button.innerHTML = listenButtonContent('Listen');
+        resetQuizListen(button);
+        if (activeQuizListen === button) activeQuizListen = null;
       },
       onError() {
-        if (!button) return;
-        button.dataset.speaking = 'false';
-        button.innerHTML = listenButtonContent('Listen');
+        resetQuizListen(button);
+        if (activeQuizListen === button) activeQuizListen = null;
       },
     });
     if (!started) {
@@ -173,6 +185,7 @@ export async function renderQuiz(root, { mythId, storyId }) {
     if (button) {
       button.dataset.speaking = 'true';
       button.innerHTML = listenButtonContent('Stop', true);
+      activeQuizListen = button;
     }
   }
 

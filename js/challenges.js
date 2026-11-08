@@ -2,10 +2,10 @@
  * challenges.js — three text challenges built from the same JSON content.
  * Everything is keyboard operable; no drag-and-drop is required.
  */
-import { escapeHtml, focusPage, progressBar, toast, yearLabel, rangeLabel } from './ui.js?v=20261107-13';
-import { loadMythologies, loadAllPlayable } from './content.js?v=20261107-13';
-import { awardBadges, getChallengeRecord, recordChallenge } from './storage.js?v=20261107-13';
-import { evaluateBadges } from './badges.js?v=20261107-13';
+import { escapeHtml, focusPage, progressBar, toast, yearLabel, rangeLabel } from './ui.js?v=20261108-3';
+import { loadMythologies, loadAllPlayable } from './content.js?v=20261108-3';
+import { awardBadges, getChallengeRecord, recordChallenge } from './storage.js?v=20261108-3';
+import { evaluateBadges } from './badges.js?v=20261108-3';
 
 const CHALLENGES = [
   {

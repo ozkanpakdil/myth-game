@@ -13,7 +13,7 @@ import {
   countWords,
   REGION_ORDER,
   SENSITIVITY_LABEL,
-} from './content.js?v=20261107-13';
+} from './content.js?v=20261108-3';
 import {
   getState,
   getSettings,
@@ -24,7 +24,7 @@ import {
   recordStoryRead,
   awardBadges,
   resetProgress,
-} from './storage.js?v=20261107-13';
+} from './storage.js?v=20261108-3';
 import {
   mythStats,
   overallStats,
@@ -33,8 +33,8 @@ import {
   glossaryUnlockedCount,
   allStoryQuizzesPassed,
   isStoryUnlocked,
-} from './progress.js?v=20261107-13';
-import { badgeCatalog, evaluateBadges } from './badges.js?v=20261107-13';
+} from './progress.js?v=20261108-3';
+import { badgeCatalog, evaluateBadges } from './badges.js?v=20261108-3';
 import {
   escapeHtml,
   iconImg,
@@ -50,17 +50,19 @@ import {
   toast,
   confirmDialog,
   emptyState,
-} from './ui.js?v=20261107-13';
-import { renderQuiz } from './quiz.js?v=20261107-13';
+} from './ui.js?v=20261108-3';
+import { renderQuiz } from './quiz.js?v=20261108-3';
 import {
   renderChallengeHub,
   renderTimelineChallenge,
   renderMatchChallenge,
   renderCultureChallenge,
-} from './challenges.js?v=20261107-13';
-import { renderMap } from './map.js?v=20261107-13';
-import { storyScene, characterPortrait } from './scene.js?v=20261107-13';
-import { narrate, stopNarration, speechSupported, availableVoices, narrationSupported, studioAudioUrl } from './narration.js?v=20261107-13';
+} from './challenges.js?v=20261108-3';
+import { renderMap } from './map.js?v=20261108-3';
+import { storyScene, characterPortrait } from './scene.js?v=20261108-3';
+import { sagaScene } from './saga-art.js?v=20261108-3';
+import { renderSaga, sagaContinueHref, sagaSummary } from './saga.js?v=20261108-3';
+import { narrate, stopNarration, speechSupported, availableVoices, narrationSupported, studioAudioUrl } from './narration.js?v=20261108-3';
 
 const app = document.getElementById('app');
 const nav = document.querySelector('.main-nav');
@@ -71,7 +73,20 @@ const voiceDialog = document.getElementById('voice-dialog');
 const voiceSelect = document.getElementById('voice-select');
 const voiceNote = document.getElementById('voice-note');
 let voiceTrigger = null;
+let activeNarrationButton = null;
 let renderSequence = 0;
+
+function resetNarrationButton(button) {
+  if (!button) return;
+  button.dataset.speaking = 'false';
+  button.innerHTML = listenButtonContent(button.dataset.narrationLabel || 'Listen');
+}
+
+document.addEventListener('mythos:narration-stop', () => {
+  if (!activeNarrationButton) return;
+  resetNarrationButton(activeNarrationButton);
+  activeNarrationButton = null;
+});
 
 /* ------------------------------------------------------------------ */
 /* Chrome                                                              */
@@ -109,15 +124,16 @@ function updateStudioVoiceUI() {
   const status = document.getElementById('studio-voice-status');
   if (!status) return;
   status.textContent = saved
-    ? `${STUDIO_LABELS[saved] || saved} is selected. Listen uses ${STUDIO_LABELS[saved] || saved}'s narration, with your system voice as fallback.`
+    ? `${STUDIO_LABELS[saved] || saved} is selected. Listen uses ${STUDIO_LABELS[saved] || saved}'s recorded narration for stories and the saga, with your system voice as fallback.`
     : 'System voice selected. Listen uses your installed voice.';
 }
 
 function chooseStudioVoice(input) {
   if (!input?.checked) return;
-  updateSettings({ studioVoice: input.value });
+  stopNarration();
+  updateSettings({ studioVoice: input.value, voiceChosen: true });
   updateStudioVoiceUI();
-  toast(input.value ? `${STUDIO_LABELS[input.value] || input.value} selected. Listen will use this narrator.` : 'System voice selected.', { duration: 2200 });
+  toast(input.value ? `${STUDIO_LABELS[input.value] || input.value} selected. Press Listen to hear it.` : 'System voice selected. Press Listen to hear it.', { duration: 2200 });
 }
 
 function populateVoiceSelect() {
@@ -167,6 +183,7 @@ function previewVoice() {
 
 function openVoiceDialog() {
   if (!voiceDialog || voiceDialog.open) return;
+  stopNarration();
   voiceTrigger = document.activeElement;
   populateVoiceSelect();
   const narrationToggle = document.getElementById('narration-enabled');
@@ -177,20 +194,23 @@ function openVoiceDialog() {
   });
   updateStudioVoiceUI();
   voiceDialog.showModal();
-  voiceSelect?.focus();
+  const selectedStudio = document.querySelector('input[name="studio-voice"]:checked');
+  (selectedStudio || voiceSelect)?.focus();
 }
 
 function narrateWithButton(text, button, idleLabel, audioUrl = '') {
+  if (button) button.dataset.narrationLabel = idleLabel;
   if (!narrationSupported(audioUrl)) {
     toast('Narration is not available in this browser. You can still read the text.', { tone: 'warn' });
     return;
   }
   if (button?.dataset.speaking === 'true') {
     stopNarration();
-    button.dataset.speaking = 'false';
-    button.innerHTML = listenButtonContent(idleLabel);
+    resetNarrationButton(button);
+    if (activeNarrationButton === button) activeNarrationButton = null;
     return;
   }
+  if (activeNarrationButton && activeNarrationButton !== button) resetNarrationButton(activeNarrationButton);
   if (!getSettings().audio) {
     updateSettings({ audio: true });
     applySettings();
@@ -199,14 +219,12 @@ function narrateWithButton(text, button, idleLabel, audioUrl = '') {
   const started = narrate(text, {
     audioUrl,
     onEnd() {
-      if (!button) return;
-      button.dataset.speaking = 'false';
-      button.innerHTML = listenButtonContent(idleLabel);
+      resetNarrationButton(button);
+      if (activeNarrationButton === button) activeNarrationButton = null;
     },
     onError() {
-      if (!button) return;
-      button.dataset.speaking = 'false';
-      button.innerHTML = listenButtonContent(idleLabel);
+      resetNarrationButton(button);
+      if (activeNarrationButton === button) activeNarrationButton = null;
     },
   });
   if (!started) {
@@ -216,6 +234,7 @@ function narrateWithButton(text, button, idleLabel, audioUrl = '') {
   if (button) {
     button.dataset.speaking = 'true';
     button.innerHTML = listenButtonContent('Stop narration', true);
+    activeNarrationButton = button;
   }
 }
 
@@ -234,7 +253,11 @@ function initChrome() {
     applySettings();
   });
   voiceSelect?.addEventListener('change', () => {
-    updateSettings({ voice: voiceSelect.value });
+    stopNarration();
+    updateSettings({ voice: voiceSelect.value, studioVoice: '', voiceChosen: true });
+    const systemRadio = document.querySelector('input[name="studio-voice"][value=""]');
+    if (systemRadio) systemRadio.checked = true;
+    updateStudioVoiceUI();
     previewVoice();
   });
   document.querySelectorAll('input[name="studio-voice"]').forEach((input) => {
@@ -243,8 +266,10 @@ function initChrome() {
   voiceDialog?.querySelector('[data-testid="voice-preview"]')?.addEventListener('click', previewVoice);
   voiceDialog?.addEventListener('close', () => {
     stopNarration();
+    updateSettings({ voiceChosen: true });
     voiceTrigger?.focus({ preventScroll: true });
   });
+  document.addEventListener('mythos:open-voice', () => openVoiceDialog());
   if (speechSupported()) {
     window.speechSynthesis.addEventListener?.('voiceschanged', () => {
       if (voiceDialog?.open) populateVoiceSelect();
@@ -285,6 +310,7 @@ function navKeyFor(route) {
   if (route.name === 'map') return 'map';
   if (route.name === 'challenges') return 'challenges';
   if (route.name === 'results') return 'results';
+  if (route.name === 'saga') return 'saga';
   return '';
 }
 
@@ -329,6 +355,9 @@ function parseRoute() {
   if (parts[0] === 'about') return { name: 'about', parts, query };
   if (parts[0] === 'challenges') {
     return { name: 'challenges', sub: parts[1] || '', parts, query };
+  }
+  if (parts[0] === 'saga') {
+    return { name: 'saga', nodeId: parts[1] || null, parts, query };
   }
   if (parts[0] === 'myth' && parts[1]) {
     if (parts[2] === 'story' && parts[3]) return { name: 'story', mythId: parts[1], storyId: parts[3], parts, query };
@@ -401,6 +430,9 @@ async function dispatch(route) {
       setTitle('Quiz');
       await renderQuiz(app, { mythId: route.mythId, storyId: route.storyId });
       break;
+    case 'saga':
+      await renderSaga(app, route);
+      break;
     case 'challenges':
       setTitle('Challenges');
       if (route.sub === 'timeline') await renderTimelineChallenge(app);
@@ -442,17 +474,20 @@ async function renderHome() {
   const lastRoute = getLastRoute();
   const lastMyth = playable.find((item) => item.id === state.lastMyth);
   const continueHref = started && lastRoute && lastRoute !== '#/' ? lastRoute : '#/myths';
+  const saga = sagaSummary();
+  const sagaHref = saga ? sagaContinueHref() : '#/saga';
 
   app.innerHTML = `<div class="page page--home" data-testid="home-page">
     <section class="hero">
       <div class="hero__copy">
         <p class="eyebrow"><span class="eyebrow__rule" aria-hidden="true"></span> A world mythology game</p>
         <h1 id="page-title">Stories that<br><em>shaped the world.</em></h1>
-        <p class="lede">Read short retellings from eight traditions, answer quizzes, unlock a codex of figures and terms, and learn how the stories fit together across time.</p>
+        <p class="lede">Walk <em>The Ash-Seed</em>, a choose-your-path Norse saga, or read short retellings from eight traditions and build a codex of figures and terms. The myths are the same. The road you take is yours.</p>
         <div class="hero__actions">
-          <a class="button button--primary" href="#/myths">Start exploring <span aria-hidden="true">→</span></a>
-          <a class="button button--ghost" href="#/map">Open the map</a>
+          <a class="button button--primary" href="${sagaHref}" data-testid="home-saga-primary">${saga ? `Continue as ${escapeHtml(saga.name)}` : 'Begin the saga'} <span aria-hidden="true">→</span></a>
+          <a class="button button--ghost" href="#/myths">Explore the archive</a>
         </div>
+        <p class="small muted hero__aside-link"><a class="text-link" href="#/map">Open the world map</a> · <a class="text-link" href="#/saga">About the saga</a></p>
         <dl class="hero__stats">
           <div><dt>Traditions</dt><dd>${playable.length}</dd></div>
           <div><dt>Stories</dt><dd>${playable.length * 6}</dd></div>
@@ -481,6 +516,30 @@ async function renderHome() {
         <a class="button button--primary button--wide" href="${continueHref}" data-testid="continue-button">${started ? 'Continue' : 'Choose a tradition'}</a>
         <p class="small muted"><a class="text-link text-link--standalone" href="#/results">See detailed progress</a></p>
       </aside>
+    </section>
+
+    <section class="saga-home" aria-labelledby="saga-home-title" data-testid="home-saga">
+      <figure class="pixel-frame saga-home__art" data-testid="home-saga-art">
+        ${sagaScene('fjord')}
+        <figcaption class="story-art__caption">
+          <strong>Raven Bay, the last autumn</strong>
+        </figcaption>
+      </figure>
+      <div class="saga-home__copy">
+        <p class="eyebrow">New · a branching saga</p>
+        <h2 id="saga-home-title">The Ash-Seed</h2>
+        <p class="lede">A raven drops the seed of the World Tree into your hand. Three winters are coming. Choose the raven's road of wisdom, the wolf's road of cunning or the hammer's road of courage — and live with what the myths ask of you.</p>
+        <ul class="saga-home__facts">
+          <li><strong>3</strong><span>roads through Norse myth</span></li>
+          <li><strong>20</strong><span>scenes in one run</span></li>
+          <li><strong>5</strong><span>endings to discover</span></li>
+        </ul>
+        <div class="hero__actions">
+          <a class="button button--primary" href="${sagaHref}" data-testid="home-saga-continue">${saga ? `Continue as ${escapeHtml(saga.name)}` : 'Begin the saga'} <span aria-hidden="true">→</span></a>
+          <a class="button button--ghost" href="#/saga">How the saga works</a>
+        </div>
+        ${saga ? `<p class="small muted">${saga.endings} of 5 endings found · your path is saved in this browser.</p>` : '<p class="small muted">Use your own name or the default, Michael. Your choices are saved in this browser.</p>'}
+      </div>
     </section>
 
     <section class="section" aria-labelledby="traditions-title">
@@ -835,7 +894,6 @@ async function renderStory(mythId, storyId) {
               ${art.svg}
               <figcaption class="story-art__caption">
                 <strong>${escapeHtml(art.caption)}</strong>
-                <span>A symbolic scene, not a literal illustration.</span>
               </figcaption>
             </figure>
             <div class="story-art__actions">
@@ -1265,7 +1323,7 @@ async function renderAbout() {
       <p>The game uses native links and buttons, a skip link, visible focus styles, quiz results that take focus so they are read aloud, keyboard-operable challenges and a text-size control. Animations are minimal and respect <code>prefers-reduced-motion</code>. The world map has a list-view alternative.</p>
       <h2>Images and narration</h2>
       <p>All images are original SVG: sixteen-pixel sigils, story scenes, quiz clues and character portraits are built from a small palette and a deterministic pixel grid. The map is an inline SVG built from a text tile grid. No photographs or generated raster art are used.</p>
-      <p>Narration is optional. Choose a generated narrator (Joe, Cori or Morgan) in the speaker menu, or use any installed system voice as the fallback. Joe and Cori are open-voice models with permissive licences; Morgan is a fan-made XTTS v2 clone of a public figure, licensed for non-commercial use only and never presented as an endorsement. No audio is sent to a server. Use the Listen button beside a story or question.</p>
+      <p>Narration is optional. Choose a generated narrator (Joe, Cori or Morgan) in the speaker menu, or use any installed system voice as the fallback. Joe and Cori are open-voice models with permissive licences; Morgan is a fan-made voice clone of a public figure, licensed for non-commercial use only and never presented as an endorsement. No audio is sent to a server. Use the Listen button beside a story or question.</p>
     </section>
 
     <section class="panel">

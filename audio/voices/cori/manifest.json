@@ -2,8 +2,8 @@
   "voice": "cori",
   "label": "Cori",
   "language": "British English",
-  "license": "Public domain dataset",
+  "license": "Public domain",
   "model": "en_GB-cori-high.onnx",
-  "clips": 354,
-  "generatedAt": "2026-11-07T17:53:33Z"
+  "clips": 480,
+  "generatedAt": "2026-11-08T14:01:46Z"
 }

@@ -328,6 +328,262 @@ async function validateMythology(meta, dir) {
 }
 
 /* ------------------------------------------------------------------ */
+/* Branching sagas                                                     */
+/* ------------------------------------------------------------------ */
+
+const SAGA_SCENES = new Set([
+  'fjord', 'circle', 'well', 'tree', 'asgard', 'forge', 'jotunheim',
+  'sea', 'pinewood', 'cave', 'wolf', 'ragnarok', 'meadow', 'empty',
+]);
+
+async function validateSagaFile(file) {
+  const data = await loadJSON(file);
+  if (!data) return;
+
+  for (const field of ['id', 'title', 'tradition', 'subtitle', 'tagline', 'intro', 'setting', 'default_name', 'start']) {
+    if (!isNonEmptyString(data[field])) fail(file, `missing ${field}`);
+  }
+  if (!isStringArray(data.name_suggestions, 1)) fail(file, 'name_suggestions must be a non-empty string array');
+  if (isNonEmptyString(data.intro) && wordCount(data.intro) < 40) warn(file, 'intro is very short for a saga landing page');
+
+  const actIds = new Set();
+  if (!Array.isArray(data.acts) || data.acts.length < 1) {
+    fail(file, 'acts must be a non-empty array');
+  } else {
+    data.acts.forEach((act, i) => {
+      if (!Number.isInteger(act?.id)) fail(file, `acts[${i}]: id must be an integer`);
+      else if (actIds.has(act.id)) fail(file, `acts[${i}]: duplicate id ${act.id}`);
+      else actIds.add(act.id);
+      if (!isNonEmptyString(act?.title)) fail(file, `acts[${i}]: missing title`);
+    });
+  }
+
+  const pathIds = new Set();
+  if (!Array.isArray(data.paths) || data.paths.length < 2) {
+    fail(file, 'paths must contain at least 2 named routes');
+  } else {
+    data.paths.forEach((route, i) => {
+      const at = `paths[${i}]${route?.id ? ` (${route.id})` : ''}`;
+      if (!isNonEmptyString(route?.id) || !/^[a-z0-9_-]+$/.test(route?.id || '')) {
+        fail(file, `${at}: id must be lowercase letters, digits, dashes or underscores`);
+      } else if (pathIds.has(route.id)) {
+        fail(file, `${at}: duplicate id`);
+      } else pathIds.add(route.id);
+      for (const field of ['title', 'glyph', 'blurb']) {
+        if (!isNonEmptyString(route?.[field])) fail(file, `${at}: missing ${field}`);
+      }
+    });
+  }
+
+  if (!data.boons || typeof data.boons !== 'object' || Array.isArray(data.boons)) {
+    fail(file, 'boons must be an object mapping flags to player-facing labels');
+  } else {
+    for (const [flag, label] of Object.entries(data.boons)) {
+      if (!/^[a-zA-Z0-9_]+$/.test(flag)) fail(file, `boons: invalid flag name "${flag}"`);
+      if (!isNonEmptyString(label)) fail(file, `boons.${flag}: label must be a non-empty string`);
+    }
+  }
+
+  const nodes = data.nodes;
+  if (!nodes || typeof nodes !== 'object' || Array.isArray(nodes)) {
+    fail(file, 'nodes must be an object keyed by node id');
+    return;
+  }
+  const nodeIds = new Set(Object.keys(nodes));
+  if (nodeIds.size < 5) fail(file, 'a saga needs at least 5 scene nodes');
+  if (!nodeIds.has(data.start)) fail(file, `start node "${data.start}" does not exist`);
+
+  const endingIds = new Set();
+  if (!Array.isArray(data.endings) || data.endings.length < 1) {
+    fail(file, 'endings must contain at least one ending');
+  } else {
+    data.endings.forEach((ending, i) => {
+      const at = `endings[${i}]${ending?.id ? ` (${ending.id})` : ''}`;
+      for (const field of ['id', 'title', 'rank', 'blurb', 'node']) {
+        if (!isNonEmptyString(ending?.[field])) fail(file, `${at}: missing ${field}`);
+      }
+      if (isNonEmptyString(ending?.id)) {
+        if (endingIds.has(ending.id)) fail(file, `${at}: duplicate ending id`);
+        else endingIds.add(ending.id);
+      }
+      if (isNonEmptyString(ending?.node) && !nodeIds.has(ending.node)) {
+        fail(file, `${at}: ending node "${ending.node}" does not exist`);
+      }
+    });
+  }
+
+  const graph = new Map();
+  const endingNodes = new Set();
+  let sceneCount = 0;
+  let choiceCount = 0;
+
+  for (const [key, node] of Object.entries(nodes)) {
+    const at = `nodes.${key}`;
+    if (!node || typeof node !== 'object' || Array.isArray(node)) {
+      fail(file, `${at}: must be an object`);
+      continue;
+    }
+    if (node.id !== key) fail(file, `${at}: id "${node.id}" must match its key`);
+    if (!actIds.has(node.act)) fail(file, `${at}: act "${node.act}" is not declared in acts`);
+    if (!isNonEmptyString(node.chapter)) fail(file, `${at}: missing chapter`);
+    for (const field of ['title', 'location', 'art', 'artCaption']) {
+      if (!isNonEmptyString(node?.[field])) fail(file, `${at}: missing ${field}`);
+    }
+    if (isNonEmptyString(node.art) && !SAGA_SCENES.has(node.art)) {
+      fail(file, `${at}: unknown art scene "${node.art}" (known: ${[...SAGA_SCENES].join(', ')})`);
+    }
+    if (!Array.isArray(node.text) || node.text.length < 2 || node.text.length > 6) {
+      fail(file, `${at}: text must contain 2–6 paragraphs`);
+    } else {
+      node.text.forEach((paragraph, i) => {
+        if (!isNonEmptyString(paragraph)) fail(file, `${at}: text[${i}] is empty`);
+      });
+      const words = wordCount(node.text.join(' '));
+      if (words < 90) warn(file, `${at}: only ${words} words (target 90–160)`);
+      if (words > 160) warn(file, `${at}: ${words} words (target 90–160)`);
+      if (words > 240) fail(file, `${at}: ${words} words (maximum 240)`);
+    }
+    if (node.lore !== undefined) {
+      for (const field of ['title', 'body', 'source']) {
+        if (!isNonEmptyString(node.lore?.[field])) fail(file, `${at}.lore: missing ${field}`);
+      }
+      if (isNonEmptyString(node.lore?.body) && wordCount(node.lore.body) < 15) {
+        warn(file, `${at}.lore: body is very short`);
+      }
+    }
+
+    const targets = [];
+    if (node.ending) {
+      const ending = node.ending;
+      const atEnding = `${at}.ending`;
+      for (const field of ['id', 'title', 'rank', 'summary']) {
+        if (!isNonEmptyString(ending?.[field])) fail(file, `${atEnding}: missing ${field}`);
+      }
+      if (!endingIds.has(ending?.id)) fail(file, `${atEnding}: id "${ending?.id}" is not declared in endings`);
+      const declared = (data.endings || []).find((entry) => entry.id === ending?.id);
+      if (declared && declared.node !== key) {
+        fail(file, `${atEnding}: id "${ending.id}" is declared for node "${declared.node}", not "${key}"`);
+      }
+      endingNodes.add(key);
+      sceneCount += 1;
+      if (node.choices !== undefined) fail(file, `${at}: an ending node must not also have choices`);
+    } else {
+      sceneCount += 1;
+      if (!Array.isArray(node.choices) || node.choices.length < 2 || node.choices.length > 5) {
+        fail(file, `${at}: choices must contain 2–5 options (or an ending object)`);
+      } else {
+        node.choices.forEach((choice, i) => {
+          const atChoice = `${at}.choices[${i}]`;
+          if (!isNonEmptyString(choice?.label)) fail(file, `${atChoice}: missing label`);
+          if (!isNonEmptyString(choice?.to) || !nodeIds.has(choice.to)) {
+            fail(file, `${atChoice}: target "${choice?.to}" does not exist`);
+          } else {
+            targets.push(choice.to);
+          }
+          if (choice?.tag !== undefined && !isNonEmptyString(choice.tag)) {
+            fail(file, `${atChoice}: tag must be a non-empty string`);
+          }
+          if (choice?.requires !== undefined) {
+            if (!Array.isArray(choice.requires?.anyFlags) || !choice.requires.anyFlags.every(isNonEmptyString)) {
+              fail(file, `${atChoice}: requires.anyFlags must be an array of flag names`);
+            }
+          }
+          if (choice?.effects !== undefined) {
+            const effects = choice.effects;
+            if (effects.add !== undefined) {
+              if (!effects.add || typeof effects.add !== 'object' || Array.isArray(effects.add)) {
+                fail(file, `${atChoice}: effects.add must be an object`);
+              } else {
+                for (const [stat, amount] of Object.entries(effects.add)) {
+                  if (!['insight', 'courage', 'cunning'].includes(stat)) fail(file, `${atChoice}: unknown stat "${stat}"`);
+                  if (!Number.isInteger(amount)) fail(file, `${atChoice}: effects.add.${stat} must be an integer`);
+                }
+              }
+            }
+            if (effects.set !== undefined) {
+              if (!effects.set || typeof effects.set !== 'object' || Array.isArray(effects.set)) {
+                fail(file, `${atChoice}: effects.set must be an object`);
+              } else {
+                for (const [flag, value] of Object.entries(effects.set)) {
+                  if (!/^[a-zA-Z0-9_]+$/.test(flag)) fail(file, `${atChoice}: invalid flag name "${flag}"`);
+                  if (!['boolean', 'string', 'number'].includes(typeof value)) {
+                    fail(file, `${atChoice}: effects.set.${flag} must be a boolean, string or number`);
+                  }
+                }
+              }
+            }
+            if (effects.add === undefined && effects.set === undefined) {
+              warn(file, `${atChoice}: effects object has no add or set values`);
+            }
+          }
+          choiceCount += 1;
+        });
+      }
+    }
+    graph.set(key, targets);
+  }
+
+  // Reachability from the start.
+  const reached = new Set();
+  if (nodeIds.has(data.start)) {
+    const queue = [data.start];
+    reached.add(data.start);
+    while (queue.length) {
+      const current = queue.shift();
+      for (const next of graph.get(current) || []) {
+        if (!reached.has(next)) {
+          reached.add(next);
+          queue.push(next);
+        }
+      }
+    }
+    for (const key of nodeIds) {
+      if (!reached.has(key)) fail(file, `nodes.${key}: unreachable from the start node`);
+    }
+    for (const [endingId, ending] of (data.endings || []).entries()) {
+      if (ending?.node && !reached.has(ending.node)) fail(file, `endings[${endingId}]: node "${ending.node}" is unreachable`);
+    }
+  }
+
+  // Every scene should be able to reach at least one ending.
+  const reverse = new Map();
+  for (const key of nodeIds) reverse.set(key, []);
+  for (const [from, targets] of graph) {
+    for (const to of targets) reverse.get(to)?.push(from);
+  }
+  const canEnd = new Set(endingNodes);
+  const backQueue = [...endingNodes];
+  while (backQueue.length) {
+    const current = backQueue.shift();
+    for (const previous of reverse.get(current) || []) {
+      if (!canEnd.has(previous)) {
+        canEnd.add(previous);
+        backQueue.push(previous);
+      }
+    }
+  }
+  for (const key of nodeIds) {
+    if (!canEnd.has(key)) fail(file, `nodes.${key}: no route from this scene to an ending`);
+  }
+
+  if (VERBOSE) {
+    console.log(`Saga "${data.title}": ${sceneCount} scenes, ${choiceCount} choices, ${endingNodes.size} endings.`);
+  }
+}
+
+async function validateSagas() {
+  const dir = path.join(CONTENT_DIR, 'saga');
+  if (!existsSync(dir)) return;
+  const entries = await readdir(dir, { withFileTypes: true });
+  const files = entries.filter((entry) => entry.isFile() && entry.name.endsWith('.json')).map((entry) => path.join(dir, entry.name));
+  if (!files.length) {
+    warn(dir, 'saga folder has no .json files');
+    return;
+  }
+  for (const file of files.sort()) await validateSagaFile(file);
+}
+
+/* ------------------------------------------------------------------ */
 /* Main                                                               */
 /* ------------------------------------------------------------------ */
 
@@ -347,7 +603,10 @@ async function main() {
   const dirs = entries.filter((e) => e.isDirectory()).map((e) => e.name).sort();
   const metaById = new Map(mythologies.map((m) => [m.id, m]));
 
+  await validateSagas();
+
   for (const name of dirs) {
+    if (name === 'saga') continue;
     const meta = metaById.get(name);
     if (!meta) {
       warn(path.join(CONTENT_DIR, name), 'content folder has no entry in mythologies.json');

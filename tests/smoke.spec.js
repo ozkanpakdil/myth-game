@@ -14,13 +14,14 @@ test.describe('shell and routing', () => {
     await page.goto('/#/');
     await expect(page.getByTestId('home-page')).toBeVisible();
     await expect(page.locator('#page-title')).toContainText('Stories that');
-    await expect(page.locator('.main-nav a')).toHaveCount(6);
+    await expect(page.locator('.main-nav a')).toHaveCount(7);
     await expect(page.locator('.brand__name')).toHaveText('Mythos');
     expect(errors).toEqual([]);
   });
 
   const routes = [
     ['/#/', 'home-page'],
+    ['/#/saga', 'saga-landing'],
     ['/#/myths', 'myths-page'],
     ['/#/map', 'map-page'],
     ['/#/timeline', 'timeline-page'],

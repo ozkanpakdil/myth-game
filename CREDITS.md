@@ -11,14 +11,16 @@ Mythos is an educational draft. The retellings are new, short summaries in moder
   SpeechSynthesis API is the fallback; the shipped clips come from three models:
   - **Joe** — Piper `en_US-joe-medium`, CC0.
   - **Cori** — Piper `en_GB-cori-high`, trained on a public-domain dataset.
-  - **Morgan** — a fan-made XTTS v2 fine-tune of Morgan Freeman's voice,
-    [`drewThomasson/Morgan_freeman_xtts_model`](https://huggingface.co/drewThomasson/Morgan_freeman_xtts_model).
-    The clone was not made with his consent, so it is used only as a
-    non-commercial demonstration of narration, is labelled as a fan-made clone
-    in the voice dialog, and must never be presented as his endorsement or used
-    to deceive a listener. XTTS v2's own licence is non-commercial, so the
-    `morgan` clips carry a `Non-commercial (XTTS v2)` manifest entry; remove
-    them before any commercial distribution.
+  - **Morgan** — a fan-made clone of Morgan Freeman's voice. The archive clips
+    use the XTTS v2 fine-tune
+    [`drewThomasson/Morgan_freeman_xtts_model`](https://huggingface.co/drewThomasson/Morgan_freeman_xtts_model);
+    the saga clips use the Piper Morgan model from the same family of
+    fine-tunes. The clone was not made with his consent, so it is used only as
+    a non-commercial demonstration of narration, is labelled as a fan-made
+    clone in the voice dialog, and must never be presented as his endorsement
+    or used to deceive a listener. The `morgan` clips carry a
+    `Non-commercial (voice clone)` manifest entry; remove them before any
+    commercial distribution.
 - Fonts are the operating system serif and sans-serif stacks. No external fonts or assets are loaded.
 
 ## Sources by tradition
@@ -73,6 +75,10 @@ Mythos is an educational draft. The retellings are new, short summaries in moder
 - **Prose Edda, Gylfaginning** — Snorri Sturluson's systematic retelling of creation, the gods, Baldr's death, and Ragnarök.
 - **Prose Edda, Skáldskaparmál** — Snorri's guide to poetic language, which preserves many myths in the quotations it uses as examples.
 - **Codex Regius manuscript** — The thirteenth-century manuscript that preserves most of the Poetic Edda, copied in Christian Iceland.
+
+### The Ash-Seed
+
+**The Ash-Seed** is an original interactive retelling, not a translation. Its plot, protagonist and choice structure are invented; the places, figures and stakes are drawn from the Norse material above. It follows the Poetic Edda and Prose Edda for the well of Urd, Odin's eye and runes, Thor's hammer and the giant wedding, Loki and Sigyn, Fenrir and Gleipnir, Heimdall and Bifrost, and the world after Ragnarök. The mortal protagonist is fictional, and no scene is presented as a historical reconstruction.
 
 ### Hindu
 

@@ -1422,6 +1422,16 @@ a.story-row:hover { border-color: var(--gold); background: var(--surface-2); tra
 .studio-sample audio { width: 100%; height: 32px; }
 .studio-samples__status { flex: 1 1 12rem; margin: 0; color: var(--muted); font-size: 0.74rem; line-height: 1.45; }
 .dialog__actions { display: flex; justify-content: flex-end; gap: 0.5rem; margin-top: 1.4rem; }
+.voice-dialog .dialog__panel { padding-bottom: 0; }
+.voice-dialog .dialog__actions {
+  position: sticky;
+  bottom: 0;
+  z-index: 3;
+  margin: 1.2rem -1.6rem 0;
+  padding: 0.85rem 1.6rem 1.6rem;
+  border-top: 1px solid var(--line);
+  background: var(--surface);
+}
 
 #toast {
   position: fixed;
@@ -1709,4 +1719,567 @@ a.story-row:hover { border-color: var(--gold); background: var(--surface-2); tra
     animation-iteration-count: 1 !important;
     transition-duration: 0.001ms !important;
   }
+}
+
+/* --------------------------------------------------------------------------
+   The Ash-Seed — branching saga
+   -------------------------------------------------------------------------- */
+
+.page--saga,
+.page--saga-play { max-width: 1180px; }
+
+.saga-glyph { display: block; shape-rendering: crispEdges; }
+
+.saga-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: 2.6rem;
+  align-items: center;
+  padding-top: 1rem;
+}
+.saga-hero h1 {
+  margin: 0.2rem 0 1.1rem;
+  font-size: clamp(3.3rem, 7vw, 6.2rem);
+  line-height: 0.92;
+}
+.saga-hero h1 em { color: var(--gold-2); font-style: normal; }
+.saga-hero__copy .lede { max-width: 54ch; }
+.saga-hero__meta { display: flex; flex-wrap: wrap; gap: 0.35rem; margin: 1.1rem 0 0; }
+.saga-hero__frame { margin: 0; }
+.saga-hero__frame .pixel-scene { min-height: 240px; }
+
+.saga-resume {
+  margin-top: 1.7rem;
+  padding: 1.25rem;
+  border: 1px solid color-mix(in srgb, var(--gold) 34%, var(--line));
+  border-radius: var(--radius);
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--gold) 8%, var(--surface)), var(--surface));
+}
+.saga-resume--new { border-color: var(--line); background: var(--surface); }
+.saga-resume__head { display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.55rem; }
+.saga-resume__glyph {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 48px;
+  height: 48px;
+  border: 1px solid color-mix(in srgb, var(--gold) 38%, var(--line));
+  border-radius: 12px;
+  background: var(--bg);
+}
+.saga-resume h2 { margin: 0; font-size: 1.55rem; }
+.saga-resume__actions { display: flex; flex-wrap: wrap; gap: 0.55rem; margin-top: 1rem; }
+
+.saga-name-form { margin-top: 0.8rem; }
+.saga-name-label {
+  display: block;
+  margin-bottom: 0.45rem;
+  color: var(--ink-2);
+  font-size: 0.86rem;
+  font-weight: 650;
+}
+.saga-name-row { display: flex; gap: 0.5rem; align-items: stretch; }
+.saga-name-input {
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 2.85rem;
+  padding: 0 1rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--ink);
+  font: inherit;
+  font-size: 1rem;
+}
+.saga-name-input:focus { border-color: var(--gold); outline: 2px solid color-mix(in srgb, var(--gold) 35%, transparent); outline-offset: 2px; }
+.saga-name-suggestions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem; margin-top: 0.55rem; }
+.chip--name { min-height: 1.9rem; padding: 0.1rem 0.6rem; font-size: 0.74rem; }
+.saga-new-thread { margin-top: 1rem; }
+.saga-new-thread summary { cursor: pointer; color: var(--gold-2); font-size: 0.82rem; font-weight: 650; }
+.saga-new-thread[open] summary { margin-bottom: 0.4rem; }
+
+.saga-roads { margin-top: 4.5rem; }
+.saga-road-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.9rem; }
+.saga-road {
+  display: flex;
+  gap: 0.85rem;
+  padding: 1.2rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+.saga-road__glyph {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 48px;
+  height: 48px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--bg);
+}
+.saga-road h3 { margin-bottom: 0.3rem; font-size: 1.18rem; }
+.saga-road p { margin: 0; color: var(--muted); font-size: 0.85rem; line-height: 1.6; }
+
+.saga-how { margin-top: 3.4rem; }
+.saga-how h2 { max-width: 32ch; }
+.saga-how__steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.2rem;
+  margin: 1.4rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+.saga-how__steps li { display: flex; gap: 0.65rem; }
+.saga-how__steps > li > span { color: var(--gold); font-family: var(--font-display); font-size: 1.2rem; line-height: 1.2; }
+.saga-how__steps strong { display: block; font-size: 0.92rem; }
+.saga-how__steps p { margin: 0.22rem 0 0; color: var(--muted); font-size: 0.82rem; }
+
+.saga-gallery { margin-top: 4rem; }
+.saga-gallery__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.7rem; }
+.saga-ending-card {
+  display: flex;
+  gap: 0.65rem;
+  padding: 0.95rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+}
+.saga-ending-card__glyph {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 38px;
+  height: 38px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface-3);
+}
+.saga-ending-card h3 { font-size: 1rem; }
+.saga-ending-card p { margin: 0.2rem 0 0.35rem; font-size: 0.78rem; }
+.saga-ending-card.is-locked { border-style: dashed; background: transparent; opacity: 0.66; }
+.saga-ending-card.is-locked h3 { color: var(--muted); font-size: 0.92rem; }
+
+.saga-source-note {
+  margin-top: 3rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--line);
+}
+.saga-source-note p { max-width: 82ch; }
+
+/* Home feature ------------------------------------------------------- */
+
+.saga-home {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: 2.4rem;
+  align-items: center;
+  margin-top: 4.5rem;
+  padding: clamp(1rem, 2.5vw, 1.6rem);
+  border: 1px solid color-mix(in srgb, var(--gold) 26%, var(--line));
+  border-radius: calc(var(--radius) + 4px);
+  background:
+    radial-gradient(700px 300px at 82% 10%, rgba(216, 169, 79, 0.09), transparent 68%),
+    linear-gradient(135deg, var(--surface-2), var(--surface));
+  box-shadow: var(--shadow);
+}
+.saga-home__art { margin: 0; }
+.saga-home__art .pixel-scene { aspect-ratio: 16 / 9; }
+.saga-home__copy h2 { margin: 0.15rem 0 0.8rem; font-size: clamp(2.2rem, 4vw, 3.4rem); }
+.saga-home__copy .lede { font-size: 1rem; }
+.saga-home__facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.4rem;
+  margin: 1.1rem 0 1.2rem;
+  padding: 0;
+  list-style: none;
+}
+.saga-home__facts strong { display: block; color: var(--gold-2); font-family: var(--font-display); font-size: 1.65rem; line-height: 1; }
+.saga-home__facts span { display: block; margin-top: 0.2rem; color: var(--muted); font-size: 0.72rem; letter-spacing: 0.04em; }
+.hero__aside-link { margin-top: 0.9rem; }
+
+/* Play --------------------------------------------------------------- */
+
+.saga-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.7rem;
+}
+.saga-topbar__home { color: var(--gold-2); font-size: 0.84rem; font-weight: 650; text-decoration: none; }
+.saga-topbar__home:hover { text-decoration: underline; text-underline-offset: 3px; }
+.saga-topbar__meta { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; }
+
+.saga-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.94fr) minmax(0, 1.06fr);
+  gap: 2.3rem;
+  align-items: start;
+}
+.saga-visual {
+  position: sticky;
+  top: calc(var(--header-height) + 1.2rem);
+  display: grid;
+  gap: 0.8rem;
+  min-width: 0;
+}
+.saga-frame { margin: 0; }
+.saga-copy { min-width: 0; }
+
+.saga-scene-head { margin-bottom: 0.8rem; }
+.saga-scene-head .eyebrow { margin-bottom: 0.35rem; }
+.saga-scene-head h1 { margin: 0.25rem 0 0.55rem; font-size: clamp(2.1rem, 4.6vw, 3.55rem); }
+.saga-location { margin: 0; color: var(--muted); font-size: 0.82rem; font-style: italic; }
+.saga-scene-progress { display: flex; flex-wrap: wrap; align-items: center; gap: 0.65rem; margin-top: 0.85rem; }
+.saga-scene-progress .progress { flex: 1 1 130px; min-width: 100px; }
+.saga-skip {
+  padding: 4px 2px;
+  border: 0;
+  background: none;
+  color: var(--gold-2);
+  font: inherit;
+  font-size: 0.76rem;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 3px;
+}
+
+.saga-read-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem; margin: 0.5rem 0 0.2rem; }
+.saga-text { min-height: 14rem; padding: 1.3rem 0 0.3rem; }
+.saga-text .saga-paragraph {
+  max-width: 60ch;
+  margin: 0 0 1.15rem;
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: clamp(1.18rem, 1.65vw, 1.34rem);
+  line-height: 1.78;
+}
+.saga-text .saga-paragraph:first-child::first-letter {
+  float: left;
+  margin: 0.12em 0.1em 0 0;
+  color: var(--gold-2);
+  font-family: var(--font-display);
+  font-size: 3.2em;
+  line-height: 0.76;
+}
+.saga-paragraph-group { position: relative; }
+.saga-paragraph-group[hidden] { display: none !important; }
+.saga-paragraph { animation: sagaParagraph 0.5s ease both; }
+.saga-listen-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.32rem;
+  margin: -0.65rem 0 1rem;
+  padding: 0.2rem 0.55rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.72rem;
+  min-height: 2rem;
+  cursor: pointer;
+  transition: color 0.16s ease, border-color 0.16s ease, background 0.16s ease;
+}
+.saga-listen-inline:hover,
+.saga-listen-inline:focus-visible { color: var(--ink); border-color: var(--gold); background: var(--surface); }
+.saga-listen-inline .button__icon { width: 13px; height: 13px; }
+.saga-lore__listen { margin-top: 0.55rem; }
+.saga-intro-listen-wrap { margin-top: 0.8rem; }
+.saga-paragraph.is-hidden,
+.saga-paragraph[hidden],
+.saga-after[hidden],
+.saga-controls[hidden],
+.saga-choices[hidden] { display: none !important; }
+
+.saga-after { margin-top: 1rem; }
+
+.saga-lore {
+  margin: 1.4rem 0 0;
+  padding: 1.2rem 1.25rem;
+  border-left: 3px solid var(--gold);
+  border-radius: 0 14px 14px 0;
+  background: var(--surface-2);
+  animation: sagaParagraph 0.55s ease both;
+}
+.saga-lore h2 { margin-bottom: 0.45rem; font-size: 1.35rem; }
+.saga-lore p { margin: 0 0 0.5rem; color: var(--ink-2); font-size: 0.9rem; }
+.saga-lore__source { margin: 0 !important; color: var(--muted) !important; font-size: 0.74rem !important; font-style: italic; }
+
+.saga-choices { display: grid; gap: 0.55rem; margin: 1.6rem 0 0; animation: sagaParagraph 0.5s ease both; }
+.saga-choices__head { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 0.15rem; }
+.saga-choice {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  width: 100%;
+  padding: 0.72rem 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.16s ease, background 0.16s ease, transform 0.16s ease;
+}
+.saga-choice:hover,
+.saga-choice:focus-visible { border-color: var(--gold); background: var(--surface-2); transform: translateY(-1px); }
+.saga-choice.is-chosen { border-color: var(--gold); background: var(--gold-dim); }
+.saga-choice__glyph {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--bg);
+}
+.saga-choice__body { display: flex; flex-direction: column; gap: 0.12rem; min-width: 0; }
+.saga-choice__body strong { font-size: 0.94rem; font-weight: 650; line-height: 1.38; }
+.saga-choice__body small { color: var(--muted); font-size: 0.74rem; }
+.saga-choice__arrow { margin-left: auto; color: var(--gold); font-size: 1.15rem; transition: transform 0.16s ease; }
+.saga-choice:hover .saga-choice__arrow { transform: translateX(3px); }
+
+.saga-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 1.2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+}
+
+.saga-thread { padding: 1.1rem; }
+.saga-thread__head { display: flex; align-items: center; gap: 0.7rem; margin-bottom: 0.9rem; }
+.saga-thread__glyph {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 44px;
+  height: 44px;
+  border: 1px solid color-mix(in srgb, var(--gold) 34%, var(--line));
+  border-radius: 12px;
+  background: var(--bg);
+}
+.saga-thread__head .eyebrow { margin-bottom: 0.1rem; }
+.saga-thread__head h2 { margin: 0; font-size: 1.45rem; }
+.saga-stats { display: grid; gap: 0.45rem; margin: 0 0 0.9rem; }
+.saga-stat { display: grid; grid-template-columns: 62px minmax(0, 1fr) auto; align-items: center; gap: 0.5rem; }
+.saga-stat dt { color: var(--muted); font-size: 0.68rem; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase; }
+.saga-stat dd { display: flex; align-items: center; gap: 0.55rem; margin: 0; }
+.saga-stat strong { color: var(--gold-2); font-size: 0.82rem; font-variant-numeric: tabular-nums; }
+.saga-pips { display: inline-flex; gap: 2px; }
+.saga-pip { width: 7px; height: 10px; border-radius: 2px; background: color-mix(in srgb, var(--ink) 22%, transparent); }
+.saga-pip.is-on { background: linear-gradient(180deg, var(--gold-2), var(--gold)); }
+.saga-thread__boons { margin-top: 0.85rem; padding-top: 0.85rem; border-top: 1px solid var(--line); }
+.saga-thread__boons .eyebrow { margin-bottom: 0.4rem; }
+.saga-boon-list { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+.saga-trail { margin-top: 0.85rem; padding-top: 0.75rem; border-top: 1px solid var(--line); }
+.saga-trail summary { cursor: pointer; color: var(--gold-2); font-size: 0.8rem; font-weight: 650; }
+.saga-trail summary span { font-weight: 400; }
+.saga-trail ol { display: grid; gap: 0.22rem; margin: 0.55rem 0 0; padding-left: 1.1rem; color: var(--muted); font-size: 0.77rem; }
+.saga-trail li.is-current { color: var(--ink); font-weight: 650; }
+.saga-thread__back { margin-top: 0.8rem; }
+
+.saga-ending {
+  margin: 1.8rem 0 0;
+  padding: 1.4rem;
+  border: 1px solid color-mix(in srgb, var(--gold) 45%, var(--line));
+  border-radius: var(--radius);
+  background:
+    radial-gradient(420px 220px at 10% 0%, rgba(216, 169, 79, 0.13), transparent 70%),
+    var(--surface-2);
+  animation: sagaParagraph 0.6s ease both;
+}
+.saga-ending__head { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; margin-bottom: 0.7rem; }
+.saga-ending__head h2 { margin: 0.1rem 0 0; font-size: clamp(1.6rem, 3vw, 2.1rem); }
+.saga-ending p { color: var(--ink-2); font-size: 0.92rem; }
+.saga-ending .small { color: var(--muted); }
+.saga-ending__actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1rem; }
+
+/* Scene motion ------------------------------------------------------- */
+
+.saga-scene { background: #0a0e1a; }
+.saga-scene * { transform-box: fill-box; }
+
+.saga-twinkle { animation: sagaTwinkle 3.2s ease-in-out infinite; }
+.saga-aurora { animation: sagaAurora 9s ease-in-out infinite alternate; }
+.saga-wave { animation: sagaWave 4.2s ease-in-out infinite alternate; }
+.saga-window-glow { animation: sagaGlow 4.4s ease-in-out infinite; }
+.saga-rune-glow { animation: sagaGlow 3.1s ease-in-out infinite; }
+.saga-eye-glow { animation: sagaGlow 2.8s ease-in-out infinite; }
+.saga-water-glow { animation: sagaGlow 5.2s ease-in-out infinite; }
+.saga-water-glint { animation: sagaTwinkle 2.4s ease-in-out infinite; }
+.saga-fire-glow { animation: sagaGlow 1.7s ease-in-out infinite; }
+.saga-chain-glow { animation: sagaTwinkle 2.6s ease-in-out infinite; }
+.saga-sun-glow-pixel { animation: sagaGlow 6s ease-in-out infinite; }
+.saga-mist-pixel { animation: sagaMist 12s ease-in-out infinite alternate; }
+.saga-smoke-puff { animation: sagaSmoke 5.5s ease-out infinite; }
+.saga-flame { animation: sagaFlame 0.9s ease-in-out infinite alternate; transform-origin: 50% 100%; }
+.saga-spark { animation: sagaSpark 1.6s ease-out infinite; }
+.saga-snow { animation: sagaSnow 13s linear infinite; }
+.saga-rain { animation: sagaRain 2s linear infinite; }
+.saga-ember { animation: sagaEmber 4s ease-out infinite; }
+.saga-mote { animation: sagaMote 3.6s ease-in-out infinite; }
+.saga-leaf { animation: sagaLeaf 8s ease-in-out infinite; }
+.saga-bird { animation: sagaBird 7s ease-in-out infinite; }
+.saga-butterfly { animation: sagaButterfly 5s ease-in-out infinite; }
+.saga-drip { animation: sagaDrip 2.6s ease-in infinite; }
+.saga-raven { animation: sagaFly 16s ease-in-out infinite; }
+.saga-flap-a { animation: sagaFlap 0.72s steps(1, end) infinite; }
+.saga-flap-b { animation: sagaFlap 0.72s steps(1, end) infinite; animation-delay: -0.36s; }
+.saga-flash { animation: sagaFlash 8s linear infinite; pointer-events: none; }
+.saga-eye-blink { animation: sagaBlink 6s steps(1, end) infinite; }
+.saga-ship-bob { animation: sagaBob 4.6s ease-in-out infinite alternate; }
+.saga-serpent { animation: sagaCoil 5.5s ease-in-out infinite alternate; }
+.saga-wolf-breath { animation: sagaGlow 3.4s ease-in-out infinite; }
+.saga-breath-puff { animation: sagaBreath 3.8s ease-out infinite; }
+.saga-bifrost { animation: sagaBifrost 4.8s ease-in-out infinite alternate; }
+
+@keyframes sagaTwinkle { 0%, 100% { opacity: 0.22; } 50% { opacity: 1; } }
+@keyframes sagaAurora {
+  from { opacity: 0.42; transform: translateX(-3px) translateY(1px); }
+  to { opacity: 0.85; transform: translateX(4px) translateY(-1px); }
+}
+@keyframes sagaWave {
+  from { transform: translateX(-3px); opacity: 0.55; }
+  to { transform: translateX(4px); opacity: 1; }
+}
+@keyframes sagaGlow { 0%, 100% { opacity: 0.42; } 50% { opacity: 1; } }
+@keyframes sagaMist { from { transform: translateX(-6px); } to { transform: translateX(6px); } }
+@keyframes sagaSmoke {
+  0% { opacity: 0; transform: translate(0, 0) scale(0.7); }
+  18% { opacity: 0.6; }
+  100% { opacity: 0; transform: translate(3px, -15px) scale(1.25); }
+}
+@keyframes sagaFlame {
+  from { transform: scaleY(0.9) scaleX(0.96); opacity: 0.82; }
+  to { transform: scaleY(1.1) scaleX(1.04); opacity: 1; }
+}
+@keyframes sagaSpark {
+  0% { opacity: 0; transform: translate(0, 0); }
+  15% { opacity: 1; }
+  100% { opacity: 0; transform: translate(-4px, -17px); }
+}
+@keyframes sagaSnow {
+  0% { opacity: 0; transform: translate(0, -8px); }
+  12% { opacity: 0.9; }
+  100% { opacity: 0.55; transform: translate(-7px, 62px); }
+}
+@keyframes sagaRain {
+  0% { opacity: 0; transform: translate(0, -10px); }
+  10% { opacity: 0.85; }
+  100% { opacity: 0.1; transform: translate(-10px, 64px); }
+}
+@keyframes sagaEmber {
+  0% { opacity: 0; transform: translate(0, 0); }
+  18% { opacity: 1; }
+  100% { opacity: 0; transform: translate(3px, -26px); }
+}
+@keyframes sagaMote {
+  0%, 100% { opacity: 0.2; transform: translateY(0); }
+  50% { opacity: 1; transform: translateY(-6px); }
+}
+@keyframes sagaLeaf {
+  0% { opacity: 0; transform: translate(0, -4px) rotate(0deg); }
+  15% { opacity: 0.9; }
+  100% { opacity: 0; transform: translate(9px, 26px) rotate(90deg); }
+}
+@keyframes sagaBird {
+  0%, 100% { transform: translate(-6px, 3px); }
+  50% { transform: translate(10px, -4px); }
+}
+@keyframes sagaButterfly {
+  0%, 100% { transform: translate(0, 0); }
+  25% { transform: translate(5px, -4px); }
+  50% { transform: translate(9px, 1px); }
+  75% { transform: translate(4px, 3px); }
+}
+@keyframes sagaDrip {
+  0% { opacity: 0; transform: translateY(0); }
+  20% { opacity: 1; }
+  100% { opacity: 0; transform: translateY(11px); }
+}
+@keyframes sagaFly {
+  0%, 100% { transform: translate(-16px, 2px); }
+  50% { transform: translate(16px, -4px); }
+}
+@keyframes sagaFlap { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+@keyframes sagaFlash {
+  0%, 88%, 100% { opacity: 0; }
+  89% { opacity: 0.65; }
+  90% { opacity: 0.1; }
+  91% { opacity: 0.8; }
+  93% { opacity: 0.08; }
+  94% { opacity: 0.4; }
+}
+@keyframes sagaBlink {
+  0%, 91%, 100% { opacity: 0; }
+  92%, 94% { opacity: 1; }
+}
+@keyframes sagaBob { from { transform: translateY(-1px) rotate(-0.4deg); } to { transform: translateY(1.5px) rotate(0.4deg); } }
+@keyframes sagaCoil { from { transform: translateY(-1px); } to { transform: translateY(2px); } }
+@keyframes sagaBreath {
+  0% { opacity: 0; transform: translate(0, 0) scale(0.7); }
+  25% { opacity: 0.7; }
+  100% { opacity: 0; transform: translate(5px, -4px) scale(1.3); }
+}
+@keyframes sagaBifrost { from { opacity: 0.55; } to { opacity: 1; } }
+@keyframes sagaParagraph {
+  from { opacity: 0; transform: translateY(7px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Saga responsive ---------------------------------------------------- */
+
+@media (max-width: 980px) {
+  .saga-hero,
+  .saga-home { grid-template-columns: 1fr; gap: 1.6rem; }
+  .saga-hero__frame { order: -1; }
+  .saga-layout { grid-template-columns: 1fr; }
+  .saga-visual { position: static; max-width: 680px; }
+  .saga-road-grid { grid-template-columns: 1fr; }
+  .saga-how__steps { grid-template-columns: 1fr; }
+  .saga-gallery__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 560px) {
+  .saga-name-row { flex-direction: column; }
+  .saga-name-row .button { width: 100%; }
+  .saga-topbar { flex-direction: column; align-items: flex-start; }
+  .saga-gallery__grid { grid-template-columns: 1fr; }
+  .saga-resume__actions .button { width: 100%; }
+  .saga-ending__head { flex-direction: column; }
+  .saga-scene-progress { align-items: flex-start; }
+  .saga-scene-progress .progress { flex-basis: 100%; }
+}
+
+@media (max-width: 720px) {
+  .saga-listen-inline { min-height: 2.2rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .saga-scene *,
+  .saga-paragraph,
+  .saga-lore,
+  .saga-choices,
+  .saga-ending { animation: none !important; }
+  .saga-flap-b { opacity: 0 !important; }
+  .saga-flash,
+  .saga-snow,
+  .saga-rain,
+  .saga-ember,
+  .saga-spark,
+  .saga-mote,
+  .saga-leaf,
+  .saga-drip,
+  .saga-breath-puff { opacity: 0 !important; }
 }

@@ -140,8 +140,8 @@ are generated in the browser and are never fetched as image files.
 - The paragraph number shifts the sun and motif by a few cells, so the scene
   subtly changes as the reader moves through the telling. It is still the same
   symbolic place, not a new illustration for every paragraph.
-- Always label the panel `A symbolic scene, not a literal illustration.` Do not
-  imply that the pixel composition is a historical reconstruction.
+- Keep the caption to the place or moment. Do not add medium notes, technical
+  labels, or disclaimers to the image; keep the player inside the scene.
 
 ### Quiz clues
 
@@ -185,14 +185,17 @@ installed system voice, and preview it.
 
 Studio narration uses pre-generated neural clips, with the browser's
 SpeechSynthesis engine as fallback. Joe and Cori are open Piper voices with
-permissive licences. Morgan is a fan-made XTTS v2 clone of a public figure: it
-is allowed only because it is labelled as a fan-made, non-commercial clone in the
-dialog and in the About page, and it must never be presented as the person's
-endorsement or used to deceive a listener. Never label a system voice as a real
-person. The Voice dialog lists installed system voices, groups Premium/Enhanced/Natural
-voices first with a ★, persists the chosen `voiceURI`, and previews it with a
-neutral sample sentence. The studio voices are selectable auditions that drive real pre-generated clips;
-the system voice remains the fallback when a clip is unavailable.
+permissive licences. Morgan is a fan-made clone of a public figure: the archive
+clips use XTTS v2 and the saga clips use a Piper Morgan model. It is allowed only
+because it is labelled as a fan-made, non-commercial clone in the dialog and in
+the About page, and it must never be presented as the person's endorsement or
+used to deceive a listener. Never label a system voice as a real person. Morgan
+is preselected; the first Listen opens the picker so the reader makes an
+explicit choice. The Voice dialog lists installed system voices, groups
+Premium/Enhanced/Natural voices first with a ★, persists the chosen `voiceURI`,
+and previews it with a neutral sample sentence. The studio voices are selectable
+auditions that drive real pre-generated clips; the system voice remains the
+fallback when a clip is unavailable.
 
 ## Review checklist for new art
 

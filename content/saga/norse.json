@@ -1,0 +1,1384 @@
+{
+  "id": "norse-ash-seed",
+  "tradition": "Norse",
+  "title": "The Ash-Seed",
+  "subtitle": "A choose-your-path saga through Norse myth",
+  "tagline": "The stars are going out. You are carrying the seed of the World Tree.",
+  "intro": "The last autumn before Fimbulwinter, a raven drops an ash-seed into your hand. Only a mortal can carry it to the Well of Urd. Three roads leave your village: the raven's road of wisdom, the wolf's road of cunning and the hammer's road of courage. Every choice writes a different ending.",
+  "setting": "Hrafnvik, Midgard — the last autumn before Fimbulwinter",
+  "default_name": "Michael",
+  "name_suggestions": [
+    "Michael",
+    "Jason",
+    "Astrid",
+    "Eirik"
+  ],
+  "start": "prologue",
+  "acts": [
+    {
+      "id": 1,
+      "title": "The Broken Sky"
+    },
+    {
+      "id": 2,
+      "title": "Three Roads"
+    },
+    {
+      "id": 3,
+      "title": "The Root of the Worlds"
+    }
+  ],
+  "paths": [
+    {
+      "id": "raven",
+      "title": "The Raven's Road",
+      "glyph": "raven",
+      "blurb": "Follow Odin into the price of wisdom. Meet Mimir, see what the well remembers, and cross the bridge that will burn."
+    },
+    {
+      "id": "wolf",
+      "title": "The Wolf's Road",
+      "glyph": "wolf",
+      "blurb": "Bargain with Loki, hold the bowl for Sigyn, and stand before Fenrir with a chain in your hand."
+    },
+    {
+      "id": "hammer",
+      "title": "The Hammer's Road",
+      "glyph": "hammer",
+      "blurb": "Work Thor's forge, walk into a giant's wedding, and decide what a god is allowed to carry for you."
+    }
+  ],
+  "boons": {
+    "pathRaven": "Raven thread",
+    "pathWolf": "Wolf thread",
+    "pathHammer": "Hammer thread",
+    "nornMark": "Norn-marked",
+    "questionedOdin": "A question asked",
+    "silentOdin": "Silence kept",
+    "refusedOdin": "Refused Asgard",
+    "odinRune": "Odin's rune",
+    "odinOffer": "Heard Odin's offer",
+    "memoryGiven": "A memory given",
+    "nameGiven": "A name given",
+    "refusedWell": "Refused the well",
+    "baldrHope": "Hope for Baldr",
+    "nornFear": "The Norns' fear",
+    "heimdallPass": "Heimdall's permission",
+    "heimdallWarned": "Heimdall warned",
+    "crossedUnseen": "Crossed unseen",
+    "lokiDebt": "Loki's debt",
+    "namedLoki": "Named the trickster",
+    "refusedLoki": "Refused the trickster",
+    "flyting": "The word-trick",
+    "knowsFenrir": "Fenrir's history",
+    "keptShape": "Kept your shape",
+    "lokiFreed": "Loki loosed",
+    "sigynPity": "Sigyn's thanks",
+    "venomFlask": "Serpent venom",
+    "fenrirFreed": "Fenrir loosed",
+    "fenrirWeakened": "Fenrir weakened",
+    "fenrirAlly": "Fenrir's favour",
+    "wolfLeft": "Left Fenrir bound",
+    "gaveSeedToWolf": "The wolf has the seed",
+    "thorAlly": "Thor's trust",
+    "liedToThor": "Kept a secret",
+    "trackedGiant": "Took the trail",
+    "bridesmaid": "The bridesmaid",
+    "duelSuggested": "A straight fight",
+    "lokiDeal": "Loki's deal",
+    "thrymDefeated": "Thrym defeated",
+    "hammerStolen": "Held Mjolnir",
+    "warnedThrym": "Mercy for a giant",
+    "thorOath": "Thor's oath",
+    "hammerSplinter": "Splinter of Mjolnir",
+    "gaveSeed": "Seed surrendered"
+  },
+  "endings": [
+    {
+      "id": "renewal",
+      "title": "The Thread Renewed",
+      "rank": "Hopeful ending",
+      "blurb": "Plant the seed. A new ash grows out of the end of everything.",
+      "node": "ending-renewal"
+    },
+    {
+      "id": "wall",
+      "title": "The Wall of Asgard",
+      "rank": "Bittersweet ending",
+      "blurb": "Let the gods keep it. The tree lives; the human world freezes.",
+      "node": "ending-wall"
+    },
+    {
+      "id": "wolf",
+      "title": "The Wolf's Guest",
+      "rank": "Wild ending",
+      "blurb": "Free Fenrir. The end comes early, but it comes on your terms.",
+      "node": "ending-wolf"
+    },
+    {
+      "id": "ragnarok",
+      "title": "The Last Winter",
+      "rank": "Heroic ending",
+      "blurb": "Burn the old tree, stand with the gods, and make the ending mean something.",
+      "node": "ending-ragnarok"
+    },
+    {
+      "id": "quiet",
+      "title": "The Quiet Shore",
+      "rank": "Quiet ending",
+      "blurb": "Take the seed home. Not every thread needs to be a saga.",
+      "node": "ending-quiet"
+    }
+  ],
+  "nodes": {
+    "prologue": {
+      "id": "prologue",
+      "act": 1,
+      "chapter": "1",
+      "title": "The Night the Stars Went Out",
+      "location": "Hrafnvik, Midgard",
+      "art": "fjord",
+      "artCaption": "Raven Bay under the first winter sky",
+      "text": [
+        "The stars above Raven Bay went out one by one. You are {name}, a net-mender's child, down at the shore to check the boats before the tide turned.",
+        "A raven landed on your father's boat. It dropped a seed into your palm, black at the root and gold at the tip. The wood grew warm under your hand.",
+        "Old Sigrun, the volva, stood behind you. 'The World Tree is bleeding. Three winters are coming with no summer between them. Only a mortal can carry that seed to the Well of Urd.'",
+        "The raven lifted one wing north. A howl answered from the pines. Sigrun tied the seed to your palm. 'Three roads leave this shore. Choose the one you can still walk when the dark comes.'"
+      ],
+      "lore": {
+        "title": "Fimbulwinter and the volva",
+        "body": "Norse sources describe Fimbulvetr, the 'great winter' before Ragnarok: three winters with no summer between them, when people quarrel and the world grows cold. A volva is a seer who practises seidr, a form of magic associated with prophecy. In Voluspa, a volva speaks the whole history of the worlds to Odin, from the first void to the fire at the end.",
+        "source": "Poetic Edda, Voluspa; Prose Edda, Gylfaginning"
+      },
+      "choices": [
+        {
+          "label": "Follow the raven north, toward the old stone circle",
+          "to": "raven-1",
+          "tag": "Raven's road · +1 insight",
+          "effects": {
+            "add": {
+              "insight": 1
+            },
+            "set": {
+              "pathRaven": true,
+              "nornMark": true
+            }
+          }
+        },
+        {
+          "label": "Follow the wolf tracks into the pine wood",
+          "to": "wolf-1",
+          "tag": "Wolf's road · +1 cunning",
+          "effects": {
+            "add": {
+              "cunning": 1
+            },
+            "set": {
+              "pathWolf": true,
+              "nornMark": true
+            }
+          }
+        },
+        {
+          "label": "Take the seed to the forge and ask Thor for help",
+          "to": "forge-1",
+          "tag": "Hammer's road · +1 courage",
+          "effects": {
+            "add": {
+              "courage": 1
+            },
+            "set": {
+              "pathHammer": true,
+              "nornMark": true
+            }
+          }
+        }
+      ]
+    },
+    "raven-1": {
+      "id": "raven-1",
+      "act": 2,
+      "chapter": "2",
+      "title": "The Wanderer at the Stones",
+      "location": "The old stone circle, Midgard",
+      "art": "circle",
+      "artCaption": "A ring of standing stones beneath a fading aurora",
+      "text": [
+        "The raven flew low across the moor, from fence post to pine branch, and you followed until the trees opened. A ring of standing stones waited in the frost.",
+        "A wanderer sat on the altar. His hat was broad, his cloak the colour of wet ash, and a spear leaned against his knee. One eye was bright; the other was a hollow shadow.",
+        "'You are late,' he said. 'And you carry something that belongs under a root.' He did not ask for the seed. He only watched it.",
+        "His one eye was not cruel. It was hungry. He had waited a long time for something he could not take by force."
+      ],
+      "lore": {
+        "title": "Odin the wanderer",
+        "body": "Odin often travels in disguise: a wide-brimmed hat, a grey cloak and a spear. In the poem Havamal he describes hanging on the windblown tree for nine nights, pierced by a spear, to win the runes. He also gave one eye to Mimir's well in exchange for wisdom. The god of victory and death is also the god of poetry, knowledge and risky bargains.",
+        "source": "Poetic Edda, Havamal and Voluspa; Prose Edda, Gylfaginning"
+      },
+      "choices": [
+        {
+          "label": "Answer him with a question of your own",
+          "to": "raven-2",
+          "tag": "Wisdom · +1 insight",
+          "effects": {
+            "add": {
+              "insight": 1
+            },
+            "set": {
+              "questionedOdin": true
+            }
+          }
+        },
+        {
+          "label": "Ask what the gods would give for the seed",
+          "to": "raven-gift",
+          "tag": "Bargain with Asgard",
+          "effects": {
+            "add": {
+              "insight": 1
+            },
+            "set": {
+              "odinOffer": true
+            }
+          }
+        },
+        {
+          "label": "Walk past him without a word",
+          "to": "raven-2",
+          "tag": "Silence · +1 courage",
+          "effects": {
+            "add": {
+              "courage": 1
+            },
+            "set": {
+              "silentOdin": true
+            }
+          }
+        }
+      ]
+    },
+    "raven-gift": {
+      "id": "raven-gift",
+      "act": 2,
+      "chapter": "2",
+      "title": "A Seat at Odin's Table",
+      "location": "The edge of Asgard",
+      "art": "asgard",
+      "artCaption": "Golden shields and the burning colours of Bifrost",
+      "text": [
+        "The moor became a hall. The stones became pillars; the frost became gold. A rainbow bridge burned below, and two ravens circled a roof of shields.",
+        "'I am Odin,' he said. 'I can put the seed beneath the deathless root. I can give you a seat at my table and a sword that will not rust. You need not walk into the dark.'",
+        "It was a generous offer and an old trap. The gods would keep the seed safe because they wanted the world unchanged. Sigrun's warning returned: the gods were tangled in fate. You were not.",
+        "'Well?' said Odin. 'What will you do with the little light in your hand?'"
+      ],
+      "lore": {
+        "title": "Asgard and Valhalla",
+        "body": "Asgard is the home of the Aesir gods, reached from Midgard by the rainbow bridge Bifrost. Odin's hall Valhalla has a roof of shields and spear-shafts; warriors chosen by the Valkyries feast there and fight each day, preparing for Ragnarok. The gods are powerful, but they are not all-knowing or all-safe. Most of them know how the story ends.",
+        "source": "Prose Edda, Gylfaginning; Poetic Edda, Grimnismal"
+      },
+      "choices": [
+        {
+          "label": "Trust him. Give him the seed.",
+          "to": "ending-wall",
+          "tag": "Asgard keeps the seed",
+          "effects": {
+            "set": {
+              "gaveSeed": true
+            }
+          }
+        },
+        {
+          "label": "Refuse. Ask to see the well first.",
+          "to": "raven-2",
+          "tag": "Keep the seed · +1 courage",
+          "effects": {
+            "add": {
+              "courage": 1
+            },
+            "set": {
+              "refusedOdin": true
+            }
+          }
+        },
+        {
+          "label": "Ask for a rune to carry into the dark",
+          "to": "raven-2",
+          "tag": "Take Odin's rune · +1 insight",
+          "effects": {
+            "add": {
+              "insight": 1
+            },
+            "set": {
+              "odinRune": true
+            }
+          }
+        }
+      ]
+    },
+    "raven-2": {
+      "id": "raven-2",
+      "act": 2,
+      "chapter": "3",
+      "title": "The Price at Mimir's Well",
+      "location": "Beneath the world tree",
+      "art": "well",
+      "artCaption": "A stone well glowing under the roots of Yggdrasil",
+      "text": [
+        "Odin led you down a stair of roots to a stone well. The water was so dark it looked like a hole in the world.",
+        "A head waited beneath the surface, eyes closed, beard drifting like weed. 'Mimir,' Odin said. The head opened its eyes. 'Another little flame come to ask for more than it has.'",
+        "Mimir named the price: a memory, freely given, and the well would choose which. 'You will not feel the loss. That is the cruelty. Everyone else will remember for you.'",
+        "Odin did not look at you. He had paid this price long ago."
+      ],
+      "lore": {
+        "title": "Mimir's well",
+        "body": "Mimir guarded the well of wisdom beneath one root of Yggdrasil. Odin pledged one of his eyes for a drink from it. After the Aesir and Vanir made peace, Mimir was sent to the Vanir as a hostage; they beheaded him and returned the head to Odin, who preserved it with herbs and consulted it for counsel. Wisdom in Norse myth is rarely free or comfortable.",
+        "source": "Poetic Edda, Voluspa; Prose Edda, Gylfaginning"
+      },
+      "variants": [
+        {
+          "when": {
+            "flags": [
+              "questionedOdin"
+            ]
+          },
+          "text": "Odin glanced at you. 'You asked what I saw when I gave my eye. I saw that the question was worth more than the answer. Mimir will ask it in his own way.'"
+        },
+        {
+          "when": {
+            "flags": [
+              "silentOdin"
+            ]
+          },
+          "text": "'Silence suited you,' Odin said. 'The well will not accept silence. It wants something you would rather keep.'"
+        }
+      ],
+      "choices": [
+        {
+          "label": "Give up the memory of your mother's face",
+          "to": "raven-3",
+          "tag": "A memory given · +2 insight",
+          "effects": {
+            "add": {
+              "insight": 2
+            },
+            "set": {
+              "memoryGiven": true
+            }
+          }
+        },
+        {
+          "label": "Give up the memory of your own name",
+          "to": "raven-3",
+          "tag": "A name given · +2 insight",
+          "effects": {
+            "add": {
+              "insight": 2
+            },
+            "set": {
+              "nameGiven": true
+            }
+          }
+        },
+        {
+          "label": "Refuse. Some prices are too high.",
+          "to": "raven-3",
+          "tag": "Refuse the well · +1 courage",
+          "effects": {
+            "add": {
+              "courage": 1
+            },
+            "set": {
+              "refusedWell": true
+            }
+          }
+        }
+      ]
+    },
+    "raven-3": {
+      "id": "raven-3",
+      "act": 2,
+      "chapter": "4",
+      "title": "What the Well Remembered",
+      "location": "The roots of Yggdrasil",
+      "art": "tree",
+      "artCaption": "The world ash, its runes awake and its roots drinking",
+      "text": [
+        "The water rose without spilling. You saw a bright god laughing, a blind brother with a dart, a wolf with a sword in its jaws, a ship of dead men's nails, and green shoots pushing through ash.",
+        "'Baldr,' Mimir said. 'The first great loss. Then the wolf, then the fire. You cannot unspin what the Norns have spun. But a new thread can be tied to an old one.'",
+        "The vision narrowed to a dry well and a seed. 'Plant it where the three roots meet. The tree will take it, or it will not. That is the only honest prophecy I have.'",
+        "Behind you, Odin had gone still. Even a god can fear a hope he did not choose."
+      ],
+      "lore": {
+        "title": "Baldr and the first crack",
+        "body": "Baldr the Beautiful was the best-loved of the gods. Frigg made every thing swear not to harm him, but she overlooked mistletoe. Loki guided the blind god Hodr's hand, and Baldr died. Hermod rode to Hel to beg for his return; Hel agreed only if everything in the world wept for him. One giantess, Thokk, refused. Many scholars read Thokk as Loki in disguise. The death is the first crack before Ragnarok.",
+        "source": "Prose Edda, Gylfaginning; Poetic Edda, Baldrs draumar"
+      },
+      "choices": [
+        {
+          "label": "Ask Mimir how Baldr might come back",
+          "to": "raven-4",
+          "tag": "Hope for Baldr · +1 insight",
+          "effects": {
+            "add": {
+              "insight": 1
+            },
+            "set": {
+              "baldrHope": true
+            }
+          }
+        },
+        {
+          "label": "Ask what the Norns are afraid of",
+          "to": "raven-4",
+          "tag": "The Norns' fear · +1 insight",
+          "effects": {
+            "add": {
+              "insight": 1
+            },
+            "set": {
+              "nornFear": true
+            }
+          }
+        },
+        {
+          "label": "Ask for a rune to carry into the dark",
+          "to": "raven-4",
+          "tag": "Take Odin's rune · +1 insight",
+          "effects": {
+            "add": {
+              "insight": 1
+            },
+            "set": {
+              "odinRune": true
+            }
+          }
+        }
+      ]
+    },
+    "raven-4": {
+      "id": "raven-4",
+      "act": 2,
+      "chapter": "5",
+      "title": "The Bridge That Will Burn",
+      "location": "Bifrost, between Midgard and Asgard",
+      "art": "asgard",
+      "artCaption": "The rainbow bridge under a sky of broken stars",
+      "text": [
+        "Bifrost burned under your boots, though it was made of light. Each step rang like a harp string. Below, the nine worlds turned in the dark.",
+        "Heimdall stood at the bridge's end, horn at his belt, eyes fixed north. 'I see the seed,' he said. 'I see the wolf's chain and the serpent's coils. I see the fire that will come over this bridge.'",
+        "'I cannot leave my post, and I cannot let the seed pass without knowing what you intend.' His gaze was patient and terrible. He had watched for the end since the worlds were young."
+      ],
+      "lore": {
+        "title": "Bifrost and Heimdall",
+        "body": "Bifrost is the rainbow bridge between Midgard and Asgard. Heimdall guards it; his senses are so sharp that he can hear grass grow and see for a hundred leagues. At Ragnarok he sounds the horn Gjallarhorn to warn the gods, and he and Loki kill each other. The bridge itself is burned by the fire giants.",
+        "source": "Prose Edda, Gylfaginning; Poetic Edda, Voluspa"
+      },
+      "choices": [
+        {
+          "label": "Show Odin's rune and ask Heimdall to let you pass",
+          "to": "root-1",
+          "tag": "Heimdall's permission · +1 insight",
+          "effects": {
+            "add": {
+              "insight": 1
+            },
+            "set": {
+              "heimdallPass": true
+            }
+          },
+          "requires": {
+            "anyFlags": [
+              "odinRune"
+            ]
+          }
+        },
+        {
+          "label": "Tell him the truth and ask him to leave his post",
+          "to": "root-1",
+          "tag": "Heimdall warned · +1 courage",
+          "effects": {
+            "add": {
+              "courage": 1
+            },
+            "set": {
+              "heimdallWarned": true
+            }
+          }
+        },
+        {
+          "label": "Wait until his eyes turn north, then slip across",
+          "to": "root-1",
+          "tag": "Crossed unseen · +1 cunning",
+          "effects": {
+            "add": {
+              "cunning": 1
+            },
+            "set": {
+              "crossedUnseen": true
+            }
+          }
+        }
+      ]
+    },
+    "wolf-1": {
+      "id": "wolf-1",
+      "act": 2,
+      "chapter": "2",
+      "title": "The Wolf in the Trap",
+      "location": "The pine wood, Midgard",
+      "art": "pinewood",
+      "artCaption": "Moonlight, pines, and a broken farmstead",
+      "text": [
+        "The tracks were too large for a fox and too neat for a bear. They ended at a wolf caught in an iron trap.",
+        "The wolf was enormous. One hind leg was pinned; the snow around it was dark with old blood. It watched you with amber eyes. 'You are either very brave or very lost. I am hoping for lost.'",
+        "'Free me,' it said, 'and I will show you the road the gods use when they want to go quietly. A better bargain than they will offer.' The trap's teeth shifted. It did not whimper.",
+        "You had heard of a trickster who could wear any shape. Its eyes were not quite a wolf's eyes."
+      ],
+      "lore": {
+        "title": "Loki the shapeshifter",
+        "body": "Loki is the trickster of Norse myth: a blood-brother of Odin, a giant by birth, and a problem for everyone. He changes shape, borrows falcon cloaks, and solves problems by cheating. He also helps the gods as often as he harms them. His children are Fenrir the wolf, Jormungandr the world serpent, and Hel, queen of the dead. He is not simply evil; he is the story's great destabiliser.",
+        "source": "Prose Edda, Gylfaginning and Skaldskaparmal; Poetic Edda, Lokasenna"
+      },
+      "choices": [
+        {
+          "label": "Free the wolf and accept its guidance",
+          "to": "wolf-2",
+          "tag": "Loki's debt · +1 cunning",
+          "effects": {
+            "add": {
+              "cunning": 1
+            },
+            "set": {
+              "lokiDebt": true
+            }
+          }
+        },
+        {
+          "label": "Free it, but demand its true name first",
+          "to": "wolf-2",
+          "tag": "A name named · +1 insight",
+          "effects": {
+            "add": {
+              "insight": 1
+            },
+            "set": {
+              "namedLoki": true,
+              "lokiDebt": true
+            }
+          }
+        },
+        {
+          "label": "Leave it trapped and follow the tracks alone",
+          "to": "wolf-2",
+          "tag": "Refuse the trickster · +1 courage",
+          "effects": {
+            "add": {
+              "courage": 1
+            },
+            "set": {
+              "refusedLoki": true
+            }
+          }
+        }
+      ]
+    },
+    "wolf-2": {
+      "id": "wolf-2",
+      "act": 2,
+      "chapter": "3",
+      "title": "The Lesson of the Split Tongue",
+      "location": "The ruined farmstead, Midgard",
+      "art": "pinewood",
+      "artCaption": "A green fire in a roofless hall",
+      "text": [
+        "The trap opened. The wolf shook itself and became a tall figure in a patched cloak, smiling too widely. 'Loki,' it said, 'or Loki's cousin, if you prefer.'",
+        "He lit a green fire in the ruined farmstead. 'There are two kinds of power: the kind that strikes, and the kind that makes the striking miss. I can teach you the second.'",
+        "'The price is a promise. When the wolf asks you to remember me, remember me. Not the gods, not the tree. Me.'",
+        "The green fire snapped. The seed in your hand felt impossibly small."
+      ],
+      "lore": {
+        "title": "Flyting and Loki's children",
+        "body": "Flyting is a formal exchange of insults, often in verse; Lokasenna preserves one in which Loki insults every god at Aegir's feast. Norse myth is full of contests of wit as well as strength. Loki's children with the giantess Angrboda were Fenrir, Jormungandr and Hel. The gods bound Fenrir with a chain called Gleipnir, made by dwarves from impossible things: the sound of a cat's step, the beard of a woman, the roots of a mountain.",
+        "source": "Poetic Edda, Lokasenna; Prose Edda, Gylfaginning"
+      },
+      "variants": [
+        {
+          "when": {
+            "flags": [
+              "refusedLoki"
+            ]
+          },
+          "text": "The wolf had followed you anyway. 'I escaped,' Loki said. 'You left the trap open. That is practically an invitation.'"
+        },
+        {
+          "when": {
+            "flags": [
+              "namedLoki"
+            ]
+          },
+          "text": "'You named me,' Loki said, pleased. 'Names are dangerous. Now the gods will hear that someone in Midgard knows where I am.'"
+        }
+      ],
+      "choices": [
+        {
+          "label": "Learn the word-trick",
+          "to": "wolf-3",
+          "tag": "Split tongue · +2 cunning",
+          "effects": {
+            "add": {
+              "cunning": 2
+            },
+            "set": {
+              "flyting": true
+            }
+          }
+        },
+        {
+          "label": "Ask why the gods bound Fenrir",
+          "to": "wolf-3",
+          "tag": "Fenrir's history · +1 insight",
+          "effects": {
+            "add": {
+              "insight": 1
+            },
+            "set": {
+              "knowsFenrir": true
+            }
+          }
+        },
+        {
+          "label": "Refuse the lesson and keep your own shape",
+          "to": "wolf-3",
+          "tag": "Keep your shape · +1 courage",
+          "effects": {
+            "add": {
+              "courage": 1
+            },
+            "set": {
+              "keptShape": true
+            }
+          }
+        }
+      ]
+    },
+    "wolf-3": {
+      "id": "wolf-3",
+      "act": 2,
+      "chapter": "4",
+      "title": "The Bowl That Never Empties",
+      "location": "A cave beneath the mountains",
+      "art": "cave",
+      "artCaption": "Green flame, a dripping serpent and a patient woman",
+      "text": [
+        "Loki stopped at a cave mouth and did not smile. 'Do not help the woman. Do not cut anything. Do not listen to me.'",
+        "Inside, a man was bound to a stone with cords like hardened roots. A serpent hung above his face, venom beading at its fangs. A woman caught the drops in a wooden bowl. Her hands were scarred; her face was calm.",
+        "'I know what you carry,' the bound man said. 'I can take you to the root in one night. All you have to do is cut one cord.' The woman did not look up.",
+        "The bowl was almost full."
+      ],
+      "lore": {
+        "title": "The binding of Loki and Sigyn",
+        "body": "After Loki insulted the gods at Aegir's feast, he fled and was caught. The gods bound him to a rock with the entrails of his son Narfi. A serpent was hung above him, dripping venom. His wife Sigyn stayed beside him, catching the venom in a bowl; when she turned to empty it, the drops struck Loki's face, and his writhing was said to cause earthquakes. He remains bound until Ragnarok.",
+        "source": "Prose Edda, Gylfaginning; Poetic Edda, Lokasenna"
+      },
+      "variants": [
+        {
+          "when": {
+            "flags": [
+              "flyting"
+            ]
+          },
+          "text": "'The word-trick,' Loki whispered. 'Use it. A word can be a key or a knife. Choose.'"
+        },
+        {
+          "when": {
+            "flags": [
+              "sigynPity"
+            ]
+          },
+          "text": "The woman glanced at you. In her eyes was neither hope nor blame: only the next empty bowl."
+        }
+      ],
+      "choices": [
+        {
+          "label": "Cut Loki's bonds. No one should be left to rot.",
+          "to": "wolf-4",
+          "tag": "Loki loosed · +1 courage",
+          "effects": {
+            "add": {
+              "courage": 1
+            },
+            "set": {
+              "lokiFreed": true
+            }
+          }
+        },
+        {
+          "label": "Refuse Loki, but hold the bowl for Sigyn",
+          "to": "wolf-4",
+          "tag": "Sigyn's thanks · +1 courage",
+          "effects": {
+            "add": {
+              "courage": 1
+            },
+            "set": {
+              "sigynPity": true
+            }
+          }
+        },
+        {
+          "label": "Bottle the serpent's venom to use against the wolf",
+          "to": "wolf-4",
+          "tag": "Serpent venom · +1 cunning",
+          "effects": {
+            "add": {
+              "cunning": 1
+            },
+            "set": {
+              "venomFlask": true
+            }
+          }
+        }
+      ]
+    },
+    "wolf-4": {
+      "id": "wolf-4",
+      "act": 2,
+      "chapter": "5",
+      "title": "The Wolf at the End of the Chain",
+      "location": "The frozen island of Lyngvi",
+      "art": "wolf",
+      "artCaption": "Fenrir bound beneath a cold moon",
+      "text": [
+        "The island was white with frost and silence. A wolf the size of a hall lay bound by a ribbon of light. The chain was thin as a hair and stronger than iron.",
+        "Fenrir opened one eye. 'The gods made this leash from things that do not exist. They feared what I would become. I was a pup when they brought me here. I ate from their hands.'",
+        "'You are not a god. Why are you carrying their seed?' The eye turned to you. 'Break one strand, and I will carry you to the root before the sky falls. Or run home. I have eaten gods; I am not offended by fear.'",
+        "The seed beat against your palm like a second heart."
+      ],
+      "lore": {
+        "title": "Fenrir and Gleipnir",
+        "body": "Fenrir was one of Loki's children. The gods raised him at first, but as he grew they feared him. They challenged him to break three fetters; he snapped the first two. The third, Gleipnir, was made by dwarves from six impossible things. Fenrir suspected a trick and would only allow it if someone put a hand in his mouth as a pledge. Tyr did. When the wolf could not break free, he bit off Tyr's hand. Fenrir is bound until Ragnarok, when he will swallow Odin.",
+        "source": "Prose Edda, Gylfaginning; Poetic Edda, Voluspa"
+      },
+      "choices": [
+        {
+          "label": "Break one strand of Gleipnir",
+          "to": "root-1",
+          "tag": "Fenrir loosed · +1 courage",
+          "effects": {
+            "add": {
+              "courage": 1
+            },
+            "set": {
+              "fenrirFreed": true
+            }
+          }
+        },
+        {
+          "label": "Use the serpent's venom to weaken the chain",
+          "to": "root-1",
+          "tag": "Fenrir weakened · +1 cunning",
+          "effects": {
+            "add": {
+              "cunning": 1
+            },
+            "set": {
+              "fenrirWeakened": true
+            }
+          },
+          "requires": {
+            "anyFlags": [
+              "venomFlask"
+            ]
+          }
+        },
+        {
+          "label": "Speak Loki's word and ask Fenrir to carry you",
+          "to": "root-1",
+          "tag": "Fenrir's favour · +1 cunning",
+          "effects": {
+            "add": {
+              "cunning": 1
+            },
+            "set": {
+              "fenrirAlly": true
+            }
+          },
+          "requires": {
+            "anyFlags": [
+              "lokiFreed"
+            ]
+          }
+        },
+        {
+          "label": "Leave the wolf bound and walk to the root alone",
+          "to": "root-1",
+          "tag": "Leave Fenrir · +1 courage",
+          "effects": {
+            "add": {
+              "courage": 1
+            },
+            "set": {
+              "wolfLeft": true
+            }
+          }
+        },
+        {
+          "label": "Put the seed in Fenrir's jaws and let him swallow fate",
+          "to": "ending-wolf",
+          "tag": "Give the seed to the wolf",
+          "effects": {
+            "set": {
+              "fenrirFreed": true,
+              "gaveSeedToWolf": true
+            }
+          }
+        }
+      ]
+    },
+    "forge-1": {
+      "id": "forge-1",
+      "act": 2,
+      "chapter": "2",
+      "title": "The Hammer That Cracked",
+      "location": "The village forge, Midgard",
+      "art": "forge",
+      "artCaption": "Sparks, an anvil and a storm outside the window",
+      "text": [
+        "Thor came out of the storm with rain in his beard and a crack across Mjolnir's haft. 'Keep the fire alive,' he said. 'I am not done.'",
+        "You worked the bellows until your arms shook. Thor sang something old and angry and hammered the crack closed one spark at a time. Near midnight he set the hammer on the anvil and slept.",
+        "You were awake when the frost giant came. Thrym was huge and quiet, and the cold came off him like smoke. He looked at the hammer, then at you. 'A mortal. How convenient.' He took Mjolnir and was gone.",
+        "Thor woke to a cold forge and an empty anvil. The storm had stopped. The silence felt like the world holding its breath."
+      ],
+      "lore": {
+        "title": "Thor and Mjolnir",
+        "body": "Thor is the thunder god and the defender of gods and humans. His hammer Mjolnir was forged by dwarves; it always returns to his hand and can be used to bless as well as to crush. In Thrymskvida, the giant Thrym steals Mjolnir and demands Freyja as his bride. Thor and Loki travel to Jotunheim in disguise to get it back. Thor is not the cleverest god, but he is the one who keeps showing up.",
+        "source": "Poetic Edda, Thrymskvida; Prose Edda, Gylfaginning"
+      },
+      "choices": [
+        {
+          "label": "Tell Thor at once and pledge to help",
+          "to": "forge-2",
+          "tag": "Thor's trust · +2 courage",
+          "effects": {
+            "add": {
+              "courage": 2
+            },
+            "set": {
+              "thorAlly": true
+            }
+          }
+        },
+        {
+          "label": "Hide the seed and say nothing about it",
+          "to": "forge-2",
+          "tag": "Keep it hidden · +1 cunning",
+          "effects": {
+            "add": {
+              "cunning": 1
+            },
+            "set": {
+              "liedToThor": true
+            }
+          }
+        },
+        {
+          "label": "Follow the giant's tracks before Thor wakes",
+          "to": "forge-3",
+          "tag": "Take the trail · +1 courage",
+          "effects": {
+            "add": {
+              "courage": 1
+            },
+            "set": {
+              "trackedGiant": true
+            }
+          }
+        }
+      ]
+    },
+    "forge-2": {
+      "id": "forge-2",
+      "act": 2,
+      "chapter": "3",
+      "title": "The Bridal Plan",
+      "location": "Thor's hall, Asgard",
+      "art": "asgard",
+      "artCaption": "A hall of shields, where a bad plan is being born",
+      "text": [
+        "Thor wanted to storm Jotunheim. Loki wanted to be clever. 'Thrym asked for Freyja,' Loki said. 'Give him a bride. Put a veil on Thor, a necklace on Thor, and a very large meal on the table.'",
+        "Thor objected at length and volume. Loki waited. 'You could fight every giant in Jotunheim, or wear a dress for one evening. I know which I would survive.'",
+        "You held the seed while they argued. It glowed whenever the hammer was mentioned, as if it recognised something in the metal. Loki noticed. He noticed everything.",
+        "'The little mortal has an idea,' he said. 'Or a secret. With mortals it is hard to tell.'"
+      ],
+      "lore": {
+        "title": "Thrymskvida, the funny poem",
+        "body": "Thrymskvida is one of the funniest poems in the Poetic Edda. Thor's hammer is stolen by Thrym, who will return it only if Freyja marries him. Heimdall suggests dressing Thor as the bride; Loki goes as the bridesmaid. At the feast the 'bride' eats an ox, eight salmon and all the cakes. Thrym is astonished; Loki explains that Freyja has not eaten for eight days. When the hammer is brought to bless the bride, Thor takes it and strikes.",
+        "source": "Poetic Edda, Thrymskvida"
+      },
+      "choices": [
+        {
+          "label": "Volunteer to carry the seed as the bridesmaid",
+          "to": "forge-3",
+          "tag": "Bridesmaid · +1 cunning, +1 courage",
+          "effects": {
+            "add": {
+              "cunning": 1,
+              "courage": 1
+            },
+            "set": {
+              "bridesmaid": true
+            }
+          }
+        },
+        {
+          "label": "Suggest Thor challenge Thrym openly",
+          "to": "forge-3",
+          "tag": "A straight fight · +1 courage",
+          "effects": {
+            "add": {
+              "courage": 1
+            },
+            "set": {
+              "duelSuggested": true
+            }
+          }
+        },
+        {
+          "label": "Ask Loki what he wants in return",
+          "to": "forge-3",
+          "tag": "Loki's deal · +1 insight",
+          "effects": {
+            "add": {
+              "insight": 1
+            },
+            "set": {
+              "lokiDeal": true
+            }
+          }
+        },
+        {
+          "label": "Send the seed to Asgard now, before the road gets worse",
+          "to": "ending-wall",
+          "tag": "Let Asgard keep it",
+          "effects": {
+            "set": {
+              "gaveSeed": true
+            }
+          }
+        }
+      ]
+    },
+    "forge-3": {
+      "id": "forge-3",
+      "act": 2,
+      "chapter": "4",
+      "title": "The Wedding at Thrym's Hall",
+      "location": "Jotunheim",
+      "art": "jotunheim",
+      "artCaption": "A giant's hall under a storming sky",
+      "text": [
+        "Thrym's hall was blue ice and old bone. The giants filled it shoulder to shoulder, their noise like a rockslide. At the high table sat the bride, veiled, gold-necked, and furious.",
+        "You kept your hood up and your hand on the seed. The bride ate an ox, eight salmon and every cake within reach. Loki, dressed as a very tall maidservant, said, 'The lady has not eaten for eight days.' The hall roared.",
+        "Thrym called for Mjolnir to hallow the bride. The hammer was laid across her knees. For one heartbeat nobody moved. The seed blazed in your palm.",
+        "You had one heartbeat to choose."
+      ],
+      "lore": {
+        "title": "The hall of Thrym",
+        "body": "In the poem, Thrym's wedding feast is a comedy of appetite and disguise. The hammer is brought out to hallow the bride, and Thor catches it and kills the giants. Freyja's necklace, Brisingamen, is part of the bride's costume; Loki explains the bride's appetite and burning eyes. The story is a reminder that Norse myth enjoys a joke even when the stakes are the end of the world.",
+        "source": "Poetic Edda, Thrymskvida"
+      },
+      "variants": [
+        {
+          "when": {
+            "flags": [
+              "trackedGiant"
+            ]
+          },
+          "text": "You had arrived before Thor and Loki, following the giant's tracks. They found you behind a pillar, and Loki laughed so hard he nearly gave the plan away."
+        },
+        {
+          "when": {
+            "flags": [
+              "duelSuggested"
+            ]
+          },
+          "text": "Thor had wanted a straight fight. Under the veil, he looked as if he had been proved right about everything."
+        }
+      ],
+      "choices": [
+        {
+          "label": "Signal Thor the moment the hammer is laid down",
+          "to": "forge-4",
+          "tag": "The signal · +1 courage",
+          "effects": {
+            "add": {
+              "courage": 1
+            },
+            "set": {
+              "thrymDefeated": true
+            }
+          }
+        },
+        {
+          "label": "Steal the hammer yourself while the hall laughs",
+          "to": "forge-4",
+          "tag": "The theft · +1 cunning",
+          "effects": {
+            "add": {
+              "cunning": 1
+            },
+            "set": {
+              "hammerStolen": true
+            }
+          }
+        },
+        {
+          "label": "Warn Thrym and try to stop the slaughter",
+          "to": "forge-4",
+          "tag": "Mercy for a giant · +1 insight",
+          "effects": {
+            "add": {
+              "insight": 1
+            },
+            "set": {
+              "warnedThrym": true
+            }
+          }
+        }
+      ]
+    },
+    "forge-4": {
+      "id": "forge-4",
+      "act": 2,
+      "chapter": "5",
+      "title": "What Thor Carries",
+      "location": "The road from Jotunheim",
+      "art": "jotunheim",
+      "artCaption": "A break in the storm over the giant's road",
+      "text": [
+        "The hall did not survive the wedding. Thor did, Mjolnir whole in his hand, and a road of broken ice led back toward the bridge. The giants who had not fought fled into the storm.",
+        "Thor looked at the seed for a long time. 'That is a piece of the old tree. My father would lock it in a vault and call it safe. I could carry it to Asgard myself.' He turned the hammer. 'Or I could walk with you and hit whatever tries to stop you.'",
+        "The storm was breaking. Far off, a rainbow burned against the clouds, and beyond it the sky was beginning to crack.",
+        "The seed was warm. Thor waited. For a god of thunder, he was patient when it mattered."
+      ],
+      "lore": {
+        "title": "Thor at Ragnarok",
+        "body": "At Ragnarok Thor fights Jormungandr, the serpent that circles the world. He kills it with Mjolnir, then takes nine steps and falls, drowned in its venom. The gods know this will happen; Thor fights anyway. Norse myth does not promise that courage will make you win. It insists that courage is still worth choosing.",
+        "source": "Poetic Edda, Voluspa; Prose Edda, Gylfaginning"
+      },
+      "variants": [
+        {
+          "when": {
+            "flags": [
+              "warnedThrym"
+            ]
+          },
+          "text": "Thrym had listened to your warning, or enough of it to send his household into the snow. Thor did not thank you. But some of the giants were alive because of you."
+        },
+        {
+          "when": {
+            "flags": [
+              "hammerStolen"
+            ]
+          },
+          "text": "Your hand still ached from Mjolnir. For one moment the hammer had been yours, and the hall knew it. Thor took it back without a word, but he looked at you differently."
+        }
+      ],
+      "choices": [
+        {
+          "label": "Keep the seed and ask Thor to walk with you to the root",
+          "to": "root-1",
+          "tag": "Thor's oath · +1 courage",
+          "effects": {
+            "add": {
+              "courage": 1
+            },
+            "set": {
+              "thorOath": true
+            }
+          }
+        },
+        {
+          "label": "Give the seed to Thor for safekeeping",
+          "to": "ending-wall",
+          "tag": "Asgard keeps the seed",
+          "effects": {
+            "set": {
+              "gaveSeed": true
+            }
+          }
+        },
+        {
+          "label": "Take a splinter of Mjolnir and go alone",
+          "to": "root-1",
+          "tag": "Hammer splinter · +1 insight",
+          "effects": {
+            "add": {
+              "insight": 1
+            },
+            "set": {
+              "hammerSplinter": true
+            }
+          }
+        }
+      ]
+    },
+    "root-1": {
+      "id": "root-1",
+      "act": 3,
+      "chapter": "6",
+      "title": "The Well of Urd",
+      "location": "The root of Yggdrasil",
+      "art": "tree",
+      "artCaption": "Three figures at the well beneath the world ash",
+      "text": [
+        "The three roots met in a chamber older than the gods. The well in the centre was dry. The ash tree above was so vast that its branches vanished into a bruised sky.",
+        "Three women sat at the well: one with a spindle, one with a shuttle, one with shears. 'We know why you are here,' said the spindle. 'We have known since before you were born. That does not make it less interesting.'",
+        "'Every thread has a price,' said the shuttle. 'The gods paid with an eye, a hand, a son. What will you pay with, little mortal?'",
+        "The seed grew warm enough to hurt. Above, the sky cracked like ice on a river. The first winter had begun."
+      ],
+      "lore": {
+        "title": "The Norns and the Well of Urd",
+        "body": "The Norns are Urd (what has become), Verdandi (what is becoming) and Skuld (what shall be). They live by the Well of Urd beneath Yggdrasil and carve the fate of every being into wood. Even the gods are subject to their weaving. Norse fate is not quite simple determinism: the hero still chooses how to meet what is coming, and that choice is part of the story.",
+        "source": "Poetic Edda, Voluspa; Prose Edda, Gylfaginning"
+      },
+      "variants": [
+        {
+          "when": {
+            "flags": [
+              "memoryGiven"
+            ]
+          },
+          "text": "The Norn with the spindle touched your brow. 'You gave a memory to the well. I can see the hole it left. You will not feel it. That is the worst part.'"
+        },
+        {
+          "when": {
+            "flags": [
+              "nameGiven"
+            ]
+          },
+          "text": "The Norn with the shears smiled. 'You gave your name to Mimir. I still have it here, folded small. Would you like it back?' You opened your mouth. Nothing came out."
+        },
+        {
+          "when": {
+            "flags": [
+              "odinRune"
+            ]
+          },
+          "text": "Odin's rune burned on your palm. The Norns looked at it without surprise. 'He always gives away what he cannot keep,' said the shuttle. 'A rune is a door, not a promise.'"
+        },
+        {
+          "when": {
+            "flags": [
+              "thorOath"
+            ]
+          },
+          "text": "Above the roots, thunder rolled. Thor had kept his word; he was holding a door open with his hammer. The Norns heard him and did not object."
+        },
+        {
+          "when": {
+            "flags": [
+              "lokiFreed"
+            ]
+          },
+          "text": "Far below, something laughed. 'You let the trickster out,' said the shears. 'He will not thank you. He will do something worse: he will be useful.'"
+        },
+        {
+          "when": {
+            "flags": [
+              "sigynPity"
+            ]
+          },
+          "text": "The Norns knew about the bowl. 'A small kindness,' said the spindle. 'Not the kind that saves a world. The kind that keeps a person human while it ends.'"
+        },
+        {
+          "when": {
+            "flags": [
+              "hammerSplinter"
+            ]
+          },
+          "text": "The splinter of Mjolnir pointed at the dry well like a needle at a lodestone. 'The hammer remembers the fire,' said the shuttle. 'Fire is a kind of beginning.'"
+        },
+        {
+          "when": {
+            "flags": [
+              "baldrHope"
+            ]
+          },
+          "text": "You had seen Baldr's face in Mimir's water. 'The bright one is not a reward for good behaviour,' said the shears. 'He is what comes after.'"
+        }
+      ],
+      "choices": [
+        {
+          "label": "Plant the seed in the dry well",
+          "to": "ending-renewal",
+          "tag": "Give the seed back to the root"
+        },
+        {
+          "label": "Call on the gods to hold the sky while you plant",
+          "to": "ending-wall",
+          "tag": "The gods answer",
+          "requires": {
+            "anyFlags": [
+              "odinRune",
+              "thorOath",
+              "hammerSplinter",
+              "heimdallPass"
+            ]
+          }
+        },
+        {
+          "label": "Break the last chain and let Fenrir carry the seed into the dark",
+          "to": "ending-wolf",
+          "tag": "Fate breaks first",
+          "requires": {
+            "anyFlags": [
+              "fenrirFreed",
+              "lokiFreed",
+              "fenrirAlly"
+            ]
+          }
+        },
+        {
+          "label": "Set the world tree alight and meet Ragnarok head-on",
+          "to": "ending-ragnarok",
+          "tag": "Choose the ending you know"
+        },
+        {
+          "label": "Close your hand and take the seed home",
+          "to": "ending-quiet",
+          "tag": "Choose the small life"
+        }
+      ]
+    },
+    "ending-renewal": {
+      "id": "ending-renewal",
+      "act": 3,
+      "chapter": "7",
+      "title": "The Thread Renewed",
+      "location": "The root of Yggdrasil",
+      "art": "meadow",
+      "artCaption": "A green shoot in a world after fire",
+      "text": [
+        "You knelt at the well and pressed the seed into the dry earth. For a moment nothing happened. Then the ground moved, slowly, like roots remembering how to drink.",
+        "Water rose through the well, black and cold and alive. The seed cracked. A shoot pushed through your fingers. The Norns did not bless you; they began to spin a new thread and tied it to yours.",
+        "Ragnarok still came. The wolf broke his chain, the serpent rose, and fire burned the old tree to the waterline. You saw the end from the roots and were afraid.",
+        "But when the sea drew back, a young ash grew where the well had been. The first people of the new world found a rune in its bark. It was not a god's name. It was yours."
+      ],
+      "lore": {
+        "title": "The world after Ragnarok",
+        "body": "Voluspa does not end with destruction. After the fire and the flood, the earth rises again, green and clean. Baldr returns, and a handful of gods survive. Two humans, Lif and Lifthrasir, hide in the wood of Yggdrasil and begin the human world again. The poem refuses to make the end final: memory, and the seeds kept through the winter, are part of the new beginning.",
+        "source": "Poetic Edda, Voluspa; Prose Edda, Gylfaginning"
+      },
+      "ending": {
+        "id": "renewal",
+        "title": "The Thread Renewed",
+        "rank": "Hopeful ending",
+        "summary": "You gave the seed back to the root. The old world still burned, but a green thread survived it, knotted to your name."
+      }
+    },
+    "ending-wall": {
+      "id": "ending-wall",
+      "act": 3,
+      "chapter": "7",
+      "title": "The Wall of Asgard",
+      "location": "Asgard",
+      "art": "asgard",
+      "artCaption": "A golden hall above a frozen world",
+      "text": [
+        "The gods planted the seed in a vault beneath Asgard. The tree lived. Its bark was warm in winter, and its leaves never fell. From the wall you could see it glowing through the clouds.",
+        "Midgard froze. Three winters came, and the sea between the worlds filled with ice. The gods kept their halls and feasts. You were given a seat at the table and a name that meant 'the one who brought the seed.'",
+        "On clear nights you climbed the wall and looked down at villages digging for roots under the snow. You had saved the tree. You had not saved the people under it.",
+        "Ragnarok came for Asgard in the end. The seed was still in the vault when the fire reached it. But for a while, the world above was beautiful."
+      ],
+      "lore": {
+        "title": "The limits of Asgard",
+        "body": "The Norse gods are powerful but not omnipotent. They know Ragnarok is coming; Odin gathers heroes and knowledge against it, Freyr gave away his sword, and Tyr lost a hand. Asgard is a fortress, not a solution. The myths are often more interested in how people behave inside a doomed world than in whether the gods can escape it.",
+        "source": "Poetic Edda, Voluspa; Prose Edda, Gylfaginning"
+      },
+      "ending": {
+        "id": "wall",
+        "title": "The Wall of Asgard",
+        "rank": "Bittersweet ending",
+        "summary": "Asgard kept the seed and the tree survived. Midgard paid the price. You were honoured, and you never stopped looking down."
+      }
+    },
+    "ending-wolf": {
+      "id": "ending-wolf",
+      "act": 3,
+      "chapter": "7",
+      "title": "The Wolf's Guest",
+      "location": "Beyond the roots",
+      "art": "wolf",
+      "artCaption": "Fenrir beneath a broken moon",
+      "text": [
+        "You broke the chain, or put the seed between Fenrir's teeth, or spoke Loki's word. It does not matter which. The wolf was free, and the sky cracked open before the first snow fell.",
+        "Fenrir did not eat you. He carried you in his jaws like a pup, down through the roots and into a dark with no bottom. The Norns' threads snapped behind you, each one like a bell underwater.",
+        "Ragnarok came early and sideways. The gods fought the war they had rehearsed, but the wolf was already inside the story, and the story bent.",
+        "When the new world rose, it had wolves in it. At its edge, a mortal with no name sat beside a very large dog and watched the first sunrise."
+      ],
+      "lore": {
+        "title": "Fenrir and the breaking of fate",
+        "body": "Fenrir is prophecy made flesh: he is bound, but everyone knows he will break free. At Ragnarok he swallows Odin, and Vidarr avenges his father by tearing the wolf's jaw apart. Norse fate is not a straight line so much as a knot everyone can see and no one can untie. The myths are fascinated by the moment when a character chooses to pull a thread anyway.",
+        "source": "Prose Edda, Gylfaginning; Poetic Edda, Voluspa"
+      },
+      "ending": {
+        "id": "wolf",
+        "title": "The Wolf's Guest",
+        "rank": "Wild ending",
+        "summary": "You broke fate on purpose. The old world ended early; the new one has wolves in it, and a story about a mortal who was not eaten."
+      }
+    },
+    "ending-ragnarok": {
+      "id": "ending-ragnarok",
+      "act": 3,
+      "chapter": "7",
+      "title": "The Last Winter",
+      "location": "The burning world",
+      "art": "ragnarok",
+      "artCaption": "Fire, ash and the last stand of the gods",
+      "text": [
+        "You set the tree alight with a torch and a prayer. The fire took the dry heartwood, then the branches, then the sky. It was the end of a long argument between gods and giants, and you had handed both sides a match.",
+        "The giants came. The wolf came. The serpent rose and the dead ship sailed. You stood with Thor on the last ridge. When Surtr raised his sword, Thor laughed and lifted his hammer.",
+        "You did not survive the fire. But before it took you, you cut a hollow in the roots and put a child there with a seed and a skin of water. You did not know if the child would live. You knew the tree would not.",
+        "The new world was green. Two people walked out of the wood of Yggdrasil, blinking in the light. One carried a seed."
+      ],
+      "lore": {
+        "title": "Ragnarok",
+        "body": "Ragnarok is the doom of the gods: Fimbulwinter, the breaking of bonds, the burning of the world. Odin is swallowed by Fenrir, Thor kills the world serpent and dies of its venom, Heimdall and Loki kill each other, and Surtr's fire covers the earth. The sea rises, the sky burns, and then the earth rises again. Lif and Lifthrasir, two humans who hid in Yggdrasil's wood, repopulate the new world.",
+        "source": "Poetic Edda, Voluspa; Prose Edda, Gylfaginning"
+      },
+      "ending": {
+        "id": "ragnarok",
+        "title": "The Last Winter",
+        "rank": "Heroic ending",
+        "summary": "You chose the ending everyone knew and met it standing. The world burned; a child, a seed and a story came out the other side."
+      }
+    },
+    "ending-quiet": {
+      "id": "ending-quiet",
+      "act": 3,
+      "chapter": "7",
+      "title": "The Quiet Shore",
+      "location": "Hrafnvik, Midgard",
+      "art": "empty",
+      "artCaption": "A grey shore, a closed hand and one star",
+      "text": [
+        "You closed your hand around the seed and walked away from the well. The Norns did not stop you. Perhaps a mortal choosing the small life was one of the threads they had been waiting for.",
+        "You went home. The winters were long, the crops failed twice, and you buried neighbours and mended nets. The old tree died above the clouds. The gods grew quiet.",
+        "But you kept the seed. You planted it behind the house where the sheep could not reach it, and in spring a small ash came up. It was not the World Tree. It was just a tree.",
+        "It gave shade in summer and held the snow in winter. When your grandchildren asked, you told them about a raven and a well and a wolf. They did not believe all of it. The tree believed enough for everyone."
+      ],
+      "lore": {
+        "title": "The end of the old religion",
+        "body": "Iceland and Norway formally adopted Christianity around the year 1000, but older beliefs did not vanish overnight. People kept charms, told the old stories, and carved runes. The Eddas were written down by Christian Icelanders in the thirteenth century, long after the pre-Christian religion had faded, which is one reason the myths come to us through a medieval lens. A quiet ending is also a kind of survival.",
+        "source": "Prose Edda, Gylfaginning; Poetic Edda, Havamal"
+      },
+      "ending": {
+        "id": "quiet",
+        "title": "The Quiet Shore",
+        "rank": "Quiet ending",
+        "summary": "You chose your family over prophecy. The old world ended, the gods faded, and a small ash tree grew in your yard."
+      }
+    }
+  }
+}

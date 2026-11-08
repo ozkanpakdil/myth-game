@@ -34,6 +34,17 @@ def load_json(path: Path):
         return json.load(handle)
 
 
+def saga_text_id(text):
+    clean = " ".join(str(text or "").split())
+    if not clean:
+        return ""
+    value = 0x811C9DC5
+    for byte in clean.encode("utf-8"):
+        value ^= byte
+        value = (value * 0x01000193) & 0xFFFFFFFF
+    return f"{value:08x}"
+
+
 def narration_jobs():
     myths = load_json(CONTENT / "mythologies.json")
     jobs = []
@@ -66,6 +77,43 @@ def narration_jobs():
                     "text": text,
                     "relative": Path("quiz") / f"{question['id']}.mp3",
                 })
+
+    saga_file = CONTENT / "saga" / "norse.json"
+    if saga_file.exists():
+        saga = load_json(saga_file)
+        default_name = saga.get("default_name", "Michael")
+        seen = set()
+
+        def add_saga(text):
+            resolved = str(text or "").replace("{name}", default_name)
+            clip_id = saga_text_id(resolved)
+            if not clip_id or clip_id in seen:
+                return
+            seen.add(clip_id)
+            jobs.append({
+                "kind": "saga",
+                "id": clip_id,
+                "index": None,
+                "text": resolved,
+                "relative": Path("saga") / f"{clip_id}.mp3",
+            })
+
+        add_saga(saga.get("intro", ""))
+        for node in saga.get("nodes", {}).values():
+            for paragraph in node.get("text", []):
+                add_saga(paragraph)
+            for variant in node.get("variants", []):
+                add_saga(variant.get("text", ""))
+            lore = node.get("lore")
+            if lore:
+                add_saga(f"{lore.get('title', '')}. {lore.get('body', '')}. Source: {lore.get('source', '')}")
+            ending = node.get("ending")
+            if ending:
+                add_saga(ending.get("summary", ""))
+        for name in saga.get("name_suggestions", []):
+            for paragraph in saga.get("nodes", {}).get(saga.get("start", "prologue"), {}).get("text", []):
+                if "{name}" in paragraph:
+                    add_saga(paragraph.replace("{name}", name))
     return jobs
 
 
@@ -111,12 +159,15 @@ def main():
     parser.add_argument("--workers", type=int, default=3)
     parser.add_argument("--length-scale", type=float, default=1.04)
     parser.add_argument("--sentence-silence", type=float, default=0.32)
+    parser.add_argument("--kind", default="", help="only jobs of this kind (story, quiz, saga)")
     parser.add_argument("--limit", type=int, default=0, help="debug: only first N clips")
     args = parser.parse_args()
     args.piper = args.piper.split()
     output_root = ROOT / "audio" / "voices"
     output_root.mkdir(parents=True, exist_ok=True)
     jobs = narration_jobs()
+    if args.kind:
+        jobs = [job for job in jobs if job['kind'] == args.kind]
     if args.limit:
         jobs = jobs[:args.limit]
     print(f"{args.voice}: {len(jobs)} clips, {sum(len(j['text'].split()) for j in jobs)} words", flush=True)
@@ -136,13 +187,14 @@ def main():
                 elapsed = time.monotonic() - started
                 print(f"{args.voice}: {completed}/{len(jobs)} clips in {elapsed:.0f}s", flush=True)
     manifest_path = output_root / args.voice / "manifest.json"
+    written = len(list((output_root / args.voice).rglob("*.mp3")))
     manifest_path.write_text(json.dumps({
         "voice": args.voice,
         "label": args.label,
         "language": args.language,
         "license": args.license,
         "model": Path(args.model).name,
-        "clips": len(jobs),
+        "clips": written,
         "generatedAt": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
     }, indent=2) + "\n", encoding="utf-8")
     print(f"done: {manifest_path}", flush=True)

@@ -2,9 +2,8 @@
   "voice": "morgan",
   "label": "Morgan",
   "language": "American English",
-  "license": "Non-commercial (XTTS v2)",
-  "model": "model.pth",
-  "engine": "xtts-v2",
-  "clips": 354,
-  "generatedAt": "2026-11-07T20:03:59Z"
+  "license": "Non-commercial (voice clone)",
+  "model": "xtts-v2 (archive) + piper (saga)",
+  "clips": 480,
+  "generatedAt": "2026-11-08T13:46:31Z"
 }

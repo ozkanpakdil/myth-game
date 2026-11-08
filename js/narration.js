@@ -7,7 +7,7 @@
  * opt-in per click, stops on navigation, and degrades quietly.
  */
 
-import { getSettings, updateSettings, STUDIO_VOICES } from './storage.js?v=20261107-13';
+import { getSettings, updateSettings, STUDIO_VOICES } from './storage.js?v=20261108-3';
 
 let generation = 0;
 let currentAudio = null;
@@ -37,7 +37,40 @@ export function studioAudioUrl(voice, kind, id, index = 0) {
   if (!voice || !STUDIO_VOICES.includes(voice) || !id) return '';
   if (kind === 'story') return `audio/voices/${voice}/story/${id}-${index}.mp3`;
   if (kind === 'quiz') return `audio/voices/${voice}/quiz/${id}.mp3`;
+  if (kind === 'saga') return `audio/voices/${voice}/saga/${id}.mp3`;
   return '';
+}
+
+/**
+ * Stable clip name for a piece of saga prose. The authoring scripts use the
+ * same FNV-1a hash over UTF-8 bytes, so the player can find a pre-generated
+ * studio clip without a manifest lookup.
+ */
+export function sagaTextId(text) {
+  const clean = String(text || '').replace(/\s+/g, ' ').trim();
+  if (!clean) return '';
+  const bytes = typeof TextEncoder === 'function'
+    ? new TextEncoder().encode(clean)
+    : Uint8Array.from(clean, (char) => char.charCodeAt(0) & 0xff);
+  let hash = 0x811c9dc5;
+  for (const byte of bytes) {
+    hash ^= byte;
+    hash = Math.imul(hash, 0x01000193) >>> 0;
+  }
+  return hash.toString(16).padStart(8, '0');
+}
+
+export function sagaAudioUrl(voice, text) {
+  const id = sagaTextId(text);
+  return id ? studioAudioUrl(voice, 'saga', id) : '';
+}
+
+export function selectedStudioVoice() {
+  return getSettings().studioVoice || '';
+}
+
+export function voiceChosen() {
+  return getSettings().voiceChosen === true;
 }
 
 export function narrationSupported(audioUrl = '') {
@@ -60,6 +93,9 @@ export function stopNarration() {
     } catch {
       /* the media element may already be detached */
     }
+  }
+  if (typeof document !== 'undefined') {
+    document.dispatchEvent(new CustomEvent('mythos:narration-stop'));
   }
   if (!speechSupported()) return;
   try {
@@ -134,6 +170,97 @@ function speak(clean, { token, onStart, onEnd, onError }) {
     onError?.('speech-error');
     return false;
   }
+}
+
+/**
+ * Play several studio clips back to back, e.g. one scene made of paragraphs.
+ * If any clip fails, the complete fallback text is read with the system voice.
+ */
+export function narrateSequence(audioUrls, { fallbackText = '', onStart, onEnd, onError } = {}) {
+  const urls = (audioUrls || []).filter(Boolean);
+  const fallback = String(fallbackText || '').replace(/\s+/g, ' ').trim();
+  if (!urls.length) return narrate(fallback, { onStart, onEnd, onError });
+  if (typeof window === 'undefined' || typeof window.Audio !== 'function') {
+    return narrate(fallback, { onStart, onEnd, onError });
+  }
+
+  stopNarration();
+  const token = generation;
+  let index = 0;
+  let current = null;
+  let started = false;
+  let failed = false;
+
+  const dispose = (audio) => {
+    try {
+      audio.pause();
+      audio.remove();
+    } catch {
+      /* ignore */
+    }
+  };
+
+  const fail = () => {
+    if (failed || token !== generation) return;
+    failed = true;
+    if (current) {
+      dispose(current);
+      if (currentAudio === current) currentAudio = null;
+      current = null;
+    }
+    if (fallback) {
+      speak(fallback, { token, onStart, onEnd, onError });
+      return;
+    }
+    onError?.('audio-error');
+  };
+
+  const playNext = () => {
+    if (failed || token !== generation) return;
+    if (index >= urls.length) {
+      if (current) {
+        dispose(current);
+        if (currentAudio === current) currentAudio = null;
+        current = null;
+      }
+      onEnd?.();
+      return;
+    }
+    const audio = new window.Audio();
+    audio.preload = 'auto';
+    audio.src = urls[index];
+    audio.hidden = true;
+    audio.setAttribute('aria-hidden', 'true');
+    document.body.append(audio);
+    current = audio;
+    currentAudio = audio;
+
+    audio.addEventListener('playing', () => {
+      if (token !== generation || failed) return;
+      if (!started) {
+        started = true;
+        onStart?.();
+      }
+    }, { once: true });
+    audio.addEventListener('ended', () => {
+      if (token !== generation || failed) return;
+      dispose(audio);
+      if (current === audio) current = null;
+      index += 1;
+      playNext();
+    }, { once: true });
+    audio.addEventListener('error', fail, { once: true });
+
+    try {
+      const playback = audio.play();
+      if (playback?.catch) playback.catch(fail);
+    } catch {
+      fail();
+    }
+  };
+
+  playNext();
+  return true;
 }
 
 export function narrate(text, { audioUrl = '', onStart, onEnd, onError } = {}) {

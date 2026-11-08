@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Mythos is a text-first educational game about world mythologies: read short stories, answer quizzes, and unlock a codex of figures and terms.">
+    <meta name="description" content="Mythos is a text-first educational game about world mythologies: walk a branching Norse saga, read short stories, answer quizzes, and unlock a codex of figures and terms.">
     <meta name="theme-color" content="#0e1310">
     <title>Mythos · A world mythology game</title>
     <link rel="icon" href="assets/svg/logo.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="css/style.css?v=20261107-13">
+    <link rel="stylesheet" href="css/style.css?v=20261108-3">
     <!-- Google tag (gtag.js). Kept off localhost so development and tests stay quiet. -->
     <script>
       (function () {
@@ -49,6 +49,7 @@
           </span>
         </a>
         <nav class="main-nav" aria-label="Main navigation">
+          <a href="#/saga" data-nav="saga">Saga</a>
           <a href="#/myths" data-nav="myths">Traditions</a>
           <a href="#/map" data-nav="map">Map</a>
           <a href="#/timeline" data-nav="timeline">Timeline</a>
@@ -91,12 +92,13 @@
           </div>
         </div>
         <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="#/saga">The Ash-Seed saga</a>
           <a href="#/myths">Traditions</a>
           <a href="#/timeline">Timeline</a>
           <a href="#/challenges">Challenges</a>
           <a href="#/about">About &amp; sources</a>
         </nav>
-        <p class="footer-note">Educational draft · all content awaiting human fact-check and sensitivity review · images are SVG · <span id="year"></span></p>
+        <p class="footer-note">Educational draft · all content awaiting human fact-check and sensitivity review · <span id="year"></span></p>
       </div>
     </footer>
 
@@ -104,19 +106,20 @@
       <form method="dialog" class="dialog__panel">
         <p class="eyebrow">Narration</p>
         <h2 class="dialog__title" id="voice-dialog-title">Choose a voice</h2>
-        <p class="dialog__body">Your system voice is the fallback. Choose a studio voice below to hear its generated narration on every Listen button.</p>
+        <p class="dialog__body">Morgan is selected by default. Choose any voice below; the change applies the next time you press Listen.</p>
         <label class="narration-switch" for="narration-enabled">
           <span><strong>Narration</strong><small>Read aloud when you press Listen.</small></span>
           <input type="checkbox" id="narration-enabled" data-testid="narration-enabled">
         </label>
-        <label class="field-label" for="voice-select">Live narration voice (system)</label>
+        <label class="field-label" for="voice-select">Fallback system voice</label>
         <select class="voice-select" id="voice-select" data-testid="voice-select">
           <option value="">System default</option>
         </select>
         <p class="voice-note" id="voice-note" data-testid="voice-note" aria-live="polite">Looking for voices…</p>
         <section class="studio-samples" aria-labelledby="studio-samples-title">
           <h3 class="studio-samples__title" id="studio-samples-title">Try a local neural narrator</h3>
-          <p class="studio-samples__note">Audition each, then choose one. The selected voice plays pre-generated narration; if a clip is missing, playback falls back to your system voice.</p>
+          <p class="studio-samples__note">Audition each, then choose one. All three studio voices have recorded saga clips; if a clip is missing, playback falls back to your system voice.</p>
+          <p class="studio-samples__status" id="studio-voice-status" data-testid="studio-voice-status" aria-live="polite">Morgan is selected by default.</p>
           <div class="studio-sample">
             <label class="studio-sample__choice">
               <input type="radio" name="studio-voice" value="cori" data-testid="studio-voice-cori">
@@ -134,7 +137,7 @@
           <div class="studio-sample">
             <label class="studio-sample__choice">
               <input type="radio" name="studio-voice" value="morgan" data-testid="studio-voice-morgan">
-              <span><strong>Morgan</strong><small>American English · XTTS v2 fine-tune, non-commercial</small></span>
+              <span><strong>Morgan</strong><small>American English · fan-made neural voice, non-commercial</small></span>
             </label>
             <audio controls preload="none" src="audio/samples/morgan-xtts.mp3" data-testid="studio-sample-morgan" aria-label="Morgan voice sample"></audio>
           </div>
@@ -144,7 +147,6 @@
               <span><strong>System voice</strong><small>Use my installed voice only</small></span>
             </label>
           </div>
-          <p class="studio-samples__status" id="studio-voice-status" data-testid="studio-voice-status" aria-live="polite">Select a voice to use it on every Listen button.</p>
           <p class="studio-samples__note" data-testid="studio-voice-disclosure">Morgan is a fan-made voice clone of a public figure, generated on-device and licensed for non-commercial use. Do not imply the person's endorsement or use it to deceive.</p>
         </section>
         <p class="voice-tip"><strong>Want a more human voice?</strong> Install a Premium or Enhanced system voice: on macOS, System Settings → Accessibility → Spoken Content → Manage Voices; on Windows, Settings → Time &amp; language → Speech. The list updates after a refresh.</p>
@@ -157,6 +159,6 @@
 
     <div id="toast" role="status" aria-live="polite"></div>
 
-    <script type="module" src="js/app.js?v=20261107-13"></script>
+    <script type="module" src="js/app.js?v=20261108-3"></script>
   </body>
 </html>

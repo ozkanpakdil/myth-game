@@ -37,6 +37,29 @@ test.describe('Timeline Builder', () => {
     await page.goto('/#/results');
     await expect(page.getByTestId('badge-timeline-master')).toHaveClass(/is-earned/);
   });
+
+  test('a card can be dragged with the mouse to reorder the list', async ({ page }) => {
+    await page.goto('/#/challenges/timeline');
+    await expect(page.locator('.order-item')).toHaveCount(6);
+
+    const first = page.locator('.order-item').first();
+    const last = page.locator('.order-item').last();
+    const firstId = await first.getAttribute('data-testid');
+    const firstTestId = firstId.replace('order-item-', '');
+
+    await first.dragTo(last);
+    await expect(page.locator('.order-item').last()).toHaveAttribute('data-testid', firstId);
+    await expect(page.getByTestId('order-status')).toContainText('moved to position 6');
+
+    const second = page.locator('.order-item').first();
+    const moved = page.locator('.order-item').last();
+    const secondId = await second.getAttribute('data-testid');
+    await moved.dragTo(second);
+    await expect(page.locator('.order-item').first()).toHaveAttribute('data-testid', firstId);
+    await expect(page.locator('.order-item').nth(1)).toHaveAttribute('data-testid', secondId);
+    await expect(page.getByTestId('order-status')).toContainText('moved to position 1');
+    await expect(page.getByTestId(`order-item-${firstTestId}`)).toHaveAttribute('draggable', 'true');
+  });
 });
 
 test.describe('Pantheon Match', () => {

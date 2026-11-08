@@ -254,9 +254,9 @@ not fetched images. See `assets/STYLE_GUIDE.md` for the palette and grid rules.
 - Skip link; visible `:focus-visible` rings; native links and buttons.
 - Route changes focus the page heading. Answering a quiz question moves focus to
   the result so screen readers read the verdict and explanation before the
-  `Next question` button; reordering the timeline challenge is announced in a
-  live region.
-- Challenges are keyboard-operable with arrow buttons, not drag-and-drop.
+  `Next question` button; timeline moves are announced in a live region.
+- Timeline Builder supports mouse drag-and-drop as well as arrow buttons; the
+  arrows remain the full keyboard path, and challenge results move focus.
 - The map has focusable regions, a list view and a horizontally scrollable
   mobile view; region details are announced in a live region.
 - Text-size control (`Aa`) cycles 100 / 112.5 / 125%, persisted locally.

@@ -50,8 +50,8 @@ Dates are approximate and must be treated as `verified: false`. "Record" means w
 | 7 | Greek | ~800 BCE–400 CE | Homer, Hesiod | Europe |
 | 8 | Etruscan | ~800–100 BCE | Inscriptions, art | Europe |
 | 9 | Roman | ~750 BCE–500 CE | Virgil, Ovid | Europe |
-| 10 | Celtic | Iron Age–medieval | Irish texts (8th–12th c.), Mabinogion | Europe |
-| 11 | Norse / Germanic | Iron Age–~1100 CE | Eddas (13th c.), sagas | Europe |
+| 10 | Celtic | from the Iron Age (c. 800 BCE) to medieval | Irish texts (8th–12th c.), Mabinogion | Europe |
+| 11 | Norse / Germanic | from the Iron Age (c. 500 BCE) to ~1100 CE | Eddas (13th c.), sagas | Europe |
 | 12 | Slavic | pre-Christian–~10th c.+ | Late chronicles, folklore | Europe |
 | 13 | Baltic | pre-Christian–~14th c. | Chronicles, folk songs | Europe |
 | 14 | Finnic / Sámi | ancient oral | Kalevala (compiled 1835) | Europe |
@@ -145,9 +145,9 @@ myth-game/
   "id": "norse",
   "name": "Norse",
   "region": "Europe",
-  "period_text": "Iron Age to about 1100 CE",
+  "period_text": "from the Iron Age (about 500 BCE) to about 1100 CE",
   "earliest_record": "Eddas, 13th century CE",
-  "start_year": -800,
+  "start_year": -500,
   "end_year": 1100,
   "summary": "One or two sentences.",
   "mvp": true,
@@ -465,3 +465,4 @@ Add one line per finished task. Newest at the bottom.
 | 2026-11-08 | T619 | Added Caucasian / Nart as the twenty-sixth playable tradition: the birth of the Narts, Sosruko's fire, Setenaya, Batraz, Syrdon and the Nart cup, with 20 questions, 10 figures, 10 terms, a bow sigil and notes on Ossetian, Circassian and Abkhaz variants. |
 
 | 2026-11-08 | T620–T628 | Completed the final nine traditions as playable packs: Buddhist narratives, Tibetan / Bon, Yoruba / Orisha, Mongolic & Turkic / Steppe, Southeast Asian, Siberian / Arctic, North American Indigenous, Amazonian & Caribbean, and Aboriginal Australian. Each has six stories, 20 questions, 10 figures, 10 terms, map marker, icon and three narration voices. All 35 traditions are now playable. |
+| 2026-11-08 | T629 | Timeline Builder: added mouse drag-and-drop while keeping arrow controls, corrected the Norse Iron Age start to about 500 BCE, dated both Iron Age labels, and added the regional Iron Age note to the challenge result and timeline page. |

@@ -1,11 +1,12 @@
 /**
  * challenges.js — three text challenges built from the same JSON content.
- * Everything is keyboard operable; no drag-and-drop is required.
+ * Drag-and-drop is supported where a mouse is available; every action also has
+ * keyboard controls, so no drag-and-drop is required.
  */
-import { escapeHtml, focusPage, progressBar, toast, yearLabel, rangeLabel } from './ui.js?v=20261108-5';
-import { loadMythologies, loadAllPlayable } from './content.js?v=20261108-5';
-import { awardBadges, getChallengeRecord, recordChallenge } from './storage.js?v=20261108-5';
-import { evaluateBadges } from './badges.js?v=20261108-5';
+import { escapeHtml, focusPage, progressBar, toast, yearLabel, rangeLabel } from './ui.js?v=20261108-6';
+import { loadMythologies, loadAllPlayable } from './content.js?v=20261108-6';
+import { awardBadges, getChallengeRecord, recordChallenge } from './storage.js?v=20261108-6';
+import { evaluateBadges } from './badges.js?v=20261108-6';
 
 const CHALLENGES = [
   {
@@ -93,14 +94,13 @@ export async function renderTimelineChallenge(root) {
   const playable = mythologies.filter((item) => item.mvp);
   let order = shuffled(playable).slice(0, 6);
   let checked = false;
-
-  const yearOf = (id) => playable.find((item) => item.id === id).start_year;
+  let dragId = null;
 
   function page() {
     root.innerHTML = `<div class="page page--narrow" data-testid="timeline-challenge">
       ${breadcrumb('Timeline Builder')}
-      ${challengeHeader('Challenge 01', 'Build the timeline', 'Use the arrows to arrange the six traditions from oldest (top) to youngest (bottom). Ties are neighbours: if several traditions begin around the same time, any order among them is accepted.')}
-      <div id="order-list" class="order-list" data-testid="order-list"></div>
+      ${challengeHeader('Challenge 01', 'Build the timeline', 'Drag a card, or use its arrow buttons, to arrange the six traditions by when their surviving material begins, oldest first. Dates are approximate and regional: the Iron Age starts at different times in different places. Ties are neighbours, and any order among equal dates is accepted.')}
+      <div id="order-list" class="order-list" data-testid="order-list" role="list"></div>
       <div class="challenge-actions">
         <button class="button button--primary" type="button" data-testid="check-order">Check my order</button>
         <a class="button button--ghost" href="#/challenges">Back to challenges</a>
@@ -113,34 +113,97 @@ export async function renderTimelineChallenge(root) {
     focusPage();
   }
 
+  function announce(message) {
+    const status = root.querySelector('#order-status');
+    if (status) status.textContent = message;
+  }
+
+  function clearDropMark() {
+    root.querySelectorAll('.order-item.is-drop-target').forEach((item) => {
+      item.classList.remove('is-drop-target');
+    });
+  }
+
   function renderOrder() {
     const list = root.querySelector('#order-list');
     if (!list) return;
     list.innerHTML = order
-      .map((item, i) => `<div class="order-item" data-testid="order-item-${item.id}">
+      .map((item, i) => `<div class="order-item" role="listitem" tabindex="-1" draggable="${checked ? 'false' : 'true'}" data-testid="order-item-${item.id}">
         <span class="order-item__number" aria-hidden="true">${i + 1}</span>
         <div class="order-item__body">
           <strong>${escapeHtml(item.name)}</strong>
           <span class="muted small">${escapeHtml(item.period_text)}</span>
         </div>
         <div class="order-item__buttons">
-          <button class="icon-button" type="button" data-testid="up-${item.id}" data-id="${item.id}" data-dir="-1" aria-label="Move ${escapeHtml(item.name)} up" ${i === 0 ? 'disabled' : ''}>↑</button>
-          <button class="icon-button" type="button" data-testid="down-${item.id}" data-id="${item.id}" data-dir="1" aria-label="Move ${escapeHtml(item.name)} down" ${i === order.length - 1 ? 'disabled' : ''}>↓</button>
+          <button class="icon-button" type="button" data-testid="up-${item.id}" data-id="${item.id}" data-dir="-1" aria-label="Move ${escapeHtml(item.name)} up" ${i === 0 || checked ? 'disabled' : ''}>↑</button>
+          <button class="icon-button" type="button" data-testid="down-${item.id}" data-id="${item.id}" data-dir="1" aria-label="Move ${escapeHtml(item.name)} down" ${i === order.length - 1 || checked ? 'disabled' : ''}>↓</button>
         </div>
       </div>`)
       .join('');
+
     list.querySelectorAll('button[data-dir]').forEach((button) => {
       button.addEventListener('click', () => {
         const from = order.findIndex((item) => item.id === button.dataset.id);
         const to = from + Number(button.dataset.dir);
         if (to < 0 || to >= order.length) return;
-        [order[from], order[to]] = [order[to], order[from]];
+        const [moved] = order.splice(from, 1);
+        order.splice(to, 0, moved);
         renderOrder();
-        const movedItem = order[to];
-        const status = root.querySelector('#order-status');
-        if (status) status.textContent = `${movedItem.name} moved to position ${to + 1} of ${order.length}.`;
-        const moved = root.querySelector(`[data-testid="order-item-${button.dataset.id}"]`);
-        moved?.querySelector('button[data-dir]')?.focus();
+        announce(`${moved.name} moved to position ${to + 1} of ${order.length}.`);
+        const movedItem = root.querySelector(`[data-testid="order-item-${button.dataset.id}"]`);
+        const movedButton = movedItem?.querySelector(`button[data-dir="${button.dataset.dir}"]:not([disabled])`)
+          || movedItem?.querySelector('button[data-dir]:not([disabled])');
+        (movedButton || movedItem)?.focus();
+      });
+    });
+
+    list.querySelectorAll('.order-item').forEach((item) => {
+      item.addEventListener('dragstart', (event) => {
+        if (checked) {
+          event.preventDefault();
+          return;
+        }
+        dragId = item.dataset.testid.replace('order-item-', '');
+        event.dataTransfer.effectAllowed = 'move';
+        event.dataTransfer.setData('text/plain', dragId);
+        item.classList.add('is-dragging');
+        announce(`Dragging ${item.querySelector('strong')?.textContent || 'tradition'}. Drop it on another card to move it.`);
+      });
+
+      item.addEventListener('dragend', () => {
+        item.classList.remove('is-dragging');
+        clearDropMark();
+        dragId = null;
+      });
+
+      item.addEventListener('dragover', (event) => {
+        if (!dragId || item.dataset.testid === `order-item-${dragId}`) return;
+        event.preventDefault();
+        event.dataTransfer.dropEffect = 'move';
+        clearDropMark();
+        item.classList.add('is-drop-target');
+      });
+
+      item.addEventListener('dragleave', (event) => {
+        if (!item.contains(event.relatedTarget)) item.classList.remove('is-drop-target');
+      });
+
+      item.addEventListener('drop', (event) => {
+        event.preventDefault();
+        if (!dragId) return;
+        const targetId = item.dataset.testid.replace('order-item-', '');
+        if (targetId === dragId) return;
+        const from = order.findIndex((entry) => entry.id === dragId);
+        const over = order.findIndex((entry) => entry.id === targetId);
+        if (from < 0 || over < 0) return;
+        const [moved] = order.splice(from, 1);
+        order.splice(over, 0, moved);
+        dragId = null;
+        clearDropMark();
+        renderOrder();
+        announce(`${moved.name} moved to position ${over + 1} of ${order.length}.`);
+        const movedItem = root.querySelector(`[data-testid="order-item-${moved.id}"]`);
+        movedItem?.focus();
       });
     });
   }
@@ -148,6 +211,13 @@ export async function renderTimelineChallenge(root) {
   function check() {
     if (checked) return;
     checked = true;
+    root.querySelectorAll('.order-item').forEach((item) => {
+      item.draggable = false;
+      item.classList.remove('is-drop-target', 'is-dragging');
+    });
+    root.querySelectorAll('button[data-dir]').forEach((button) => {
+      button.disabled = true;
+    });
     const years = order.map((item) => item.start_year);
     const sortedYears = [...years].sort((a, b) => a - b);
     const correctPositions = years.filter((year, i) => year === sortedYears[i]).length;
@@ -163,10 +233,11 @@ export async function renderTimelineChallenge(root) {
     result.innerHTML = `<section class="result-card result-card--compact ${perfect ? 'is-pass' : 'is-fail'}" data-testid="order-result">
       <p class="eyebrow">${perfect ? 'Perfect order' : 'Close, but not quite'}</p>
       <h2 data-testid="order-score">${score} / ${order.length}</h2>
-      <p>${perfect ? 'You placed every tradition in a valid chronological order.' : 'Correct positions are highlighted below. Remember that all dates are approximate and some traditions overlap for centuries.'}</p>
+      <p>${perfect ? 'You placed every tradition in a valid chronological order.' : 'The correct order by approximate start date is shown below. Remember that traditions overlap for centuries.'}</p>
       <ol class="correct-order">
         ${sorted.map((item) => `<li><strong>${escapeHtml(item.name)}</strong> <span class="muted">${escapeHtml(rangeLabel(item.start_year, item.end_year))}</span></li>`).join('')}
       </ol>
+      <p class="muted small">Dates mark the approximate beginning of the surviving material, not a tradition's end. Period labels are regional; for example, the Iron Age begins around 1200 BCE in Anatolia, 800 BCE in central Europe and 500 BCE in Scandinavia.</p>
       <p class="muted small">Best so far: ${record.bestScore}/${record.bestTotal} · ${record.attempts} attempt${record.attempts === 1 ? '' : 's'}</p>
       <div class="result-actions">
         <button class="button button--primary" type="button" data-testid="timeline-retry">Try a new set</button>
@@ -176,6 +247,7 @@ export async function renderTimelineChallenge(root) {
     root.querySelector('[data-testid="timeline-retry"]').addEventListener('click', () => {
       order = shuffled(playable).slice(0, 6);
       checked = false;
+      dragId = null;
       page();
     });
     result.scrollIntoView({ behavior: 'smooth', block: 'nearest' });

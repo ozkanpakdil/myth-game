@@ -13,7 +13,7 @@ import {
   countWords,
   REGION_ORDER,
   SENSITIVITY_LABEL,
-} from './content.js?v=20261108-5';
+} from './content.js?v=20261108-6';
 import {
   getState,
   getSettings,
@@ -24,7 +24,7 @@ import {
   recordStoryRead,
   awardBadges,
   resetProgress,
-} from './storage.js?v=20261108-5';
+} from './storage.js?v=20261108-6';
 import {
   mythStats,
   overallStats,
@@ -33,8 +33,8 @@ import {
   glossaryUnlockedCount,
   allStoryQuizzesPassed,
   isStoryUnlocked,
-} from './progress.js?v=20261108-5';
-import { badgeCatalog, evaluateBadges } from './badges.js?v=20261108-5';
+} from './progress.js?v=20261108-6';
+import { badgeCatalog, evaluateBadges } from './badges.js?v=20261108-6';
 import {
   escapeHtml,
   iconImg,
@@ -50,19 +50,19 @@ import {
   toast,
   confirmDialog,
   emptyState,
-} from './ui.js?v=20261108-5';
-import { renderQuiz } from './quiz.js?v=20261108-5';
+} from './ui.js?v=20261108-6';
+import { renderQuiz } from './quiz.js?v=20261108-6';
 import {
   renderChallengeHub,
   renderTimelineChallenge,
   renderMatchChallenge,
   renderCultureChallenge,
-} from './challenges.js?v=20261108-5';
-import { renderMap } from './map.js?v=20261108-5';
-import { storyScene, characterPortrait } from './scene.js?v=20261108-5';
-import { sagaScene } from './saga-art.js?v=20261108-5';
-import { renderSaga, sagaContinueHref, sagaSummary } from './saga.js?v=20261108-5';
-import { narrate, stopNarration, speechSupported, availableVoices, narrationSupported, studioAudioUrl } from './narration.js?v=20261108-5';
+} from './challenges.js?v=20261108-6';
+import { renderMap } from './map.js?v=20261108-6';
+import { storyScene, characterPortrait } from './scene.js?v=20261108-6';
+import { sagaScene } from './saga-art.js?v=20261108-6';
+import { renderSaga, sagaContinueHref, sagaSummary } from './saga.js?v=20261108-6';
+import { narrate, stopNarration, speechSupported, availableVoices, narrationSupported, studioAudioUrl } from './narration.js?v=20261108-6';
 
 const app = document.getElementById('app');
 const nav = document.querySelector('.main-nav');
@@ -1205,7 +1205,7 @@ async function renderTimeline() {
         )
         .join('')}
     </div>
-    <p class="muted small timeline-foot">Numbers are used only for sorting. Text dates are the source of truth. A date such as “about 2100 BCE” is an estimate, not a fixed event.</p>
+    <p class="muted small timeline-foot">Numbers are used only for sorting. Text dates are the source of truth. A date such as “about 2100 BCE” is an estimate, not a fixed event. Period names are regional too: the Iron Age begins around 1200 BCE in Anatolia, 800 BCE in central Europe and 500 BCE in Scandinavia.</p>
   </div>`;
 }
 

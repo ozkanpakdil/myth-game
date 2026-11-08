@@ -1052,6 +1052,14 @@ a.story-row:hover { border-color: var(--gold); background: var(--surface-2); tra
 .order-item__body { display: flex; flex-direction: column; }
 .order-item__buttons { display: flex; gap: 0.3rem; }
 .order-item .icon-button { width: 2.2rem; height: 2.2rem; font-size: 0.9rem; }
+.order-item[draggable="true"] { cursor: grab; }
+.order-item[draggable="true"]:active { cursor: grabbing; }
+.order-item:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+.order-item.is-dragging { opacity: 0.45; }
+.order-item.is-drop-target {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--gold) 35%, transparent);
+}
 
 .correct-order { margin: 1rem 0; padding-left: 1.2rem; }
 .correct-order li { padding: 0.3rem 0; border-bottom: 1px solid var(--line); font-size: 0.86rem; }

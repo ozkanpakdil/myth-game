@@ -403,7 +403,7 @@ An AI that writes text can create pixel art as **text grids**, one character per
 ## 8. Definition of Done
 
 **Version 1 (text):**
-- [x] 9 MVP mythologies complete (6 stories, 20 quiz questions, 10 characters, 10 glossary terms each)
+- [x] 10 MVP mythologies complete (6 stories, 20 quiz questions, 10 characters, 10 glossary terms each)
 - [x] `validate_content.js` passes with no errors
 - [x] All screens work on desktop and mobile
 - [x] Progress saves and loads correctly
@@ -446,3 +446,4 @@ Add one line per finished task. Newest at the bottom.
 | 2026-11-07 | Verification | `node tools/validate_content.js` clean; 43 Playwright tests pass headlessly; 1062 generated narration clips validated (708 Piper + 354 XTTS, filename parity and non-empty audio); no console errors on the checked routes; assembled Pages artifact verified. |
 | 2026-11-08 | T601 | Shortened saga prose, added per-paragraph Listen controls, preselected Morgan with a first-use voice picker, switched on voice change, and generated 126 saga clips per studio voice (378 total). |
 | 2026-11-08 | T602 | Added Chinese as the ninth playable tradition: Pangu, Nüwa, Hou Yi, Yu the Great, Nezha and Sun Wukong, with 20 questions, 10 figures, 10 terms, a dragon sigil, map marker and 44 studio clips per voice. |
+| 2026-11-08 | T603 | Added Roman as the tenth playable tradition: Aeneas, Romulus and Remus, the Sabine women, Ceres and Proserpina, Cupid and Psyche, and Juno's geese, with 20 questions, 10 figures, 10 terms, a wolf sigil and a map marker. |

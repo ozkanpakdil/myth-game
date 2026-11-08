@@ -112,7 +112,7 @@
     "start_year": -750,
     "end_year": 500,
     "summary": "Rome adopted Greek gods under new names and added its own founding legend of Aeneas, Romulus and the destiny of the city.",
-    "mvp": false,
+    "mvp": true,
     "sensitivity": "low",
     "verified": false
   },

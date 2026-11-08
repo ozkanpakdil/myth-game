@@ -1,5 +1,7 @@
 import { test, expect } from '@playwright/test';
-import { dataByMyth, freshState, seedProgress, quizRecord, fullyPlayedState } from './helpers.js';
+import { dataByMyth, freshState, seedProgress, quizRecord, fullyPlayedState, playable } from './helpers.js';
+
+const storyTotal = playable.reduce((sum, meta) => sum + dataByMyth[meta.id].stories.length, 0);
 
 test.describe('settings', () => {
   test('theme and text size persist across reloads', async ({ page }) => {
@@ -31,18 +33,18 @@ test.describe('progress reset', () => {
     });
     await seedProgress(page, state);
     await page.goto('/#/results');
-    await expect(page.getByTestId('results-page')).toContainText('1/54');
+    await expect(page.getByTestId('results-page')).toContainText(`1/${storyTotal}`);
 
     await page.getByTestId('reset-progress').click();
     const dialog = page.getByRole('dialog');
     await expect(dialog).toBeVisible();
     await dialog.getByRole('button', { name: 'Cancel' }).click();
     await expect(dialog).toHaveCount(0);
-    await expect(page.getByTestId('results-page')).toContainText('1/54');
+    await expect(page.getByTestId('results-page')).toContainText(`1/${storyTotal}`);
 
     await page.getByTestId('reset-progress').click();
     await page.getByRole('dialog').getByRole('button', { name: 'Reset progress' }).click();
-    await expect(page.getByTestId('results-page')).toContainText('0/54');
+    await expect(page.getByTestId('results-page')).toContainText(`0/${storyTotal}`);
     const stored = await page.evaluate(() => JSON.parse(localStorage.getItem('mythos.progress.v1')));
     expect(stored.storiesRead).toEqual({});
     expect(stored.quizBest).toEqual({});

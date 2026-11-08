@@ -1,0 +1,202 @@
+[
+  {
+    "id": "roman-q01",
+    "story_id": "roman-01",
+    "question": "What does Aeneas carry out of Troy?",
+    "choices": ["His father Anchises", "His wife Creusa", "The Trojan horse", "A map of Italy"],
+    "correct_index": 0,
+    "explanation": "Aeneas carries his father Anchises and the household gods, while his son Ascanius walks beside him.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "roman-q02",
+    "story_id": "roman-01",
+    "question": "Who is Aeneas's mother in the story?",
+    "choices": ["Venus", "Juno", "Ceres", "Minerva"],
+    "correct_index": 0,
+    "explanation": "Aeneas is the son of the Trojan prince Anchises and the goddess Venus, which gives Rome a divine ancestor.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "roman-q03",
+    "story_id": "roman-01",
+    "question": "Which goddess sends storms against Aeneas?",
+    "choices": ["Juno", "Venus", "Diana", "Vesta"],
+    "correct_index": 0,
+    "explanation": "Juno opposes the Trojans and drives Aeneas' fleet from shore to shore before he reaches Italy.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "roman-q04",
+    "story_id": "roman-01",
+    "question": "What Roman virtue does Virgil emphasize in Aeneas?",
+    "choices": ["Pietas, duty to gods and family", "Ferocitas, reckless rage", "Avaritia, love of wealth", "Sapientia, pure reason"],
+    "correct_index": 0,
+    "explanation": "Virgil repeatedly calls Aeneas pius: his duty to the gods, his family and his destined city shapes his choices.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "roman-q05",
+    "story_id": "roman-02",
+    "question": "Who suckled Romulus and Remus?",
+    "choices": ["A she-wolf", "A bear", "A nymph", "A goat"],
+    "correct_index": 0,
+    "explanation": "A she-wolf found the abandoned twins and kept them alive until the shepherd Faustulus discovered them.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "roman-q06",
+    "story_id": "roman-02",
+    "question": "Who was the father of Romulus and Remus?",
+    "choices": ["Mars", "Jupiter", "Faunus", "Numitor"],
+    "correct_index": 0,
+    "explanation": "The god Mars visited Rhea Silvia, and the twins were said to be his sons.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "roman-q07",
+    "story_id": "roman-02",
+    "question": "What happened after Remus jumped over Romulus's wall?",
+    "choices": ["Romulus killed him in the quarrel", "He became king of Alba", "He was made a god", "He founded a rival city"],
+    "correct_index": 0,
+    "explanation": "Remus mocked the new wall by jumping over it, and the quarrel ended with Romulus killing his brother.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "roman-q08",
+    "story_id": "roman-03",
+    "question": "Which people did Romulus invite to a festival?",
+    "choices": ["The Sabines", "The Etruscans", "The Gauls", "The Carthaginians"],
+    "correct_index": 0,
+    "explanation": "Romulus invited the Sabines to a festival of Consus, where the Roman men seized the Sabine women.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "roman-q09",
+    "story_id": "roman-03",
+    "question": "What did the Sabine women do when the armies prepared to fight?",
+    "choices": ["They intervened to stop the battle", "They joined the Sabine army", "They fled to Alba Longa", "They burned the city"],
+    "correct_index": 0,
+    "explanation": "The women came out between the two lines and begged their fathers and husbands not to fight.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "roman-q10",
+    "story_id": "roman-03",
+    "question": "What settlement followed the war?",
+    "choices": ["Romans and Sabines shared rule", "The Sabines destroyed Rome", "The women were sent home", "Rome moved to Sabine territory"],
+    "correct_index": 0,
+    "explanation": "The two peoples made peace, and the Sabine king Titus Tatius ruled jointly with Romulus.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "roman-q11",
+    "story_id": "roman-04",
+    "question": "Which god carried Proserpina to the underworld?",
+    "choices": ["Pluto", "Jupiter", "Neptune", "Mars"],
+    "correct_index": 0,
+    "explanation": "Pluto, the god of the underworld, rose from the earth in his chariot and carried Proserpina away.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "roman-q12",
+    "story_id": "roman-04",
+    "question": "What did Proserpina eat in the underworld?",
+    "choices": ["Pomegranate seeds", "A golden apple", "Bread and wine", "A honey cake"],
+    "correct_index": 0,
+    "explanation": "Proserpina ate a few pomegranate seeds, and that small act bound her to the underworld for part of each year.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "roman-q13",
+    "story_id": "roman-04",
+    "question": "Why did Proserpina have to return to the underworld?",
+    "choices": ["She had eaten food there", "She had broken a promise", "Pluto had won a war", "Ceres sent her away"],
+    "correct_index": 0,
+    "explanation": "The rule was that anyone who ate in the land of the dead must return; the pomegranate seeds sealed her bond.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "roman-q14",
+    "story_id": "roman-04",
+    "question": "What does the myth explain?",
+    "choices": ["The cycle of the seasons", "The founding of Rome", "The origin of the Vestal Virgins", "The fall of Troy"],
+    "correct_index": 0,
+    "explanation": "Ceres' grief brings winter, and Proserpina's return brings spring; the story explains the turning seasons.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "roman-q15",
+    "story_id": "roman-05",
+    "question": "Who was Cupid's mother in the story?",
+    "choices": ["Venus", "Psyche", "Juno", "Ceres"],
+    "correct_index": 0,
+    "explanation": "Cupid is the son of Venus, who sends him to punish Psyche for her beauty.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "roman-q16",
+    "story_id": "roman-05",
+    "question": "What did Psyche do that made Cupid flee?",
+    "choices": ["She looked at his face by lamplight", "She opened the palace gate", "She refused to marry him", "She stole his arrows"],
+    "correct_index": 0,
+    "explanation": "Psyche lit a lamp and looked at Cupid while he slept; a drop of oil woke him, and he fled.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "roman-q17",
+    "story_id": "roman-05",
+    "question": "Which task did Venus give Psyche?",
+    "choices": ["Sorting a heap of seeds", "Building a temple", "Stealing Jupiter's eagle", "Guarding the underworld"],
+    "correct_index": 0,
+    "explanation": "Venus set Psyche to sort a huge heap of seeds, one of several impossible tasks helped by sympathetic creatures.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "roman-q18",
+    "story_id": "roman-06",
+    "question": "Which animals warned the Romans on the Capitol?",
+    "choices": ["Juno's geese", "The sacred dogs", "The Capitoline wolves", "The temple pigeons"],
+    "correct_index": 0,
+    "explanation": "The sacred geese of Juno cackled in the night and woke Marcus Manlius, who led the defense.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "roman-q19",
+    "story_id": "roman-06",
+    "question": "Who woke and led the defense?",
+    "choices": ["Marcus Manlius", "Camillus", "Romulus", "Titus Tatius"],
+    "correct_index": 0,
+    "explanation": "Marcus Manlius heard the geese, rushed to the wall and drove back the Gauls climbing the Capitol.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "roman-q20",
+    "story_id": "roman-06",
+    "question": "What was later built on the site associated with Juno Moneta?",
+    "choices": ["A mint for Roman coins", "A temple to Mars", "The Senate house", "A triumphal arch"],
+    "correct_index": 0,
+    "explanation": "Juno Moneta's temple was linked to the Roman mint, and the English word money comes from moneta.",
+    "difficulty": "hard",
+    "verified": false
+  }
+]

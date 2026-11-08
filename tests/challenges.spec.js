@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { allCharacters, allStories, mythologies } from './helpers.js';
+import { allCharacters, allStories, mythologies, playable } from './helpers.js';
 
 const metaById = Object.fromEntries(mythologies.map((meta) => [meta.id, meta]));
 
@@ -98,7 +98,7 @@ test.describe('map', () => {
     await page.goto('/#/map');
     await expect(page.getByTestId('map-page')).toBeVisible();
     await expect(page.locator('.map-region')).toHaveCount(6);
-    await expect(page.locator('.map-marker')).toHaveCount(9);
+    await expect(page.locator('.map-marker')).toHaveCount(playable.length);
 
     await page.getByTestId('map-region-europe').focus();
     await page.keyboard.press('Enter');
@@ -127,6 +127,6 @@ test.describe('map', () => {
     expect(metrics.doc).toBe(metrics.viewport);
     expect(metrics.scroll).toBeGreaterThan(metrics.box);
     await expect(page.locator('.map-scroll-hint')).toBeVisible();
-    await expect(page.locator('.map-list__item')).toHaveCount(9);
+    await expect(page.locator('.map-list__item')).toHaveCount(playable.length);
   });
 });

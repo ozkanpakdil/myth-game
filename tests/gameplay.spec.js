@@ -7,7 +7,10 @@ import {
   freshState,
   quizRecord,
   seededGreekFinalState,
+  playable,
 } from './helpers.js';
+
+const codexTotal = playable.length * 20;
 
 test.describe('the Greek story loop', () => {
   test('read, pass, unlock, persist and award badges', async ({ page }) => {
@@ -91,7 +94,7 @@ test.describe('codex unlocks', () => {
   test('one read story unlocks its figure and two terms; a final pass unlocks the whole tradition', async ({ page }) => {
     await seedProgress(page, freshState({ storiesRead: { greek: ['greek-01'] } }));
     await page.goto('/#/codex');
-    await expect(page.getByTestId('codex-count')).toContainText('3 / 180');
+    await expect(page.getByTestId('codex-count')).toContainText(`3 / ${codexTotal}`);
     await expect(page.getByTestId('codex-card-greek-zeus')).not.toHaveClass(/is-locked/);
     await expect(page.getByTestId('codex-card-greek-hades')).toHaveClass(/is-locked/);
     await expect(page.getByTestId('codex-term-greek-0')).not.toHaveClass(/is-locked/);
@@ -104,7 +107,7 @@ test.describe('codex unlocks', () => {
     const finalState = freshState({ storiesRead: { greek: ['greek-01'] }, finalQuiz: { greek: quizRecord({ score: 20, total: 20 }) } });
     await seedProgress(page, finalState);
     await page.goto('/#/codex');
-    await expect(page.getByTestId('codex-count')).toContainText('20 / 180');
+    await expect(page.getByTestId('codex-count')).toContainText(`20 / ${codexTotal}`);
     await expect(page.getByTestId('codex-card-greek-hades')).not.toHaveClass(/is-locked/);
   });
 });
@@ -116,7 +119,7 @@ test.describe('timeline', () => {
     await expect(page.locator('.timeline-row')).toHaveCount(35);
     await expect(page.getByTestId('timeline-row-greek')).toHaveClass(/is-playable/);
     await expect(page.getByTestId('timeline-row-greek').locator('h3 a')).toHaveAttribute('href', '#/myth/greek');
-    await expect(page.getByTestId('timeline-row-roman')).not.toHaveClass(/is-playable/);
+    await expect(page.getByTestId('timeline-row-canaan')).not.toHaveClass(/is-playable/);
     await expect(page.getByTestId('timeline-page')).toContainText('35 traditions');
   });
 });

@@ -1,0 +1,69 @@
+{
+  "id": "roman",
+  "name": "Roman",
+  "intro": "Roman myth is often described as Greek myth with Latin names, but that is only half the story. Roman religion grew from household cults, state priesthoods and the idea that gods were present in every place and action. When Rome expanded, its poets and scholars reworked Greek epics and tragedies for a Roman audience, adding ancestors, laws and the destiny of the city. Virgil's Aeneid turns the Trojan refugee Aeneas into the ancestor of Rome; Ovid's Metamorphoses retells Greek stories with wit and Roman detail; Livy's history blends legend with the founding of the Republic. The results are not a single canon but a conversation between Greek learning, Italian local cults and imperial politics. The stories here follow that mixture: Trojan origins, the twins who founded Rome, the gods of grain and love, and Juno's geese.",
+  "timeline": [
+    {
+      "label": "Early Italy",
+      "year_text": "c. 1000–500 BCE",
+      "note": "Latin, Etruscan and other Italian peoples worship local gods, ancestors and spirits of place. Many later Roman deities absorb or overlap with these traditions."
+    },
+    {
+      "label": "Founding legends",
+      "year_text": "traditional date 753 BCE",
+      "note": "Romans tell of Aeneas' journey from Troy and of Romulus and Remus, twins raised by a she-wolf. The stories explain the city's name and its claims to divine ancestry."
+    },
+    {
+      "label": "Republic",
+      "year_text": "509–27 BCE",
+      "note": "Rome becomes a republic. State cults, augury and priesthoods are woven into political life, and Greek myths are adapted into Latin literature."
+    },
+    {
+      "label": "Augustan age",
+      "year_text": "27 BCE–14 CE",
+      "note": "Augustus presents his rule as a restoration of Roman religion. Virgil writes the Aeneid, linking Rome's destiny to Aeneas and Venus."
+    },
+    {
+      "label": "Imperial literature",
+      "year_text": "1st–2nd century CE",
+      "note": "Ovid's Metamorphoses and Fasti, and Apuleius' Golden Ass, retell myths with Roman settings, festivals and humour."
+    },
+    {
+      "label": "Christian empire and after",
+      "year_text": "4th century CE onward",
+      "note": "Christianity becomes the empire's dominant religion, but Roman myths survive in education, art, law and later European literature."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Virgil, Aeneid",
+      "note": "The Augustan epic of Aeneas' journey from Troy to Italy, and the main literary source for Rome's Trojan origin story."
+    },
+    {
+      "title": "Ovid, Metamorphoses",
+      "note": "A poetic collection of transformation myths, including Ceres and Proserpina, told with Roman wit and learning."
+    },
+    {
+      "title": "Ovid, Fasti",
+      "note": "A poem on the Roman religious calendar, preserving festivals, temple dedications and etiological myths."
+    },
+    {
+      "title": "Livy, Ab Urbe Condita",
+      "note": "The history of Rome from its founding, preserving the legends of Romulus, the Sabine women and the Gallic sack."
+    },
+    {
+      "title": "Plutarch, Life of Romulus",
+      "note": "A later biographical retelling that compares Roman founding legends with Greek traditions and notes variant versions."
+    },
+    {
+      "title": "Apuleius, The Golden Ass",
+      "note": "A second-century novel containing the tale of Cupid and Psyche, told as a story within a story."
+    },
+    {
+      "title": "Mary Beard, John North and Simon Price, Religions of Rome",
+      "note": "A standard modern study of Roman religious practice, priesthoods, festivals and the relationship between cult and politics."
+    }
+  ],
+  "sensitivity": "low",
+  "verified": false
+}

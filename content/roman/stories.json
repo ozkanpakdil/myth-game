@@ -1,0 +1,93 @@
+[
+  {
+    "id": "roman-01",
+    "title": "Aeneas and the Gods of Troy",
+    "source_ref": "Virgil, Aeneid",
+    "paragraphs": [
+      "Troy was burning when Aeneas led his father Anchises out of the city. Anchises carried the household gods, the Penates, while Aeneas held his son Ascanius by the hand. His wife Creusa followed behind them, but in the smoke and confusion she was lost. Her ghost appeared to Aeneas and told him to sail west, toward a land where a new Troy would rise.",
+      "Aeneas gathered the survivors and crossed the sea. Juno, who had fought Troy, sent storms to drive them from one shore to another. They reached Carthage, where Queen Dido welcomed them. Aeneas and Dido fell in love, but Mercury reminded Aeneas that Italy was his destination. He left; Dido cursed him and took her own life, and the breach between Carthage and Rome became a story later Romans remembered.",
+      "In Italy, Aeneas arrived at the Tiber. King Latinus offered him peace and the hand of his daughter Lavinia, but Turnus, her earlier suitor, demanded war. Aeneas made an alliance with the Arcadian king Evander and received a shield made by Vulcan at Venus's request, decorated with scenes of Rome's future. In the final duel, Aeneas killed Turnus.",
+      "Aeneas founded the city of Lavinium and ruled for a few years. His son Ascanius later founded Alba Longa, from which Romulus and Remus were said to descend. Virgil calls Aeneas pius, dutiful to the gods, his family and his destiny. The poem turns a Trojan refugee into an ancestor of Rome, and makes the city's origins a story of loss as much as triumph."
+    ],
+    "characters": ["aeneas", "venus", "juno"],
+    "themes": ["exile", "duty", "founding"],
+    "uncertain": false,
+    "verified": false
+  },
+  {
+    "id": "roman-02",
+    "title": "Romulus, Remus and the She-Wolf",
+    "source_ref": "Livy, Ab Urbe Condita; Plutarch, Life of Romulus",
+    "paragraphs": [
+      "Rhea Silvia was a Vestal Virgin, sworn to chastity, but the god Mars visited her and she gave birth to twin sons. Her uncle Amulius, who had seized the throne of Alba Longa, ordered the babies drowned in the Tiber. The river was in flood, and the servant who carried them could not reach the water. He left the basket on the bank.",
+      "A she-wolf found the twins, suckled them and kept them alive until a shepherd, Faustulus, discovered them. He and his wife raised the boys as their own. Romulus and Remus grew up among the shepherds, bold and quick to quarrel, and when they learned who they were they overthrew Amulius and restored their grandfather Numitor.",
+      "The brothers decided to found a new city, but they disagreed about the site. They agreed to read the flight of birds. Remus saw six vultures on the Aventine; Romulus saw twelve on the Palatine, and claimed the greater omen. Romulus began to build a wall, and Remus jumped over it to mock him. In the fight that followed, Remus was killed.",
+      "Romulus named the city Rome after himself and opened it to exiles and outcasts. The traditional date is 753 BCE. Historians treat the story as legend rather than a record of events, but the Romans used it to explain the city's name, its warlike character and its claim to divine ancestry through Mars. The twins' quarrel also gave Rome a founding image of civil conflict."
+    ],
+    "characters": ["romulus", "remus", "mars"],
+    "themes": ["founding", "rivalry", "divine ancestry"],
+    "uncertain": false,
+    "verified": false
+  },
+  {
+    "id": "roman-03",
+    "title": "The Sabine Women",
+    "source_ref": "Livy, Ab Urbe Condita; Plutarch, Life of Romulus",
+    "paragraphs": [
+      "Romulus had founded a city of men, and the men had no wives. He sent envoys to the neighbouring Sabines asking for a treaty of marriage, but the Sabines refused, fearing a new and dangerous neighbour. Romulus then announced a great festival of Consus and invited the Sabines to attend. They came with their families, and at a signal the Roman men seized the Sabine women.",
+      "The Sabine men went home in anger and prepared for war. When their army reached Rome, the women who had been taken came out between the two lines. They were now Roman wives and mothers, and they begged both sides to stop fighting rather than lose fathers and husbands. The armies hesitated, and the two peoples made peace.",
+      "The agreement brought the Sabines into Rome. Their king, Titus Tatius, ruled jointly with Romulus until his death five years later. The women were honoured in later Roman memory, and their families became part of the city's patrician clans. The story gave Rome a founding act of violence followed by reconciliation.",
+      "Roman writers told the story in different tones. Some praised the women for ending the war; others treated the seizure as a shameful act that could only be excused by its outcome. The myth does not offer a simple moral. It shows how Rome imagined itself as a city built from strangers, conflict and forced union."
+    ],
+    "characters": ["romulus"],
+    "themes": ["founding", "conflict", "reconciliation"],
+    "notes": "The seizure of the Sabine women is a founding legend, not a model of conduct; Roman writers themselves debated its morality.",
+    "uncertain": false,
+    "verified": false
+  },
+  {
+    "id": "roman-04",
+    "title": "Ceres and Proserpina",
+    "source_ref": "Ovid, Metamorphoses; Ovid, Fasti",
+    "paragraphs": [
+      "Proserpina, the daughter of Ceres, was picking flowers in a meadow when the ground opened. Pluto, god of the underworld, rose in his chariot and carried her away. Ceres heard her daughter's cry but could not find her. She searched the world with torches, and in her grief she let the fields wither and the harvest fail.",
+      "At last Ceres learned that Pluto had taken Proserpina to the underworld. She went to Jupiter and demanded her daughter's return. Jupiter agreed, on one condition: Proserpina must not have eaten anything in the land of the dead. But she had eaten a few pomegranate seeds, and so she was bound to the underworld for part of each year.",
+      "A compromise was made. Proserpina would spend part of the year with her mother and part with Pluto. When she returned to Ceres, the earth blossomed; when she went back to the underworld, the fields grew cold. Ceres also taught humans to plough and sow, and the Romans honoured her at the Cerealia festival.",
+      "The Romans knew the Greek version of the story, with Demeter and Persephone, and gave the figures Latin names. Ovid tells it with sympathy for both mother and daughter, and with an eye on the Roman calendar. The myth explains the seasons, but it also speaks about loss, marriage, and the boundary between the living and the dead."
+    ],
+    "characters": ["ceres", "proserpina"],
+    "themes": ["seasons", "loss", "underworld"],
+    "uncertain": false,
+    "verified": false
+  },
+  {
+    "id": "roman-05",
+    "title": "Cupid and Psyche",
+    "source_ref": "Apuleius, The Golden Ass",
+    "paragraphs": [
+      "Psyche was the youngest of three sisters and so beautiful that people began to honour her instead of Venus. The goddess was jealous and sent her son Cupid to make Psyche fall in love with a monster. But when Cupid saw her, he wounded himself with his own arrow. An oracle told Psyche's family to leave her on a cliff, where a mysterious husband would find her.",
+      "A gentle wind carried Psyche to a palace, and each night a husband visited her in the dark. He made her promise never to look at his face. Her sisters persuaded her that he must be a monster. One night Psyche lit a lamp and saw Cupid asleep. A drop of oil fell from the lamp, and he woke and fled.",
+      "Psyche wandered the world searching for him. Venus set her impossible tasks: sorting a heap of seeds, fetching wool from dangerous sheep, and bringing water from the river Styx. Ants, a reed and an eagle helped her. Finally Psyche was sent to fetch a box of beauty from the underworld, but curiosity made her open it, and she fell into a deathlike sleep.",
+      "Cupid found her and woke her. He asked Jupiter to make her immortal, and the gods agreed. Psyche and Cupid were married, and she bore a daughter called Pleasure. Apuleius tells the story as a tale within a tale, full of allegory: the soul, Psyche, is tested and finally united with love."
+    ],
+    "characters": ["cupid", "psyche", "venus"],
+    "themes": ["love", "curiosity", "immortality"],
+    "uncertain": false,
+    "verified": false
+  },
+  {
+    "id": "roman-06",
+    "title": "The Geese of Juno",
+    "source_ref": "Livy, Ab Urbe Condita; Plutarch, Life of Camillus",
+    "paragraphs": [
+      "In 390 BCE a Gallic army defeated the Romans at the river Allia and marched into Rome. The citizens fled or were killed, and the Gauls occupied most of the city. A small force held the Capitol, the hill with the temples and the sacred geese of Juno. The siege dragged on, and the Gauls looked for a way up the cliff.",
+      "One night a party of Gauls climbed the steep slope in silence. The dogs did not bark, but the geese were hungry and restless. Their cackling woke the Roman commander Marcus Manlius, who seized his weapons and rushed to the wall. The Romans drove the attackers back, and the Capitol was saved.",
+      "The general Camillus was recalled from exile and given dictatorial power. He gathered the Roman survivors and defeated the Gauls, though ancient writers disagree about whether the Romans had already agreed to pay a ransom. The story made the geese sacred to Juno, and a temple was later dedicated to Juno Moneta on the Capitol.",
+      "Juno Moneta means Juno the Warner, and the temple became associated with the mint where Roman coins were struck. The English word money comes from moneta. The legend is probably a later explanation of a real sacred precinct, but it shows how Roman religion joined the city's military survival to the honour of its gods."
+    ],
+    "characters": ["juno"],
+    "themes": ["siege", "sacred animals", "deliverance"],
+    "uncertain": false,
+    "verified": false
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "id": "aeneas",
+    "name": "Aeneas",
+    "role": "Trojan hero and ancestor of the Roman people",
+    "domain": ["duty", "war", "founding"],
+    "symbols": ["the household gods", "his father Anchises", "the shield of Vulcan"],
+    "fun_fact": "Virgil's Aeneid ends not with the founding of Rome but with Aeneas killing Turnus, leaving the city's future to his descendants.",
+    "verified": false
+  },
+  {
+    "id": "romulus",
+    "name": "Romulus",
+    "role": "Twin founder and first king of Rome",
+    "domain": ["founding", "war", "law"],
+    "symbols": ["the Palatine Hill", "the city wall", "the she-wolf"],
+    "fun_fact": "Roman tradition dated the founding of Rome to 753 BCE and made Romulus its first king and lawgiver.",
+    "verified": false
+  },
+  {
+    "id": "remus",
+    "name": "Remus",
+    "role": "Twin brother of Romulus and rival founder",
+    "domain": ["rivalry", "founding"],
+    "symbols": ["the Aventine Hill", "the six vultures"],
+    "fun_fact": "Remus is said to have seen six vultures while Romulus saw twelve, a dispute over augury that ended in his death.",
+    "verified": false
+  },
+  {
+    "id": "mars",
+    "name": "Mars",
+    "role": "God of war and father of Romulus and Remus",
+    "domain": ["war", "agriculture", "protection"],
+    "symbols": ["the spear", "the shield", "the wolf"],
+    "fun_fact": "Mars was originally also an agricultural god, and his spring festivals were tied to the fertility of fields and herds.",
+    "verified": false
+  },
+  {
+    "id": "venus",
+    "name": "Venus",
+    "role": "Goddess of love and mother of Aeneas",
+    "domain": ["love", "beauty", "ancestry"],
+    "symbols": ["the dove", "the myrtle", "the shield of Aeneas"],
+    "fun_fact": "Julius Caesar claimed descent from Venus through Aeneas, making the goddess a political ancestor of his family.",
+    "verified": false
+  },
+  {
+    "id": "juno",
+    "name": "Juno",
+    "role": "Queen of the gods and protector of Rome",
+    "domain": ["marriage", "state", "women"],
+    "symbols": ["the peacock", "the sacred geese", "the Capitol"],
+    "fun_fact": "Juno was worshipped on the Capitol as Juno Moneta, 'the Warner', and her temple gave its name to the Roman mint.",
+    "verified": false
+  },
+  {
+    "id": "ceres",
+    "name": "Ceres",
+    "role": "Goddess of grain, harvest and agriculture",
+    "domain": ["grain", "harvest", "motherhood"],
+    "symbols": ["wheat", "the torch", "the plough"],
+    "fun_fact": "The Cerealia festival honoured Ceres, and her name survives in the English word cereal.",
+    "verified": false
+  },
+  {
+    "id": "proserpina",
+    "name": "Proserpina",
+    "role": "Queen of the underworld and goddess of spring",
+    "domain": ["underworld", "spring", "marriage"],
+    "symbols": ["the pomegranate", "the torch", "the flower meadow"],
+    "fun_fact": "Proserpina is the Roman counterpart of the Greek Persephone; her return from the underworld marked the beginning of spring.",
+    "verified": false
+  },
+  {
+    "id": "cupid",
+    "name": "Cupid",
+    "role": "God of desire and son of Venus",
+    "domain": ["love", "desire", "marriage"],
+    "symbols": ["the bow and arrow", "the lamp", "wings"],
+    "fun_fact": "In Apuleius' story Cupid is a hidden husband rather than a chubby child, and his union with Psyche becomes an allegory of the soul.",
+    "verified": false
+  },
+  {
+    "id": "psyche",
+    "name": "Psyche",
+    "role": "Mortal woman who becomes the bride of Cupid",
+    "domain": ["soul", "curiosity", "endurance"],
+    "symbols": ["the lamp", "the box of beauty", "butterfly wings"],
+    "fun_fact": "The Greek word psyche means both 'soul' and 'butterfly', and later art often gives Psyche butterfly wings.",
+    "verified": false
+  }
+]

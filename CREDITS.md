@@ -156,6 +156,15 @@ Mythos is an educational draft. The retellings are new, short summaries in moder
 - **Homer, Odyssey, and Aeschylus, Agamemnon** — Early and classical sources for the House of Atreus, set in the Mycenaean world but composed centuries later.
 - **Nanno Marinatos, Minoan Religion** — A study of Cretan ritual, goddesses, bull imagery and the problems of interpreting Minoan art without readable texts.
 
+### Hittite / Hurrian
+
+- **Hittite cuneiform texts (CTH)** — The catalogue of Hittite texts, including the Kumarbi Cycle, the Song of Ullikummi, the Illuyanka myth and the Telipinu myth; many tablets are fragmentary.
+- **Harry A. Hoffner, Hittite Myths (2nd ed.)** — A standard English translation of the Anatolian and Hurrian myths, with introductions to the textual problems.
+- **Hans Gustav Güterbock, The Song of Ullikummi** — A foundational edition and study of the stone-giant myth.
+- **Emmanuel Laroche, Catalogue des textes hittites (CTH)** — The reference catalogue for identifying and dating the Hittite texts.
+- **Trevor Bryce, The Kingdom of the Hittites** — A historical study of the Hittite state, its archives and its religious culture.
+- **Billie Jean Collins, The Hittites and Their World** — An accessible introduction to Hittite society, religion and textual remains.
+
 ## Review and sensitivity status
 
 | Tradition | Sensitivity | Verified |
@@ -173,8 +182,9 @@ Mythos is an educational draft. The retellings are new, short summaries in moder
 | Persian / Zoroastrian | low | false |
 | Canaanite | low | false |
 | Minoan / Mycenaean | low | false |
+| Hittite / Hurrian | low | false |
 
-Hindu stories are a living sacred tradition and are marked **high** sensitivity. Shinto (Japanese), Maya and Chinese traditions are marked **medium**. All thirteen traditions need a human fact-check of dates, names, spellings, answer keys and source notes before release. The Hindu, Shinto, Maya and Chinese material also needs a sensitivity review by someone with relevant community or scholarly knowledge.
+Hindu stories are a living sacred tradition and are marked **high** sensitivity. Shinto (Japanese), Maya and Chinese traditions are marked **medium**. All fourteen traditions need a human fact-check of dates, names, spellings, answer keys and source notes before release. The Hindu, Shinto, Maya and Chinese material also needs a sensitivity review by someone with relevant community or scholarly knowledge.
 
 If a retelling is inaccurate or disrespectful, the correct response is to revise or remove it — not to defend the text. See the `NEEDS HUMAN` tasks in `PLAN_AND_TODO.md`.
 

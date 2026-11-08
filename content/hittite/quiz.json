@@ -1,0 +1,202 @@
+[
+  {
+    "id": "hittite-q01",
+    "story_id": "hittite-01",
+    "question": "Who serves Alalu as cup-bearer in the Song of Kumarbi?",
+    "choices": ["Kumarbi", "Anu", "Teshub", "Ea"],
+    "correct_index": 1,
+    "explanation": "Anu, called the mightiest of the gods, serves Alalu as cup-bearer for nine years before he rebels and takes the throne.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "hittite-q02",
+    "story_id": "hittite-01",
+    "question": "What does Kumarbi do when he catches Anu in the sky?",
+    "choices": ["He cuts off his head", "He binds him with a rope", "He bites off his loins", "He takes his crown"],
+    "correct_index": 2,
+    "explanation": "Kumarbi drags Anu down from the sky and bites off his loins, swallowing his seed and becoming pregnant with the storm god.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "hittite-q03",
+    "story_id": "hittite-01",
+    "question": "Which three beings does Anu say Kumarbi now carries?",
+    "choices": ["Teshub, the river Aranzah and Tasmisu", "Teshub, Shaushka and Hebat", "Ullikummi, Illuyanka and Tasmisu", "Alalu, Anu and Ea"],
+    "correct_index": 0,
+    "explanation": "Anu names the Storm God Teshub, the river Aranzah (the Tigris) and the god Tasmisu as the three children in Kumarbi's belly.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "hittite-q04",
+    "story_id": "hittite-01",
+    "question": "Where does Kumarbi go after Anu returns to heaven?",
+    "choices": ["Urkesh", "Kumme", "Hattusa", "Nippur"],
+    "correct_index": 3,
+    "explanation": "The broken text sends Kumarbi to Nippur to look for a way out of his pregnancy, and the columns that survive from that episode are badly damaged.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "hittite-q05",
+    "story_id": "hittite-02",
+    "question": "Who is born from Kumarbi's body in the Song of Kumarbi?",
+    "choices": ["Ullikummi", "Teshub", "Illuyanka", "Telipinu"],
+    "correct_index": 1,
+    "explanation": "Kumarbi carries the storm god Teshub, and the fate goddesses cut open his skull so that the child can be born.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "hittite-q06",
+    "story_id": "hittite-02",
+    "question": "How does Teshub get out of Kumarbi's body?",
+    "choices": ["Through Kumarbi's mouth", "Through his ear", "Through a cut in his skull", "He is cut from the thigh"],
+    "correct_index": 2,
+    "explanation": "Teshub says the only safe road is through Kumarbi's skull; the fate goddesses cut it open and then mend it like a torn garment.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "hittite-q07",
+    "story_id": "hittite-02",
+    "question": "Which statement best matches the sources on Teshub's parentage?",
+    "choices": ["Anu is his father and Kumarbi his mother", "Kumarbi is his father and Anu his mother", "Ea is his father and Hebat his mother", "He has no parent among the gods"],
+    "correct_index": 0,
+    "explanation": "Anu is called Teshub's father, while a Hurrian hymn calls Kumarbi his mother; later songs also call Kumarbi father of the gods, so the family is genuinely confused.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "hittite-q08",
+    "story_id": "hittite-03",
+    "question": "What is Ullikummi made of?",
+    "choices": ["Bronze", "Oak wood", "Ice", "Diorite stone"],
+    "correct_index": 3,
+    "explanation": "Kumarbi mates with a great block of diorite, and the child born from the stone is the giant Ullikummi.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "hittite-q09",
+    "story_id": "hittite-03",
+    "question": "On whose shoulder is Ullikummi hidden?",
+    "choices": ["Tasmisu", "Ubelluri", "Ea", "Enlil"],
+    "correct_index": 1,
+    "explanation": "The Irshirra goddesses place the stone child on the right shoulder of Ubelluri, the giant who holds up heaven and earth.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "hittite-q10",
+    "story_id": "hittite-03",
+    "question": "What does Shaushka try in order to stop Ullikummi?",
+    "choices": ["She adorns herself and sings to him", "She strikes him with lightning", "She poisons the spring", "She steals his name"],
+    "correct_index": 0,
+    "explanation": "Shaushka dresses and sings to the giant from the shore, but a wave tells her that Ullikummi is deaf and blind and cannot hear her.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "hittite-q11",
+    "story_id": "hittite-03",
+    "question": "What does Ea use to cut Ullikummi free?",
+    "choices": ["A saw kept by the sea god", "Teshub's lightning", "The ancient copper cutter that separated heaven and earth", "A rope woven by Shaushka"],
+    "correct_index": 2,
+    "explanation": "Ea fetches the primordial copper tool that once divided heaven from earth and cuts the giant's feet away from Ubelluri's shoulder.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "hittite-q12",
+    "story_id": "hittite-04",
+    "question": "Who defeats Teshub at Kiskilussa?",
+    "choices": ["Ullikummi", "Kumarbi", "Hupasiya", "Illuyanka"],
+    "correct_index": 3,
+    "explanation": "The serpent Illuyanka beats Teshub at Kiskilussa, and the gods mourn until Inara prepares her feast.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "hittite-q13",
+    "story_id": "hittite-04",
+    "question": "What condition does Hupasiya set for helping Inara?",
+    "choices": ["That he may sleep with her", "That he be made a god", "That he receive a kingdom", "That she marry him"],
+    "correct_index": 0,
+    "explanation": "Hupasiya agrees to help only if Inara sleeps with him, and she accepts before hiding him in her house.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "hittite-q14",
+    "story_id": "hittite-04",
+    "question": "What happens to Illuyanka at Inara's feast?",
+    "choices": ["He escapes to the sea", "He is tied with a rope and killed", "He is turned to stone", "He swallows Teshub"],
+    "correct_index": 1,
+    "explanation": "Illuyanka and his sons drink until they are drunk, Hupasiya ties the serpent with a rope, and Teshub kills him.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "hittite-q15",
+    "story_id": "hittite-05",
+    "question": "Who sends the bee to find Telipinu?",
+    "choices": ["Inara", "Kamrusepa", "Hannahanna", "Hebat"],
+    "correct_index": 2,
+    "explanation": "Hannahanna, the mother goddess, sends the bee after the eagle and the Storm God have both failed to find Telipinu.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "hittite-q16",
+    "story_id": "hittite-05",
+    "question": "What happens to the world while Telipinu is gone?",
+    "choices": ["Crops fail and animals refuse their young", "The sun stops moving", "The sea floods the land", "The gods fall asleep"],
+    "correct_index": 0,
+    "explanation": "Mist and smoke stifle the house, barley and wheat no longer ripen, and sheep and cows refuse their lambs and calves.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "hittite-q17",
+    "story_id": "hittite-05",
+    "question": "Who finally calms Telipinu's anger?",
+    "choices": ["Hannahanna", "Teshub", "The Sun God", "Kamrusepa"],
+    "correct_index": 3,
+    "explanation": "Kamrusepa, the goddess of magic, takes Telipinu's anger away and gives it to the Doorkeeper of the Underworld.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "hittite-q18",
+    "story_id": "hittite-06",
+    "question": "What does Appu ask the gods for?",
+    "choices": ["Wealth", "A son", "A long life", "A good harvest"],
+    "correct_index": 1,
+    "explanation": "Appu is rich but childless, so he sacrifices a lamb and asks the gods for a son.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "hittite-q19",
+    "story_id": "hittite-06",
+    "question": "What are Appu's two sons called?",
+    "choices": ["Teshub and Tasmisu", "Anu and Kumarbi", "Idalu and Handanza", "Hupasiya and Illuyanka"],
+    "correct_index": 2,
+    "explanation": "The first son is Idalu, meaning evil, and the second is Handanza, meaning good or righteous.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "hittite-q20",
+    "story_id": "hittite-06",
+    "question": "Where does the Sun God send the brothers after Idalu curses?",
+    "choices": ["To Ishtar at Nineveh", "To Ea at Nippur", "To the king at Hattusa", "To the sea god at Urkesh"],
+    "correct_index": 0,
+    "explanation": "The Sun God rules for Handanza at Sippar but refuses to finish the case, sending the brothers on to Ishtar at Nineveh.",
+    "difficulty": "hard",
+    "verified": false
+  }
+]

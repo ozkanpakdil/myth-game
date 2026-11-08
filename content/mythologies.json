@@ -47,7 +47,7 @@
     "start_year": -1700,
     "end_year": -1200,
     "summary": "The Hittite court preserved Hurrian songs and myths, including the storm god Teshub and the vanishing god Telipinu.",
-    "mvp": false,
+    "mvp": true,
     "sensitivity": "low",
     "verified": false
   },

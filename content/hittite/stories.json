@@ -1,0 +1,98 @@
+[
+  {
+    "id": "hittite-01",
+    "title": "Kumarbi and the Kingship in Heaven",
+    "source_ref": "Song of Kumarbi (CTH 344), Hittite copy of a Hurrian song",
+    "paragraphs": [
+      "The singer calls on the ancient gods to listen. In the beginning Alalu was king in heaven, and Anu, mightiest of the gods, served him as cup-bearer for nine years. In the ninth year Anu struck, defeated Alalu and drove him down to the Dark Earth. Anu took the throne, and Kumarbi, of the line of Alalu, bowed before him in his turn.",
+      "Nine years passed. Then Kumarbi rose against Anu. Anu could not hold him and fled upward like a bird, but Kumarbi caught him by the feet and dragged him down from the sky. He bit off Anu's loins, and Anu's seed entered his body. The tablet is damaged in places, and some lines of the struggle are lost.",
+      "Kumarbi laughed, but Anu spoke from the sky. Do not rejoice, he said: you carry a burden. You are pregnant with the Storm God, with the river Aranzah, the Tigris, and with Tasmisu. Three terrible gods are in your belly, and you will strike your head against a mountain. Kumarbi spat, and what he spat fell to the earth.",
+      "Then Anu returned to heaven, and Kumarbi went to Nippur to look for a way out. There the song becomes a puzzle of gaps and competing speeches. It is a Hurrian story preserved in Hittite translation, and its gods and cities are Hurrian, not Anatolian. Later Greeks told a similar tale of sky-kings overthrown in turn; scholars compare the two, but no one claims they are the same."
+    ],
+    "characters": ["anu", "kumarbi"],
+    "themes": ["kingship", "succession", "cunning"],
+    "notes": "The Song of Kumarbi survives in a badly broken Hittite copy. The opening succession is well preserved, but the middle and end are fragmentary: Kumarbi's journey to Nippur, the speeches that follow, and the birth of Teshub survive only in damaged columns, and some lines are assigned to speakers by reconstruction. The Hurrian original is lost, and the composition is sometimes called the Song of Emergence rather than the Song of Kumarbi.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "hittite-02",
+    "title": "The Birth of Teshub",
+    "source_ref": "Song of Kumarbi (CTH 344) and later songs of the Kumarbi Cycle",
+    "paragraphs": [
+      "Kumarbi's belly swelled with the children Anu had planted in him. The gods inside him argued about how to get out. Teshub, the storm god, said that the only safe road was through Kumarbi's skull. The fate goddesses cut open his head, and afterwards they mended it like a torn garment. The text is broken, and the order of these speeches is uncertain.",
+      "Teshub was born, and the river Aranzah found its own way out. Kumarbi looked at the child and did not love him. He demanded that the boy be handed over so that he could devour him, but the gods gave him a stone instead. Kumarbi bit down and broke his teeth, and the stone was afterwards set up as an object of worship.",
+      "The sources leave Teshub's parentage oddly tangled, and the tangle is not a mistake to be smoothed away. Anu is his father; a Hurrian hymn calls Kumarbi his mother, who bore him. Yet Kumarbi is also called father of the gods, and in later songs he is Teshub's enemy. He is, in a sense, both parent and rival.",
+      "Teshub grew and took the kingship that Kumarbi had lost. How exactly he took it is not preserved: the song breaks off, and the next great poem, the Song of Ullikummi, opens with Teshub already king and Kumarbi plotting to pull him down. The cycle gives us the end of one reign and the beginning of another, with the middle missing."
+    ],
+    "characters": ["kumarbi", "teshub", "anu"],
+    "themes": ["birth", "fate", "succession"],
+    "notes": "The birth columns are the worst preserved part of the Song of Kumarbi. Teshub's exit through Kumarbi's split skull, the stone given in place of the child, and the transfer of kingship are restored from broken lines and from later summaries; the order of the divine speeches is uncertain. The sources also complicate the family: Anu is called Teshub's father, a Hurrian hymn calls Kumarbi his mother, and later songs treat Kumarbi as father of the gods and Teshub's enemy.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "hittite-03",
+    "title": "Ullikummi, the Stone Giant",
+    "source_ref": "Song of Ullikummi (CTH 345), Hittite copy of a Hurrian song",
+    "paragraphs": [
+      "Kumarbi left Urkesh and came to a cold spring, where a great block of diorite lay. He lay with the stone as with a woman, and in time it bore him a son. The fate goddesses brought the child to him, and he named him Ullikummi, which means 'Destroy Kumme!' Kumme was Teshub's city, and the name announced the boy's purpose.",
+      "Kumarbi ordered the child hidden until he was strong. The Irshirra goddesses carried him down to the Dark Earth and set him on the right shoulder of Ubelluri, the giant who holds up heaven and earth. Ubelluri was deep in his own thoughts and felt nothing. The stone child grew every day, and at last his head rose above the sea and touched the sky.",
+      "The Sun God saw him first and warned Teshub. Teshub went with his brother Tasmisu and his sister Shaushka to Mount Hazzi, looked at the giant, and sat down and wept. Shaushka adorned herself and sang to Ullikummi from the shore, but a wave rose and told her it was useless: the giant was deaf and could not hear, blind and could not see.",
+      "Teshub attacked with seventy gods and failed. Ullikummi grew until he blocked the temple of Hebat, Teshub's wife. At Tasmisu's advice Teshub went to Ea, who asked Ubelluri about the pain in his shoulder and then fetched the ancient copper cutter that had once separated heaven from earth. Ea cut the giant's feet from Ubelluri's shoulder, and the stone lost its strength. The ending is lost."
+    ],
+    "characters": ["kumarbi", "teshub", "ullikummi"],
+    "themes": ["stone", "vengeance", "cosmic order"],
+    "notes": "The Song of Ullikummi is the best preserved song of the cycle, but its final battle is lost, and Teshub's victory is inferred from the direction of the narrative and from later summaries. The identity of Ullikummi's mother (a cliff, or a goddess associated with stone) and the exact wording of Ea's cutting are debated. The Hittite and Hurrian versions are not direct translations of one another.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "hittite-04",
+    "title": "Teshub and Illuyanka",
+    "source_ref": "Illuyanka myth (CTH 321), recited at the Purulli festival",
+    "paragraphs": [
+      "The story was told at the Purulli festival, when the country was meant to blossom and enjoy peace. Teshub and the serpent Illuyanka fought at Kiskilussa, and the serpent won. The gods mourned, and Inara, the goddess, prepared a feast. She filled great vessels with wine and with marnuwant and walhi drinks, and she set out for the city of Ziggaratta to find a mortal helper.",
+      "There she met Hupasiya. Inara explained her plan, and he agreed to help on one condition: that he might sleep with her. She consented, hid him in her house, and brought Illuyanka up from his hole with the promise of a festival. The serpent came with his sons, and they ate and drank until every vessel was empty and they were drunk.",
+      "Then Hupasiya came out and tied Illuyanka with a rope, and Teshub came and killed him. Inara built a house on a rock for Hupasiya and told him not to look out of the window, for he would see his wife and children. After twenty days he looked, and he begged to go home. The tablet breaks off there.",
+      "In a second version, Teshub married a poor man's daughter, and she bore him a son. When the son grew up he married the daughter of Illuyanka. Teshub told him to ask for his father's heart and eyes as a gift, and the son brought them back. Restored, Teshub fought the serpent in the sea. His son stood beside Illuyanka and called out to be taken back; Teshub killed them both."
+    ],
+    "characters": ["teshub", "illuyanka", "inara", "hupasiya"],
+    "themes": ["combat", "trickery", "sacrifice"],
+    "notes": "Two versions of the Illuyanka myth are preserved, and they disagree in detail. The first breaks off after Hupasiya looks out of the window, so his fate is unknown; some scholars infer that Inara punished him, but the text does not say. The second version is damaged at the start and reconstructed in places. The myth was recited at the Purulli festival, and its ritual setting shaped the written text.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "hittite-05",
+    "title": "Telipinu's Disappearance",
+    "source_ref": "Telipinu myth (CTH 324)",
+    "paragraphs": [
+      "Telipinu, son of the storm god, was a god of grain and growth. Something angered him, but the beginning of the tablet is broken, so the cause is lost. He stomped away, and in his rage he put his right shoe on his left foot and his left shoe on his right. He took grain, fertility, growth and abundance with him and hid in a meadow, in the marshes of the steppe.",
+      "The world stopped. Mist seized the windows and smoke seized the house; the logs on the hearth were stifled, and the gods at the altars were stifled. The sheep refused her lamb and the cow refused her calf. Barley and wheat no longer ripened, the mountains dried up, the springs failed, and humans and gods began to perish from hunger.",
+      "The gods searched for him. The Sun God sent a swift eagle over the high mountains and deep valleys, but it came back with nothing. The Storm God searched himself and failed. Then Hannahanna, the mother goddess, sent a bee. The bee flew until it found Telipinu asleep in the meadow, and it stung him awake and smeared wax on him.",
+      "Telipinu woke furious, and his anger made things worse. Kamrusepa, the goddess of magic, calmed him by taking his anger away and giving it to the Doorkeeper of the Underworld, where it could not return. Then Telipinu came home. Grain ripened, cattle and sheep conceived, the springs flowed, and the world was fertile again. The ritual that accompanied the story repeated this cure."
+    ],
+    "characters": ["telipinu", "hannahanna"],
+    "themes": ["fertility", "absence", "return"],
+    "notes": "The opening of the Telipinu myth is broken, so the cause of his anger is unknown, and the detail about the shoes comes from a damaged passage. The ending survives in several copies with ritual instructions, and the exact sequence of the appeasement differs between them; the bee's sting and the wax are secure, but the wording of Kamrusepa's cure is reconstructed.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "hittite-06",
+    "title": "Appu and the Two Sons",
+    "source_ref": "The Tale of Appu (CTH 360)",
+    "paragraphs": [
+      "Appu was a rich man, but he had no son, and his wealth gave him no joy. He sacrificed a lamb and asked the gods for a child. The Sun God heard him and appeared with advice: Appu should prepare a feast, drink, and go to his wife. The text hints that Appu did not know how children were made, and the god's help is both kindly and practical.",
+      "In time his wife bore a first son, and Appu named him Idalu, which means evil. Later she bore a second, and he named him Handanza, which means good or righteous. The boys grew up together. The story is set in Mesopotamia, and the names are not ordinary names but Hittite words for the qualities the brothers embody.",
+      "When they were grown, Idalu proposed that they divide their father's estate. He argued that just as each god has a city, each brother should have his own property. Then he cheated Handanza, taking the greater share and leaving him a single barren cow. The Sun God blessed the cow and restored its fertility, but the injustice stood.",
+      "The brothers went to law. Idalu brought Handanza before the Sun God at Sippar, and the god decided for Handanza. Idalu cursed, and the Sun God refused to finish the case, sending them on to Ishtar at Nineveh. There the tablet is broken, and the ending is lost. We do not know how the quarrel was settled, or what became of the brothers."
+    ],
+    "characters": ["appu"],
+    "themes": ["inheritance", "justice", "brotherhood"],
+    "notes": "The Tale of Appu survives in a single badly damaged tablet. The frame of the story, the births and the lawsuit are reconstructed from broken lines; the ending, including the verdict at Nineveh and the fate of the brothers, is lost. A Hurrian origin is often assumed but not proved, since the text contains no Hurrian names.",
+    "uncertain": true,
+    "verified": false
+  }
+]

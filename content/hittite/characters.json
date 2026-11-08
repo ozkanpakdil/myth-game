@@ -1,0 +1,92 @@
+[
+  {
+    "id": "anu",
+    "name": "Anu",
+    "role": "Sky god and second king in heaven in the Kumarbi succession",
+    "domain": ["sky", "kingship", "authority"],
+    "symbols": ["the horned crown", "the heavens", "the throne"],
+    "fun_fact": "Anu's name is the Sumerian word for heaven, and in the Hurrian song he is overthrown by the cup-bearer he had raised.",
+    "verified": false
+  },
+  {
+    "id": "kumarbi",
+    "name": "Kumarbi",
+    "role": "Hurrian father of the gods and deposed king in heaven",
+    "domain": ["kingship", "prosperity", "vengeance"],
+    "symbols": ["the cup", "the stone", "the city of Urkesh"],
+    "fun_fact": "Kumarbi is called father of the gods even though the Song of Kumarbi makes him pregnant with Teshub rather than his father.",
+    "verified": false
+  },
+  {
+    "id": "teshub",
+    "name": "Teshub",
+    "role": "Hurrian storm god and king of the gods",
+    "domain": ["storm", "rain", "kingship"],
+    "symbols": ["the bull", "the axe", "lightning"],
+    "fun_fact": "Teshub's sacred city was Kummiya, and his wife Hebat, brother Tasmisu and sister Shaushka appear with him throughout the Kumarbi songs.",
+    "verified": false
+  },
+  {
+    "id": "ullikummi",
+    "name": "Ullikummi",
+    "role": "Stone giant made by Kumarbi to destroy Teshub",
+    "domain": ["stone", "growth", "destruction"],
+    "symbols": ["the diorite block", "Ubelluri's shoulder", "the sea"],
+    "fun_fact": "His name means 'Destroy Kumme!', after Kummiya, the city of Teshub that he was made to overthrow.",
+    "verified": false
+  },
+  {
+    "id": "illuyanka",
+    "name": "Illuyanka",
+    "role": "Serpent who fights the storm god in the Purulli myth",
+    "domain": ["chaos", "the sea", "serpents"],
+    "symbols": ["the coil", "the hole in the ground", "the stolen eyes"],
+    "fun_fact": "The Illuyanka myth was recited at the Purulli festival, and two different versions of the fight survive.",
+    "verified": false
+  },
+  {
+    "id": "telipinu",
+    "name": "Telipinu",
+    "role": "Vegetation god whose disappearance stops the world",
+    "domain": ["grain", "fertility", "anger"],
+    "symbols": ["the oak tree", "grain", "the plough"],
+    "fun_fact": "Telipinu's name is probably Hattic, meaning something like 'exalted son', and several Hittite kings took it as a throne name.",
+    "verified": false
+  },
+  {
+    "id": "hannahanna",
+    "name": "Hannahanna",
+    "role": "Mother goddess who searches for the vanished god",
+    "domain": ["motherhood", "search", "counsel"],
+    "symbols": ["the bee", "the hearth", "the assembly of the gods"],
+    "fun_fact": "Hannahanna's name means 'grandmother', and it is her bee that finds Telipinu asleep in the meadow.",
+    "verified": false
+  },
+  {
+    "id": "inara",
+    "name": "Inara",
+    "role": "Goddess who traps the serpent Illuyanka",
+    "domain": ["feasts", "cunning", "desire"],
+    "symbols": ["the wine vat", "the rope", "the house on the rock"],
+    "fun_fact": "Inara bargains with the mortal Hupasiya for his help and later settles him in a house on a rock, warning him not to look out of the window.",
+    "verified": false
+  },
+  {
+    "id": "hupasiya",
+    "name": "Hupasiya",
+    "role": "Mortal helper of Inara in the Illuyanka myth",
+    "domain": ["courage", "desire", "service"],
+    "symbols": ["the rope", "the window", "the rock house"],
+    "fun_fact": "Hupasiya agrees to help Inara only if she sleeps with him, then ties up the drunken serpent for Teshub to kill.",
+    "verified": false
+  },
+  {
+    "id": "appu",
+    "name": "Appu",
+    "role": "Rich childless man in the Hittite tale of two sons",
+    "domain": ["wealth", "fatherhood", "justice"],
+    "symbols": ["the lamb", "the barren cow", "the court at Sippar"],
+    "fun_fact": "Appu's sons are named Idalu and Handanza, Hittite words for evil and good, and their quarrel ends in a lawsuit before the Sun God.",
+    "verified": false
+  }
+]

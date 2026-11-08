@@ -1,0 +1,69 @@
+{
+  "id": "hittite",
+  "name": "Hittite / Hurrian",
+  "intro": "The Hittites ruled central Anatolia from their capital at Hattusa, and their archives preserve myths in cuneiform that are among the oldest surviving narratives from the region. Many of the most famous are not originally Hittite at all. The Kumarbi Cycle, the Song of Ullikummi and the tale of Appu came from Hurrian-speaking Syria and southeastern Anatolia, translated or adapted by Hittite scribes; the Illuyanka and Telipinu myths belong to an older Anatolian layer, recited in festivals. The tablets are often broken, and the order of episodes sometimes has to be reconstructed. Names vary between Hurrian and Hittite forms: Teshub is the storm god whom the Hittites also called Tarhunna. These retellings follow the surviving text closely, mark the gaps, and avoid filling them with later Greek parallels.",
+  "timeline": [
+    {
+      "label": "Old Hittite kingdom",
+      "year_text": "c. 1650-1500 BCE",
+      "note": "Hattusa becomes the Hittite capital. Scribal schools begin recording Anatolian myths and rituals in cuneiform, alongside laws, treaties and royal annals."
+    },
+    {
+      "label": "Hurrian neighbours",
+      "year_text": "c. 1500-1400 BCE",
+      "note": "Hittite kings campaign in Syria and Kizzuwatna. Hurrian gods, festivals and singers enter the court, bringing the storm god Teshub and the god Kumarbi into the royal pantheon."
+    },
+    {
+      "label": "The Kumarbi songs",
+      "year_text": "14th-13th century BCE copies",
+      "note": "Hittite scribes copy Hurrian epic songs of kingship and monsters: the Song of Kumarbi, the Song of Hedammu and the Song of Ullikummi. The Hurrian originals are older, perhaps from the fifteenth century."
+    },
+    {
+      "label": "Empire and festival",
+      "year_text": "c. 1350-1200 BCE",
+      "note": "Under Suppiluliuma I and his successors the empire reaches its height. The Purulli festival is celebrated at Hattusa and Nerik, and the Illuyanka myth is recited as part of it."
+    },
+    {
+      "label": "Collapse of Hattusa",
+      "year_text": "c. 1180 BCE",
+      "note": "The Hittite capital is abandoned and burned. The fire bakes the clay tablets, preserving archives that would otherwise have crumbled."
+    },
+    {
+      "label": "Modern decipherment",
+      "year_text": "1906-present",
+      "note": "Excavations at Bogazkoy recover tens of thousands of tablets. Scholars publish them in the Keilschrifttexte aus Boghazkoi and Keilschrifturkunden aus Boghazkoi series, and Hoffner's Hittite Myths makes them widely available."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Hittite cuneiform tablets from Hattusa (CTH 321, 324, 344, 345, 360)",
+      "note": "The primary texts, edited in the Keilschrifttexte aus Boghazkoi and Keilschrifturkunden aus Boghazkoi series and catalogued by Laroche. Many are broken, and joins and readings are still revised."
+    },
+    {
+      "title": "Harry A. Hoffner Jr., Hittite Myths (2nd edition, 1998)",
+      "note": "The standard English translation of the Hittite myths, with gaps marked and short introductions to each text. It is the basis for most of these retellings."
+    },
+    {
+      "title": "Hans Gustav Güterbock, The Song of Ullikummi (1952)",
+      "note": "The foundational edition and study of the Song of Ullikummi, including the Hittite text, translation and commentary."
+    },
+    {
+      "title": "Emmanuel Laroche, Catalogue des textes hittites",
+      "note": "The catalogue that assigns CTH numbers to Hittite texts; the numbers used here follow it."
+    },
+    {
+      "title": "Trevor Bryce, The Kingdom of the Hittites",
+      "note": "A political and cultural history of the Hittite kingdom, useful for the setting and date of the archives."
+    },
+    {
+      "title": "Billie Jean Collins, The Hittites and Their World",
+      "note": "A readable modern introduction to Hittite society, religion and textual culture, with attention to Hurrian influence."
+    },
+    {
+      "title": "Mary R. Bachvarova, From Hittite to Homer",
+      "note": "A study of Anatolian and Hurrian myth as background to early Greek epic, including the Kumarbi Cycle and the Illuyanka tradition."
+    }
+  ],
+  "sensitivity": "low",
+  "verified": false
+}

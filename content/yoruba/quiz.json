@@ -1,0 +1,302 @@
+[
+  {
+    "id": "yoruba-q01",
+    "story_id": "yoruba-01",
+    "question": "Who is Olodumare in Yoruba tradition?",
+    "choices": [
+      "The supreme being and source of ase",
+      "The orisha of iron and the forge",
+      "The first king of Oyo",
+      "The trickster of the crossroads"
+    ],
+    "correct_index": 0,
+    "explanation": "Olodumare is the supreme being, the source of life and of ase, and is not counted among the orisha in the tradition.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "yoruba-q02",
+    "story_id": "yoruba-01",
+    "question": "In many tellings, what does Obatala bring down from the sky to make dry land?",
+    "choices": [
+      "A golden staff and a drum",
+      "A chain, a snail shell of sand and a hen",
+      "A canoe and a fishing net",
+      "A firebrand and a sword"
+    ],
+    "correct_index": 1,
+    "explanation": "Obatala descends on a chain, pours sand from a snail shell, and the hen scratches it until dry land spreads at Ile-Ife.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "yoruba-q03",
+    "story_id": "yoruba-01",
+    "question": "Which orisha is associated with Ifá divination and with witnessing the destinies chosen before birth?",
+    "choices": [
+      "Ogun",
+      "Sango",
+      "Eshu",
+      "Orunmila"
+    ],
+    "correct_index": 3,
+    "explanation": "Orunmila is the orisha of wisdom and divination, said to have been present at creation and to have witnessed the choosing of destinies.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "yoruba-q04",
+    "story_id": "yoruba-01",
+    "question": "What does the traditional figure of 401 orisha signify?",
+    "choices": [
+      "A precise census of every orisha",
+      "The number of chapters in the Ifá corpus",
+      "The number of shrines at Ile-Ife",
+      "Many, rather than an exact number"
+    ],
+    "correct_index": 3,
+    "explanation": "The figure 401 is conventionally used to mean many or countless, not a literal count, and different communities reckon the orisha differently.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "yoruba-q05",
+    "story_id": "yoruba-02",
+    "question": "Which colour is especially associated with Obatala?",
+    "choices": [
+      "Red",
+      "Indigo",
+      "White",
+      "Green"
+    ],
+    "correct_index": 2,
+    "explanation": "White cloth and white beads are Obatala's signs, and white is the colour of his shrines and his priests.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "yoruba-q06",
+    "story_id": "yoruba-02",
+    "question": "What does Obatala shape from clay in the creation story?",
+    "choices": [
+      "Human bodies",
+      "The first drum",
+      "The Osun River",
+      "The palace at Oyo"
+    ],
+    "correct_index": 0,
+    "explanation": "Olodumare asks Obatala to mould human bodies from clay, and the tradition remembers the place as Oke Itase.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "yoruba-q07",
+    "story_id": "yoruba-02",
+    "question": "Why do Obatala's priests traditionally avoid palm wine?",
+    "choices": [
+      "Because palm wine belongs to Ogun",
+      "Because of the episode in which he drank and made mistakes",
+      "Because it is offered only to Sango",
+      "Because Obatala forbade all drinking after creating the sea"
+    ],
+    "correct_index": 1,
+    "explanation": "In several tellings Obatala drinks palm wine while shaping bodies, and his priests abstain in memory of that episode; many worshippers read it as a call to care rather than blame.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "yoruba-q08",
+    "story_id": "yoruba-03",
+    "question": "What does Eshu wear when he walks between the two friends?",
+    "choices": [
+      "A robe of many colours",
+      "A mask with two faces",
+      "A hat that is red on one side and white on the other",
+      "A string of coral beads"
+    ],
+    "correct_index": 2,
+    "explanation": "Eshu's two-coloured hat is the device that divides the friends, because each man sees only the side facing him.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "yoruba-q09",
+    "story_id": "yoruba-03",
+    "question": "What is Eshu's role among the orisha?",
+    "choices": [
+      "He guards the river at Osogbo",
+      "He forges iron for the other orisha",
+      "He judges the dead at the crossroads of heaven",
+      "He carries offerings and messages between humans and the orisha"
+    ],
+    "correct_index": 3,
+    "explanation": "Eshu is the messenger who stands at crossroads and doorways and carries offerings between people and the other orisha.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "yoruba-q10",
+    "story_id": "yoruba-03",
+    "question": "Why do many scholars and devotees reject calling Eshu the devil?",
+    "choices": [
+      "Because Eshu is not an orisha at all",
+      "Because the identification came largely from missionary translation and Eshu is not an evil being",
+      "Because the devil appears only in Ifá poetry",
+      "Because Eshu has no shrine or offerings"
+    ],
+    "correct_index": 1,
+    "explanation": "The equation with Satan came largely from missionary translation, while Yoruba tradition treats Eshu as a necessary power at the threshold.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "yoruba-q11",
+    "story_id": "yoruba-04",
+    "question": "Ogun is the orisha of which set of things?",
+    "choices": [
+      "Iron, tools, roads and war",
+      "Thunder, lightning and kingship",
+      "Sweet water, fertility and wealth",
+      "Wind, storm and transformation"
+    ],
+    "correct_index": 0,
+    "explanation": "Ogun's domain is iron and the work done with it, including tools, roads, hunting and war.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "yoruba-q12",
+    "story_id": "yoruba-04",
+    "question": "How does Ogun help the other orisha in the story?",
+    "choices": [
+      "He builds a bridge of iron across the sea",
+      "He drums while they descend the chain",
+      "He hides them from Olodumare",
+      "He clears a path through the forest with his cutlass"
+    ],
+    "correct_index": 3,
+    "explanation": "Ogun comes to earth with his cutlass and clears the way through the forest so that the other orisha can follow.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "yoruba-q13",
+    "story_id": "yoruba-04",
+    "question": "What does the Ogun story suggest about his power?",
+    "choices": [
+      "It must be bound to justice and limits or it destroys the community",
+      "It is harmless once the forge is built",
+      "It belongs only to kings and warriors",
+      "It ended when iron came to humans"
+    ],
+    "correct_index": 0,
+    "explanation": "The same force that clears a field can kill, so Ogun's worshippers insist that his power be held by oath, taboo and counsel.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "yoruba-q14",
+    "story_id": "yoruba-05",
+    "question": "Oshun is the orisha of which river?",
+    "choices": [
+      "The Niger River",
+      "The Osun River",
+      "The Ogun River",
+      "The Benue River"
+    ],
+    "correct_index": 1,
+    "explanation": "Oshun's river is the Osun, which flows through Osogbo, where her grove and shrine are tended.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "yoruba-q15",
+    "story_id": "yoruba-05",
+    "question": "Which gifts are especially associated with Oshun?",
+    "choices": [
+      "Iron, palm wine and dogs",
+      "White cloth and snail shells",
+      "Brass, honey and yellow cloth",
+      "Red and white beads and the axe"
+    ],
+    "correct_index": 2,
+    "explanation": "Brass, honey, yellow cloth and the parrot are among Oshun's signs, and her devotees describe her as generous and quick to take offence.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "yoruba-q16",
+    "story_id": "yoruba-05",
+    "question": "In one widely told account, why does Oshun withhold the sweet water?",
+    "choices": [
+      "Because the river had dried up",
+      "Because Olodumare ordered her to",
+      "Because she was overlooked and not acknowledged",
+      "Because Yemoja took her place"
+    ],
+    "correct_index": 2,
+    "explanation": "Oshun is left out when the orisha are sent to bring life to the earth, and she withholds her water until she is acknowledged.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "yoruba-q17",
+    "story_id": "yoruba-05",
+    "question": "How are Oshun and Yemoja related in Yoruba tradition?",
+    "choices": [
+      "They are two names for the same river orisha",
+      "They are distinct water orisha, and their relationship is told as sisterhood, rivalry or kinship in different communities",
+      "Yemoja is Oshun's daughter in every telling",
+      "Oshun is the ocean and Yemoja the river"
+    ],
+    "correct_index": 1,
+    "explanation": "The two are distinct orisha of water, and the tradition tells their relationship in several ways rather than fixing it once.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "yoruba-q18",
+    "story_id": "yoruba-06",
+    "question": "Sango is the orisha of what?",
+    "choices": [
+      "Thunder and lightning",
+      "Iron and the forge",
+      "Sweet water and fertility",
+      "Crossroads and messages"
+    ],
+    "correct_index": 0,
+    "explanation": "Sango is the orisha of thunder and lightning, and he is also remembered as a king of Oyo.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "yoruba-q19",
+    "story_id": "yoruba-06",
+    "question": "Which orisha is closely linked with Sango as wife or companion?",
+    "choices": [
+      "Oshun",
+      "Yemoja",
+      "Oya",
+      "Obatala"
+    ],
+    "correct_index": 2,
+    "explanation": "Oya, the orisha of wind and storm, is linked with Sango as wife or companion in the traditions of Oyo.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "yoruba-q20",
+    "story_id": "yoruba-06",
+    "question": "How do the traditions describe the end of Sango's reign?",
+    "choices": [
+      "He sailed away across the ocean and never returned",
+      "He was turned into a drum by Olodumare",
+      "He gave the throne to Oya and became a hunter",
+      "Differently: defeat, entering the earth at Koso, or death, after which he was honoured as thunder"
+    ],
+    "correct_index": 3,
+    "explanation": "The traditions give several endings, and the story deliberately does not dwell on the manner of his death; his people honoured him as thunder.",
+    "difficulty": "hard",
+    "verified": false
+  }
+]

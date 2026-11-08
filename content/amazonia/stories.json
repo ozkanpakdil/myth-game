@@ -1,0 +1,139 @@
+[
+  {
+    "id": "amazonia-01",
+    "title": "Omama and the First People",
+    "source_ref": "Yanomami accounts, including the testimony of Davi Kopenawa (The Falling Sky, 2013) and earlier ethnography from the Brazil-Venezuela borderlands",
+    "paragraphs": [
+      "The Yanomami live in the forested highlands of the Brazil-Venezuela border, in communities scattered across a territory larger than many countries. Their stories begin before the world was fit to live in. Omama is the one who made it: the creator, the maker of the first people, and the being whose words the shamans still repeat when they sing.",
+      "In the accounts Davi Kopenawa tells, Omama shaped the first people and set them in a forest he had already prepared. He gave them the rivers, the game and the plants, and he taught them the rules of living together. The first people were not finished beings; they had to learn how to be human, and some of them failed.",
+      "Omama did not work alone. His brother Yoasi is a trickster, and where Omama made something well, Yoasi is said to have made a flawed double. Dangerous animals, sickness and the awkward parts of the world are often traced to him. Tellers disagree about which deed belongs to which brother, and about how much of that quarrel should be told to outsiders.",
+      "The long account is sung and spoken over several nights, and parts of it belong to elders and shamans rather than to visitors. What can be said is that the Yanomami are a living people with a living tradition, that their forest is a country with owners and laws, and that the old colonial portrait of them as merely 'fierce' was an invention used to justify taking their land."
+    ],
+    "characters": [
+      "omama"
+    ],
+    "themes": [
+      "creation",
+      "the forest",
+      "learning to be human"
+    ],
+    "notes": "Yanomami creation accounts are told at length and vary between communities; Kopenawa's published testimony is one telling, shaped by translation and by its political purpose. Details of shamanic cosmology and the names of primordial beings are restricted and are not given here. Earlier anthropology often framed the Yanomami as 'fierce', a colonial stereotype that this retelling rejects.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "amazonia-02",
+    "title": "Yurupary and the Sacred Flutes",
+    "source_ref": "Tukanoan tradition of the Uaupés and Negro rivers; Ermanno Stradelli, La leggenda dell'Jurupary (1890); Stephen Hugh-Jones, The Palm and the Pleiades (1979)",
+    "paragraphs": [
+      "Along the Uaupés and Negro rivers, where Brazil meets Colombia, Tukanoan peoples such as the Desana, Barasana and Tukano remember a beginning in which the ancestral anaconda, Boa, travelled up the rivers with the first peoples. From that journey came the clans and their lands. From the same beginning came Yurupary, the lawgiver whose voice sounds in the sacred flutes.",
+      "One telling begins with Ceucy, a young woman of the Pleiades, who became pregnant after drinking the juice of a fruit. Her child was born without a mouth and was fed on tobacco smoke. When he was given a mouth, a terrible sound came out of him, and he grew at a speed no ordinary child could match. He was Yurupary.",
+      "He made the first men's rites and forbade women to see him. When he died, a paxiuba palm grew from his ashes; its wood was cut into paired flutes that carry his voice, and his spirit rose to become a star. The flutes are still kept from women and uninitiated boys, hidden and brought out only for the rites, and their sound is understood as a person speaking.",
+      "What happens inside the men's house, the fasts, the seclusion and the names given to initiates, is not described here. That knowledge is restricted, and Tukanoan communities disagree about how much should be written down at all. Missionaries once denounced Yurupary as a devil, a mistranslation that did real harm; the flutes are better understood as the voice of an ancestor and a law."
+    ],
+    "characters": [
+      "yurupary",
+      "boa"
+    ],
+    "themes": [
+      "law",
+      "initiation",
+      "restricted knowledge"
+    ],
+    "notes": "Versions differ on Ceucy's pregnancy, on whether Yurupary is killed by the men or ascends, and on how the flutes were first made. The initiation rites, the names of the instruments and the songs are restricted knowledge; no ritual detail is disclosed here. Stradelli's 1890 text is a mediated source, and Tukanoan communities disagree about publication.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "amazonia-03",
+    "title": "The Jaguar-Woman",
+    "source_ref": "Shipibo-Konibo oral tradition of the Peruvian Ucayali; jaguar and water-serpent material in Peter G. Roe, The Cosmic Zygote (1982)",
+    "paragraphs": [
+      "Among the Shipibo-Konibo of the Peruvian Ucayali, a jaguar is not simply an animal. Jaguars are persons, with villages and knowledge of their own, and the line between jaguar and human is thinner than it looks. The story of the jaguar-woman is told to show what happens when someone crosses that line and cannot come back.",
+      "In one telling, a young woman marries and goes to live with her husband's family. She is quiet by day and restless at night. Meat disappears from the house, and the game her husband brings home is found torn open in the forest. He follows her and watches her step out of her human skin and become a jaguar.",
+      "He tells her family. They keep watch, and when she returns before dawn they burn the skin, or they hold her while a shaman sings, depending on who is telling it. In some versions she is cured and lives, and the household keeps its silence. In others she kills her husband and goes into the forest for good.",
+      "Other peoples of the region tell versions in which a jaguar takes human form and marries a woman, and the Shipibo themselves do not tell the story in only one way. What stays constant is the cost: a marriage, a household and children are pulled apart by a boundary that should have been respected."
+    ],
+    "characters": [
+      "jaguar_woman",
+      "jaguar"
+    ],
+    "themes": [
+      "transformation",
+      "marriage",
+      "the boundary between human and animal"
+    ],
+    "notes": "Recorded versions vary: some have the woman transformed, others a jaguar who takes human form; the endings differ, and so does the reason for the transformation. This retelling follows the outline of a tale type told among Shipibo-Konibo and neighbouring Pano-speaking peoples rather than one fixed text. Jaguar knowledge also has ritual dimensions that are not public.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "amazonia-04",
+    "title": "Yaya and the First World",
+    "source_ref": "Taíno tradition of Ayiti (Hispaniola), recorded by Ramón Pané, Relación acerca de las antigüedades de los indios (c. 1498), chapters IX-X",
+    "paragraphs": [
+      "The Taíno peoples of the Greater Antilles, and above all of Ayiti, the island the Spanish renamed Hispaniola, told of a being called Yaya. He belongs to the oldest layer of their stories. Almost everything known about him comes from a short account written in 1498 by Ramón Pané, a friar working under Columbus's orders.",
+      "Yaya had a son, Yayael. The boy tried to kill his father, and Yaya banished him for four months. Then Yaya killed him and hung his bones in a calabash from the roof of his house. He did not bury them or burn them. He kept them, and in this story keeping the dead too close is where the trouble begins.",
+      "Yaya's wife wanted to see her son. She took down the gourd and opened it, and the bones had turned into fish. The family ate them. Later, while Yaya was away in his fields, four brothers came to the house. Deminán took down the gourd, and they ate their fill; in their hurry to hang it back, they let it fall.",
+      "The gourd broke, and water poured out until it covered the land. That is how the sea began. Pané also names Yúcahu, the immortal being who has a mother, Atabey, but no beginning, and later writers have sometimes merged Yaya with him; the early text keeps them apart. The account is mediated twice over, by a friar and by a colonial war."
+    ],
+    "characters": [
+      "yaya",
+      "atabey",
+      "yucahu"
+    ],
+    "themes": [
+      "origin of the sea",
+      "the dead",
+      "colonial transmission"
+    ],
+    "notes": "Pané's account is the only early written version and is shaped by his mission and his haste; he admits he could not write it in order. The Taíno text behind it is lost, and details such as the length of Yayael's banishment or the identity of Yaya may be mistranscribed. Yaya and Yúcahu are not certainly the same being.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "amazonia-05",
+    "title": "Deminán and the Origin of the Sea",
+    "source_ref": "Taíno tradition of Ayiti, recorded by Ramón Pané, Relación (c. 1498), chapters X-XI; wider Guahayona cycle",
+    "paragraphs": [
+      "Deminán Caracaracol is one of four brothers in Taíno tradition. Their mother was Itiba Tahuvava, who died in childbirth; the brothers were cut from her body, and Deminán was the first. His second name means 'scabby', for the rough skin the four of them shared. The island was Ayiti, and the tellers were Taíno.",
+      "The brothers came to Yaya's house while he was away and took down the gourd that held his son's bones. Deminán was the only one bold enough to reach for it. They ate the fish inside, and when they tried to hang the gourd back it fell and broke, and the water that poured out made the sea.",
+      "Fleeing, they came to the house of Bayamanaco and asked for cassava. Instead of bread he threw a gourd of cohoba powder at Deminán's shoulder, and the shoulder swelled until he was near death. His brothers cut the swelling open with a stone axe, and a live turtle came out of it. They built a house and fed the turtle.",
+      "The canoe belongs to a neighbouring episode. Guahayona, the trickster who lured the women away, paddled off with them and threw his brother-in-law into the sea; some tellings tie his voyage to the brothers' flight, and modern retellings often put Deminán himself in the canoe. Taíno communities survive today, and their writers argue over how these fragments should be fitted together."
+    ],
+    "characters": [
+      "deminan",
+      "yaya"
+    ],
+    "themes": [
+      "origin of the sea",
+      "brotherhood",
+      "survival of a tradition"
+    ],
+    "notes": "The four brothers, their mother's name and the order of episodes vary between Pané's chapters and later retellings, and the canoe belongs to the neighbouring Guahayona episode rather than to Deminán's own. Modern retellings often merge the two. Taíno communities survive and disagree about reconstruction; this version is not authorised by any of them.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "amazonia-06",
+    "title": "Guabancex and the Hurricane",
+    "source_ref": "Taíno tradition of Ayiti, recorded by Ramón Pané, Relación (c. 1498), chapter XXIII",
+    "paragraphs": [
+      "Guabancex is the storm power of the Taíno of Ayiti. Pané, writing in 1498, calls her a cemí, a woman made of stone, kept in the land of a chief named Aumatex. She is not a decorative figure or a personification of weather. She is a force that can unmake a village in an afternoon, and she was treated with the seriousness such a force deserves.",
+      "She does not work alone. Guataubá, her herald, carries her orders and stirs the other cemíes to raise wind and rain. Coatrisquie gathers the water in the valleys between the mountains and then lets it loose to destroy the countryside. The three together are the hurricane: wind, message and flood, moving as one.",
+      "When Guabancex is angry, she raises the wind and the water, throws down houses and tears up trees. The Taíno word for such a storm, juracán, is the word English still uses. People brought offerings to the cemíes and kept fasts and feast days, because a storm was not a metaphor to them but a power that decided whether the harvest stood.",
+      "Pané gives her only a few sentences, and later writers have added detail, sometimes calling her a goddess rather than a cemí. Taíno descendants and revival communities in Puerto Rico, Cuba and the Dominican Republic now argue about how she should be spoken of. What the earliest account keeps is her will: the storm chooses, and people answer."
+    ],
+    "characters": [
+      "guabancex"
+    ],
+    "themes": [
+      "storm",
+      "destruction",
+      "living power"
+    ],
+    "notes": "Pané gives only a few sentences, and later writers have added detail and called her a goddess rather than a cemí. Her companions' roles, the offerings made to her and her relationship to the word juracán are debated. The hurricane is treated here as a living power, in keeping with Taíno practice, not as spectacle.",
+    "uncertain": true,
+    "verified": false
+  }
+]

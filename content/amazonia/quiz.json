@@ -1,0 +1,302 @@
+[
+  {
+    "id": "amazonia-q01",
+    "story_id": "amazonia-01",
+    "question": "In the Yanomami account, who is the creator who made the first people?",
+    "choices": [
+      "Omama",
+      "Yoasi",
+      "Boa",
+      "Yurupary"
+    ],
+    "correct_index": 0,
+    "explanation": "Omama is the Yanomami creator, the maker of the world and of the first people, and the being whose words the shamans repeat.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "amazonia-q02",
+    "story_id": "amazonia-01",
+    "question": "Who is Omama's trickster brother in the Yanomami story?",
+    "choices": [
+      "Boa",
+      "Yurupary",
+      "Yoasi",
+      "Guataubá"
+    ],
+    "correct_index": 2,
+    "explanation": "Yoasi is Omama's brother and a trickster; where Omama made something well, Yoasi is said to have made a flawed double.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "amazonia-q03",
+    "story_id": "amazonia-01",
+    "question": "According to the retelling, why are dangerous animals and sickness often traced to Yoasi?",
+    "choices": [
+      "He stole fire from the first people",
+      "He made flawed doubles of Omama's creations",
+      "He broke Yaya's gourd",
+      "He taught people to hunt"
+    ],
+    "correct_index": 1,
+    "explanation": "Yoasi is said to have made flawed doubles of Omama's work, and dangerous animals and sickness are often traced to him, though tellers disagree.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "amazonia-q04",
+    "story_id": "amazonia-02",
+    "question": "In the Tukanoan telling, who is Yurupary's mother, a woman of the Pleiades?",
+    "choices": [
+      "Ceucy",
+      "Atabey",
+      "Itiba Tahuvava",
+      "Guabancex"
+    ],
+    "correct_index": 0,
+    "explanation": "Ceucy, a young woman of the Pleiades, becomes pregnant after drinking the juice of a fruit, and her child is Yurupary.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "amazonia-q05",
+    "story_id": "amazonia-02",
+    "question": "What is unusual about Yurupary when he is born?",
+    "choices": [
+      "He is born as a jaguar",
+      "He is born old and blind",
+      "He is born without a mouth",
+      "He is born made of stone"
+    ],
+    "correct_index": 2,
+    "explanation": "He is born without a mouth and is fed on tobacco smoke until he is given a mouth, when a terrible sound comes out of him.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "amazonia-q06",
+    "story_id": "amazonia-02",
+    "question": "According to the account, what grew from Yurupary's ashes?",
+    "choices": [
+      "A ceiba tree",
+      "A field of cassava",
+      "A river",
+      "A paxiuba palm"
+    ],
+    "correct_index": 3,
+    "explanation": "A paxiuba palm grows from his ashes, and its wood is cut into the paired flutes that carry his voice.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "amazonia-q07",
+    "story_id": "amazonia-03",
+    "question": "Among which people of the Peruvian Ucayali is the jaguar-woman tale told?",
+    "choices": [
+      "The Yanomami",
+      "The Shipibo-Konibo",
+      "The Tukano",
+      "The Taíno"
+    ],
+    "correct_index": 1,
+    "explanation": "The story is told among the Shipibo-Konibo of the Peruvian Ucayali, for whom jaguars are persons with their own knowledge.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "amazonia-q08",
+    "story_id": "amazonia-03",
+    "question": "How does the husband discover that his wife becomes a jaguar?",
+    "choices": [
+      "A shaman tells him in a dream",
+      "She confesses to her mother",
+      "He follows her and sees her step out of her skin",
+      "He finds jaguar tracks in the house"
+    ],
+    "correct_index": 2,
+    "explanation": "He follows her into the forest and watches her step out of her human skin and become a jaguar.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "amazonia-q09",
+    "story_id": "amazonia-03",
+    "question": "What do her relatives do with the jaguar skin in some versions?",
+    "choices": [
+      "They burn it",
+      "They bury it at a crossroads",
+      "They give it to the shaman",
+      "They hang it in the men's house"
+    ],
+    "correct_index": 0,
+    "explanation": "In some versions the family burns the skin; in others they hold her while a shaman sings, and the ending differs.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "amazonia-q10",
+    "story_id": "amazonia-03",
+    "question": "Which statement best describes the endings of the jaguar-woman story as told here?",
+    "choices": [
+      "She is always cured and returns to her family",
+      "She always kills her children",
+      "She becomes a shaman and is honoured",
+      "She may be cured, or she may kill her husband and leave"
+    ],
+    "correct_index": 3,
+    "explanation": "The versions disagree: in some she is cured and the household keeps its silence, and in others she kills her husband and goes into the forest.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "amazonia-q11",
+    "story_id": "amazonia-04",
+    "question": "Who wrote down the Taíno account of Yaya in 1498?",
+    "choices": [
+      "Bartolomé de las Casas",
+      "Ramón Pané",
+      "Christopher Columbus",
+      "Guahayona"
+    ],
+    "correct_index": 1,
+    "explanation": "Ramón Pané, a friar working under Columbus's orders, wrote the short account in 1498 on the island of Ayiti.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "amazonia-q12",
+    "story_id": "amazonia-04",
+    "question": "What does Yaya do with his son's bones?",
+    "choices": [
+      "He buries them in the fields",
+      "He burns them and scatters the ash",
+      "He hangs them in a calabash from the roof",
+      "He gives them to the four brothers"
+    ],
+    "correct_index": 2,
+    "explanation": "Yaya kills Yayael and hangs his bones in a calabash from the roof of his house instead of burying or burning them.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "amazonia-q13",
+    "story_id": "amazonia-04",
+    "question": "In Pané's account, what is the result of the calabash breaking?",
+    "choices": [
+      "The first people learn to fish",
+      "The bones turn back into a boy",
+      "Yaya is turned into a stone",
+      "Water pours out and covers the land, making the sea"
+    ],
+    "correct_index": 3,
+    "explanation": "The gourd falls, breaks, and the water inside pours out until it covers the land; the text says this is how the sea began.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "amazonia-q14",
+    "story_id": "amazonia-05",
+    "question": "Who is the mother of Deminán and his three brothers?",
+    "choices": [
+      "Itiba Tahuvava",
+      "Atabey",
+      "Ceucy",
+      "Guabonito"
+    ],
+    "correct_index": 0,
+    "explanation": "Their mother is Itiba Tahuvava, who dies in childbirth; the four brothers are cut from her body, and Deminán is the first.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "amazonia-q15",
+    "story_id": "amazonia-05",
+    "question": "What does Bayamanaco throw at Deminán's shoulder?",
+    "choices": [
+      "A stone axe",
+      "A gourd of cohoba powder",
+      "A fish bone",
+      "A cassava root"
+    ],
+    "correct_index": 1,
+    "explanation": "Instead of the cassava they ask for, Bayamanaco throws a gourd of cohoba powder at Deminán's shoulder, which swells dangerously.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "amazonia-q16",
+    "story_id": "amazonia-05",
+    "question": "According to the retelling, where does the canoe belong in the Taíno cycle?",
+    "choices": [
+      "In Deminán's own journey to Yaya's house",
+      "In the story of Guabancex's anger",
+      "In the story of Yaya's banishment",
+      "In the neighbouring story of Guahayona"
+    ],
+    "correct_index": 3,
+    "explanation": "The canoe belongs to the neighbouring Guahayona episode; modern retellings often put Deminán in the canoe, which the note flags as a merge.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "amazonia-q17",
+    "story_id": "amazonia-06",
+    "question": "Who is Guabancex, the Taíno power of the storm?",
+    "choices": [
+      "The Taíno storm power, a woman cemí",
+      "A Taíno chief of Ayiti",
+      "The mother of Yúcahu",
+      "A jaguar spirit of the Ucayali"
+    ],
+    "correct_index": 0,
+    "explanation": "Guabancex is the Taíno storm power, a woman cemí of stone who raises wind and water when she is angry.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "amazonia-q18",
+    "story_id": "amazonia-06",
+    "question": "Which English word comes from the Taíno name for the storm?",
+    "choices": [
+      "Tornado",
+      "Monsoon",
+      "Hurricane",
+      "Cyclone"
+    ],
+    "correct_index": 2,
+    "explanation": "The Taíno word juracán, for the storm Guabancex brings, is the word that English still uses as hurricane.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "amazonia-q19",
+    "story_id": "amazonia-06",
+    "question": "Who gathers the waters in the valleys and lets them loose?",
+    "choices": [
+      "Guataubá",
+      "Coatrisquie",
+      "Aumatex",
+      "Yayael"
+    ],
+    "correct_index": 1,
+    "explanation": "Coatrisquie, one of her two companions, collects the water in the valleys between the mountains and lets it loose to destroy the countryside.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "amazonia-q20",
+    "story_id": "amazonia-06",
+    "question": "What does Pané call Guabancex, and why does that matter here?",
+    "choices": [
+      "A goddess of the sea, which makes her a rival of Yúcahu",
+      "A human cacica who ruled the storm coast",
+      "A spirit of the dead in Coaybay",
+      "A cemí, a powerful stone being, not merely a weather goddess"
+    ],
+    "correct_index": 3,
+    "explanation": "Pané calls her a cemí, a woman made of stone; later writers call her a goddess, and this retelling keeps the earlier, more powerful sense of a living force.",
+    "difficulty": "hard",
+    "verified": false
+  }
+]

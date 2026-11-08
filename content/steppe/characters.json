@@ -1,0 +1,171 @@
+[
+  {
+    "id": "tengri",
+    "name": "Tengri",
+    "role": "Sky god and the highest power of the eternal blue sky",
+    "domain": [
+      "sky",
+      "creation",
+      "authority"
+    ],
+    "symbols": [
+      "the blue sky",
+      "the khagan's banner"
+    ],
+    "fun_fact": "The Secret History calls him Mongke Tngri, Eternal Heaven, and Turkic khans styled themselves 'Tengri-born'.",
+    "verified": false
+  },
+  {
+    "id": "umay",
+    "name": "Umay",
+    "role": "Goddess of children, the womb and the hearth",
+    "domain": [
+      "fertility",
+      "childbirth",
+      "protection"
+    ],
+    "symbols": [
+      "the cradle",
+      "milk",
+      "golden light"
+    ],
+    "fun_fact": "An eighth-century Turkic inscription praises a queen as 'like the goddess Umay', which makes her one of the earliest attested steppe deities.",
+    "verified": false
+  },
+  {
+    "id": "geser",
+    "name": "Geser",
+    "role": "Heavenly hero who clears the world of demons",
+    "domain": [
+      "heroism",
+      "demon-slaying",
+      "kingship"
+    ],
+    "symbols": [
+      "the bow",
+      "the throne of Ling",
+      "the heavenly horse"
+    ],
+    "fun_fact": "The first printed Geser was a Mongolian woodblock made in Beijing in 1716, while Buryat singers know him as Abai Geser Khubun.",
+    "verified": false
+  },
+  {
+    "id": "manas",
+    "name": "Manas",
+    "role": "Kyrgyz hero who unites the tribes",
+    "domain": [
+      "war",
+      "unity",
+      "kingship"
+    ],
+    "symbols": [
+      "the forty companions",
+      "the war banner",
+      "the horse Ak-Kula"
+    ],
+    "fun_fact": "One manaschi, Doolot Sydykov, recited the epic for 111 hours over five days in 2021.",
+    "verified": false
+  },
+  {
+    "id": "erlik",
+    "name": "Erlik",
+    "role": "Ruler of the dead and the underworld",
+    "domain": [
+      "death",
+      "underworld",
+      "judgement"
+    ],
+    "symbols": [
+      "the iron wall",
+      "the copper palace",
+      "the stone opening"
+    ],
+    "fun_fact": "Mongol speakers call him Erleg, and the Orkhon inscriptions already mention a lord of the underworld.",
+    "verified": false
+  },
+  {
+    "id": "shaman",
+    "name": "Shaman",
+    "role": "Ritual specialist who journeys between the worlds",
+    "domain": [
+      "healing",
+      "spirit journey",
+      "memory"
+    ],
+    "symbols": [
+      "the drum",
+      "the mirror",
+      "the staff"
+    ],
+    "fun_fact": "Mongol male shamans are called böö and female shamans udgan, and Buryat practice often lives alongside Buddhism.",
+    "verified": false
+  },
+  {
+    "id": "swan_maiden",
+    "name": "Swan Maiden",
+    "role": "Heavenly woman who becomes an ancestress",
+    "domain": [
+      "sky",
+      "marriage",
+      "ancestry"
+    ],
+    "symbols": [
+      "the feathered robe",
+      "the swan",
+      "the smoke-hole"
+    ],
+    "fun_fact": "The Khori Buryats honour swans as kin, will not kill them, and sprinkle milk after passing flocks.",
+    "verified": false
+  },
+  {
+    "id": "bayan_khongor",
+    "name": "Bayan Khongor",
+    "role": "Hunter who marries the swan maiden",
+    "domain": [
+      "hunting",
+      "marriage",
+      "loss"
+    ],
+    "symbols": [
+      "the hidden robe",
+      "Lake Baikal",
+      "the yurt"
+    ],
+    "fun_fact": "Recorded Buryat tellings usually call the hunter Khoridoy Mergen, and Bayan Khongor is also the name of a mountain in Buryatia.",
+    "verified": false
+  },
+  {
+    "id": "kanikey",
+    "name": "Kanikey",
+    "role": "Wife of Manas and the epic's wisest adviser",
+    "domain": [
+      "wisdom",
+      "household",
+      "protection"
+    ],
+    "symbols": [
+      "the false inscription",
+      "the tomb at Talas",
+      "the hearth"
+    ],
+    "fun_fact": "Legend says she had a misleading inscription carved on Manas's tomb at Talas so that his enemies would not find him.",
+    "verified": false
+  },
+  {
+    "id": "almambet",
+    "name": "Almambet",
+    "role": "Prince from China who becomes Manas's sworn brother",
+    "domain": [
+      "loyalty",
+      "war",
+      "friendship"
+    ],
+    "symbols": [
+      "the bow",
+      "the warhorse",
+      "the oath"
+    ],
+    "fun_fact": "Almambet is remembered as an outsider who chose Manas, and his loyalty is one of the epic's most quoted examples of friendship.",
+    "verified": false
+  }
+]

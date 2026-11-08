@@ -1,0 +1,92 @@
+[
+  {
+    "id": "maya",
+    "name": "Maya",
+    "role": "Mother of Siddhartha and queen of the Shakyas, whose dream of a white elephant announced the birth of the Buddha.",
+    "domain": ["motherhood", "dream and prophecy", "the Shakya court"],
+    "symbols": ["white elephant", "flowering branch at Lumbini"],
+    "fun_fact": "Buddhist tradition says she died seven days after the birth and was reborn in the Tushita heaven, where the future Buddha later taught her.",
+    "verified": false
+  },
+  {
+    "id": "siddhartha",
+    "name": "Siddhartha Gautama",
+    "role": "Prince of the Shakyas who left the palace, awakened under the bodhi tree and became the Buddha, the teacher honoured across Buddhist Asia.",
+    "domain": ["awakening", "teaching", "compassion"],
+    "symbols": ["bodhi tree", "alms bowl", "lotus"],
+    "fun_fact": "His title Buddha means awakened one, and Tibetan tradition calls him Sangye, a name used across the schools rather than by one sect alone.",
+    "verified": false
+  },
+  {
+    "id": "mara",
+    "name": "Mara",
+    "role": "The Buddhist figure of temptation, fear and death, who attacks the meditating Siddhartha and is met with the earth-touching gesture.",
+    "domain": ["temptation", "fear", "death"],
+    "symbols": ["army of demons", "three daughters", "flaming bow"],
+    "fun_fact": "Mara's name is related to a Sanskrit root meaning death, and many teachers read him as a personification of inner obstacles.",
+    "verified": false
+  },
+  {
+    "id": "milarepa",
+    "name": "Milarepa",
+    "role": "Eleventh-century Tibetan yogi and poet of the Kagyu lineage, known for his cave retreats, his songs and his devotion to his teacher Marpa.",
+    "domain": ["renunciation", "meditation", "poetry"],
+    "symbols": ["cave", "nettles", "song"],
+    "fun_fact": "He is said to have lived on nettles for so long that his body turned green, a detail Tibetan painters often recall.",
+    "verified": false
+  },
+  {
+    "id": "padmasambhava",
+    "name": "Padmasambhava",
+    "role": "Eighth-century Indian master honoured as Guru Rinpoche, credited by Tibetan tradition with taming local forces and helping to establish Samye.",
+    "domain": ["tantric transmission", "protection", "founding"],
+    "symbols": ["vajra", "lotus", "terma scroll"],
+    "fun_fact": "Tibetan tradition says he concealed teachings as terma, treasure texts later found by revealers across the Himalayas.",
+    "verified": false
+  },
+  {
+    "id": "yeshe_tsogyal",
+    "name": "Yeshe Tsogyal",
+    "role": "Tibetan disciple and consort of Padmasambhava, remembered as a master in her own right and as the preserver of his teachings.",
+    "domain": ["transmission", "memory", "realization"],
+    "symbols": ["white conch", "book", "vajra"],
+    "fun_fact": "Tibetan tradition credits her with memorizing and hiding many of Padmasambhava's teachings, including the Padma bka' thang.",
+    "verified": false
+  },
+  {
+    "id": "kuntu_zangpo",
+    "name": "Kuntu Zangpo",
+    "role": "The primordial buddha of Bon, whose name means All-Good and who represents the ground from which the highest Bon teachings arise.",
+    "domain": ["primordial wisdom", "spaciousness", "Bon teaching"],
+    "symbols": ["open sky", "mirror", "white letter A"],
+    "fun_fact": "Bon and the Nyingma school both honour a primordial buddha called Kuntu Zangpo or Samantabhadra, but their systems are not identical.",
+    "verified": false
+  },
+  {
+    "id": "drenpa_namkha",
+    "name": "Drenpa Namkha",
+    "role": "An eighth-century Bon master and scholar, remembered for preserving Bon teachings during a period of Buddhist royal patronage.",
+    "domain": ["Bon transmission", "scholarship", "preservation"],
+    "symbols": ["manuscript", "staff", "conch"],
+    "fun_fact": "Bon tradition links him with the period of Padmasambhava and King Trisong Detsen, and later accounts make him a defender of Bon learning.",
+    "verified": false
+  },
+  {
+    "id": "tara",
+    "name": "Tara",
+    "role": "Bodhisattva of compassionate action and swift protection, widely invoked across Tibetan Buddhism and beloved as a female figure of refuge.",
+    "domain": ["compassion", "protection", "swift action"],
+    "symbols": ["green lotus", "seven eyes", "gesture of generosity"],
+    "fun_fact": "Tibetan tradition tells that Tara arose from the tears of Avalokiteshvara, and another story says she was a princess who chose rebirth as a woman to benefit beings.",
+    "verified": false
+  },
+  {
+    "id": "lhamo",
+    "name": "Palden Lhamo",
+    "role": "A fierce protector deity of Tibetan Buddhism, honoured as a guardian of the Dharma, of Tibet and of the Dalai Lama lineage.",
+    "domain": ["protection", "fierce compassion", "sovereignty"],
+    "symbols": ["mule", "flaming sword", "skull cup"],
+    "fun_fact": "Her chapels are often set apart and her images veiled, because her protective power is considered especially intense.",
+    "verified": false
+  }
+]

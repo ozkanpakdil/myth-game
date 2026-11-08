@@ -281,6 +281,93 @@ Mythos is an educational draft. The retellings are new, short summaries in moder
 - **Asker Gadagatl, Narty: The Adyghe Epic (7 vols, 1968–71)** — A large collection and study of the Adyghe epic.
 - **Richard Foltz, The Ossetes (2022)** — A modern historical and cultural overview of the Ossetes and their epic.
 
+### Buddhist narratives
+
+- **The Pali canon (Tipitaka)** — The early Buddhist scriptural collection, including the Buddha's life, the Jataka tales and the Angulimala and Kisa Gotami stories.
+- **Ashvaghosha, Buddhacarita** — A Sanskrit poetic life of the Buddha that shaped later biographical tradition.
+- **The Jataka tales and their commentary** — A large corpus of previous-life stories, didactic and variant.
+- **Bhikkhu Bodhi, In the Buddha's Words** — A modern anthology and translation of the Pali discourses.
+- **John S. Strong, The Buddha: A Beginner's Guide** — A study of the Buddha's life and its narrative traditions.
+- **Donald S. Lopez Jr., The Story of Buddhism** — A critical introduction to Buddhist history and doctrine.
+
+### Tibetan / Bon
+
+- **The Buddhacarita** — The Sanskrit life of the Buddha, a major source for the birth and renunciation narratives.
+- **The Hundred Thousand Songs of Milarepa** — The songs and life story of Milarepa, a foundational Tibetan Buddhist text.
+- **The Padma bka' thang** — A revealed biography of Padmasambhava, hagiographic and legendary in character.
+- **Bon cosmological texts** — The Bon accounts of Kuntu Zangpo and the elements, some of them restricted.
+- **Matthew Kapstein, The Tibetan Assimilation of Buddhism** — A study of Buddhism's integration with Tibetan religion and culture.
+- **Sam van Schaik, Tibet: A History** — A modern historical overview.
+- **Samten Karmay, The Arrow and the Spindle** — Studies of Tibetan and Bon history and doctrine.
+
+### Yoruba / Orisha
+
+- **The Ifá literary corpus (Odu Ifá)** — The oral divination corpus, performed by trained babalawos; only part is public.
+- **Yoruba oral tradition** — The living narrative and praise-poetry traditions of Yoruba communities.
+- **Wande Abimbola, Ifá: An Exposition of Ifá Literary Corpus** — A major scholarly study by a Yoruba babalawo.
+- **J. O. Awolalu, Yoruba Beliefs and Sacrificial Rites** — A study of Yoruba religion and ritual.
+- **Karin Barber, I Could Speak Until Tomorrow** — A study of Yoruba oral literature and performance.
+- **Jacob Olupona, City of 201 Gods** — A study of Yoruba religion and urban life.
+
+### Mongolic & Turkic / Steppe
+
+- **The Secret History of the Mongols** — The thirteenth-century Mongol chronicle, including the wolf-and-doe origin and the heavenly mandate.
+- **The Geser epic** — A multi-language epic cycle in Tibetan, Mongol, Buryat and related traditions.
+- **The Manas epic** — The Kyrgyz epic performed by manaschi, with many recorded variants.
+- **The Orkhon Turkic inscriptions** — Eighth-century inscriptions invoking Tengri, the earth and the waters.
+- **Walther Heissig, The Religions of the Mongols** — A standard introduction to Mongol religion.
+- **Devin DeWeese, Islamization and Native Religion in the Golden Horde** — A study of Turkic religion and conversion.
+- **Daniel Prior, The Manas of Wilhelm Radloff** — A study and translation of a foundational Manas record.
+
+### Southeast Asian
+
+- **The Ramakien** — The Thai court version of the Ramayana, completed around 1798.
+- **The Reamker** — The Khmer version of the Ramayana.
+- **The Manohara tale** — The Southeast Asian kinnari story, with Thai, Khmer and Malay variants.
+- **Javanese and Balinese rice traditions** — The Dewi Sri complex, with lontar and ritual material.
+- **S. Singaravelu, The Ramayana and the Malay Shadow-Play** — A study of the Ramayana in Southeast Asian performance.
+- **Adrian Vickers, Bali: A Paradise Created** — A critical history of Balinese culture and its representations.
+- **The Udana** — The Pali canon's Mucalinda episode.
+
+### Siberian / Arctic
+
+- **Waldemar Bogoras, The Chukchee** — An early ethnographic account of Chukchi life and religion.
+- **Waldemar Jochelson, The Koryak** — A early account of Koryak culture and narrative.
+- **Khanty and Mansi bear ceremonialism** — Recorded accounts of the bear festival and its songs.
+- **Nenets and Evenki shamanic accounts** — Ethnographic records of practice, with regional variation.
+- **Marjorie Mandelstam Balzer, Shamanism: Soviet Studies of Traditional Religion** — A collection of translations and studies.
+- **Åke Hultkrantz, Shamanic Healing and Ritual Drama** — A comparative study of shamanic practice.
+
+### North American Indigenous
+
+- **Haudenosaunee oral tradition and the Thanksgiving Address** — The living creation and greeting tradition of the Haudenosaunee.
+- **Karuk Fire Race** — A retelling by Jonathan London with Lanny Pinola and Julian Lang, used with a caveat about its mediated form.
+- **John R. Swanton, Tlingit Myths and Texts** — A colonial-era collection of Tlingit narratives, including Raven.
+- **Black Elk and Joseph Epes Brown, The Sacred Pipe** — A mediated account of Lakota ceremony.
+- **Washington Matthews, Navaho Legends** — An early collection of Diné narratives.
+- **Frank Speck, Penobscot Man** — An ethnographic study of Penobscot life.
+- **Vine Deloria Jr., Paula Gunn Allen and Robin Wall Kimmerer** — Modern Native scholars whose work frames sovereignty, gender and reciprocity.
+
+### Amazonian & Caribbean
+
+- **Ramón Pané, Relación de las antigüedades de los indios (1498)** — The earliest written account of Taíno religion, mediated by a Spanish friar.
+- **Davi Kopenawa and Bruce Albert, The Falling Sky** — Yanomami testimony and cosmology, in collaboration.
+- **Yurupary and Tukanoan tradition** — The sacred-flute complex of the Uaupés/Negro region, with restricted material.
+- **Shipibo-Konibo narrative** — The jaguar-woman tale type and its Pano-speaking neighbours.
+- **Neil Whitehead, Dark Shamans** — A study of Amazonian warfare, shamanism and colonial history.
+- **Jonathan Hill, Made-from-Bone** — A study of Tukanoan myth and history.
+- **Peter Roe, The Cosmic Zygote** — A comparative study of Amazonian cosmology.
+
+### Aboriginal Australian
+
+- **Ngalyod and Kuninjku/Kunwinjku public accounts** — Public material from western Arnhem Land, including Maningrida Arts & Culture and the NGV Art Journal.
+- **Seven Sisters songlines** — Public accounts from the National Museum of Australia and NPY Women's Council, with restricted knowledge respected.
+- **Baiame accounts** — Records by Ridley (1875) and Howitt (1904), with a colonial caveat.
+- **Wandjina accounts** — Mowaljarlai, Blundell and Woolagoodja, and the Mowanjum community.
+- **Bunyip sources** — The 1845 Geelong Advertiser, Smyth (1878) and Holden (2001), with the label's problems noted.
+- **K. Langloh Parker, Australian Legendary Tales (1896)** — A colonial-era collection from Euahlayi country, used with a caveat.
+- **National Museum of Australia, Songlines (2017)** — A public exhibition and resource on songlines and Country.
+
 ## Review and sensitivity status
 
 | Tradition | Sensitivity | Verified |
@@ -311,8 +398,17 @@ Mythos is an educational draft. The retellings are new, short summaries in moder
 | Finnic / Sámi | medium | false |
 | Polynesian | medium | false |
 | Caucasian / Nart | medium | false |
+| Buddhist narratives | medium | false |
+| Tibetan / Bon | high | false |
+| Yoruba / Orisha | high | false |
+| Mongolic & Turkic / Steppe | medium | false |
+| Southeast Asian | medium | false |
+| Siberian / Arctic | medium | false |
+| North American Indigenous | high | false |
+| Amazonian & Caribbean | high | false |
+| Aboriginal Australian | high | false |
 
-Hindu stories are a living sacred tradition and are marked **high** sensitivity. Shinto (Japanese), Maya, Chinese, Korean, Andean, Aztec / Mesoamerican, Akan, Dogon & Mande, Bantu, Finnic / Sámi, Polynesian and Caucasian / Nart traditions are marked **medium**. All twenty-six traditions need a human fact-check of dates, names, spellings, answer keys and source notes before release. The Hindu, Shinto, Maya, Chinese, Korean, Andean, Aztec / Mesoamerican, Akan, Dogon & Mande, Bantu, Finnic / Sámi, Polynesian and Caucasian / Nart material also needs a sensitivity review by someone with relevant community or scholarly knowledge.
+Hindu, Yoruba, Tibetan/Bon, North American Indigenous, Amazonian/Caribbean and Aboriginal Australian stories are living sacred traditions and are marked **high** sensitivity. Shinto (Japanese), Maya, Chinese, Korean, Andean, Aztec / Mesoamerican, Akan, Dogon & Mande, Bantu, Finnic / Sámi, Polynesian, Caucasian / Nart, Buddhist narratives, Mongolic & Turkic / Steppe, Southeast Asian and Siberian / Arctic traditions are marked **medium**. All thirty-five traditions need a human fact-check of dates, names, spellings, answer keys and source notes before release. The Hindu, Shinto, Maya, Chinese, Korean, Andean, Aztec / Mesoamerican, Akan, Dogon & Mande, Bantu, Finnic / Sámi, Polynesian, Caucasian / Nart, Buddhist, Steppe, Southeast Asian and Siberian material also needs a sensitivity review by someone with relevant community or scholarly knowledge.
 
 If a retelling is inaccurate or disrespectful, the correct response is to revise or remove it — not to defend the text. See the `NEEDS HUMAN` tasks in `PLAN_AND_TODO.md`.
 

@@ -1,0 +1,69 @@
+{
+  "id": "tibetan",
+  "name": "Tibetan / Bon",
+  "intro": "Tibetan and Bon traditions are distinct but deeply intertwined ways of life rooted in the Tibetan Plateau and the Himalaya. Bon has its own scriptures, lineages and monasteries, and it is not simply a relic of a pre-Buddhist past. Buddhism arrived from India in the seventh and eighth centuries and became the dominant religious culture, developing the Nyingma, Kagyu, Sakya and Gelug schools. Both traditions preserve vast libraries of history, poetry, ritual and philosophy, much of it in Tibetan. Some tantric and monastic knowledge is restricted and is not public, so this pack retells only widely published stories and avoids instructional detail. Tibetan communities, including the diaspora, are living guardians of this heritage, and their voices matter. A community and scholarly review is required before this material is treated as authoritative.",
+  "timeline": [
+    {
+      "label": "Bon and early Tibetan religion",
+      "year_text": "before the seventh century CE",
+      "note": "Local ritual specialists honoured mountain deities, sky beings and ancestral powers; later Bon tradition systematised these practices in its own scriptures."
+    },
+    {
+      "label": "Buddhism arrives at the Tibetan court",
+      "year_text": "seventh century CE",
+      "note": "King Songtsen Gampo's reign sees the first major patronage of Buddhism and the beginning of large-scale translation from Sanskrit."
+    },
+    {
+      "label": "Padmasambhava and the founding of Samye",
+      "year_text": "late eighth century CE",
+      "note": "Under King Trisong Detsen, Samye is built and the Nyingma tradition traces its transmission to Padmasambhava and Yeshe Tsogyal."
+    },
+    {
+      "label": "Milarepa and the new schools",
+      "year_text": "eleventh to twelfth centuries",
+      "note": "The Kagyu, Sakya and other schools take shape; Milarepa's songs become a lasting part of Tibetan literature."
+    },
+    {
+      "label": "Monastic learning and the Gelug school",
+      "year_text": "fourteenth to seventeenth centuries",
+      "note": "Tsongkhapa founds the Gelug order, and the Dalai Lama lineage later becomes central to Tibetan political and religious life."
+    },
+    {
+      "label": "Diaspora and global study",
+      "year_text": "twentieth to twenty-first centuries",
+      "note": "After 1959, Tibetan communities and monasteries are re-established in India, Nepal and the West, while scholars study Bon and Buddhist texts."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Buddhacarita",
+      "note": "A Sanskrit verse life of the Buddha by Ashvaghosha, probably second century CE; it supplies the birth, the four sights and the defeat of Mara in this pack."
+    },
+    {
+      "title": "The Hundred Thousand Songs of Milarepa",
+      "note": "A large collection of songs and narratives attributed to Milarepa, compiled and expanded by later editors; the source for the cave story."
+    },
+    {
+      "title": "Padma bka' thang",
+      "note": "The Lotus Testament, a revealed biography of Padmasambhava attributed to Yeshe Tsogyal and rediscovered by later treasure revealers; legendary in character."
+    },
+    {
+      "title": "Srid pa'i mdzod phug and Bon cosmology",
+      "note": "A central Bon text on the origin of the world, used with related Bon sources; creation accounts differ across texts and lineages."
+    },
+    {
+      "title": "Matthew Kapstein, The Tibetan Assimilation of Buddhism",
+      "note": "A scholarly study of how Buddhist and Tibetan traditions interacted, used here for historical context and cautious framing."
+    },
+    {
+      "title": "Sam van Schaik, Tibet: A History",
+      "note": "A modern history of Tibet that treats the relationship of Buddhism, Bon and political power with care."
+    },
+    {
+      "title": "Samten G. Karmay, The Arrow and the Spindle",
+      "note": "Studies in the history, myth and ritual of Tibet, including close work on Bon creation narratives."
+    }
+  ],
+  "sensitivity": "high",
+  "verified": false
+}

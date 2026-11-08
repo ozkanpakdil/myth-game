@@ -1,0 +1,98 @@
+[
+  {
+    "id": "yoruba-01",
+    "title": "Olodumare and the Creation",
+    "source_ref": "Ifá literary corpus (Odu Ifá); Yoruba oral tradition",
+    "paragraphs": [
+      "Olodumare, the supreme being, is not one orisha among many. Yoruba tradition describes Olodumare as the source of life and of ase, the power that makes things happen, and as the one who assigns each person's destiny. The orisha are divine beings who serve and express that power, each with a distinct character and domain.",
+      "In many tellings, Olodumare sent the orisha to prepare the world, but the earth was water and mud. Obatala was given a chain, a snail shell filled with sand, and a white hen. He poured the sand, the hen scratched it, and dry land spread outward at Ile-Ife. Other tellings give this task to Oduduwa.",
+      "Ifá preserves another strand. Orunmila, the orisha of wisdom and divination, is said to have been present at creation and to have witnessed the destinies chosen before birth. Babalawos recite the odu, the chapters of the Ifá corpus, when they consult. These are oral texts performed in ritual, not a single fixed book, and much of their interpretation belongs to trained priests.",
+      "The accounts do not agree, and that disagreement is part of the tradition. Some communities emphasise Olodumare's remoteness and approach the orisha instead; others speak of Olodumare acting directly. The number of orisha is often given as 401, a figure that means many rather than a census. What remains constant is that creation is shared work, and that ase makes it real."
+    ],
+    "characters": ["olodumare", "obatala", "orunmila"],
+    "themes": ["creation", "destiny", "the orisha and the supreme being"],
+    "uncertain": true,
+    "notes": "Creation accounts differ between Ifá odu, local lineages and published collections: the agent of creation, the order of events and the number of orisha all vary. Some ritual detail is restricted to initiated priests and is not reproduced here.",
+    "verified": false
+  },
+  {
+    "id": "yoruba-02",
+    "title": "Obatala and the First People",
+    "source_ref": "Yoruba oral tradition; Ife creation accounts",
+    "paragraphs": [
+      "Obatala, also called Orisa-nla, is the orisha of creation, white cloth and peace. In the best-known account, Olodumare gave him a chain to descend from the sky, a snail shell of earth, and a hen. Obatala emptied the shell, the hen scattered the sand, and the land of Ile-Ife grew where there had been water.",
+      "Olodumare then asked him to shape human bodies from clay at Oke Itase. Some tellings say Obatala grew tired and drank palm wine, and that the bodies he made that day were not all alike; others insist the story is about his care for people who are different, not about blame. Many of his worshippers reject any reading that treats disability as a punishment.",
+      "Because of that episode, his priests traditionally avoid palm wine, and white is his colour. People with disabilities are widely honoured as especially under Obatala's protection, and his shrines are known as places of calm and care. His quarrel with Oduduwa is told in several ways: rival claims over who made the land, or a younger brother who finished a task left incomplete.",
+      "Some Ife traditions make Oduduwa the founder of the city and ancestor of its kings, while others hold that Obatala created the land and Oduduwa founded the dynasty. Both are honoured at Ile-Ife, and their festivals are separate. The differences are not a puzzle to be solved but a record of competing lineages and devotional loyalties."
+    ],
+    "characters": ["obatala", "olodumare"],
+    "themes": ["creation", "care and difference", "rival claims to a sacred city"],
+    "uncertain": true,
+    "notes": "The creation of land and people is told differently in Ife, in Ifá odu and in published collections. Obatala and Oduduwa have rival claims and separate followings, and the alcohol episode is interpreted very differently by different communities; some regard any focus on it as disrespectful.",
+    "verified": false
+  },
+  {
+    "id": "yoruba-03",
+    "title": "Eshu and the Two Friends",
+    "source_ref": "Yoruba oral tradition; Eshu praise poetry (oriki)",
+    "paragraphs": [
+      "Eshu is the orisha of crossroads, messages, chance and exchange. He carries offerings between humans and the other orisha, and he stands at the gate of every compound and market. Yoruba tradition calls him a trickster, but not a deceiver for its own sake: he tests pride, exposes hypocrisy and reminds people that every account is partial.",
+      "Two friends lived in neighbouring farms and prided themselves on never disagreeing. Eshu walked the path between them wearing a hat that was red on one side and white on the other. Each man saw only the side facing him. Later they met and began to boast about the stranger's fine red hat, or his fine white one.",
+      "The argument grew until they came to blows. Eshu returned and turned the hat in his hands, showing both colours. He asked each man what he had seen, and each answered truthfully. The lesson was not that one had lied but that each had seen a part and called it the whole. In many tellings Eshu then requires an offering to settle the quarrel.",
+      "The story is often told to explain why sacrifice accompanies disputes and agreements. Eshu is not the devil; that identification came largely from missionary translation, which needed a name for Satan. In Yoruba thought he is a necessary power at the threshold, the one who makes communication and exchange possible, and who insists that people listen to more than one side."
+    ],
+    "characters": ["eshu"],
+    "themes": ["perspective", "conflict and reconciliation", "sacrifice"],
+    "uncertain": true,
+    "notes": "The colours of the hat and the details of the quarrel vary between tellings, and some versions are comic while others are openly moral. Eshu's ritual knowledge, including what offerings he receives, is held by priests and is only partly public.",
+    "verified": false
+  },
+  {
+    "id": "yoruba-04",
+    "title": "Ogun and the First Iron",
+    "source_ref": "Yoruba oral tradition; Ogun festival at Ire",
+    "paragraphs": [
+      "Ogun is the orisha of iron, tools, roads, hunting, war and dangerous work. Blacksmiths, farmers, hunters, drivers and soldiers honour him, because every cutting blade and every engine belongs to his domain. Tradition says he came to earth with a cutlass and cleared the path through the forest so that the other orisha could follow.",
+      "In the beginning people had no iron. Ogun is credited with teaching them to find the ore, to build the forge and to shape metal into hoes, knives and weapons. Iron changed farming, building and fighting at once. The same blade that clears a field can open a body, and Ogun's worshippers do not pretend otherwise.",
+      "His character holds both sides. He is brave, loyal and generous to those who keep their word, and he is also quick to anger, solitary and hard to restrain. In one well-known account he killed people of his own town in a rage and then withdrew from human company, and the memory of that violence shapes his cult.",
+      "At his festivals, especially at Ire, worshippers offer palm wine, dance with iron and renew oaths; some communities also make traditional dog offerings. Ogun's power is understood to need limits: the smith's oath, the hunter's taboo, the elder's counsel. He is not simply a power of violence for its own sake but a force that must be bound to justice, or it destroys the community that depends on it."
+    ],
+    "characters": ["ogun"],
+    "themes": ["technology", "the ambiguity of power", "restraint and justice"],
+    "uncertain": true,
+    "notes": "The story of Ogun at Ire is told differently in different towns, and some ritual details of his festival are not public. Depictions of Ogun in popular culture often exaggerate the violence and leave out the ethical limits his worshippers emphasise.",
+    "verified": false
+  },
+  {
+    "id": "yoruba-05",
+    "title": "Oshun and the Sweet Water",
+    "source_ref": "Yoruba oral tradition; Osun-Osogbo festival",
+    "paragraphs": [
+      "Oshun is the orisha of the Osun River, of sweet water, fertility, love, beauty and wealth. Her river rises in the hills of Ekiti and flows through Osogbo, where her grove and shrine are tended. She is associated with brass, honey, yellow cloth and the parrot, and her devotees describe her as generous, diplomatic and quick to take offence.",
+      "One widely told account says the orisha were sent to bring life to the dry earth, but Oshun was overlooked. She withheld the sweet water, and nothing grew. Messengers went to her, and she agreed to help once she was acknowledged. In other tellings it is she who carried water to the other orisha, or who took their case to Olodumare.",
+      "Oshun and Yemoja are both water orisha, but they are not the same. Yemoja is honoured as a mother of waters and of children, linked in Yoruba tradition with a river and in the Americas with the ocean. Oshun's domain is the fresh, sweet river. Their relationship is told as sisterhood, rivalry or kinship depending on the community and the place.",
+      "The Osun-Osogbo festival draws pilgrims each year to the grove, where the river, the shrines and the old trees are treated as living presences rather than scenery. A young woman chosen for the year carries the offering to the water. The grove is protected as a sacred landscape and as a World Heritage site, and visitors are asked to respect its rules."
+    ],
+    "characters": ["oshun", "yemoja", "olodumare"],
+    "themes": ["water and fertility", "recognition", "sacred landscape"],
+    "uncertain": true,
+    "notes": "Oshun's relationship with Yemoja and with the other orisha varies by town and by diaspora tradition. The Osun-Osogbo festival has ritual elements reserved for initiates and community members, and the grove is a living sacred place rather than a public attraction.",
+    "verified": false
+  },
+  {
+    "id": "yoruba-06",
+    "title": "Sango and the Thunder",
+    "source_ref": "Yoruba oral tradition; Sango traditions of Oyo",
+    "paragraphs": [
+      "Sango is the orisha of thunder and lightning and the remembered king of Oyo. He is said to have ruled as Alaafin, a king whose word could order a market or an army, and to have judged disputes with severity. His emblem is the double-headed axe, oshe, and his drums are the bata, whose rhythms are still played for him.",
+      "His reign was not peaceful. He was a strong king and a proud one, and the traditions speak of campaigns, rivalries and a temper that frightened even his own household. Oya, the orisha of wind and storm, is closely linked with him as wife or companion, and Babalu-Aiye, the orisha of epidemic disease and healing, is honoured alongside him in some towns.",
+      "The end of his reign is told in different ways. In one account he was defeated and withdrew; in another he entered the earth at Koso; in another he died, and his followers said the sky took him. The tradition does not dwell on the manner of death. What matters is that his people refused to let him simply disappear, and honoured him as thunder.",
+      "Thunder is read as his voice and lightning as his judgement. Oaths are sworn on Sango, and the bata drums, the red and white beads and the axe carry his presence in worship. The annual festival at Oyo renews his kingship. His story holds kingship and anger together, asking what a just ruler owes to the people he judges."
+    ],
+    "characters": ["sango", "oya", "babalu_aiye"],
+    "themes": ["kingship", "justice and anger", "thunder"],
+    "uncertain": true,
+    "notes": "The traditions of Sango's reign and death differ between Oyo, Koso and other towns, and some ritual knowledge belongs to his priests and worshippers. Popular retellings often sensationalise the death, which this account deliberately does not do.",
+    "verified": false
+  }
+]

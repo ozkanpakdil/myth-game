@@ -1,0 +1,302 @@
+[
+  {
+    "id": "steppe-q01",
+    "story_id": "steppe-01",
+    "question": "How is Tengri described in the steppe tradition?",
+    "choices": [
+      "The ruler of the underworld",
+      "The eternal blue sky and highest heaven",
+      "The first shaman",
+      "The mother goddess of the hearth"
+    ],
+    "correct_index": 1,
+    "explanation": "Tengri is the sky and the highest power in Turkic and Mongol traditions; the Orkhon inscriptions call him the blue heaven.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "steppe-q02",
+    "story_id": "steppe-01",
+    "question": "Which text opens with a blue-grey wolf born of heaven?",
+    "choices": [
+      "The Orkhon inscriptions",
+      "The Manas epic",
+      "The Geser epic",
+      "The Secret History of the Mongols"
+    ],
+    "correct_index": 3,
+    "explanation": "The Secret History begins with the blue-grey wolf and the fallow doe, then traces the Mongols' heavenly origin.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "steppe-q03",
+    "story_id": "steppe-01",
+    "question": "What is invoked together with Tengri in the Orkhon inscriptions?",
+    "choices": [
+      "The earth and the waters",
+      "The moon and the stars",
+      "The dead and their judge",
+      "The drum and the staff"
+    ],
+    "correct_index": 0,
+    "explanation": "The inscriptions pair Tengri with the earth and the waters, or yir-sub, as one ordered world.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "steppe-q04",
+    "story_id": "steppe-01",
+    "question": "How are the ninety-nine tngri divided in one Mongol count?",
+    "choices": [
+      "Thirty-three white and sixty-six black",
+      "Seventy-seven white and twenty-two black",
+      "Fifty-five white and forty-four black",
+      "Ninety-nine equal companies"
+    ],
+    "correct_index": 2,
+    "explanation": "Heissig and Hesse describe 55 benevolent or white tngri and 44 terrifying or black ones, though local lists vary.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "steppe-q05",
+    "story_id": "steppe-02",
+    "question": "Who sends Geser to earth in the Buryat prologue?",
+    "choices": [
+      "Erlik, lord of the dead",
+      "Manas, the Kyrgyz khan",
+      "Khormusta, the sky god",
+      "Bayan Khongor, a hunter"
+    ],
+    "correct_index": 2,
+    "explanation": "In the Buryat prologue Khormusta defeats Atai Ulan and sends his middle son to undo the damage.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "steppe-q06",
+    "story_id": "steppe-02",
+    "question": "What is Geser's childhood like in the Mongol version?",
+    "choices": [
+      "He is despised and mocked",
+      "He is raised in a palace",
+      "He is trained by Buddhist monks",
+      "He is born an old man"
+    ],
+    "correct_index": 0,
+    "explanation": "Geser grows up ugly and snotty, is mocked and mistreated, and only later reveals his strength and wins the throne.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "steppe-q07",
+    "story_id": "steppe-02",
+    "question": "Why does Geser descend to the underworld in one Mongol episode?",
+    "choices": [
+      "To steal the water of life",
+      "To marry Erlik's daughter",
+      "To recover his horse",
+      "To rescue his mother"
+    ],
+    "correct_index": 3,
+    "explanation": "The Mongolian version includes a descent to hell to bring his mother back, a journey that shows his power over death.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "steppe-q08",
+    "story_id": "steppe-03",
+    "question": "Who performs the Manas epic?",
+    "choices": [
+      "A Buddhist lama",
+      "A manaschi",
+      "A Chinese scribe",
+      "A Kazakh akyn"
+    ],
+    "correct_index": 1,
+    "explanation": "Manas is chanted from memory by a manaschi, often over several nights and without an instrument.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "steppe-q09",
+    "story_id": "steppe-03",
+    "question": "How many companions does Manas gather?",
+    "choices": [
+      "Twelve",
+      "Ninety-nine",
+      "Three",
+      "Forty"
+    ],
+    "correct_index": 3,
+    "explanation": "The forty choro are Manas's warrior companions, and Almambet is among the most famous of them.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "steppe-q10",
+    "story_id": "steppe-03",
+    "question": "Who is Kanikey in the epic?",
+    "choices": [
+      "Manas's mother",
+      "A manaschi from Talas",
+      "Manas's wife and wisest adviser",
+      "The queen of the Oirats"
+    ],
+    "correct_index": 2,
+    "explanation": "Kanikey, daughter of the khan of Bukhara, is Manas's wife; she advises him and later protects their son Semetey.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "steppe-q11",
+    "story_id": "steppe-03",
+    "question": "What does Kanikey do to Manas's tomb in one tradition?",
+    "choices": [
+      "She has it built by the Oirats",
+      "She orders a false inscription for it",
+      "She gives it to Almambet",
+      "She destroys it after his death"
+    ],
+    "correct_index": 1,
+    "explanation": "In one tradition Kanikey orders a misleading inscription on the tomb at Talas, so that Manas's enemies will not find and defile it.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "steppe-q12",
+    "story_id": "steppe-04",
+    "question": "What does the hunter hide from the swan maiden?",
+    "choices": [
+      "Her feathered robe",
+      "Her golden crown",
+      "Her horse",
+      "Her drum"
+    ],
+    "correct_index": 0,
+    "explanation": "The hunter hides the robe she needs in order to become a swan again, and so she cannot return to the sky.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "steppe-q13",
+    "story_id": "steppe-04",
+    "question": "How many sons does the swan maiden bear in the Buryat legend?",
+    "choices": [
+      "Three",
+      "Eleven",
+      "Forty",
+      "Nine"
+    ],
+    "correct_index": 1,
+    "explanation": "In the Khori Buryat legend she bears eleven sons, who become the ancestors of the Khori clans.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "steppe-q14",
+    "story_id": "steppe-04",
+    "question": "Why do Buryats say swans have black legs?",
+    "choices": [
+      "She burned them in the hearth",
+      "She swam in a black lake",
+      "Erlik cursed her",
+      "The hunter's clay-stained hand touched her feet"
+    ],
+    "correct_index": 3,
+    "explanation": "As she rises through the smoke-hole, the hunter's muddy hand brushes her feet, and the mark explains the swan's black legs.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "steppe-q15",
+    "story_id": "steppe-05",
+    "question": "Who is Erlik in these traditions?",
+    "choices": [
+      "Ruler of the underworld",
+      "Sky god of the Mongols",
+      "Kyrgyz hero",
+      "The swan maiden's father"
+    ],
+    "correct_index": 0,
+    "explanation": "Erlik rules the land of the dead in Turkic and Mongol traditions, and Mongol speakers call him Erleg.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "steppe-q16",
+    "story_id": "steppe-05",
+    "question": "What is Erlik's realm called in Turkic tradition?",
+    "choices": [
+      "Ling",
+      "Talas",
+      "Tamag",
+      "Olkhon"
+    ],
+    "correct_index": 2,
+    "explanation": "Tamag is the underworld realm, described in some accounts as an iron-walled place with a copper palace.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "steppe-q17",
+    "story_id": "steppe-05",
+    "question": "How do Altai accounts describe Erlik's relation to the sky god?",
+    "choices": [
+      "A servant who guards the gate",
+      "A human king who became a god",
+      "A brother or rival with his own realm",
+      "A son of Umay"
+    ],
+    "correct_index": 2,
+    "explanation": "In Altai and other Siberian Turkic accounts Erlik is a brother or rival of the sky god, not a subordinate angel or a simple devil.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "steppe-q18",
+    "story_id": "steppe-06",
+    "question": "What is the shaman's drum compared to in the retelling?",
+    "choices": [
+      "A horse that carries the shaman",
+      "A map of the underworld",
+      "A book of prayers",
+      "A weapon against Erlik"
+    ],
+    "correct_index": 0,
+    "explanation": "The drum is the shaman's mount, carrying the practitioner out of ordinary space on the journey.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "steppe-q19",
+    "story_id": "steppe-06",
+    "question": "What does the shaman seek on the descent to the underworld?",
+    "choices": [
+      "A golden crown",
+      "The first horse",
+      "The water of life",
+      "A straying or stolen soul"
+    ],
+    "correct_index": 3,
+    "explanation": "The descent is made to recover a soul that has strayed or been taken, and to bring back knowledge for healing.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "steppe-q20",
+    "story_id": "steppe-06",
+    "question": "Why does the retelling not describe initiation in detail?",
+    "choices": [
+      "The sources are all lost",
+      "Much of it is not shown to outsiders and practice varies",
+      "Initiation no longer exists",
+      "It is illegal everywhere"
+    ],
+    "correct_index": 1,
+    "explanation": "Shamanic practice varies by community, some knowledge is restricted, and the retelling deliberately avoids presenting initiation as a spectacle.",
+    "difficulty": "hard",
+    "verified": false
+  }
+]

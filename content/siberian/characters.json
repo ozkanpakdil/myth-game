@@ -1,0 +1,172 @@
+[
+  {
+    "id": "raven",
+    "name": "Raven",
+    "role": "Creator-trickster of Kamchatka and Chukotka",
+    "domain": [
+      "creation",
+      "trickery",
+      "light"
+    ],
+    "symbols": [
+      "the stolen sun",
+      "the first land",
+      "black feathers"
+    ],
+    "fun_fact": "Koryak storytellers call him Kutkinnaku, Big Raven, and treat his greed and cunning as part of the making of the world.",
+    "verified": false
+  },
+  {
+    "id": "bear",
+    "name": "Bear",
+    "role": "Sacred ancestor and honoured guest of the bear ceremony",
+    "domain": [
+      "ancestry",
+      "hunting",
+      "ritual"
+    ],
+    "symbols": [
+      "the bear skull",
+      "the ceremonial pelt",
+      "the guest's seat"
+    ],
+    "fun_fact": "In Khanty and Mansi ceremony he is addressed as a guest and asked to forgive the hunters, not treated as mere game.",
+    "verified": false
+  },
+  {
+    "id": "shaman",
+    "name": "Shaman",
+    "role": "Ritual specialist who travels between worlds",
+    "domain": [
+      "healing",
+      "soul guidance",
+      "divination"
+    ],
+    "symbols": [
+      "the drum",
+      "iron pendants",
+      "the world tree"
+    ],
+    "fun_fact": "The drum is often called a mount or boat, because the shaman is said to ride it into other worlds.",
+    "verified": false
+  },
+  {
+    "id": "spirit_master",
+    "name": "Spirit Master",
+    "role": "Master spirit who owns a place, a species or a herd",
+    "domain": [
+      "taiga",
+      "game",
+      "guardianship"
+    ],
+    "symbols": [
+      "the trail",
+      "the offering",
+      "the herd"
+    ],
+    "fun_fact": "Hunters speak of master spirits as owners or wardens of animals, and they negotiate with them rather than command them.",
+    "verified": false
+  },
+  {
+    "id": "reindeer",
+    "name": "Reindeer",
+    "role": "Companion and kin of the herding family",
+    "domain": [
+      "migration",
+      "provision",
+      "kinship"
+    ],
+    "symbols": [
+      "the white doe",
+      "lichen",
+      "the lasso"
+    ],
+    "fun_fact": "Reindeer are the only deer domesticated in the Arctic, and herders follow their migrations rather than penning them.",
+    "verified": false
+  },
+  {
+    "id": "hunter",
+    "name": "Hunter",
+    "role": "Human who negotiates with the taiga and its animals",
+    "domain": [
+      "hunting",
+      "skill",
+      "respect"
+    ],
+    "symbols": [
+      "the bow",
+      "the ski",
+      "the trail"
+    ],
+    "fun_fact": "In many Siberian tales the hunter survives by patience and respect for the animal, not by strength alone.",
+    "verified": false
+  },
+  {
+    "id": "sun",
+    "name": "Sun",
+    "role": "Luminous being of the upper world",
+    "domain": [
+      "light",
+      "warmth",
+      "time"
+    ],
+    "symbols": [
+      "the solar disk",
+      "the summer festival",
+      "the white horse"
+    ],
+    "fun_fact": "Sakha communities greet the sun at Yhyakh, the summer solstice festival, with kumys and circular dances.",
+    "verified": false
+  },
+  {
+    "id": "moon",
+    "name": "Moon",
+    "role": "Luminous being of the night sky",
+    "domain": [
+      "night",
+      "cold",
+      "cycles"
+    ],
+    "symbols": [
+      "the crescent",
+      "the eclipse",
+      "the night herd"
+    ],
+    "fun_fact": "Some Buryat and Sakha tellings explain the moon's weaker light as the result of a wound or a punishment.",
+    "verified": false
+  },
+  {
+    "id": "ice_giant",
+    "name": "Ice Giant",
+    "role": "Personification of cold who carries winter with him",
+    "domain": [
+      "cold",
+      "winter",
+      "obstacles"
+    ],
+    "symbols": [
+      "the ice heart",
+      "the frozen river",
+      "the north wind"
+    ],
+    "fun_fact": "In the tales his body may become a ridge, a frozen lake or a river valley, explaining the shape of the land.",
+    "verified": false
+  },
+  {
+    "id": "fire_keeper",
+    "name": "Fire Keeper",
+    "role": "Guardian of the hearth and its flame",
+    "domain": [
+      "hearth",
+      "continuity",
+      "hospitality"
+    ],
+    "symbols": [
+      "the hearth",
+      "the fire drill",
+      "the kettle"
+    ],
+    "fun_fact": "The hearth fire is often treated as a living presence, fed before meals and consulted in small household rites.",
+    "verified": false
+  }
+]

@@ -3,89 +3,310 @@
   "height": 36,
   "tile": 16,
   "terrain": {
-    "~": { "name": "Water", "color": "#132c34" },
-    "g": { "name": "Grass", "color": "#4c6540" },
-    "s": { "name": "Sand", "color": "#a98452" },
-    "m": { "name": "Mountain", "color": "#6f6658" },
-    "i": { "name": "Ice", "color": "#c7d5d3" },
-    "f": { "name": "Forest", "color": "#2d4730" }
+    "~": {
+      "name": "Water",
+      "color": "#132c34"
+    },
+    "g": {
+      "name": "Grass",
+      "color": "#4c6540"
+    },
+    "s": {
+      "name": "Sand",
+      "color": "#a98452"
+    },
+    "m": {
+      "name": "Mountain",
+      "color": "#6f6658"
+    },
+    "i": {
+      "name": "Ice",
+      "color": "#c7d5d3"
+    },
+    "f": {
+      "name": "Forest",
+      "color": "#2d4730"
+    }
   },
   "regions": [
     {
       "id": "americas",
       "name": "Americas",
       "color": "#c77b5c",
-      "bounds": [2, 2, 22, 30],
-      "label": [10, 4],
-      "mythologies": ["maya", "aztec", "andean", "north_america", "amazonia"]
+      "bounds": [
+        2,
+        2,
+        22,
+        30
+      ],
+      "label": [
+        10,
+        4
+      ],
+      "mythologies": [
+        "maya",
+        "aztec",
+        "andean",
+        "north_america",
+        "amazonia"
+      ]
     },
     {
       "id": "europe",
       "name": "Europe",
       "color": "#d8a94f",
-      "bounds": [27, 3, 11, 10],
-      "label": [30, 7],
-      "mythologies": ["minoan", "greek", "etruscan", "roman", "celtic", "norse", "slavic", "baltic", "finnic", "caucasian"]
+      "bounds": [
+        27,
+        3,
+        11,
+        10
+      ],
+      "label": [
+        30,
+        7
+      ],
+      "mythologies": [
+        "minoan",
+        "greek",
+        "etruscan",
+        "roman",
+        "celtic",
+        "norse",
+        "slavic",
+        "baltic",
+        "finnic",
+        "caucasian"
+      ]
     },
     {
       "id": "africa",
       "name": "Africa",
       "color": "#b98a4e",
-      "bounds": [28, 13, 14, 15],
-      "label": [31, 19],
-      "mythologies": ["egypt", "yoruba", "akan", "mande", "bantu"]
+      "bounds": [
+        28,
+        13,
+        14,
+        15
+      ],
+      "label": [
+        31,
+        19
+      ],
+      "mythologies": [
+        "egypt",
+        "yoruba",
+        "akan",
+        "mande",
+        "bantu"
+      ]
     },
     {
       "id": "asia",
       "name": "Asia",
       "color": "#7fa88d",
-      "bounds": [39, 2, 23, 19],
-      "label": [48, 6],
-      "mythologies": ["persian", "hindu", "buddhist", "chinese", "japan", "korean", "tibetan", "steppe", "southeast_asia", "siberian"]
+      "bounds": [
+        39,
+        2,
+        23,
+        19
+      ],
+      "label": [
+        48,
+        6
+      ],
+      "mythologies": [
+        "persian",
+        "hindu",
+        "buddhist",
+        "chinese",
+        "japan",
+        "korean",
+        "tibetan",
+        "steppe",
+        "southeast_asia",
+        "siberian"
+      ]
     },
     {
       "id": "middle-east",
       "name": "Middle East",
       "color": "#d08a4e",
-      "bounds": [37, 10, 8, 8],
-      "label": [40, 12],
-      "mythologies": ["mesopotamia", "canaan", "hittite"]
+      "bounds": [
+        37,
+        10,
+        8,
+        8
+      ],
+      "label": [
+        40,
+        12
+      ],
+      "mythologies": [
+        "mesopotamia",
+        "canaan",
+        "hittite"
+      ]
     },
     {
       "id": "oceania",
       "name": "Oceania",
       "color": "#6e9ba2",
-      "bounds": [49, 22, 15, 10],
-      "label": [55, 27],
-      "mythologies": ["polynesia", "aboriginal"]
+      "bounds": [
+        49,
+        22,
+        15,
+        10
+      ],
+      "label": [
+        55,
+        27
+      ],
+      "mythologies": [
+        "polynesia",
+        "aboriginal"
+      ]
     }
   ],
   "markers": {
-    "greek": [32, 10],
-    "norse": [35, 4],
-    "celtic": [28, 8],
-    "egypt": [34, 17],
-    "mesopotamia": [40, 13],
-    "hindu": [46, 17],
-    "japan": [60, 9],
-    "maya": [12, 14],
-    "chinese": [53, 11],
-    "roman": [34, 11],
-    "persian": [49, 10],
-    "canaan": [40, 11],
-    "minoan": [34, 13],
-    "hittite": [42, 8],
-    "slavic": [32, 7],
-    "etruscan": [33, 9],
-    "baltic": [33, 6],
-    "korean": [57, 9],
-    "aztec": [10, 11],
-    "andean": [14, 21],
-    "polynesian": [3, 15],
-    "akan": [28, 16],
-    "dogon": [27, 14],
-    "bantu": [29, 18],
-    "caucasus": [43, 9],
-    "finnic": [38, 3]
+    "greek": [
+      32,
+      10
+    ],
+    "norse": [
+      35,
+      4
+    ],
+    "celtic": [
+      28,
+      8
+    ],
+    "egypt": [
+      34,
+      17
+    ],
+    "mesopotamia": [
+      40,
+      13
+    ],
+    "hindu": [
+      46,
+      17
+    ],
+    "japan": [
+      60,
+      9
+    ],
+    "maya": [
+      12,
+      14
+    ],
+    "chinese": [
+      53,
+      11
+    ],
+    "roman": [
+      34,
+      11
+    ],
+    "persian": [
+      49,
+      10
+    ],
+    "canaan": [
+      40,
+      11
+    ],
+    "minoan": [
+      34,
+      13
+    ],
+    "hittite": [
+      42,
+      8
+    ],
+    "slavic": [
+      32,
+      7
+    ],
+    "etruscan": [
+      33,
+      9
+    ],
+    "baltic": [
+      33,
+      6
+    ],
+    "korean": [
+      57,
+      9
+    ],
+    "aztec": [
+      10,
+      11
+    ],
+    "andean": [
+      14,
+      21
+    ],
+    "polynesian": [
+      3,
+      15
+    ],
+    "akan": [
+      28,
+      16
+    ],
+    "dogon": [
+      27,
+      14
+    ],
+    "bantu": [
+      29,
+      18
+    ],
+    "caucasus": [
+      43,
+      9
+    ],
+    "finnic": [
+      38,
+      3
+    ],
+    "yoruba": [
+      27,
+      17
+    ],
+    "tibetan": [
+      47,
+      13
+    ],
+    "buddhist": [
+      48,
+      14
+    ],
+    "steppe": [
+      52,
+      7
+    ],
+    "southeast_asia": [
+      55,
+      15
+    ],
+    "siberian": [
+      55,
+      3
+    ],
+    "north_america": [
+      12,
+      10
+    ],
+    "amazonia": [
+      26,
+      24
+    ],
+    "aboriginal": [
+      78,
+      26
+    ]
   }
 }

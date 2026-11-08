@@ -1,0 +1,302 @@
+[
+  {
+    "id": "north_america-q01",
+    "story_id": "north_america-01",
+    "question": "In the Haudenosaunee story, what catches Sky Woman as she falls?",
+    "choices": [
+      "A flock of water birds",
+      "A great turtle's shell",
+      "A cedar canoe",
+      "A council of elders"
+    ],
+    "correct_index": 0,
+    "explanation": "The water birds see her falling and catch her on their wings before lowering her to the water, where Turtle offers his back for her to stand on.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "north_america-q02",
+    "story_id": "north_america-01",
+    "question": "What does Muskrat bring up from beneath the water?",
+    "choices": [
+      "A pawful of mud",
+      "A burning brand",
+      "A seed of corn",
+      "A white shell"
+    ],
+    "correct_index": 0,
+    "explanation": "Muskrat dives last and returns with a pawful of mud, which Sky Woman spreads across the turtle's shell so that land can begin to grow.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "north_america-q03",
+    "story_id": "north_america-01",
+    "question": "Why do Haudenosaunee tellings call the land Turtle Island?",
+    "choices": [
+      "Because the earth rests on the turtle's back",
+      "Because turtles were the first people",
+      "Because the island is shaped like a shell",
+      "Because Turtle won a race with the water birds"
+    ],
+    "correct_index": 0,
+    "explanation": "The earth is placed on the turtle's shell and grows outward from it, so the land is named for the being who made room for it.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "north_america-q04",
+    "story_id": "north_america-01",
+    "question": "What is the Haudenosaunee Thanksgiving Address?",
+    "choices": [
+      "Words spoken before gatherings to greet and thank the living world",
+      "A written treaty among the six nations",
+      "A song performed only at burials",
+      "A list of the confederacy's chiefs"
+    ],
+    "correct_index": 0,
+    "explanation": "The address is recited at the opening of gatherings and greets the earth, waters, plants, animals, sun, moon and stars in turn; its wording varies by community.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "north_america-q05",
+    "story_id": "north_america-02",
+    "question": "In the Karuk story, who keeps the fire on a snowy mountain?",
+    "choices": [
+      "The Yellow Jacket sisters",
+      "Coyote's grandmother",
+      "A giant salmon",
+      "The water birds"
+    ],
+    "correct_index": 0,
+    "explanation": "The Yellow Jacket sisters guard the fire and refuse to share it, which is why Coyote decides to steal a burning brand from them.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "north_america-q06",
+    "story_id": "north_america-02",
+    "question": "What does Coyote offer the Yellow Jacket sisters if they close their eyes?",
+    "choices": [
+      "To make them beautiful",
+      "To bring them salmon",
+      "To build them a house",
+      "To sing them a song"
+    ],
+    "correct_index": 0,
+    "explanation": "Coyote flatters them with an offer to make them beautiful, and while their eyes are closed he marks them with coals and takes the fire.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "north_america-q07",
+    "story_id": "north_america-02",
+    "question": "How does the fire end up in a willow tree?",
+    "choices": [
+      "Frog hides it in his mouth and spits it into the willow",
+      "Eagle drops it into a willow thicket",
+      "Coyote throws it there in anger",
+      "The Yellow Jackets hide it there"
+    ],
+    "correct_index": 0,
+    "explanation": "After the animals pass the brand along in a relay, Frog takes it last, holds it in his mouth and spits it into a willow, where the fire is kept in the wood.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "north_america-q08",
+    "story_id": "north_america-03",
+    "question": "What does Raven become so that the chief's daughter swallows him?",
+    "choices": [
+      "A hemlock needle",
+      "A salmon egg",
+      "A white feather",
+      "A cedar seed"
+    ],
+    "correct_index": 0,
+    "explanation": "Raven makes himself small and becomes a hemlock needle floating in the water she is about to drink, so that he is swallowed and later born as her son.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "north_america-q09",
+    "story_id": "north_america-03",
+    "question": "In the Wrangell telling, what does the child cry for first?",
+    "choices": [
+      "The moon",
+      "The stars",
+      "The sun",
+      "A cedar box"
+    ],
+    "correct_index": 0,
+    "explanation": "In the version recorded at Wrangell, the boy cries for the moon and is given it, and only later cries for the box that holds the daylight.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "north_america-q10",
+    "story_id": "north_america-03",
+    "question": "Why are some Raven episodes not told publicly?",
+    "choices": [
+      "They belong to Tlingit clans and are restricted",
+      "They are too short to remember",
+      "They were invented by Swanton",
+      "They are Christian stories"
+    ],
+    "correct_index": 0,
+    "explanation": "The retelling notes that Raven stories belong to Tlingit clans and that not every episode is public.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "north_america-q11",
+    "story_id": "north_america-04",
+    "question": "What does White Buffalo Calf Woman bring to the Lakota?",
+    "choices": [
+      "The sacred pipe and seven ceremonies",
+      "A bundle of corn seed",
+      "A white horse",
+      "A medicine wheel"
+    ],
+    "correct_index": 0,
+    "explanation": "She carries the pipe, the chanunpa, and teaches the seven rites that shape Lakota prayer, kinship and healing.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "north_america-q12",
+    "story_id": "north_america-04",
+    "question": "What happens to the man who approaches White Buffalo Calf Woman with wrong intentions?",
+    "choices": [
+      "A cloud covers him and only his bones remain",
+      "He is turned into a buffalo",
+      "He is sent away unharmed",
+      "He becomes her husband"
+    ],
+    "correct_index": 0,
+    "explanation": "The man who approaches with disrespect is covered by a cloud, and when it lifts only his bones are left, while the man who comes with humility is spared.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "north_america-q13",
+    "story_id": "north_america-04",
+    "question": "What form does White Buffalo Calf Woman take when she leaves?",
+    "choices": [
+      "A white buffalo calf",
+      "A thunderbird",
+      "A coyote",
+      "A cedar tree"
+    ],
+    "correct_index": 0,
+    "explanation": "As she walks away she rolls on the earth and becomes a white buffalo calf.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "north_america-q14",
+    "story_id": "north_america-04",
+    "question": "Which of these is one of the seven rites she is said to have given?",
+    "choices": [
+      "The keeping of the soul",
+      "The potlatch",
+      "The green corn ceremony",
+      "The longhouse naming"
+    ],
+    "correct_index": 0,
+    "explanation": "The keeping of the soul is one of the seven Lakota rites she teaches, along with the sweat lodge, the vision quest, the Sun Dance and others.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "north_america-q15",
+    "story_id": "north_america-05",
+    "question": "Who is the father of Monster Slayer in Diné tradition?",
+    "choices": [
+      "The Sun",
+      "The Moon",
+      "Coyote",
+      "The Wind"
+    ],
+    "correct_index": 0,
+    "explanation": "Monster Slayer is the son of the Sun, while his twin, Born for Water, is the son of Water; together they go looking for their father.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "north_america-q16",
+    "story_id": "north_america-05",
+    "question": "Which ceremony is especially connected with Changing Woman and the twins?",
+    "choices": [
+      "The Blessingway",
+      "The potlatch",
+      "The Sun Dance",
+      "The longhouse naming"
+    ],
+    "correct_index": 0,
+    "explanation": "The Blessingway is the central Diné healing ceremony and keeps the world in hozho, while the Kinaaldá marks a girl's coming of age.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "north_america-q17",
+    "story_id": "north_america-05",
+    "question": "In Diné emergence accounts, how do the people come up into this world?",
+    "choices": [
+      "Through a hollow reed",
+      "On the back of a turtle",
+      "Across a rainbow bridge",
+      "By climbing a sacred mountain"
+    ],
+    "correct_index": 0,
+    "explanation": "The people climb up through four worlds and come into the Glittering World through a hollow reed, the world in which Changing Woman's story is set.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "north_america-q18",
+    "story_id": "north_america-06",
+    "question": "What does the Corn Mother ask the people to do with her body after she dies?",
+    "choices": [
+      "Drag it across the earth",
+      "Bury it under a rock",
+      "Burn it in a fire",
+      "Cast it into the river"
+    ],
+    "correct_index": 0,
+    "explanation": "She tells the people that after her death they must drag her body across the ground, and that food will come from her gift.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "north_america-q19",
+    "story_id": "north_america-06",
+    "question": "What grows where the Corn Mother's body touches the ground?",
+    "choices": [
+      "Corn, beans and squash",
+      "Wild rice",
+      "Salmon and eels",
+      "Tobacco and sage"
+    ],
+    "correct_index": 0,
+    "explanation": "Corn grows where she is dragged, and beans and squash with it, which is why Wabanaki people plant the three together in the river intervals.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "north_america-q20",
+    "story_id": "north_america-06",
+    "question": "Why does the story say the people must work for their food?",
+    "choices": [
+      "Because the gift of corn must be planted, tended and thanked",
+      "Because Gluskabe hid the seeds from them",
+      "Because the Corn Mother cursed the harvest",
+      "Because the animals stole the first crop"
+    ],
+    "correct_index": 0,
+    "explanation": "The gift is not free: the ground must be cleared, planted and weeded, and the story ties eating to work, memory and reciprocity.",
+    "difficulty": "medium",
+    "verified": false
+  }
+]

@@ -1,0 +1,69 @@
+{
+  "id": "north_america",
+  "name": "North American Indigenous",
+  "intro": "This pack presents six traditions from six distinct nations: the Haudenosaunee of the Great Lakes and St. Lawrence region, the Karuk of northwest California, the Tlingit of southeast Alaska, the Lakota of the northern Plains, the Diné of the Southwest, and the Penobscot of what is now Maine. These are living nations with their own governments, languages and protocols, not one generic culture, and their stories are not folklore in the dismissive sense. The retellings draw on oral tradition and on published records, including colonial-era collections that must be read with caution, and on Native scholars such as Vine Deloria Jr., Paula Gunn Allen and Robin Wall Kimmerer. Much knowledge is restricted. No retelling here is authoritative, and review by each nation's cultural teachers is required before publication.",
+  "timeline": [
+    {
+      "label": "Stories carried across generations",
+      "year_text": "time immemorial to the present",
+      "note": "The accounts in this pack are transmitted orally in specific languages and communities, and they have changed as they were told, without ever being invented in the modern sense."
+    },
+    {
+      "label": "The Haudenosaunee Confederacy is founded",
+      "year_text": "date debated; often placed between 1100 and 1500 CE",
+      "note": "The Great Law of Peace joins the five nations, later joined by the Tuscarora. Archaeology, oral tradition and colonial documents give different dates, and the confederacy's own account is authoritative for its members."
+    },
+    {
+      "label": "Contact, disease and missionisation",
+      "year_text": "1500s-1700s",
+      "note": "European contact brought epidemics that killed a large share of many nations, along with the fur trade, land loss and missionary pressure. Whole communities and languages disappeared."
+    },
+    {
+      "label": "Removal, reservations and boarding schools",
+      "year_text": "1830s-1930s",
+      "note": "The Indian Removal Act, the allotment of communal land and government boarding schools broke up land bases and families and punished languages and ceremonies. The effects are ongoing."
+    },
+    {
+      "label": "Collectors record the stories",
+      "year_text": "1880s-1930s",
+      "note": "Boas, Swanton, Matthews, Densmore and others wrote down stories under the unequal conditions of colonial research, in translations shaped by colonial ideas. Their books preserve much and distort much."
+    },
+    {
+      "label": "Sovereignty, revitalisation and review",
+      "year_text": "1934 to the present",
+      "note": "Tribal governments, language programmes and Native scholars have rebuilt institutions and asserted control over their own heritage. Repatriation, museum consultation and community review are now expected."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Haudenosaunee oral tradition and the Thanksgiving Address",
+      "note": "Creation accounts and the Ohen:ton Karihwatehkwen, the words spoken before gatherings, are carried orally in Mohawk, Oneida, Onondaga, Cayuga, Seneca and Tuscarora communities. Wording varies by nation and speaker, and the address is recited rather than fixed in a book."
+    },
+    {
+      "title": "Karuk oral tradition and Fire Race (1993)",
+      "note": "The Karuk fire story as retold by Jonathan London with the storyteller Lanny Pinola and an afterword by Julian Lang, a Karuk writer. It is a children's adaptation of one telling, not the definitive Karuk version; earlier Karuk texts were collected by J. P. Harrington in the 1920s and 1930s."
+    },
+    {
+      "title": "John R. Swanton, Tlingit Myths and Texts (1909)",
+      "note": "A Bureau of American Ethnology collection that records the Raven cycle as told at Wrangell and elsewhere. Swanton's transcriptions and translations were shaped by colonial assumptions, and Tlingit clans hold their own histories of these stories."
+    },
+    {
+      "title": "Lakota oral tradition; The Sacred Pipe (1953) and Teton Sioux Music (1918)",
+      "note": "Black Elk's account of the seven rites, edited by Joseph Epes Brown, and Frances Densmore's earlier collection are mediated texts. They are useful and widely cited, but they are not substitutes for Lakota teaching, and some knowledge is restricted."
+    },
+    {
+      "title": "Washington Matthews, Navaho Legends (1897), and Diné oral tradition",
+      "note": "Matthews, an army surgeon, published early English versions of Diné emergence and hero stories. Later Diné teachers and scholars have corrected and contextualised that work, and many ceremonial details remain private."
+    },
+    {
+      "title": "Wabanaki oral tradition; Frank G. Speck, Penobscot Man (1940)",
+      "note": "Speck's early twentieth-century ethnography records Penobscot stories and hunting practice. Penobscot and other Wabanaki nations now direct their own language and cultural work, and family tellings differ."
+    },
+    {
+      "title": "Vine Deloria Jr., God Is Red (1973); Paula Gunn Allen, The Sacred Hoop (1986); Robin Wall Kimmerer, Braiding Sweetgrass (2013)",
+      "note": "Modern Native scholars who write about sovereignty, land, gender and relationship with the living world. Deloria was Standing Rock Sioux, Allen was Laguna Pueblo and Kimmerer is Potawatomi; each speaks from a particular nation, not for all."
+    }
+  ],
+  "sensitivity": "high",
+  "verified": false
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "id": "siddhartha",
+    "name": "Siddhartha Gautama",
+    "role": "Prince of the Shakya clan, raised at Kapilavastu, who left the palace at twenty-nine and became the Buddha after years of seeking.",
+    "domain": ["renunciation", "the search for meaning", "royal lineage"],
+    "symbols": ["the palace walls", "the horse Kanthaka", "the bodhi tree"],
+    "fun_fact": "His clan name, Gautama, and his people, the Shakyas, are why he is often called Shakyamuni, the sage of the Shakyas.",
+    "verified": false
+  },
+  {
+    "id": "buddha",
+    "name": "The Buddha",
+    "role": "The awakened teacher whose life and teaching gave rise to the Buddhist tradition, honoured across Asia as Shakyamuni and as one buddha among many.",
+    "domain": ["awakening", "teaching", "compassion"],
+    "symbols": ["the bodhi tree", "the wheel of dharma", "the alms bowl"],
+    "fun_fact": "The title Buddha means awakened one, so it describes what he became rather than serving as a personal name.",
+    "verified": false
+  },
+  {
+    "id": "maya",
+    "name": "Maya",
+    "role": "Queen of the Shakya king Suddhodana and mother of the Buddha, remembered for her dream of the white elephant and her death a week after the birth.",
+    "domain": ["motherhood", "dreams and signs", "sacred birth"],
+    "symbols": ["white elephant", "sal tree branch", "Lumbini grove"],
+    "fun_fact": "She is said to have given birth while standing and holding a sal tree branch, a pose that became common in Asian sculpture.",
+    "verified": false
+  },
+  {
+    "id": "mara",
+    "name": "Mara",
+    "role": "The tempter who tries to stop the Buddha's awakening, described both as a lord of the desire realm and as the personified force of craving, fear and death.",
+    "domain": ["temptation", "fear", "death"],
+    "symbols": ["his armies", "his daughters", "the darkness before dawn"],
+    "fun_fact": "His name is linked to the word for death, and the Pali verses list his armies as inner states such as doubt, sloth and the hunger for praise.",
+    "verified": false
+  },
+  {
+    "id": "ananda",
+    "name": "Ananda",
+    "role": "The Buddha's cousin and longtime attendant, remembered for his memory and for reciting the discourses at the first council after the Buddha's death.",
+    "domain": ["memory", "service", "companionship"],
+    "symbols": ["the alms bowl", "the recited word"],
+    "fun_fact": "The suttas open with the words 'Thus have I heard', the formula through which Ananda's recitation of the teaching is remembered.",
+    "verified": false
+  },
+  {
+    "id": "angulimala",
+    "name": "Angulimala",
+    "role": "A murderer who became a monk after the Buddha confronted him on a forest road, and whose story tests what forgiveness can and cannot repair.",
+    "domain": ["violence and remorse", "transformation", "monastic life"],
+    "symbols": ["the garland of fingers", "the weapons laid down"],
+    "fun_fact": "His birth name was Ahimsaka, meaning harmless, a name the story deliberately sets against the man he later became.",
+    "verified": false
+  },
+  {
+    "id": "kisa_gotami",
+    "name": "Kisa Gotami",
+    "role": "A grieving mother in the Dhammapada commentary who carries her dead son through the city and learns from the mustard seed that loss is shared.",
+    "domain": ["grief", "loss", "insight"],
+    "symbols": ["mustard seed", "the child's body", "the open door"],
+    "fun_fact": "Her name means lean Gotami, and the mustard seed she was sent to find has become a byword for a grief that everyone carries.",
+    "verified": false
+  },
+  {
+    "id": "deer_king",
+    "name": "Nigrodha, the Banyan Deer",
+    "role": "The Bodhisatta in the Nigrodhamiga Jataka, a deer king who offers his own life so that a pregnant doe may live to give birth.",
+    "domain": ["compassion", "self-sacrifice", "kingship"],
+    "symbols": ["banyan tree", "antlers", "the place of slaughter"],
+    "fun_fact": "He is one of the Jataka births in which the Bodhisatta appears as an animal rather than as a human being.",
+    "verified": false
+  },
+  {
+    "id": "yasodhara",
+    "name": "Yasodhara",
+    "role": "Siddhartha's wife and the mother of Rahula, who is left sleeping in the palace on the night he departs and later becomes a nun.",
+    "domain": ["marriage", "endurance", "renunciation"],
+    "symbols": ["the sleeping child", "the palace chamber"],
+    "fun_fact": "Sanskrit sources also call her Gopa or Bimba, and later tradition tells of her own path to awakening after the Buddha left.",
+    "verified": false
+  },
+  {
+    "id": "rahula",
+    "name": "Rahula",
+    "role": "The son of Siddhartha and Yasodhara, born on the night of the departure, who was later ordained and became one of the Buddha's closest disciples.",
+    "domain": ["childhood", "discipleship", "family ties"],
+    "symbols": ["the newborn", "the begging bowl"],
+    "fun_fact": "His name means fetter, and the texts say his father spoke the word when he heard that a son had been born.",
+    "verified": false
+  }
+]

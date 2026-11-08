@@ -1,0 +1,138 @@
+[
+  {
+    "id": "north_america-01",
+    "title": "Sky Woman and Turtle Island",
+    "source_ref": "Haudenosaunee oral tradition; Mohawk telling by Kay Olan (Iroquois Museum, Learning Longhouse); J. N. B. Hewitt, Iroquoian Cosmology (1903, 1928)",
+    "paragraphs": [
+      "In the Haudenosaunee creation account, a woman of the Sky World falls through a hole beneath the Tree of Life. Below her there is only water. The water birds see her coming, and geese, herons or swans, depending on the telling, catch her on their wings and lower her onto the back of a great turtle.",
+      "She needs earth to live on, so the water animals dive. Otter, beaver and, in some tellings, Water Spider try and come back with nothing. Muskrat goes down last and stays so long that the others fear for him, but he surfaces at the turtle's side with a pawful of mud. Sky Woman spreads it across the shell.",
+      "Then she sings and dances, walking against the sun's direction, and the mud spreads outward. She plants the seeds she carried from the Sky World, and grass, trees and food plants grow. Some tellings say the earth grows from her dancing; others say the mud alone is enough. In time the first people live on Turtle Island.",
+      "Haudenosaunee nations tell the story in different ways, and the Thanksgiving Address, spoken before gatherings, greets the earth, waters, plants, animals, sun, moon and stars in turn. Story and address carry the same instruction: the land is a gift held in common, and people are its caretakers. This is living teaching, not a fixed text."
+    ],
+    "characters": [
+      "sky_woman",
+      "turtle",
+      "water_spider"
+    ],
+    "themes": [
+      "creation",
+      "gratitude",
+      "the land as a shared gift"
+    ],
+    "notes": "Haudenosaunee accounts vary by nation, family and speaker: the birds may be geese, herons or swans; the successful diver may be Muskrat, Otter, Beaver or, in some tellings, Water Spider; and some say the earth grew from Sky Woman's dancing. Many tellings continue past the earth's making to her daughter and her twin sons, one of whom brings good and one difficulty, but this retelling stops at the land's formation. Sky Woman is sometimes identified with Grandmother Moon. The Thanksgiving Address is recited, not written, and its full wording is not reproduced here.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "north_america-02",
+    "title": "Coyote Brings Fire",
+    "source_ref": "Karuk oral tradition, northwest California; Fire Race, retold by Jonathan London with Lanny Pinola and an afterword by Julian Lang (1993)",
+    "paragraphs": [
+      "The Karuk people live along the Klamath River and its tributaries in the mountains of northwest California. In their telling, fire belonged to the Yellow Jacket sisters, who kept it on a snowy mountain and would not share it. People ate their food raw and shivered at night. Coyote, the trickster who is always hungry and always scheming, decided to take it.",
+      "Coyote climbed the mountain and found the sisters beside their fire. He offered to make them beautiful if they closed their eyes, and they did. Instead he marked them with black coals and snatched a burning brand from the flames. The sisters chased him, furious, and Coyote ran down the mountain with the fire blazing in his hands.",
+      "He passed the brand to Eagle, Eagle to Mountain Lion, and so on through the animals, each runner carrying it a little farther before the Yellow Jackets caught up. Frog took it last, hid it in his mouth, and spat it into a willow tree. The fire seemed lost until Coyote showed the people how to coax it out by rubbing willow sticks together.",
+      "Karuk tellings differ, and this retelling follows the version published in Fire Race, a children's book retold by Jonathan London with the storyteller Lanny Pinola and an afterword by Julian Lang of the Karuk tribe. The story holds a gift and a theft together: Coyote does not become noble, and people still must gather wood and tend the flame."
+    ],
+    "characters": [
+      "coyote"
+    ],
+    "themes": [
+      "fire and survival",
+      "trickery",
+      "a theft that becomes a gift"
+    ],
+    "notes": "Karuk fire stories differ between families and speakers, and published versions are adaptations. Fire Race (1993) was retold by a non-Karuk writer working with the Pomo and Miwok storyteller Lanny Pinola, with an afterword by Julian Lang, a Karuk writer; it is one telling, not the Karuk text. Some tellings name different owners of the fire and different relay runners, and some end with the fire hidden in wood rather than in a willow. The story is a gift narrative about how a people received fire, not a technical account of fire-making.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "north_america-03",
+    "title": "Raven and the Light",
+    "source_ref": "Tlingit oral tradition, southeast Alaska; the Raven accounts recorded at Wrangell in John R. Swanton, Tlingit Myths and Texts (1909)",
+    "paragraphs": [
+      "The Tlingit homeland is the coast and islands of southeast Alaska and the Yukon, a country of fjords, salmon streams and cedar. In the Tlingit account the world was dark at first. At the head of the Nass River lived Raven-at-the-head-of-Nass, a great being who kept the sun, moon, stars and daylight in his house and kept them for himself.",
+      "Raven wanted the light. He made himself small, became a hemlock needle and floated in the water the chief's daughter was about to drink. She swallowed it and in time gave birth to a son. The grandfather doted on the child, who was Raven in another shape, and let him play with everything in the house.",
+      "The boy cried for the moon, and his grandfather gave it to him; Raven threw it into the sky and let it go. Then the boy cried for the box that held the daylight, and cried until he seemed sick. The chief gave him the last thing he had. Raven opened the box at the river mouth and light poured over the world.",
+      "Tlingit stories make Raven a trickster, not a hero to imitate: he is greedy, curious, funny and generous in the same breath, and he taught people crafts, rules and tricks alike. The Wrangell telling recorded by John Swanton in 1909 has the moon first and daylight second; others give the stars first. Raven's stories belong to Tlingit clans, and not every episode is told publicly."
+    ],
+    "characters": [
+      "raven"
+    ],
+    "themes": [
+      "light",
+      "trickery",
+      "curiosity and consequence"
+    ],
+    "notes": "Tlingit Raven stories are owned by clans, told in longer cycles, and Raven is a trickster rather than a moral exemplar. The Wrangell version in Swanton (1909) has the moon released first and the box of daylight second, with the stars among the things kept in the chief's house; other tellings release stars, moon and sun in different orders and may name the owner differently. Raven's smoke-blackened feathers are explained in more than one episode. Swanton's early translation is a colonial-era document and should be read with that history in mind.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "north_america-04",
+    "title": "The White Buffalo Calf Woman",
+    "source_ref": "Lakota oral tradition; Black Elk as told to Joseph Epes Brown, The Sacred Pipe (1953); Frances Densmore, Teton Sioux Music (1918)",
+    "paragraphs": [
+      "The Lakota live on the northern Great Plains, in what is now South Dakota, North Dakota, Nebraska and Montana. In their sacred account, two men were away from camp when a woman appeared, dressed in white buckskin and carrying a bundle. One man approached with disrespect in his heart; a cloud covered him, and when it lifted only his bones remained. The other came with humility.",
+      "The woman came to the people and opened her bundle. It held the pipe, the chanunpa, with a bowl of red pipestone and a wooden stem, and she taught that it was a gift from the sacred powers and a way for people to pray. She instructed them in how to live, how to treat one another, and how to send their voices to Wakan Tanka.",
+      "She gave the people seven ceremonies: the sweat lodge, the vision quest, the Sun Dance, the making of relatives, the girls' puberty rite, the throwing of the ball, and the keeping of the soul. These rites are for healing, for kinship and for remembering the sacred. How they are conducted belongs to Lakota teachers, and this retelling does not describe it.",
+      "When her teaching was done she walked away, and as she went she rolled on the earth and became a white buffalo calf. She promised to return. The pipe and the ceremonies remained, kept by Lakota people through missionisation, land loss and the outlawing of ceremonies, and they are living practice today. The story is not a curiosity, and no retelling replaces a Lakota elder's teaching."
+    ],
+    "characters": [
+      "white_buffalo_calf_woman"
+    ],
+    "themes": [
+      "sacred gift",
+      "prayer and ceremony",
+      "a living promise"
+    ],
+    "notes": "Lakota accounts of White Buffalo Calf Woman differ, and some knowledge is restricted. The seven rites are named here, but their protocols, songs and instructions are not described and should be learned from Lakota teachers. Black Elk's account reached print through Joseph Epes Brown's editing, so readers should treat it as a mediated text. The pipe is living practice rather than an artifact, and its handling, including photographs and reproductions, is governed by Lakota protocol. This retelling leaves out detail that is not publicly shared.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "north_america-05",
+    "title": "Changing Woman and the Hero Twins",
+    "source_ref": "Diné oral tradition; Washington Matthews, Navaho Legends (1897); Blessingway accounts and later Diné teaching",
+    "paragraphs": [
+      "The Diné, or Navajo, live in the Four Corners region of the Southwest, a dry land of mesas, canyons and desert. Their emergence accounts tell how the people climbed up through four worlds and came into this one, the Glittering World, through a hollow reed. Changing Woman, Asdzaa Nadleehe, was found as an infant and raised by First Man and First Woman.",
+      "She grew to womanhood quickly. She was visited by the Sun, and by Water, and she bore twin sons: Monster Slayer, whose father was the Sun, and Born for Water, whose father was Water. The boys grew fast and asked who their father was. She told them, and they set out to find the Sun and ask for his help.",
+      "The Sun tested them before he acknowledged them, then gave them weapons: lightning arrows, a bow of rain, and knowledge of the monsters' ways. The twins went after the giants and predators that were killing the people, and one by one they ended them. Some tellings say a few dangers were left, because the world needs limits, change and death.",
+      "The story is not only about fighting. Changing Woman is honoured in the Kinaaldá, the coming-of-age ceremony for girls, and the Blessingway, the central healing ceremony, keeps the world in hozho, beauty and balance. Diné teachers decide which parts of these accounts may be shared; many chants, prayers and sandpainting details are not public, and this retelling leaves them out."
+    ],
+    "characters": [
+      "changing_woman",
+      "monster_slayer"
+    ],
+    "themes": [
+      "healing",
+      "protection",
+      "balance"
+    ],
+    "notes": "Diné accounts differ by community and by ceremonial context. The emergence, Changing Woman's birth and the twins' fathers are told in more than one way: some say she was found on Gobernador Knob, some name different fathers, and some place the monster-slaying differently in the story. Many chants, sandpaintings and prayers are restricted and are not reproduced here. Kinaaldá and the Blessingway are living ceremonies rather than illustrations, and Diné teachers decide what may be published.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "north_america-06",
+    "title": "Gluskabe and the Corn Mother",
+    "source_ref": "Penobscot and wider Wabanaki oral tradition; Frank G. Speck, Penobscot Man (1940); Joseph Bruchac's Abenaki retellings",
+    "paragraphs": [
+      "The Penobscot Nation lives along the Penobscot River in what is now Maine, a country of spruce forest, rivers and tidal coast. Their culture hero Gluskabe travelled the land making it ready for people, and in the old accounts he is clever, strong and often too sure of himself. The Wabanaki peoples tell many Gluskabe stories, and the Penobscot tell their own.",
+      "In the story of corn, a woman lived with the people, and she is called the Corn Mother. She told them that when she died they must drag her body across the earth, and that food would come from her. She died, and the people did as she asked, grieving. Where her body touched the ground, corn grew, and beans and squash with it.",
+      "That is why the Penobscot planted the three together in the river intervals, the corn standing tall, the beans climbing its stalks and the squash shading the ground. Gluskabe, in the tellings that include him, learns that the gift is not free: the ground must be cleared, planted, weeded and thanked. The story ties eating to work, memory and reciprocity.",
+      "Wabanaki tellings differ. Some make the Corn Mother Gluskabe's grandmother, some a woman of the village, and some leave Gluskabe out altogether. Some say the people dragged her body too far or handled it carelessly, which is why corn now demands labour. The story is told with grief and gratitude rather than horror, and many Wabanaki people speak of corn as a relative."
+    ],
+    "characters": [
+      "gluskabe",
+      "corn_mother"
+    ],
+    "themes": [
+      "sacrifice and food",
+      "reciprocity",
+      "agriculture"
+    ],
+    "notes": "Wabanaki corn stories vary by nation and family. Some tellings make the Corn Mother Gluskabe's grandmother, some a village woman, and some do not include him; some describe her death as a willing gift, others as a killing that the people regret. Details of planting, harvest and thanks-giving differ between Penobscot, Abenaki and Mi'kmaq communities. This retelling follows the Penobscot pattern, does not describe ceremony, and does not claim to be the only version.",
+    "uncertain": true,
+    "verified": false
+  }
+]

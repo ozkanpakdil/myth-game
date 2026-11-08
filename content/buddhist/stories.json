@@ -1,0 +1,95 @@
+[
+  {
+    "id": "buddhist-01",
+    "title": "The Birth of the Buddha",
+    "source_ref": "Buddhacarita 1-2; Acchariyabbhutadhamma Sutta (MN 123); Nalaka Sutta (Sn 3.11); Lalitavistara",
+    "paragraphs": [
+      "Queen Maya, wife of King Suddhodana of the Shakya clan, dreamed one night that a white elephant entered her side. The Pali canon remembers the conception more sparely, as a being descending into her womb, while the Buddhacarita and other Sanskrit accounts dwell on the dream and the court's wonder. Maya carried the child for ten months and then set out for her family home to give birth.",
+      "On the way she stopped at the Lumbini grove and gave birth standing, holding a branch of a sal tree. One canonical discourse adds that the newborn took seven steps and announced that he was foremost in the world, while the plainest early references say far less. Seven days after the birth Maya died and was reborn in the Tusita heaven, and her sister Mahapajapati raised the boy.",
+      "A seer named Asita came to the palace, saw the infant and wept, because he knew he would not live to hear the teaching. At the naming ceremony the brahmins read the marks on the child's body and gave two answers: he would become a universal ruler, or he would leave the world and awaken. The king, wanting an heir, tried to hear only the first.",
+      "Dates are debated. Sri Lankan tradition long placed the birth around 623 BCE, while most modern scholars put the Buddha in the fifth century BCE, and some East Asian traditions place him many centuries earlier. The story itself was shaped over centuries, from short notices in the canon to the ornate biographies of the Buddhacarita and the Lalitavistara."
+    ],
+    "characters": ["maya", "siddhartha"],
+    "themes": ["birth and prophecy", "sacred landscape", "the making of a life story"],
+    "notes": "The white elephant dream is absent from the earliest Pali notice of the conception and is developed in Sanskrit biographies such as the Buddhacarita and the Lalitavistara. The seven steps appear in the Pali canon (MN 123) but not in the plainest early references, and the reading of the marks and the court's wish to keep the prince at home belong to later hagiography. Dates vary widely: Sri Lankan tradition places the birth around 623 BCE, modern scholarship around the fifth century BCE, and some East Asian traditions earlier still.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "buddhist-02",
+    "title": "The Four Sights",
+    "source_ref": "Buddhacarita 3-5; Nidanakatha (Jataka commentary); Ariyapariyesana Sutta (MN 26)",
+    "paragraphs": [
+      "The boy grew up in the palaces of Kapilavastu, and the court kept old age, sickness and death at a distance. He married Yasodhara, and their son Rahula was born. Then, on chariot rides beyond the walls, he met an old man, a sick man and a funeral procession. Each time he asked his charioteer Channa whether this would come to him too, and the answer was always yes.",
+      "The fourth sight was a wandering ascetic, calm and outwardly at peace. The contrast was the point: the first three showed what could not be escaped, and the fourth showed a way of living with that knowledge. The Buddhacarita turns the rides into a meditation on impermanence, and the prince returns to a palace that no longer feels like shelter.",
+      "That night he could not rest. Rahula had just been born, and the household was celebrating, but Siddhartha felt the birth as a new bond tying him to a life he could no longer accept. He looked at his sleeping wife and child, and left without waking them, riding the horse Kanthaka with Channa beside him.",
+      "At the river Anoma he cut off his hair, sent the horse and his ornaments back with Channa, and exchanged his fine clothes for a hunter's robe. Tradition says he was twenty-nine. What follows is not a rejection of his family but a wager: that there might be a way out of suffering, and that he had to find it for himself."
+    ],
+    "characters": ["siddhartha", "yasodhara", "rahula"],
+    "themes": ["impermanence", "renunciation", "the search for meaning"],
+    "uncertain": false,
+    "verified": false
+  },
+  {
+    "id": "buddhist-03",
+    "title": "Mara and the Enlightenment",
+    "source_ref": "Padhana Sutta (Sn 3.2); Ariyapariyesana Sutta (MN 26); Buddhacarita 13-14",
+    "paragraphs": [
+      "Siddhartha sat beneath a bodhi tree at Uruvela, the place later called Bodh Gaya, with one resolve: not to rise until he had found what he was looking for. Mara came as the tempter, the power of craving, fear and death. Buddhist tradition knows him both as a being, a lord of the desire realm, and as the force inside a mind that would rather turn away.",
+      "Mara's armies are named in the Pali verses: sensual desire, discontent, hunger and thirst, craving, sloth, fear, doubt, and the hunger for praise. His daughters, Craving and Aversion among them, came first with beauty and then with mockery. The texts treat none of this as a joke; the assault is the mind's own resistance, given a face and an army.",
+      "Mara challenged his right to sit there, claiming the seat for himself. The prince touched the earth with his right hand and called it to witness the generosity of his past lives, and the earth answered. That earth-touching gesture became one of the most common images of the Buddha in Asian art.",
+      "In the three watches of the night he remembered his past lives, saw beings pass away and reappear according to their deeds, and finally understood the taints and the four noble truths. At dawn he was awake. Mara returned later, but the texts record a quiet reply: the Buddha knew him, and Mara withdrew."
+    ],
+    "characters": ["siddhartha", "mara"],
+    "themes": ["temptation and resistance", "awakening", "the inner life as a battlefield"],
+    "uncertain": false,
+    "verified": false
+  },
+  {
+    "id": "buddhist-04",
+    "title": "The Deer King",
+    "source_ref": "Nigrodhamiga Jataka (Jataka 12), with its Pali commentary",
+    "paragraphs": [
+      "In the Jataka collection, the stories of the Buddha's past lives, one tale is set in the deer parks near Benares. The Bodhisatta was born as Nigrodha, the banyan deer, king of five hundred deer. A neighbouring herd followed Sakha, the branch deer, and each day one animal from the herds was taken to the king's kitchen.",
+      "One day the lot fell to a pregnant doe in Sakha's herd. She begged to be spared until her fawn was born, but Sakha refused, so she went to Nigrodha instead. He told her to go back and rest, then walked to the palace gate and lay down in the place of slaughter.",
+      "The cook saw the great deer and ran to tell the king, who came himself. Nigrodha explained what had happened, and the king asked why he had offered a life that was not required of him. The deer answered that the doe carried two lives, hers and her fawn's, and that a king should weigh what a life given freely is worth.",
+      "The king of Benares was moved, and he granted safety not only to the deer but to all living things. The Jataka survives in many versions, in Pali, Chinese, Tibetan and Southeast Asian recensions, and the details of the bargain vary. It is an animal story with a moral edge, told to show a generosity that does not count the cost."
+    ],
+    "characters": ["deer_king"],
+    "themes": ["compassion", "self-sacrifice", "the moral force of an example"],
+    "notes": "The Nigrodhamiga Jataka is told in many versions, and the number of deer, the name of the rival herd's leader and the exact bargain differ between them. The Jataka is a didactic animal story rather than a historical record, and the commentary frames it as one of the Buddha's past lives.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "buddhist-05",
+    "title": "Angulimala",
+    "source_ref": "Angulimala Sutta (MN 86); Theragatha, verses of Angulimala",
+    "paragraphs": [
+      "Angulimala was born Ahimsaka, 'the harmless one', in a brahmin family near Savatthi. Sent to study in Takkasila, he was turned against by jealous students and told that his teacher's fee was a thousand fingers. He took them and wore the fingers as a garland. The texts give the number plainly, without dwelling on the killings.",
+      "The Buddha met him on a forest road that the king's soldiers and the villagers avoided. Angulimala ran after him and found that he could not close the distance. 'Stop, recluse,' he called, and the Buddha answered that he had stopped, and that Angulimala had not. The bandit threw down his weapons and asked to be received as a monk.",
+      "King Pasenadi came with his army to hunt the murderer and found him instead sitting among the monks, shaved and robed. The king was frightened, then uncertain, and the Buddha said simply that the man had stopped. Angulimala's old name was known across the city, and the sutta does not pretend that this made forgiveness easy.",
+      "When he went for alms, people threw stones and clods at him, and he returned with a cut head and a torn robe. The Buddha told him to endure it, since he was living out the fruit of what he had done. The discourse opens with 'Thus have I heard', the formula through which Ananda's recitation is remembered, and later tradition says a mob killed him."
+    ],
+    "characters": ["buddha", "angulimala", "ananda"],
+    "themes": ["violence and remorse", "the possibility of change", "the limits of forgiveness"],
+    "uncertain": false,
+    "verified": false
+  },
+  {
+    "id": "buddhist-06",
+    "title": "Kisa Gotami and the Mustard Seed",
+    "source_ref": "Kisa Gotami Vatthu, Dhammapada Commentary (Dhp-a)",
+    "paragraphs": [
+      "Kisa Gotami was a poor woman who married into a wealthy household in Savatthi. When her young son died, she carried his body through the streets and asked everyone she met for medicine. People thought grief had unhinged her, and some turned away. One man, seeing her, told her that the Buddha might have what she was looking for.",
+      "She went to Jetavana and asked him to cure her child. The Buddha did not argue with her. He said he could help if she brought him a handful of mustard seed from a house where no one had ever died. She set off with hope, certain that such a house must exist.",
+      "At every door she asked the same question. Each household gave the seed, and each had lost someone: a father, a husband, a child, a servant. Some had lost many. By evening she understood that the medicine she sought did not exist, and that she was not the only person carrying a dead child through the world.",
+      "She laid the body down, returned to the Buddha, and heard him speak about grief without telling her to stop feeling it. She was ordained as a nun and, the tradition says, became an arahant. The story survives in the Dhammapada commentary rather than in the early discourses, and versions differ on what she said when she understood."
+    ],
+    "characters": ["buddha", "kisa_gotami"],
+    "themes": ["grief", "shared mortality", "teaching through experience"],
+    "notes": "The story is preserved in the Dhammapada commentary, a fifth-century CE compilation, rather than in the early Pali discourses, though it may draw on older material. Versions differ over whether the Buddha asks for the mustard seed directly, what Kisa Gotami says when she understands, and how her ordination is described.",
+    "uncertain": true,
+    "verified": false
+  }
+]

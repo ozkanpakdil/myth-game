@@ -1,0 +1,69 @@
+{
+  "id": "aboriginal",
+  "name": "Aboriginal Australian",
+  "intro": "Aboriginal Australian traditions are among the oldest continuing cultures on the continent, and they are not one tradition. Hundreds of nations hold their own languages, laws, stories and Country, and a story belongs to the people whose land it comes from. This pack retells six stories from named nations: Kuninjku and Kunwinjku country in western Arnhem Land, Warlpiri and Pitjantjatjara country in the Western Desert, Wiradjuri and Kamilaroi country in New South Wales, the Kimberley, south-eastern Australia, and Euahlayi country. It draws on published accounts and names them. Much knowledge is sacred or restricted and is not reproduced here, and the older word 'Dreamtime' is avoided because it turns a living order into a distant past. These are respectful summaries, not community-authorised versions, and community review is required.",
+  "timeline": [
+    {
+      "label": "Rock art, song and ceremony",
+      "year_text": "from tens of thousands of years ago",
+      "note": "Engraved and painted images in Arnhem Land and the Kimberley are among the oldest surviving records of story and law, though their dates are still debated."
+    },
+    {
+      "label": "Stories carried across Country",
+      "year_text": "for millennia",
+      "note": "Law, song, dance and painting pass knowledge on without writing, and the routes of Ancestral journeys are still performed and repainted."
+    },
+    {
+      "label": "Colonists begin writing the stories down",
+      "year_text": "1840s–1900s",
+      "note": "Settlers, missionaries and anthropologists record stories in English, often reshaping them; their work is both a source and a warning."
+    },
+    {
+      "label": "'Bunyip' enters English",
+      "year_text": "1845",
+      "note": "The Geelong Advertiser prints a description of a bunyip, and the word spreads through newspapers across the south-east."
+    },
+    {
+      "label": "Songlines enter national collections",
+      "year_text": "1970s–2017",
+      "note": "Aboriginal artists and custodians bring songlines and rock art into galleries and museums, including Songlines: Tracking the Seven Sisters (2017)."
+    },
+    {
+      "label": "Community control and review",
+      "year_text": "present day",
+      "note": "Land councils, art centres and community archives decide how stories and images may be used, and review of projects like this one is required."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Kuninjku public accounts of Ngalyod, Maningrida Arts & Culture and NGV Art Journal 57",
+      "note": "An Aboriginal art centre and a national gallery essay recording how Kuninjku people describe Ngalyod as a living creator, with the limits on what may be published."
+    },
+    {
+      "title": "National Museum of Australia, Songlines: Tracking the Seven Sisters (2017)",
+      "note": "An exhibition and book developed with Warlpiri, Ngaanyatjarra, Pitjantjatjara and Yankunytjatjara custodians, following the Seven Sisters songline across the desert."
+    },
+    {
+      "title": "NPY Women's Council, Kungkarangkalpa: the Seven Sisters Songline",
+      "note": "An Anangu women's organisation that has supported public performance and exhibition of Kungkarangkalpa while keeping authority with its custodians."
+    },
+    {
+      "title": "Rev. William Ridley, Kamilaroi and Other Australian Languages (1875), and A. W. Howitt, The Native Tribes of South-East Australia (1904)",
+      "note": "Colonial-era records of Baiame and other south-eastern creator figures. They preserve detail but were shaped by Christian and anthropological assumptions, and must be read with care."
+    },
+    {
+      "title": "K. Langloh Parker, Australian Legendary Tales (1896) and The Euahlayi Tribe (1905)",
+      "note": "Parker lived among the Euahlayi and recorded many stories, including the emu and the crows. Her collections are a colonial-era record, edited for a British readership and not a community publication."
+    },
+    {
+      "title": "Valda Blundell and Donny Woolagoodja, Keeping the Wanjinas Fresh (2005), with David Mowaljarlai",
+      "note": "A Worrorra-led account of the Wandjina, their creative journeys and the duty of repainting, written with a senior Kimberley knowledge holder and the Mowanjum community."
+    },
+    {
+      "title": "Robert Holden, Bunyips (2001), and R. Brough Smyth, The Aborigines of Victoria (1878)",
+      "note": "Studies of the bunyip across south-eastern Australia. Holden documents at least nine regional variants, and Smyth's early collection shows colonial writers struggling to describe the being."
+    }
+  ],
+  "sensitivity": "high",
+  "verified": false
+}

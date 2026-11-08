@@ -216,7 +216,7 @@
     "start_year": -500,
     "end_year": 2026,
     "summary": "Jataka tales tell of the Buddha's previous lives, often as an animal, and teach generosity, patience and insight through story.",
-    "mvp": false,
+    "mvp": true,
     "sensitivity": "medium",
     "verified": false
   },
@@ -268,7 +268,7 @@
     "start_year": -500,
     "end_year": 2026,
     "summary": "Tibetan sacred traditions blend Bon and Buddhist cosmology, with mountain deities, sky beings and elaborate stories of liberation.",
-    "mvp": false,
+    "mvp": true,
     "sensitivity": "high",
     "verified": false
   },
@@ -281,7 +281,7 @@
     "start_year": -500,
     "end_year": 1500,
     "summary": "Peoples of the steppe honoured Tengri, the eternal blue sky, and passed down long heroic epics about Manas, Alpamysh and other champions.",
-    "mvp": false,
+    "mvp": true,
     "sensitivity": "medium",
     "verified": false
   },
@@ -294,7 +294,7 @@
     "start_year": -500,
     "end_year": 2026,
     "summary": "The region's traditions weave local spirits and ancestors with Hindu and Buddhist epics, from the Ramayana of Java to the naga legends of the Mekong.",
-    "mvp": false,
+    "mvp": true,
     "sensitivity": "medium",
     "verified": false
   },
@@ -307,7 +307,7 @@
     "start_year": -2000,
     "end_year": 2026,
     "summary": "Arctic and Siberian peoples tell of a creator or sky being, of the raven and the loon, and of shamans who journey to other worlds.",
-    "mvp": false,
+    "mvp": true,
     "sensitivity": "medium",
     "verified": false
   },
@@ -320,7 +320,7 @@
     "start_year": -1000,
     "end_year": 2026,
     "summary": "Yoruba sacred tradition tells of Olodumare and the orisha, including Ọ̀rúnmìlà, Obatala, Ogun and Èṣù, and of the divination system Ifá.",
-    "mvp": false,
+    "mvp": true,
     "sensitivity": "high",
     "verified": false
   },
@@ -411,7 +411,7 @@
     "start_year": -3000,
     "end_year": 2026,
     "summary": "Hundreds of distinct Indigenous nations keep their own sacred stories and histories; this game lists the category only, and does not speak for any nation.",
-    "mvp": false,
+    "mvp": true,
     "sensitivity": "high",
     "verified": false
   },
@@ -424,7 +424,7 @@
     "start_year": -1000,
     "end_year": 2026,
     "summary": "Amazonian and Caribbean peoples tell of creator beings, animal ancestors and spirits of river and forest, in many distinct traditions.",
-    "mvp": false,
+    "mvp": true,
     "sensitivity": "high",
     "verified": false
   },
@@ -450,7 +450,7 @@
     "start_year": -60000,
     "end_year": 2026,
     "summary": "Aboriginal Australian traditions hold the Dreaming as a continuing creative order; stories belong to specific peoples and countries and carry law and ceremony.",
-    "mvp": false,
+    "mvp": true,
     "sensitivity": "high",
     "verified": false
   }

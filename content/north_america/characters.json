@@ -1,0 +1,92 @@
+[
+  {
+    "id": "sky_woman",
+    "name": "Sky Woman",
+    "role": "The woman who falls from the Sky World in Haudenosaunee creation accounts and becomes the first woman on the earth.",
+    "domain": ["creation", "gratitude", "the sky world"],
+    "symbols": ["seeds of the Tree of Life", "Grandmother Moon"],
+    "fun_fact": "In a Mohawk telling, her head is placed in the night sky and she becomes Grandmother Moon, who keeps time and watches over the waters.",
+    "verified": false
+  },
+  {
+    "id": "turtle",
+    "name": "Turtle",
+    "role": "The great turtle who offers his back as a place for the earth to grow, giving the land its Haudenosaunee name, Turtle Island.",
+    "domain": ["the earth", "patience", "support"],
+    "symbols": ["shell", "the thirteen moons"],
+    "fun_fact": "Haudenosaunee teachers often point to the thirteen plates of a turtle's shell as a reminder of the thirteen moons of the year.",
+    "verified": false
+  },
+  {
+    "id": "water_spider",
+    "name": "Water Spider",
+    "role": "A small water being named among the divers in some Haudenosaunee creation tellings.",
+    "domain": ["water", "persistence", "smallness"],
+    "symbols": ["the shallows", "a thread of web"],
+    "fun_fact": "Different tellers name different divers, and Water Spider appears in some accounts of the earth's making while Muskrat takes that role in others.",
+    "verified": false
+  },
+  {
+    "id": "coyote",
+    "name": "Coyote",
+    "role": "The Karuk trickster and culture hero who steals fire from the Yellow Jacket sisters and gives it to the people.",
+    "domain": ["fire", "cunning", "survival"],
+    "symbols": ["burning brand", "willow stick"],
+    "fun_fact": "Coyote wins the fire by flattery, then marks the Yellow Jacket sisters with black coals, which is why yellow jackets are banded black and yellow.",
+    "verified": false
+  },
+  {
+    "id": "raven",
+    "name": "Raven",
+    "role": "The Tlingit trickster and transformer who steals the light from the chief at the head of the Nass River.",
+    "domain": ["light", "trickery", "teaching"],
+    "symbols": ["hemlock needle", "box of daylight"],
+    "fun_fact": "Raven is said to have been white until he was held in a smoke hole, and he is credited with teaching the Tlingit everything from canoe-making to halibut hooks.",
+    "verified": false
+  },
+  {
+    "id": "white_buffalo_calf_woman",
+    "name": "White Buffalo Calf Woman",
+    "role": "The Lakota sacred woman who brings the pipe and the seven ceremonies and promises to return.",
+    "domain": ["prayer", "ceremony", "the sacred"],
+    "symbols": ["white buckskin", "the chanunpa", "white buffalo calf"],
+    "fun_fact": "Her Lakota name is Ptesan Win, and her departure is told as a promise: she will come again, and white buffalo calves are watched for as signs.",
+    "verified": false
+  },
+  {
+    "id": "changing_woman",
+    "name": "Changing Woman",
+    "role": "The Diné woman of the seasons, mother of the Hero Twins, honoured in the Kinaaldá and the Blessingway.",
+    "domain": ["seasons", "fertility", "healing"],
+    "symbols": ["corn", "the sun", "rainbow"],
+    "fun_fact": "Her Diné name, Asdzaa Nadleehe, means something like the woman who changes, and she is said to grow young again with each spring.",
+    "verified": false
+  },
+  {
+    "id": "monster_slayer",
+    "name": "Monster Slayer",
+    "role": "The elder Diné Hero Twin, son of the Sun, who clears the monsters from the world.",
+    "domain": ["protection", "courage", "lightning"],
+    "symbols": ["lightning arrow", "bow of rain"],
+    "fun_fact": "He is Naayee' Neizghani, and his brother Born for Water travels with him to find their father, the Sun, who tests them before giving them weapons.",
+    "verified": false
+  },
+  {
+    "id": "corn_mother",
+    "name": "Corn Mother",
+    "role": "The woman in Wabanaki tradition whose body becomes the first corn, beans and squash.",
+    "domain": ["food", "gift", "agriculture"],
+    "symbols": ["corn", "beans and squash", "seed corn"],
+    "fun_fact": "In Penobscot tellings the first corn grows where her body touches the earth, and the people are told to work the ground and give thanks for it.",
+    "verified": false
+  },
+  {
+    "id": "gluskabe",
+    "name": "Gluskabe",
+    "role": "The Wabanaki culture hero who travels the land making it ready for people and teaches them how to live.",
+    "domain": ["teaching", "transformation", "protection"],
+    "symbols": ["stone canoe", "bow"],
+    "fun_fact": "Stories about Gluskabe are told across Wabanaki nations under different names, and he is often shown as clever, strong and a little too pleased with himself.",
+    "verified": false
+  }
+]

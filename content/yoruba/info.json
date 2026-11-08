@@ -1,0 +1,70 @@
+{
+  "id": "yoruba",
+  "name": "Yoruba / Orisha",
+  "intro": "Yoruba religion is a living tradition of south-western Nigeria, Benin and Togo, with communities across the Atlantic world. Its stories are told in Yoruba and in many diasporic languages, and they are still recited at shrines, festivals and family gatherings. Olodumare, the supreme being, is distinguished from the orisha, the divine beings who serve and express that power. Ifá, the divination corpus performed by babalawos, preserves many creation accounts and much of the tradition's wisdom. This pack draws on Yoruba oral tradition, the Ifá literary corpus and modern scholarship, and it retells only material that is publicly discussed. It cannot represent every lineage and does not disclose restricted knowledge. The stories vary by town, family and priest, and no retelling here is authoritative. Community and ritual review is required before publication.",
+  "timeline": [
+    {
+      "label": "Ifá and orisha traditions take shape",
+      "year_text": "centuries before 1800 CE",
+      "note": "Shrines, praise poetry and divination systems develop across the Yoruba region, with Ile-Ife, Oyo and other centres each claiming ancient authority."
+    },
+    {
+      "label": "Oyo becomes a major kingdom",
+      "year_text": "roughly 1300-1800 CE",
+      "note": "The Alaafin's court gives the Sango traditions their royal setting, and Oyo becomes a powerful political and military force in the region."
+    },
+    {
+      "label": "Yoruba religion crosses the Atlantic",
+      "year_text": "1600s-1800s",
+      "note": "Captives carried Yoruba practice to Cuba, Brazil and elsewhere, where the orisha were honoured under new conditions and sometimes identified with Catholic saints."
+    },
+    {
+      "label": "Missions and colonial rule",
+      "year_text": "1840s-1960",
+      "note": "Christian missions and colonial administration reshape religious life, and Eshu is sometimes translated as the devil, a rendering that many scholars and devotees reject."
+    },
+    {
+      "label": "Ifá texts are recorded and studied",
+      "year_text": "mid-1900s onwards",
+      "note": "Scholars such as Wande Abimbola and J. O. Awolalu publish transcriptions and studies, while babalawos continue to transmit the odu through apprenticeship."
+    },
+    {
+      "label": "Festivals and heritage recognition",
+      "year_text": "1990s-present",
+      "note": "The Osun-Osogbo grove is inscribed as a World Heritage site in 2005, and festivals at Osogbo and Oyo draw pilgrims, scholars and visitors."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ifá literary corpus (Odu Ifá)",
+      "note": "An oral corpus of 256 odu, performed by babalawos in divination and containing stories, proverbs and prescriptions. It is not a single fixed book, and parts of it are restricted."
+    },
+    {
+      "title": "Yoruba oral tradition",
+      "note": "Praise poetry (oriki), festival performance, lineage accounts and family storytelling, which vary by town and by the community that keeps them."
+    },
+    {
+      "title": "Wande Abimbola, Ifá: An Exposition of Ifá Literary Corpus",
+      "note": "A foundational study of Ifá by a Yoruba scholar and babalawo, setting out the structure of the odu and their interpretation."
+    },
+    {
+      "title": "J. O. Awolalu, Yoruba Beliefs and Sacrificial Rites",
+      "note": "A study of Yoruba religious ideas and ritual practice, including the place of sacrifice and the relationship between Olodumare and the orisha."
+    },
+    {
+      "title": "Karin Barber, I Could Speak Until Tomorrow: Oriki, Women and the Past in a Yoruba Town",
+      "note": "A study of oriki, Yoruba praise poetry, showing how speech, memory and social relationships carry religious meaning."
+    },
+    {
+      "title": "Jacob K. Olupona, City of 201 Gods",
+      "note": "A study of Ile-Ife as a sacred city, its shrines, festivals and the competition among its traditions."
+    },
+    {
+      "title": "UNESCO World Heritage List, Osun-Osogbo Sacred Grove",
+      "note": "Documentation of the grove's sacred landscape, its shrines and the annual festival that maintains its relationship with the river."
+    }
+  ],
+  "sensitivity": "high",
+  "review_note": "This pack requires review by Yoruba communities, initiated priests and ritual specialists before publication, especially the Ifá, Obatala, Ogun and Sango material. It deliberately excludes restricted knowledge.",
+  "verified": false
+}

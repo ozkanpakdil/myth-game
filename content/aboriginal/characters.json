@@ -1,0 +1,92 @@
+[
+  {
+    "id": "rainbow_serpent",
+    "name": "Rainbow Serpent (Ngalyod)",
+    "role": "A living creator serpent of waterholes, rain and law, called Ngalyod in Kuninjku and Kunwinjku country of western Arnhem Land.",
+    "domain": ["water", "creation", "law"],
+    "symbols": ["rainbow", "waterhole", "shed skin"],
+    "fun_fact": "In Kuninjku accounts she sheds her skin to renew herself, and the roar of a waterfall is said to be her voice.",
+    "verified": false
+  },
+  {
+    "id": "seven_sisters",
+    "name": "Seven Sisters",
+    "role": "Ancestral women of the Western Desert, the Pleiades, whose journey is sung across Warlpiri, Pitjantjatjara, Yankunytjatjara and Ngaanyatjarra country.",
+    "domain": ["star lore", "women's journey", "law"],
+    "symbols": ["Pleiades", "rock hole", "digging stick"],
+    "fun_fact": "Their songline crosses more than half the continent, and different language groups hold and care for different sections of it.",
+    "verified": false
+  },
+  {
+    "id": "baiame",
+    "name": "Baiame",
+    "role": "The sky creator of the Wiradjuri and Kamilaroi peoples of inland New South Wales, who made the land, the first people and the law.",
+    "domain": ["creation", "law", "sky"],
+    "symbols": ["sky", "bora ground", "footprints"],
+    "fun_fact": "His name is spelled Baiame, Biame, Biami, Baayami and Byamee in different records, and some of his sites are closed men's ceremonial places.",
+    "verified": false
+  },
+  {
+    "id": "wandjina",
+    "name": "Wandjina",
+    "role": "Rain-bringing creator ancestors of the Kimberley, painted in rock shelters across Worrorra, Ngarinyin and Wunambal country and repainted to renew the land.",
+    "domain": ["rain", "creation", "custodianship"],
+    "symbols": ["lightning", "rain cloud", "white ochre"],
+    "fun_fact": "Wandjina are painted with eyes and a nose but no mouth, and the lines around the head are read as the lightning before the wet season.",
+    "verified": false
+  },
+  {
+    "id": "bunyip",
+    "name": "Bunyip",
+    "role": "A water being of south-eastern Australia whose English name comes from Wemba-Wemba or Wergaia country and now covers many different nations' stories.",
+    "domain": ["water", "warning", "fear"],
+    "symbols": ["deep waterhole", "reeds"],
+    "fun_fact": "A skull exhibited as a bunyip's in the 1840s was later identified as that of a deformed horse.",
+    "verified": false
+  },
+  {
+    "id": "emu",
+    "name": "Emu (Dinewan)",
+    "role": "The emu ancestor of the Euahlayi people of northern New South Wales, recorded as Dinewan, a trickster and the husband of the crows.",
+    "domain": ["bush food", "trickster", "family"],
+    "symbols": ["emu tracks", "eggs"],
+    "fun_fact": "In Parker's 1896 telling, Dinewan is burned with hot coals by his crow wives after he keeps kicking the bark off their shelter.",
+    "verified": false
+  },
+  {
+    "id": "crow",
+    "name": "Crow (Wahn)",
+    "role": "The crow of Euahlayi story, one of the two wives of Dinewan the emu in K. Langloh Parker's 1896 record.",
+    "domain": ["trickster", "fire", "marriage"],
+    "symbols": ["black feathers", "hot coals"],
+    "fun_fact": "In Kulin country to the south the crow is Waa, brother of Bunjil the eaglehawk, which is a different relationship from the Euahlayi story.",
+    "verified": false
+  },
+  {
+    "id": "kangaroo",
+    "name": "Kangaroo",
+    "role": "A key animal of Country in many nations, painted beside the Wandjina in Kimberley shelters and known by different names in different languages.",
+    "domain": ["Country", "hunting", "kinship"],
+    "symbols": ["tracks", "tail"],
+    "fun_fact": "Kimberley rock shelters carry kangaroo figures beside the Wandjina, and Kuninjku artists give Ngalyod the ears of a kangaroo.",
+    "verified": false
+  },
+  {
+    "id": "eagle",
+    "name": "Bunjil the Eaglehawk",
+    "role": "The creator eaglehawk of the Kulin nations of Victoria, whose brother is Waa the crow and whose story is distinct from Baiame and the Wandjina.",
+    "domain": ["creation", "law", "sky"],
+    "symbols": ["eaglehawk feathers", "wind"],
+    "fun_fact": "Bunjil is honoured across Kulin country, and Wurundjeri and Boonwurrung people tell of him alongside Waa the crow.",
+    "verified": false
+  },
+  {
+    "id": "waterhole",
+    "name": "Waterhole",
+    "role": "A permanent water place in Country, understood in many nations as a living site with its own law, its own keeper and sometimes a serpent beneath it.",
+    "domain": ["water", "law", "renewal"],
+    "symbols": ["still water", "water lilies"],
+    "fun_fact": "In Kuninjku country a waterhole may be the Rainbow Serpent's home, and who may swim or fish there is part of the law of that place.",
+    "verified": false
+  }
+]

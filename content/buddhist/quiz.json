@@ -1,0 +1,202 @@
+[
+  {
+    "id": "buddhist-q01",
+    "story_id": "buddhist-01",
+    "question": "In Queen Maya's dream, what enters her side?",
+    "choices": ["A white elephant", "A golden deer", "A lotus flower", "A ray of light"],
+    "correct_index": 0,
+    "explanation": "The dream of the white elephant is the best-known image of the Buddha's conception, though the earliest Pali notice describes the conception more sparely.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "buddhist-q02",
+    "story_id": "buddhist-01",
+    "question": "Where is the Buddha said to have been born?",
+    "choices": ["In the palace at Kapilavastu", "At the Lumbini grove", "Under the bodhi tree", "In the deer park at Sarnath"],
+    "correct_index": 1,
+    "explanation": "Maya gives birth at the Lumbini grove while travelling to her family home, and the site is one of the tradition's great pilgrimage places.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "buddhist-q03",
+    "story_id": "buddhist-01",
+    "question": "According to the story, what happens to Maya seven days after the birth?",
+    "choices": ["She returns to her father's house", "She becomes a nun", "She dies and is reborn in the Tusita heaven", "She is crowned as regent"],
+    "correct_index": 2,
+    "explanation": "The texts say Maya dies a week after the birth and is reborn in the Tusita heaven, and her sister Mahapajapati raises the child.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "buddhist-q04",
+    "story_id": "buddhist-01",
+    "question": "Which seer weeps at the sight of the infant because he will not live to hear the teaching?",
+    "choices": ["Kondanna", "Channa", "Suddhodana", "Asita"],
+    "correct_index": 3,
+    "explanation": "The seer Asita recognises the child's future, weeps because his own death will come first, and the court is left unsettled by the prophecy.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "buddhist-q05",
+    "story_id": "buddhist-02",
+    "question": "Which three sights does Siddhartha meet before the wandering ascetic?",
+    "choices": ["A beggar, a king and a fire", "An old man, a sick man and a funeral procession", "A leper, a thief and a corpse", "A monk, a child and a widow"],
+    "correct_index": 1,
+    "explanation": "The first three sights are old age, sickness and death, and the fourth is the calm ascetic whose way of life offers a different response to them.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "buddhist-q06",
+    "story_id": "buddhist-02",
+    "question": "Who drives Siddhartha's chariot on the rides outside the palace?",
+    "choices": ["Kanthaka", "Ananda", "Rahula", "Channa"],
+    "correct_index": 3,
+    "explanation": "Channa is the charioteer who answers the prince's questions on each ride; Kanthaka is the horse he later rides out of the palace.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "buddhist-q07",
+    "story_id": "buddhist-02",
+    "question": "What does Siddhartha do at the river Anoma?",
+    "choices": ["He cuts off his hair and sends Channa back", "He bathes and returns to the palace", "He meets the Buddha on the road", "He fasts for forty days"],
+    "correct_index": 0,
+    "explanation": "At the Anoma he cuts his hair, gives his ornaments and horse to Channa, and exchanges his princely clothes for a hunter's robe.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "buddhist-q08",
+    "story_id": "buddhist-03",
+    "question": "Under which kind of tree does Siddhartha sit down to awaken?",
+    "choices": ["A banyan tree", "A sal tree", "A bodhi tree", "A mango tree"],
+    "correct_index": 2,
+    "explanation": "He sits beneath a bodhi tree at Bodh Gaya, and the tree and its descendants remain central symbols of the awakening.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "buddhist-q09",
+    "story_id": "buddhist-03",
+    "question": "Mara's daughters in the story are associated with which forces?",
+    "choices": ["Wisdom and compassion", "Craving and aversion", "Rain and wind", "Memory and forgetfulness"],
+    "correct_index": 1,
+    "explanation": "The daughters are named for craving, aversion and passion, and their beauty and mockery are two faces of the same temptation.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "buddhist-q10",
+    "story_id": "buddhist-03",
+    "question": "What does Siddhartha do when Mara claims the seat under the tree?",
+    "choices": ["He draws a sword", "He calls on the gods", "He vanishes from sight", "He touches the earth as witness"],
+    "correct_index": 3,
+    "explanation": "He touches the earth with his right hand and calls it to witness his past generosity, and the earth-touching gesture becomes a standard image of the Buddha.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "buddhist-q11",
+    "story_id": "buddhist-03",
+    "question": "What does the tradition say the three watches of the night brought?",
+    "choices": ["Memory of past lives, sight of beings reborn, and the end of the taints", "Visions of heaven, a chorus of gods and a shower of flowers", "The four sights, the middle way and the first sermon", "A contest with Mara, a trial by fire and a prophecy"],
+    "correct_index": 0,
+    "explanation": "In the first watch he remembers former lives, in the second he sees beings pass away and reappear by their deeds, and in the third he understands the taints and the four noble truths.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "buddhist-q12",
+    "story_id": "buddhist-04",
+    "question": "Who is the deer king in the Nigrodhamiga Jataka?",
+    "choices": ["A human king of Benares", "A hunter who spares deer", "The Bodhisatta born as a banyan deer", "A god who guards the forest"],
+    "correct_index": 2,
+    "explanation": "The deer king Nigrodha is the Bodhisatta in one of the Jataka births, where he appears as an animal rather than as a human being.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "buddhist-q13",
+    "story_id": "buddhist-04",
+    "question": "Why does the doe ask to be spared her turn?",
+    "choices": ["She is the king's favourite", "She is too old to run", "She has already been taken once", "She is pregnant and her fawn is unborn"],
+    "correct_index": 3,
+    "explanation": "The doe asks for time to give birth, and when her herd's leader refuses, the deer king offers his own life in her place.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "buddhist-q14",
+    "story_id": "buddhist-04",
+    "question": "What does the king of Benares grant after the deer offers his life?",
+    "choices": ["A new park for the deer", "Safety for all living things", "Treasure for the deer herd", "A temple at the gate"],
+    "correct_index": 1,
+    "explanation": "Moved by the deer's answer, the king extends protection beyond the deer to every living creature in his kingdom.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "buddhist-q15",
+    "story_id": "buddhist-05",
+    "question": "What gives Angulimala his name?",
+    "choices": ["A garland of fingers", "A spear he carried", "A black robe", "A scar on his face"],
+    "correct_index": 0,
+    "explanation": "His name means the one with a finger garland, taken from the fingers he wore after the murders the texts describe without detail.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "buddhist-q16",
+    "story_id": "buddhist-05",
+    "question": "What does the Buddha mean by 'I have stopped'?",
+    "choices": ["He has finished walking for the day", "He has reached the city gate", "He has given up harm, while Angulimala has not", "He is waiting for the king's soldiers"],
+    "correct_index": 2,
+    "explanation": "The Buddha tells the running bandit that he himself has stopped harming living beings, while Angulimala has not, and the words turn the pursuit around.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "buddhist-q17",
+    "story_id": "buddhist-05",
+    "question": "What reason does the Buddha give Angulimala for the stones thrown at him?",
+    "choices": ["That the villagers mistook him for another man", "That he was living out the fruit of what he had done", "That Mara was testing his resolve", "That he should leave the city at once"],
+    "correct_index": 1,
+    "explanation": "The Buddha tells him to endure the injuries because he is experiencing the fruit of his earlier deeds, and the sutta does not soften the crowd's anger.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "buddhist-q18",
+    "story_id": "buddhist-06",
+    "question": "What does Kisa Gotami ask the Buddha to do?",
+    "choices": ["Teach her to meditate", "Bless her house", "Find her husband", "Cure her dead child"],
+    "correct_index": 3,
+    "explanation": "She carries her son's body through the streets asking for medicine, and she asks the Buddha to restore the child rather than to console her.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "buddhist-q19",
+    "story_id": "buddhist-06",
+    "question": "From which houses must the mustard seed come?",
+    "choices": ["Houses where no one has died", "Houses of wealthy merchants", "Houses with many children", "Houses of the monks"],
+    "correct_index": 0,
+    "explanation": "The Buddha sends her to find mustard seed from a household untouched by death, and every door she visits has lost someone.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "buddhist-q20",
+    "story_id": "buddhist-06",
+    "question": "Where is the story of Kisa Gotami preserved?",
+    "choices": ["In the Buddhacarita", "In the Jataka collection", "In the Dhammapada commentary", "In the Rigveda"],
+    "correct_index": 2,
+    "explanation": "The story is told in the Dhammapada commentary, a later compilation, rather than in the early Pali discourses, though it may draw on older material.",
+    "difficulty": "hard",
+    "verified": false
+  }
+]

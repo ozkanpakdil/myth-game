@@ -27,7 +27,7 @@ An educational game about world myths. Players pick a mythology, read short stor
 | Version 2 (Phases 5–6) | World map for choosing a myth, plus simple pixel art |
 | Audience | Ages 12+ |
 | Tech | Static website: HTML + CSS + vanilla JavaScript. Content in JSON files. No server |
-| MVP content | 26 mythologies, 6 stories each, 20 quiz questions each |
+| MVP content | 35 mythologies, 6 stories each, 20 quiz questions each |
 
 **Implementation note (this build):** images are delivered as **SVG** (not PNG).
 Pixel-art sprites are authored as text grids and compiled to SVG by
@@ -403,7 +403,7 @@ An AI that writes text can create pixel art as **text grids**, one character per
 ## 8. Definition of Done
 
 **Version 1 (text):**
-- [x] 26 MVP mythologies complete (6 stories, 20 quiz questions, 10 characters, 10 glossary terms each)
+- [x] 35 MVP mythologies complete (6 stories, 20 quiz questions, 10 characters, 10 glossary terms each)
 - [x] `validate_content.js` passes with no errors
 - [x] All screens work on desktop and mobile
 - [x] Progress saves and loads correctly
@@ -463,3 +463,5 @@ Add one line per finished task. Newest at the bottom.
 | 2026-11-08 | T617 | Added Finnic / Sámi as the twenty-fourth playable tradition: Ilmatar, the Sampo, Lemminkäinen, the bear cult, Beaivi and the noaidi, with 20 questions, 10 figures, 10 terms, an antler sigil and notes on the Kalevala and living Sámi tradition. |
 | 2026-11-08 | T618 | Added Polynesian as the twenty-fifth playable tradition: Ranginui and Papatūānuku, Māui and the sun and fish, Rata, Pele and Kamapua'a, and Hina and the eel, with 20 questions, 10 figures, 10 terms, a fishhook sigil and notes on island-specific traditions. |
 | 2026-11-08 | T619 | Added Caucasian / Nart as the twenty-sixth playable tradition: the birth of the Narts, Sosruko's fire, Setenaya, Batraz, Syrdon and the Nart cup, with 20 questions, 10 figures, 10 terms, a bow sigil and notes on Ossetian, Circassian and Abkhaz variants. |
+
+| 2026-11-08 | T620–T628 | Completed the final nine traditions as playable packs: Buddhist narratives, Tibetan / Bon, Yoruba / Orisha, Mongolic & Turkic / Steppe, Southeast Asian, Siberian / Arctic, North American Indigenous, Amazonian & Caribbean, and Aboriginal Australian. Each has six stories, 20 questions, 10 figures, 10 terms, map marker, icon and three narration voices. All 35 traditions are now playable. |

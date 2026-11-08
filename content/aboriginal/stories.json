@@ -1,0 +1,98 @@
+[
+  {
+    "id": "aboriginal-01",
+    "title": "The Rainbow Serpent",
+    "source_ref": "Kuninjku and Kunwinjku public accounts of Ngalyod, western Arnhem Land; Maningrida Arts & Culture; NGV Art Journal 57, 'Magical transformations: Yawkyawk and Ngalyod become art' (2020)",
+    "paragraphs": [
+      "In western Arnhem Land, among the Kuninjku and Kunwinjku peoples whose languages belong to the Bininj Kunwok group, the Rainbow Serpent is Ngalyod. She is not a figure from a distant age but a living presence in Country: she stands in the sky as the rainbow and lives in billabongs, creeks, rivers and waterfalls.",
+      "Kuninjku accounts say the world began when ancestral beings came out of the Rainbow Serpent's body, travelled, and shaped the land before she swallowed them back into the earth at sacred sites called djang. The roar of a waterfall is her voice; great holes in river banks and cliff faces are her tracks.",
+      "Because she sheds her skin and emerges renewed, she is tied to the wet season and to the water plants that grow where she lives: lilies, vines and palms. She is also law. At some waterholes hunting, swimming or fishing is forbidden; at others people may fish and swim, and the rules belong to that place.",
+      "Kuninjku accounts describe her as female, and in art her body takes the jaws of a crocodile, the ears of a kangaroo or the chest of an emu; in other nations the serpent is told differently, and sometimes as male. Some knowledge tied to her sites and ceremonies is restricted, so it is not repeated here. This retelling follows published sources, and community review is required."
+    ],
+    "characters": ["rainbow_serpent", "waterhole"],
+    "themes": ["creation", "water and law", "renewal"],
+    "notes": "Kuninjku accounts differ between clans, artists and sites, and Ngalyod's form and actions vary; she may be shown with the jaws of a crocodile or the ears of a kangaroo. Some djang sites, ceremonies and designs are restricted to particular people, and the white ochre story belongs to a specific place. This retelling uses published public material only, and community review is required.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "aboriginal-02",
+    "title": "The Seven Sisters",
+    "source_ref": "Warlpiri Napaljarri-warnu Jukurrpa and Pitjantjatjara/Yankunytjatjara Kungkarangkalpa; National Museum of Australia, Songlines: Tracking the Seven Sisters (2017); NPY Women's Council",
+    "paragraphs": [
+      "The Seven Sisters are the Pleiades. In Warlpiri country north and west of Alice Springs the story is Napaljarri-warnu Jukurrpa, and in Pitjantjatjara and Yankunytjatjara country to the south it is Kungkarangkalpa. The sisters are Ancestral women whose journey across the desert is still sung, painted and danced.",
+      "A man follows them. In Warlpiri tellings he is a Jampijinpa man, and the morning star Jukurra-jukurra, a Jakamarra man, also chases the sisters across the sky. In Pitjantjatjara accounts the pursuer is Nyiru. He wants one of the women as a wife, but the skin relationships make that match wrong, and the sisters refuse him and keep moving.",
+      "As they travel the women camp, dig for water, hunt and dance, and the country keeps the shape of those actions: rock holes, soakages, low hills and ochre deposits. Their songline runs for hundreds of kilometres, and different language groups hold and care for different sections of it; senior women have performed and exhibited the story in recent decades.",
+      "At last the sisters launch themselves into the sky and become the star cluster, and the man follows as a star in Orion. Some parts of this story are women's knowledge, and some Warlpiri sections belong to men's ceremony, so those parts are not retold here. Published versions differ in detail, and community review is required."
+    ],
+    "characters": ["seven_sisters"],
+    "themes": ["women's journey", "star lore", "law and skin"],
+    "notes": "Warlpiri and Pitjantjatjara or Yankunytjatjara tellings differ in the pursuer's name, the number of episodes and the route. Some sections are women's knowledge and some Warlpiri sections belong to men's ceremony; those are not reproduced here. Public versions are also shaped by exhibition and art-market contexts, so details given in one catalogue may not match another.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "aboriginal-03",
+    "title": "Baiame and the First People",
+    "source_ref": "Wiradjuri and Kamilaroi accounts of Baiame; W. Ridley, Kamilaroi and Other Australian Languages (1875); A. W. Howitt, The Native Tribes of South-East Australia (1904)",
+    "paragraphs": [
+      "Baiame is the sky creator of the Wiradjuri and Kamilaroi (Gamilaraay) peoples of inland New South Wales. In the recorded accounts he came down from the sky, made the rivers, mountains and forests, and then made the first people, giving them law, language, songs and ceremonies and teaching them how to live on the land.",
+      "He is said to have made the first bora ground, the ceremonial site where young men were initiated, and to have set out the rules that kept people and Country in order. When his work was finished he returned to the sky, and people spoke of him as the sky father who watches over the law he left behind.",
+      "Much of what is written about Baiame comes from colonial records. Missionaries, surveyors and anthropologists wrote accounts from the 1840s onward, and the missionary William Ridley used the name Baiame for the Christian God in his Gamilaraay translations. Some writers then argued that Baiame was a missionary invention, though K. Langloh Parker dated the belief before mission influence in her district.",
+      "The name itself is spelled Baiame, Biame, Biami, Baayami and Byamee in different records, and each nation tells its own creator story rather than one shared account. Some Baiame sites are men's ceremonial places, closed to visitors and to photography. This retelling follows published records, and community review is required."
+    ],
+    "characters": ["baiame"],
+    "themes": ["creation", "law", "colonial record"],
+    "notes": "The spellings and the details vary between records and between nations. Some scholars argued that Baiame was shaped by missionary contact, while others, including K. Langloh Parker, held that the belief predated missionary activity in their districts. Baiame is not a single pan-Aboriginal figure, and some sites are restricted men's ceremonial places.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "aboriginal-04",
+    "title": "The Wandjina and the Rain",
+    "source_ref": "Worrorra, Ngarinyin and Wunambal Wandjina accounts; David Mowaljarlai and others, in V. Blundell and D. Woolagoodja, Keeping the Wanjinas Fresh (2005); Mowanjum Aboriginal Art & Culture Centre",
+    "paragraphs": [
+      "The Wandjina are the creator ancestors of the Kimberley, in the country of the Worrorra, Ngarinyin and Wunambal peoples. They are painted in ochre and white on rock shelters, and they are not decorations: they are living sacred figures who shaped the land, the law and the people, and who remain present in the images.",
+      "Their faces have eyes and a nose but no mouth, and lines radiate from the head like the lightning that comes before the wet season. Dots on the body stand for rain. A Wandjina shown only as head and shoulders is moving across the sky in a storm; a full figure is walking the land. Around them are painted kangaroos, fish and plants.",
+      "Each dry season senior men repaint the images in their clan estates so that the colours stay strong and the monsoon will come. This is a duty, not the restoration of an artwork: the Wandjina put themselves on the rock, and repainting keeps the country alive. Mowanjum accounts name Idjair as the father of the Wandjina in the Milky Way.",
+      "Popular writing sometimes calls the Wandjina alien visitors. That claim is not part of Kimberley tradition and is rejected by the people whose ancestors they are. Different clans hold different Wandjina, with their own names and stories, and some knowledge is restricted. This retelling uses published accounts, and community review is required."
+    ],
+    "characters": ["wandjina", "kangaroo"],
+    "themes": ["rain and renewal", "sacred image", "custodianship"],
+    "notes": "Each clan holds its own Wandjina, with its own name, estate and set of designs, so the accounts differ across Worrorra, Ngarinyin and Wunambal country. Some knowledge belongs to senior initiated men and is not public. Popular claims that the figures show alien visitors are rejected by Kimberley people and are not repeated as tradition here.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "aboriginal-05",
+    "title": "The Bunyip",
+    "source_ref": "Wemba-Wemba and Wergaia word history; The Geelong Advertiser (1845); R. Brough Smyth, The Aborigines of Victoria (1878); Robert Holden, Bunyips (2001)",
+    "paragraphs": [
+      "Bunyip is a word from Wemba-Wemba or Wergaia country, in what is now western Victoria. It entered English in the early nineteenth century and is usually translated today as devil or evil spirit. In the 1840s settlers along the rivers of the south-east began to report a creature in the waterholes, and the newspapers took it up.",
+      "In 1845 the Geelong Advertiser printed a description: an animal with a head like an emu, a long bill, claws, and a body like an alligator's. A skull displayed as a bunyip's was later identified as that of a deformed horse. Settlers argued over whether the creature was an unknown animal, while Aboriginal people were describing a being with a place in law and story.",
+      "The word now covers very different beings. The Ngarrindjeri of the Murray know Mulyawonk, a greedy man turned into a water creature who punishes people for taking more fish than they need. Dharawal people speak of gurungaty, and Dharuk people of mirreeulla in the Hawkesbury. One English name has flattened many nations' beings into a single monster.",
+      "That flattening matters. In the twentieth century the bunyip became a character in children's books, films and tourism, and the warnings tied to particular water places were lost. There is no single pan-Aboriginal bunyip, and some water beings are still spoken of with care. This account stays with published records, and community review is required."
+    ],
+    "characters": ["bunyip"],
+    "themes": ["water beings", "colonial naming", "respect and warning"],
+    "notes": "The English word has been applied to many different beings across widely separated nations, and the colonial newspaper reports are vivid but unreliable. Some water beings are still spoken of with care and are not for detailed retelling, and translating bunyip as devil is itself a simplification. The regional examples here are named separately for that reason.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "aboriginal-06",
+    "title": "The Emu and the Crow",
+    "source_ref": "Euahlayi account recorded by K. Langloh Parker, Australian Legendary Tales (1896), 'Dinewan the Emu, and Wahn the Crows'",
+    "paragraphs": [
+      "Among the Euahlayi people of the Barwon and Narran rivers in northern New South Wales, the emu is Dinewan and the crow is Wahn. In the version K. Langloh Parker published in 1896, Dinewan and his two wives, the Wahn, camp in the rain under a rough shelter of bark they have built together.",
+      "Dinewan waits until his wives are settled inside, then kicks out a slab of bark and sends them into the wet to put it back. He does it again and again, laughing to himself as they come in soaked and go out once more, while he keeps the dry place and finishes his supper in comfort.",
+      "The wives watch and decide on a lesson. Each takes a piece of bark heaped with hot coals and tells him he will feel as hot as they felt cold. They throw the coals over him. Dinewan leaps up burned, rolls on the ground and runs out into the rain, and his wives stay inside and laugh.",
+      "Parker's telling is short and comic, and it comes from a colonial collection written for a British readership. Other Euahlayi accounts, and those of neighbouring nations, treat emu and crow differently; in Kulin country to the south the crow is Waa, brother of Bunjil the eaglehawk. Details vary between tellings and between nations, and community review is required."
+    ],
+    "characters": ["emu", "crow", "eagle"],
+    "themes": ["trickster", "marriage and reciprocity", "fire"],
+    "notes": "Parker's 1896 text is short, and her spelling and framing reflect her own time; other Euahlayi tellings and those of neighbouring nations differ. In Kulin country the crow, Waa, is the brother of Bunjil the eaglehawk, a different relationship from the Euahlayi story. This is a domestic trickster tale, not a creation account.",
+    "uncertain": true,
+    "verified": false
+  }
+]

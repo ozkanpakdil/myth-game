@@ -1,0 +1,162 @@
+[
+  {
+    "id": "omama",
+    "name": "Omama",
+    "role": "The Yanomami creator, who made the world, the forest and the first people, and whose words the shamans still repeat.",
+    "domain": [
+      "creation",
+      "the forest",
+      "law"
+    ],
+    "symbols": [
+      "the first people",
+      "the forest"
+    ],
+    "fun_fact": "In Davi Kopenawa's telling, Omama's words are still spoken by shamans, so creation is not a past event but something continually upheld.",
+    "verified": false
+  },
+  {
+    "id": "yurupary",
+    "name": "Yurupary",
+    "role": "Tukanoan lawgiver and ancestor whose voice sounds in the sacred flutes and trumpets, kept from women and the uninitiated.",
+    "domain": [
+      "law",
+      "initiation",
+      "sound"
+    ],
+    "symbols": [
+      "sacred flutes",
+      "paxiuba palm"
+    ],
+    "fun_fact": "The flutes are said to be made from his bones, cut from a paxiuba palm that grew out of his ashes.",
+    "verified": false
+  },
+  {
+    "id": "boa",
+    "name": "Boa",
+    "role": "The ancestral anaconda of Tukanoan tradition, whose body was the first canoe and whose journey up the rivers carried the first peoples.",
+    "domain": [
+      "water",
+      "journey",
+      "origin"
+    ],
+    "symbols": [
+      "anaconda",
+      "canoe"
+    ],
+    "fun_fact": "Shipibo tellings on the Ucayali give a great boa a different role: mother of all water creatures, who once made a bridge of her body for the first people to cross.",
+    "verified": false
+  },
+  {
+    "id": "jaguar",
+    "name": "Jaguar",
+    "role": "In Shipibo-Konibo tradition, a person with villages and knowledge of its own, able to cross between jaguar and human form.",
+    "domain": [
+      "the forest",
+      "power",
+      "transformation"
+    ],
+    "symbols": [
+      "spotted pelt",
+      "night"
+    ],
+    "fun_fact": "Shipibo story treats jaguars as persons with their own villages, and shamans are said to learn from them rather than only to hunt them.",
+    "verified": false
+  },
+  {
+    "id": "jaguar_woman",
+    "name": "Jaguar-Woman",
+    "role": "The woman in the Shipibo tale who leaves her human skin at night and hunts as a jaguar, bringing danger to her husband and household.",
+    "domain": [
+      "transformation",
+      "marriage",
+      "danger"
+    ],
+    "symbols": [
+      "cast-off skin",
+      "blood on the mouth"
+    ],
+    "fun_fact": "The tale is told in more than one form: in some versions she is cured, and in others she kills her husband and returns to the forest.",
+    "verified": false
+  },
+  {
+    "id": "yaya",
+    "name": "Yaya",
+    "role": "A being of the Taíno first world, whose son Yayael became fish in a calabash and whose broken gourd released the sea.",
+    "domain": [
+      "the first world",
+      "the sea",
+      "fatherhood"
+    ],
+    "symbols": [
+      "calabash",
+      "fish"
+    ],
+    "fun_fact": "Pané reports that the Taíno did not know what Yaya's name meant, so the account has come down with that uncertainty intact.",
+    "verified": false
+  },
+  {
+    "id": "atabey",
+    "name": "Atabey",
+    "role": "Taíno mother goddess, named by Pané as the mother of Yúcahu and invoked under several names, associated with fresh water and fertility.",
+    "domain": [
+      "fresh water",
+      "fertility",
+      "the moon"
+    ],
+    "symbols": [
+      "fresh water",
+      "the moon"
+    ],
+    "fun_fact": "Pané lists several names for her, among them Atabex, Yermaoguacar, Apito and Zuimaco, which may mean that several local goddesses were gathered under one figure.",
+    "verified": false
+  },
+  {
+    "id": "deminan",
+    "name": "Deminán Caracaracol",
+    "role": "Taíno culture hero, first of the four brothers born from Itiba Tahuvava, who took down Yaya's gourd and carried a turtle in his shoulder.",
+    "domain": [
+      "origin",
+      "the sea",
+      "healing"
+    ],
+    "symbols": [
+      "calabash",
+      "turtle"
+    ],
+    "fun_fact": "His epithet Caracaracol means 'scabby', and the swelling on his shoulder is where the first turtle is said to have come from.",
+    "verified": false
+  },
+  {
+    "id": "guabancex",
+    "name": "Guabancex",
+    "role": "The Taíno storm power, a woman cemí who raises wind and water when angry, attended by Guataubá and Coatrisquie.",
+    "domain": [
+      "storms",
+      "wind",
+      "destruction"
+    ],
+    "symbols": [
+      "wind",
+      "falling trees"
+    ],
+    "fun_fact": "The Taíno word juracán, for the storm she brings, is the root of the English word hurricane.",
+    "verified": false
+  },
+  {
+    "id": "yucahu",
+    "name": "Yúcahu",
+    "role": "The supreme Taíno being, Yúcahu Bagua Maórocoti, who has a mother but no beginning and is linked with cassava and the sea.",
+    "domain": [
+      "creation",
+      "cassava",
+      "the sea"
+    ],
+    "symbols": [
+      "cassava",
+      "the sea"
+    ],
+    "fun_fact": "Pané says he has a mother but no beginning, and his name is often connected with the yuca that fed the islands.",
+    "verified": false
+  }
+]

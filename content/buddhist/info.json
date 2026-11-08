@@ -1,0 +1,69 @@
+{
+  "id": "buddhist",
+  "name": "Buddhist narratives",
+  "intro": "Buddhism began in northern India in the fifth century BCE, in a world of wandering teachers, sacrificial ritual and competing ascetic schools. Its founder, Siddhartha Gautama, was remembered not as a god but as a human being who woke up. The earliest sources are the Pali canon, a large body of discourses, monastic rules and verses preserved in an Indian vernacular and then in Sri Lanka and Southeast Asia. Later Sanskrit biographies such as the Buddhacarita turned the remembered life into court poetry, and the Jataka collection told of the Buddha's earlier births. These are sacred narratives for a living tradition that reaches from Sri Lanka and Thailand to Tibet, China, Korea and Japan, and they are read as teaching, memory and devotion rather than as fiction. Dates, details and interpretations differ between schools, and the retellings here mark where they do.",
+  "timeline": [
+    {
+      "label": "The Buddha's life",
+      "year_text": "c. 5th century BCE",
+      "note": "Siddhartha Gautama is born, leaves home, awakens and teaches for some forty years; traditional dates differ by centuries between schools."
+    },
+    {
+      "label": "The first community and the councils",
+      "year_text": "c. 4th century BCE",
+      "note": "After the Buddha's death, monks gather to recite and organise the teaching, and the monastic order and its lay supporters take shape."
+    },
+    {
+      "label": "Ashoka and the spread of the Dharma",
+      "year_text": "3rd century BCE",
+      "note": "The Mauryan emperor Ashoka supports Buddhist institutions and sends missions to Sri Lanka and beyond, carrying the tradition outside India."
+    },
+    {
+      "label": "The Pali canon is written down",
+      "year_text": "1st century BCE",
+      "note": "After centuries of oral transmission, the Pali canon is committed to writing in Sri Lanka, preserving the earliest large collection of Buddhist texts."
+    },
+    {
+      "label": "Sanskrit biographies and the Jataka commentary",
+      "year_text": "1st-5th century CE",
+      "note": "Ashvaghosha's Buddhacarita turns the life into court poetry, and commentators such as Buddhaghosa compile the Jataka stories with their explanations."
+    },
+    {
+      "label": "Buddhism becomes a global tradition",
+      "year_text": "19th century to present",
+      "note": "Migration, study and practice spread Buddhism to Europe, the Americas and Australia, while Asian traditions continue to renew themselves."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Pali canon (Tipitaka)",
+      "note": "The earliest large collection of Buddhist texts, preserved in Pali and containing discourses, monastic rules and verses. It is the main source for the teaching and for the earliest notices of the Buddha's life."
+    },
+    {
+      "title": "Buddhacarita, by Ashvaghosha",
+      "note": "A Sanskrit verse biography of the Buddha, probably from the first or second century CE. Its later cantos survive only in Tibetan and Chinese translations, and it shapes the life story as courtly poetry."
+    },
+    {
+      "title": "Jataka tales and their commentary",
+      "note": "Some five hundred and fifty stories of the Buddha's past lives, preserved in the Pali canon and its commentary. They are didactic animal and human fables and remain popular across Theravada Asia."
+    },
+    {
+      "title": "Lalitavistara",
+      "note": "A Sanskrit hagiography that expands the birth and awakening with elaborate divine scenes, and which influenced later Mahayana and Southeast Asian tellings."
+    },
+    {
+      "title": "Bhikkhu Bodhi, In the Buddha's Words (2005)",
+      "note": "An anthology of discourses from the Pali canon with introductions that explain the structure of the teaching and the setting of the texts."
+    },
+    {
+      "title": "John S. Strong, The Buddha: A Short Biography (2001)",
+      "note": "A study of the Buddha's life as the tradition tells it, comparing the Pali material with Sanskrit biographies and later devotional accounts."
+    },
+    {
+      "title": "Donald S. Lopez Jr., The Story of Buddhism (2001)",
+      "note": "A concise history and guide to Buddhist doctrines and practices, attentive to how the tradition has been imagined in Asia and in the modern West."
+    }
+  ],
+  "sensitivity": "medium",
+  "verified": false
+}

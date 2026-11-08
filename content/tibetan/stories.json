@@ -1,0 +1,98 @@
+[
+  {
+    "id": "tibetan-01",
+    "title": "The Birth of the Buddha",
+    "source_ref": "Buddhacarita, Book I; Tibetan translations of the Lalitavistara and later biographical tradition",
+    "paragraphs": [
+      "Queen Maya, wife of King Suddhodana of the Shakyas, dreamed one night that a white elephant with six tusks entered her side. The court read the dream as a sign that a great being would be born. The Buddhacarita, an early Sanskrit life of the Buddha, tells the story this way, and Tibetan biographers inherited it through translation and later devotional accounts.",
+      "When her time came, Maya travelled to the garden at Lumbini. She stood holding the branch of a flowering tree, and the child came from her side without pain. The texts say he took seven steps, looked in the four directions, and declared that this would be his last birth. Gods are said to have received him, and the earth trembled.",
+      "The king named the boy Siddhartha, and a sage named Asita came to see him. Asita wept, because he was old and would not live to hear the child's teaching. The palace gave Siddhartha every comfort, and his father hoped he would become a king. The Buddhacarita adds that the whole city celebrated the birth.",
+      "This is a pan-Asian Buddhist story, not a Tibetan-only one. It is told in Sanskrit, Pali, Chinese, Tibetan and many other languages, with differences in detail: the number of steps, the exact words spoken, and the role of the gods all vary. Tibetan tradition honours the Buddha as the teacher of the present age, not as the founder of a Tibetan sect."
+    ],
+    "characters": ["maya", "siddhartha"],
+    "themes": ["birth and prophecy", "the bodhisattva vow", "cross-cultural transmission"],
+    "notes": "The Buddhacarita and later Tibetan biographies differ in detail, and the account here follows the common narrative without treating every hagiographic episode as historical record.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "tibetan-02",
+    "title": "The Four Sights and the Going Forth",
+    "source_ref": "Buddhacarita, Books III-V; Tibetan accounts of the Great Renunciation",
+    "paragraphs": [
+      "Siddhartha grew up in the palace at Kapilavastu, sheltered from hardship and trained for kingship. The Buddhacarita describes parks, music and a life arranged to keep sorrow out of sight. He married Yashodhara and had a son, Rahula. Yet the texts say he became restless, asking what lay beyond the walls and what the pleasures of the palace were really for.",
+      "He rode out with his charioteer Channa and saw an old man bent with age, then a sick man, then a funeral procession carrying a corpse. Channa explained that these things come to everyone. On a further journey he saw an ascetic, calm and unattached, and asked what such a life meant. The four sights are turning points, not accidents.",
+      "That night Siddhartha left the palace. He mounted his horse Kanthaka, with Channa beside him, and rode out while the city slept. He cut off his hair, exchanged his fine clothes for a wanderer's robe, and disappeared into the forest. The texts call this the Great Going Forth, the moment when a prince becomes a seeker.",
+      "The story is told with variation. Some versions place the four sights on separate outings; others compress them into one. Tibetan accounts, following the Buddhacarita and the Lalitavistara, add detail about the gods who eased his departure. What remains constant is the question that drives him: how to face old age, sickness and death without turning away."
+    ],
+    "characters": ["siddhartha"],
+    "themes": ["renunciation", "the problem of suffering", "the search for meaning"],
+    "notes": "Versions differ on whether the four sights came on one outing or several, and on which figures appear. The sequence here follows the Buddhacarita's narrative.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "tibetan-03",
+    "title": "Mara and the Enlightenment",
+    "source_ref": "Buddhacarita, Books XIII-XIV; Buddhist canonical and Tibetan accounts of the awakening",
+    "paragraphs": [
+      "Siddhartha sat beneath the bodhi tree at Bodh Gaya, resolved not to rise until he understood suffering and its ending. The texts describe Mara, the lord of desire and death, as a force that tries to prevent this. Mara is best read symbolically: he is not simply a monster but the pull of fear, craving and self-protection in the mind.",
+      "Mara sent armies, storms and terrifying apparitions. He sent his daughters, Craving, Delight and Aversion, to distract the meditator. The Buddhacarita describes the assault in vivid verse, and Tibetan accounts add their own imagery. Siddhartha did not fight. He remained seated, watching what arose, and the weapons are said to have become flowers on the ground around him.",
+      "Mara then challenged him, asking what right he had to the seat of awakening. Siddhartha touched the earth with his right hand and called the earth to witness. The earth is said to have responded with a great roar, and Mara's forces dispersed. This earth-touching gesture became one of the most common images of the Buddha across Asia.",
+      "In the watches of the night he saw his past lives, the workings of cause and effect, and the end of clinging. At dawn he awoke. The texts call him the Buddha, the awakened one. The story is not a contest won by force but a portrait of steady attention: Mara's power is real in the mind, and it is met without hatred."
+    ],
+    "characters": ["siddhartha", "mara"],
+    "themes": ["temptation and fear", "awakening", "non-violence"],
+    "notes": "Mara is understood symbolically in many Buddhist traditions, and Tibetan accounts add imagery not found in the Buddhacarita. This retelling avoids sectarian and tantric interpretation.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "tibetan-04",
+    "title": "Milarepa and the Demons of the Cave",
+    "source_ref": "The Hundred Thousand Songs of Milarepa; later Tibetan namthar accounts",
+    "paragraphs": [
+      "Milarepa (1040-1123) was a Tibetan yogi and poet of the Kagyu lineage. After years of practice under his teacher Marpa, he lived in mountain caves, wearing little and eating nettles until his body is said to have turned green. The Hundred Thousand Songs gathers the poems and stories attributed to him, and it is one of the best-loved works of Tibetan literature.",
+      "One evening he returned to his cave and found it full of demons. They were cooking his food, reading his books and sleeping in his bed. He taught them the dharma, explaining emptiness and compassion, but they did not leave. He grew angry and tried to drive them out, and they laughed at him. Resistance only made them more solid.",
+      "So Milarepa stopped fighting. He sat on the floor and said that he would live with them if they would not go. Most of the demons vanished, but one remained, especially fierce. He offered himself to it, placing his head in its mouth, and it too disappeared. The teaching is that fear and compassion meet in the same place.",
+      "The story is told in several versions, and the number of demons varies. Its setting is Tibetan Buddhist: Milarepa's cave, his teacher, and the practice of meditation on impermanence all belong to that world. The point is not to deny that harm exists, but to stop treating every fear as an enemy. The demons leave when they are no longer resisted."
+    ],
+    "characters": ["milarepa"],
+    "themes": ["fear and compassion", "non-resistance", "Tibetan Buddhist practice"],
+    "notes": "The number and order of the demons vary between the Hundred Thousand Songs, later namthar biographies and modern retellings, and the cave's location is not settled. The story is a teaching narrative rather than a chronicle.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "tibetan-05",
+    "title": "Padmasambhava and the Taming of Tibet",
+    "source_ref": "Padma bka' thang; Tibetan Buddhist tradition and later Nyingma histories",
+    "paragraphs": [
+      "In the eighth century, King Trisong Detsen wanted to establish Buddhism in Tibet. He invited the Indian scholar Shantarakshita, who began building Samye, the first great monastery. The tradition says that local spirits pulled down the walls each night. Shantarakshita advised the king to invite Padmasambhava, a master from India known for his power over such forces.",
+      "Padmasambhava, called Guru Rinpoche, arrived and met the gods and demons of the land. The accounts say he subdued them, binding many to protect the Dharma rather than destroying them. Modern readers often see this as a story of religious encounter: older local powers are not erased but reordered under a new teaching. The tone of the accounts is dramatic.",
+      "With the obstacles cleared, Samye was completed around 775. Monks were ordained, texts were translated, and a community of practice took shape. Yeshe Tsogyal, a Tibetan disciple and consort, is said to have memorized and concealed many of Padmasambhava's teachings. The Padma bka' thang, a revealed biography attributed to her, tells his life in later, elaborate form.",
+      "This account is legendary and hagiographic, not a court chronicle. Its purpose is to show how the Dharma took root in a new land. Tibetan Buddhism also honours figures such as Tara, the bodhisattva of compassionate action, and protectors such as Palden Lhamo. Later Bon tradition even claims Padmasambhava as a Bon teacher, a reminder that the two traditions overlap."
+    ],
+    "characters": ["padmasambhava", "yeshe_tsogyal", "tara", "lhamo"],
+    "themes": ["encounter and conversion", "founding of a tradition", "legend and history"],
+    "notes": "The Padma bka' thang is a revealed biography (terma), not a contemporary chronicle, and the Samye accounts mix history, legend and later Nyingma framing. Some tantric material is restricted and is not retold here.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "tibetan-06",
+    "title": "The Bon Creation",
+    "source_ref": "Srid pa'i mdzod phug and related Bon cosmological texts; modern scholarship",
+    "paragraphs": [
+      "Bon is a living Tibetan tradition with its own scriptures, monasteries and lineages. It is often called Tibet's pre-Buddhist religion, but that label is too simple: Bon has changed over centuries and has engaged deeply with Buddhist thought. Its creation accounts are preserved in texts such as the Srid pa'i mdzod phug, and masters such as Drenpa Namkha are remembered for preserving Bon learning. The accounts differ from one another in detail.",
+      "In one widely cited account, the world begins in empty space that holds the potential of the five elements: space, wind, fire, water and earth. Kuntu Zangpo, the primordial buddha of Bon, is associated with the ground of being from which these elements and all appearances arise. He is not a creator god who makes the world from outside it.",
+      "The elements stir, and light and darkness take shape. From them come two eggs, one white and one black. The white egg gives rise to luminous beings and the first gods; the black egg gives rise to shadow and to the classes of spirits and demons. From the first lineages come animals, humans and the peoples of Tibet.",
+      "Bon cosmology differs from Buddhist cosmology in its details and its aims, though the two traditions share much. Some Bon teachings are restricted and are transmitted only through initiation and close guidance; this retelling stays with public, widely published material. The scholar Samten Karmay has shown that the sources are varied and sometimes inconsistent, and Bon communities today guard their heritage carefully."
+    ],
+    "characters": ["kuntu_zangpo", "drenpa_namkha"],
+    "themes": ["cosmology", "the five elements", "Bon identity"],
+    "notes": "Bon creation accounts vary across texts and lineages, and some are restricted. This retelling follows published summaries, especially Karmay's work, and does not claim to represent a single authoritative Bon view. Drenpa Namkha belongs to Bon transmission history rather than to the creation narrative itself.",
+    "uncertain": true,
+    "verified": false
+  }
+]

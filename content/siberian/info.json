@@ -1,0 +1,69 @@
+{
+  "id": "siberian",
+  "name": "Siberian / Arctic",
+  "intro": "Siberia and the Arctic are not one culture but a vast region of many peoples, languages and ecologies, from the reindeer tundra of the Nenets and Chukchi to the taiga of the Evenki and the Lena valley of the Sakha. The stories here come from Koryak, Chukchi and Itelmen Raven tales of Kamchatka and Chukotka; Khanty and Mansi bear ceremonies of the Ob basin; Nenets and Evenki accounts of the shaman's journey; Sakha and Buryat traditions of the sun and moon; and hunter tales from several collections. Most were recorded by ethnographers and museum collectors working under imperial and Soviet conditions, and shamanism remains a living practice for many communities. The retellings name their sources, mark variants and avoid presenting a single Siberian religion. Sensitivity is medium: treat the bear, the drum and the dead with care.",
+  "timeline": [
+    {
+      "label": "Travellers and exiles describe the north",
+      "year_text": "18th-19th century",
+      "note": "Russian explorers, officials and exiles publish the first wide descriptions of Siberian peoples, often hostile or exoticizing. Their reports mix observation with rumour."
+    },
+    {
+      "label": "Ob-Ugric bear songs recorded",
+      "year_text": "1880s-1900s",
+      "note": "Bernát Munkácsi, Artturi Kannisto and K. F. Karjalainen collect Khanty and Mansi songs and ceremonial descriptions, preserving texts that communities still use."
+    },
+    {
+      "label": "Raven tales collected",
+      "year_text": "1900-1917",
+      "note": "Waldemar Bogoras and Vladimir Jochelson record Koryak, Chukchi and Itelmen narratives during years of exile and expedition. Their texts are the main written sources for Raven."
+    },
+    {
+      "label": "Shamanic journeys documented",
+      "year_text": "1920s-1930s",
+      "note": "Toivo Lehtisalo and Sergei Shirokogoroff describe Nenets and Evenki ritual, while Soviet ethnography began to catalogue and restrict it."
+    },
+    {
+      "label": "Collectivization and suppression",
+      "year_text": "1930s-1950s",
+      "note": "Herds are collectivized, shamans are persecuted and ceremonies are banned. Much knowledge continues privately, and much is lost or hidden from recorders."
+    },
+    {
+      "label": "Revival, repatriation and climate change",
+      "year_text": "1990s-present",
+      "note": "Communities revive ceremonies, museums reassess their collections and herders face industrial extraction, thawing ground and uncertain pastures."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Waldemar Bogoras, Chukchee Mythology (1910) and Koryak Texts (1917)",
+      "note": "Bogoras recorded Raven tales and other narratives during Russian exile and later expeditions. His texts are vivid and detailed, but shaped by colonial assumptions and by the Christian ideas circulating in the region."
+    },
+    {
+      "title": "Vladimir Jochelson, The Koryak (1908) and Kamchadal texts",
+      "note": "Jochelson worked in Kamchatka and among the Koryak, recording Itelmen (Kamchadal) tales that include Kutkh, the Raven creator. His descriptions of ritual remain important and contested."
+    },
+    {
+      "title": "Khanty and Mansi bear songs and ceremonies, recorded by Bernát Munkácsi, Artturi Kannisto and K. F. Karjalainen",
+      "note": "These collections preserve bear songs, speeches and ceremonial descriptions from the Ob basin. They are invaluable but fragmentary, and they reflect the questions of their collectors."
+    },
+    {
+      "title": "Toivo Lehtisalo, Entwurf einer Mythologie der Jurak-Samojeden (1927)",
+      "note": "A foundational study of Nenets (Yurak Samoyed) mythology and ritual, including accounts of shamanic journeys. Lehtisalo relied on texts and reports gathered across a wide area."
+    },
+    {
+      "title": "Sergei Shirokogoroff, Psychomental Complex of the Tungus (1935)",
+      "note": "An ambitious, often criticized study of Evenki shamanism, hunting and social life. It remains a major source for the shaman's journey and for the ethnography of the Tungus."
+    },
+    {
+      "title": "Marjorie Mandelstam Balzer (ed.), Shamanism: Soviet Studies of Traditional Religion in Siberia and Central Asia (1990)",
+      "note": "A collection of translated Soviet scholarship with a critical introduction. Balzer shows how politics shaped the study of shamanism and how communities preserved practice."
+    },
+    {
+      "title": "Åke Hultkrantz, 'Ecological and Phenomenological Aspects of Shamanism' in Shamanism in Siberia (1978)",
+      "note": "Hultkrantz compares circumpolar shamanic traditions and argues for the importance of ecology and experience. The essay is a useful corrective to purely textual readings."
+    }
+  ],
+  "sensitivity": "medium",
+  "verified": false
+}

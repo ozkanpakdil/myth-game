@@ -1,0 +1,69 @@
+{
+  "id": "steppe",
+  "name": "Mongolic & Turkic / Steppe",
+  "intro": "Tengri, the eternal blue sky, is the oldest power on the steppe, but the Turkic and Mongol peoples who honoured it never had a single creed, scripture or creation story. Their traditions reach us through runic inscriptions, chronicles, epics sung for nights at a time, and shamanic practice that still lives in Mongolia, Buryatia, Kyrgyzstan and beyond. This pack moves from Tengri and Umay to the heavenly hero Geser, the Kyrgyz Manas, a swan maiden ancestress, Erlik's underworld and the shaman's journey. Versions differ by language, region and religion, and several stories here are composites. The Soviet and Chinese states suppressed or reshaped much of this heritage, and the communities who keep it are still debating how it should be told.",
+  "timeline": [
+    {
+      "label": "Orkhon inscriptions",
+      "year_text": "732-735 CE",
+      "note": "The Kül Tigin and Bilge Kagan inscriptions praise Tengri and Umay in the oldest substantial Turkic texts. They frame royal power as heaven-given."
+    },
+    {
+      "label": "The Secret History of the Mongols",
+      "year_text": "c. 1227-1252",
+      "note": "The earliest surviving Mongolian chronicle opens with the heavenly origin of the Mongols and preserves shamanic invocations and the memory of Tengri's mandate."
+    },
+    {
+      "label": "Mongol Geser printed",
+      "year_text": "1716",
+      "note": "A Mongolian version of the Geser epic is printed in Beijing under the Kangxi emperor. Buryat and Tibetan versions continue to circulate orally."
+    },
+    {
+      "label": "Manas recorded",
+      "year_text": "1856",
+      "note": "Chokan Valikhanov writes down part of the Manas epic; later recordings and publications multiply the known versions and help make it a national epic."
+    },
+    {
+      "label": "Suppression and folklore study",
+      "year_text": "1920s-1970s",
+      "note": "Soviet and Chinese campaigns attack shamans, monasteries and epic performance; at the same time state-sponsored scholars record, edit and sometimes censor the texts."
+    },
+    {
+      "label": "Revival and debate",
+      "year_text": "1990s-present",
+      "note": "Manaschi perform again, shamans rebuild lineages and Tengri revival groups organise, while scholars and communities argue over authenticity, tourism and national use."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Secret History of the Mongols",
+      "note": "The earliest surviving Mongolian chronicle, written in the 13th century, opening with the heavenly origin of the Mongols and preserving shamanic invocations and political myth."
+    },
+    {
+      "title": "The Geser epic (Mongol, Buryat and Tibetan versions)",
+      "note": "A heroic cycle transmitted orally across Inner Asia; the Mongolian woodblock of 1716 is the earliest printed text, while Buryat and Tibetan versions differ substantially."
+    },
+    {
+      "title": "The Manas epic (Kyrgyz trilogy)",
+      "note": "The Kyrgyz oral epic of Manas, Semetey and Seytek, performed by manaschi and recorded in many versions from the 19th century onward."
+    },
+    {
+      "title": "The Orkhon inscriptions",
+      "note": "Eighth-century Turkic commemorative inscriptions that invoke Tengri and Umay and present royal power as heaven-given."
+    },
+    {
+      "title": "Walther Heissig, The Religions of Mongolia",
+      "note": "A standard survey of Mongol religion, including the tngri, shamanism and the interaction with Buddhism, translated by Geoffrey Samuel."
+    },
+    {
+      "title": "Devin DeWeese, Islamization and Native Religion in the Golden Horde",
+      "note": "A study of how Islam took root among the Turkic nomads of the Golden Horde, attentive to the survival and reinterpretation of native religious ideas."
+    },
+    {
+      "title": "Daniel Prior, The Semetey of Kenje Kara",
+      "note": "An edition and study of a Kyrgyz epic performance recorded on phonograph in 1903, with the music, text and performance context."
+    }
+  ],
+  "sensitivity": "medium",
+  "verified": false
+}

@@ -1,0 +1,139 @@
+[
+  {
+    "id": "siberian-01",
+    "title": "Raven and the Creation",
+    "source_ref": "Koryak and Chukchi texts collected by Waldemar Bogoras (Chukchee Mythology, 1910; Koryak Texts, 1917); Itelmen (Kamchadal) tales collected by Vladimir Jochelson",
+    "paragraphs": [
+      "In the beginning there was water and darkness, and Raven flew over it alone. The Koryak call him Kutkinnaku, Big Raven; the Itelmen call him Kutkh; Chukchi tales give him other names. He was hungry, curious and restless. He wanted a place to land, and someone to talk to, and light to see by.",
+      "He flew until he was tired, then called for land, or dived for it, or tricked another bird into bringing mud from the bottom. The accounts disagree. Land rose from the water, small at first, then spreading into hills, rivers and moss. Raven walked on it, found it good, and immediately began to boast.",
+      "Light was kept from the world, in a bag, a box or a house, depending on who tells it. Raven stole it. He opened the container and let the sun out, or threw pieces of light into the sky, and for the first time there was day. Night came after, when the light was put away again.",
+      "Then he made people, or found them already living there, and taught them to hunt, fish and make fire. He was not a moral creator. He stole, cheated, ate too much and was often outwitted. The stories are funny and amoral, and Christian influence appears in some recorded versions, where a higher god is placed above him."
+    ],
+    "characters": [
+      "raven"
+    ],
+    "themes": [
+      "creation",
+      "trickery",
+      "light"
+    ],
+    "notes": "The Koryak, Chukchi and Itelmen accounts differ on how land is made, how light is released and whether Raven creates people at all. Bogoras and Jochelson recorded these tales under colonial conditions, and some versions show Christian influence. Raven is comic and amoral, not a moral lawgiver.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "siberian-02",
+    "title": "The Bear's Funeral",
+    "source_ref": "Khanty and Mansi bear songs and ceremonial accounts, recorded by Bernát Munkácsi, Artturi Kannisto and K. F. Karjalainen; comparative Siberian bear ceremonialism",
+    "paragraphs": [
+      "For the Khanty and Mansi of the Ob River basin, the bear is not an ordinary animal. He is a son of the sky, a first ancestor, and a guest who understands human speech. To kill him is a serious matter that requires permission, apology and ceremony. Hunters therefore approach him with respect, and the whole community, including the fire keeper who tends the hearth, shares the responsibility for his death.",
+      "When a bear is killed, the hunters speak to him. They do not boast. They explain that the arrow flew by itself, that another people or a Russian killed him, or that he chose to come. They call him grandfather, guest or prince, and ask his forgiveness. The excuses are formal and repeated, and the point is to restore a relationship rather than to escape blame.",
+      "The bear is brought into the village as an honoured guest. People sing songs composed for him, dance in masks, feast and offer food and tobacco. His skull and pelt are placed in a place of honour, and he is addressed in speeches that praise his strength and ask him to speak well of the people when he returns to the sky. The ceremony may last several days.",
+      "There is no single script. Khanty and Mansi traditions differ, clans differ, and northern and southern groups differ. Women's roles, the number of songs and the treatment of the skull vary. Soviet campaigns banned such ceremonies, and much was recorded by outsiders or reconstructed later. Communities are reviving them today. The story should be told with the bear's dignity in mind, not as a curiosity."
+    ],
+    "characters": [
+      "bear",
+      "fire_keeper"
+    ],
+    "themes": [
+      "sacred animals",
+      "ritual respect",
+      "ancestry"
+    ],
+    "notes": "No single ceremony can stand for all Khanty and Mansi practice. Clan, region and historical period change the songs, the roles of women and men, and the handling of the bear's remains. Some recorded descriptions are reconstructions, and Soviet-era suppression interrupted transmission.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "siberian-03",
+    "title": "The Shaman's Journey",
+    "source_ref": "Nenets accounts recorded by Toivo Lehtisalo and later ethnographers; Evenki accounts in Sergei Shirokogoroff, Psychomental Complex of the Tungus (1935); comparative studies",
+    "paragraphs": [
+      "A shaman is not simply a person who performs. Among the Nenets and Evenki, the calling comes through illness, dreams, inheritance or a spirit's choice, and training can take years. The shaman knows the songs, the genealogies of spirits and the routes between worlds. The community depends on this knowledge for healing, for finding lost reindeer and for guiding the dead.",
+      "The drum is the centre of the journey. It is a frame drum, often called a mount, a boat or a reindeer by the people who use it. Its beat carries the shaman, and the metal pendants on the costume sound as he moves. The audience does not simply watch. They sing, answer the drum and hold the shaman to the world he has left.",
+      "He may ascend to the upper world along a tree, a river or a rope, or descend to the lower world through an opening in the earth. He meets master spirits, ancestors and helpers, and he negotiates, sings or struggles. The route is not fixed. Nenets, Evenki and other accounts describe different landscapes, different helpers and different dangers. What they share is the journey and the return.",
+      "On returning, the shaman reports what he saw, restores what was lost and gives thanks. Some knowledge is not public, and this retelling does not pretend to reveal it. The ethnographic record is uneven: collectors worked under imperial and Soviet conditions, some rituals were banned, and informants had reason to keep silent. The journey described here is the outward form, not the whole teaching."
+    ],
+    "characters": [
+      "shaman",
+      "spirit_master"
+    ],
+    "themes": [
+      "journey",
+      "healing",
+      "knowledge"
+    ],
+    "notes": "Nenets and Evenki traditions differ in cosmology, spirit helpers and the names of the worlds. Initiation knowledge is often restricted, and this retelling deliberately describes only the outward form of the journey. The written record is shaped by imperial and Soviet collecting and by what informants chose not to tell.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "siberian-04",
+    "title": "The Reindeer Maiden",
+    "source_ref": "Evenki, Nenets and Sakha reindeer-herding tales in nineteenth- and twentieth-century collections; regional variants differ",
+    "paragraphs": [
+      "A herding family moved with the seasons, following the reindeer to lichen and away from mosquitoes and storms. In the taiga and tundra, reindeer gave milk, transport, clothing, meat and a way of thinking about the world. People did not treat the herd as mere property. They followed it, negotiated with it and depended on its choices. A family without reindeer was lost.",
+      "In the story, a young herder meets a maiden who is also a reindeer. She may be a white doe who becomes a woman, or a woman who wears a reindeer's skin, or the daughter of the reindeer master. She teaches him where the herds will go, how to call them and how to treat a lead animal. He marries her, or she stays for a season.",
+      "Then he breaks the condition. He boasts about her, follows her when she asks to be alone, strikes a reindeer, or looks at what should not be seen. She leaves. In some versions she returns to the tundra as a white reindeer; in others she dies, and the herd sickens. The story explains why reindeer are shy, why a family must move, or why a certain lake is avoided.",
+      "Such tales are told in many forms. Evenki, Nenets and Sakha versions differ, and not every herding people has a reindeer maiden. The story is not a simple nature allegory. It expresses reciprocity: people care for reindeer, and reindeer make human life possible. Today herders face climate change, industrial extraction and the loss of pasture, and the old bond is under pressure."
+    ],
+    "characters": [
+      "reindeer",
+      "hunter"
+    ],
+    "themes": [
+      "reciprocity",
+      "taboo",
+      "herding life"
+    ],
+    "notes": "The maiden's origin, the broken condition and the ending vary widely. Some versions make her a reindeer spirit, some a woman under an animal skin, and some do not include her at all. The ecological details come from herding life in the taiga and tundra, not from a single authoritative text.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "siberian-05",
+    "title": "The Sun and the Moon",
+    "source_ref": "Sakha (Yakut) and Buryat traditions, including olonkho and Buryat epic and myth recorded in the nineteenth and twentieth centuries",
+    "paragraphs": [
+      "For the Sakha of the Lena valley and the Buryat of the Lake Baikal steppe, the sun and the moon are not lamps. They are living beings, often described as relatives, spouses or siblings. The sun gives warmth, grass and the summer festival; the moon gives the cold light by which herds can be watched. Their story is told in different ways, and it is tied to the calendar.",
+      "In one account they lived together, or took turns, until a quarrel divided them. One claimed the day, the other the night. The moon was given the colder shift, or chose it, and the sun pursued the moon across the sky. That chase is why day follows night. When the moon is full, the sun is far off; when the moon is dark, it is hiding.",
+      "In another account a monstrous being swallows the sun or the moon, and people beat drums, shout and throw offerings until it lets go. An eclipse is a struggle, not an accident. Some Buryat and Sakha tellings explain the moon's weaker light as a wound or a punishment. Others make the moon male and the sun female, or reverse them.",
+      "The variants are not mistakes. Sakha tradition carries Turkic and Siberian layers, Buryat tradition carries Mongolian and Buddhist ones, and local storytellers shape the tale for their audience. The sun and moon are honoured at Yhyakh and at other seasonal rites, but the stories are not a single doctrine. They are a way of thinking about time, warmth and the long winter."
+    ],
+    "characters": [
+      "sun",
+      "moon"
+    ],
+    "themes": [
+      "cosmic beings",
+      "day and night",
+      "seasonal time"
+    ],
+    "notes": "Sakha and Buryat traditions are distinct, and the surviving accounts mix Turkic, Mongolian, Buddhist and local layers. The relationship between the sun and moon, the cause of eclipses and the sex of each being vary. There is no single authorized version.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "siberian-06",
+    "title": "The Ice Giant",
+    "source_ref": "Siberian hunter tales in the Bogoras, Jochelson and later Soviet collections; Chukchi, Koryak, Evenki, Sakha and Buryat variants",
+    "paragraphs": [
+      "A giant of ice and cold came down from the north. Where he walked, rivers froze, reindeer broke through the snow and people could not leave their tents. He was not winter itself but a person who carried winter with him. His breath was a blizzard, his staff was a column of ice, and he ate the warmth out of every fire he passed.",
+      "A hunter whose family was starving set out to find him. He was not a great warrior. He had a bow, a knife, a fire drill and the advice of a small helper, sometimes a mouse, a fox or a bird. The helper told him that the giant could not be beaten by strength, because the cold only grows when you fight it.",
+      "So the hunter used a trick. He invited the giant to warm himself, or offered him hot food, or led him to a hearth and asked him to sit. The giant's ice heart melted, or his sinews came apart, or he sank into the ground. His body became a ridge, a frozen lake or a river valley. The land still shows where he fell.",
+      "Variants place the story in different landscapes. Chukchi and Koryak versions may place the giant on the sea ice; Evenki and Sakha versions often give the trick to a fox or a poor hunter; Buryat tellings may make the giant a rival of the first people. The trickster is small and hungry, and that is the point: wit and warmth defeat brute cold."
+    ],
+    "characters": [
+      "ice_giant",
+      "hunter"
+    ],
+    "themes": [
+      "cold",
+      "cunning",
+      "landscape"
+    ],
+    "notes": "This is a composite retelling, not a transcript of one tale. The giant's form, the helper and the trick vary by region, and some versions explain a particular ridge, lake or season rather than the origin of winter. The small trickster is often the decisive figure.",
+    "uncertain": true,
+    "verified": false
+  }
+]

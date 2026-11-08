@@ -1,0 +1,202 @@
+[
+  {
+    "id": "aboriginal-q01",
+    "story_id": "aboriginal-01",
+    "question": "In Kuninjku and Kunwinjku country, what is the Rainbow Serpent called?",
+    "choices": ["Baiame", "Wandjina", "Ngalyod", "Dinewan"],
+    "correct_index": 2,
+    "explanation": "Ngalyod is the name used for the Rainbow Serpent in Kuninjku and Kunwinjku country in western Arnhem Land.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "aboriginal-q02",
+    "story_id": "aboriginal-01",
+    "question": "Where does Ngalyod live, according to the retelling?",
+    "choices": ["Only in the sky", "In billabongs, creeks, rivers and waterfalls", "In dry caves and rock overhangs", "In the spinifex plains far from water"],
+    "correct_index": 1,
+    "explanation": "The retelling places her in billabongs, creeks, rivers and waterfalls, and she is also seen in the sky as the rainbow.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "aboriginal-q03",
+    "story_id": "aboriginal-01",
+    "question": "What is the roar of a waterfall said to be in Kuninjku accounts?",
+    "choices": ["The wind through the escarpment", "A warning from Baiame", "Ngalyod's voice", "The singing of the Seven Sisters"],
+    "correct_index": 2,
+    "explanation": "Kuninjku accounts say the roar of a waterfall is her voice, and that holes in river banks and cliff faces are her tracks.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "aboriginal-q04",
+    "story_id": "aboriginal-01",
+    "question": "Why does the retelling describe Ngalyod as law as well as a creator?",
+    "choices": ["Because she taught the first people to write", "Because she made the seasons", "Because she gave the nations their languages", "Because rules about hunting, swimming and fishing apply at her waterholes"],
+    "correct_index": 3,
+    "explanation": "At some of her waterholes hunting, swimming or fishing is forbidden, so the rules of that place are part of her law.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "aboriginal-q05",
+    "story_id": "aboriginal-02",
+    "question": "Which star cluster is the Seven Sisters?",
+    "choices": ["The Southern Cross", "Orion's Belt", "The Pleiades", "The Milky Way"],
+    "correct_index": 2,
+    "explanation": "The Seven Sisters are the Pleiades, the small star cluster in Taurus, and the story explains how they came to be there.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "aboriginal-q06",
+    "story_id": "aboriginal-02",
+    "question": "What do the sisters finally do to escape the man who follows them?",
+    "choices": ["They hide in a cave", "They turn into rock holes", "They walk across the sea", "They launch into the sky and become stars"],
+    "correct_index": 3,
+    "explanation": "At the end of the chase the sisters launch themselves into the sky, become the star cluster, and the man follows as a star in Orion.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "aboriginal-q07",
+    "story_id": "aboriginal-02",
+    "question": "In Pitjantjatjara and Yankunytjatjara accounts, who is the pursuer?",
+    "choices": ["Jampijinpa", "Nyiru", "Bunjil", "Waa"],
+    "correct_index": 1,
+    "explanation": "In Pitjantjatjara and Yankunytjatjara accounts the pursuer is Nyiru, while Warlpiri tellings name a Jampijinpa man and the morning star.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "aboriginal-q08",
+    "story_id": "aboriginal-02",
+    "question": "Why is the pursuing man's wish for a wife said to be wrong in the Warlpiri telling?",
+    "choices": ["He is too old for her", "He is not human", "He belongs to the wrong skin group", "He has no Country"],
+    "correct_index": 2,
+    "explanation": "The match is wrong under skin law, so the sisters refuse him and keep moving across the country.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "aboriginal-q09",
+    "story_id": "aboriginal-03",
+    "question": "Which two peoples does the retelling name as telling the Baiame story?",
+    "choices": ["Wiradjuri and Kamilaroi", "Kuninjku and Euahlayi", "Worrorra and Ngarinyin", "Ngarrindjeri and Dharawal"],
+    "correct_index": 0,
+    "explanation": "The retelling names the Wiradjuri and Kamilaroi (Gamilaraay) peoples of inland New South Wales.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "aboriginal-q10",
+    "story_id": "aboriginal-03",
+    "question": "What did Baiame do when his work was finished?",
+    "choices": ["He became a rock", "He returned to the sky", "He travelled across the sea", "He turned into an eaglehawk"],
+    "correct_index": 1,
+    "explanation": "When his work was finished, Baiame returned to the sky and was spoken of as the sky father who watches over the law.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "aboriginal-q11",
+    "story_id": "aboriginal-03",
+    "question": "Why does the retelling treat colonial records of Baiame with caution?",
+    "choices": ["They were written in code", "They were all destroyed", "They were written by people who reshaped what they heard", "They were written by Baiame himself"],
+    "correct_index": 2,
+    "explanation": "The records come from missionaries, surveyors and anthropologists, and later writers argued about how much they had reshaped the material.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "aboriginal-q12",
+    "story_id": "aboriginal-04",
+    "question": "Which three peoples does the retelling name as holding Wandjina country?",
+    "choices": ["Wiradjuri, Kamilaroi and Euahlayi", "Worrorra, Ngarinyin and Wunambal", "Warlpiri, Pitjantjatjara and Yankunytjatjara", "Kuninjku, Kunwinjku and Dharawal"],
+    "correct_index": 1,
+    "explanation": "The Wandjina belong to Worrorra, Ngarinyin and Wunambal country in the Kimberley, and each clan holds its own Wandjina.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "aboriginal-q13",
+    "story_id": "aboriginal-04",
+    "question": "What do Wandjina faces famously lack?",
+    "choices": ["Eyes", "A nose", "Ears", "A mouth"],
+    "correct_index": 3,
+    "explanation": "The faces have eyes and a nose but no mouth, and the lines around the head are read as the lightning before the wet season.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "aboriginal-q14",
+    "story_id": "aboriginal-04",
+    "question": "Why do senior men repaint the Wandjina images each dry season?",
+    "choices": ["To prepare them for sale", "To keep the colours strong and bring the monsoon", "To hide them from visitors", "To record the year's events"],
+    "correct_index": 1,
+    "explanation": "Repainting is a duty that keeps the images strong and is understood to help bring the monsoon rains and renew the country.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "aboriginal-q15",
+    "story_id": "aboriginal-05",
+    "question": "Which languages does the word bunyip come from?",
+    "choices": ["Wemba-Wemba or Wergaia", "Wiradjuri or Kamilaroi", "Pitjantjatjara or Yankunytjatjara", "Worrorra or Ngarinyin"],
+    "correct_index": 0,
+    "explanation": "The word comes from Wemba-Wemba or Wergaia country in what is now western Victoria and entered English in the early nineteenth century.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "aboriginal-q16",
+    "story_id": "aboriginal-05",
+    "question": "What was the bunyip skull displayed in the 1840s later found to be?",
+    "choices": ["A seal's skull", "A kangaroo's skull", "A carved stone", "A deformed horse's skull"],
+    "correct_index": 3,
+    "explanation": "A skull exhibited as a bunyip's was later identified as that of a deformed horse, which undercut the search for an unknown animal.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "aboriginal-q17",
+    "story_id": "aboriginal-05",
+    "question": "Which Ngarrindjeri water being does the retelling describe?",
+    "choices": ["Gurungaty", "Mirreeulla", "Mulyawonk", "Ngalyod"],
+    "correct_index": 2,
+    "explanation": "Mulyawonk is the Ngarrindjeri water being, a greedy man turned into a creature who punishes people for taking too many fish.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "aboriginal-q18",
+    "story_id": "aboriginal-06",
+    "question": "Which people's story did K. Langloh Parker record in 1896?",
+    "choices": ["The Euahlayi", "The Kulin", "The Kuninjku", "The Ngarrindjeri"],
+    "correct_index": 0,
+    "explanation": "Parker recorded the story among the Euahlayi people of the Barwon and Narran rivers in northern New South Wales.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "aboriginal-q19",
+    "story_id": "aboriginal-06",
+    "question": "What does Dinewan keep doing to his wives?",
+    "choices": ["Hiding their food", "Stealing their fire", "Calling them away from camp", "Kicking the bark off their shelter in the rain"],
+    "correct_index": 3,
+    "explanation": "He kicks out slabs of bark so his wives must go out into the rain, and they eventually answer him with hot coals.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "aboriginal-q20",
+    "story_id": "aboriginal-06",
+    "question": "In Kulin country, who is Waa the crow said to be?",
+    "choices": ["The son of Baiame", "A messenger of the Wandjina", "The brother of Bunjil the eaglehawk", "The husband of the emu"],
+    "correct_index": 2,
+    "explanation": "In Kulin country the crow is Waa, the brother of Bunjil the eaglehawk, which is a different relationship from the Euahlayi story.",
+    "difficulty": "hard",
+    "verified": false
+  }
+]

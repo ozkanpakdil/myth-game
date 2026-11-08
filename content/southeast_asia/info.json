@@ -1,0 +1,69 @@
+{
+  "id": "southeast_asia",
+  "name": "Southeast Asian",
+  "intro": "Southeast Asia is not one religious system. The Ramayana alone survives as the Thai Ramakien, the Khmer Reamker, the Old Javanese kakawin and the Malay shadow-play, each with its own names, episodes and politics. Theravada Buddhism shapes Thailand, Laos, Cambodia and Myanmar; Java and Bali carry Hindu-Buddhist and Javanese traditions; Malaysia, Indonesia and the Philippines have their own Islamic, Christian and indigenous histories. The stories here are told one country and one version at a time. Several are living heritage: people still make offerings at rice fields and riverbanks, perform the epics in dance and shadow theatre, and disagree about what the naga fireballs mean. Dates are approximate, versions vary, and the retellings mark uncertainty rather than smoothing it away.",
+  "timeline": [
+    {
+      "label": "Indian epics reach the region",
+      "year_text": "c. 5th-8th century CE",
+      "note": "Traders, Brahmins and Buddhist monks carry the Ramayana and Mahabharata across the Bay of Bengal. Sanskrit inscriptions and early temple reliefs in Java, Cambodia and Champa show the stories taking local form."
+    },
+    {
+      "label": "Angkor and the Reamker",
+      "year_text": "12th-13th century",
+      "note": "Angkor Wat's galleries carve scenes from the Ramayana, and naga balustrades line its causeways. The Khmer Reamker develops as a court tradition, later performed in classical dance and shadow theatre."
+    },
+    {
+      "label": "Panyasa Jataka compiled",
+      "year_text": "c. 1450-1470",
+      "note": "A collection of fifty apocryphal jatakas is compiled in Chiang Mai. It carries the Sudhana and Manohara story across Thailand, Laos, Cambodia, Myanmar and Malaysia."
+    },
+    {
+      "label": "King Rama I's Ramakien",
+      "year_text": "1798",
+      "note": "The court of King Rama I completes the Thai Ramakien, the version most often studied and performed. Its scenes are painted along the galleries of Wat Phra Kaew in Bangkok."
+    },
+    {
+      "label": "Rice goddess manuscripts",
+      "year_text": "17th-19th century",
+      "note": "The Sundanese Wawacan Sulanjana is compiled, preserving the Dewi Sri story. Javanese and Balinese communities continue planting and harvest rites for the rice goddess."
+    },
+    {
+      "label": "Living festivals and heritage listings",
+      "year_text": "20th-21st century",
+      "note": "The Naga fireballs at Nong Khai draw hundreds of thousands of visitors each year, and Nora dance-drama is inscribed by UNESCO in 2021. Scholars and communities continue to debate and care for these traditions."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ramakien, King Rama I's court version (completed c. 1798)",
+      "note": "The Thai national epic, written in verse at the court of King Rama I and performed as khon dance-drama. Extracts in English are available in Frederick Goss's 2024 translations, and the Wat Phra Kaew murals illustrate the same text."
+    },
+    {
+      "title": "Reamker (Khmer Ramakerti)",
+      "note": "The Cambodian Ramayana, known from a recension of the 16th-17th century and from earlier temple reliefs. It gives the epic Khmer names, a Buddhist framing and its own episodes, and it is still performed in Cambodian classical dance."
+    },
+    {
+      "title": "Panyasa Jataka (Pannasa Jataka), Chiang Mai, c. 1450-1470",
+      "note": "A Pali collection of fifty apocryphal jatakas compiled in northern Thailand. It contains the Sudhana and Manohara tale, which spreads across mainland Southeast Asia and into the Malay world."
+    },
+    {
+      "title": "Javanese and Balinese rice traditions, with Adrian Vickers, The Balinese",
+      "note": "The Sundanese Wawacan Sulanjana tells how Dewi Sri's body becomes the food plants, while Balinese lontar and ritual pair her with Sedana and honour her in field and granary shrines. Vickers's history of Bali sets these rites in their wider social context."
+    },
+    {
+      "title": "Naga traditions of the Mekong",
+      "note": "Thai, Lao and Khmer accounts of Phaya Naga, the naga princess Neang Neak and the Preah Thong foundation story, together with Thai press reporting on the Naga fireballs at Nong Khai. The traditions are living, and the explanations of the fireballs remain contested."
+    },
+    {
+      "title": "S. Singaravelu, The Ramayana Tradition in Southeast Asia (2004)",
+      "note": "A comparative study of the Sanskrit, Tamil, Malay and Thai versions of the Rama story. It documents how the Ramakien and the Malay Hikayat Seri Rama reshape Valmiki's epic, which is the approach taken in this pack."
+    },
+    {
+      "title": "Udana 2.1, Mucalinda Sutta (Pali canon)",
+      "note": "The canonical account of the naga king Mucalinda sheltering the Buddha from a storm. It is the scriptural basis for the naga-prok image in Theravada art and for the naga's role as a guardian of the teaching."
+    }
+  ],
+  "sensitivity": "medium",
+  "verified": false
+}

@@ -1,0 +1,172 @@
+[
+  {
+    "id": "rama",
+    "name": "Rama",
+    "role": "Exiled prince and hero-king of the Ramakien, an avatar of Vishnu",
+    "domain": [
+      "kingship",
+      "dharma",
+      "archery"
+    ],
+    "symbols": [
+      "the bow",
+      "the city of Ayutthaya",
+      "the golden deer"
+    ],
+    "fun_fact": "In the Ramakien he is Phra Ram, an avatar of the god Narai, and the kings of Thailand's Chakri dynasty took the name Rama.",
+    "verified": false
+  },
+  {
+    "id": "sita",
+    "name": "Sita",
+    "role": "Wife of Rama, abducted by Thotsakan and rescued after the war",
+    "domain": [
+      "fidelity",
+      "beauty",
+      "endurance"
+    ],
+    "symbols": [
+      "the lotus",
+      "the ring",
+      "the fire ordeal"
+    ],
+    "fun_fact": "In the Ramakien she is Nang Sida, also called Phra Laksami, which links her to the goddess Lakshmi, consort of Vishnu.",
+    "verified": false
+  },
+  {
+    "id": "ravana",
+    "name": "Ravana",
+    "role": "Ten-necked demon king of Longka who abducts Sita",
+    "domain": [
+      "power",
+      "desire",
+      "sorcery"
+    ],
+    "symbols": [
+      "ten faces",
+      "twenty arms",
+      "the island of Longka"
+    ],
+    "fun_fact": "His Thai name Thotsakan means 'ten-necked', and the Ramakien shows him with ten faces and twenty arms.",
+    "verified": false
+  },
+  {
+    "id": "hanuman",
+    "name": "Hanuman",
+    "role": "White monkey warrior, son of the wind god and devoted servant of Rama",
+    "domain": [
+      "strength",
+      "wit",
+      "devotion"
+    ],
+    "symbols": [
+      "the mountain",
+      "the diamond trident",
+      "the white body"
+    ],
+    "fun_fact": "In the Ramakien he is a cheerful womanizer as well as a hero, and he fathers a son with the mermaid Suphanamatcha.",
+    "verified": false
+  },
+  {
+    "id": "lakshmana",
+    "name": "Lakshmana",
+    "role": "Rama's younger brother and loyal companion in exile and war",
+    "domain": [
+      "loyalty",
+      "archery",
+      "protection"
+    ],
+    "symbols": [
+      "the bow",
+      "the arrow wound",
+      "the battlefield"
+    ],
+    "fun_fact": "In the Ramakien, Phra Lak is struck down by Intharachit's arrow, and his wound sends Hanuman to fetch the healing mountain.",
+    "verified": false
+  },
+  {
+    "id": "dewi_sri",
+    "name": "Dewi Sri",
+    "role": "Rice goddess of Java and Bali, also called Nyai Pohaci Sanghyang Asri",
+    "domain": [
+      "rice",
+      "fertility",
+      "prosperity"
+    ],
+    "symbols": [
+      "the rice stalk",
+      "the granary",
+      "the cili figure"
+    ],
+    "fun_fact": "Rice is said to grow from her navel, and Balinese farmers still keep small shrines for her in the fields and granaries.",
+    "verified": false
+  },
+  {
+    "id": "naga",
+    "name": "Naga",
+    "role": "Serpent guardian of rivers, relics and the Buddhist teaching, honoured as Phaya Naga on the Mekong",
+    "domain": [
+      "water",
+      "guardianship",
+      "ancestry"
+    ],
+    "symbols": [
+      "the spread hood",
+      "the Mekong",
+      "the fireball"
+    ],
+    "fun_fact": "At the end of Buddhist Lent, crowds on the Mekong watch for the Naga fireballs, which many believers read as the naga's celebration.",
+    "verified": false
+  },
+  {
+    "id": "kinnari",
+    "name": "Kinnari",
+    "role": "Bird-woman of Southeast Asian Buddhist and courtly art, the female counterpart of the kinnara",
+    "domain": [
+      "music",
+      "dance",
+      "the forest"
+    ],
+    "symbols": [
+      "feathered wings",
+      "the kinnara pair",
+      "the forest pool"
+    ],
+    "fun_fact": "The female is a kinnari and the male a kinnara; in Thai art they often hold musical instruments and dance.",
+    "verified": false
+  },
+  {
+    "id": "manohara",
+    "name": "Manohara",
+    "role": "Kinnari heroine captured by a hunter and wooed by Prince Suthon",
+    "domain": [
+      "beauty",
+      "flight",
+      "fidelity"
+    ],
+    "symbols": [
+      "the magic noose",
+      "the ring",
+      "the seven sisters"
+    ],
+    "fun_fact": "Her tale is performed as Nora dance-drama in southern Thailand, and reliefs at Borobudur in Java are linked to an early version.",
+    "verified": false
+  },
+  {
+    "id": "mucalinda",
+    "name": "Mucalinda",
+    "role": "Naga king who shelters the meditating Buddha from a great storm",
+    "domain": [
+      "protection",
+      "rain",
+      "the Dhamma"
+    ],
+    "symbols": [
+      "the seven coils",
+      "the spread hood",
+      "the Bodhi tree"
+    ],
+    "fun_fact": "The naga-prok image of the Buddha under a naga hood, common in Thailand and Cambodia, recalls his shelter.",
+    "verified": false
+  }
+]

@@ -1,0 +1,202 @@
+[
+  {
+    "id": "tibetan-q01",
+    "story_id": "tibetan-01",
+    "question": "In Queen Maya's dream, what enters her side?",
+    "choices": ["A white elephant with six tusks", "A golden lion with a crown", "A blue lotus opening", "A shower of flowers"],
+    "correct_index": 0,
+    "explanation": "The Buddhacarita describes a white elephant with six tusks entering Maya's side, a sign that a great being will be born.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "tibetan-q02",
+    "story_id": "tibetan-01",
+    "question": "Where is Siddhartha said to have been born?",
+    "choices": ["In the Lumbini grove", "At Bodh Gaya", "In the palace at Kapilavastu", "At Sarnath"],
+    "correct_index": 0,
+    "explanation": "Maya travels to the garden at Lumbini, and the child is born there as she holds the branch of a flowering tree.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "tibetan-q03",
+    "story_id": "tibetan-01",
+    "question": "What does the sage Asita do when he sees the child?",
+    "choices": ["He weeps because he will not live to hear the teaching", "He crowns the child as king", "He predicts a long and peaceful reign", "He gives the child a bow"],
+    "correct_index": 0,
+    "explanation": "Asita recognizes the child's future, but he is old and will not live to hear the teaching, so he weeps rather than rejoices.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "tibetan-q04",
+    "story_id": "tibetan-02",
+    "question": "Who drives Siddhartha's chariot on the outings from the palace?",
+    "choices": ["Channa", "Kanthaka", "Rahula", "Marpa"],
+    "correct_index": 0,
+    "explanation": "Channa is the charioteer who explains old age, sickness and death, while Kanthaka is the horse Siddhartha rides when he leaves.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "tibetan-q05",
+    "story_id": "tibetan-02",
+    "question": "Which four sights does Siddhartha see on his outings?",
+    "choices": ["Old age, sickness, death and an ascetic", "A lion, an elephant, a horse and a bull", "Four kings bearing gifts", "Fire, water, earth and air"],
+    "correct_index": 0,
+    "explanation": "The four sights are an old man, a sick man, a corpse and a calm ascetic, and they turn his mind toward the problem of suffering.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "tibetan-q06",
+    "story_id": "tibetan-02",
+    "question": "What does Siddhartha do on the night he leaves the palace?",
+    "choices": ["He rides out on Kanthaka and cuts off his hair", "He asks his father for permission", "He takes Yashodhara and Rahula with him", "He sends Channa to gather the court"],
+    "correct_index": 0,
+    "explanation": "He mounts Kanthaka with Channa beside him, rides out while the city sleeps, and cuts off his hair to become a wanderer.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "tibetan-q07",
+    "story_id": "tibetan-03",
+    "question": "Who tries to stop Siddhartha from awakening under the bodhi tree?",
+    "choices": ["Mara", "Brahma", "Channa", "Asita"],
+    "correct_index": 0,
+    "explanation": "Mara, the lord of desire and death, sends armies and distractions, but Siddhartha remains seated and does not fight.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "tibetan-q08",
+    "story_id": "tibetan-03",
+    "question": "How does Siddhartha call the earth to witness?",
+    "choices": ["He touches the earth with his right hand", "He raises both hands above his head", "He strikes the ground with a staff", "He turns a golden wheel"],
+    "correct_index": 0,
+    "explanation": "Siddhartha touches the earth with his right hand, the earth responds, and Mara's forces disperse; this is the earth-touching gesture.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "tibetan-q09",
+    "story_id": "tibetan-03",
+    "question": "What happens to Mara's weapons in the retelling?",
+    "choices": ["They become flowers on the ground", "They turn into stone", "They fall into the sea", "They vanish in a cloud of smoke"],
+    "correct_index": 0,
+    "explanation": "Siddhartha does not fight, and the weapons are said to become flowers, an image of steadiness meeting violence without hatred.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "tibetan-q10",
+    "story_id": "tibetan-03",
+    "question": "How is Mara best interpreted in the story?",
+    "choices": ["As a symbol of fear, craving and self-protection", "As a historical king of Magadha", "As a god of the sun and moon", "As the Buddha's younger brother"],
+    "correct_index": 0,
+    "explanation": "The retelling presents Mara symbolically, as the pull of fear and craving in the mind rather than only as a literal monster.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "tibetan-q11",
+    "story_id": "tibetan-04",
+    "question": "Where does Milarepa live in the cave story?",
+    "choices": ["In a mountain cave", "In a monastery dormitory", "In a royal palace", "In a forest hut"],
+    "correct_index": 0,
+    "explanation": "Milarepa is a cave-dwelling yogi, and the story begins when he returns to his cave and finds it full of demons.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "tibetan-q12",
+    "story_id": "tibetan-04",
+    "question": "What does Milarepa first try when he finds the demons?",
+    "choices": ["He teaches them the dharma", "He runs away", "He calls the king's soldiers", "He offers them gold"],
+    "correct_index": 0,
+    "explanation": "He first teaches the demons emptiness and compassion, but they do not leave, and his later anger only makes them laugh.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "tibetan-q13",
+    "story_id": "tibetan-04",
+    "question": "What remains after most of the demons vanish?",
+    "choices": ["One especially fierce demon", "Five silent demons", "Milarepa's teacher Marpa", "A white elephant"],
+    "correct_index": 0,
+    "explanation": "Most of the demons disappear when Milarepa stops resisting, but one especially fierce demon stays until he offers himself.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "tibetan-q14",
+    "story_id": "tibetan-04",
+    "question": "What does Milarepa finally do that makes the last demon leave?",
+    "choices": ["He offers himself, placing his head in its mouth", "He recites a powerful mantra", "He brandishes a vajra", "He calls on the local gods"],
+    "correct_index": 0,
+    "explanation": "Milarepa stops resisting completely and offers his own body, and the demon disappears; the teaching is that fear leaves when resistance ends.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "tibetan-q15",
+    "story_id": "tibetan-05",
+    "question": "Which king invites Padmasambhava to Tibet?",
+    "choices": ["Trisong Detsen", "Songtsen Gampo", "Tri Ralpachen", "Langdarma"],
+    "correct_index": 0,
+    "explanation": "King Trisong Detsen invites Padmasambhava on Shantarakshita's advice, after local spirits keep pulling down the walls of Samye.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "tibetan-q16",
+    "story_id": "tibetan-05",
+    "question": "What happens each night while Samye is being built?",
+    "choices": ["Local spirits pull down the walls", "The workers go on strike", "A great flood covers the site", "The king orders the work stopped"],
+    "correct_index": 0,
+    "explanation": "The tradition says local spirits dismantled the building each night, which is why the king is advised to invite Padmasambhava.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "tibetan-q17",
+    "story_id": "tibetan-05",
+    "question": "What is the Padma bka' thang?",
+    "choices": ["A revealed biography attributed to Yeshe Tsogyal", "A Bon creation text about the five elements", "A monastic rule for Samye", "A Tibetan law code from the empire"],
+    "correct_index": 0,
+    "explanation": "The Padma bka' thang is a revealed biography of Padmasambhava attributed to Yeshe Tsogyal, and it is legendary and hagiographic in character.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "tibetan-q18",
+    "story_id": "tibetan-06",
+    "question": "Which figure is the primordial buddha in Bon?",
+    "choices": ["Kuntu Zangpo", "Tonpa Shenrab", "Padmasambhava", "Mara"],
+    "correct_index": 0,
+    "explanation": "Kuntu Zangpo, whose name means All-Good, is the primordial buddha of Bon and is associated with the ground of being.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "tibetan-q19",
+    "story_id": "tibetan-06",
+    "question": "How many elements are central in the Bon creation account?",
+    "choices": ["Five", "Three", "Four", "Seven"],
+    "correct_index": 0,
+    "explanation": "The account names five elements: space, wind, fire, water and earth. Their interaction produces the world and its beings.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "tibetan-q20",
+    "story_id": "tibetan-06",
+    "question": "What emerges from the two eggs in the retelling?",
+    "choices": ["A luminous line of beings and a shadow line of spirits", "The sun and the moon", "The first king and his queen", "The four continents and Mount Meru"],
+    "correct_index": 0,
+    "explanation": "A white egg gives rise to luminous beings and the first gods, while a black egg gives rise to shadow and the classes of spirits and demons.",
+    "difficulty": "hard",
+    "verified": false
+  }
+]

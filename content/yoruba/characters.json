@@ -1,0 +1,92 @@
+[
+  {
+    "id": "olodumare",
+    "name": "Olodumare",
+    "role": "The supreme being, the source of life and of ase, who is not counted among the orisha and is approached through them in many traditions.",
+    "domain": ["creation", "destiny", "ase"],
+    "symbols": ["the sky", "the sun", "ase"],
+    "fun_fact": "Olodumare is not represented by a cult image in most Yoruba traditions, and many prayers reach the supreme being through the orisha.",
+    "verified": false
+  },
+  {
+    "id": "obatala",
+    "name": "Obatala",
+    "role": "The orisha of creation, white cloth and peace, who shaped human bodies and is honoured as a protector of people with disabilities.",
+    "domain": ["creation", "peace", "care for people with disabilities"],
+    "symbols": ["white cloth", "the snail shell", "the staff"],
+    "fun_fact": "His priests traditionally avoid palm wine, and white cloth and white beads are among his best-known signs.",
+    "verified": false
+  },
+  {
+    "id": "eshu",
+    "name": "Eshu",
+    "role": "The orisha of crossroads, messages, chance and exchange, who carries offerings between humans and the other orisha and tests pride with tricks.",
+    "domain": ["crossroads", "communication", "chance"],
+    "symbols": ["crossroads", "red and black beads", "the stone at the doorway"],
+    "fun_fact": "Eshu's shrine often stands at the entrance to a compound, where offerings are left before anyone goes in or out.",
+    "verified": false
+  },
+  {
+    "id": "ogun",
+    "name": "Ogun",
+    "role": "The orisha of iron, tools, roads, hunting and war, honoured by blacksmiths, hunters, farmers and drivers.",
+    "domain": ["iron", "roads and tools", "war"],
+    "symbols": ["iron cutlass", "anvil", "palm wine"],
+    "fun_fact": "Ogun is credited with clearing the path for the other orisha, and iron itself is often treated as his presence.",
+    "verified": false
+  },
+  {
+    "id": "oshun",
+    "name": "Oshun",
+    "role": "The orisha of the Osun River and of sweet water, fertility, love, beauty and wealth, whose grove at Osogbo is a living sacred place.",
+    "domain": ["sweet water", "fertility and love", "wealth"],
+    "symbols": ["brass", "honey", "yellow cloth"],
+    "fun_fact": "Her festival at Osogbo draws pilgrims to the river each year, and a young woman chosen for the year carries the offering to the water.",
+    "verified": false
+  },
+  {
+    "id": "yemoja",
+    "name": "Yemoja",
+    "role": "A mother of waters and of children, honoured in Yoruba tradition in connection with a river and in the Americas with the ocean.",
+    "domain": ["waters", "motherhood", "children"],
+    "symbols": ["the river", "the ocean", "white cloth"],
+    "fun_fact": "Yemoja's name is often linked to Yoruba words for mother and fish, and she is honoured across the Atlantic world.",
+    "verified": false
+  },
+  {
+    "id": "sango",
+    "name": "Sango",
+    "role": "The orisha of thunder and lightning and the remembered king of Oyo, associated with justice, drumming and the double-headed axe.",
+    "domain": ["thunder and lightning", "kingship", "justice"],
+    "symbols": ["double-headed axe (oshe)", "bata drum", "red and white beads"],
+    "fun_fact": "Oaths are sworn on Sango's name, and his festival at Oyo renews his kingship each year.",
+    "verified": false
+  },
+  {
+    "id": "oya",
+    "name": "Oya",
+    "role": "The orisha of wind, storm and transformation, linked with the River Niger and remembered as Sango's wife or companion.",
+    "domain": ["wind and storm", "transformation", "the River Niger"],
+    "symbols": ["the whirlwind", "the horse-tail whisk", "the buffalo"],
+    "fun_fact": "Oya is said to sweep the way before a storm, and her presence is felt in the whirlwind that precedes the rain.",
+    "verified": false
+  },
+  {
+    "id": "orunmila",
+    "name": "Orunmila",
+    "role": "The orisha of wisdom and divination, present at creation and witness to the destinies chosen before birth.",
+    "domain": ["wisdom", "divination", "destiny"],
+    "symbols": ["the divination tray (opon Ifá)", "palm nuts (ikin)", "the odu"],
+    "fun_fact": "Orunmila is called Ibikeji Olodumare, second to Olodumare, and his priests are the babalawos.",
+    "verified": false
+  },
+  {
+    "id": "babalu_aiye",
+    "name": "Babalu-Aiye",
+    "role": "The orisha of epidemic disease and healing, honoured for the care of the sick and remembered in some towns alongside Sango.",
+    "domain": ["disease and healing", "the earth", "care for the sick"],
+    "symbols": ["raffia covering", "the staff", "the earth"],
+    "fun_fact": "His worship is associated with public health and care for the sick, and his followers are known for tending those others avoid.",
+    "verified": false
+  }
+]

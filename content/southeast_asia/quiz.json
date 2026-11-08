@@ -1,0 +1,302 @@
+[
+  {
+    "id": "southeast_asia-q01",
+    "story_id": "southeast_asia-01",
+    "question": "In the Ramakien, who is the wife of Phra Ram?",
+    "choices": [
+      "Nang Sida",
+      "Suphanamatcha",
+      "Nang Montho",
+      "Manohara"
+    ],
+    "correct_index": 0,
+    "explanation": "Nang Sida is Rama's wife in the Ramakien; Suphanamatcha is the mermaid and Montho is Thotsakan's queen.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "southeast_asia-q02",
+    "story_id": "southeast_asia-01",
+    "question": "Who abducts Nang Sida and carries her to Longka?",
+    "choices": [
+      "Thotsakan",
+      "Hanuman",
+      "Phra Lak",
+      "Sadayu"
+    ],
+    "correct_index": 0,
+    "explanation": "Thotsakan, the ten-necked demon king of Longka, seizes Sida and carries her through the sky to his island city.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "southeast_asia-q03",
+    "story_id": "southeast_asia-01",
+    "question": "What form does the demon Marit take to lure Rama from the hermitage?",
+    "choices": [
+      "A golden deer",
+      "A white elephant",
+      "A naga",
+      "A wandering ascetic"
+    ],
+    "correct_index": 0,
+    "explanation": "Marit becomes a golden deer, and Sida's wish to catch it draws Rama and Lakshmana away from her.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "southeast_asia-q04",
+    "story_id": "southeast_asia-01",
+    "question": "Which statement best describes how the Ramakien differs from Valmiki's Ramayana?",
+    "choices": [
+      "It tells the story only in dance, with no written text",
+      "It expands Hanuman's adventures and adds later books about Sida's exile",
+      "It removes Ravana from the story entirely",
+      "It makes Sida the warrior who kills Thotsakan"
+    ],
+    "correct_index": 1,
+    "explanation": "The Ramakien gives Hanuman a larger, comic role and continues past the rescue into Sida's exile and the wars of her sons.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "southeast_asia-q05",
+    "story_id": "southeast_asia-02",
+    "question": "Who is wounded and needs the healing herbs?",
+    "choices": [
+      "Phra Lak",
+      "Phra Ram",
+      "Thotsakan",
+      "Sadayu"
+    ],
+    "correct_index": 0,
+    "explanation": "Phra Lak is struck down by Intharachit's arrow, and the monkey army falls with him until the herbs arrive.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "southeast_asia-q06",
+    "story_id": "southeast_asia-02",
+    "question": "Why does Hanuman carry the whole mountain rather than a single herb?",
+    "choices": [
+      "The mountain is lighter than the herb",
+      "He cannot identify which herb is the right one",
+      "The herb is too small to carry",
+      "He wants to build a bridge with it"
+    ],
+    "correct_index": 1,
+    "explanation": "The herbs are many and Hanuman cannot tell which will cure Lakshmana, so he lifts the entire mountain instead of guessing.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "southeast_asia-q07",
+    "story_id": "southeast_asia-02",
+    "question": "What is the name of the herb mountain in the Ramakien?",
+    "choices": [
+      "Mount Awut",
+      "Mount Meru",
+      "Mount Kailash",
+      "Mount Dronagiri"
+    ],
+    "correct_index": 0,
+    "explanation": "The Ramakien names the mountain Awut, while Valmiki's Sanskrit poem places the herbs in the Himalayas and names the mountain differently.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "southeast_asia-q08",
+    "story_id": "southeast_asia-03",
+    "question": "Dewi Sri is especially associated with which crop?",
+    "choices": [
+      "Rice",
+      "Tea",
+      "Maize",
+      "Cotton"
+    ],
+    "correct_index": 0,
+    "explanation": "Dewi Sri is the rice goddess of Java and Bali, and rice is said to grow from her body after her death.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "southeast_asia-q09",
+    "story_id": "southeast_asia-03",
+    "question": "In the Sundanese telling, whose tears produce the eggs from which Dewi Sri is born?",
+    "choices": [
+      "Anta the naga",
+      "Batara Guru",
+      "Sedana",
+      "Sulanjana"
+    ],
+    "correct_index": 0,
+    "explanation": "The naga Anta weeps because he has no hands to help build the gods' palace, and his tears become three jewelled eggs.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "southeast_asia-q10",
+    "story_id": "southeast_asia-03",
+    "question": "According to the story, what grows from Dewi Sri's navel?",
+    "choices": [
+      "Rice",
+      "Bamboo",
+      "Coconut",
+      "Spices"
+    ],
+    "correct_index": 0,
+    "explanation": "Rice grows from her navel, while coconut comes from her head and bamboo from her thighs in the Sundanese account.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "southeast_asia-q11",
+    "story_id": "southeast_asia-03",
+    "question": "Why do the gods kill Dewi Sri in the Sundanese version?",
+    "choices": [
+      "To punish her for stealing rice",
+      "To prevent an incestuous scandal and restore harmony",
+      "To feed the starving people of the kingdom",
+      "To test her brother's courage"
+    ],
+    "correct_index": 1,
+    "explanation": "Batara Guru desires his foster daughter, and the gods kill her to prevent an incestuous scandal from destroying heaven.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "southeast_asia-q12",
+    "story_id": "southeast_asia-04",
+    "question": "The Phaya Naga is especially associated with which river?",
+    "choices": [
+      "The Mekong",
+      "The Chao Phraya",
+      "The Irrawaddy",
+      "The Red River"
+    ],
+    "correct_index": 0,
+    "explanation": "Phaya Naga is the naga king of the Mekong, and the naga is honoured wherever the river passes.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "southeast_asia-q13",
+    "story_id": "southeast_asia-04",
+    "question": "When do the Naga fireballs appear on the Mekong?",
+    "choices": [
+      "At the end of Buddhist Lent",
+      "At the start of the rainy season",
+      "On New Year's Day",
+      "During the rice harvest"
+    ],
+    "correct_index": 0,
+    "explanation": "The fireballs are seen at the end of Buddhist Lent, on the full moon of the eleventh lunar month, especially near Nong Khai.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "southeast_asia-q14",
+    "story_id": "southeast_asia-04",
+    "question": "What do many believers say the Naga fireballs celebrate?",
+    "choices": [
+      "The naga king's birthday",
+      "The Buddha's return from heaven at the end of Lent",
+      "The founding of Nong Khai",
+      "The marriage of Neang Neak"
+    ],
+    "correct_index": 1,
+    "explanation": "Many believers say Phaya Naga sends the fireballs to celebrate the Buddha's return from heaven at the end of Buddhist Lent.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "southeast_asia-q15",
+    "story_id": "southeast_asia-05",
+    "question": "What kind of being is Manohara?",
+    "choices": [
+      "A kinnari, a bird-woman",
+      "A naga princess",
+      "A human queen",
+      "A forest hermit"
+    ],
+    "correct_index": 0,
+    "explanation": "Manohara is a kinnari, a bird-woman with wings and bird's feet, and the youngest of seven sisters in the tale.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "southeast_asia-q16",
+    "story_id": "southeast_asia-05",
+    "question": "Who captures Manohara at the forest pool?",
+    "choices": [
+      "A hunter with a magic noose",
+      "Prince Suthon",
+      "A naga king",
+      "Her eldest sister"
+    ],
+    "correct_index": 0,
+    "explanation": "A hunter, taught by a hermit, sets a magic noose around the pool and catches Manohara when the sisters bathe.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "southeast_asia-q17",
+    "story_id": "southeast_asia-05",
+    "question": "How does Prince Suthon identify Manohara among her sisters?",
+    "choices": [
+      "By her singing voice",
+      "By the ring on her finger",
+      "By the colour of her wings",
+      "By a golden deer"
+    ],
+    "correct_index": 1,
+    "explanation": "The kinnara king sets identical sisters before him, and Suthon recognises Manohara by the ring on her finger.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "southeast_asia-q18",
+    "story_id": "southeast_asia-06",
+    "question": "Who shelters the Buddha from the storm?",
+    "choices": [
+      "Mucalinda, a naga king",
+      "Ananda, his cousin",
+      "A deer of the forest",
+      "Indra, king of the gods"
+    ],
+    "correct_index": 0,
+    "explanation": "Mucalinda, a naga king, comes out of his dwelling and protects the meditating Buddha from the cold rain and wind.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "southeast_asia-q19",
+    "story_id": "southeast_asia-06",
+    "question": "How does Mucalinda protect the Buddha from the storm?",
+    "choices": [
+      "He builds a hut of leaves",
+      "He coils around him and spreads his hood",
+      "He carries him to a cave",
+      "He calls down fire from the sky"
+    ],
+    "correct_index": 1,
+    "explanation": "Mucalinda coils his body seven times around the Buddha and spreads his hood over him like a roof.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "southeast_asia-q20",
+    "story_id": "southeast_asia-06",
+    "question": "What is the naga-prok image in Southeast Asian Buddhist art?",
+    "choices": [
+      "A Buddha seated under a naga hood",
+      "A naga holding a begging bowl",
+      "A monkey carrying a mountain",
+      "A kinnari playing a lute"
+    ],
+    "correct_index": 0,
+    "explanation": "The naga-prok image shows the Buddha seated under a great naga hood, recalling Mucalinda's shelter during the storm.",
+    "difficulty": "medium",
+    "verified": false
+  }
+]

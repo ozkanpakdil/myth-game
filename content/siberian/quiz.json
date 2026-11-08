@@ -1,0 +1,302 @@
+[
+  {
+    "id": "siberian-q01",
+    "story_id": "siberian-01",
+    "question": "What is Raven called in Koryak tradition?",
+    "choices": [
+      "Kutkinnaku",
+      "Kutkh",
+      "Num",
+      "Tengri"
+    ],
+    "correct_index": 0,
+    "explanation": "The Koryak know the creator-trickster as Kutkinnaku, or Big Raven, while the Itelmen call him Kutkh.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "siberian-q02",
+    "story_id": "siberian-01",
+    "question": "How does Raven bring light into the world?",
+    "choices": [
+      "He steals it and releases it",
+      "He asks the sun to rise",
+      "He lights a great fire",
+      "He catches a falling star"
+    ],
+    "correct_index": 0,
+    "explanation": "In the retelling, light is kept in a bag, box or house, and Raven steals it and lets the sun out into the sky.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "siberian-q03",
+    "story_id": "siberian-01",
+    "question": "Which description best fits Raven in these accounts?",
+    "choices": [
+      "A solemn lawgiver",
+      "A comic and amoral trickster",
+      "A silent ancestor",
+      "A war leader"
+    ],
+    "correct_index": 1,
+    "explanation": "Raven creates land and light but steals, cheats and is often outwitted; the tales treat him as comic and amoral rather than moral.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "siberian-q04",
+    "story_id": "siberian-01",
+    "question": "Why do the recorded Raven stories vary so much?",
+    "choices": [
+      "Only one version was ever written down",
+      "The tales were invented by museums",
+      "Different peoples and collectors shaped them",
+      "They were translated from Latin"
+    ],
+    "correct_index": 2,
+    "explanation": "Koryak, Chukchi and Itelmen versions differ, and collectors such as Bogoras and Jochelson worked in specific historical conditions.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "siberian-q05",
+    "story_id": "siberian-02",
+    "question": "For the Khanty and Mansi, what is the bear?",
+    "choices": [
+      "An ordinary game animal",
+      "A son of the sky and an ancestor",
+      "A servant of the shaman",
+      "A dangerous enemy only"
+    ],
+    "correct_index": 1,
+    "explanation": "The bear is treated as a son of the sky, a first ancestor and an honoured guest who understands human speech.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "siberian-q06",
+    "story_id": "siberian-02",
+    "question": "What do hunters do when they have killed a bear?",
+    "choices": [
+      "They boast of their skill",
+      "They leave the body in the forest",
+      "They speak to him with apology and respect",
+      "They sell the pelt at once"
+    ],
+    "correct_index": 2,
+    "explanation": "The hunters address the bear as a guest, explain that the death was not their fault and ask for forgiveness.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "siberian-q07",
+    "story_id": "siberian-02",
+    "question": "Which statement about the bear ceremony's record is most accurate?",
+    "choices": [
+      "It was banned in the Soviet period and partly reconstructed",
+      "It was never suppressed by the state",
+      "It was recorded only by Khanty scholars",
+      "It has one official text used everywhere"
+    ],
+    "correct_index": 0,
+    "explanation": "Soviet campaigns banned the ceremonies, much was recorded by outsiders, and communities have revived and reconstructed practice since.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "siberian-q08",
+    "story_id": "siberian-03",
+    "question": "How is a shaman's calling often described?",
+    "choices": [
+      "Through illness, dreams or inheritance",
+      "By winning a race",
+      "By buying the office",
+      "By being the eldest child"
+    ],
+    "correct_index": 0,
+    "explanation": "Among the Nenets and Evenki the calling may come through illness, dreams, inheritance or a spirit's choice, followed by training.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "siberian-q09",
+    "story_id": "siberian-03",
+    "question": "What is the shaman's drum often called?",
+    "choices": [
+      "A map",
+      "A mount or boat",
+      "A weapon",
+      "A door"
+    ],
+    "correct_index": 1,
+    "explanation": "The frame drum is often spoken of as a mount, boat or reindeer that carries the shaman between worlds.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "siberian-q10",
+    "story_id": "siberian-03",
+    "question": "What does the shaman do in the upper and lower worlds?",
+    "choices": [
+      "Builds houses",
+      "Meets master spirits and negotiates",
+      "Fights an army",
+      "Stays there forever"
+    ],
+    "correct_index": 1,
+    "explanation": "The shaman meets master spirits, ancestors and helpers, and negotiates, sings or struggles before returning.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "siberian-q11",
+    "story_id": "siberian-03",
+    "question": "Why does the retelling not describe initiation secrets?",
+    "choices": [
+      "They are lost",
+      "They are not public knowledge",
+      "They are illegal",
+      "They were never recorded"
+    ],
+    "correct_index": 1,
+    "explanation": "Some shamanic knowledge is restricted, and the retelling describes only the outward form of the journey, not the whole teaching.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "siberian-q12",
+    "story_id": "siberian-04",
+    "question": "What does the reindeer give the herding family?",
+    "choices": [
+      "Only meat",
+      "Milk, transport, clothing and meat",
+      "Gold and iron",
+      "Nothing but company"
+    ],
+    "correct_index": 1,
+    "explanation": "Reindeer provide milk, transport, clothing and meat, and the herd's movements shape the family's year.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "siberian-q13",
+    "story_id": "siberian-04",
+    "question": "Who is the reindeer maiden?",
+    "choices": [
+      "A trader's daughter",
+      "A woman who is also a reindeer",
+      "A bear in disguise",
+      "The moon's sister"
+    ],
+    "correct_index": 1,
+    "explanation": "She may be a white doe who becomes a woman, a woman in a reindeer's skin, or the daughter of the reindeer master.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "siberian-q14",
+    "story_id": "siberian-04",
+    "question": "What does the reindeer maiden story express about the human-reindeer bond?",
+    "choices": [
+      "Ownership of animals",
+      "Reciprocity and mutual dependence",
+      "Fear of the tundra",
+      "A legal contract"
+    ],
+    "correct_index": 1,
+    "explanation": "The story expresses reciprocity: people care for reindeer, and reindeer make human life in the taiga and tundra possible.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "siberian-q15",
+    "story_id": "siberian-05",
+    "question": "How are the sun and moon described in Sakha and Buryat tradition?",
+    "choices": [
+      "As living beings",
+      "As metal disks",
+      "As two mountains",
+      "As spirits of the dead"
+    ],
+    "correct_index": 0,
+    "explanation": "They are living beings, often described as relatives, spouses or siblings, not as lamps or metal disks.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "siberian-q16",
+    "story_id": "siberian-05",
+    "question": "What does the chase between sun and moon explain?",
+    "choices": [
+      "The origin of day and night",
+      "The origin of fire",
+      "The origin of reindeer",
+      "The origin of the sea"
+    ],
+    "correct_index": 0,
+    "explanation": "The sun pursues the moon across the sky, and that chase explains why day follows night.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "siberian-q17",
+    "story_id": "siberian-05",
+    "question": "What happens during an eclipse in these accounts?",
+    "choices": [
+      "The sun and moon marry",
+      "A monstrous being swallows the light",
+      "The world ends",
+      "The moon turns to ice"
+    ],
+    "correct_index": 1,
+    "explanation": "A monstrous being swallows the sun or moon, and people beat drums, shout and make offerings until it lets go.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "siberian-q18",
+    "story_id": "siberian-06",
+    "question": "What is the Ice Giant in the story?",
+    "choices": [
+      "A season",
+      "A person who carries cold with him",
+      "A mountain",
+      "A kind of reindeer"
+    ],
+    "correct_index": 1,
+    "explanation": "The giant is not winter itself but a person who carries winter, freezing rivers and eating the warmth from fires.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "siberian-q19",
+    "story_id": "siberian-06",
+    "question": "Who helps the hunter against the giant?",
+    "choices": [
+      "A small animal trickster",
+      "An army of warriors",
+      "The sun",
+      "The bear"
+    ],
+    "correct_index": 0,
+    "explanation": "A small helper, sometimes a mouse, a fox or a bird, advises the hunter that strength will not defeat the cold.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "siberian-q20",
+    "story_id": "siberian-06",
+    "question": "Why does the hunter use a trick instead of force?",
+    "choices": [
+      "He is forbidden to fight",
+      "Cold grows when you fight it",
+      "He has no bow",
+      "The giant is invisible"
+    ],
+    "correct_index": 1,
+    "explanation": "The helper explains that the cold only grows when you fight it, so the hunter must use warmth and cunning.",
+    "difficulty": "medium",
+    "verified": false
+  }
+]

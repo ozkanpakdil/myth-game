@@ -1,0 +1,172 @@
+[
+  {
+    "id": "dievas",
+    "name": "Dievas",
+    "role": "Sky god and highest deity of the Baltic pantheon",
+    "domain": [
+      "sky",
+      "light",
+      "order"
+    ],
+    "symbols": [
+      "the bright sky",
+      "the sun",
+      "the high hill"
+    ],
+    "fun_fact": "Dievas is also the ordinary Lithuanian word for God, so the Christian and the older sky god are hard to separate in the sources.",
+    "verified": false
+  },
+  {
+    "id": "velnias",
+    "name": "Velnias",
+    "role": "Trickster, rival and shaper of the world's rough places",
+    "domain": [
+      "trickery",
+      "earth",
+      "underworld"
+    ],
+    "symbols": [
+      "the stone",
+      "the swamp",
+      "the black goat"
+    ],
+    "fun_fact": "In the creation tales Velnias dives for the first earth and hides a piece in his mouth, which swells into hills and rocks.",
+    "verified": false
+  },
+  {
+    "id": "perkunas",
+    "name": "Perkūnas",
+    "role": "God of thunder, lightning, rain and the oak",
+    "domain": [
+      "thunder",
+      "rain",
+      "justice"
+    ],
+    "symbols": [
+      "the axe",
+      "the oak",
+      "the lightning"
+    ],
+    "fun_fact": "The first spring thunder was a signal to begin the fields, and a perpetual fire burned for Perkūnas at Vilnius.",
+    "verified": false
+  },
+  {
+    "id": "saule",
+    "name": "Saulė",
+    "role": "Sun goddess and wife of the moon",
+    "domain": [
+      "sun",
+      "light",
+      "fertility"
+    ],
+    "symbols": [
+      "the golden crown",
+      "the sun disc",
+      "the dawn"
+    ],
+    "fun_fact": "In Lithuanian dainos Saulė is called mummy and Mėnulis daddy, a household pair whose quarrel explains day and night.",
+    "verified": false
+  },
+  {
+    "id": "menulis",
+    "name": "Mėnulis",
+    "role": "Moon god and husband of the sun",
+    "domain": [
+      "moon",
+      "night",
+      "time"
+    ],
+    "symbols": [
+      "the crescent",
+      "the silver boat",
+      "the waning light"
+    ],
+    "fun_fact": "The moon's waning was told as a punishment: Perkūnas cut the unfaithful Mėnulis in two, or Saulė struck him with a silver whip.",
+    "verified": false
+  },
+  {
+    "id": "jurate",
+    "name": "Jūratė",
+    "role": "Sea goddess of the amber palace",
+    "domain": [
+      "sea",
+      "amber",
+      "love"
+    ],
+    "symbols": [
+      "the amber palace",
+      "the Baltic wave",
+      "the amber tear"
+    ],
+    "fun_fact": "The popular Jūratė is largely a literary figure, fixed by Maironis's ballad in Pavasario balsai rather than by an ancient text.",
+    "verified": false
+  },
+  {
+    "id": "kastytis",
+    "name": "Kastytis",
+    "role": "Young fisherman who loves the sea goddess",
+    "domain": [
+      "fishing",
+      "youth",
+      "daring"
+    ],
+    "symbols": [
+      "the net",
+      "the boat",
+      "the shore"
+    ],
+    "fun_fact": "Kastytis is a mortal who crosses into the sea world, and his death is the price of that crossing in most tellings.",
+    "verified": false
+  },
+  {
+    "id": "egle",
+    "name": "Eglė",
+    "role": "Heroine who marries the serpent and becomes a spruce",
+    "domain": [
+      "marriage",
+      "forest",
+      "sorrow"
+    ],
+    "symbols": [
+      "the spruce",
+      "the sea",
+      "the spindle"
+    ],
+    "fun_fact": "Eglė's name is also the Lithuanian word for spruce, so her final transformation is hidden in her name from the start.",
+    "verified": false
+  },
+  {
+    "id": "zilvinas",
+    "name": "Žilvinas",
+    "role": "Serpent husband and king beneath the sea",
+    "domain": [
+      "sea",
+      "serpents",
+      "shape-shifting"
+    ],
+    "symbols": [
+      "the grass snake",
+      "the milk foam",
+      "the blood foam"
+    ],
+    "fun_fact": "Žilvinas is summoned by a rhyme: come as white milk foam if alive, as black blood foam if dead.",
+    "verified": false
+  },
+  {
+    "id": "sovijus",
+    "name": "Sovijus",
+    "role": "First teacher of the funeral rites and traveller to the dead",
+    "domain": [
+      "death",
+      "fire",
+      "ritual"
+    ],
+    "symbols": [
+      "the pyre",
+      "the nine gates",
+      "the boar"
+    ],
+    "fun_fact": "Sovijus tested burial in the earth and in a tree before fire, and only the pyre let him sleep 'like a child in a cradle'.",
+    "verified": false
+  }
+]

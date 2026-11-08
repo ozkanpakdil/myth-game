@@ -184,6 +184,15 @@ Mythos is an educational draft. The retellings are new, short summaries in moder
 - **Massimo Pallottino, The Etruscans** — A foundational modern study of Etruscan civilisation, language and religion.
 - **Larissa Bonfante, Etruscan Life and Afterlife** — A well-illustrated introduction to Etruscan daily life, tombs and afterlife beliefs.
 
+### Baltic
+
+- **Lithuanian dainos and Latvian dainas** — Large bodies of short folk songs preserving seasonal, agricultural, funeral and mythological material; the songs are poetic and variant, not a fixed canon.
+- **The Sovijus tale in the Slavonic Chronograph (1261)** — A later compilation preserving the story of Sovijus, the gates of the dead and the origin of cremation.
+- **Jan Łasicki, De diis Samagitarum (1582)** — An early modern account of Samogitian religion, valuable but shaped by a Christian humanist's assumptions.
+- **Maironis, 'Jūratė ir Kastytis' in Pavasario balsai (1895)** — The literary ballad that fixed the modern amber-palace legend, drawing on older folk motifs.
+- **Marija Gimbutas, The Balts** — A broad study of Baltic prehistory and culture, including religion, to be read alongside more recent archaeology.
+- **Endre Bojtár, Foreword to the Past: A Cultural History of the Baltic People** — A critical introduction to the sources, folklore and modern national narratives of the Baltic region.
+
 ## Review and sensitivity status
 
 | Tradition | Sensitivity | Verified |
@@ -204,8 +213,9 @@ Mythos is an educational draft. The retellings are new, short summaries in moder
 | Hittite / Hurrian | low | false |
 | Slavic | low | false |
 | Etruscan | low | false |
+| Baltic | low | false |
 
-Hindu stories are a living sacred tradition and are marked **high** sensitivity. Shinto (Japanese), Maya and Chinese traditions are marked **medium**. All sixteen traditions need a human fact-check of dates, names, spellings, answer keys and source notes before release. The Hindu, Shinto, Maya and Chinese material also needs a sensitivity review by someone with relevant community or scholarly knowledge.
+Hindu stories are a living sacred tradition and are marked **high** sensitivity. Shinto (Japanese), Maya and Chinese traditions are marked **medium**. All seventeen traditions need a human fact-check of dates, names, spellings, answer keys and source notes before release. The Hindu, Shinto, Maya and Chinese material also needs a sensitivity review by someone with relevant community or scholarly knowledge.
 
 If a retelling is inaccurate or disrespectful, the correct response is to revise or remove it — not to defend the text. See the `NEEDS HUMAN` tasks in `PLAN_AND_TODO.md`.
 

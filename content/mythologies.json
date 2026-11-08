@@ -164,7 +164,7 @@
     "start_year": -500,
     "end_year": 1400,
     "summary": "Baltic traditions kept a sky god, a thunder god and a rich world of household and nature spirits alive in song long after conversion.",
-    "mvp": false,
+    "mvp": true,
     "sensitivity": "low",
     "verified": false
   },

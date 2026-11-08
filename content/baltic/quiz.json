@@ -1,0 +1,302 @@
+[
+  {
+    "id": "baltic-q01",
+    "story_id": "baltic-01",
+    "question": "Who is the sky god in the Baltic creation story?",
+    "choices": [
+      "Velnias",
+      "Perkūnas",
+      "Dievas",
+      "Mėnulis"
+    ],
+    "correct_index": 2,
+    "explanation": "Dievas is the bright sky god; Velnias is his trickster companion, not the sky itself.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "baltic-q02",
+    "story_id": "baltic-01",
+    "question": "What does Velnias dive into the primal waters to fetch?",
+    "choices": [
+      "A handful of earth",
+      "A golden ring",
+      "The sun",
+      "A burning oak"
+    ],
+    "correct_index": 0,
+    "explanation": "Velnias dives for earth, but he keeps a piece in his mouth instead of giving it all to Dievas.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "baltic-q03",
+    "story_id": "baltic-01",
+    "question": "Why does the land have hills and bogs in the story?",
+    "choices": [
+      "Dievas drops stones from the sky",
+      "The sea leaves them behind",
+      "Perkūnas strikes the ground",
+      "Velnias hides earth in his mouth and spits it out"
+    ],
+    "correct_index": 3,
+    "explanation": "The hidden earth swells in Velnias's mouth until he spits it out, and the lumps become hills, rocks and bogs.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "baltic-q04",
+    "story_id": "baltic-01",
+    "question": "How is the Baltic creation story best described?",
+    "choices": [
+      "A complete text written by Baltic priests",
+      "A modern reconstruction from folk tales, not a surviving pagan text",
+      "A Christian chronicle from the thirteenth century",
+      "A single Latvian song recorded in the sixteenth century"
+    ],
+    "correct_index": 1,
+    "explanation": "The earth-diver story is reconstructed from Lithuanian and Latvian folk tales, and its dualism is still debated.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "baltic-q05",
+    "story_id": "baltic-02",
+    "question": "Which god pursues Velnias across the sky?",
+    "choices": [
+      "Dievas",
+      "Perkūnas",
+      "Mėnulis",
+      "Sovijus"
+    ],
+    "correct_index": 1,
+    "explanation": "Perkūnas drives the thunder and chases the trickster across the sky in a storm.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "baltic-q06",
+    "story_id": "baltic-02",
+    "question": "Which tree is sacred to Perkūnas?",
+    "choices": [
+      "The birch",
+      "The spruce",
+      "The oak",
+      "The aspen"
+    ],
+    "correct_index": 2,
+    "explanation": "The oak is Perkūnas's tree, and lightning is said to split it when the god strikes.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "baltic-q07",
+    "story_id": "baltic-02",
+    "question": "What does the first thunder of spring announce?",
+    "choices": [
+      "The return of rain and the growing season",
+      "The beginning of winter",
+      "The death of the sun",
+      "The end of the harvest"
+    ],
+    "correct_index": 0,
+    "explanation": "The first spring thunder was heard as a sign that frost had lost and the rain and growth were returning.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "baltic-q08",
+    "story_id": "baltic-03",
+    "question": "Who are Saulė and Mėnulis?",
+    "choices": [
+      "The sky and the earth",
+      "The thunder and the sea",
+      "The morning star and the evening star",
+      "The sun and the moon"
+    ],
+    "correct_index": 3,
+    "explanation": "Saulė is the sun and Mėnulis the moon; the songs call them wife and husband, mummy and daddy.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "baltic-q09",
+    "story_id": "baltic-03",
+    "question": "Why did Saulė and Mėnulis separate in the songs?",
+    "choices": [
+      "They quarrelled, in some versions over the earth or the moon's unfaithfulness",
+      "They were ordered apart by Dievas",
+      "They lived in different seas",
+      "Mėnulis was turned into a tree"
+    ],
+    "correct_index": 0,
+    "explanation": "The songs give different causes: a dispute over their daughter Earth, or the moon's courtship of Aušrinė.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "baltic-q10",
+    "story_id": "baltic-03",
+    "question": "How do the songs explain the moon's phases?",
+    "choices": [
+      "The moon hides behind the sun each month",
+      "Perkūnas cuts the moon in two or Saulė strikes it",
+      "The moon is a boat that sinks and rises",
+      "The stars steal pieces of the moon"
+    ],
+    "correct_index": 1,
+    "explanation": "Perkūnas cuts the unfaithful moon in two, or Saulė strikes him, and the waning moon shows the wound.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "baltic-q11",
+    "story_id": "baltic-04",
+    "question": "Where does Jūratė make her home?",
+    "choices": [
+      "On a mountain above the clouds",
+      "In a forest of spruce",
+      "In an amber palace beneath the sea",
+      "In the moon's silver boat"
+    ],
+    "correct_index": 2,
+    "explanation": "Jūratė rules the sea from a palace of amber whose walls glow without any lamp.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "baltic-q12",
+    "story_id": "baltic-04",
+    "question": "Who is Kastytis in the amber legend?",
+    "choices": [
+      "A sea god",
+      "A young fisherman",
+      "A thunder priest",
+      "A king of Palanga"
+    ],
+    "correct_index": 1,
+    "explanation": "Kastytis is a mortal fisherman from the Baltic shore who casts his nets in Jūratė's realm.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "baltic-q13",
+    "story_id": "baltic-04",
+    "question": "Why does Perkūnas destroy the amber palace?",
+    "choices": [
+      "Kastytis steals amber from the palace",
+      "Jūratė refuses to marry Perkūnas",
+      "The palace blocks the spring rain",
+      "Jūratė has loved a mortal and broken the order between sea and shore"
+    ],
+    "correct_index": 3,
+    "explanation": "Perkūnas punishes the crossing of the boundary between the sea goddess and a mortal man.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "baltic-q14",
+    "story_id": "baltic-04",
+    "question": "What is the most accurate description of the Jūratė story?",
+    "choices": [
+      "A nineteenth-century literary retelling, especially Maironis's ballad, using older folk motifs",
+      "A sixteenth-century chronicle entry",
+      "A daina recorded in the eighteenth century",
+      "An ancient inscription from Palanga"
+    ],
+    "correct_index": 0,
+    "explanation": "Maironis's ballad in Pavasario balsai (1895) fixed the popular plot, which is literary rather than ancient.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "baltic-q15",
+    "story_id": "baltic-05",
+    "question": "What does Eglė promise the grass snake?",
+    "choices": [
+      "To give it her golden ring",
+      "To sing at its wedding",
+      "To marry it in exchange for her clothes",
+      "To bring it milk every morning"
+    ],
+    "correct_index": 2,
+    "explanation": "Eglė promises marriage lightly, thinking a snake cannot hold her to her word.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "baltic-q16",
+    "story_id": "baltic-05",
+    "question": "What are the names of Eglė's children?",
+    "choices": [
+      "Ąžuolas, Uosis, Beržas and Drebulė",
+      "Saulė, Mėnulis and Aušrinė",
+      "Kastytis, Jūratė and Žilvinas",
+      "Dievas, Velnias and Perkūnas"
+    ],
+    "correct_index": 0,
+    "explanation": "The children are named for trees: Oak, Ash, Birch and the youngest, Aspen.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "baltic-q17",
+    "story_id": "baltic-05",
+    "question": "How does Žilvinas's death come about?",
+    "choices": [
+      "Eglė betrays the call out of jealousy",
+      "The brothers beat the sons, frighten Drebulė into telling the call, and cut him down",
+      "Perkūnas strikes him for leaving the sea",
+      "He is caught in a fisherman's net"
+    ],
+    "correct_index": 1,
+    "explanation": "The brothers cannot make the sons talk, but frightened Drebulė reveals the summons and they kill Žilvinas with scythes.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "baltic-q18",
+    "story_id": "baltic-06",
+    "question": "What does Sovijus establish for the dead?",
+    "choices": [
+      "A temple of amber",
+      "The marriage of sun and moon",
+      "The first harvest festival",
+      "Funeral rites, especially cremation"
+    ],
+    "correct_index": 3,
+    "explanation": "Sovijus is remembered as the first teacher of cremation and the funeral feast.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "baltic-q19",
+    "story_id": "baltic-06",
+    "question": "How many gates does Sovijus pass before he needs help?",
+    "choices": [
+      "Eight, with the ninth still to come",
+      "Three",
+      "Twelve",
+      "One"
+    ],
+    "correct_index": 0,
+    "explanation": "He passes eight gates and needs a son's help to enter the ninth.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "baltic-q20",
+    "story_id": "baltic-06",
+    "question": "Which burial finally lets Sovijus rest?",
+    "choices": [
+      "Burial in the earth",
+      "Cremation on a pyre",
+      "Hanging in a tree",
+      "Burial at sea"
+    ],
+    "correct_index": 1,
+    "explanation": "Earth and tree burial leave Sovijus restless, but the pyre lets him sleep like a child in a cradle.",
+    "difficulty": "medium",
+    "verified": false
+  }
+]

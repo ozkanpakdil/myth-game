@@ -15,7 +15,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const CONTENT_DIR = path.join(ROOT, 'content');
 const VERBOSE = process.argv.includes('--verbose');
 
-const EXPECTED_MVP = ['greek', 'norse', 'egypt', 'mesopotamia', 'hindu', 'japan', 'maya', 'celtic', 'chinese', 'roman', 'persian', 'canaan', 'minoan', 'hittite', 'slavic', 'etruscan'];
+const EXPECTED_MVP = ['greek', 'norse', 'egypt', 'mesopotamia', 'hindu', 'japan', 'maya', 'celtic', 'chinese', 'roman', 'persian', 'canaan', 'minoan', 'hittite', 'slavic', 'etruscan', 'baltic'];
 const REQUIRED_STORY_COUNT = 6;
 const REQUIRED_QUIZ_COUNT = 20;
 const REQUIRED_CHARACTER_COUNT = 10;

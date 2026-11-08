@@ -1,0 +1,237 @@
+[
+  {
+    "id": "minoan-q01",
+    "story_id": "minoan-01",
+    "question": "What animal does Zeus become in order to carry Europa away?",
+    "choices": ["A white bull", "A golden eagle", "A sea serpent", "A black ram"],
+    "correct_index": 0,
+    "explanation": "Zeus turns himself into a tame white bull, joins the herd on the shore and carries Europa across the sea to Crete.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "minoan-q02",
+    "story_id": "minoan-01",
+    "question": "Where does the bull carry Europa?",
+    "choices": ["Crete", "Cyprus", "Egypt", "Sicily"],
+    "correct_index": 0,
+    "explanation": "The bull swims from the coast of Tyre to Crete, where Europa bears Minos and later marries King Asterion.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "minoan-q03",
+    "story_id": "minoan-01",
+    "question": "Which Cretan script does the entry say has never been deciphered?",
+    "choices": ["Linear A", "Linear B", "The Cypriot syllabary", "Egyptian hieroglyphs"],
+    "correct_index": 0,
+    "explanation": "Linear A, the script of the Cretan palaces, is still unread, so no Minoan text can confirm the story of Europa.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "minoan-q04",
+    "story_id": "minoan-01",
+    "question": "Who provides the earliest connected version of Europa's story?",
+    "choices": [
+      "Later Greek and Roman writers",
+      "Minoan priests at Knossos",
+      "Mycenaean scribes of the palaces",
+      "Egyptian travellers to Crete"
+    ],
+    "correct_index": 0,
+    "explanation": "The earliest connected narratives come from authors such as Apollodorus and Ovid, more than a thousand years after the palaces fell.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "minoan-q05",
+    "story_id": "minoan-02",
+    "question": "What does Minos ask Poseidon to send him?",
+    "choices": ["A bull", "A golden crown", "A swift ship", "A freshwater spring"],
+    "correct_index": 0,
+    "explanation": "Minos prays for a bull as proof of divine favour and promises to sacrifice it to the god.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "minoan-q06",
+    "story_id": "minoan-02",
+    "question": "What does Minos do with the bull that Poseidon sends?",
+    "choices": [
+      "He keeps it and sacrifices another",
+      "He sacrifices it at once",
+      "He gives it to Pasiphae",
+      "He sets it free on the coast"
+    ],
+    "correct_index": 0,
+    "explanation": "Minos keeps the beautiful bull and offers a substitute, a broken promise that the god does not overlook.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "minoan-q07",
+    "story_id": "minoan-02",
+    "question": "What name does the story give to Pasiphae's bull-headed child?",
+    "choices": ["Asterius", "Androgeus", "Rhadamanthys", "Talos"],
+    "correct_index": 0,
+    "explanation": "Apollodorus says the child was Asterius, called the Minotaur, with a human body and a bull's head.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "minoan-q08",
+    "story_id": "minoan-03",
+    "question": "Who builds the labyrinth for Minos at Knossos?",
+    "choices": ["Daedalus", "Icarus", "Theseus", "Minos himself"],
+    "correct_index": 0,
+    "explanation": "Minos orders Daedalus, the palace craftsman, to build the maze that will hide the Minotaur.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "minoan-q09",
+    "story_id": "minoan-03",
+    "question": "What materials does Daedalus use to fasten the feathers?",
+    "choices": ["Linen thread and wax", "Leather straps", "Bronze wire", "Resin and rope"],
+    "correct_index": 0,
+    "explanation": "He binds the feathers with linen thread and wax, and the wax softens when Icarus flies too near the sun.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "minoan-q10",
+    "story_id": "minoan-03",
+    "question": "Why does Daedalus tell Icarus to fly a middle course?",
+    "choices": [
+      "The sea would weigh the wings down and the sun would melt the wax",
+      "The gods would punish any display of pride",
+      "The wind would blow him back towards Crete",
+      "The birds would attack him in the air"
+    ],
+    "correct_index": 0,
+    "explanation": "Low flight risks the damp of the sea and high flight risks the heat of the sun, so Daedalus asks for a middle path.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "minoan-q11",
+    "story_id": "minoan-04",
+    "question": "Who gives Theseus the thread that guides him out of the maze?",
+    "choices": ["Ariadne", "Pasiphae", "Athena", "Phaedra"],
+    "correct_index": 0,
+    "explanation": "Ariadne, daughter of Minos, gives Theseus a ball of thread so that he can retrace his way to the entrance.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "minoan-q12",
+    "story_id": "minoan-04",
+    "question": "What tribute does Minos demand from Athens?",
+    "choices": [
+      "Seven youths and seven maidens",
+      "A golden crown each year",
+      "Fifty ships for his fleet",
+      "A white bull for Poseidon"
+    ],
+    "correct_index": 0,
+    "explanation": "Athens sends seven young men and seven young women to be shut in the labyrinth for the Minotaur.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "minoan-q13",
+    "story_id": "minoan-04",
+    "question": "What does Theseus forget to do on the voyage home?",
+    "choices": [
+      "Hoist white sails",
+      "Thank the gods",
+      "Bring Ariadne with him",
+      "Pay the crew"
+    ],
+    "correct_index": 0,
+    "explanation": "He forgets to raise the white sails, and Aegeus, seeing black ones, believes his son has died.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "minoan-q14",
+    "story_id": "minoan-04",
+    "question": "Which is the earliest surviving source for the death of Ariadne?",
+    "choices": ["The Odyssey", "The Iliad", "Plutarch's Life of Theseus", "Ovid's Metamorphoses"],
+    "correct_index": 0,
+    "explanation": "Homer's Odyssey says Artemis killed Ariadne on Dia, while later writers have Dionysus find and marry her on Naxos.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "minoan-q15",
+    "story_id": "minoan-05",
+    "question": "Where was the bull-leaping fresco discovered?",
+    "choices": ["Knossos", "Mycenae", "Pylos", "Akrotiri"],
+    "correct_index": 0,
+    "explanation": "The fresco comes from a room beside the central court of the palace at Knossos and is now in the museum at Heraklion.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "minoan-q16",
+    "story_id": "minoan-05",
+    "question": "How many human figures appear with the bull in the fresco?",
+    "choices": ["Three", "Two", "Four", "Five"],
+    "correct_index": 0,
+    "explanation": "Three figures appear: one grasps the horns, one arches over the bull's back and one stands behind with arms raised.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "minoan-q17",
+    "story_id": "minoan-05",
+    "question": "Why can no Cretan text explain what the bull-leaping meant?",
+    "choices": [
+      "Linear A has never been deciphered",
+      "The texts were written in Greek",
+      "The texts record only tax payments",
+      "The archives were burned"
+    ],
+    "correct_index": 0,
+    "explanation": "Linear A remains unread, so no surviving Cretan text can tell us the rules, purpose or meaning of the performance.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "minoan-q18",
+    "story_id": "minoan-06",
+    "question": "Who wins Hippodamia in the chariot race?",
+    "choices": ["Pelops", "Atreus", "Thyestes", "Myrtilus"],
+    "correct_index": 0,
+    "explanation": "Pelops wins the race with the help of Myrtilus, then kills him, and the dying driver curses the family.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "minoan-q19",
+    "story_id": "minoan-06",
+    "question": "Which city does Agamemnon rule in the saga?",
+    "choices": ["Mycenae", "Troy", "Athens", "Sparta"],
+    "correct_index": 0,
+    "explanation": "Agamemnon is king of Mycenae and commands the Greek army at Troy, while his brother Menelaus rules Sparta.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "minoan-q20",
+    "story_id": "minoan-06",
+    "question": "What does Atreus serve to Thyestes at the banquet?",
+    "choices": [
+      "The flesh of Thyestes' own children",
+      "A golden lamb",
+      "Bread, salt and wine",
+      "A cup of poisoned honey"
+    ],
+    "correct_index": 0,
+    "explanation": "Atreus takes revenge for the theft of the golden lamb by serving Thyestes the flesh of his own sons.",
+    "difficulty": "medium",
+    "verified": false
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "term": "Linear A",
+    "definition": "The script used on Minoan Crete from about 1800 to 1450 BCE, written on clay tablets, sealings and vessels. It records an unknown language and remains undeciphered, so its administrative and religious texts can only be guessed at.",
+    "verified": false
+  },
+  {
+    "term": "Linear B",
+    "definition": "A syllabic script recording an early form of Greek, used by Mycenaean palace administrators from about 1450 to 1200 BCE. Michael Ventris and John Chadwick deciphered it in 1952; the surviving tablets are mostly inventories of goods, people and offerings.",
+    "verified": false
+  },
+  {
+    "term": "Knossos",
+    "definition": "The largest Bronze Age palace site on Crete, near modern Heraklion, excavated by Arthur Evans from 1900. Its courts, magazines and frescoes made it the model for ideas about Minoan civilisation and the legendary home of Minos.",
+    "verified": false
+  },
+  {
+    "term": "Labyrinth",
+    "definition": "A maze of winding passages, in myth built by Daedalus to hold the Minotaur. The Greek word may derive from labrys, the double axe, a symbol common in Cretan art, though the etymology is disputed.",
+    "verified": false
+  },
+  {
+    "term": "Bull-leaping",
+    "definition": "An acrobatic sport shown in Minoan art, most famously in the fresco from Knossos, in which young figures grasp or vault over a charging bull. No ancient text describes its rules, performers or meaning.",
+    "verified": false
+  },
+  {
+    "term": "Potnia",
+    "definition": "A Mycenaean Greek title meaning 'lady' or 'mistress', used in Linear B tablets for goddesses and possibly for queens. One Knossos tablet addresses a Potnia of the Labyrinth, a phrase often linked to later Cretan myth.",
+    "verified": false
+  },
+  {
+    "term": "Wanax",
+    "definition": "The Mycenaean Greek word for king, written wa-na-ka in Linear B and related to Homeric anax. The wanax appears at the head of palace administration, controlling land, craftsmen and offerings to the gods.",
+    "verified": false
+  },
+  {
+    "term": "Mycenae",
+    "definition": "A fortified citadel in the Argolid of mainland Greece, excavated by Heinrich Schliemann in the 1870s. Its shaft graves, lion gate and palace gave the name Mycenaean to the late Bronze Age culture of Greece.",
+    "verified": false
+  },
+  {
+    "term": "Tholos tomb",
+    "definition": "A circular Mycenaean tomb with a corbelled stone roof and a long entrance passage, built for elite burials. The largest, the so-called Treasury of Atreus at Mycenae, was roofed without mortar and was already a ruin in later antiquity.",
+    "verified": false
+  },
+  {
+    "term": "Minotaur",
+    "definition": "A creature of Greek myth with a human body and a bull's head, born to Pasiphae and kept in the labyrinth at Knossos. Theseus killed it with Ariadne's help; no Bronze Age text mentions it.",
+    "verified": false
+  }
+]

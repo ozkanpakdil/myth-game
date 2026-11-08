@@ -73,7 +73,7 @@
     "start_year": -2000,
     "end_year": -1100,
     "summary": "Aegean palace cultures left tantalising traces of bull rituals, labyrinthine buildings and gods whose names survive in later Greek scripts.",
-    "mvp": false,
+    "mvp": true,
     "sensitivity": "low",
     "verified": false
   },

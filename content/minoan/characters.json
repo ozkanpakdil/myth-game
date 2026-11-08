@@ -1,0 +1,92 @@
+[
+  {
+    "id": "europa",
+    "name": "Europa",
+    "role": "Phoenician princess carried to Crete by Zeus in the form of a bull",
+    "domain": ["royalty", "journey", "origin"],
+    "symbols": ["the white bull", "the flower garland", "the continent of Europe"],
+    "fun_fact": "Her name was eventually given to the continent of Europe, though Greek writers first used it for the mainland north of Crete.",
+    "verified": false
+  },
+  {
+    "id": "minos",
+    "name": "Minos",
+    "role": "Legendary king of Crete and of the palace at Knossos",
+    "domain": ["kingship", "law", "judgement"],
+    "symbols": ["the throne at Knossos", "the sacrificial bull", "the labyrinth"],
+    "fun_fact": "Homer already imagines Minos as a judge of the dead, holding a golden sceptre in the underworld.",
+    "verified": false
+  },
+  {
+    "id": "pasiphae",
+    "name": "Pasiphae",
+    "role": "Queen of Crete, wife of Minos and mother of the Minotaur",
+    "domain": ["royalty", "divine descent", "suffering"],
+    "symbols": ["the white bull", "the moon", "the wooden cow"],
+    "fun_fact": "Her name means 'all-shining', and in some genealogies she is a daughter of the sun god Helios and a sister of Circe.",
+    "verified": false
+  },
+  {
+    "id": "minotaur",
+    "name": "Minotaur",
+    "role": "Bull-headed monster kept in the labyrinth at Knossos",
+    "domain": ["monstrosity", "confinement", "fear"],
+    "symbols": ["the labyrinth", "the bull's head", "the tribute of youths"],
+    "fun_fact": "The creature's birth name was Asterius, which is also the name of the Cretan king who adopted Minos.",
+    "verified": false
+  },
+  {
+    "id": "daedalus",
+    "name": "Daedalus",
+    "role": "Legendary Athenian craftsman and builder of the labyrinth",
+    "domain": ["craft", "invention", "flight"],
+    "symbols": ["the labyrinth", "the wax wings", "the workshop"],
+    "fun_fact": "Greek writers said his statues were so lifelike that they had to be tied down to stop them walking away.",
+    "verified": false
+  },
+  {
+    "id": "icarus",
+    "name": "Icarus",
+    "role": "Son of Daedalus who flew too near the sun and fell",
+    "domain": ["youth", "flight", "hubris"],
+    "symbols": ["the wax wings", "the falling feathers", "the Icarian Sea"],
+    "fun_fact": "The sea where he fell was named the Icarian after him, and the island beside it was called Icaria.",
+    "verified": false
+  },
+  {
+    "id": "theseus",
+    "name": "Theseus",
+    "role": "Athenian hero who entered the labyrinth and killed the Minotaur",
+    "domain": ["heroism", "civic order", "cunning"],
+    "symbols": ["the ball of thread", "the sword", "the white sails"],
+    "fun_fact": "Athenian tradition also credited Theseus with uniting the villages of Attica into one city, an act called synoikismos.",
+    "verified": false
+  },
+  {
+    "id": "ariadne",
+    "name": "Ariadne",
+    "role": "Cretan princess who gave Theseus the thread and helped him escape",
+    "domain": ["love", "cunning", "liminality"],
+    "symbols": ["the ball of thread", "the crown of stars", "the island of Naxos"],
+    "fun_fact": "Some scholars connect her name with a Mycenaean Greek tablet from Knossos that addresses a 'Lady of the Labyrinth'.",
+    "verified": false
+  },
+  {
+    "id": "atreus",
+    "name": "Atreus",
+    "role": "Mycenaean king whose feud with his brother cursed his descendants",
+    "domain": ["kingship", "revenge", "wealth"],
+    "symbols": ["the golden lamb", "the royal sceptre", "the fatal banquet"],
+    "fun_fact": "The great round tomb at Mycenae is called the Treasury of Atreus by visitors, a name given by later travellers rather than by any ancient inscription.",
+    "verified": false
+  },
+  {
+    "id": "agamemnon",
+    "name": "Agamemnon",
+    "role": "King of Mycenae and leader of the Greek expedition against Troy",
+    "domain": ["war", "command", "fate"],
+    "symbols": ["the sceptre", "the ships at Aulis", "the gold death mask"],
+    "fun_fact": "The gold mask found at Mycenae in 1876 is still displayed as the 'Mask of Agamemnon', although it is centuries older than any Trojan War.",
+    "verified": false
+  }
+]

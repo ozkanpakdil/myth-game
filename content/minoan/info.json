@@ -1,0 +1,69 @@
+{
+  "id": "minoan",
+  "name": "Minoan / Mycenaean",
+  "intro": "The Minoans built palace societies on Crete in the second millennium BCE, and the Mycenaeans, their mainland neighbours and successors, kept palace records in an early form of Greek. Neither people left the kind of literature that survives from later Greece. Linear A, the earlier Cretan script, has never been deciphered. Linear B, deciphered in 1952, is almost entirely administrative: lists of sheep, grain, offerings and personnel. The famous stories in this pack come from somewhere else. Minos, the Minotaur, Daedalus, Theseus and the curse on the house of Atreus are told by Greek and Roman writers centuries after the palaces burned. Archaeologists have recovered frescoes, seals and tombs, but these are images and objects, not plots. This pack therefore keeps three things apart: the Bronze Age evidence, the later stories told about it, and the gaps that remain.",
+  "timeline": [
+    {
+      "label": "First palaces on Crete",
+      "year_text": "c. 2000–1700 BCE",
+      "note": "Knossos, Phaistos, Malia and other centres build monumental palaces. Linear A appears, and bulls, double axes and female figures dominate the surviving imagery."
+    },
+    {
+      "label": "Height of the Minoan palaces",
+      "year_text": "c. 1700–1450 BCE",
+      "note": "After a wave of destructions the palaces are rebuilt on a grander scale. The bull-leaping fresco and many fine seal stones belong to this period."
+    },
+    {
+      "label": "Mycenaeans at Knossos",
+      "year_text": "c. 1450 BCE",
+      "note": "Greek-speaking administrators take control of Knossos and keep records in Linear B. The earlier Cretan script, Linear A, falls out of use."
+    },
+    {
+      "label": "Mycenaean palaces",
+      "year_text": "c. 1400–1200 BCE",
+      "note": "Citadels at Mycenae, Pylos, Thebes and Tiryns are ruled by a wanax, or king. Tholos tombs, gold work and Linear B archives testify to a wealthy, centralised society."
+    },
+    {
+      "label": "Collapse of the palace system",
+      "year_text": "c. 1200–1100 BCE",
+      "note": "Most palaces are destroyed or abandoned, and writing disappears from Greece. Poetry and story-telling continue orally, without archives to fix them."
+    },
+    {
+      "label": "Later Greek retellings",
+      "year_text": "c. 700 BCE–200 CE",
+      "note": "Homer, the tragedians, Plutarch, Apollodorus and Ovid shape the myths of Minos, Theseus and Atreus that readers know today, long after the Bronze Age."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Michael Ventris and John Chadwick, Documents in Mycenaean Greek",
+      "note": "The foundational edition of the Linear B tablets, with the decipherment that showed the Mycenaeans wrote Greek and that their records were mostly inventories."
+    },
+    {
+      "title": "Apollodorus, Library",
+      "note": "A later handbook of Greek myth that preserves the connected stories of Europa, Minos, Pasiphae, the Minotaur and the house of Atreus."
+    },
+    {
+      "title": "Ovid, Metamorphoses",
+      "note": "A Roman poem of transformations that supplies the fullest surviving account of Daedalus and Icarus and a vivid version of Europa's abduction."
+    },
+    {
+      "title": "Plutarch, Life of Theseus",
+      "note": "A biography that collects several versions of the Cretan expedition, the tribute and Ariadne's fate, and often notes where the stories disagree."
+    },
+    {
+      "title": "Homer, Iliad and Odyssey",
+      "note": "The earliest Greek poetry to mention Minos, Ariadne and Agamemnon, though it treats them as legendary figures rather than as history."
+    },
+    {
+      "title": "Aeschylus, Oresteia",
+      "note": "The tragic trilogy that dramatises the curse on the house of Atreus, from Agamemnon's return to Orestes' trial in Athens."
+    },
+    {
+      "title": "Nanno Marinatos, Minoan Religion: Ritual, Image, and Symbol",
+      "note": "A modern archaeological study arguing that Minoan images, including bull sports, should be read as religious ritual rather than as decorative narrative."
+    }
+  ],
+  "sensitivity": "low",
+  "verified": false
+}

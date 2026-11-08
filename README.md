@@ -1,6 +1,6 @@
 # Mythos — a world mythology game
 
-A text-first educational game for ages 12+. Read short retellings from twelve
+A text-first educational game for ages 12+. Read short retellings from thirteen
 world traditions, answer quizzes, unlock a codex of figures and terms, and
 explore a stylised world map and timeline. A separate branching saga,
 **The Ash-Seed**, lets you walk a Norse myth as a mortal of your own naming,
@@ -52,8 +52,9 @@ any static host.
 | Roman | 6 | 20 | 10 | 10 |
 | Persian / Zoroastrian | 6 | 20 | 10 | 10 |
 | Canaanite | 6 | 20 | 10 | 10 |
+| Minoan / Mycenaean | 6 | 20 | 10 | 10 |
 
-The timeline catalogues 35 traditions. The other 23 are marked as planned for
+The timeline catalogues 35 traditions. The other 22 are marked as planned for
 later editions and are not playable yet.
 
 ### The Ash-Seed (branching saga)
@@ -84,6 +85,10 @@ retelling, not a translation; its sources are the Poetic Edda and Prose Edda.
 - Progress, quiz bests, challenge results and badges are stored in
   `localStorage` under `mythos.progress.v1`. Theme and text size are stored in
   `mythos.settings.v1`. Saga runs use `mythos.saga.v1`.
+- The palette follows the OS `prefers-color-scheme` until the reader presses
+  the theme button; that explicit light/dark choice is then stored as
+  `themeMode` and wins on later visits. OS changes are mirrored live only while
+  no explicit choice exists.
 - The saga has no quiz gate: it is a story-first mode. Its choices filter on
   flags earned earlier in the same run, and its five endings are collected in a
   gallery on `#/saga`.
@@ -132,7 +137,7 @@ js/
   narration.js          studio-clip playback with browser speech fallback
   ui.js                 shared escaping, formatting and dialog helpers
 content/
-  mythologies.json      35-tradition catalogue; `mvp: true` for the twelve
+  mythologies.json      35-tradition catalogue; `mvp: true` for the thirteen
   greek/ ...            five JSON files per playable tradition
   saga/norse.json       the branching Ash-Seed story graph, paths and endings
 schemas/                JSON Schema documents for every content file
@@ -249,11 +254,11 @@ not fetched images. See `assets/STYLE_GUIDE.md` for the palette and grid rules.
 
 ## Testing
 
-The suite covers the shell, every route, all twelve traditions, the Greek read →
+The suite covers the shell, every route, all thirteen traditions, the Greek read →
 quiz → unlock → persistence loop, failed quiz and retry, the final challenge,
 codex unlocks, timeline, all three challenges, the map and its mobile scroll,
 story and quiz SVG scenes, answer icons, narration controls, studio-clip playback,
-system-voice selection, theme/font persistence, reset confirmation, responsive overflow, skip
+system-voice selection, theme/font persistence, OS `prefers-color-scheme` defaults, reset confirmation, responsive overflow, skip
 link and quiz keyboard feedback. The saga suite covers name entry and the
 default protagonist, progressive reveal, scene and paragraph narration, the
 myth note, gated choices, persistence and resume, in-game back, restart

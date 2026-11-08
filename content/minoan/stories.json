@@ -1,0 +1,98 @@
+[
+  {
+    "id": "minoan-01",
+    "title": "Europa and the Bull",
+    "source_ref": "Apollodorus, Library 3.1.1; Ovid, Metamorphoses 2.833-875",
+    "paragraphs": [
+      "Europa was a princess of Tyre, daughter of King Agenor, and she was gathering flowers with her companions near the sea when Zeus noticed her. The god wanted her, but he did not simply seize her. He turned himself into a bull, white and gentle, with horns like a crescent moon, and joined her father's herd on the shore.",
+      "The bull seemed tame, so Europa approached him. She stroked his flank and hung a garland of flowers on his horns, then, when he knelt, she climbed onto his back, laughing with her friends. At once the bull rose and ran for the water. He swam out to sea with Europa clinging to his neck, and the shore fell away behind them.",
+      "He carried her to Crete. There he became a god again, and Europa bore sons: Minos, Rhadamanthys and, in some accounts, Sarpedon. She married Asterion, the king of Crete, who adopted the boys as his heirs. When Asterion died, Minos took the throne, and the island's later palace culture would be named Minoan after him.",
+      "No Bronze Age Minoan text tells this story. Linear A, the script of the Cretan palaces, has never been deciphered, and the earliest connected narrative comes from Greek and Roman writers such as Apollodorus and Ovid, more than a thousand years after the palaces fell. The tale explains a name; it does not record a Minoan belief."
+    ],
+    "characters": ["europa", "minos"],
+    "themes": ["abduction", "transformation", "founding"],
+    "notes": "The story is known only from later Greek and Roman authors. No Minoan or Mycenaean source mentions Europa, and the details of the bull disguise vary between versions.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "minoan-02",
+    "title": "Minos, Poseidon and the Minotaur",
+    "source_ref": "Apollodorus, Library 3.1.3-4 and 3.15.8; Hyginus, Fabulae 40",
+    "paragraphs": [
+      "Minos wanted proof that the gods supported his rule, so he prayed to Poseidon for a bull and promised to sacrifice it. Poseidon sent a bull of great beauty rising from the sea. Minos was so taken with the animal that he kept it and sacrificed another in its place. The god noticed the broken promise, and the story turns on that refusal.",
+      "Poseidon's punishment fell on Pasiphae, the wife of Minos. In the usual telling, a god made her fall in love with the bull. With the help of Daedalus, the palace craftsman, Pasiphae conceived a child by the animal. The child was Asterius, called the Minotaur: a human body with a bull's head. Apollodorus gives this outline briefly and without detail.",
+      "Minos could not kill the creature and could not let it be seen. He ordered Daedalus to build a labyrinth, a maze of twisting corridors whose plan was so confusing that no one who entered could find the way out. The Minotaur lived at its centre. The word labyrinth is older than this story, and its link to the double axe, labrys, is debated.",
+      "The whole sequence comes from later Greek and Roman mythographers, not from Minoan inscriptions. Apollodorus supplies the outline; Roman poets add colour. The tale of the bull, the queen and the monster is a Greek meditation on broken vows and divine anger, projected back onto a Bronze Age palace whose own texts remain silent."
+    ],
+    "characters": ["minos", "pasiphae", "minotaur", "daedalus"],
+    "themes": ["broken vow", "divine punishment", "monstrosity"],
+    "notes": "The conception of the Minotaur is handled without physical detail. The episode is preserved only in later mythographers and is not attested in any Bronze Age text.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "minoan-03",
+    "title": "Daedalus and Icarus",
+    "source_ref": "Ovid, Metamorphoses 8.183-235; Apollodorus, Epitome 1.12-13",
+    "paragraphs": [
+      "Daedalus was an Athenian craftsman said to have built the labyrinth at Knossos. Minos blamed him for the escape of Theseus and imprisoned him and his son Icarus, either in the maze or in a tower. Daedalus could not leave by land or sea, so he looked at the birds and decided to make himself wings.",
+      "He gathered feathers, from the smallest to the largest, and bound them with linen thread and wax. Father and son fitted the wings to their shoulders. Daedalus warned Icarus to fly a middle course: too low, and the sea would weigh the feathers down; too high, and the sun would melt the wax. Then they rose into the air.",
+      "At first Icarus followed his father. Then the joy of flight carried him higher. The wax softened, the feathers came apart, and he fell into the sea, calling his father's name. Daedalus looked for him and saw feathers floating on the water. The sea beneath is still called the Icarian, and the island near it Icaria.",
+      "Daedalus flew on to Sicily and to Cumae in Italy, where he dedicated his wings to Apollo. Ovid uses the story as a warning about extremes; later writers read it as a parable of invention without limits. The labyrinth and the wings alike are products of Greek imagination, not of Bronze Age records."
+    ],
+    "characters": ["daedalus", "icarus"],
+    "themes": ["craft", "hubris", "grief"],
+    "notes": "Ovid gives the fullest surviving version; earlier Greek authors mention Daedalus but not the flight in detail. Nothing in the Aegean Bronze Age evidence confirms the story.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "minoan-04",
+    "title": "Theseus and Ariadne",
+    "source_ref": "Plutarch, Life of Theseus 15-20; Apollodorus, Epitome 1.7-10; Homer, Odyssey 11.321-325",
+    "paragraphs": [
+      "Athens had killed Minos' son Androgeus, and Minos demanded a tribute: seven youths and seven maidens, sent every year or every nine years, to be shut in the labyrinth for the Minotaur. The ship that carried them had black sails. When the tribute came due again, Theseus, son of King Aegeus, volunteered to go and end the killing.",
+      "Ariadne, daughter of Minos and Pasiphae, saw Theseus and loved him. She gave him a ball of thread, or in some versions a sword as well, and told him to tie the thread at the entrance and let it unravel as he walked. He followed the corridor to the centre, killed the Minotaur, and followed the thread back out to the door.",
+      "Theseus took Ariadne with him and sailed away, but he did not bring her home. Some say he abandoned her asleep on Naxos; some say Dionysus found her there and married her; the Odyssey, the earliest source, says Artemis killed her. Later writers gave her a crown of stars, the constellation Corona Borealis.",
+      "Theseus forgot to hoist white sails, and his father Aegeus, watching from the cliff, believed his son dead and threw himself into the sea. Plutarch collects several versions and treats the tale as legend. The palace at Knossos is real; the maze and the tribute are later imagination, and no Minoan text mentions Theseus."
+    ],
+    "characters": ["theseus", "ariadne", "minos", "minotaur"],
+    "themes": ["rescue", "betrayal", "conflicting endings"],
+    "notes": "The endings for Ariadne genuinely differ: Homer has Artemis kill her, while later Athenian and Roman writers have Dionysus marry her. Plutarch himself reports several versions of the Cretan expedition.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "minoan-05",
+    "title": "The Bull-Leapers of Knossos",
+    "source_ref": "Knossos bull-leaping fresco (Heraklion Archaeological Museum); Nanno Marinatos, Minoan Religion",
+    "paragraphs": [
+      "On the wall of the palace at Knossos, in a room in the east wing, a fresco shows three athletic figures and a charging bull. One figure grasps the bull's horns; a second arches over the animal's back; a third stands at the far side with arms raised. The painting was assembled from fragments in the early twentieth century and is now in the museum at Heraklion.",
+      "The scene is usually called bull-leaping. Its details are debated: whether the athletes vault over the bull, or spring from its back, or perform in sequence, and whether the restored poses accurately reflect what ancient painters drew. Similar bull sports appear on seals, ivory plaques and a fresco at Tell el-Dab'a in Egypt, painted in a Minoan style.",
+      "What the performance meant is harder. Bulls and their horns were central to Cretan religion, appearing on altars, cups and seal stones. Some scholars, including Nanno Marinatos, read the sport as a ritual act offered to a goddess; others see an elite display or a coming-of-age performance. Linear A cannot tell us, because it cannot be read.",
+      "The fresco is an image, not a story. It has no plot, no names and no ending, and no ancient text explains it. To turn it into a myth about a doomed prince or a chosen maiden is to write a modern story, not to recover a Minoan one. We can describe the painting with care, and then stop."
+    ],
+    "characters": ["minos"],
+    "themes": ["ritual", "athleticism", "interpretation"],
+    "notes": "This entry describes an image and the debates around it rather than retelling a myth. The reconstruction of the fresco by early twentieth-century restorers is itself disputed, and the identity, status and fate of the leapers are unknown. The character tag Minos reflects only the later Greek name given to the palace, not a figure in the painting.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "minoan-06",
+    "title": "The Curse on the House of Atreus",
+    "source_ref": "Homer, Iliad 2.100-108; Aeschylus, Agamemnon and Libation Bearers; Apollodorus, Epitome 2.10-16",
+    "paragraphs": [
+      "Pelops wanted to marry Hippodamia, daughter of Oenomaus, king of Pisa, who had killed thirteen previous suitors in a chariot race. Pelops bribed the king's driver, Myrtilus, to sabotage the chariot, won the race, and then killed Myrtilus. With his dying words Myrtilus cursed the family. Pelops' sons were Atreus and Thyestes, and their quarrel began a chain that Greek tragedy traced through three generations of one royal house at Mycenae.",
+      "Atreus became king of Mycenae. Thyestes seduced Atreus' wife and took the golden lamb that should have marked who was rightful king. Atreus pretended to forgive him and invited him to a banquet, where he served the flesh of Thyestes' own children. Thyestes ate without knowing, and the sun was said to turn backwards in horror.",
+      "Atreus' sons were Agamemnon and Menelaus. Agamemnon ruled Mycenae and led the Greek army against Troy; Menelaus married Helen, whose flight with Paris started the war. Agamemnon sacrificed his daughter Iphigenia to obtain a wind, and when he came home after ten years his wife Clytemnestra and her lover Aegisthus killed him.",
+      "Homer and the tragedians tell this saga, not Bronze Age archives. Mycenae, the citadel with its Lion Gate and rich burials, was a real Mycenaean centre, and later Greeks placed Agamemnon there, but the Linear B tablets that survive are administrative lists, not epics. The curse is legendary history: later Greeks explaining the violence of a vanished age."
+    ],
+    "characters": ["atreus", "agamemnon"],
+    "themes": ["inherited guilt", "revenge", "legendary history"],
+    "notes": "The saga is set in the Mycenaean world but was composed centuries later, after the palaces were abandoned. No Bronze Age text records Pelops, Atreus, Thyestes or the curse.",
+    "uncertain": true,
+    "verified": false
+  }
+]

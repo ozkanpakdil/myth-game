@@ -177,12 +177,12 @@
     "start_year": -1000,
     "end_year": 2026,
     "summary": "Singers of the north told of a world made by a creator god, of the forging of the Sampo, and of shamans who travelled between worlds.",
-    "mvp": false,
+    "mvp": true,
     "sensitivity": "medium",
     "verified": false
   },
   {
-    "id": "caucasian",
+    "id": "caucasus",
     "name": "Caucasian (Nart)",
     "region": "Europe",
     "period_text": "ancient oral tradition; Nart sagas collected in the 19th century",
@@ -190,7 +190,7 @@
     "start_year": -1000,
     "end_year": 2026,
     "summary": "Peoples of the Caucasus share the Nart sagas, where a race of heroes battles giants and brings fire and culture to the world.",
-    "mvp": false,
+    "mvp": true,
     "sensitivity": "medium",
     "verified": false
   },
@@ -333,12 +333,12 @@
     "start_year": -1000,
     "end_year": 2026,
     "summary": "Akan storytellers made Anansi the spider a clever trickster whose small size and quick wit turn the tables on stronger creatures.",
-    "mvp": false,
+    "mvp": true,
     "sensitivity": "medium",
     "verified": false
   },
   {
-    "id": "mande",
+    "id": "dogon",
     "name": "Dogon & Mande",
     "region": "Africa",
     "period_text": "ancient–present",
@@ -346,7 +346,7 @@
     "start_year": -1000,
     "end_year": 2026,
     "summary": "Mande bards keep the epic of Sundiata, founder of Mali, while Dogon traditions describe star beings and the ordering of the world.",
-    "mvp": false,
+    "mvp": true,
     "sensitivity": "medium",
     "verified": false
   },
@@ -359,7 +359,7 @@
     "start_year": -1000,
     "end_year": 2026,
     "summary": "Across central and southern Africa, Bantu-speaking peoples tell of creator gods, culture heroes and spirits who inhabit land, water and sky.",
-    "mvp": false,
+    "mvp": true,
     "sensitivity": "medium",
     "verified": false
   },
@@ -429,7 +429,7 @@
     "verified": false
   },
   {
-    "id": "polynesia",
+    "id": "polynesian",
     "name": "Polynesian",
     "region": "Oceania",
     "period_text": "far Polynesia settled about 1000–1300 CE; older roots",
@@ -437,7 +437,7 @@
     "start_year": 1000,
     "end_year": 2026,
     "summary": "Māori, Hawaiian and other Polynesian traditions tell of sky and earth parents, of Māui who fished up islands, and of voyages across the great ocean.",
-    "mvp": false,
+    "mvp": true,
     "sensitivity": "medium",
     "verified": false
   },

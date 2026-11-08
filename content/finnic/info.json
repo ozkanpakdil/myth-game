@@ -1,0 +1,69 @@
+{
+  "id": "finnic",
+  "name": "Finnic / Sámi",
+  "intro": "Finnic and Sámi traditions meet in the north but are not the same thing. Finnish and Karelian folk poems were sung for centuries before Elias Lönnrot gathered them on field trips in the 1830s and 1840s and shaped them into the Kalevala, a nineteenth-century epic built from oral material. Sámi religion is older, more local and still practised: its gods, drums and yoiks belong to communities across Sápmi, and much of what outsiders wrote down came through missionaries who opposed it. The six stories here move from the creation of the world and the forging of the Sampo to Lemminkäinen's death, the bear's funeral, the sun mother Beaivi and the noaidi's journey. Read the Kalevala as literature with sources, and Sámi tradition as a living religion with its own voices.",
+  "timeline": [
+    {
+      "label": "Folk poems sung",
+      "year_text": "before 1800 (oral)",
+      "note": "Finnish and Karelian poems about Ilmatar, Väinämöinen and Lemminkäinen are sung at weddings, harvests and healing rites and passed on without a fixed text."
+    },
+    {
+      "label": "Lönnrot's collecting journeys",
+      "year_text": "1828-1844",
+      "note": "Elias Lönnrot travels through Finland, Karelia and Ingria, writing down poems from singers and gradually building a single epic out of them."
+    },
+    {
+      "label": "The Kalevala published",
+      "year_text": "1835 and 1849",
+      "note": "The Old Kalevala appears in 1835 and the expanded New Kalevala in 1849. Both are Lönnrot's arrangements of collected oral poetry, not a surviving ancient manuscript."
+    },
+    {
+      "label": "Schefferus, Lapponia",
+      "year_text": "1673",
+      "note": "Johannes Schefferus publishes an early printed survey of Sámi life and religion, based on reports from missionaries and officials rather than on fieldwork."
+    },
+    {
+      "label": "Mission and confiscation",
+      "year_text": "17th-18th century",
+      "note": "Danish-Norwegian and Swedish missionaries destroy drums, ban yoiks and prosecute noaidis, and their court and mission records become a main written source."
+    },
+    {
+      "label": "Sámi revival and scholarship",
+      "year_text": "20th century-present",
+      "note": "Sámi writers, yoikers and scholars reclaim the tradition, while researchers such as Anna-Leena Siikala, Juha Pentikäinen and Veli-Pekka Lehtola reassess the old accounts."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Kalevala (Old Kalevala, 1835; New Kalevala, 1849)",
+      "note": "Elias Lönnrot's epic, compiled from oral poems and repeatedly revised. It preserves a great deal of traditional material, but its shape, order and connecting narrative are nineteenth-century literary work."
+    },
+    {
+      "title": "Elias Lönnrot's folk poetry collections",
+      "note": "Lönnrot's field notes and the wider archive of Finnish and Karelian poems recorded by him and other collectors. These are the primary evidence behind the Kalevala, and they show how much the epic selects and combines."
+    },
+    {
+      "title": "Sámi yoiks and oral accounts",
+      "note": "Yoiks are performed rather than recited, and they name and remember people, animals and places. Recorded collections and living performers preserve forms that mission bans and assimilation pressure tried to erase."
+    },
+    {
+      "title": "Johannes Schefferus, Lapponia (1673)",
+      "note": "An early printed description of Sámi life, religion and drum use, compiled from reports sent to the author. Valuable, but shaped by the assumptions of seventeenth-century European scholarship and mission."
+    },
+    {
+      "title": "Anna-Leena Siikala, Mythic Images and Shamanism",
+      "note": "A comparative study of Kalevala poetry and shamanic tradition, arguing that many epic images rest on older ritual and oral patterns rather than on Lönnrot's invention."
+    },
+    {
+      "title": "Juha Pentikäinen, Kalevala Mythology",
+      "note": "A study of the Kalevala's sources, its making and its place in Finnish culture, attentive to the difference between oral poetry and Lönnrot's epic."
+    },
+    {
+      "title": "Veli-Pekka Lehtola, The Sámi People: A History",
+      "note": "A history of the Sámi from their own perspective, covering religion, mission, assimilation and the modern cultural revival."
+    }
+  ],
+  "sensitivity": "medium",
+  "verified": false
+}

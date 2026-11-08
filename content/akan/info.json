@@ -1,0 +1,69 @@
+{
+  "id": "akan",
+  "name": "Akan / West African",
+  "intro": "Akan-speaking peoples live chiefly in present-day Ghana, with related communities in neighbouring countries, and their traditions include several kingdoms, among them Asante, Denkyira and Akuapem. Akan religion holds a supreme being, Nyame or Nyankopon, a world of abosom or lesser powers, and ancestors who remain in relationship with the living. The stories in this pack come from two kinds of source: oral tradition recorded from the nineteenth century onward, above all by R. S. Rattray, and Asante historical tradition about the founding of the union. Some of this material is sacred rather than entertaining. The Golden Stool is understood as the living soul of the Asante nation and is never sat upon, and it is treated here with care. Creation accounts vary, the notes mark where retellings differ, and spellings are simplified ASCII.",
+  "timeline": [
+    {
+      "label": "Akan oral tradition",
+      "year_text": "before 1700",
+      "note": "Creation accounts, Ananse tales, akua'ba stories and forest tales circulate orally among Akan-speaking peoples. The earliest written records come from European traders and missionaries on the coast."
+    },
+    {
+      "label": "The Asante union",
+      "year_text": "c. 1700",
+      "note": "Osei Tutu and Okomfo Anokye bring the Asante states together, with Kumasi as their capital. The Golden Stool becomes the sacred symbol of the new nation."
+    },
+    {
+      "label": "Asante empire",
+      "year_text": "18th-19th century",
+      "note": "Asante expands through gold, trade and war, and becomes one of the most powerful states in West Africa. British influence grows along the coast."
+    },
+    {
+      "label": "Exile and the war of 1900",
+      "year_text": "1896-1900",
+      "note": "Britain exiles the Asantehene Prempeh I in 1896. In 1900 a governor demands to sit on the Golden Stool, and Yaa Asantewaa leads the resistance that follows."
+    },
+    {
+      "label": "Recording the tradition",
+      "year_text": "1920s-1940s",
+      "note": "R. S. Rattray publishes Ashanti (1923) and Akan-Ashanti Folk-Tales (1930), and J. B. Danquah publishes The Akan Doctrine of God (1944). Asante history and religion begin to be studied in Akan terms."
+    },
+    {
+      "label": "Living tradition",
+      "year_text": "1957-present",
+      "note": "Ghana becomes independent in 1957. Ananse stories are told in books and classrooms, akua'ba dolls are still carved and carried, and the Asantehene remains guardian of the Golden Stool."
+    }
+  ],
+  "sources": [
+    {
+      "title": "R. S. Rattray, Ashanti (1923)",
+      "note": "Rattray's first major collection of Asante custom and belief, written while he was a colonial officer in the Gold Coast. It records creation accounts, the abosom and the Golden Stool, and it reflects the assumptions of its time."
+    },
+    {
+      "title": "R. S. Rattray, Akan-Ashanti Folk-Tales (1930)",
+      "note": "A collection of tales in Akan with English translations, including Ananse cycles and forest stories. The texts remain a standard source for the oral repertoire and for the way the tales were told."
+    },
+    {
+      "title": "J. B. Danquah, The Akan Doctrine of God (1944)",
+      "note": "An early philosophical study of Akan religion by a Ghanaian scholar and politician, arguing for a systematic Akan theology. It is a landmark of African intellectual history and also a work of its moment."
+    },
+    {
+      "title": "Peggy Appiah, Ananse the Spider",
+      "note": "A collection of Ananse stories drawn from village telling and retold for young readers. It is useful for the comic pacing of the tales and for the way a teller performs them."
+    },
+    {
+      "title": "T. C. McCaskie, State and Society in Pre-Colonial Asante (1995)",
+      "note": "A detailed social history of Asante before colonial rule, examining the state, the court and the sacred basis of royal authority. It treats the Golden Stool as a political and religious institution."
+    },
+    {
+      "title": "Ivor Wilks, Asante in the Nineteenth Century (1975)",
+      "note": "The standard modern history of the nineteenth-century Asante empire, based on archival and oral evidence. It sets the founding tradition in the context of an expanding state."
+    },
+    {
+      "title": "Herbert M. Cole and Doran H. Ross, The Arts of Ghana (1977)",
+      "note": "A survey of Ghanaian art and material culture, including akua'ba figures, adinkra cloth and kente. It discusses how objects are made, used and understood rather than only how they look."
+    }
+  ],
+  "sensitivity": "medium",
+  "verified": false
+}

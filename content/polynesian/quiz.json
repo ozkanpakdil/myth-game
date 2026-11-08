@@ -1,0 +1,302 @@
+[
+  {
+    "id": "polynesian-q01",
+    "story_id": "polynesian-01",
+    "question": "Who are Ranginui and Papatūānuku in the Māori story?",
+    "choices": [
+      "The sky father and the earth mother",
+      "The sea god and the forest god",
+      "The first fisherman and his wife",
+      "The moon and the sun"
+    ],
+    "correct_index": 0,
+    "explanation": "Ranginui is the sky father and Papatūānuku the earth mother, the first pair in the Māori creation account.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "polynesian-q02",
+    "story_id": "polynesian-01",
+    "question": "What is life like for the children before the separation?",
+    "choices": [
+      "They farm and fish in daylight",
+      "They live cramped in darkness between their parents",
+      "They sail between islands",
+      "They live in a cave under the sea"
+    ],
+    "correct_index": 1,
+    "explanation": "Their children live squeezed in the dark between their parents, with no light or room to stand.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "polynesian-q03",
+    "story_id": "polynesian-01",
+    "question": "Which son pushes Ranginui and Papatūānuku apart?",
+    "choices": [
+      "Tangaroa",
+      "Tāwhirimātea",
+      "Tāne",
+      "Whiro"
+    ],
+    "correct_index": 2,
+    "explanation": "Tāne lies between his parents and pushes with his legs, lifting the sky away from the earth.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "polynesian-q04",
+    "story_id": "polynesian-01",
+    "question": "Whose manuscripts did George Grey draw on for his 1855 account?",
+    "choices": [
+      "Kepelino",
+      "Teuira Henry",
+      "Martha Beckwith",
+      "Wiremu Maihi Te Rangikāheke"
+    ],
+    "correct_index": 3,
+    "explanation": "Grey's 1855 book drew heavily on manuscripts written for him by Wiremu Maihi Te Rangikāheke.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "polynesian-q05",
+    "story_id": "polynesian-02",
+    "question": "What does Māui decide to do about the sun?",
+    "choices": [
+      "Put it out",
+      "Slow it down",
+      "Move it closer",
+      "Make it rise in the west"
+    ],
+    "correct_index": 1,
+    "explanation": "Māui wants longer days, so he sets out to catch the sun and make it move more slowly.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "polynesian-q06",
+    "story_id": "polynesian-02",
+    "question": "What do Māui and his brothers use to snare the sun?",
+    "choices": [
+      "Long ropes of flax",
+      "A net of bird feathers",
+      "Spears of hardwood",
+      "A pit covered with leaves"
+    ],
+    "correct_index": 0,
+    "explanation": "The brothers gather long flax ropes, and in some tellings the rope is woven from Hina's hair.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "polynesian-q07",
+    "story_id": "polynesian-02",
+    "question": "Where do Māui and his brothers wait to catch the sun?",
+    "choices": [
+      "On the peak of a mountain",
+      "At the edge of the sea",
+      "Inside a cave under the earth",
+      "At the pit where the sun sleeps"
+    ],
+    "correct_index": 3,
+    "explanation": "They go east to the pit where the sun sleeps and set their nooses around the opening.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "polynesian-q08",
+    "story_id": "polynesian-03",
+    "question": "What does Māui use as bait when his brothers refuse him?",
+    "choices": [
+      "A piece of fish",
+      "A feather",
+      "His own blood",
+      "A worm"
+    ],
+    "correct_index": 2,
+    "explanation": "When his brothers refuse him bait, Māui strikes his nose and baits the hook with his own blood.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "polynesian-q09",
+    "story_id": "polynesian-03",
+    "question": "Why does the North Island become rugged in the story?",
+    "choices": [
+      "The brothers cut the fish before the ceremonies",
+      "Māui drops it from the sky",
+      "A storm breaks it apart",
+      "The fish fights the sun"
+    ],
+    "correct_index": 0,
+    "explanation": "The brothers cut into the fish before the ceremonies, and its writhing body becomes mountains and valleys.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "polynesian-q10",
+    "story_id": "polynesian-03",
+    "question": "What does the South Island represent in the tradition?",
+    "choices": [
+      "The anchor stone of the canoe",
+      "Māui's canoe, Te Waka-a-Māui",
+      "The fish that got away",
+      "The jawbone of his grandmother"
+    ],
+    "correct_index": 1,
+    "explanation": "The South Island is Te Waka-a-Māui, Māui's canoe, while the North Island is the fish he caught.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "polynesian-q11",
+    "story_id": "polynesian-04",
+    "question": "Why does Rata cut down a tree?",
+    "choices": [
+      "To build a house",
+      "To clear a field",
+      "To make a fire",
+      "To build a canoe"
+    ],
+    "correct_index": 3,
+    "explanation": "Rata needs a canoe so that he can travel and avenge his father's death.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "polynesian-q12",
+    "story_id": "polynesian-04",
+    "question": "Who restores the tree each night?",
+    "choices": [
+      "Rata's brothers",
+      "The hākuturi, small forest creatures",
+      "Tāwhirimātea",
+      "The villagers"
+    ],
+    "correct_index": 1,
+    "explanation": "The hākuturi put every chip back in place, and the tree stands whole again by morning.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "polynesian-q13",
+    "story_id": "polynesian-04",
+    "question": "What had Rata failed to do before felling the tree?",
+    "choices": [
+      "Ask Tāne and perform the proper rites",
+      "Sharpen his adze",
+      "Tell his family",
+      "Find the tallest tree"
+    ],
+    "correct_index": 0,
+    "explanation": "The creatures tell Rata that he insulted Tāne by felling the tree without permission or ritual.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "polynesian-q14",
+    "story_id": "polynesian-04",
+    "question": "In Tahitian versions, what do the forest spirits do after Rata catches them?",
+    "choices": [
+      "They restore the standing tree",
+      "They carry him to Tahiti",
+      "They build his canoe in a single night",
+      "They turn him into a heron"
+    ],
+    "correct_index": 2,
+    "explanation": "In the Tahitian telling the spirits complete the canoe in one night after Rata seizes them.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "polynesian-q15",
+    "story_id": "polynesian-05",
+    "question": "Who is Pele in the Hawaiian story?",
+    "choices": [
+      "The volcano goddess",
+      "The goddess of the sea",
+      "A chief of O'ahu",
+      "The mother of Māui"
+    ],
+    "correct_index": 0,
+    "explanation": "Pele is the Hawaiian volcano goddess, associated with Kīlauea and the fire of Halema'uma'u.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "polynesian-q16",
+    "story_id": "polynesian-05",
+    "question": "What two shapes can Kamapua'a take?",
+    "choices": [
+      "A shark and a man",
+      "A bird and a fish",
+      "A pig and a man",
+      "A cloud and a tree"
+    ],
+    "correct_index": 2,
+    "explanation": "Kamapua'a is a shape-shifter who appears as a pig or as a man.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "polynesian-q17",
+    "story_id": "polynesian-05",
+    "question": "How does the story explain the island's wet and dry sides?",
+    "choices": [
+      "Pele keeps the wet windward land and Kamapua'a the dry leeward land",
+      "Pele keeps the dry leeward land and Kamapua'a the wet windward land",
+      "The brothers of Māui divided the island",
+      "The rain stopped after the quarrel"
+    ],
+    "correct_index": 1,
+    "explanation": "Pele keeps the dry leeward districts and Kamapua'a the wet windward ones, which is why the island has two sides.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "polynesian-q18",
+    "story_id": "polynesian-06",
+    "question": "Who is Hina's husband in the Tahitian story?",
+    "choices": [
+      "Māui",
+      "Te Tuna, the eel god",
+      "Kuna, the mo'o",
+      "Tui Fiti, king of Fiji"
+    ],
+    "correct_index": 1,
+    "explanation": "In Tahiti, Hina is the wife of Te Tuna, the eel god, before she leaves him for Māui.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "polynesian-q19",
+    "story_id": "polynesian-06",
+    "question": "What grows from the buried eel's head?",
+    "choices": [
+      "A taro plant",
+      "A breadfruit tree",
+      "A bamboo grove",
+      "The first coconut tree"
+    ],
+    "correct_index": 3,
+    "explanation": "Māui buries the eel's head, and the first coconut tree grows from the spot.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "polynesian-q20",
+    "story_id": "polynesian-06",
+    "question": "In the Hawaiian Hilo tradition, who troubles Hina at the Wailuku River?",
+    "choices": [
+      "Te Tuna, the eel god",
+      "Tui Fiti, king of Fiji",
+      "Kuna, a giant mo'o",
+      "Kamapua'a, the pig god"
+    ],
+    "correct_index": 2,
+    "explanation": "The Hilo tradition names Kuna, a giant mo'o, as the watcher killed by Māui, and no coconut grows.",
+    "difficulty": "hard",
+    "verified": false
+  }
+]

@@ -1,0 +1,302 @@
+[
+  {
+    "id": "bantu-q01",
+    "story_id": "bantu-01",
+    "question": "Who is Nzambi Mpungu in Kongo tradition?",
+    "choices": [
+      "The creator of the world",
+      "The first king of the Kongo kingdom",
+      "A trickster who steals fire",
+      "The god of the lower Congo River"
+    ],
+    "correct_index": 0,
+    "explanation": "Kongo tradition names Nzambi Mpungu as the creator, the great spirit behind the world and all its living things.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "bantu-q02",
+    "story_id": "bantu-01",
+    "question": "What does Nzambi do after finishing the work of creation?",
+    "choices": [
+      "Rules the world in person every day",
+      "Withdraws and leaves it to lesser spirits",
+      "Gives the world to the first king",
+      "Destroys it and starts again"
+    ],
+    "correct_index": 1,
+    "explanation": "In the retelling, Nzambi withdraws after creation, and ancestors and local spirits become the powers people approach in daily life.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "bantu-q03",
+    "story_id": "bantu-01",
+    "question": "Why is the written record of Nzambi shaped by Christian ideas?",
+    "choices": [
+      "Portuguese traders invented the name",
+      "Nzambi appears only in missionary Bibles",
+      "Missionaries identified Nzambi with the Christian God",
+      "Kongo scribes wrote the story in the nineteenth century"
+    ],
+    "correct_index": 2,
+    "explanation": "Missionaries in the Kingdom of Kongo equated Nzambi with the Christian God, and that equation shaped later retellings and modern Kikongo usage.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "bantu-q04",
+    "story_id": "bantu-02",
+    "question": "How is Mwindo born in the Nyanga epic?",
+    "choices": [
+      "From an egg",
+      "Walking and talking",
+      "From a tree",
+      "In a thunderstorm"
+    ],
+    "correct_index": 1,
+    "explanation": "Mwindo refuses an ordinary birth and comes out walking and talking, already holding his conga scepter.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "bantu-q05",
+    "story_id": "bantu-02",
+    "question": "Which chief orders his wives to bear only daughters?",
+    "choices": [
+      "Muisa",
+      "Iyangura",
+      "Shemwindo",
+      "Nzambi"
+    ],
+    "correct_index": 2,
+    "explanation": "Shemwindo, Mwindo's father, forbids sons, and Mwindo's birth breaks that command.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "bantu-q06",
+    "story_id": "bantu-02",
+    "question": "Who helps Mwindo survive his father's attempts to kill him?",
+    "choices": [
+      "His aunt Iyangura",
+      "The god Muisa",
+      "The bard Candi Rureke",
+      "His father's council"
+    ],
+    "correct_index": 0,
+    "explanation": "Iyangura, Mwindo's aunt, is his ally and helps him survive the traps and attacks that Shemwindo sets.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "bantu-q07",
+    "story_id": "bantu-02",
+    "question": "Whom does Mwindo confront in the underworld?",
+    "choices": [
+      "Nkongolo",
+      "Gulu",
+      "Walumbe",
+      "Muisa"
+    ],
+    "correct_index": 3,
+    "explanation": "Mwindo follows his father to the underworld and faces Muisa, its ruler, before bringing Shemwindo home.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "bantu-q08",
+    "story_id": "bantu-03",
+    "question": "What message does the chameleon carry to the villages?",
+    "choices": [
+      "That people will live forever",
+      "That the rains are coming",
+      "That the king has died",
+      "That the first harvest is ready"
+    ],
+    "correct_index": 0,
+    "explanation": "Unkulunkulu sends the chameleon to say that people will live and rise again, not die.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "bantu-q09",
+    "story_id": "bantu-03",
+    "question": "Which animal delivers the opposite message?",
+    "choices": [
+      "A tortoise",
+      "A lizard",
+      "A hare",
+      "A crane"
+    ],
+    "correct_index": 1,
+    "explanation": "A lizard, or in some versions a skink or a salamander, runs ahead and tells the people that they will die.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "bantu-q10",
+    "story_id": "bantu-03",
+    "question": "Why does the chameleon arrive too late?",
+    "choices": [
+      "It loses its way",
+      "It is chased by the lizard",
+      "It stops to eat on the way",
+      "It is forbidden to speak"
+    ],
+    "correct_index": 2,
+    "explanation": "In the common version the chameleon stops to eat, and its slowness lets the lizard's message arrive first.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "bantu-q11",
+    "story_id": "bantu-03",
+    "question": "What do southern African versions of the story disagree about?",
+    "choices": [
+      "Whether people ever die",
+      "Whether the creator exists",
+      "Whether the chameleon can speak",
+      "Which animals carry the messages and why one is delayed"
+    ],
+    "correct_index": 3,
+    "explanation": "The messengers, the reason for the delay and the number of messages vary between Zulu, Xhosa and other regional versions.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "bantu-q12",
+    "story_id": "bantu-04",
+    "question": "Where does Mbidi Kiluwe come from?",
+    "choices": [
+      "From the east, across the river",
+      "From the Luba royal court",
+      "From the underworld",
+      "From the sky"
+    ],
+    "correct_index": 0,
+    "explanation": "Mbidi Kiluwe is a stranger from the east who crosses the river into Luba country and brings a new model of kingship.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "bantu-q13",
+    "story_id": "bantu-04",
+    "question": "Who is Kalala Ilunga in the Luba story?",
+    "choices": [
+      "Nkongolo's brother",
+      "Mbidi's son and the first true Luba king",
+      "A reciter of the Mbudye society",
+      "The river spirit"
+    ],
+    "correct_index": 1,
+    "explanation": "Kalala Ilunga is Mbidi Kiluwe's son, raised in Luba country, who defeats Nkongolo and founds the royal line.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "bantu-q14",
+    "story_id": "bantu-04",
+    "question": "What does Thomas Reefe argue the Luba foundation story does?",
+    "choices": [
+      "Records an exact chronology of kings",
+      "Preserves a foreign invasion account",
+      "Legitimates royal power and a particular dynasty",
+      "Explains the origin of iron working"
+    ],
+    "correct_index": 2,
+    "explanation": "Reefe reads the Mbidi and Kalala Ilunga narrative as a charter that legitimates Luba kingship and the dynasty's claim to rule.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "bantu-q15",
+    "story_id": "bantu-05",
+    "question": "Who is Kintu in Ganda tradition?",
+    "choices": [
+      "The first man on earth",
+      "The lord of the sky",
+      "Nambi's brother",
+      "A drummer at Gulu's court"
+    ],
+    "correct_index": 0,
+    "explanation": "Kintu is the first man in Ganda tradition, and he is also remembered as an early king of Buganda.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "bantu-q16",
+    "story_id": "bantu-05",
+    "question": "Who is Nambi's father in Ganda tradition?",
+    "choices": [
+      "Walumbe",
+      "Kintu",
+      "Gulu",
+      "Muisa"
+    ],
+    "correct_index": 2,
+    "explanation": "Nambi is the daughter of Gulu, the lord of the sky, who summons Kintu to heaven.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "bantu-q17",
+    "story_id": "bantu-05",
+    "question": "How does death come to earth in the Ganda story?",
+    "choices": [
+      "Kintu breaks a taboo in the garden",
+      "Walumbe follows the couple down from heaven",
+      "Gulu sends a flood",
+      "Nambi eats the forbidden fruit"
+    ],
+    "correct_index": 1,
+    "explanation": "Walumbe, Nambi's brother, comes down to earth after the couple, and his arrival brings sickness and death.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "bantu-q18",
+    "story_id": "bantu-06",
+    "question": "Who are the Balobedu, the people of Modjadji?",
+    "choices": [
+      "A people of Limpopo province in South Africa",
+      "A kingdom in the Ituri rainforest",
+      "A clan of the Buganda court",
+      "A society of Luba reciters"
+    ],
+    "correct_index": 0,
+    "explanation": "The Balobedu are the people of the rain queen Modjadji, in what is now Limpopo province, South Africa.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "bantu-q19",
+    "story_id": "bantu-06",
+    "question": "How does the office of rain queen pass?",
+    "choices": [
+      "By election among the elders",
+      "Through the male line",
+      "Through women, from queen to daughter",
+      "By conquest"
+    ],
+    "correct_index": 2,
+    "explanation": "The title passes through women: the queen traditionally does not marry, and her successor is chosen from her daughters.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "bantu-q20",
+    "story_id": "bantu-06",
+    "question": "Why does this pack treat the Rain Queen as a living tradition?",
+    "choices": [
+      "Because a colonial writer invented the story",
+      "Because it survives only in a nineteenth-century book",
+      "Because the queen is a character in an ancient epic",
+      "Because the office is still held and recognized today"
+    ],
+    "correct_index": 3,
+    "explanation": "Modjadji is a current traditional leadership, not a lost myth, and the community's own protocols and disputes shape how it is told.",
+    "difficulty": "hard",
+    "verified": false
+  }
+]

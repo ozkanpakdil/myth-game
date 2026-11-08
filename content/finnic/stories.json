@@ -1,0 +1,137 @@
+[
+  {
+    "id": "finnic-01",
+    "title": "Ilmatar and the Creation",
+    "source_ref": "Kalevala, runes 1-2 (New Kalevala, 1849), from poems collected by Elias Lönnrot and other collectors",
+    "paragraphs": [
+      "In the beginning there was only air and water. Ilmatar, the air maiden, grew tired of the empty sky and came down onto the sea. For centuries she drifted on the waves, and the water itself made her pregnant. No land existed yet, and no one had begun to name the world. She waited, cold and alone, for something to begin.",
+      "A duck flew over the water looking for a place to nest. It found none, and it called for somewhere to rest. Ilmatar lifted her knee from the sea, and the duck laid a single egg there. When the egg began to burn, she flinched, and it rolled into the waves and broke.",
+      "From the broken shell the world took shape. The lower half became the earth and the upper half the sky. The yolk turned into the sun, the white into the moon, and the fragments of shell into stars. Then the first land was smoothed, the first trees were planted, and the air maiden could rest.",
+      "The Kalevala opens with this scene because Elias Lönnrot arranged it that way. In the 1830s and 1840s he gathered poems sung by Finnish and Karelian villagers and knit them into one epic. The egg, the duck and the air maiden all come from those poems. The order, and the single story, are his."
+    ],
+    "characters": [
+      "ilmatar"
+    ],
+    "themes": [
+      "creation",
+      "cosmology",
+      "the sea"
+    ],
+    "notes": "The creation runes survive in several collected variants, and Lönnrot's order, spelling and emphasis are his own. The single egg, the duck and Ilmatar's descent are traditional, but the polished sequence in the Kalevala is a nineteenth-century literary arrangement rather than a fixed ancient text.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "finnic-02",
+    "title": "Väinämöinen and the Sampo",
+    "source_ref": "Kalevala, runes 6-10 and 39-43 (New Kalevala, 1849)",
+    "paragraphs": [
+      "Väinämöinen was old already when the world was young. He was a singer who could order things by naming them, and his songs moved stone and water. He travelled north to Pohjola, the cold land beyond the sea, where Louhi its mistress set a price on her daughter. Before any marriage, she said, someone must forge the Sampo.",
+      "Väinämöinen could not forge it, but he knew who could. Ilmarinen, the smith, hammered for days at his forge. From fire and hammer-work the Sampo came out: a mill that grinds grain, salt or money and never runs empty. Louhi took it and locked it in a vault under her mountain. The north grew rich, and the south stayed poor.",
+      "What the Sampo actually was, nobody agrees. In the Kalevala it is a mill; in other poems it may be a world pillar or a lucky object that holds a community's fortune. Scholars have called it a memory of trade, a symbol of a lost golden age, or a name for something no longer understood. The poems never describe it clearly.",
+      "Years later Väinämöinen and Ilmarinen sailed north to take it back. In the battle Louhi broke the Sampo, and it fell into the sea. Some pieces washed ashore and brought prosperity; the rest were lost. The story is less about a thing than about the price of wanting it."
+    ],
+    "characters": [
+      "vainamoinen",
+      "ilmarinen",
+      "louhi"
+    ],
+    "themes": [
+      "forging",
+      "wealth",
+      "loss"
+    ],
+    "notes": "The Sampo is never described consistently. It may be a mill, a world pillar, a luck-bringing object or a memory of northern trade, and scholars disagree. The Kalevala's version is Lönnrot's arrangement of separate poems, and the battle for the Sampo survives in more than one form.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "finnic-03",
+    "title": "Lemminkäinen and the Swan of Tuonela",
+    "source_ref": "Kalevala, runes 14-15 (New Kalevala, 1849), with variants in collected Karelian poems",
+    "paragraphs": [
+      "Lemminkäinen was bold and careless, quick with a sword and quicker to anger. He decided to go to Tuonela, the land of the dead, and kill the swan that glides on its black river. The task was set for suitors, a test no one had passed. He set out without asking anyone, and without saying goodbye to his mother.",
+      "He crossed the first waters and came to the river of the dead. There the swan was floating on the dark stream. As he drew his bow, something struck him from behind. In some tellings it is the blind herdsman of the north; in others it is a snake in the water. Either way, the river carried his body away.",
+      "His mother knew. She felt the cold in her son's seat at home, and she went looking for him. She asked the roads, the trees and the moon, and at last she came to the river. She had a rake of iron made, and she drew the water until she brought up the pieces of her son.",
+      "She sewed the pieces together and sang him back. Then she sent a bee for honey from the halls of the gods and spread it on the wounds. Lemminkäinen opened his eyes. The poem gives most of its lines to her: the grief, the long search and the work of a mother who would not accept death."
+    ],
+    "characters": [
+      "lemminkainen",
+      "tuoni"
+    ],
+    "themes": [
+      "death",
+      "grief",
+      "motherhood"
+    ],
+    "uncertain": false,
+    "verified": false
+  },
+  {
+    "id": "finnic-04",
+    "title": "The Bear and the Forest",
+    "source_ref": "Finnish and Karelian folk belief, bear-hunt songs (karhunpeijaiset) and later folklore collections",
+    "paragraphs": [
+      "Before the bear was a beast to hunt, it was a relative. Finnish and Karelian villagers called it by roundabout names, because to name it outright might summon it. It was the forest's own child, the honey-paw, the one who lives in the fen. To kill one was to kill kin, and so the killing needed permission.",
+      "When a bear was killed, the hunters held a funeral for it. They sang to it, addressed it as an honoured guest, and gave it a feast, so that its spirit would not be angry. The skull was often kept or hung in a tree, and the meat was eaten at a ritual meal. The songs apologised and gave thanks at the same time.",
+      "The forest itself was peopled. Tapio hunted there with his own household, and Mielikki, his wife, cared for the birds and the small animals. A hunter asked their leave and made offerings before he went out. These were not decorations on a landscape. They were neighbours with rights, and the forest could grant or refuse.",
+      "This is a description of a cult rather than a single plot, and it is rebuilt from pieces. Christianisation, folklore collecting and modern romanticism all reshaped it. Variants differ by region, and much of what we know was written down long after the rites had changed. Read this as a pattern of belief, not a script."
+    ],
+    "characters": [
+      "mielikki"
+    ],
+    "themes": [
+      "animals",
+      "ritual",
+      "forest"
+    ],
+    "notes": "This entry describes a cult rather than a plot. Regional variants differ widely, much was recorded after Christianisation, and the bear funeral is reconstructed from songs, archaeology and later folklore. The roles of Tapio and Mielikki also vary between western and eastern Finland.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "finnic-05",
+    "title": "Beaivi and the Sámi World",
+    "source_ref": "Sámi oral tradition, yoiks and seventeenth- to eighteenth-century missionary accounts",
+    "paragraphs": [
+      "In Sámi tradition the sun is a mother, not a disc. Beaivi is the sun, called the mother of the people, and she is often shown with her daughter, Beaivi-nieida, who rides beside her. Beaivi gives light and warmth and watches the world. After the long dark her light returns, and people greet it with offerings. Yoiks are made for her.",
+      "Under the sun stands Máttaráhkká, the mother of the world, the old woman at the root of things. Her three daughters work beside her: Sáráhkká, who is present at birth; Juoksáhkká, who gives a child its character; and Uksáhkká, who guards the door. Together they order the world as a household is ordered.",
+      "Sámi religion was never one system. Coastal fishers and inland reindeer herders spoke different languages and told different stories, and names and powers shift across Sápmi. Some accounts make Beaivi a goddess, others a power or an ancestor. Most of the written sources are the work of missionaries and officials who wanted the practice to end.",
+      "From the seventeenth century, Christian priests recorded Sámi beliefs while confiscating drums and banning yoiks. Much of what survives came through hostile hands. The tradition is also alive: yoiks, offerings and family knowledge continue, and Sámi writers and scholars have their own accounts. Read the old records as evidence with a purpose, not as neutral fact."
+    ],
+    "characters": [
+      "beaivi",
+      "mattarahkka"
+    ],
+    "themes": [
+      "sun",
+      "creation",
+      "goddesses"
+    ],
+    "notes": "Sámi religion varies by region and language, and the sources are uneven. Beaivi's gender and rank, Máttaráhkká's role and the names of the three daughters differ between accounts, and most written descriptions come from missionaries hostile to the practice.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "finnic-06",
+    "title": "The Noaidi's Drum",
+    "source_ref": "Sámi accounts, missionary records and modern scholarship on noaidi practice",
+    "paragraphs": [
+      "The noaidi was the person in a Sámi community who could travel. Where others saw land, the noaidi saw a road that ran beneath it. A drum was kept for this: a skin stretched over a frame and marked with figures: a sun, a person, an animal, a tent, a church, so that the whole world could be read on its surface.",
+      "When the community needed help, the noaidi drummed. He or she sang, struck the drum with a bone or a stick, and the figures on the skin became a map. Sending the soul out of the body, the noaidi went down to the land of the dead to ask advice, to find a lost soul, or to bring back someone who had gone too far.",
+      "The drum was also consulted. An object placed on the skin moved as the drum was beaten, and where it stopped gave the answer. But the drum was more than a divination tool. It was the community's map of the cosmos and a record of relations between the worlds, and destroying it was a way of destroying that knowledge.",
+      "Missionaries collected and burned drums, and many surviving examples are in European museums. Modern scholars such as Anna-Leena Siikala and Juha Pentikäinen read the accounts with care, but a full ritual sequence cannot be recovered. Anyone who describes the noaidi's journey in detail is partly reconstructing. The practice deserves respect, and the gaps deserve honesty."
+    ],
+    "characters": [
+      "noaidi"
+    ],
+    "themes": [
+      "shamanism",
+      "the dead",
+      "knowledge"
+    ],
+    "notes": "The noaidi's journey is known from fragments: missionary reports, court records, drum symbols and living tradition. No single ritual script survives, and modern descriptions necessarily reconstruct it. The drum's symbolism is also read differently by different scholars.",
+    "uncertain": true,
+    "verified": false
+  }
+]

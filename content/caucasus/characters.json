@@ -1,0 +1,168 @@
+[
+  {
+    "id": "setenaya",
+    "name": "Setenaya",
+    "role": "Mother and matriarch of the Narts",
+    "domain": [
+      "wisdom",
+      "household",
+      "fertility"
+    ],
+    "symbols": [
+      "the heavenly mirror",
+      "the seven-tiered tower",
+      "the river"
+    ],
+    "fun_fact": "In Ossetian tradition she is born from the dead Dzerassae, while Circassian tellers say she was born from a flower, the dropwort that still bears her name.",
+    "verified": false
+  },
+  {
+    "id": "sosruko",
+    "name": "Sosruko",
+    "role": "Stone-born trickster hero and fire-stealer",
+    "domain": [
+      "cunning",
+      "fire",
+      "horsemanship"
+    ],
+    "symbols": [
+      "the stone",
+      "the firebrand",
+      "the horse Txozhey"
+    ],
+    "fun_fact": "He is small and dark rather than tall and fair, and the sagas treat his cunning, not his strength, as the real source of his fame.",
+    "verified": false
+  },
+  {
+    "id": "batraz",
+    "name": "Batraz",
+    "role": "Steel-bodied storm hero of the Narts",
+    "domain": [
+      "war",
+      "storm",
+      "vengeance"
+    ],
+    "symbols": [
+      "the sword",
+      "lightning",
+      "the steel body"
+    ],
+    "fun_fact": "He chooses his own death, dancing on his funeral pyre until white-hot before his sword is thrown into the sea.",
+    "verified": false
+  },
+  {
+    "id": "syrdon",
+    "name": "Syrdon",
+    "role": "Trickster and slanderer of the Narts",
+    "domain": [
+      "trickery",
+      "music",
+      "misfortune"
+    ],
+    "symbols": [
+      "the fandyr",
+      "the underground labyrinth",
+      "the hat"
+    ],
+    "fun_fact": "He is credited with inventing the fandyr, the Nart harp, and with knowing everything before it happened.",
+    "verified": false
+  },
+  {
+    "id": "nasran",
+    "name": "Nasran",
+    "role": "Long-bearded elder and counsellor of the Narts",
+    "domain": [
+      "counsel",
+      "eldership",
+      "hospitality"
+    ],
+    "symbols": [
+      "the long beard",
+      "the council fire"
+    ],
+    "fun_fact": "In the Circassian fire tale it is Nasran Longbeard who admits that the Narts should never have ridden out without Sosruko.",
+    "verified": false
+  },
+  {
+    "id": "khamyts",
+    "name": "Khamyts",
+    "role": "Nart warrior and father of Batraz",
+    "domain": [
+      "war",
+      "paternity",
+      "pride"
+    ],
+    "symbols": [
+      "the steel moustache",
+      "the magic tooth"
+    ],
+    "fun_fact": "His steel moustache turns aside the snakes and lizards that rise from the Uatsamonga cup.",
+    "verified": false
+  },
+  {
+    "id": "uryzmag",
+    "name": "Uryzmag",
+    "role": "Elder of the Narts and husband of Setenaya",
+    "domain": [
+      "eldership",
+      "marriage",
+      "hospitality"
+    ],
+    "symbols": [
+      "the white beard",
+      "the tower"
+    ],
+    "fun_fact": "He is one of the few Nart heroes shown growing old, and the sagas keep his marriage to Setenaya at the centre of the household.",
+    "verified": false
+  },
+  {
+    "id": "aishana",
+    "name": "Aishana",
+    "role": "Young Nart hero raised in the sky",
+    "domain": [
+      "youth",
+      "archery",
+      "quests"
+    ],
+    "symbols": [
+      "the heavenly bow",
+      "the clashing mountains"
+    ],
+    "fun_fact": "Born to Uryzmag's household, he is raised by Safa in the sky and wins fame by defeating the Agur raiders.",
+    "verified": false
+  },
+  {
+    "id": "tlepsh",
+    "name": "Tlepsh",
+    "role": "Circassian smith of the Narts",
+    "domain": [
+      "smithcraft",
+      "fire",
+      "craft"
+    ],
+    "symbols": [
+      "the forge",
+      "the hammer",
+      "iron"
+    ],
+    "fun_fact": "His Ossetian counterpart is the smith Kurdalagon, and Circassian tales credit him with forging the Narts' weapons and tempering their heroes.",
+    "verified": false
+  },
+  {
+    "id": "waig",
+    "name": "Waig",
+    "role": "One-eyed giant of the Ossetian sagas",
+    "domain": [
+      "giants",
+      "obstacles",
+      "chaos"
+    ],
+    "symbols": [
+      "the single eye",
+      "the tower",
+      "the fire"
+    ],
+    "fun_fact": "Waigs are huge and strong but foolish, and their towers and fires are the setting for some of the Narts' boldest tricks.",
+    "verified": false
+  }
+]

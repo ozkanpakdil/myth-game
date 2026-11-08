@@ -1,0 +1,69 @@
+{
+  "id": "dogon",
+  "name": "Dogon & Mande",
+  "intro": "The Dogon live mainly along the Bandiagara Escarpment in central Mali, and Mande-speaking peoples span Mali, Guinea, Senegal and neighbouring countries. Both traditions are living, not closed chapters of the past. Dogon cosmology is known outside Africa largely through the writings of Marcel Griaule and Germaine Dieterlen, whose elaborate account of Amma, the Nommo and the pale fox has been strongly criticised by later scholars, including Walter van Beek; it should be read as one contested interpretation, not as 'the Dogon religion'. Mande history and heroic memory are carried by jeliw, hereditary griots, whose performances of the Sunjata epic differ from one another. Some Dogon knowledge is restricted to initiated elders, and this pack does not claim to disclose it. The retellings below mark what is uncertain, variant or disputed.",
+  "timeline": [
+    {
+      "label": "Battle of Kirina",
+      "year_text": "c. 1235",
+      "note": "Traditional date for Sunjata's victory over Soumaoro Kanté and the founding of the Mali Empire. The epic is the main narrative source, and historians treat the date as approximate."
+    },
+    {
+      "label": "Mali Empire and the griots",
+      "year_text": "13th-14th century",
+      "note": "Mali expands under Sunjata's successors, and Mande jeliw preserve genealogies, praise names and epic narratives across the region."
+    },
+    {
+      "label": "Griaule in Dogon country",
+      "year_text": "1931",
+      "note": "Marcel Griaule begins sustained fieldwork among the Dogon. His encounters, including those with the elder Ogotemmêli, become the basis of a famous and contested account."
+    },
+    {
+      "label": "The published cosmology",
+      "year_text": "1948-1965",
+      "note": "Dieu d'eau (1948) and Le Renard pâle (1965) present Amma, the Nommo and Ogo as a coherent system. Later scholars question how widely that system was shared."
+    },
+    {
+      "label": "Niane's Sundiata",
+      "year_text": "1960",
+      "note": "Djibril Tamsir Niane publishes a widely read retelling of the epic in the year Mali becomes independent. It shapes popular knowledge of Sunjata for generations."
+    },
+    {
+      "label": "Critique and living tradition",
+      "year_text": "1991-present",
+      "note": "Walter van Beek's 1991 field study challenges the Griaule-Dieterlen synthesis, while Dogon communities continue their rites, including the Sigui cycle, and Mande griots continue to perform."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Marcel Griaule and Germaine Dieterlen, Dieu d'eau (1948) and Le Renard pâle (1965)",
+      "note": "The most influential outside account of Dogon cosmology, presenting Amma, the Nommo, Ogo and Faro as a coherent system. It is a contested synthesis, and later scholars have questioned both its method and its claim to represent shared Dogon belief; it should not be read as the Dogon religion."
+    },
+    {
+      "title": "Djibril Tamsir Niane, Sundiata: An Epic of Old Mali (1960)",
+      "note": "A widely read literary retelling based on performances by the griot Mamadou Kouyaté. It is not a verbatim transcript, and it has shaped how modern readers imagine the epic."
+    },
+    {
+      "title": "Mande oral epic tradition (jeliw)",
+      "note": "The Sunjata epic is performed by hereditary griots, and versions differ by family, region and occasion. The living performance tradition is the primary context for the story, not a single fixed text."
+    },
+    {
+      "title": "David C. Conrad, Sunjata: A West African Epic of the Mande Peoples (2004)",
+      "note": "A translation of a full performance by Djanka Tassey Condé, with contextual material. It shows how one telling works as performance and helps correct the idea of a single authoritative version."
+    },
+    {
+      "title": "Stephen Belcher, Epic Traditions of Africa (1999)",
+      "note": "A comparative study of African epic that includes Mande materials. It is useful for distinguishing the literary shaping of an epic from the historical events it remembers."
+    },
+    {
+      "title": "Walter E. A. van Beek, 'Dogon Restudied' (Current Anthropology, 1991)",
+      "note": "A field evaluation that found little support for the elaborate Griaule-Dieterlen system as shared Dogon belief. It is central to the critical caveat that runs through this pack."
+    },
+    {
+      "title": "Contemporary Dogon communities and oral tradition",
+      "note": "Dogon people today live with Islam, Christianity and ancestral practices in varied combinations. Some knowledge is restricted to initiated elders, and this pack does not claim to disclose it."
+    }
+  ],
+  "sensitivity": "medium",
+  "verified": false
+}

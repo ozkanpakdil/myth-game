@@ -1,0 +1,69 @@
+{
+  "id": "caucasus",
+  "name": "Caucasian / Nart",
+  "intro": "The Nart sagas are a cycle of heroic tales told across the North Caucasus, not a single book. Ossetians, Circassians, Abkhaz, Abaza, Balkars, Karachays and neighbouring peoples each keep their own versions in their own languages, and the stories are still performed and argued over today. At the centre are the Narts, a quarrelsome warband with the wise Setenaya as its mother, the stone-born trickster Sosruko, steel-bodied Batraz and the troublemaker Syrdon. Their world holds one-eyed giants, sea deities, talking horses and a cup that refuses a lie. The sagas share motifs with Iranian and Greek traditions, but they are not Greek myths with local names: their landscapes, humour and rules of honour are Caucasian. This pack retells six episodes from Ossetian and Circassian sources, marks the variants, and treats the tradition as living heritage.",
+  "timeline": [
+    {
+      "label": "Roots in the Caucasus",
+      "year_text": "1st millennium BCE-1st millennium CE (approximate)",
+      "note": "The sagas have no single origin date. Their motifs and names formed across Iranian-speaking and Northwest Caucasian societies over many centuries, and scholars trace elements to Scythian, Sarmatian and Alanic heritage without agreeing on a timeline."
+    },
+    {
+      "label": "Oral epic in the medieval Caucasus",
+      "year_text": "c. 9th-13th century",
+      "note": "Alan and Circassian societies transmit the tales orally at feasts and councils. There is no fixed canon, and the versions that survive were shaped by later telling and collecting."
+    },
+    {
+      "label": "First recordings",
+      "year_text": "early 19th century",
+      "note": "Julius von Klaproth notes the tales, Shora Nogmov writes an early account in the 1830s, and Adolf Berge publishes a German translation in 1866."
+    },
+    {
+      "label": "Ossetian epic compiled",
+      "year_text": "late 19th-20th century",
+      "note": "Ossetian scholars, above all Vasily Abaev, collect, edit and study the Narty kaddzhytæ, fixing a widely read text without ending oral variation."
+    },
+    {
+      "label": "Circassian collections",
+      "year_text": "20th century",
+      "note": "Asker Gadagatl and others publish large Kabardian and Adyghe collections, including the seven-volume Narty, while the tales remain part of living performance."
+    },
+    {
+      "label": "Comparative study and living heritage",
+      "year_text": "1930-present",
+      "note": "Georges Dumézil's Légendes sur les Nartes (1930) and John Colarusso's translations (2002) bring the cycle to wider attention, while communities in the Caucasus and diaspora keep it alive."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ossetian Nart epic (Narty kaddzhytæ)",
+      "note": "The Ossetian corpus, recorded from the 19th century and compiled in the 20th. Vasily Abaev's editions and studies made it the best-known version, with its three clans and its cycles of Uryzmag, Satana, Soslan and Batraz."
+    },
+    {
+      "title": "Circassian Nart epic (Narty)",
+      "note": "Kabardian, Adyghe and related versions, collected in large editions from the 19th century onward. Circassian tellers preserve many episodes absent from Ossetian texts, including the fullest fire-theft tale, and do not use the Ossetian three-clan division."
+    },
+    {
+      "title": "Georges Dumézil, Légendes sur les Nartes (1930)",
+      "note": "The founding comparative study in a Western language, later expanded in Le livre des héros (1965). Dumézil used the Ossetian cycle to argue for a tripartite Indo-European ideology; his conclusions are debated, but his documentation remains useful."
+    },
+    {
+      "title": "John Colarusso, Nart Sagas from the Caucasus (Princeton, 2002)",
+      "note": "Translations from Circassian, Abaza, Abkhaz and Ubykh with an introduction and notes. Colarusso is attentive to variants and to the Northwest Caucasian material that Ossetian-centred accounts often neglect."
+    },
+    {
+      "title": "Vasily Abaev, The Nart Epic of the Ossetians",
+      "note": "A foundational study of the Ossetian cycles, subjects and heroes, and of the epic's Iranian heritage. Abaev's work shaped Soviet and post-Soviet scholarship and remains a standard point of reference."
+    },
+    {
+      "title": "Asker Gadagatl, Narty: The Adyghe Epic (7 vols, 1968-71)",
+      "note": "The largest single collection of Circassian Nart material, gathering Kabardian and Adyghe texts with variants. It is a central resource for any account that takes Circassian versions seriously."
+    },
+    {
+      "title": "Richard Foltz, The Ossetes: Modern-Day Scythians of the Caucasus (2022)",
+      "note": "A recent regional history that treats the Nart epic as a living part of Ossetian identity and discusses its place in Caucasus and diaspora politics. Useful for the modern setting of the tradition."
+    }
+  ],
+  "sensitivity": "medium",
+  "verified": false
+}

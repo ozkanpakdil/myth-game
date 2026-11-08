@@ -1,0 +1,69 @@
+{
+  "id": "polynesian",
+  "name": "Polynesian",
+  "intro": "Polynesia is not one religion but a family of traditions carried across thousands of islands, from Aotearoa New Zealand to Hawai'i, Samoa, Tonga and Tahiti. The stories here belong to particular peoples, not to a single 'Polynesian' system: the Māori accounts of Ranginui and Papatūānuku, Māui and Rātā; the Hawaiian traditions of Pele and Kamapua'a; the Samoan, Tahitian and Hawaiian stories of Hina and the eel. Most are known today through nineteenth-century manuscripts, newspapers and learned compilations, often written by Indigenous scholars for their own communities as much as for outsiders. Later collectors, including Martha Beckwith and Katharine Luomala, recorded variants and named their sources. The retellings keep close to those texts, name the island tradition in each story, and mark what is uncertain. These are living cultures, and the deities and places remain sacred to their communities today.",
+  "timeline": [
+    {
+      "label": "Settlement of the Polynesian triangle",
+      "year_text": "c. 1000-1300 CE",
+      "note": "Voyagers using stars, swells and birds settle Hawai'i, Rapa Nui, Aotearoa and the islands between. The stories in this pack belong to those separate island traditions, not to one unified system."
+    },
+    {
+      "label": "Māori manuscripts and Grey",
+      "year_text": "1840s-1855",
+      "note": "Wiremu Maihi Te Rangikāheke and other Māori writers record accounts for Governor George Grey, who publishes Polynesian Mythology in 1855. It becomes the best-known English source for Ranginui, Māui and Rātā."
+    },
+    {
+      "label": "Hawaiian-language newspapers",
+      "year_text": "1860s",
+      "note": "Hawaiian writers publish traditional narratives in newspapers. G. W. Kahiolo's serial on Kamapua'a appears in Ka Hae Hawaii in 1861, and Kepelino records traditions in the same period."
+    },
+    {
+      "label": "Beckwith and comparative scholarship",
+      "year_text": "1932-1940",
+      "note": "Martha Beckwith edits Kepelino's Traditions of Hawaii in 1932 and publishes Hawaiian Mythology in 1940, preserving variants and naming her sources."
+    },
+    {
+      "label": "Voyaging and language revival",
+      "year_text": "1970s-present",
+      "note": "The Hōkūle'a voyages and the Māori and Hawaiian language revivals renew public engagement with traditional knowledge, and voyaging and genealogy become central to cultural identity."
+    },
+    {
+      "label": "Living traditions and source communities",
+      "year_text": "21st century",
+      "note": "Deities such as Pele remain living presences, and sacred sites such as Kīlauea are cared for by their communities. Scholars and museums increasingly work with source communities and mark uncertainty in retellings."
+    }
+  ],
+  "sources": [
+    {
+      "title": "George Grey, Polynesian Mythology and Ancient Traditional History of the New Zealand Race",
+      "note": "Published in 1855, this is the best-known nineteenth-century English collection of Māori tradition and the source of the Rangi and Papa, Māui and Rātā narratives most readers know. It is a compilation, shaped by Grey's own purposes and by the manuscripts he commissioned."
+    },
+    {
+      "title": "Wiremu Maihi Te Rangikāheke, manuscripts and letters",
+      "note": "A Ngāti Rangiwewehi writer who recorded extensive accounts of Māori cosmology, genealogy and history for George Grey in the 1840s and 1850s. His manuscripts are held in the Grey Collection and remain a foundational written source."
+    },
+    {
+      "title": "Kepelino Keauokalani, Kepelino's Traditions of Hawaii",
+      "note": "Written in Hawaiian in the 1860s and 1870s and edited by Martha Beckwith in 1932, this is a key nineteenth-century Hawaiian account of gods, chiefs and traditions, including material on Pele and Kamapua'a."
+    },
+    {
+      "title": "Martha Beckwith, Hawaiian Mythology",
+      "note": "First published in 1940, this comparative collection arranges Hawaiian traditions by theme and records numerous variants with source notes. It remains a standard reference for Pele, Kamapua'a and Hina."
+    },
+    {
+      "title": "Teuira Henry, Ancient Tahiti",
+      "note": "Published in 1928 from manuscripts compiled in the nineteenth century, this is a major source for Tahitian tradition, including Rata and the story of Hina and Te Tuna."
+    },
+    {
+      "title": "Patrick Vinton Kirch, On the Road of the Winds",
+      "note": "A modern archaeological and historical study of the Pacific islands. Kirch treats 'Polynesia' as a geographical and linguistic grouping rather than a single culture, which is the approach this pack takes."
+    },
+    {
+      "title": "Katharine Luomala, Voices on the Wind: Polynesian Myths and Chants",
+      "note": "A comparative survey for general readers that follows motifs such as Māui and Hina across island traditions and is attentive to the differences between local versions."
+    }
+  ],
+  "sensitivity": "medium",
+  "verified": false
+}

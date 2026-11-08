@@ -1,0 +1,302 @@
+[
+  {
+    "id": "akan-q01",
+    "story_id": "akan-01",
+    "question": "Who is Nyame in Akan tradition?",
+    "choices": [
+      "The supreme being associated with the sky",
+      "The earth goddess of farming",
+      "The spider who owns the stories",
+      "A priest of Kumasi"
+    ],
+    "correct_index": 0,
+    "explanation": "Nyame is the supreme being, linked to the sky, and is often called Nyankopon. Asase Yaa is the earth, and Ananse is the spider trickster.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "akan-q02",
+    "story_id": "akan-01",
+    "question": "Who is Asase Yaa in the creation account?",
+    "choices": [
+      "The first woman on earth",
+      "The spider's wife",
+      "The earth goddess who receives the dead",
+      "The keeper of the sky's stories"
+    ],
+    "correct_index": 2,
+    "explanation": "Asase Yaa is the earth, who receives the dead and gives the living their food. Thursday is treated as her day in many Akan communities.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "akan-q03",
+    "story_id": "akan-01",
+    "question": "What does one account say Nyame used to lower the first people to earth?",
+    "choices": [
+      "A long rope of vines",
+      "A golden chain",
+      "A rainbow bridge",
+      "A calabash of water"
+    ],
+    "correct_index": 1,
+    "explanation": "In one recorded version Nyame lowers the first man and woman from the sky on a golden chain; another version has them come up through a hole in the ground.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "akan-q04",
+    "story_id": "akan-01",
+    "question": "Why do the notes describe Akan creation accounts as uncertain?",
+    "choices": [
+      "Only one manuscript preserves them",
+      "They were invented by R. S. Rattray",
+      "They agree word for word across regions",
+      "They vary, and no single version is authoritative"
+    ],
+    "correct_index": 3,
+    "explanation": "There is no fixed Akan creation text. Rattray, Danquah and later writers record different emphases, so the retelling is a synthesis of variants rather than one received account.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "akan-q05",
+    "story_id": "akan-02",
+    "question": "Who owned all the stories at the start of the Ananse tale?",
+    "choices": [
+      "Ananse himself",
+      "Nyame, who kept them in the sky",
+      "Osebo the leopard",
+      "Asase Yaa, who kept them in the earth"
+    ],
+    "correct_index": 1,
+    "explanation": "Every story belonged to Nyame in the sky, and Ananse had to buy them by capturing three creatures.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "akan-q06",
+    "story_id": "akan-02",
+    "question": "How does Ananse capture Onini the python?",
+    "choices": [
+      "He digs a pit on the riverbank",
+      "He seals the python inside a calabash",
+      "He tricks the python into stretching beside a pole",
+      "He asks the hornets to sting the python"
+    ],
+    "correct_index": 2,
+    "explanation": "Ananse argues that the python cannot be as long as his pole. Onini stretches out to prove his size and is tied to the pole with vine.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "akan-q07",
+    "story_id": "akan-02",
+    "question": "What does the word anansesem mean?",
+    "choices": [
+      "Spider stories",
+      "Sky tales",
+      "Wisdom sayings",
+      "Hunter's songs"
+    ],
+    "correct_index": 0,
+    "explanation": "Nyame gives Ananse the stories and names them after him: anansesem, spider stories, the Akan term for folktales.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "akan-q08",
+    "story_id": "akan-03",
+    "question": "What does Ananse gather into the pot?",
+    "choices": [
+      "Gold from the river",
+      "Stories from Nyame",
+      "The names of the ancestors",
+      "All the wisdom in the world"
+    ],
+    "correct_index": 3,
+    "explanation": "Ananse travels from village to village collecting every piece of wisdom he hears and puts it into a clay pot.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "akan-q09",
+    "story_id": "akan-03",
+    "question": "What does Ananse's small son suggest he do?",
+    "choices": [
+      "Tie the pot on his back",
+      "Leave the pot at the foot of the tree",
+      "Ask Nyame for a longer rope",
+      "Climb a shorter tree instead"
+    ],
+    "correct_index": 0,
+    "explanation": "Ntikuma points out that Ananse could tie the pot on his back and keep his arms free for climbing.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "akan-q10",
+    "story_id": "akan-03",
+    "question": "Which moral is drawn from the pot of wisdom tale?",
+    "choices": [
+      "Wisdom can be bought from a priest",
+      "Children should not question their fathers",
+      "Wisdom is scattered and shared, not hoarded",
+      "A pot should always be made of iron"
+    ],
+    "correct_index": 2,
+    "explanation": "The pot breaks, the wisdom scatters, and no one person is wise in everything. The tale mocks hoarding and the man who cannot take advice.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "akan-q11",
+    "story_id": "akan-04",
+    "question": "Who called the Golden Stool down from the sky?",
+    "choices": [
+      "Osei Tutu",
+      "Okomfo Anokye",
+      "Yaa Asantewaa",
+      "Nyame's messengers"
+    ],
+    "correct_index": 1,
+    "explanation": "Okomfo Anokye, the priest of Osei Tutu, called on Nyame, and the golden stool landed on Osei Tutu's lap.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "akan-q12",
+    "story_id": "akan-04",
+    "question": "Why is the Golden Stool called Sika Dwa Kofi?",
+    "choices": [
+      "It was carved by a man named Kofi",
+      "It was the third stool ever made",
+      "It belonged to a chief called Kofi",
+      "It landed on a Friday, and Kofi is a Friday name"
+    ],
+    "correct_index": 3,
+    "explanation": "The stool is said to have landed on a Friday, and Kofi is the Akan day-name for a boy born on that day.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "akan-q13",
+    "story_id": "akan-04",
+    "question": "What is the Golden Stool understood to be?",
+    "choices": [
+      "The spirit or soul of the Asante nation",
+      "The throne the Asantehene sits on",
+      "A gift sent by the British governor",
+      "A container holding the nation's gold"
+    ],
+    "correct_index": 0,
+    "explanation": "The stool is understood as the sunsum, the spirit of the whole nation. No one sits on it, not even the king, who rules in its name.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "akan-q14",
+    "story_id": "akan-04",
+    "question": "What happened in 1900 when a British governor demanded the Golden Stool?",
+    "choices": [
+      "The Asante handed the stool over",
+      "The stool was taken to London",
+      "Yaa Asantewaa led a war of resistance",
+      "The Asantehene sat on it in public"
+    ],
+    "correct_index": 2,
+    "explanation": "The demand provoked the war of 1900, led by Yaa Asantewaa. The stool was hidden rather than surrendered, and it remains sacred.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "akan-q15",
+    "story_id": "akan-05",
+    "question": "Who was Akua in the story of the first akua'ba?",
+    "choices": [
+      "A priest at the shrine",
+      "A woman who wanted a child",
+      "A carver of wooden figures",
+      "A girl who sold dolls at the market"
+    ],
+    "correct_index": 1,
+    "explanation": "Akua was a woman without a child, who was told to have a small figure carved and to carry and care for it.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "akan-q16",
+    "story_id": "akan-05",
+    "question": "What does the name akua'ba mean?",
+    "choices": [
+      "Akua's child",
+      "Wooden blessing",
+      "The flat head",
+      "Little mother"
+    ],
+    "correct_index": 0,
+    "explanation": "Villagers laughed and called the figure Akua'ba, Akua's child, and the name stayed with the dolls.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "akan-q17",
+    "story_id": "akan-05",
+    "question": "What do women do with akua'ba figures today?",
+    "choices": [
+      "Place them on a shrine as gods",
+      "Use them to tell fortunes",
+      "Bury them under a new house",
+      "Carry them while hoping to conceive"
+    ],
+    "correct_index": 3,
+    "explanation": "The dolls are still carved and carried by women hoping to conceive, and girls are given them to practise mothering.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "akan-q18",
+    "story_id": "akan-06",
+    "question": "Where does Sasabonsam belong in the story?",
+    "choices": [
+      "The village square",
+      "The river's mouth",
+      "The deep forest",
+      "The king's court"
+    ],
+    "correct_index": 2,
+    "explanation": "Sasabonsam belongs to the deep forest beyond the farms, and it stops at the trees when Kwaku reaches the fields.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "akan-q19",
+    "story_id": "akan-06",
+    "question": "How does Kwaku escape from Sasabonsam?",
+    "choices": [
+      "He flatters it into hanging from a branch",
+      "He shoots it with his last charge",
+      "He crosses the river on a fallen tree",
+      "He hides inside a hollow log"
+    ],
+    "correct_index": 0,
+    "explanation": "Kwaku says the village doubts the creature can hang with both hands free. It shows off, and he walks away and runs for the farms.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "akan-q20",
+    "story_id": "akan-06",
+    "question": "What does Kwaku leave on the ground as a gift?",
+    "choices": [
+      "His gun",
+      "His knife",
+      "A calabash of water",
+      "The duiker he has shot"
+    ],
+    "correct_index": 3,
+    "explanation": "Kwaku lays the duiker he has shot on the ground and greets the monster politely before he begins his trick.",
+    "difficulty": "easy",
+    "verified": false
+  }
+]

@@ -27,7 +27,7 @@ An educational game about world myths. Players pick a mythology, read short stor
 | Version 2 (Phases 5–6) | World map for choosing a myth, plus simple pixel art |
 | Audience | Ages 12+ |
 | Tech | Static website: HTML + CSS + vanilla JavaScript. Content in JSON files. No server |
-| MVP content | 20 mythologies, 6 stories each, 20 quiz questions each |
+| MVP content | 26 mythologies, 6 stories each, 20 quiz questions each |
 
 **Implementation note (this build):** images are delivered as **SVG** (not PNG).
 Pixel-art sprites are authored as text grids and compiled to SVG by
@@ -403,7 +403,7 @@ An AI that writes text can create pixel art as **text grids**, one character per
 ## 8. Definition of Done
 
 **Version 1 (text):**
-- [x] 20 MVP mythologies complete (6 stories, 20 quiz questions, 10 characters, 10 glossary terms each)
+- [x] 26 MVP mythologies complete (6 stories, 20 quiz questions, 10 characters, 10 glossary terms each)
 - [x] `validate_content.js` passes with no errors
 - [x] All screens work on desktop and mobile
 - [x] Progress saves and loads correctly
@@ -457,3 +457,9 @@ Add one line per finished task. Newest at the bottom.
 | 2026-11-08 | T611 | Added Korean as the eighteenth playable tradition: Dangun, Jumong, Princess Bari, the woodcutter and the heavenly maiden, the rabbit and the Dragon King, and Sim Cheong, with 20 questions, 10 figures, 10 terms, a three-legged-crow sigil and a medium-sensitivity note for living musok. |
 | 2026-11-08 | T612 | Added Andean as the nineteenth playable tradition: Viracocha, the Ayar brothers, Pachamama and the apus, Ai Apaec, Inkarrí and the fox and the moon, with 20 questions, 10 figures, 10 terms, a stepped-pyramid sigil and notes on colonial and living sources. |
 | 2026-11-08 | T613 | Added Aztec / Mesoamerican as the twentieth playable tradition: the Five Suns, the making of the earth, Coatlicue and Huitzilopochtli, Quetzalcoatl in Mictlan, the founding of Tenochtitlan and Tlaloc, with 20 questions, 10 figures, 10 terms, an eagle sigil and a medium-sensitivity note. |
+| 2026-11-08 | T614 | Added Akan / West African as the twenty-first playable tradition: Nyame and Asase Yaa, three Ananse tales, the Golden Stool and the first akua'ba, with 20 questions, 10 figures, 10 terms, a spider sigil and notes on living Asante tradition. |
+| 2026-11-08 | T615 | Added Dogon & Mande as the twenty-second playable tradition: Amma and the egg, the Nommo, Sunjata's childhood and Kirina, the pale fox and Faro, with 20 questions, 10 figures, 10 terms, a spiral sigil and a critical note on the Griaule-Dieterlen corpus. |
+| 2026-11-08 | T616 | Added Bantu as the twenty-third playable tradition: Nzambi, Mwindo, the chameleon's message, Luba kingship, Kintu and Nambi and the Rain Queen, with 20 questions, 10 figures, 10 terms, a drum sigil and notes on regional diversity. |
+| 2026-11-08 | T617 | Added Finnic / Sámi as the twenty-fourth playable tradition: Ilmatar, the Sampo, Lemminkäinen, the bear cult, Beaivi and the noaidi, with 20 questions, 10 figures, 10 terms, an antler sigil and notes on the Kalevala and living Sámi tradition. |
+| 2026-11-08 | T618 | Added Polynesian as the twenty-fifth playable tradition: Ranginui and Papatūānuku, Māui and the sun and fish, Rata, Pele and Kamapua'a, and Hina and the eel, with 20 questions, 10 figures, 10 terms, a fishhook sigil and notes on island-specific traditions. |
+| 2026-11-08 | T619 | Added Caucasian / Nart as the twenty-sixth playable tradition: the birth of the Narts, Sosruko's fire, Setenaya, Batraz, Syrdon and the Nart cup, with 20 questions, 10 figures, 10 terms, a bow sigil and notes on Ossetian, Circassian and Abkhaz variants. |

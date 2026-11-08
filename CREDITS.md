@@ -223,6 +223,64 @@ Mythos is an educational draft. The retellings are new, short summaries in moder
 - **David Carrasco, City of Sacrifice** — A study of ritual, cosmology and urban life in Mesoamerica, useful for context and interpretation.
 - **Karl Taube, Aztec and Maya Myths** — A concise comparative guide to Mesoamerican myth and iconography.
 
+### Akan / West African
+
+- **R. S. Rattray, Ashanti (1923) and Akan-Ashanti Folk-Tales (1930)** — Early colonial-era collections of Asante religion, law and Ananse tales; foundational but shaped by their time.
+- **J. B. Danquah, The Akan Doctrine of God (1944)** — An early synthesis of Akan ideas of Nyame, the abosom and human destiny.
+- **Peggy Appiah, Ananse the Spider** — A modern retelling of the Ananse cycle for general readers.
+- **T. C. McCaskie, State and Society in Pre-Colonial Asante (1995)** — A detailed history of Asante politics and the place of the Golden Stool.
+- **Ivor Wilks, Asante in the Nineteenth Century (1975)** — A standard history of the Asante kingdom.
+- **Herbert M. Cole and Doran H. Ross, The Arts of Ghana (1977)** — A survey of Ghanaian art, including akua'ba figures and Adinkra.
+
+### Dogon & Mande
+
+- **Marcel Griaule and Germaine Dieterlen, Dieu d'eau (1948) and Le Renard pâle (1965)** — The famous but strongly contested ethnographic account of Dogon cosmology; presented here with a critical caveat.
+- **Djibril Tamsir Niane, Sundiata: An Epic of Old Mali (1960)** — A widely read literary retelling of the Mande epic, based on a griot's performance.
+- **Mande oral epic tradition (jeliw)** — The living performance tradition of hereditary griots, with many regional versions.
+- **David C. Conrad, Sunjata: A West African Epic of the Mande Peoples (2004)** — A scholarly translation and performance-oriented edition of the epic.
+- **Stephen Belcher, Epic Traditions of Africa (1999)** — A comparative study of African epic that situates Sunjata in a wider field.
+- **Walter E. A. van Beek, 'Dogon Restudied' (Current Anthropology, 1991)** — The influential critique of the Griaule-Dieterlen synthesis.
+
+### Bantu
+
+- **Bunseki Fu-Kiau, African Cosmology of the Bantu-Kongo** — A Kongo-centred account of cosmology, personhood and the living world.
+- **Daniel Biebuyck and Kahombo C. Mateene, The Mwindo Epic from the Banyanga** — The major recorded version of the Nyanga Mwindo epic, with performance context.
+- **John Roscoe, The Baganda** — An early ethnographic account of Ganda religion and kingship, valuable but colonial in framing.
+- **Thomas Q. Reefe, The Rainbow and the Kings** — A history of the Luba empire and its foundation traditions.
+- **Jan Vansina, Paths in the Rainforests** — A broad history of Central African societies and their institutions.
+- **Henry Callaway, Nursery Tales, Traditions, and Histories of the Zulus** — A nineteenth-century collection preserving Zulu tales, including the chameleon and death.
+- **E. Jensen Krige and J. D. Krige, The Realm of a Rain-Queen** — A classic ethnographic study of the Balobedu and the Modjadji office.
+
+### Finnic / Sámi
+
+- **The Kalevala (Old Kalevala, 1835; New Kalevala, 1849)** — Elias Lönnrot's compilation of collected folk poems into a national epic; a literary construction as well as a source.
+- **Elias Lönnrot's folk poetry collections** — The raw recorded poems and variants behind the Kalevala.
+- **Sámi yoiks and oral accounts** — Living song and narrative traditions, not a fixed scripture.
+- **Johannes Schefferus, Lapponia (1673)** — An early account of Sámi life and religion, shaped by a missionary and antiquarian agenda.
+- **Anna-Leena Siikala, Mythic Images and Shamanism** — A study of Finnish-Karelian shamanic and mythical traditions.
+- **Juha Pentikäinen, Kalevala Mythology** — An introduction to the Kalevala's sources, structure and interpretation.
+- **Veli-Pekka Lehtola, The Sámi People: A History** — A modern history that centres Sámi perspectives.
+
+### Polynesian
+
+- **George Grey, Polynesian Mythology (1855)** — The colonial governor's influential English compilation, drawing heavily on Māori manuscripts; a Victorian shaping of the material.
+- **Wiremu Maihi Te Rangikāheke, manuscripts and letters** — A Ngāti Rangiwewehi writer whose accounts supplied much of Grey's book and remain a primary source.
+- **Kepelino Keauokalani, Kepelino's Traditions of Hawaii** — A nineteenth-century Hawaiian writer's account of Hawaiian religion and tradition.
+- **Martha Beckwith, Hawaiian Mythology (1940)** — A large comparative collection of Hawaiian and wider Polynesian narratives.
+- **Teuira Henry, Ancient Tahiti (1928)** — A compilation of Tahitian tradition, including the Hina and Te Tuna story.
+- **Patrick Vinton Kirch, On the Road of the Winds** — A modern archaeological and historical overview of the Pacific.
+- **Katharine Luomala, Voices on the Wind** — A popular but informed collection of Polynesian myths and chants.
+
+### Caucasian / Nart
+
+- **Ossetian Nart epic (Narty kaddzhytæ)** — The Ossetian cycle of sagas, transmitted orally and recorded in modern editions.
+- **Circassian Nart epic (Narty)** — The Circassian/Adyghe cycle, with its own genealogies and episodes.
+- **Georges Dumézil, Légendes sur les Nartes (1930)** — The comparative study that brought the Nart sagas to wider scholarly attention.
+- **John Colarusso, Nart Sagas from the Caucasus (2002)** — A major English translation and introduction to the Circassian and related cycles.
+- **Vasily Abaev, The Nart Epic of the Ossetians** — A foundational Ossetian scholarly study.
+- **Asker Gadagatl, Narty: The Adyghe Epic (7 vols, 1968–71)** — A large collection and study of the Adyghe epic.
+- **Richard Foltz, The Ossetes (2022)** — A modern historical and cultural overview of the Ossetes and their epic.
+
 ## Review and sensitivity status
 
 | Tradition | Sensitivity | Verified |
@@ -247,8 +305,14 @@ Mythos is an educational draft. The retellings are new, short summaries in moder
 | Korean | medium | false |
 | Andean | medium | false |
 | Aztec / Mesoamerican | medium | false |
+| Akan / West African | medium | false |
+| Dogon & Mande | medium | false |
+| Bantu | medium | false |
+| Finnic / Sámi | medium | false |
+| Polynesian | medium | false |
+| Caucasian / Nart | medium | false |
 
-Hindu stories are a living sacred tradition and are marked **high** sensitivity. Shinto (Japanese), Maya, Chinese, Korean, Andean and Aztec / Mesoamerican traditions are marked **medium**. All twenty traditions need a human fact-check of dates, names, spellings, answer keys and source notes before release. The Hindu, Shinto, Maya, Chinese, Korean, Andean and Aztec / Mesoamerican material also needs a sensitivity review by someone with relevant community or scholarly knowledge.
+Hindu stories are a living sacred tradition and are marked **high** sensitivity. Shinto (Japanese), Maya, Chinese, Korean, Andean, Aztec / Mesoamerican, Akan, Dogon & Mande, Bantu, Finnic / Sámi, Polynesian and Caucasian / Nart traditions are marked **medium**. All twenty-six traditions need a human fact-check of dates, names, spellings, answer keys and source notes before release. The Hindu, Shinto, Maya, Chinese, Korean, Andean, Aztec / Mesoamerican, Akan, Dogon & Mande, Bantu, Finnic / Sámi, Polynesian and Caucasian / Nart material also needs a sensitivity review by someone with relevant community or scholarly knowledge.
 
 If a retelling is inaccurate or disrespectful, the correct response is to revise or remove it — not to defend the text. See the `NEEDS HUMAN` tasks in `PLAN_AND_TODO.md`.
 

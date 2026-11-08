@@ -1,0 +1,69 @@
+{
+  "id": "bantu",
+  "name": "Bantu",
+  "intro": "Bantu is a language family, not a religion. The hundreds of Bantu languages spoken across sub-Saharan Africa share a common ancestry, but the peoples who speak them have distinct histories, politics and ritual traditions. This pack therefore names its communities: the Kongo of the lower Congo, the Nyanga of the Ituri rainforest, the Luba of Katanga, the Ganda of Buganda, the Zulu of KwaZulu-Natal and the Balobedu of Limpopo. Their stories reach us through oral performance, nineteenth- and twentieth-century collections, and living practice. Some are epics recited by trained bards, some are etiological tales told to explain death, and one is the charter of a kingdom that still exists. Read together, they show how widely these traditions differ, and how often they have been reshaped by recording, translation and Christian mission.",
+  "timeline": [
+    {
+      "label": "Kingdom of Kongo adopts Christianity",
+      "year_text": "1491 CE",
+      "note": "King Nzinga a Nkuwu is baptized, and Nzambi is increasingly identified with the Christian God in Kongo and European writing. The equation shapes later accounts of the creator."
+    },
+    {
+      "label": "Callaway publishes Zulu tales",
+      "year_text": "1868 CE",
+      "note": "Henry Callaway's Nursery Tales, Traditions, and Histories of the Zulus preserves versions of the chameleon and lizard story and many other traditions."
+    },
+    {
+      "label": "Roscoe in Buganda",
+      "year_text": "1911 CE",
+      "note": "John Roscoe publishes The Baganda, the fullest early written account of Kintu and Nambi and of Ganda religion."
+    },
+    {
+      "label": "Mwindo epic recorded",
+      "year_text": "1950s-1969",
+      "note": "Daniel Biebuyck and Kahombo C. Mateene record and translate the Mwindo epic as performed by Candi Rureke; the English edition appears in 1969."
+    },
+    {
+      "label": "Luba history and the charter",
+      "year_text": "1981 CE",
+      "note": "Thomas Reefe's The Rainbow and the Kings analyses the Mbidi Kiluwe narrative as a foundation charter of Luba kingship."
+    },
+    {
+      "label": "Rain Queen succession",
+      "year_text": "2005-present",
+      "note": "Modjadji VI dies in 2005 and the succession is disputed, while the Balobedu rain queenship continues as a living institution in Limpopo."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Bunseki Fu-Kiau, African Cosmology of the Bantu-Kongo",
+      "note": "A twentieth-century synthesis of Kongo cosmology by a Kongo author and scholar, centred on the dikenga cycle of the sun and the interdependence of the living and the dead. It is an interpretive work, not a transcript of a single myth."
+    },
+    {
+      "title": "Daniel Biebuyck and Kahombo C. Mateene, The Mwindo Epic from the Banyanga",
+      "note": "The full text of a Nyanga epic performed by the bard Candi Rureke, with the Kinyanga text and an English translation, published in 1969. It remains the standard record of the Mwindo story and its performance."
+    },
+    {
+      "title": "John Roscoe, The Baganda",
+      "note": "A missionary's ethnographic account of Buganda and the fullest early written source for Kintu and Nambi. It records Ganda tradition in a colonial setting and should be read with that context in mind."
+    },
+    {
+      "title": "Thomas Q. Reefe, The Rainbow and the Kings: A History of the Luba Empire to 1891",
+      "note": "A history of the Luba kingdom that treats the Mbidi Kiluwe and Kalala Ilunga narrative as a political charter, showing how myth and royal legitimacy were bound together."
+    },
+    {
+      "title": "Jan Vansina, Paths in the Rainforests",
+      "note": "A wide-ranging history of political tradition in equatorial Africa, useful for situating Kongo, Luba and other traditions in a comparative frame rather than a single 'Bantu' religion."
+    },
+    {
+      "title": "Henry Callaway, Nursery Tales, Traditions, and Histories of the Zulus",
+      "note": "One of the earliest large collections of Zulu oral narrative in English, including versions of the chameleon and lizard story. Callaway was a missionary, and his framing reflects his own concerns."
+    },
+    {
+      "title": "E. Jensen Krige and J. D. Krige, The Realm of a Rain-Queen",
+      "note": "A classic ethnographic study of the Lovedu (Balobedu) and their rain queen. Detailed but dated, and shaped by the anthropology of its time; later scholarship and the community's own accounts correct and extend it."
+    }
+  ],
+  "sensitivity": "medium",
+  "verified": false
+}

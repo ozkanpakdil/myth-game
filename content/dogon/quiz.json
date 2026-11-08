@@ -1,0 +1,302 @@
+[
+  {
+    "id": "dogon-q01",
+    "story_id": "dogon-01",
+    "question": "Who is Amma in the Dogon account?",
+    "choices": [
+      "The creator and sky god",
+      "The king of Sosso",
+      "Sunjata's griot",
+      "A diviner of the pale fox"
+    ],
+    "correct_index": 0,
+    "explanation": "Amma is the creator in Dogon accounts, a sky god who existed before the world and whose shaping of the cosmic egg is described in the Griaule-Dieterlen synthesis.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "dogon-q02",
+    "story_id": "dogon-01",
+    "question": "What does the account say Amma shaped at the beginning?",
+    "choices": [
+      "A cosmic egg",
+      "A royal granary",
+      "A river delta",
+      "A carved mask"
+    ],
+    "correct_index": 0,
+    "explanation": "In the published account Amma shapes a cosmic egg containing the seeds of all things, an image that later scholars regard as part of a contested synthesis.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "dogon-q03",
+    "story_id": "dogon-01",
+    "question": "How is the Griaule-Dieterlen account presented in this pack?",
+    "choices": [
+      "As one contested interpretation",
+      "As the only true Dogon religion",
+      "As a record from a single village",
+      "As a chapter of the Mande epic"
+    ],
+    "correct_index": 0,
+    "explanation": "The pack presents the elaborate system as one influential but contested interpretation, not as the uniform religion of all Dogon communities.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "dogon-q04",
+    "story_id": "dogon-01",
+    "question": "Which scholar is named as challenging the elaborate Griaule-Dieterlen system?",
+    "choices": [
+      "Walter van Beek",
+      "Djibril Tamsir Niane",
+      "David C. Conrad",
+      "Stephen Belcher"
+    ],
+    "correct_index": 0,
+    "explanation": "Walter van Beek's later fieldwork found little evidence that the elaborate system was shared across Dogon communities, a point the story openly acknowledges.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "dogon-q05",
+    "story_id": "dogon-02",
+    "question": "What are the Nommo usually described as?",
+    "choices": [
+      "Ancestral twin beings",
+      "Kings of the Sosso court",
+      "Hereditary Mande griots",
+      "Spirits of the desert"
+    ],
+    "correct_index": 0,
+    "explanation": "The Nommo are ancestral twins in Dogon cosmology, often described as amphibious mediators between the creator and the world.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "dogon-q06",
+    "story_id": "dogon-02",
+    "question": "What does the ark bring to the world in the retelling?",
+    "choices": [
+      "Water and speech",
+      "Gold and horses",
+      "Guns and paper",
+      "Only iron tools"
+    ],
+    "correct_index": 0,
+    "explanation": "The ark carries the first seeds, animals and tools, but the story stresses water as the condition of fertility and speech as the gift that makes community possible.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "dogon-q07",
+    "story_id": "dogon-02",
+    "question": "Why does the retelling hold back certain Nommo traditions?",
+    "choices": [
+      "Because some knowledge is restricted to initiation",
+      "Because the stories were completely lost",
+      "Because they survive only in French",
+      "Because they belong to the Mande epic"
+    ],
+    "correct_index": 0,
+    "explanation": "The story says that certain myths, names and rites belong to initiation and are not told to outsiders, so the retelling makes no claim to reveal them.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "dogon-q08",
+    "story_id": "dogon-03",
+    "question": "Who is Sunjata's mother in the epic?",
+    "choices": [
+      "Sassouma Bérété",
+      "Sogolon",
+      "Balla Fasséké",
+      "Fakoli"
+    ],
+    "correct_index": 1,
+    "explanation": "Sogolon, remembered as the buffalo woman, is Sunjata's mother; Sassouma Bérété is the senior wife who mocks her.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "dogon-q09",
+    "story_id": "dogon-03",
+    "question": "What can Sunjata not do for years as a child?",
+    "choices": [
+      "Speak",
+      "Walk",
+      "See",
+      "Hear"
+    ],
+    "correct_index": 1,
+    "explanation": "For years Sunjata crawls and drags himself because he cannot walk, and the court's mockery falls on his mother as well as on him.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "dogon-q10",
+    "story_id": "dogon-03",
+    "question": "How does Sunjata first pull himself upright?",
+    "choices": [
+      "With an iron rod",
+      "With a horse's reins",
+      "With a griot's staff",
+      "With a rope of baobab bark"
+    ],
+    "correct_index": 0,
+    "explanation": "Sunjata asks his mother for an iron rod, pulls himself upright, takes his first steps, and then uproots a baobab tree.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "dogon-q11",
+    "story_id": "dogon-04",
+    "question": "Who is Soumaoro Kanté in the epic?",
+    "choices": [
+      "The king of Sosso",
+      "Sunjata's father",
+      "A Mande griot",
+      "Sogolon's brother"
+    ],
+    "correct_index": 0,
+    "explanation": "Soumaoro Kanté is the king of Sosso, a feared ruler whose powers and raids drive the Mande clans to unite behind Sunjata.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "dogon-q12",
+    "story_id": "dogon-04",
+    "question": "Which griot serves Sunjata and helps uncover Soumaoro's secret?",
+    "choices": [
+      "Balla Fasséké",
+      "Fakoli",
+      "Dankaran Touman",
+      "Ogo"
+    ],
+    "correct_index": 0,
+    "explanation": "Balla Fasséké is Sunjata's griot and keeper of memory, and in the retelling he learns that Soumaoro's protection has a limit.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "dogon-q13",
+    "story_id": "dogon-04",
+    "question": "How does the retelling distinguish the epic from documentary history?",
+    "choices": [
+      "The epic is a performed account of origins, while the written record is thin",
+      "The epic is a French colonial chronicle",
+      "Historians deny that Mali ever existed",
+      "The battle is no longer remembered in Mali"
+    ],
+    "correct_index": 0,
+    "explanation": "The story accepts that a Mali Empire rose and that the epic remembers Kirina as its founding battle, but stresses that the epic is performed and shaped by the families who keep it, not a chronicle.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "dogon-q14",
+    "story_id": "dogon-05",
+    "question": "Who is Ogo in the Dogon account?",
+    "choices": [
+      "The pale fox",
+      "A water spirit",
+      "A Mande king",
+      "Sunjata's mother"
+    ],
+    "correct_index": 0,
+    "explanation": "Ogo, also called Yurugu, is the pale fox: a first being who acts prematurely and brings disorder into the world.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "dogon-q15",
+    "story_id": "dogon-05",
+    "question": "What does the diviner read in fox divination?",
+    "choices": [
+      "The flight of birds",
+      "The fox's footprints on a grid",
+      "The entrails of a fish",
+      "The position of the stars"
+    ],
+    "correct_index": 1,
+    "explanation": "A diviner marks a grid in the sand, a fox walks across it overnight, and the tracks are read against the squares and the client's question.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "dogon-q16",
+    "story_id": "dogon-05",
+    "question": "How does the pack treat the link between Ogo and the pale fox?",
+    "choices": [
+      "It comes largely from the Griaule-Dieterlen corpus and is questioned",
+      "It is certain and accepted by every community",
+      "It was invented by Djibril Tamsir Niane",
+      "It belongs only to the Mande epic"
+    ],
+    "correct_index": 0,
+    "explanation": "The identification is strongest in the Griaule-Dieterlen corpus, and the story notes that later scholars have questioned the elaborate mythology around Ogo.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "dogon-q17",
+    "story_id": "dogon-06",
+    "question": "What is Faro most associated with?",
+    "choices": [
+      "Water",
+      "Iron",
+      "The horse",
+      "The drum"
+    ],
+    "correct_index": 0,
+    "explanation": "Faro is a water spirit and lawgiver, associated with rain, rivers and the moisture that makes the fields fertile.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "dogon-q18",
+    "story_id": "dogon-06",
+    "question": "What does Faro give the world besides water?",
+    "choices": [
+      "Gold and silver",
+      "Seasons and speech",
+      "Horses and cattle",
+      "Masks and drums"
+    ],
+    "correct_index": 1,
+    "explanation": "Faro sets the waters in place, gives the world its seasons and agricultural rhythm, and gives speech, the ordered word that allows people to live together.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "dogon-q19",
+    "story_id": "dogon-06",
+    "question": "Which great Dogon renewal cycle is mentioned in the Faro story?",
+    "choices": [
+      "Sigui",
+      "Ramadan",
+      "Pansori",
+      "Griot"
+    ],
+    "correct_index": 0,
+    "explanation": "The story mentions the Sigui cycle, held about once every sixty years, as part of a wider world of Dogon renewal while noting that its myths are distinct and largely restricted.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "dogon-q20",
+    "story_id": "dogon-06",
+    "question": "Why is Faro's portrait called contested in the pack?",
+    "choices": [
+      "Accounts differ and later fieldwork questioned the synthesis",
+      "Faro never appears in any Dogon account",
+      "The French colonial state banned his worship",
+      "He is remembered only as a Mande king"
+    ],
+    "correct_index": 0,
+    "explanation": "Faro's rank and role vary between tellings, and the coherent Griaule-Dieterlen portrait is one interpretation that later fieldwork has contested.",
+    "difficulty": "medium",
+    "verified": false
+  }
+]

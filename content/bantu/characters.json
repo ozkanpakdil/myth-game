@@ -1,0 +1,162 @@
+[
+  {
+    "id": "nzambi",
+    "name": "Nzambi Mpungu",
+    "role": "Kongo creator and source of life",
+    "domain": [
+      "creation",
+      "sky",
+      "ancestral order"
+    ],
+    "symbols": [
+      "the sun",
+      "the four movements of the day"
+    ],
+    "fun_fact": "In Kikongo, Nzambi is the ordinary word for God, a usage shaped by centuries of Christian translation as well as older Kongo tradition.",
+    "verified": false
+  },
+  {
+    "id": "mwindo",
+    "name": "Mwindo",
+    "role": "Nyanga hero born walking and talking",
+    "domain": [
+      "heroism",
+      "kingship",
+      "the underworld"
+    ],
+    "symbols": [
+      "the conga scepter",
+      "the road to the dead"
+    ],
+    "fun_fact": "Mwindo's epic is performed at night by a single bard, and the hero's boasts are played for laughter as much as awe.",
+    "verified": false
+  },
+  {
+    "id": "chameleon",
+    "name": "Chameleon",
+    "role": "Slow messenger who carries the news of life",
+    "domain": [
+      "messengers",
+      "patience",
+      "death"
+    ],
+    "symbols": [
+      "its slow gait",
+      "the message that arrives late"
+    ],
+    "fun_fact": "The chameleon's slow walk is the whole plot: in many southern African versions, death enters the world because the news arrived late.",
+    "verified": false
+  },
+  {
+    "id": "unkulunkulu",
+    "name": "Unkulunkulu",
+    "role": "Zulu creator and first ancestor",
+    "domain": [
+      "creation",
+      "ancestors",
+      "the sky"
+    ],
+    "symbols": [
+      "the reed",
+      "the first people"
+    ],
+    "fun_fact": "His name means 'the very great old one', and Zulu Christians later used it for God, much as missionaries used Nzambi in Kongo.",
+    "verified": false
+  },
+  {
+    "id": "mbidi_kiluwe",
+    "name": "Mbidi Kiluwe",
+    "role": "Luba culture hero who brought sacred kingship",
+    "domain": [
+      "kingship",
+      "water",
+      "foreign origins"
+    ],
+    "symbols": [
+      "the river crossing",
+      "the royal regalia"
+    ],
+    "fun_fact": "Mbidi returned east after fathering Kalala Ilunga, and Luba royal tradition later traced the kings' legitimacy to that crossing of the water.",
+    "verified": false
+  },
+  {
+    "id": "kalala_ilunga",
+    "name": "Kalala Ilunga",
+    "role": "First king of the Luba royal line",
+    "domain": [
+      "kingship",
+      "war",
+      "legitimacy"
+    ],
+    "symbols": [
+      "the throne",
+      "the royal drum"
+    ],
+    "fun_fact": "His defeat of Nkongolo is recited by the Mbudye society as a charter of Luba kingship rather than as a simple war story.",
+    "verified": false
+  },
+  {
+    "id": "kintu",
+    "name": "Kintu",
+    "role": "First man in Ganda tradition",
+    "domain": [
+      "origins",
+      "marriage",
+      "farming"
+    ],
+    "symbols": [
+      "the cow",
+      "the banana plant"
+    ],
+    "fun_fact": "Kintu is also remembered as an early king of Buganda, so the first man and the first monarch share a name.",
+    "verified": false
+  },
+  {
+    "id": "nambi",
+    "name": "Nambi",
+    "role": "Daughter of Gulu who marries Kintu",
+    "domain": [
+      "heaven",
+      "marriage",
+      "mediation"
+    ],
+    "symbols": [
+      "the heavenly homestead",
+      "the millet seed"
+    ],
+    "fun_fact": "Nambi's brother is Walumbe, Death, so her marriage brings both the first family and the first funeral to earth.",
+    "verified": false
+  },
+  {
+    "id": "gulu",
+    "name": "Gulu",
+    "role": "Sky lord and father of Nambi",
+    "domain": [
+      "sky",
+      "authority",
+      "tests"
+    ],
+    "symbols": [
+      "the sky",
+      "the heavenly court"
+    ],
+    "fun_fact": "Gulu is also called Mugulu, and his tests are the moral hinge of the Kintu story.",
+    "verified": false
+  },
+  {
+    "id": "modjadji",
+    "name": "Modjadji",
+    "role": "Rain Queen of the Balobedu",
+    "domain": [
+      "rain",
+      "queenship",
+      "the land"
+    ],
+    "symbols": [
+      "the cycad forest",
+      "the rain cloud"
+    ],
+    "fun_fact": "The title is hereditary through women, and the queenship continues in Limpopo today, so it is a living office rather than a figure from an ancient text.",
+    "verified": false
+  }
+]

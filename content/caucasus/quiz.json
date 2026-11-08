@@ -1,0 +1,302 @@
+[
+  {
+    "id": "caucasus-q01",
+    "story_id": "caucasus-01",
+    "question": "Who is the mother and matriarch of the Narts?",
+    "choices": [
+      "Aishana",
+      "Setenaya",
+      "Bytsenon",
+      "Dzerassae"
+    ],
+    "correct_index": 1,
+    "explanation": "Setenaya, called Satana in Ossetian, is the mother and matriarch of the Narts in both the Ossetian and Circassian cycles.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "caucasus-q02",
+    "story_id": "caucasus-01",
+    "question": "In the Ossetian genealogy, who are the twin sons of Akhsartag and Dzerassae?",
+    "choices": [
+      "Soslan and Batraz",
+      "Nasran and Tlepsh",
+      "Uryzmag and Khamyts",
+      "Akhsar and Akhsartag"
+    ],
+    "correct_index": 2,
+    "explanation": "Akhsartag and Dzerassae are the parents of the twins Uryzmag and Khamyts, who lead the Narts.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "caucasus-q03",
+    "story_id": "caucasus-01",
+    "question": "Which three clans do the Ossetian Narts divide into?",
+    "choices": [
+      "The brave, the rich and the wise",
+      "The hunters, the herders and the smiths",
+      "The mountain, the steppe and the sea",
+      "The old, the young and the unborn"
+    ],
+    "correct_index": 0,
+    "explanation": "The Ossetian Narts are divided into the brave Akhsartagkata, the rich Borata and the wise Alagata; Circassian versions do not use this division.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "caucasus-q04",
+    "story_id": "caucasus-01",
+    "question": "Which statement best describes Setenaya's genealogy across the corpora?",
+    "choices": [
+      "All versions make her a sea goddess",
+      "They differ: Ossetian makes her Uastyrdzhi's daughter, Circassian has her born from a flower",
+      "Every version makes her the sister of Batraz",
+      "They deny that she had any children"
+    ],
+    "correct_index": 1,
+    "explanation": "Ossetian tradition makes Setenaya the daughter of Uastyrdzhi, born from the dead Dzerassae, while Circassian tradition has her born from a flower; Abkhaz versions give her a hundred sons.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "caucasus-q05",
+    "story_id": "caucasus-02",
+    "question": "Who is Sosruko's mother in the Circassian telling?",
+    "choices": [
+      "Aishana",
+      "Dzerassae",
+      "Setenaya",
+      "Bytsenon"
+    ],
+    "correct_index": 2,
+    "explanation": "In the Circassian cycle Setenaya is Sosruko's mother; in the Ossetian cycle Satana raises Soslan, who is born from a stone.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "caucasus-q06",
+    "story_id": "caucasus-02",
+    "question": "What does Sosruko steal from the giant?",
+    "choices": [
+      "Fire",
+      "Cattle",
+      "A sword",
+      "A horse"
+    ],
+    "correct_index": 0,
+    "explanation": "Sosruko steals fire from the giant to save the Narts, who are freezing on the steppe without it.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "caucasus-q07",
+    "story_id": "caucasus-02",
+    "question": "How does Sosruko escape from the giant's mouth?",
+    "choices": [
+      "He sings the giant to sleep",
+      "He turns into a bird",
+      "His horse pulls him out",
+      "He cuts the giant's gums with his sword"
+    ],
+    "correct_index": 3,
+    "explanation": "Sosruko cuts the giant's gums with his sword, is spat out, and then tricks the giant into the freezing game.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "caucasus-q08",
+    "story_id": "caucasus-03",
+    "question": "What does Setenaya use to see what happens far away?",
+    "choices": [
+      "A silver bowl",
+      "A heavenly mirror",
+      "A talking horse",
+      "A ring of fire"
+    ],
+    "correct_index": 1,
+    "explanation": "A heavenly mirror in Setenaya's tower lets her see what is happening far away, one of the sources of her practical wisdom.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "caucasus-q09",
+    "story_id": "caucasus-03",
+    "question": "Whose wife is Setenaya in the Ossetian tradition?",
+    "choices": [
+      "Khamyts",
+      "Nasran",
+      "Uryzmag",
+      "Batraz"
+    ],
+    "correct_index": 2,
+    "explanation": "In Ossetian tradition Setenaya is the wife of Uryzmag, the elder of the Narts; in Circassian tradition she advises Warzameg.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "caucasus-q10",
+    "story_id": "caucasus-03",
+    "question": "Which tale shows the ambiguous side of Setenaya's wisdom?",
+    "choices": [
+      "She tricks Elda and takes her place as Uryzmag's wife",
+      "She refuses to speak to the Narts",
+      "She gives the cup to the Waig",
+      "She kills Soslan with a sword"
+    ],
+    "correct_index": 0,
+    "explanation": "Setenaya disguises herself as Elda, Uryzmag's first wife, and takes her place; Elda dies of grief, so the tale does not hide the cost of Setenaya's cleverness.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "caucasus-q11",
+    "story_id": "caucasus-04",
+    "question": "Whose son is the hero Batraz?",
+    "choices": [
+      "Uryzmag",
+      "Waig",
+      "Nasran",
+      "Khamyts"
+    ],
+    "correct_index": 3,
+    "explanation": "Batraz is the son of Khamyts and the water-spirit Bytsenon, and he is born from a cyst on his father's back.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "caucasus-q12",
+    "story_id": "caucasus-04",
+    "question": "Who tempers Batraz in the Ossetian version?",
+    "choices": [
+      "Tlepsh",
+      "Kurdalagon",
+      "Syrdon",
+      "Waig"
+    ],
+    "correct_index": 1,
+    "explanation": "In the Ossetian cycle the smith Kurdalagon tempers Batraz; Tlepsh is his Circassian counterpart.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "caucasus-q13",
+    "story_id": "caucasus-04",
+    "question": "Which is one of the death variants of Batraz?",
+    "choices": [
+      "He is eaten by the Nart cup",
+      "He drowns while swimming in the Black Sea",
+      "He dances on his own pyre and has his sword thrown into the sea",
+      "He is killed by Soslan's wheel"
+    ],
+    "correct_index": 2,
+    "explanation": "One Ossetian variant has Batraz choose his death, dance on his pyre until white-hot and ask the Narts to throw his sword into the sea, which boils.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "caucasus-q14",
+    "story_id": "caucasus-05",
+    "question": "What does Syrdon make from his sons' bones?",
+    "choices": [
+      "A steel sword",
+      "A magic cup",
+      "A tower",
+      "The first fandyr"
+    ],
+    "correct_index": 3,
+    "explanation": "Syrdon makes the first fandyr, the Nart harp, from a bone and the sinews of his killed sons, and the music wins him a place among the Narts.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "caucasus-q15",
+    "story_id": "caucasus-05",
+    "question": "Whose death is Syrdon blamed for?",
+    "choices": [
+      "Batraz's",
+      "Soslan's",
+      "Uryzmag's",
+      "Setenaya's"
+    ],
+    "correct_index": 1,
+    "explanation": "Syrdon shortens the trough used to temper Soslan and later persuades the wheel of Balsag to strike the hero's vulnerable knees.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "caucasus-q16",
+    "story_id": "caucasus-05",
+    "question": "How does Syrdon spoil Soslan's tempering?",
+    "choices": [
+      "He steals the smith's hammer",
+      "He hides the hero's horse",
+      "He makes the smith's trough too short",
+      "He heats the milk too slowly"
+    ],
+    "correct_index": 2,
+    "explanation": "Syrdon makes the smith's trough too short, so the milk never covers Soslan's knees and they remain vulnerable.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "caucasus-q17",
+    "story_id": "caucasus-05",
+    "question": "What happens to Syrdon after he is buried at the council place?",
+    "choices": [
+      "He becomes a star",
+      "He is dug up and thrown into the sea",
+      "He is made king of the Narts",
+      "He turns into a horse"
+    ],
+    "correct_index": 1,
+    "explanation": "The Narts bury Syrdon at the council place, then dig him up and throw him into the sea; in the fuller tale Donbettyr revives him.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "caucasus-q18",
+    "story_id": "caucasus-06",
+    "question": "What happens when a Nart boasts falsely at the feast?",
+    "choices": [
+      "The cup breaks in two",
+      "The cup turns to stone",
+      "The cup flies out of the hall",
+      "The cup stays still or fills with a stinking brew"
+    ],
+    "correct_index": 3,
+    "explanation": "A false boast makes the cup stay still or fill with a stinking brew and reptiles, driving the liar away from the feast.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "caucasus-q19",
+    "story_id": "caucasus-06",
+    "question": "Which clan keeps the Uatsamonga?",
+    "choices": [
+      "The Borata",
+      "The Alagata",
+      "The Akhsartagkata",
+      "The Waigs"
+    ],
+    "correct_index": 1,
+    "explanation": "The wise Alagata keep the Uatsamonga and bring it out at the Narts' feasts.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "caucasus-q20",
+    "story_id": "caucasus-06",
+    "question": "What does the cup symbolise in the sagas?",
+    "choices": [
+      "The Narts' control of the weather",
+      "The strength of the strongest warrior",
+      "Honour and social order confirmed by truthful speech",
+      "The power of the sea god"
+    ],
+    "correct_index": 2,
+    "explanation": "The cup confirms honour and social order through truthful speech, and it belongs to the wise Alagata rather than to the strongest warrior.",
+    "difficulty": "hard",
+    "verified": false
+  }
+]

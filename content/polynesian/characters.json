@@ -1,0 +1,170 @@
+[
+  {
+    "id": "ranginui",
+    "name": "Ranginui",
+    "role": "Sky father whose union with the earth mother begins the world",
+    "domain": [
+      "sky",
+      "rain",
+      "creation"
+    ],
+    "symbols": [
+      "the sky",
+      "rain and dew"
+    ],
+    "fun_fact": "Rangi's weeping for Papa is often given as the origin of rain and dew.",
+    "verified": false
+  },
+  {
+    "id": "papatuanuku",
+    "name": "Papatūānuku",
+    "role": "Earth mother and source of the land",
+    "domain": [
+      "earth",
+      "fertility",
+      "ancestry"
+    ],
+    "symbols": [
+      "the land",
+      "mist"
+    ],
+    "fun_fact": "Her name is often shortened to Papa, and the land is spoken of as her body.",
+    "verified": false
+  },
+  {
+    "id": "tane",
+    "name": "Tāne",
+    "role": "God of forests, birds and human creation, who separated his parents",
+    "domain": [
+      "forests",
+      "birds",
+      "human creation"
+    ],
+    "symbols": [
+      "the tōtara tree",
+      "the adze",
+      "birds"
+    ],
+    "fun_fact": "Tāne is credited with shaping the first woman, Hineahuone, from clay and breathing life into her.",
+    "verified": false
+  },
+  {
+    "id": "tangaroa",
+    "name": "Tangaroa",
+    "role": "God of the sea and its creatures",
+    "domain": [
+      "sea",
+      "fish",
+      "reptiles"
+    ],
+    "symbols": [
+      "the ocean",
+      "waves",
+      "fish"
+    ],
+    "fun_fact": "Tangaroa's children include fish and reptiles, and the sea's abundance is described as his gift.",
+    "verified": false
+  },
+  {
+    "id": "tawhirimatea",
+    "name": "Tāwhirimātea",
+    "role": "God of storms, winds and weather",
+    "domain": [
+      "storms",
+      "wind",
+      "weather"
+    ],
+    "symbols": [
+      "thunder",
+      "the whirlwind",
+      "dark cloud"
+    ],
+    "fun_fact": "His anger at the separation of his parents is why storms still come from the sky.",
+    "verified": false
+  },
+  {
+    "id": "maui",
+    "name": "Māui",
+    "role": "Trickster demigod who slowed the sun and fished up islands",
+    "domain": [
+      "trickery",
+      "the sun",
+      "the sea"
+    ],
+    "symbols": [
+      "the jawbone hook",
+      "flax rope",
+      "the fish"
+    ],
+    "fun_fact": "Māui's fishhook was made from his grandmother's jawbone, and with it he fished up the North Island.",
+    "verified": false
+  },
+  {
+    "id": "rata",
+    "name": "Rata",
+    "role": "Canoe builder who learned that the forest must be asked",
+    "domain": [
+      "canoe building",
+      "forest",
+      "respect"
+    ],
+    "symbols": [
+      "the felled tree",
+      "the adze",
+      "the canoe"
+    ],
+    "fun_fact": "In some Māori versions the hākuturi build Rata a canoe after he apologises, naming it Niwaru.",
+    "verified": false
+  },
+  {
+    "id": "pele",
+    "name": "Pele",
+    "role": "Hawaiian volcano goddess and keeper of the fire",
+    "domain": [
+      "volcanoes",
+      "fire",
+      "sacred land"
+    ],
+    "symbols": [
+      "Halema'uma'u",
+      "lava",
+      "Pele's hair"
+    ],
+    "fun_fact": "Pele is a living akua for many Hawaiians, and her home at Halema'uma'u is treated as sacred ground.",
+    "verified": false
+  },
+  {
+    "id": "kamapuaa",
+    "name": "Kamapua'a",
+    "role": "Hawaiian pig god and shape-shifter, rival and lover of Pele",
+    "domain": [
+      "pigs",
+      "rain",
+      "fertility"
+    ],
+    "symbols": [
+      "the pig snout",
+      "rain",
+      "the green windward land"
+    ],
+    "fun_fact": "Kamapua'a was born on O'ahu, and his name means 'pig child' in Hawaiian.",
+    "verified": false
+  },
+  {
+    "id": "hina",
+    "name": "Hina",
+    "role": "Moon goddess and ancestral woman of several island traditions",
+    "domain": [
+      "the moon",
+      "water",
+      "women's work"
+    ],
+    "symbols": [
+      "the moon",
+      "the coconut",
+      "kapa cloth"
+    ],
+    "fun_fact": "Hina's name is connected with the moon, and in some tellings she leaves the world to live there.",
+    "verified": false
+  }
+]

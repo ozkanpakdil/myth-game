@@ -1,0 +1,150 @@
+[
+  {
+    "id": "caucasus-01",
+    "title": "The Birth of the Narts",
+    "source_ref": "Ossetian Nart epic (Narty kaddzhytæ), Uryzmag and Satana cycles; Circassian Nart epic (Narty), Setenaya cycle; Abkhaz variants",
+    "paragraphs": [
+      "The old Ossetian tales begin with Uarkhag, whose twin sons Akhsar and Akhsartag quarrel and die. Akhsartag marries Dzerassae, daughter of Donbettyr, lord of the waters. She leaves the sea for the land of the Narts, and her sons Uryzmag and Khamyts are born there in a cattle shed. From these brothers come the Narts, a people of warriors, herders and feasters.",
+      "Setenaya is born from Dzerassae after death. Dzerassae's sons keep watch over the tomb, but Khamyts slips away to a feast, and Uastyrdzhi comes to the dead woman. Setenaya grows a month as others grow a year. Her face lights the dark, and her words are sharper than a sword. Circassian tellers give her a different birth: a flower, the dropwort that still bears her name.",
+      "In Ossetian tradition the Narts divide into three clans: the brave Akhsartagkata, the rich Borata and the wise Alagata. They meet in council, feast in the hall of the Alagata and honour guests above all. Circassian versions know no such clans. There the Narts are one warband under Setenaya, and their order rests on hospitality, good speech and the memory of brave deeds.",
+      "No single genealogy governs the cycle. Abkhaz tellers make Setenaya the mother of a hundred sons; Circassian songs make her the wife of the Nart leader Warzameg and the mother of the warband; Ossetian tales make her the daughter of Uastyrdzhi, the half-sister and wife of Uryzmag. The differences are not mistakes. They show a tradition kept alive by many communities, each shaping the first mother in its own image."
+    ],
+    "characters": [
+      "setenaya",
+      "uryzmag",
+      "khamyts"
+    ],
+    "themes": [
+      "origins",
+      "genealogy",
+      "social order"
+    ],
+    "notes": "The genealogies vary. Ossetian tradition makes Uryzmag and Khamyts the sons of Akhsartag and Dzerassae and makes Satana the daughter of Uastyrdzhi, born from the dead Dzerassae; Circassian tradition often makes Setenaya the mother of the warband and the wife of Warzameg; Abkhaz tradition gives her a hundred sons. The three-clan division is Ossetian, not pan-Caucasian, and the opening of the cycle is reconstructed from separate tales rather than one canonical narrative.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "caucasus-02",
+    "title": "Sosruko and the Fire",
+    "source_ref": "Circassian Nart epic, 'How Sosruko Fetched Fire'; Ossetian Soslan cycle",
+    "paragraphs": [
+      "Setenaya washed clothes by the river and bathed, and a shepherd on the far bank saw her. His desire crossed the water and fell on a stone. Setenaya counted the days, then brought the smith Kurdalagon and made him swear silence. He struck the stone with his hammer, and a boy came out. She named him Sosruko, called Soslan in Ossetian, and raised the stone-born boy as her son.",
+      "The boy was small and dark, but quick. In the Circassian telling the Narts ride out without him and a killing frost catches them on the steppe. They have no fire. Nasran Longbeard admits the fault: they should never have gone without Sosruko. The hero arrives, shoots a star for sparks, but they die in the snow. He rides for the giant's tower.",
+      "The one-eyed giant Waig lies asleep, with the fire burning at the centre of his ring of walls. Sosruko's horse softens its hooves to a dog's tread, then a cat's. The horse leaps the wall, and Sosruko snatches a burning brand. A coal falls on the giant's brow and wakes him. He catches the horse and puts the rider in his mouth.",
+      "Sosruko cuts the giant's gums with his sword and is spat out. He pretends to be a poor shepherd and teaches the giant a game: to sit in molten lead, then to be frozen in the sea. The giant boasts that no cold can hold him. Sosruko calls up the frost, and the Waig freezes. Then the hero takes the giant's own sword, cuts off his head and carries fire home."
+    ],
+    "characters": [
+      "setenaya",
+      "sosruko",
+      "waig"
+    ],
+    "themes": [
+      "fire",
+      "cunning",
+      "survival"
+    ],
+    "notes": "The fire-theft episode is fullest in Circassian and Abkhaz versions. Ossetian Soslan tales use the Waig giants but do not always include the theft, and the giant's name, the horse's counsel and the tests before the escape vary. This retelling uses the Ossetian name Waig for the giant and follows the Circassian sequence.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "caucasus-03",
+    "title": "Setenaya the Wise",
+    "source_ref": "Ossetian Satana cycle; Circassian Setenaya cycle, including 'How Satanay and Lhepsch Fell Out'",
+    "paragraphs": [
+      "Setenaya is the mother of the Narts and the centre of their household. In Ossetian tradition she is the daughter of Uastyrdzhi, born from the dead Dzerassae, and the wife of Uryzmag. In Circassian tradition she is born from a flower and advises Warzameg, the Nart leader. She is beautiful, but her authority comes from judgement, memory and nerve.",
+      "Her wisdom is practical. She stores grain before a hard winter, brews the drink rong, settles quarrels before they reach blood and reads the weather and the temper of guests. Nasran Longbeard, the Narts' elder, is one of those who seek her counsel, and a heavenly mirror in her tower shows her what happens far away. She is not allowed into the men's council, yet the council comes to her door.",
+      "One tale has her wager that she can weave a coat in a single day. When the light fails, she persuades the sun to linger, and she wins. Another tale is darker. She disguises herself as Uryzmag's first wife, Elda, and takes her place; Elda dies of rage and grief. The Narts gain a great matriarch, and the story does not pretend the cost was nothing.",
+      "Her counsel holds the household together. She raises Soslan and lets her son Aishana be fostered in the sky by Safa. A Circassian tale remembers her bitter quarrel with the smith Tlepsh. Yet the sagas do not make her a saint: she can be partisan, secretive and sharp-tongued, and her magic is not always kind. Her wisdom is practical, and it sometimes chooses the useful over the fair."
+    ],
+    "characters": [
+      "setenaya",
+      "uryzmag",
+      "nasran",
+      "tlepsh",
+      "aishana"
+    ],
+    "themes": [
+      "wisdom",
+      "household",
+      "ambiguity"
+    ],
+    "notes": "Setenaya's episodes are gathered from separate tales, not one biography. The Elda story, the sun-weaving bet, the heavenly mirror and the quarrel with Tlepsh come from different versions, and tellers judge her differently: as a wise matriarch, a sorceress, or a dangerously partisan woman.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "caucasus-04",
+    "title": "Batraz and the Sword",
+    "source_ref": "Ossetian Batraz cycle, including 'The Birth of Batraz', 'How Batraz Tempered Himself' and 'The Death of Batraz'; Circassian Pataraz cycle",
+    "paragraphs": [
+      "Batraz is the son of Khamyts and a water-spirit, Bytsenon. Syrdon mocked her, and she left, breathing her unborn son onto her husband's back. A cyst grew there, and when it opened Batraz came out glowing like a coal. As a baby he was thrown into the sea, and he grew up between the water and the sky, stronger than any Nart.",
+      "The smith Kurdalagon, whose Circassian counterpart is Tlepsh, heated the boy white-hot and quenched him. His body became steel. One small part was left untreated: in some tales his knees, in others a single intestine. He rode the thunder, carried a sword that flashed like lightning, and came to the Narts only when they called him to war.",
+      "His quarrel with the Narts begins with his father. Khamyts was killed in an ambush, and Batraz took a terrible revenge, killing kinsmen and turning on the Narts themselves. When they tried to restrain him, he blamed the heavenly spirits too. They complained to God, and God answered that Batraz could die only by his own death.",
+      "His death is told in several ways. In one, he decides to die: he has the Narts build a pyre, dances on it until he is white-hot, and asks them to throw his sword into the sea; the sea boils, and he dies. In another, the spirits lure him onto a steppe on the hottest day of the year, and the one part of him that was never steel burns through."
+    ],
+    "characters": [
+      "batraz",
+      "khamyts",
+      "tlepsh",
+      "syrdon"
+    ],
+    "themes": [
+      "steel",
+      "vengeance",
+      "death"
+    ],
+    "notes": "Batraz's death is told in at least two ways: he chooses death and has his sword thrown into the sea, or the spirits lure him into the sun's heat and the one untempered part of his body burns. His vulnerable spot is variously his knees, his thighs or a single intestine, and Circassian Pataraz is a distinct though related figure.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "caucasus-05",
+    "title": "Syrdon the Trickster",
+    "source_ref": "Ossetian Syrdon cycle, including 'Why Syrdon Became Soslan's Enemy' and 'How the Fandyr Appeared'",
+    "paragraphs": [
+      "Syrdon is the son of Dzerassae and Gaetag, and so a half-brother of Uryzmag, Khamyts and Setenaya. He came from the underwater world to the Narts, but they saw something crooked in him and would not receive him. He settled underground, in a maze of tunnels, and came up each day to the council place to set one Nart against another.",
+      "He knew what had happened and could guess what would come. As a hat, he listened to Soslan talking with his horse. He told the Narts a secret about Setenaya's birth in order to shame the elders. He also spoiled the tempering of Soslan: he made the smith's trough too short, so that the milk never covered the hero's knees.",
+      "When Soslan died, the Narts remembered those knees. The wheel of Balsag had cut them, and Syrdon had persuaded the wheel to break its oath and take steel spokes from the smith. The blame settled on the trickster, and the saga makes him the shadow at the hero's death. Dumézil compared him to Loki, and the comparison has never quite let him go.",
+      "His punishment is the darkest story in the cycle, and this retelling keeps it brief. Khamyts, whose cow Syrdon stole, killed Syrdon's sons and set their flesh before him. Syrdon made the first fandyr, the Nart harp, from a bone and from their sinews, and the music won him a place among the Narts. When he died, they buried him at the council place, dug him up again and threw him into the sea."
+    ],
+    "characters": [
+      "syrdon",
+      "sosruko",
+      "khamyts",
+      "setenaya"
+    ],
+    "themes": [
+      "trickery",
+      "blame",
+      "music"
+    ],
+    "notes": "The cycle's sequence varies. The killing of Syrdon's sons is usually attached to the stolen cow, while the blame for Soslan's death is a separate strand; the fandyr episode and Syrdon's burial at the council place belong to yet other tellings. Dumézil's comparison with Loki is influential but not a consensus explanation.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "caucasus-06",
+    "title": "The Nart Cup",
+    "source_ref": "Ossetian Nart epic, 'Batraz and the Nart Cup'; Circassian Sano tradition",
+    "paragraphs": [
+      "The Narts kept their greatest treasure in the hall of the Alagata, the clan known for judgement. It was the Uatsamonga, a cup that recognised truth. Set before the feasters, it rose to the lips of a Nart who told his deeds honestly, and it filled with a healing drink. When a man boasted falsely, it stayed where it was or filled with a stinking brew. The Alagata presided.",
+      "At one feast the heroes took turns boasting, and the cup did not move. Batraz sat silent until they finished. Then he struck the rim with the handle of his whip and spoke of the seven evening spirits he had killed. The cup rose to the knees of his father, Khamyts. He spoke again, and it rose to the waist, then to the lips.",
+      "Inside the cup hid Khor-aldar, lord of grain, listening for the name of his son's killer. When Khamyts raised the cup to drink, lizards, snakes and frogs rose from the brew and rushed at his mouth. His steel moustache turned them back, and he emptied the cup upside down. In another test, the Alagata set the cup on a dancer's head and dared Soslan and Chelakhsartag to dance without spilling it.",
+      "The cup is not a simple magic object. It belongs to the wise clan, not the strongest, and its verdict is the community's verdict on a story. It rewards truth, punishes empty boasting and turns a feast into a court of honour. Circassian tradition has a comparable vessel, the cauldron of White Sana, and the same concern: that a hero's words should match his deeds."
+    ],
+    "characters": [
+      "batraz",
+      "khamyts",
+      "sosruko"
+    ],
+    "themes": [
+      "honour",
+      "truth",
+      "feast"
+    ],
+    "notes": "The cup's name and form vary: Uatsamonga or Nartamongæ in Ossetian, the cauldron of White Sana in Circassian. It is kept by the Alagata in Ossetian tradition, but the feats it judges differ by telling, and the story of Batraz and Khamyts is only one of several cup episodes.",
+    "uncertain": true,
+    "verified": false
+  }
+]

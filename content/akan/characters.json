@@ -1,0 +1,170 @@
+[
+  {
+    "id": "nyame",
+    "name": "Nyame",
+    "role": "Supreme being associated with the sky",
+    "domain": [
+      "the sky",
+      "creation",
+      "destiny"
+    ],
+    "symbols": [
+      "the sky",
+      "rain",
+      "the golden chain"
+    ],
+    "fun_fact": "Nyame is also called Nyankopon, and many Akan prayers reach him through the abosom rather than directly.",
+    "verified": false
+  },
+  {
+    "id": "asase_yaa",
+    "name": "Asase Yaa",
+    "role": "Earth goddess who receives the dead and gives fertility",
+    "domain": [
+      "the earth",
+      "fertility",
+      "the ancestors"
+    ],
+    "symbols": [
+      "the soil",
+      "Thursday",
+      "libation"
+    ],
+    "fun_fact": "Her name means Earth Yaa, because Yaa is the day-name given to a girl born on Thursday, the day many communities set aside from farming.",
+    "verified": false
+  },
+  {
+    "id": "ananse",
+    "name": "Ananse",
+    "role": "Spider trickster who wins and owns the stories",
+    "domain": [
+      "trickery",
+      "wit",
+      "storytelling"
+    ],
+    "symbols": [
+      "the spider's web",
+      "the pot of wisdom",
+      "the sky god's stories"
+    ],
+    "fun_fact": "Ananse gave his name to anansesem, the Akan word for folktales, and to Anansi stories told across the Caribbean.",
+    "verified": false
+  },
+  {
+    "id": "python",
+    "name": "Onini the Python",
+    "role": "Great python whom Ananse captures for Nyame",
+    "domain": [
+      "rivers",
+      "strength",
+      "the wild"
+    ],
+    "symbols": [
+      "the riverbank",
+      "the long pole"
+    ],
+    "fun_fact": "Onini is caught by flattery: Ananse gets him to stretch out beside a pole to prove his length, then ties him to it.",
+    "verified": false
+  },
+  {
+    "id": "osei_tutu",
+    "name": "Osei Tutu",
+    "role": "War leader who became the first Asantehene of the Asante union",
+    "domain": [
+      "kingship",
+      "war",
+      "unity"
+    ],
+    "symbols": [
+      "the Golden Stool",
+      "Kumasi",
+      "the state sword"
+    ],
+    "fun_fact": "Every later Asantehene traces the authority of the office back to the union Osei Tutu made with Okomfo Anokye.",
+    "verified": false
+  },
+  {
+    "id": "okomfo_anokye",
+    "name": "Okomfo Anokye",
+    "role": "Priest who called the Golden Stool down from the sky",
+    "domain": [
+      "priesthood",
+      "law",
+      "the sacred"
+    ],
+    "symbols": [
+      "the Golden Stool",
+      "the planted sword",
+      "the sky"
+    ],
+    "fun_fact": "Tradition says he planted a sword at Kumasi that no one has been able to pull out of the ground.",
+    "verified": false
+  },
+  {
+    "id": "akua_ba",
+    "name": "Akua'ba",
+    "role": "Carved wooden doll carried by women hoping for a child",
+    "domain": [
+      "fertility",
+      "motherhood",
+      "art"
+    ],
+    "symbols": [
+      "the flat, disc-shaped head",
+      "waist beads",
+      "the cloth sling"
+    ],
+    "fun_fact": "Akua'ba figures are among the best known works of African art, and the classic form has a flat, disc-shaped head.",
+    "verified": false
+  },
+  {
+    "id": "akua",
+    "name": "Akua",
+    "role": "Woman who first carried an akua'ba doll",
+    "domain": [
+      "hope",
+      "motherhood",
+      "patience"
+    ],
+    "symbols": [
+      "the wooden child",
+      "the cloth on her back"
+    ],
+    "fun_fact": "Her name survives inside the doll's: akua'ba means Akua's child.",
+    "verified": false
+  },
+  {
+    "id": "sasabonsam",
+    "name": "Sasabonsam",
+    "role": "Forest monster who hangs in the highest trees",
+    "domain": [
+      "the deep forest",
+      "danger",
+      "boundaries"
+    ],
+    "symbols": [
+      "the tallest tree",
+      "iron teeth",
+      "red eyes"
+    ],
+    "fun_fact": "Sasabonsam is a boundary figure in Akan storytelling: it belongs to the untamed forest, not to the farms or the village.",
+    "verified": false
+  },
+  {
+    "id": "kwaku",
+    "name": "Kwaku",
+    "role": "Hunter who escapes Sasabonsam by his wits",
+    "domain": [
+      "hunting",
+      "cunning",
+      "survival"
+    ],
+    "symbols": [
+      "the gun",
+      "the duiker",
+      "the path home"
+    ],
+    "fun_fact": "Kwaku is a common Akan day-name for a boy born on Wednesday, so the hunter's name marks him as an ordinary man.",
+    "verified": false
+  }
+]

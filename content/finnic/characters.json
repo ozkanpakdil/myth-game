@@ -1,0 +1,172 @@
+[
+  {
+    "id": "ilmatar",
+    "name": "Ilmatar",
+    "role": "Air maiden who drifts on the primeval sea and gives shape to the world",
+    "domain": [
+      "air",
+      "creation",
+      "water"
+    ],
+    "symbols": [
+      "the duck's egg",
+      "the open sky",
+      "her lifted knee"
+    ],
+    "fun_fact": "In some folk poems she is called Ilman impi, the air maiden, and she is the mother of Väinämöinen as well as of the world.",
+    "verified": false
+  },
+  {
+    "id": "vainamoinen",
+    "name": "Väinämöinen",
+    "role": "Ancient singer and culture hero who orders the world by song",
+    "domain": [
+      "song",
+      "wisdom",
+      "craft"
+    ],
+    "symbols": [
+      "the kantele",
+      "the bow",
+      "the song"
+    ],
+    "fun_fact": "He is born already old, and in one rune he plays a kantele made from a pike's jaw so well that the whole forest weeps.",
+    "verified": false
+  },
+  {
+    "id": "ilmarinen",
+    "name": "Ilmarinen",
+    "role": "Eternal smith who forges the Sampo",
+    "domain": [
+      "smithing",
+      "craft",
+      "the sky"
+    ],
+    "symbols": [
+      "the forge",
+      "the hammer",
+      "the Sampo"
+    ],
+    "fun_fact": "His epithet is 'the eternal smith', and some folk poems give him a hand in forging the vault of the sky.",
+    "verified": false
+  },
+  {
+    "id": "louhi",
+    "name": "Louhi",
+    "role": "Mistress of Pohjola and keeper of the Sampo",
+    "domain": [
+      "the north",
+      "sorcery",
+      "power"
+    ],
+    "symbols": [
+      "the vault under the mountain",
+      "the Sampo",
+      "the grey rock"
+    ],
+    "fun_fact": "In the Kalevala she hides the sun and the moon inside a mountain, and the heroes must go north to get them back.",
+    "verified": false
+  },
+  {
+    "id": "lemminkainen",
+    "name": "Lemminkäinen",
+    "role": "Reckless adventurer who dies at the river of the dead",
+    "domain": [
+      "war",
+      "daring",
+      "death"
+    ],
+    "symbols": [
+      "the swan",
+      "the bow",
+      "the black river"
+    ],
+    "fun_fact": "He is also called Kaukomieli, 'the far-minded one', a name that sits oddly on such a reckless man.",
+    "verified": false
+  },
+  {
+    "id": "tuoni",
+    "name": "Tuoni",
+    "role": "Ruler of the land of the dead",
+    "domain": [
+      "death",
+      "the underworld",
+      "the river"
+    ],
+    "symbols": [
+      "the black river",
+      "the swan",
+      "the gate of the dead"
+    ],
+    "fun_fact": "His realm is separated from the living by a river, and the swan that swims there is the bird Lemminkäinen was told to kill.",
+    "verified": false
+  },
+  {
+    "id": "mielikki",
+    "name": "Mielikki",
+    "role": "Forest goddess who cares for the animals and grants healing",
+    "domain": [
+      "forest",
+      "healing",
+      "animals"
+    ],
+    "symbols": [
+      "the bear",
+      "the pine",
+      "the berries"
+    ],
+    "fun_fact": "Hunters asked her leave before entering the forest, and charms credit her with healing wounds as well as with giving game.",
+    "verified": false
+  },
+  {
+    "id": "beaivi",
+    "name": "Beaivi",
+    "role": "Sámi sun goddess, addressed as mother of the people",
+    "domain": [
+      "sun",
+      "light",
+      "fertility"
+    ],
+    "symbols": [
+      "the sun",
+      "warmth",
+      "her daughter Beaivi-nieida"
+    ],
+    "fun_fact": "Beaivi is often shown with her daughter Beaivi-nieida, and the two are linked with the return of light after the polar night.",
+    "verified": false
+  },
+  {
+    "id": "mattarahkka",
+    "name": "Máttaráhkká",
+    "role": "Sámi earth mother and ancestress of the goddesses",
+    "domain": [
+      "earth",
+      "birth",
+      "ancestry"
+    ],
+    "symbols": [
+      "the earth",
+      "her three daughters",
+      "the tent"
+    ],
+    "fun_fact": "Her name is usually translated as 'earth mother' or 'ancestral mother', and she is the mother of the three goddesses who attend birth.",
+    "verified": false
+  },
+  {
+    "id": "noaidi",
+    "name": "Noaidi",
+    "role": "Sámi ritual specialist who travels to other worlds",
+    "domain": [
+      "shamanism",
+      "healing",
+      "the dead"
+    ],
+    "symbols": [
+      "the drum",
+      "the bone hammer",
+      "the journey"
+    ],
+    "fun_fact": "The noaidi's drum was a map of the cosmos as well as an instrument, which is one reason the mission wanted it destroyed.",
+    "verified": false
+  }
+]

@@ -1,0 +1,302 @@
+[
+  {
+    "id": "finnic-q01",
+    "story_id": "finnic-01",
+    "question": "Who is Ilmatar in the Kalevala's creation story?",
+    "choices": [
+      "The air maiden who drifts on the primeval sea",
+      "The smith who forges the Sampo",
+      "The mistress of Pohjola",
+      "The mother of Lemminkäinen"
+    ],
+    "correct_index": 0,
+    "explanation": "Ilmatar is the air maiden who comes down from the empty sky onto the sea and drifts there before the world is made.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "finnic-q02",
+    "story_id": "finnic-01",
+    "question": "Which bird lays an egg on Ilmatar's knee?",
+    "choices": [
+      "An eagle",
+      "A raven",
+      "A duck",
+      "A swan"
+    ],
+    "correct_index": 2,
+    "explanation": "A duck looking for a place to nest lands on Ilmatar's lifted knee and lays a single egg there.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "finnic-q03",
+    "story_id": "finnic-01",
+    "question": "What does the broken egg become in the story?",
+    "choices": [
+      "A great ship and its crew",
+      "The earth, sky, sun, moon and stars",
+      "The first human beings",
+      "A range of mountains"
+    ],
+    "correct_index": 1,
+    "explanation": "The lower shell becomes the earth, the upper shell the sky, the yolk the sun, the white the moon and the shell fragments the stars.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "finnic-q04",
+    "story_id": "finnic-01",
+    "question": "How does the Kalevala's opening relate to earlier folk poems?",
+    "choices": [
+      "It was copied from a medieval chronicle",
+      "It is a translation of a Swedish saga",
+      "It was written by a single eighteenth-century poet",
+      "Lönnrot arranged collected poems into one narrative"
+    ],
+    "correct_index": 3,
+    "explanation": "Lönnrot gathered poems sung by Finnish and Karelian villagers and arranged them into a single epic, so the sequence and framing are his.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "finnic-q05",
+    "story_id": "finnic-02",
+    "question": "Who forges the Sampo in the Kalevala?",
+    "choices": [
+      "Väinämöinen",
+      "Ilmarinen",
+      "Louhi",
+      "Lemminkäinen"
+    ],
+    "correct_index": 1,
+    "explanation": "Ilmarinen the smith does the forging, while Väinämöinen is the one who knows that the smith can do it.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "finnic-q06",
+    "story_id": "finnic-02",
+    "question": "Who rules Pohjola and demands the Sampo?",
+    "choices": [
+      "Louhi",
+      "Ilmatar",
+      "Tuoni",
+      "Mielikki"
+    ],
+    "correct_index": 0,
+    "explanation": "Louhi is the mistress of Pohjola, and she sets the forging of the Sampo as the price of her daughter.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "finnic-q07",
+    "story_id": "finnic-02",
+    "question": "What does the Sampo do in the Kalevala's account?",
+    "choices": [
+      "It raises the dead",
+      "It foretells the future",
+      "It grinds grain, salt or money without running empty",
+      "It sails itself across the sea"
+    ],
+    "correct_index": 2,
+    "explanation": "In the Kalevala the Sampo is a mill that produces grain, salt or money endlessly, which is why the north grows rich while it keeps it.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "finnic-q08",
+    "story_id": "finnic-02",
+    "question": "Why is the Sampo's true nature described as disputed?",
+    "choices": [
+      "It appears in only a single line of verse",
+      "Lönnrot invented the word for it",
+      "It was destroyed before anyone described it",
+      "The poems never describe it clearly and scholars read it differently"
+    ],
+    "correct_index": 3,
+    "explanation": "The poems give no consistent description. It has been read as a mill, a world pillar, a luck-bringing object or a memory of northern trade.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "finnic-q09",
+    "story_id": "finnic-03",
+    "question": "What is Lemminkäinen trying to kill at Tuonela?",
+    "choices": [
+      "The bear of the forest",
+      "The swan on the river of the dead",
+      "A giant pike",
+      "Louhi's eagle"
+    ],
+    "correct_index": 1,
+    "explanation": "He goes to the river of the dead to shoot the swan that glides there, a task set for suitors that no one has passed.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "finnic-q10",
+    "story_id": "finnic-03",
+    "question": "Who brings Lemminkäinen back to life?",
+    "choices": [
+      "Väinämöinen",
+      "Ilmarinen",
+      "Tuoni",
+      "His mother"
+    ],
+    "correct_index": 3,
+    "explanation": "His mother searches for him, rakes his body from the river, sews the pieces together and sings him back to life.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "finnic-q11",
+    "story_id": "finnic-03",
+    "question": "How does Lemminkäinen's mother recover his body from the river?",
+    "choices": [
+      "She rakes the water with an iron rake",
+      "She buys the body from Tuoni",
+      "She sends a bee to find it",
+      "She sings it down out of a tree"
+    ],
+    "correct_index": 0,
+    "explanation": "She has an iron rake made and draws the river until she brings up the pieces of her son, which she then sews together.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "finnic-q12",
+    "story_id": "finnic-04",
+    "question": "Why did hunters avoid speaking the bear's name directly?",
+    "choices": [
+      "The name was reserved for kings",
+      "A law forbade it",
+      "They feared it might summon the bear",
+      "They had forgotten the name"
+    ],
+    "correct_index": 2,
+    "explanation": "Villagers used roundabout names such as honey-paw, because naming the bear outright might call it to them.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "finnic-q13",
+    "story_id": "finnic-04",
+    "question": "What did hunters hold for a bear they had killed?",
+    "choices": [
+      "A funeral with songs and a feast",
+      "A race through the forest",
+      "A wedding for the bear's spirit",
+      "A trial of the hunters"
+    ],
+    "correct_index": 0,
+    "explanation": "The bear was treated as an honoured guest and given a funeral feast, so that its spirit would not be angry at the hunters.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "finnic-q14",
+    "story_id": "finnic-04",
+    "question": "Who is Mielikki in Finnish forest belief?",
+    "choices": [
+      "The goddess of the sea",
+      "The smith's daughter",
+      "The ruler of Tuonela",
+      "Tapio's wife, who cares for the forest's animals"
+    ],
+    "correct_index": 3,
+    "explanation": "Mielikki is Tapio's wife. She cares for the birds and small animals and is asked for leave and for healing.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "finnic-q15",
+    "story_id": "finnic-05",
+    "question": "Who is Beaivi in Sámi tradition?",
+    "choices": [
+      "The sun, addressed as a mother",
+      "The moon, addressed as a hunter",
+      "The god of thunder",
+      "The ruler of the dead"
+    ],
+    "correct_index": 0,
+    "explanation": "Beaivi is the sun, called the daughter of the sky and the mother of the people, and she is often shown with her daughter.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "finnic-q16",
+    "story_id": "finnic-05",
+    "question": "Who is Máttaráhkká in the Sámi accounts?",
+    "choices": [
+      "The daughter of the sun",
+      "The earth mother with three daughters",
+      "A noaidi's drum",
+      "The god of the wind"
+    ],
+    "correct_index": 1,
+    "explanation": "Máttaráhkká is the earth mother, and her three daughters attend birth, give a child its character and guard the door.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "finnic-q17",
+    "story_id": "finnic-05",
+    "question": "Why is much of the written evidence about Sámi religion problematic?",
+    "choices": [
+      "It was written only in Latin",
+      "It was composed in the twentieth century",
+      "It copies Finnish epic poems",
+      "It was recorded largely by missionaries who opposed the practice"
+    ],
+    "correct_index": 3,
+    "explanation": "Christian priests and officials wrote most of the early descriptions while confiscating drums and banning yoiks, so the records are hostile and incomplete.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "finnic-q18",
+    "story_id": "finnic-06",
+    "question": "What did a noaidi use to travel to other worlds?",
+    "choices": [
+      "A sword",
+      "A boat",
+      "A horse",
+      "A drum"
+    ],
+    "correct_index": 3,
+    "explanation": "The noaidi drummed and sang, and the drum carried the journey to the land of the dead and back.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "finnic-q19",
+    "story_id": "finnic-06",
+    "question": "What was marked on the skin of the noaidi's drum?",
+    "choices": [
+      "Figures such as the sun, people, animals and tents",
+      "Only lines of runes",
+      "A single cross",
+      "Nothing at all"
+    ],
+    "correct_index": 0,
+    "explanation": "The drum skin was marked with figures that made it a map of the cosmos, which the noaidi could read during the journey.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "finnic-q20",
+    "story_id": "finnic-06",
+    "question": "What happened to many Sámi drums under the Christian mission?",
+    "choices": [
+      "They were sold to Finnish collectors",
+      "They were buried with kings",
+      "They were collected and burned",
+      "They were used as boats"
+    ],
+    "correct_index": 2,
+    "explanation": "Missionaries confiscated and burned drums as objects of sorcery, and many of the examples that survive are held in European museums.",
+    "difficulty": "medium",
+    "verified": false
+  }
+]

@@ -1,0 +1,166 @@
+[
+  {
+    "id": "amma",
+    "name": "Amma",
+    "role": "Creator god and source of order in Dogon accounts",
+    "domain": [
+      "creation",
+      "sky",
+      "order"
+    ],
+    "symbols": [
+      "the cosmic egg",
+      "the sky"
+    ],
+    "fun_fact": "In the Griaule-Dieterlen account Amma shaped the world from an egg, though Dogon ideas about the creator vary and that synthesis is contested.",
+    "verified": false
+  },
+  {
+    "id": "nommo",
+    "name": "Nommo",
+    "role": "Ancestral twin beings who mediate between sky and earth",
+    "domain": [
+      "water",
+      "fertility",
+      "speech"
+    ],
+    "symbols": [
+      "the ark",
+      "rain",
+      "twin pairs"
+    ],
+    "fun_fact": "The Nommo are usually described as twins, and in the published account they descend in an ark bringing water and speech.",
+    "verified": false
+  },
+  {
+    "id": "ogo",
+    "name": "Ogo",
+    "role": "The pale fox, a first being who brings disorder",
+    "domain": [
+      "disorder",
+      "divination",
+      "the bush"
+    ],
+    "symbols": [
+      "fox footprints",
+      "the divination grid",
+      "the pale coat"
+    ],
+    "fun_fact": "Ogo is called the pale fox, and in Dogon fox divination his footprints are read as signs.",
+    "verified": false
+  },
+  {
+    "id": "faro",
+    "name": "Faro",
+    "role": "Water spirit and lawgiver honoured across Mande and Dogon traditions",
+    "domain": [
+      "water",
+      "law",
+      "seasons"
+    ],
+    "symbols": [
+      "rain",
+      "rivers",
+      "the ordered word"
+    ],
+    "fun_fact": "Faro is associated with water and speech, and some accounts make him one of the Nommo while others give him a separate role.",
+    "verified": false
+  },
+  {
+    "id": "sunjata",
+    "name": "Sunjata",
+    "role": "Hero of the Mande epic and traditional founder of the Mali Empire",
+    "domain": [
+      "kingship",
+      "war",
+      "destiny"
+    ],
+    "symbols": [
+      "the iron rod",
+      "the baobab tree",
+      "the lion"
+    ],
+    "fun_fact": "In the epic Sunjata learns to walk with an iron rod and then uproots a baobab tree to prove his strength.",
+    "verified": false
+  },
+  {
+    "id": "sogolon",
+    "name": "Sogolon",
+    "role": "Sunjata's mother, remembered as the buffalo woman",
+    "domain": [
+      "motherhood",
+      "endurance",
+      "fate"
+    ],
+    "symbols": [
+      "the buffalo",
+      "the baobab leaves"
+    ],
+    "fun_fact": "Sogolon is called the buffalo woman because of the buffalo heritage attributed to her in the epic, and her difficult pregnancy marks her son's destiny.",
+    "verified": false
+  },
+  {
+    "id": "soumaoro",
+    "name": "Soumaoro Kanté",
+    "role": "King of Sosso and Sunjata's great rival",
+    "domain": [
+      "kingship",
+      "war",
+      "occult power"
+    ],
+    "symbols": [
+      "the white rooster's spur",
+      "the cave at Koulikoro"
+    ],
+    "fun_fact": "In many tellings Soumaoro can be wounded only by a white rooster's spur, a secret that Balla Fasséké helps to uncover.",
+    "verified": false
+  },
+  {
+    "id": "bala_fasseke",
+    "name": "Balla Fasséké",
+    "role": "Sunjata's griot, musician and keeper of memory",
+    "domain": [
+      "memory",
+      "music",
+      "counsel"
+    ],
+    "symbols": [
+      "the ngoni",
+      "the spoken word"
+    ],
+    "fun_fact": "Balla Fasséké is remembered as the first griot of the Keita court, and his heirs are said to keep the Sunjata epic.",
+    "verified": false
+  },
+  {
+    "id": "sassouma",
+    "name": "Sassouma Bérété",
+    "role": "Sunjata's stepmother and rival at court",
+    "domain": [
+      "rivalry",
+      "court intrigue",
+      "cruelty"
+    ],
+    "symbols": [
+      "the baobab leaves",
+      "the royal compound"
+    ],
+    "fun_fact": "Sassouma Bérété mocks Sogolon and her son who cannot walk, and her ambition for her own child drives Sunjata's family toward exile.",
+    "verified": false
+  },
+  {
+    "id": "fakoli",
+    "name": "Fakoli",
+    "role": "Soumaoro's nephew and a formidable warrior",
+    "domain": [
+      "war",
+      "loyalty",
+      "smithcraft"
+    ],
+    "symbols": [
+      "the blacksmith's hammer",
+      "the bow"
+    ],
+    "fun_fact": "Fakoli turns against his uncle after a deep humiliation, and his defection becomes one of the turning points of the war.",
+    "verified": false
+  }
+]

@@ -1,0 +1,302 @@
+[
+  {
+    "id": "korean-q01",
+    "story_id": "korean-01",
+    "question": "Who is Hwanung in the story of Dangun?",
+    "choices": [
+      "The son of the heavenly lord Hwanin",
+      "The god of the Amnok River",
+      "A bear who became a woman",
+      "The first king of Goguryeo"
+    ],
+    "correct_index": 0,
+    "explanation": "Hwanung is the son of Hwanin, the lord of heaven, who descends to Taebaek Mountain to rule the world of people.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "korean-q02",
+    "story_id": "korean-01",
+    "question": "What do the bear and the tiger ask Hwanung to do?",
+    "choices": [
+      "Give them a kingdom",
+      "Bring rain to the fields",
+      "Turn them into human beings",
+      "Teach them to read"
+    ],
+    "correct_index": 2,
+    "explanation": "The bear and the tiger come to Hwanung and ask to become human, which leads to the test of mugwort, garlic and sunlight.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "korean-q03",
+    "story_id": "korean-01",
+    "question": "What must the bear and tiger avoid during their test?",
+    "choices": [
+      "Cooked food",
+      "Sunlight",
+      "Running water",
+      "Other animals"
+    ],
+    "correct_index": 1,
+    "explanation": "Hwanung tells them to eat only mugwort and garlic and to stay out of sunlight for one hundred days.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "korean-q04",
+    "story_id": "korean-01",
+    "question": "When does tradition date the founding of Gojoseon?",
+    "choices": [
+      "108 BCE",
+      "37 BCE",
+      "918 CE",
+      "2333 BCE"
+    ],
+    "correct_index": 3,
+    "explanation": "Tradition dates the founding of Gojoseon to 2333 BCE, though the Samguk Yusa recorded the story much later, in 1281.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "korean-q05",
+    "story_id": "korean-02",
+    "question": "Who is Yuhwa's father in the Jumong story?",
+    "choices": [
+      "Geumwa, king of Buyeo",
+      "Habaek, god of the Amnok River",
+      "Hwanung of heaven",
+      "The Dragon King of the sea"
+    ],
+    "correct_index": 1,
+    "explanation": "Yuhwa is the daughter of Habaek, the god of the Amnok River, and she is expelled from his court after she conceives.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "korean-q06",
+    "story_id": "korean-02",
+    "question": "What does Yuhwa give birth to in Buyeo?",
+    "choices": [
+      "A large egg",
+      "A bear cub",
+      "A son with wings",
+      "A lotus flower"
+    ],
+    "correct_index": 0,
+    "explanation": "Yuhwa gives birth to a large egg, which the court rejects until animals and birds protect it and a boy hatches.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "korean-q07",
+    "story_id": "korean-02",
+    "question": "What does the name Jumong mean in Buyeo speech?",
+    "choices": [
+      "Heavenly king",
+      "River child",
+      "Skilled archer",
+      "Bear's son"
+    ],
+    "correct_index": 2,
+    "explanation": "Jumong is explained as a Buyeo word for a skilled archer, matching his gift with the bow.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "korean-q08",
+    "story_id": "korean-03",
+    "question": "What does the name Bari mean in the shamanic narrative?",
+    "choices": [
+      "The shining one",
+      "The seventh star",
+      "The water bearer",
+      "The discarded one"
+    ],
+    "correct_index": 3,
+    "explanation": "Bari is named for being abandoned, and her name is usually explained as meaning the discarded one.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "korean-q09",
+    "story_id": "korean-03",
+    "question": "How many older sisters does Bari have?",
+    "choices": [
+      "Three",
+      "Six",
+      "Seven",
+      "None"
+    ],
+    "correct_index": 1,
+    "explanation": "Bari is the seventh daughter, with six older sisters who later refuse to undertake the journey for their father.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "korean-q10",
+    "story_id": "korean-03",
+    "question": "Why does Bari travel to the Western Paradise?",
+    "choices": [
+      "To fetch the water of life for her father",
+      "To marry the king of the dead",
+      "To recover her stolen robe",
+      "To bury her mother"
+    ],
+    "correct_index": 0,
+    "explanation": "The king is dying, and only the water of life from the Western Paradise beyond death can cure him.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "korean-q11",
+    "story_id": "korean-03",
+    "question": "What does Bari become after her journey?",
+    "choices": [
+      "Queen of the Western Paradise",
+      "A goddess of the moon",
+      "The first shaman and guide of souls",
+      "The ruler of Gojoseon"
+    ],
+    "correct_index": 2,
+    "explanation": "Bari refuses the kingdom and becomes the first mudang, guiding the souls of the dead; the ssitgim-gut re-enacts her journey.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "korean-q12",
+    "story_id": "korean-04",
+    "question": "What does the woodcutter take from the heavenly maiden?",
+    "choices": [
+      "Her comb",
+      "Her robe",
+      "Her ring",
+      "Her fan"
+    ],
+    "correct_index": 1,
+    "explanation": "The woodcutter hides the youngest maiden's robe, so that she cannot fly back to heaven with her sisters.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "korean-q13",
+    "story_id": "korean-04",
+    "question": "How does the maiden finally return to heaven?",
+    "choices": [
+      "She rides a dragon",
+      "She climbs a rainbow",
+      "Her father carries her",
+      "She puts on her hidden robe"
+    ],
+    "correct_index": 3,
+    "explanation": "After the birth of their third child she finds the robe, puts it on, and rises into the air with the children.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "korean-q14",
+    "story_id": "korean-04",
+    "question": "Which ending is found in many Korean versions of the tale?",
+    "choices": [
+      "The woodcutter becomes a rooster",
+      "The maiden becomes human",
+      "The deer becomes a king",
+      "The mountain splits in two"
+    ],
+    "correct_index": 0,
+    "explanation": "In a widely collected Korean ending, the stranded woodcutter grieves until he becomes a rooster, crowing at dawn toward the sky.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "korean-q15",
+    "story_id": "korean-05",
+    "question": "What does the Dragon King need to cure his illness?",
+    "choices": [
+      "A turtle's shell",
+      "A lotus flower",
+      "A rabbit's liver",
+      "A heavenly robe"
+    ],
+    "correct_index": 2,
+    "explanation": "The Dragon King's physicians say that only a rabbit's liver can cure him, though no rabbit lives in the sea.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "korean-q16",
+    "story_id": "korean-05",
+    "question": "Who volunteers to find a rabbit on land?",
+    "choices": [
+      "A turtle",
+      "A deer",
+      "A crane",
+      "A sea snake"
+    ],
+    "correct_index": 0,
+    "explanation": "A turtle offers to swim ashore, persuade a rabbit to visit the palace and carry it back on his shell.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "korean-q17",
+    "story_id": "korean-05",
+    "question": "How does the rabbit escape being killed?",
+    "choices": [
+      "He fights the turtle",
+      "He promises the King a wife",
+      "He swims away in the dark",
+      "He says his liver is hidden on land"
+    ],
+    "correct_index": 3,
+    "explanation": "The rabbit claims that he keeps his liver outside his body, washed and hanging on a tree, and persuades the turtle to take him back.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "korean-q18",
+    "story_id": "korean-06",
+    "question": "Why does Sim Cheong offer herself to the sea?",
+    "choices": [
+      "To find her lost mother",
+      "To buy rice for her father's temple offering",
+      "To marry a sailor",
+      "To escape her village"
+    ],
+    "correct_index": 1,
+    "explanation": "The sailors pay three hundred sacks of rice, the sum a monk told her blind father to give the temple so that he might see again.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "korean-q19",
+    "story_id": "korean-06",
+    "question": "What happens to Sim Cheong in the Dragon King's palace?",
+    "choices": [
+      "She is turned into a bird",
+      "She becomes a shaman",
+      "She is welcomed and later returns to the surface",
+      "She is imprisoned forever"
+    ],
+    "correct_index": 2,
+    "explanation": "The Dragon King receives her kindly, and she later returns to the world; in the best-known version a king finds her in a lotus flower and makes her queen.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "korean-q20",
+    "story_id": "korean-06",
+    "question": "In which performance tradition is Sim Cheong's story best known?",
+    "choices": [
+      "Pansori",
+      "Talchum mask dance",
+      "Nongak farmers' music",
+      "Sijo poetry"
+    ],
+    "correct_index": 0,
+    "explanation": "Simcheongga is one of the five surviving pansori, and the scene of her blind father regaining sight is a famous test for singers.",
+    "difficulty": "hard",
+    "verified": false
+  }
+]

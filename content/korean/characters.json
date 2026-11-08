@@ -1,0 +1,165 @@
+[
+  {
+    "id": "hwanung",
+    "name": "Hwanung",
+    "role": "Heavenly prince who descended to rule the earth",
+    "domain": [
+      "heaven",
+      "kingship",
+      "order"
+    ],
+    "symbols": [
+      "the sandalwood tree",
+      "wind and rain"
+    ],
+    "fun_fact": "Hwanung is said to have come down with three sacred seals and three thousand followers, bringing law and agriculture to the world.",
+    "verified": false
+  },
+  {
+    "id": "ungnyeo",
+    "name": "Ungnyeo",
+    "role": "Bear woman who endured the test and became a mother",
+    "domain": [
+      "transformation",
+      "endurance"
+    ],
+    "symbols": [
+      "mugwort",
+      "garlic",
+      "the cave"
+    ],
+    "fun_fact": "Her name means 'bear woman', and the mugwort and garlic she ate are still foods associated with spring and healing in Korea.",
+    "verified": false
+  },
+  {
+    "id": "dangun",
+    "name": "Dangun",
+    "role": "Legendary founder of Gojoseon",
+    "domain": [
+      "kingship",
+      "origins",
+      "mountains"
+    ],
+    "symbols": [
+      "the sandalwood altar",
+      "the mountain throne"
+    ],
+    "fun_fact": "Tradition says Dangun ruled for 1,500 years and then became a mountain god at the age of 1,908.",
+    "verified": false
+  },
+  {
+    "id": "yuhwa",
+    "name": "Yuhwa",
+    "role": "Daughter of the river god and mother of Jumong",
+    "domain": [
+      "rivers",
+      "motherhood",
+      "fate"
+    ],
+    "symbols": [
+      "the Amnok River",
+      "sunlight"
+    ],
+    "fun_fact": "Yuhwa was later worshipped as Susin, a goddess of caves, alongside her son.",
+    "verified": false
+  },
+  {
+    "id": "jumong",
+    "name": "Jumong",
+    "role": "Archer-founder of Goguryeo",
+    "domain": [
+      "archery",
+      "kingship",
+      "exile"
+    ],
+    "symbols": [
+      "the bow",
+      "the egg",
+      "the horse"
+    ],
+    "fun_fact": "His name was remembered as a Buyeo word for a skilled archer, and later kings traced their line to him.",
+    "verified": false
+  },
+  {
+    "id": "bari",
+    "name": "Bari",
+    "role": "Abandoned princess who became the first shaman",
+    "domain": [
+      "death",
+      "healing",
+      "soul guidance"
+    ],
+    "symbols": [
+      "the water of life",
+      "the jade box",
+      "the road to the dead"
+    ],
+    "fun_fact": "In many gut rituals, Bari is invoked to guide the soul of the deceased, because she made the journey alone first.",
+    "verified": false
+  },
+  {
+    "id": "seonyeo",
+    "name": "Seonyeo",
+    "role": "Heavenly maiden who marries a mortal woodcutter",
+    "domain": [
+      "heaven",
+      "marriage",
+      "longing"
+    ],
+    "symbols": [
+      "the feathered robe",
+      "the rainbow",
+      "the heavenly pool"
+    ],
+    "fun_fact": "The heavenly maidens are often shown descending on a rainbow to bathe in mountain pools, a scene popular in Korean painting.",
+    "verified": false
+  },
+  {
+    "id": "rabbit",
+    "name": "Rabbit",
+    "role": "Clever rabbit who escapes the Dragon King's court",
+    "domain": [
+      "wit",
+      "survival",
+      "trickery"
+    ],
+    "symbols": [
+      "the liver kept on land",
+      "the turtle's shell"
+    ],
+    "fun_fact": "The rabbit's excuse, that his liver is washed and hanging on a tree, is one of Korean folklore's most quoted jokes.",
+    "verified": false
+  },
+  {
+    "id": "dragon_king",
+    "name": "Dragon King",
+    "role": "Ruler of the sea and its palace",
+    "domain": [
+      "sea",
+      "power",
+      "rain"
+    ],
+    "symbols": [
+      "the underwater palace",
+      "the dragon throne"
+    ],
+    "fun_fact": "The Dragon King appears in both the rabbit tale and Sim Cheong, but he is not always wise or kind, and the stories often satirise his court.",
+    "verified": false
+  },
+  {
+    "id": "sim_cheong",
+    "name": "Sim Cheong",
+    "role": "Filial daughter who returns from the sea as a queen",
+    "domain": [
+      "filial piety",
+      "sacrifice",
+      "restoration"
+    ],
+    "symbols": [
+      "the lotus flower",
+      "the three hundred sacks of rice"
+    ],
+    "fun_fact": "Simcheongga is one of the five surviving pansori, and its scene of the blind father regaining sight is a test of a singer's skill.",
+    "verified": false
+  }
+]

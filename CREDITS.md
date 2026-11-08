@@ -193,6 +193,16 @@ Mythos is an educational draft. The retellings are new, short summaries in moder
 - **Marija Gimbutas, The Balts** — A broad study of Baltic prehistory and culture, including religion, to be read alongside more recent archaeology.
 - **Endre Bojtár, Foreword to the Past: A Cultural History of the Baltic People** — A critical introduction to the sources, folklore and modern national narratives of the Baltic region.
 
+### Korean
+
+- **Samguk Yusa (1281)** — The earliest surviving full account of Dangun, compiled by Iryeon more than a millennium after the traditional date.
+- **Samguk Sagi (1145)** — The official history of the Three Kingdoms, preserving the Jumong foundation account and other early traditions.
+- **Korean shamanic narratives (muga)** — Oral ritual narratives performed in gut, including the Princess Bari story; versions differ by region and performer.
+- **Korean folktale collections** — Nineteenth- and twentieth-century collections of oral tales, including the woodcutter and heavenly maiden, the rabbit and the Dragon King, and Sim Cheong.
+- **Laurel Kendall, Shamans, Housewives, and Other Restless Spirits** — An ethnographic study of Korean shamanism as a living practice.
+- **Heinz Insu Fenkl and Bella Myong-wol Dalton-Fenkl, The Korean Myths** — A modern retelling and introduction to Korean myth and folklore.
+- **Michael J. Pettid, Unyong-jon** — A study of a Korean narrative tradition that situates folk tales in their literary and social contexts.
+
 ## Review and sensitivity status
 
 | Tradition | Sensitivity | Verified |
@@ -214,8 +224,9 @@ Mythos is an educational draft. The retellings are new, short summaries in moder
 | Slavic | low | false |
 | Etruscan | low | false |
 | Baltic | low | false |
+| Korean | medium | false |
 
-Hindu stories are a living sacred tradition and are marked **high** sensitivity. Shinto (Japanese), Maya and Chinese traditions are marked **medium**. All seventeen traditions need a human fact-check of dates, names, spellings, answer keys and source notes before release. The Hindu, Shinto, Maya and Chinese material also needs a sensitivity review by someone with relevant community or scholarly knowledge.
+Hindu stories are a living sacred tradition and are marked **high** sensitivity. Shinto (Japanese), Maya and Chinese traditions are marked **medium**. All eighteen traditions need a human fact-check of dates, names, spellings, answer keys and source notes before release. The Hindu, Shinto, Maya, Chinese and Korean material also needs a sensitivity review by someone with relevant community or scholarly knowledge.
 
 If a retelling is inaccurate or disrespectful, the correct response is to revise or remove it — not to defend the text. See the `NEEDS HUMAN` tasks in `PLAN_AND_TODO.md`.
 

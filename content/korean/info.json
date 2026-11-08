@@ -1,0 +1,69 @@
+{
+  "id": "korean",
+  "name": "Korean",
+  "intro": "Korean stories reach us through two very different channels. Court histories such as the Samguk Sagi (1145) and the Buddhist Samguk Yusa (1281) record the founding myths of kings, while shamanic narratives and folktales were carried orally and performed in rituals. Shamanism, or musok, is not a relic: mudang still conduct gut ceremonies in Korea today, and the tradition has coexisted with Buddhism, Confucianism and a large Christian population. The six stories here move from the heavenly founding of Gojoseon and the archer Jumong to the underworld journey of Princess Bari, a heavenly maiden, a comic rabbit, and the filial Sim Cheong. Dates are traditional, versions differ by region, and the retellings keep close to the written and oral sources while marking what is uncertain.",
+  "timeline": [
+    {
+      "label": "Dangun and Gojoseon",
+      "year_text": "2333 BCE (traditional)",
+      "note": "The traditional founding date of Gojoseon, recorded in the Samguk Yusa more than a millennium later. Historians treat the date and the founder as legendary."
+    },
+    {
+      "label": "Goguryeo founded",
+      "year_text": "37 BCE",
+      "note": "Jumong, the archer said to have hatched from an egg, founds Goguryeo according to the Samguk Sagi. The date is traditional."
+    },
+    {
+      "label": "Samguk Sagi",
+      "year_text": "1145 CE",
+      "note": "Kim Busik compiles the official history of the Three Kingdoms, preserving the Jumong narrative in its surviving form."
+    },
+    {
+      "label": "Samguk Yusa",
+      "year_text": "1281 CE",
+      "note": "The Buddhist monk Iryeon completes his collection, which records the Dangun myth and many legends and Buddhist traditions."
+    },
+    {
+      "label": "Pansori and printed tales",
+      "year_text": "18th-19th century",
+      "note": "Simcheongga and other pansori pieces take shape, while popular novels and chapbooks circulate the stories in print."
+    },
+    {
+      "label": "Folklore study and living practice",
+      "year_text": "20th century-present",
+      "note": "Collectors record regional variants while mudang continue to perform gut; scholars such as Laurel Kendall study the tradition as contemporary religion."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Samguk Yusa",
+      "note": "Compiled by the Buddhist monk Iryeon around 1281, this collection preserves the Dangun foundation myth, the Jumong story and many legends. It is the earliest surviving full account of Dangun."
+    },
+    {
+      "title": "Samguk Sagi",
+      "note": "Kim Bu-sik's official history, completed in 1145, records the founding of Goguryeo and the story of Jumong. It is the earliest surviving Korean history in the Chinese historiographical style."
+    },
+    {
+      "title": "Korean shamanic narratives (muga)",
+      "note": "Oral ritual songs performed by mudang, especially the Princess Bari narrative. Versions differ by region, and the tradition is still living."
+    },
+    {
+      "title": "Korean folktale collections",
+      "note": "Twentieth-century collections, including Zong In-sob's Folk Tales from Korea (1952), preserve the woodcutter, rabbit and Sim Cheong tales in many variants."
+    },
+    {
+      "title": "Laurel Kendall, Shamans, Housewives, and Other Restless Spirits",
+      "note": "An ethnographic study of Korean shamanism as a living practice, focusing on women, household rites and the relationship between shamans and clients."
+    },
+    {
+      "title": "Heinz Insu Fenkl and Bella Myong-wol Dalton-Fenkl, The Korean Myths",
+      "note": "A recent guide to Korean gods, heroes and legends for general readers, attentive to the religious settings of the stories."
+    },
+    {
+      "title": "Michael J. Pettid, Unyong-jon",
+      "note": "A translation and study of a Korean shamanic narrative, showing how such stories are performed, transmitted and adapted."
+    }
+  ],
+  "sensitivity": "medium",
+  "verified": false
+}

@@ -255,7 +255,7 @@
     "start_year": -500,
     "end_year": 2026,
     "summary": "Korean legends tell of a bear and a tiger who wished to become human, of the founder Dangun, and of household gods and shamans.",
-    "mvp": false,
+    "mvp": true,
     "sensitivity": "medium",
     "verified": false
   },

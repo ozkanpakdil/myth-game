@@ -1,0 +1,92 @@
+[
+  {
+    "id": "el",
+    "name": "El",
+    "role": "High god and patriarch of the Canaanite pantheon",
+    "domain": ["creation", "kingship", "wisdom"],
+    "symbols": ["the bull", "the divine assembly", "the mountain"],
+    "fun_fact": "El is called 'Bull El' in Ugaritic poetry, and his consent is still needed when Baal wins kingship.",
+    "verified": false
+  },
+  {
+    "id": "asherah",
+    "name": "Asherah",
+    "role": "Mother goddess and consort of El",
+    "domain": ["motherhood", "the sea", "intercession"],
+    "symbols": ["the sea", "the loom", "the sacred tree"],
+    "fun_fact": "Her Ugaritic name is Athirat, and her epithet 'Lady of the Sea' may describe a goddess of the sea; in the Hebrew Bible, asherah can also mean a wooden cult object.",
+    "verified": false
+  },
+  {
+    "id": "baal",
+    "name": "Baal",
+    "role": "Storm god and king of the gods",
+    "domain": ["storm", "fertility", "kingship"],
+    "symbols": ["the thunderbolt", "the bull", "the cedar"],
+    "fun_fact": "Baal's palace stands on Mount Sapan, a mountain north of Ugarit that is still called Jebel al-Aqra.",
+    "verified": false
+  },
+  {
+    "id": "anat",
+    "name": "Anat",
+    "role": "Warrior goddess and sister of Baal",
+    "domain": ["war", "hunting", "fertility"],
+    "symbols": ["the spear", "the shield", "the vulture"],
+    "fun_fact": "In one battle scene Anat wades in blood up to her knees, and the poem treats her violence as both terrifying and necessary.",
+    "verified": false
+  },
+  {
+    "id": "yam",
+    "name": "Yam",
+    "role": "Sea god and rival of Baal",
+    "domain": ["sea", "chaos", "rivers"],
+    "symbols": ["the waves", "the sea serpent", "the river"],
+    "fun_fact": "Yam is also called Judge River, and his defeat by Baal is echoed in biblical poetry about the sea.",
+    "verified": false
+  },
+  {
+    "id": "mot",
+    "name": "Mot",
+    "role": "God of death and the underworld",
+    "domain": ["death", "underworld", "drought"],
+    "symbols": ["the grave", "the dust", "the winnowing sieve"],
+    "fun_fact": "Mot is called 'the beloved of El', which makes his struggle with Baal a family quarrel as well as a cosmic one.",
+    "verified": false
+  },
+  {
+    "id": "kothar",
+    "name": "Kothar-wa-Khasis",
+    "role": "Craftsman god and weapon-maker",
+    "domain": ["craft", "magic", "architecture"],
+    "symbols": ["the hammer", "the anvil", "the cedar beam"],
+    "fun_fact": "His name means 'Skillful and Wise', and he makes both the clubs that defeat Yam and the palace that confirms Baal's rule.",
+    "verified": false
+  },
+  {
+    "id": "danel",
+    "name": "Danel",
+    "role": "Righteous judge and father of Aqhat",
+    "domain": ["justice", "fatherhood", "the Rephaim"],
+    "symbols": ["the gate of judgment", "the bow", "the cup"],
+    "fun_fact": "Danel is named in the book of Ezekiel as a model of righteousness, which suggests that his story was still known in Israel.",
+    "verified": false
+  },
+  {
+    "id": "aqhat",
+    "name": "Aqhat",
+    "role": "Son of Danel and owner of the bow",
+    "domain": ["youth", "hunting", "inheritance"],
+    "symbols": ["the bow", "the arrows", "the feast"],
+    "fun_fact": "Aqhat's refusal to give up his bow is often read as youthful pride, but the broken text leaves his motives uncertain.",
+    "verified": false
+  },
+  {
+    "id": "kirta",
+    "name": "Kirta",
+    "role": "King and hero of the Kirta epic",
+    "domain": ["kingship", "endurance", "fatherhood"],
+    "symbols": ["the throne", "the empty house", "the staff"],
+    "fun_fact": "Kirta is one of the few human heroes in Ugaritic myth, and his epic breaks off before the succession is resolved.",
+    "verified": false
+  }
+]

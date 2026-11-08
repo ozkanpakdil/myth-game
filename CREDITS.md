@@ -138,6 +138,15 @@ Mythos is an educational draft. The retellings are new, short summaries in moder
 - **Denkard and Zatspram** — Later Middle Persian texts that narrate Zarathushtra's birth, call and ministry; they are tradition, not contemporary biography.
 - **Mary Boyce, Zoroastrians: Their Religious Beliefs and Practices** — A standard scholarly introduction written with attention to the living community.
 
+### Canaanite
+
+- **Ugaritic tablets (KTU / CAT)** — The primary texts from Ras Shamra, written in alphabetic cuneiform; many tablets are broken and readings are revised in later editions.
+- **Mark S. Smith, The Ugaritic Baal Cycle, Volume I (1994)** — A translation and commentary on KTU 1.1–1.2, including the fragmentary opening and the conflict with Yam.
+- **Mark S. Smith and Wayne T. Pitard, The Ugaritic Baal Cycle, Volume II (2009)** — The companion volume on KTU 1.3–1.4, covering Baal's palace, Anat, Athirat and the building of the house.
+- **Simon B. Parker, ed., The Ugaritic Narrative Poetry (1997)** — Accessible translations of the Baal Cycle, Kirta, Aqhat and related narratives, with introductions to the textual problems.
+- **Nick Wyatt, Religious Texts from Ugarit (2nd ed., 2002)** — A wide-ranging translation and commentary on the Ugaritic myths and rituals, including The Gracious Gods.
+- **John Day, Yahweh and the Gods and Goddesses of Canaan (2000)** — A modern study of Canaanite deities and their reception in biblical religion.
+
 ## Review and sensitivity status
 
 | Tradition | Sensitivity | Verified |
@@ -153,8 +162,9 @@ Mythos is an educational draft. The retellings are new, short summaries in moder
 | Chinese | medium | false |
 | Roman | low | false |
 | Persian / Zoroastrian | low | false |
+| Canaanite | low | false |
 
-Hindu stories are a living sacred tradition and are marked **high** sensitivity. Shinto (Japanese), Maya and Chinese traditions are marked **medium**. All eleven traditions need a human fact-check of dates, names, spellings, answer keys and source notes before release. The Hindu, Shinto, Maya and Chinese material also needs a sensitivity review by someone with relevant community or scholarly knowledge.
+Hindu stories are a living sacred tradition and are marked **high** sensitivity. Shinto (Japanese), Maya and Chinese traditions are marked **medium**. All twelve traditions need a human fact-check of dates, names, spellings, answer keys and source notes before release. The Hindu, Shinto, Maya and Chinese material also needs a sensitivity review by someone with relevant community or scholarly knowledge.
 
 If a retelling is inaccurate or disrespectful, the correct response is to revise or remove it — not to defend the text. See the `NEEDS HUMAN` tasks in `PLAN_AND_TODO.md`.
 

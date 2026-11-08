@@ -1,0 +1,69 @@
+{
+  "id": "canaan",
+  "name": "Canaanite",
+  "intro": "The Canaanite myths of Ugarit survive on clay tablets written in an alphabetic cuneiform script between about 1400 and 1200 BCE. There is no single Canaanite canon. The city was destroyed around 1185 BCE, and its archives lay buried until excavations at Ras Shamra began in 1929. The tablets preserve the Baal Cycle, the epics of Kirta and Aqhat, and ritual poetry such as The Gracious Gods. They present El as the elder god, Baal as the storm god who wins kingship, and Anat, Asherah, Yam, and Mot as powerful figures in a world of drought and fertility. The texts are fragmentary and often lack endings, and later biblical writers knew Canaanite gods mainly as rivals. These retellings mark what is secure and what is reconstructed.",
+  "timeline": [
+    {
+      "label": "Early coastal cities",
+      "year_text": "c. 3000-2000 BCE",
+      "note": "Canaanite towns such as Byblos trade with Egypt and Mesopotamia. Local cults develop around El and other deities, though the evidence is scattered and later texts shape what we can say."
+    },
+    {
+      "label": "Middle Bronze Age",
+      "year_text": "c. 2000-1550 BCE",
+      "note": "Amorite kingdoms and Canaanite city-states appear in Egyptian and Mesopotamian records. Personal names and inscriptions mention El and other gods, showing a shared religious vocabulary across the region."
+    },
+    {
+      "label": "Late Bronze Age Ugarit",
+      "year_text": "c. 1550-1185 BCE",
+      "note": "Ugarit becomes a prosperous port. Its scribes copy the Baal Cycle, Kirta, Aqhat, and ritual texts in alphabetic cuneiform; the city is destroyed around 1185 BCE and the tablets are buried."
+    },
+    {
+      "label": "Iron Age kingdoms",
+      "year_text": "c. 1200-586 BCE",
+      "note": "Phoenician cities such as Tyre and Sidon continue Canaanite cults. In Israel and Judah, biblical writers condemn Baal and Asherah, while archaeological finds show that their worship continued in popular practice."
+    },
+    {
+      "label": "Hellenistic and Roman reception",
+      "year_text": "c. 300 BCE-200 CE",
+      "note": "Philo of Byblos retells Phoenician traditions in Greek, and later writers identify Canaanite gods with Greek ones. These accounts are late, tendentious, and must be used with care."
+    },
+    {
+      "label": "Modern recovery",
+      "year_text": "1929-present",
+      "note": "Excavations at Ras Shamra uncover Ugarit's archives. Scholars decipher the script and publish the tablets as KTU/CAT, but gaps and disputed readings remain."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ugaritic tablets (KTU / CAT)",
+      "note": "The primary texts from Ras Shamra, edited as KTU and CAT. Many tablets are broken, and readings are revised in later editions."
+    },
+    {
+      "title": "Mark S. Smith, The Ugaritic Baal Cycle, Volume I (1994)",
+      "note": "A translation and commentary on KTU 1.1-1.2, with careful discussion of the fragmentary opening and the conflict with Yam."
+    },
+    {
+      "title": "Mark S. Smith and Wayne T. Pitard, The Ugaritic Baal Cycle, Volume II (2009)",
+      "note": "The companion volume on KTU 1.3-1.4, covering Baal's palace, Anat, Athirat, and the building of the house."
+    },
+    {
+      "title": "Simon B. Parker, ed., The Ugaritic Narrative Poetry (1997)",
+      "note": "Accessible translations of the Baal Cycle, Kirta, Aqhat, and related narratives, with introductions to the textual problems."
+    },
+    {
+      "title": "Nick Wyatt, Religious Texts from Ugarit (2nd ed., 2002)",
+      "note": "A wide-ranging translation and commentary on the Ugaritic myths and rituals, including The Gracious Gods."
+    },
+    {
+      "title": "John Day, Yahweh and the Gods and Goddesses of Canaan (2000)",
+      "note": "A modern study of Canaanite deities and their reception in biblical religion, including Baal, Asherah, Anat, and Mot."
+    },
+    {
+      "title": "Mark S. Smith, The Early History of God (2nd ed., 2002)",
+      "note": "A study of Israelite religion in its Canaanite context, useful for the later polemics and for the question of how the myths were remembered."
+    }
+  ],
+  "sensitivity": "low",
+  "verified": false
+}

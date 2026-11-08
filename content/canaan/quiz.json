@@ -1,0 +1,202 @@
+[
+  {
+    "id": "canaan-q01",
+    "story_id": "canaan-01",
+    "question": "Who demands kingship at the start of the Baal Cycle?",
+    "choices": ["Mot", "Yam", "Anat", "Kothar"],
+    "correct_index": 1,
+    "explanation": "Yam, the sea, also called Judge River, sends envoys to El's assembly and demands kingship and Baal's surrender.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "canaan-q02",
+    "story_id": "canaan-01",
+    "question": "Who makes the weapons Baal uses against Yam?",
+    "choices": ["Anat", "El", "Kothar-wa-Khasis", "Shapshu"],
+    "correct_index": 2,
+    "explanation": "Kothar-wa-Khasis, the craftsman god, makes the two clubs Yagrush and Ayyamur for Baal.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "canaan-q03",
+    "story_id": "canaan-01",
+    "question": "What are the names of Baal's two clubs?",
+    "choices": ["Yagrush and Ayyamur", "Shahar and Shalim", "Pabil and Yassib", "Athirat and Rahmay"],
+    "correct_index": 0,
+    "explanation": "Kothar names the clubs Yagrush, 'Chaser', and Ayyamur, 'Driver'; Baal uses them to strike Yam down.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "canaan-q04",
+    "story_id": "canaan-01",
+    "question": "Why is the opening of the Baal Cycle difficult to reconstruct?",
+    "choices": ["It was written in Greek and then lost", "Only a summary by a later historian remains", "The text was deliberately encrypted", "The tablets are damaged and no complete copy survives"],
+    "correct_index": 3,
+    "explanation": "KTU 1.1-1.2 are broken and partly reconstructed, so the order of speeches and even some speakers are debated.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "canaan-q05",
+    "story_id": "canaan-02",
+    "question": "What does Baal lack when he holds his feast on Mount Sapan?",
+    "choices": ["A weapon", "A sister", "A palace of his own", "A throne"],
+    "correct_index": 2,
+    "explanation": "Baal has won victories but has no house, and he is ashamed that the other gods have palaces.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "canaan-q06",
+    "story_id": "canaan-02",
+    "question": "Who pleads with El on Baal's behalf?",
+    "choices": ["Shapshu", "Anat", "Mot", "Yam"],
+    "correct_index": 1,
+    "explanation": "Anat confronts El, then enlists Athirat, and the two goddesses help Baal obtain his house.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "canaan-q07",
+    "story_id": "canaan-02",
+    "question": "What does Kothar-wa-Khasis build for Baal?",
+    "choices": ["A ship for the sea", "A temple to Yam", "A tomb for Mot", "A palace of cedar"],
+    "correct_index": 3,
+    "explanation": "Kothar cuts cedar in Lebanon and Anti-Lebanon and builds the palace that marks Baal's kingship.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "canaan-q08",
+    "story_id": "canaan-03",
+    "question": "Who is Mot in the Baal Cycle?",
+    "choices": ["The god of death and the underworld", "The god of the sea", "The craftsman god", "The sun goddess"],
+    "correct_index": 0,
+    "explanation": "Mot, whose name means Death, rules the underworld and opposes Baal's life-giving rule.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "canaan-q09",
+    "story_id": "canaan-03",
+    "question": "What happens to the land after Baal descends to Mot?",
+    "choices": ["A great flood", "Drought and mourning", "A rich harvest", "An endless winter"],
+    "correct_index": 1,
+    "explanation": "Baal's absence stops the rain; El and the gods mourn, and the fields fail.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "canaan-q10",
+    "story_id": "canaan-03",
+    "question": "What does Anat do to Mot?",
+    "choices": ["She marries him", "She hides him in a cave", "She kills him and destroys his body", "She sets him free"],
+    "correct_index": 2,
+    "explanation": "Anat seizes Mot, strikes him with a sword, winnows, burns, grinds, and sows his remains.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "canaan-q11",
+    "story_id": "canaan-03",
+    "question": "Which goddess intervenes between Baal and Mot near the end?",
+    "choices": ["Asherah", "Pughat", "Danatayya", "Shapshu"],
+    "correct_index": 3,
+    "explanation": "Shapshu, the sun goddess, warns Mot that El will oppose him; the final lines are broken.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "canaan-q12",
+    "story_id": "canaan-04",
+    "question": "Which two gods are born in The Gracious Gods?",
+    "choices": ["Baal and Anat", "Shahar and Shalim", "Yam and Mot", "Kirta and Hurray"],
+    "correct_index": 1,
+    "explanation": "The poem tells of the birth of Shahar and Shalim, the gracious gods, to El and two women.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "canaan-q13",
+    "story_id": "canaan-04",
+    "question": "What do the names Shahar and Shalim mean?",
+    "choices": ["Dawn and dusk", "Sea and death", "Rain and harvest", "War and peace"],
+    "correct_index": 0,
+    "explanation": "Shahar is usually translated Dawn and Shalim Dusk or evening, though the second name is also debated.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "canaan-q14",
+    "story_id": "canaan-04",
+    "question": "Why is KTU 1.23 hard to interpret?",
+    "choices": ["It survives only in a Greek translation", "It is a prose law code", "It is a fragmentary ritual poem with gaps and repeated lines", "It was written in the Middle Ages"],
+    "correct_index": 2,
+    "explanation": "The tablet is broken, its speakers shift, and some lines may be ritual instructions rather than narrative.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "canaan-q15",
+    "story_id": "canaan-05",
+    "question": "Who appears to Kirta in a dream and tells him to seek a wife?",
+    "choices": ["Baal", "Mot", "Kothar", "El"],
+    "correct_index": 3,
+    "explanation": "El takes pity on the childless king and gives him instructions in a dream.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "canaan-q16",
+    "story_id": "canaan-05",
+    "question": "Whom does Kirta seek as his bride?",
+    "choices": ["Hurray", "Anat", "Asherah", "Pughat"],
+    "correct_index": 0,
+    "explanation": "El sends Kirta to Udum to demand Hurray, the daughter of King Pabil.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "canaan-q17",
+    "story_id": "canaan-05",
+    "question": "What threatens Kirta after his marriage?",
+    "choices": ["A sea monster", "A serious illness", "A rival god's army", "A famine in Egypt"],
+    "correct_index": 1,
+    "explanation": "Kirta falls ill, and the text hints that an unpaid vow to Asherah lies behind it.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "canaan-q18",
+    "story_id": "canaan-06",
+    "question": "Who is Aqhat's father in the story?",
+    "choices": ["Kirta", "Baal", "Danel", "El"],
+    "correct_index": 2,
+    "explanation": "Danel, the righteous judge, is granted a son, Aqhat, after years of childlessness.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "canaan-q19",
+    "story_id": "canaan-06",
+    "question": "Why does Anat want Aqhat's bow?",
+    "choices": ["It belonged to Baal", "It can control the rain", "It was a gift for El", "She desires it for herself"],
+    "correct_index": 3,
+    "explanation": "Anat sees the bow and covets it; Aqhat refuses to give it up, and the refusal leads to his death.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "canaan-q20",
+    "story_id": "canaan-06",
+    "question": "What happens to the Aqhat story after his death?",
+    "choices": ["It breaks off during Pughat's revenge", "It ends with Aqhat's marriage", "It is fully preserved in a Greek version", "It concludes with Anat's apology"],
+    "correct_index": 0,
+    "explanation": "Pughat sets out to avenge her brother, but the tablets break off, so the ending is lost or disputed.",
+    "difficulty": "hard",
+    "verified": false
+  }
+]

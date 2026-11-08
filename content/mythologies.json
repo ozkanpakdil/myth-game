@@ -34,7 +34,7 @@
     "start_year": -2000,
     "end_year": -500,
     "summary": "Stories from the coastal cities of the Levant follow the storm god Baal, the sea and death, and the cycles of fertility and drought.",
-    "mvp": false,
+    "mvp": true,
     "sensitivity": "low",
     "verified": false
   },

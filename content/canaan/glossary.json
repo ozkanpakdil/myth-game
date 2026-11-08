@@ -1,0 +1,52 @@
+[
+  {
+    "term": "Ugarit",
+    "definition": "An ancient port city on the Syrian coast, destroyed around 1185 BCE. Its ruins at Ras Shamra yielded the tablets that preserve the Baal Cycle and other Canaanite myths.",
+    "verified": false
+  },
+  {
+    "term": "Ugaritic",
+    "definition": "The Northwest Semitic language of Ugarit, written in an alphabetic cuneiform script. It is closely related to Hebrew and Phoenician, and its tablets are the main source for Canaanite myth.",
+    "verified": false
+  },
+  {
+    "term": "Baal Cycle",
+    "definition": "A group of Ugaritic tablets, KTU 1.1-1.6, telling of Baal's kingship, his palace, and his conflicts with Yam and Mot. No single copy preserves the whole cycle.",
+    "verified": false
+  },
+  {
+    "term": "El",
+    "definition": "The high god of the Ugaritic pantheon, called 'Bull El' and 'father of the gods'. He presides over the divine assembly, grants kingship, and appears as a wise but sometimes passive patriarch.",
+    "verified": false
+  },
+  {
+    "term": "Asherah",
+    "definition": "Athirat, the mother goddess and consort of El, called 'Lady of the Sea'. She intercedes for Baal and is later condemned in the Hebrew Bible, where her name can also mean a cult object.",
+    "verified": false
+  },
+  {
+    "term": "Anat",
+    "definition": "The warrior goddess of Ugarit, sister and ally of Baal. She fights, hunts, and avenges, and her violent devotion is central to the Baal Cycle and the Aqhat epic.",
+    "verified": false
+  },
+  {
+    "term": "Mot",
+    "definition": "The god of death and the underworld, called 'the beloved of El'. He swallows Baal and brings drought, and Anat destroys his body in the Baal Cycle.",
+    "verified": false
+  },
+  {
+    "term": "Yam",
+    "definition": "The sea god, also called Judge River, who claims kingship at the start of the Baal Cycle. His defeat by Baal establishes the storm god's rule and is echoed in biblical poetry.",
+    "verified": false
+  },
+  {
+    "term": "Rephaim",
+    "definition": "The ancestral spirits or shades of the dead in Ugaritic tradition, also called Rapiuma. They appear in a banquet text, and Danel is called a 'man of Rapau'.",
+    "verified": false
+  },
+  {
+    "term": "Shapshu",
+    "definition": "The Ugaritic sun goddess, called the 'luminary of the gods'. She mediates between Baal and Mot and warns Mot of El's anger, and in Ugaritic myth the sun is female.",
+    "verified": false
+  }
+]

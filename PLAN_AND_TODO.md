@@ -27,7 +27,7 @@ An educational game about world myths. Players pick a mythology, read short stor
 | Version 2 (Phases 5–6) | World map for choosing a myth, plus simple pixel art |
 | Audience | Ages 12+ |
 | Tech | Static website: HTML + CSS + vanilla JavaScript. Content in JSON files. No server |
-| MVP content | 11 mythologies, 6 stories each, 20 quiz questions each |
+| MVP content | 12 mythologies, 6 stories each, 20 quiz questions each |
 
 **Implementation note (this build):** images are delivered as **SVG** (not PNG).
 Pixel-art sprites are authored as text grids and compiled to SVG by
@@ -403,7 +403,7 @@ An AI that writes text can create pixel art as **text grids**, one character per
 ## 8. Definition of Done
 
 **Version 1 (text):**
-- [x] 11 MVP mythologies complete (6 stories, 20 quiz questions, 10 characters, 10 glossary terms each)
+- [x] 12 MVP mythologies complete (6 stories, 20 quiz questions, 10 characters, 10 glossary terms each)
 - [x] `validate_content.js` passes with no errors
 - [x] All screens work on desktop and mobile
 - [x] Progress saves and loads correctly
@@ -448,3 +448,4 @@ Add one line per finished task. Newest at the bottom.
 | 2026-11-08 | T602 | Added Chinese as the ninth playable tradition: Pangu, Nüwa, Hou Yi, Yu the Great, Nezha and Sun Wukong, with 20 questions, 10 figures, 10 terms, a dragon sigil, map marker and 44 studio clips per voice. |
 | 2026-11-08 | T603 | Added Roman as the tenth playable tradition: Aeneas, Romulus and Remus, the Sabine women, Ceres and Proserpina, Cupid and Psyche, and Juno's geese, with 20 questions, 10 figures, 10 terms, a wolf sigil and a map marker. |
 | 2026-11-08 | T604 | Added Persian / Zoroastrian as the eleventh playable tradition: the two spirits, Yima's vara, Zarathushtra's call, Kaveh and Zahhak, Rostam and the White Demon, and Zal and the Simurgh, with 20 questions, 10 figures, 10 terms and a flame sigil. |
+| 2026-11-08 | T605 | Added Canaanite as the twelfth playable tradition: Baal and Yam, the House of Cedar, Baal and Mot, El's feast, Kirta and Aqhat, with 20 questions, 10 figures, 10 terms, a cedar sigil and uncertainty notes for the fragmentary tablets. |

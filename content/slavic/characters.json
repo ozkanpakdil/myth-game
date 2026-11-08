@@ -1,0 +1,92 @@
+[
+  {
+    "id": "perun",
+    "name": "Perun",
+    "role": "God of thunder, lightning and the oak",
+    "domain": ["thunder", "war", "oath"],
+    "symbols": ["the axe", "the oak", "the eagle"],
+    "fun_fact": "Oaths in the Primary Chronicle were sworn by Perun and Veles together, which is one reason scholars pair them.",
+    "verified": false
+  },
+  {
+    "id": "veles",
+    "name": "Veles",
+    "role": "God of cattle, waters and the underworld",
+    "domain": ["cattle", "underworld", "wealth"],
+    "symbols": ["the serpent", "the bear", "the horn"],
+    "fun_fact": "Veles is often reconstructed as Perun's opponent, yet the Primary Chronicle names him in the same oath formula as Perun.",
+    "verified": false
+  },
+  {
+    "id": "ivan",
+    "name": "Ivan Tsarevich",
+    "role": "Youngest tsar's son and hero of the firebird quest",
+    "domain": ["courage", "patience", "quest"],
+    "symbols": ["the firebird's feather", "the grey wolf", "the golden apple"],
+    "fun_fact": "In Afanasyev's version Ivan wins not by strength but by listening to the grey wolf, whose warnings he keeps forgetting.",
+    "verified": false
+  },
+  {
+    "id": "firebird",
+    "name": "Firebird",
+    "role": "Glowing bird whose feather begins the quest",
+    "domain": ["fire", "wonder", "quest"],
+    "symbols": ["the glowing feather", "the golden apples", "the golden cage"],
+    "fun_fact": "The firebird's light is so bright that a single feather can illuminate a whole room, and the tale never lets the bird be simply caught.",
+    "verified": false
+  },
+  {
+    "id": "grey_wolf",
+    "name": "Grey Wolf",
+    "role": "Shape-shifting helper and guide to Ivan",
+    "domain": ["speed", "loyalty", "cunning"],
+    "symbols": ["the grey coat", "the water of life", "the swift stride"],
+    "fun_fact": "In many tellings the wolf first eats Ivan's horse, then repays him by carrying him across the whole quest.",
+    "verified": false
+  },
+  {
+    "id": "vasilisa",
+    "name": "Vasilisa",
+    "role": "Brave girl who outwits Baba Yaga",
+    "domain": ["courage", "patience", "initiation"],
+    "symbols": ["the magic doll", "the skull lantern", "the flax"],
+    "fun_fact": "Vasilisa's doll must be fed and kept secret, a small domestic ritual that keeps her mother's care alive in the forest.",
+    "verified": false
+  },
+  {
+    "id": "baba_yaga",
+    "name": "Baba Yaga",
+    "role": "Ambiguous crone and guardian of the forest threshold",
+    "domain": ["initiation", "death", "wilderness"],
+    "symbols": ["the hut on chicken legs", "the mortar and pestle", "the fence of bones"],
+    "fun_fact": "Baba Yaga flies in a mortar and sweeps her trail with a broom, and in some tales she is a helper rather than a threat.",
+    "verified": false
+  },
+  {
+    "id": "ilya",
+    "name": "Ilya Muromets",
+    "role": "Bogatyr of Murom and defender of Kyiv",
+    "domain": ["strength", "loyalty", "justice"],
+    "symbols": ["the horse", "the club", "the straight road"],
+    "fun_fact": "Ilya sat unable to walk for thirty-three years before pilgrims healed him, and he became the most popular hero of the Russian byliny.",
+    "verified": false
+  },
+  {
+    "id": "rusalka",
+    "name": "Rusalka",
+    "role": "Water spirit of the drowned and the untimely dead",
+    "domain": ["water", "fertility", "death"],
+    "symbols": ["wet hair", "the wreath", "the riverbank"],
+    "fun_fact": "Rusalki were sometimes honoured with songs and bread rather than feared, and their week could be a time of courtship as well as danger.",
+    "verified": false
+  },
+  {
+    "id": "morozko",
+    "name": "Morozko",
+    "role": "Winter spirit who tests and rewards",
+    "domain": ["winter", "frost", "justice"],
+    "symbols": ["the frost", "the pine tree", "the chest of gifts"],
+    "fun_fact": "Morozko is often identified with Ded Moroz, the Russian Father Frost, though the gift-bringer of New Year celebrations is a later, softer figure.",
+    "verified": false
+  }
+]

@@ -1,0 +1,96 @@
+[
+  {
+    "id": "slavic-01",
+    "title": "Perun and Veles",
+    "source_ref": "The Primary Chronicle; comparative Indo-European scholarship; later Slavic folklore",
+    "paragraphs": [
+      "High in the sky, Perun ruled the thunder. He drove his chariot across the sky, carried an axe and a hammer, and struck the oak tree with lightning. Below him, in the wet roots and cattle pens, Veles watched over herds, waters and the dead. The two gods were not simply good and evil; they held different parts of a world that needed both rain and soil.",
+      "The oldest surviving story is not a story at all. The Primary Chronicle records that Rus envoys swore oaths by Perun and by Veles, but it does not narrate their war. Scholars reconstruct the duel from later folk songs, from the figure of the fiery serpent, and from myths shared with other Indo-European peoples. In that reconstruction, Veles steals Perun's cattle, or his son, and hides his prize in the world below.",
+      "Perun hurls his lightning after the thief. Veles changes shape to escape: a tree, a stone, a man, an animal. The chase rolls across the sky as thunder and storm. At last Perun splits the oak or the mountain, frees what was stolen, and rain falls on the parched fields. The world is renewed, though the quarrel is never finally settled.",
+      "Later folklore remembered Perun in Saint Elijah, whose chariot makes the thunder, and Veles in the snake or bear of the underworld. The connected myth is a modern reconstruction, pieced together from chronicles, comparative linguistics and peasant customs. It should be read as a careful hypothesis, not as a text the medieval Slavs themselves wrote down."
+    ],
+    "characters": ["perun", "veles"],
+    "themes": ["storm", "fertility", "cosmic duel"],
+    "notes": "No single medieval text narrates the Perun-Veles duel. The connected myth is reconstructed from the Primary Chronicle's oath formulas, later folklore such as Saint Elijah and the fiery serpent, and comparative Indo-European evidence. Reconstructions disagree about what Veles steals: cattle, a son, or the storm clouds that bring rain.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "slavic-02",
+    "title": "Ivan and the Firebird",
+    "source_ref": "Alexander Afanasyev, Russian Fairy Tales",
+    "paragraphs": [
+      "In the tsar's garden grew a tree of golden apples, and each night a firebird came to steal them. The tsar set his sons to watch. The youngest, Ivan Tsarevich, found a single glowing feather where the bird had perched. His brothers laughed, but the tsar demanded the whole bird, and Ivan set out on a road from which many never returned.",
+      "On the road Ivan's horse was eaten by a grey wolf. Instead of abandoning him, the wolf offered to carry him, swift as wind, and warned him against the golden cage and the golden bridle that would betray him. Ivan promised to obey, but the treasures ahead were too bright, and he forgot.",
+      "Ivan reached the garden of the firebird, then the stable of the golden-maned horse, then the tower of Elena the Beautiful. Each treasure came with a test, and each time Ivan forgot the wolf's warning and was caught. The wolf repaired every mistake, but the price rose, until Ivan had to bring Elena herself home to his father.",
+      "His brothers, jealous of his success, killed Ivan and took the bird, the horse and the bride. The grey wolf found the body, brought the water of life and the water of death, and restored him. Ivan returned in disguise, was recognised, and the false brothers were punished. The tale rewards patience and the loyalty of a beast more than cleverness."
+    ],
+    "characters": ["ivan", "firebird", "grey_wolf"],
+    "themes": ["quest", "loyalty", "wonder"],
+    "uncertain": false,
+    "verified": false
+  },
+  {
+    "id": "slavic-03",
+    "title": "Vasilisa and Baba Yaga",
+    "source_ref": "Alexander Afanasyev, Russian Fairy Tales",
+    "paragraphs": [
+      "Vasilisa was still young when her mother died. Before she died, she gave her daughter a small wooden doll and told her to feed it and keep it secret; the doll would help her in trouble. Vasilisa's father remarried, and the stepmother and her own daughters made Vasilisa do every hard task in the house.",
+      "One evening the stepmother sent Vasilisa into the forest to borrow fire from Baba Yaga. She walked until she found a fence of bones and skulls, and a hut turning on chicken legs. Baba Yaga lived there, and she set Vasilisa tasks: separate poppy seeds from soil, clean the yard, cook the supper. If she failed, she would be eaten.",
+      "The doll did the impossible work while Vasilisa slept. Baba Yaga was angry, but she let Vasilisa go home. She gave her a skull with burning eyes for light. When Vasilisa reached the house, the light burned the stepmother and her daughters to ash, and Vasilisa escaped into a new life.",
+      "Baba Yaga is not a simple villain. She threatens, tests and frightens, but she also gives Vasilisa the fire she needs to leave her old home. Folklorists read her as an initiator, a keeper of the threshold between childhood and adulthood. The tale is harsh, and its heroine survives through courage, patience and the memory of her mother."
+    ],
+    "characters": ["vasilisa", "baba_yaga"],
+    "themes": ["initiation", "courage", "threshold"],
+    "uncertain": false,
+    "verified": false
+  },
+  {
+    "id": "slavic-04",
+    "title": "Ilya and the Nightingale Robber",
+    "source_ref": "Russian byliny (oral epics), especially the Ilya Muromets cycle",
+    "paragraphs": [
+      "Ilya Muromets was born in Karacharovo, near Murom. For thirty-three years he could not walk. Then wandering pilgrims healed him with a drink of water and gave him great strength. He rose, chose a horse, and set out for Kyiv to serve Prince Vladimir, taking the direct road that other travellers avoided.",
+      "That road was held by the Nightingale Robber, a creature who sat high in an oak and killed with his whistle. When Ilya rode near, the robber whistled until the horse stumbled and the forest shook. Ilya shot him in the eye, or stunned him, and bound him to his saddle.",
+      "In Kyiv, Prince Vladimir marvelled at the captive. He asked Ilya to make the Nightingale whistle in his court. The robber warned that the sound would kill everyone, so Ilya let him whistle softly. The blast knocked down the prince's servants and lords. Ilya then killed him, or let him go, and the road was open again.",
+      "The byliny about Ilya were sung for centuries and survive in many variants. He is a humble peasant's son who becomes the senior bogatyr; his healing, his quarrel with Vladimir and the fate of the Nightingale all change from singer to singer. The epic is not one fixed text but a family of performances, and in time Ilya became the model of the loyal, blunt bogatyr."
+    ],
+    "characters": ["ilya"],
+    "themes": ["heroism", "justice", "oral epic"],
+    "notes": "The byliny about Ilya Muromets survive in many variants. His healing, the way he defeats the Nightingale, whether the robber is killed, and Ilya's later quarrel with Prince Vladimir all differ between singers and manuscripts.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "slavic-05",
+    "title": "The Rusalka of Midsummer Night",
+    "source_ref": "Slavic folklore and nineteenth-century ethnographic records",
+    "paragraphs": [
+      "On Kupala Night, the shortest night of the year, villages lit great fires and went down to the water. Young people jumped through flames, floated wreaths on rivers, and searched the forest for the fern flower that bloomed only then. Water and fire were both honoured, because the night joined fertility with danger.",
+      "The rusalka belonged to that dangerous water. She was often a young woman who had drowned, or an unbaptised child, and she was said to dance in the moonlight, comb her wet hair and call men toward the river. Sometimes she was a spirit of the grain, generous to the fields; sometimes she was a hungry ghost who needed offerings.",
+      "People did not simply fear her. They left bread, cloth and wreaths at the water, sang songs to invite her out of the river, and then sent her back before the harvest. A rusalka could be a bride, a sister or a daughter, and the rites let the living negotiate with the dead rather than simply forget them.",
+      "These customs varied greatly by region. Rusalka week might fall near Trinity, not Kupala; some villages feared the rusalki, others welcomed them; the songs, offerings and dates all changed. The picture here is a composite drawn from nineteenth-century Russian ethnographers, and it should not be taken as a single ancient rite."
+    ],
+    "characters": ["rusalka"],
+    "themes": ["water", "fertility", "danger"],
+    "notes": "Kupala and rusalka customs overlapped but were never one fixed rite. The date (Kupala Night, Trinity week or another summer feast), the offerings, and the character of the rusalka varied by region and collector. This retelling is a composite, not a single recorded ceremony.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "slavic-06",
+    "title": "Morozko and the Two Daughters",
+    "source_ref": "Alexander Afanasyev, Russian Fairy Tales ('Morozko')",
+    "paragraphs": [
+      "An old man had a kind daughter, and his second wife had a daughter of her own. The stepmother hated the first girl and nagged her husband to take her into the winter forest. He did as he was told, left her beneath a pine tree, and drove home. Snow fell, and the girl sat alone in the cold.",
+      "Morozko, Father Frost, came through the trees. He cracked the branches and asked, 'Are you warm, maiden?' She answered gently, 'I am warm, Father Frost.' He asked again, and again she answered kindly. Pleased by her patience, he wrapped her in furs and gave her a chest of silver and fine clothes.",
+      "The stepmother sent her own daughter into the forest, hoping for the same reward. But the girl was rude and complained of the cold. When Morozko asked whether she was warm, she snapped at him. He grew colder and colder, and she froze beneath the pine. The old man brought home a frozen body, not the chest his wife expected.",
+      "The tale exists in many variants. Sometimes the good girl is rewarded with a dowry, sometimes with a magic sled; sometimes the bad girl is merely sent home ashamed. Afanasyev's 'Morozko' is one telling among many. Its lesson is simple and severe: kindness of speech is worth more than a rich marriage."
+    ],
+    "characters": ["morozko"],
+    "themes": ["kindness", "winter", "reward"],
+    "notes": "Afanasyev's 'Morozko' is one telling among many. The gifts, the fate of the bad daughter, and even the identity of the winter tester vary between regions and collectors.",
+    "uncertain": true,
+    "verified": false
+  }
+]

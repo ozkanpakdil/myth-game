@@ -27,7 +27,7 @@ An educational game about world myths. Players pick a mythology, read short stor
 | Version 2 (Phases 5–6) | World map for choosing a myth, plus simple pixel art |
 | Audience | Ages 12+ |
 | Tech | Static website: HTML + CSS + vanilla JavaScript. Content in JSON files. No server |
-| MVP content | 14 mythologies, 6 stories each, 20 quiz questions each |
+| MVP content | 15 mythologies, 6 stories each, 20 quiz questions each |
 
 **Implementation note (this build):** images are delivered as **SVG** (not PNG).
 Pixel-art sprites are authored as text grids and compiled to SVG by
@@ -403,7 +403,7 @@ An AI that writes text can create pixel art as **text grids**, one character per
 ## 8. Definition of Done
 
 **Version 1 (text):**
-- [x] 14 MVP mythologies complete (6 stories, 20 quiz questions, 10 characters, 10 glossary terms each)
+- [x] 15 MVP mythologies complete (6 stories, 20 quiz questions, 10 characters, 10 glossary terms each)
 - [x] `validate_content.js` passes with no errors
 - [x] All screens work on desktop and mobile
 - [x] Progress saves and loads correctly
@@ -451,3 +451,4 @@ Add one line per finished task. Newest at the bottom.
 | 2026-11-08 | T605 | Added Canaanite as the twelfth playable tradition: Baal and Yam, the House of Cedar, Baal and Mot, El's feast, Kirta and Aqhat, with 20 questions, 10 figures, 10 terms, a cedar sigil and uncertainty notes for the fragmentary tablets. |
 | 2026-11-08 | T606 | Added Minoan / Mycenaean as the thirteenth playable tradition: Europa, Minos and the Minotaur, Daedalus and Icarus, Theseus and Ariadne, the bull-leapers of Knossos and the curse on the House of Atreus, with 20 questions, 10 figures, 10 terms, a double-axe sigil and reconstruction notes. |
 | 2026-11-08 | T607 | Added Hittite / Hurrian as the fourteenth playable tradition: Kumarbi and Anu, the birth of Teshub, Ullikummi, Illuyanka, Telipinu and Appu, with 20 questions, 10 figures, 10 terms, an eagle sigil and notes on the fragmentary tablets. |
+| 2026-11-08 | T608 | Added Slavic as the fifteenth playable tradition: Perun and Veles, Ivan and the Firebird, Vasilisa and Baba Yaga, Ilya Muromets, the rusalka and Morozko, with 20 questions, 10 figures, 10 terms, a firebird sigil and notes on reconstruction and variants. |

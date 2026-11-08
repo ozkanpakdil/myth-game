@@ -165,6 +165,15 @@ Mythos is an educational draft. The retellings are new, short summaries in moder
 - **Trevor Bryce, The Kingdom of the Hittites** — A historical study of the Hittite state, its archives and its religious culture.
 - **Billie Jean Collins, The Hittites and Their World** — An accessible introduction to Hittite society, religion and textual remains.
 
+### Slavic
+
+- **The Primary Chronicle (Povest' vremennykh let)** — The earliest surviving East Slavic chronicle, preserving the oath formulas sworn by Perun and Veles but not a connected myth.
+- **Alexander Afanasyev, Russian Fairy Tales** — The great nineteenth-century collection of Russian folktales, including Ivan and the Firebird, Vasilisa the Beautiful and Morozko.
+- **The byliny** — Oral epic songs about Ilya Muromets and other bogatyrs, recorded from the eighteenth century onward in many variants.
+- **Linda J. Ivanits, Russian Folk Belief** — A study of peasant beliefs about spirits, saints and the remnants of pre-Christian religion.
+- **Natalie Kononenko, Slavic Folklore: A Handbook** — An introduction to the genres, collectors and regional variation of Slavic folk narrative.
+- **Joanna Hubbs, Mother Russia: The Feminine Myth in Russian Culture** — A wide-ranging interpretation of the feminine figures in Russian myth and folklore, to be used critically.
+
 ## Review and sensitivity status
 
 | Tradition | Sensitivity | Verified |
@@ -183,8 +192,9 @@ Mythos is an educational draft. The retellings are new, short summaries in moder
 | Canaanite | low | false |
 | Minoan / Mycenaean | low | false |
 | Hittite / Hurrian | low | false |
+| Slavic | low | false |
 
-Hindu stories are a living sacred tradition and are marked **high** sensitivity. Shinto (Japanese), Maya and Chinese traditions are marked **medium**. All fourteen traditions need a human fact-check of dates, names, spellings, answer keys and source notes before release. The Hindu, Shinto, Maya and Chinese material also needs a sensitivity review by someone with relevant community or scholarly knowledge.
+Hindu stories are a living sacred tradition and are marked **high** sensitivity. Shinto (Japanese), Maya and Chinese traditions are marked **medium**. All fifteen traditions need a human fact-check of dates, names, spellings, answer keys and source notes before release. The Hindu, Shinto, Maya and Chinese material also needs a sensitivity review by someone with relevant community or scholarly knowledge.
 
 If a retelling is inaccurate or disrespectful, the correct response is to revise or remove it — not to defend the text. See the `NEEDS HUMAN` tasks in `PLAN_AND_TODO.md`.
 

@@ -1,0 +1,202 @@
+[
+  {
+    "id": "slavic-q01",
+    "story_id": "slavic-01",
+    "question": "Who is the thunder god in the Slavic myth?",
+    "choices": ["Perun", "Veles", "Morozko", "Domovoi"],
+    "correct_index": 0,
+    "explanation": "Perun drives the storm, carries an axe and a hammer, and strikes the oak tree with lightning.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "slavic-q02",
+    "story_id": "slavic-01",
+    "question": "What does Veles govern in the reconstructed myth?",
+    "choices": ["Cattle, waters and the underworld", "The sun, dawn and fire", "Marriage and the household", "The harvest and the moon"],
+    "correct_index": 0,
+    "explanation": "Veles watches over herds, waters and the dead, which places him below Perun's stormy sky.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "slavic-q03",
+    "story_id": "slavic-01",
+    "question": "Why does Perun chase Veles across the sky?",
+    "choices": ["Veles has stolen Perun's cattle or son", "Veles has stolen the sun", "Perun wants Veles's herd", "Veles has insulted the oak"],
+    "correct_index": 0,
+    "explanation": "In the reconstruction, Veles steals Perun's cattle or his son and hides them in the world below.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "slavic-q04",
+    "story_id": "slavic-01",
+    "question": "Which medieval text records oaths sworn by Perun and Veles?",
+    "choices": ["The Primary Chronicle", "The Song of Igor's Campaign", "The Domostroi", "The Kievan Caves Patericon"],
+    "correct_index": 0,
+    "explanation": "The Primary Chronicle preserves treaty oaths sworn by Perun and Veles but never narrates their duel.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "slavic-q05",
+    "story_id": "slavic-02",
+    "question": "What does Ivan Tsarevich find in the tsar's garden?",
+    "choices": ["A glowing firebird feather", "A golden apple tree", "A talking grey wolf", "A magic ring"],
+    "correct_index": 0,
+    "explanation": "Ivan finds a single glowing feather where the firebird perched, and the tsar then demands the whole bird.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "slavic-q06",
+    "story_id": "slavic-02",
+    "question": "Which creature becomes Ivan's guide on the quest?",
+    "choices": ["The grey wolf", "The firebird", "A talking horse", "An old pilgrim"],
+    "correct_index": 0,
+    "explanation": "After eating Ivan's horse, the grey wolf carries him onward and warns him against the golden cage and bridle.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "slavic-q07",
+    "story_id": "slavic-02",
+    "question": "How does the grey wolf bring Ivan back after his brothers kill him?",
+    "choices": ["With the water of life and the water of death", "By carrying him to Elena", "By burning the false brothers", "With a magic comb"],
+    "correct_index": 0,
+    "explanation": "The wolf finds Ivan's body and uses the water of death and the water of life to restore him.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "slavic-q08",
+    "story_id": "slavic-03",
+    "question": "What does Vasilisa's dying mother give her?",
+    "choices": ["A magic doll", "A silver ring", "A skull lantern", "A loaf of bread"],
+    "correct_index": 0,
+    "explanation": "Her mother gives her a small wooden doll and tells her to feed it and keep it secret.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "slavic-q09",
+    "story_id": "slavic-03",
+    "question": "What supports Baba Yaga's hut?",
+    "choices": ["Chicken legs", "Four oak posts", "A giant skull", "A river of fire"],
+    "correct_index": 0,
+    "explanation": "Baba Yaga's hut turns on chicken legs inside a fence of bones and skulls.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "slavic-q10",
+    "story_id": "slavic-03",
+    "question": "How does Vasilisa complete Baba Yaga's tasks?",
+    "choices": ["The doll does the work for her", "She bribes Baba Yaga", "The stepmother helps her", "She stays awake for three nights"],
+    "correct_index": 0,
+    "explanation": "The magic doll does the impossible work while Vasilisa sleeps, and Baba Yaga is angry but impressed.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "slavic-q11",
+    "story_id": "slavic-03",
+    "question": "Why is Baba Yaga best called an ambiguous initiator?",
+    "choices": ["She threatens and tests Vasilisa but also gives her the fire she needs", "She is purely evil and wants to eat everyone", "She is Vasilisa's secret grandmother", "She has no power in the forest"],
+    "correct_index": 0,
+    "explanation": "Baba Yaga frightens and tests Vasilisa, yet she also gives her the skull light that frees her from her old home.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "slavic-q12",
+    "story_id": "slavic-04",
+    "question": "Where is Ilya Muromets born?",
+    "choices": ["Karacharovo near Murom", "Kyiv", "Novgorod", "Chernigov"],
+    "correct_index": 0,
+    "explanation": "The byliny place Ilya's birth in Karacharovo, near the town of Murom.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "slavic-q13",
+    "story_id": "slavic-04",
+    "question": "What makes the direct road to Kyiv dangerous?",
+    "choices": ["The Nightingale Robber's whistle", "A flooded river", "A dragon in the hills", "The prince's toll"],
+    "correct_index": 0,
+    "explanation": "The Nightingale Robber sits in an oak and kills travellers with his whistle until Ilya defeats him.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "slavic-q14",
+    "story_id": "slavic-04",
+    "question": "What happens when the Nightingale whistles in Prince Vladimir's court?",
+    "choices": ["The blast knocks people down", "The prince laughs", "The Nightingale escapes", "Ilya is struck deaf"],
+    "correct_index": 0,
+    "explanation": "Even a soft whistle knocks down the prince's servants and lords, after the robber warns that a full blast would kill everyone.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "slavic-q15",
+    "story_id": "slavic-05",
+    "question": "Which summer festival is linked to the rusalka?",
+    "choices": ["Kupala Night", "Christmas Eve", "Maslenitsa", "Easter"],
+    "correct_index": 0,
+    "explanation": "Kupala Night, with its fires, wreaths and water rites, is the summer festival linked to the rusalka.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "slavic-q16",
+    "story_id": "slavic-05",
+    "question": "What is a rusalka often said to be?",
+    "choices": ["The spirit of a drowned woman or child", "A forest bear", "A household spirit", "A thunder goddess"],
+    "correct_index": 0,
+    "explanation": "A rusalka is often the restless spirit of a young woman who drowned, or of an unbaptised child.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "slavic-q17",
+    "story_id": "slavic-05",
+    "question": "Why are the Kupala and rusalka customs described as varied?",
+    "choices": ["Different regions combined water, fire and fertility rites in their own ways", "The rites were invented in the nineteenth century", "Only one village kept the custom", "The church wrote down a single official version"],
+    "correct_index": 0,
+    "explanation": "The dates, offerings and character of the rusalka changed by region and collector, so the retelling is a composite.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "slavic-q18",
+    "story_id": "slavic-06",
+    "question": "Who tests the old man's daughter in the winter forest?",
+    "choices": ["Morozko, Father Frost", "Baba Yaga", "The grey wolf", "Prince Vladimir"],
+    "correct_index": 0,
+    "explanation": "Morozko, Father Frost, comes through the trees and asks the girl whether she is warm.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "slavic-q19",
+    "story_id": "slavic-06",
+    "question": "How does the kind daughter answer Morozko?",
+    "choices": ["That she is warm, Father Frost", "That she is cold and angry", "That she wants a chest of silver", "That she will not speak"],
+    "correct_index": 0,
+    "explanation": "She answers gently each time that she is warm, and Morozko rewards her patience with furs and a chest.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "slavic-q20",
+    "story_id": "slavic-06",
+    "question": "Why does the stepmother's daughter fare badly?",
+    "choices": ["She answers Morozko rudely", "She loses the magic doll", "She cannot find the forest", "She refuses the silver chest"],
+    "correct_index": 0,
+    "explanation": "The stepmother's daughter complains and snaps at Morozko, so he grows colder until she freezes.",
+    "difficulty": "medium",
+    "verified": false
+  }
+]

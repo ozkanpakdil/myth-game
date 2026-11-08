@@ -1,0 +1,69 @@
+{
+  "id": "slavic",
+  "name": "Slavic",
+  "intro": "Slavic myth is the religious world of the early Slavs, preserved only in fragments. No Slavic author wrote down a pagan epic before conversion. What survives comes from medieval chronicles such as the Primary Chronicle, from sermons against old customs, from oral epics and fairy tales collected in the nineteenth century, and from comparative study of Indo-European languages. This makes Slavic myth unusually open to reconstruction: a god like Perun can be traced through oaths, place names and later folklore, but the story told about him is a modern joining of pieces. The retellings here follow the sources and say where they guess. They include the storm god and his rival, the firebird quest, Baba Yaga, the bogatyr Ilya, the rusalka and Father Frost.",
+  "timeline": [
+    {
+      "label": "Early Slavic world",
+      "year_text": "c. 500-900 CE",
+      "note": "Slavic-speaking communities spread across central and eastern Europe. Local cults honoured sky, thunder, earth, water and ancestors, but no pagan Slavic text survives to describe them."
+    },
+    {
+      "label": "Conversion of Kyivan Rus",
+      "year_text": "988 CE (traditional date)",
+      "note": "Vladimir I adopts Christianity. The Primary Chronicle describes the idol of Perun at Kyiv and treaties in which Rus swore by Perun and Veles."
+    },
+    {
+      "label": "Christian chronicles",
+      "year_text": "11th-13th century",
+      "note": "Monks and preachers record pagan names and customs, often while condemning them. Their accounts are hostile and incomplete, but they are the earliest written evidence."
+    },
+    {
+      "label": "Oral epic and tale",
+      "year_text": "c. 13th-18th century",
+      "note": "Byliny about Ilya Muromets and other bogatyrs circulate orally. Fairy tales about Baba Yaga, the firebird and Morozko are told and retold across regions."
+    },
+    {
+      "label": "Romantic collecting",
+      "year_text": "19th century",
+      "note": "Afanasyev publishes Russian fairy tales, while ethnographers record Kupala songs, rusalka beliefs and household spirits before print and schooling change village life."
+    },
+    {
+      "label": "Modern study",
+      "year_text": "20th-21st century",
+      "note": "Scholars such as Ivanov and Toporov, Ivanits, Hubbs and Kononenko reconstruct Slavic myth and debate how much of it can be recovered."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Primary Chronicle (Povest vremennykh let)",
+      "note": "The main medieval chronicle of Kyivan Rus, compiled around 1113. It preserves the treaties, the idol of Perun and scattered notices of pagan practice."
+    },
+    {
+      "title": "Alexander Afanasyev, Russian Fairy Tales",
+      "note": "The great nineteenth-century collection of Russian folktales, including 'Ivan Tsarevich and the Grey Wolf', 'Vasilisa the Beautiful' and 'Morozko'."
+    },
+    {
+      "title": "The byliny (Russian oral epics)",
+      "note": "Heroic epics sung by oral poets, especially the cycle around Ilya Muromets, Prince Vladimir and the defense of Kyiv. They survive in many variants."
+    },
+    {
+      "title": "Linda J. Ivanits, Russian Folk Belief",
+      "note": "A study of Russian peasant belief, including domovoi, rusalki, Baba Yaga and the survival of pagan motifs in Christian practice."
+    },
+    {
+      "title": "Joanna Hubbs, Mother Russia: The Feminine Myth in Russian Culture",
+      "note": "An influential interpretation of Russian culture through maternal and feminine myth, including the rusalka and the earth mother."
+    },
+    {
+      "title": "Natalie Kononenko, Slavic Folklore: A Handbook",
+      "note": "A guide to Slavic folklore genres, sources and scholarship, useful for distinguishing recorded custom from later reconstruction."
+    },
+    {
+      "title": "V. V. Ivanov and V. N. Toporov, studies of Slavic mythology",
+      "note": "Comparative and structural work that reconstructed the Perun-Veles opposition from linguistics, folklore and Indo-European parallels."
+    }
+  ],
+  "sensitivity": "low",
+  "verified": false
+}

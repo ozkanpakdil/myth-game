@@ -151,7 +151,7 @@
     "start_year": -500,
     "end_year": 1200,
     "summary": "Fragments in chronicles and centuries of folklore remember a storm god, a underworld god and spirits of house, forest and river.",
-    "mvp": false,
+    "mvp": true,
     "sensitivity": "low",
     "verified": false
   },

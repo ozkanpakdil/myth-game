@@ -41,18 +41,19 @@ test.describe('Timeline Builder', () => {
   test('a card can be dragged with the mouse to reorder the list', async ({ page }) => {
     await page.goto('/#/challenges/timeline');
     await expect(page.locator('.order-item')).toHaveCount(6);
+    await expect(page.locator('.order-item').first()).toContainText('starts c.');
 
     const first = page.locator('.order-item').first();
-    const last = page.locator('.order-item').last();
+    const third = page.locator('.order-item').nth(2);
     const firstId = await first.getAttribute('data-testid');
     const firstTestId = firstId.replace('order-item-', '');
 
-    await first.dragTo(last);
-    await expect(page.locator('.order-item').last()).toHaveAttribute('data-testid', firstId);
-    await expect(page.getByTestId('order-status')).toContainText('moved to position 6');
+    await first.dragTo(third);
+    await expect(page.locator('.order-item').nth(2)).toHaveAttribute('data-testid', firstId);
+    await expect(page.getByTestId('order-status')).toContainText('moved to position 3');
 
     const second = page.locator('.order-item').first();
-    const moved = page.locator('.order-item').last();
+    const moved = page.locator('.order-item').nth(2);
     const secondId = await second.getAttribute('data-testid');
     await moved.dragTo(second);
     await expect(page.locator('.order-item').first()).toHaveAttribute('data-testid', firstId);
@@ -69,8 +70,9 @@ test.describe('Pantheon Match', () => {
 
     for (let round = 0; round < 5; round += 1) {
       const name = await page.locator('.figure-card h2').innerText();
-      const character = allCharacters.find((item) => item.name === name);
-      expect(character, `character ${name}`).toBeTruthy();
+      const role = await page.locator('.figure-card p.muted').innerText();
+      const character = allCharacters.find((item) => item.name === name && item.role === role);
+      expect(character, `character ${name} (${role})`).toBeTruthy();
 
       await page.getByTestId(`match-culture-${character.mythId}`).click();
       const domain = character.domain[0];

@@ -99,7 +99,7 @@ export async function renderTimelineChallenge(root) {
   function page() {
     root.innerHTML = `<div class="page page--narrow" data-testid="timeline-challenge">
       ${breadcrumb('Timeline Builder')}
-      ${challengeHeader('Challenge 01', 'Build the timeline', 'Drag a card, or use its arrow buttons, to arrange the six traditions by when their surviving material begins, oldest first. Dates are approximate and regional: the Iron Age starts at different times in different places. Ties are neighbours, and any order among equal dates is accepted.')}
+      ${challengeHeader('Challenge 01', 'Build the timeline', 'Drag a card, or use its arrow buttons, to arrange the six traditions by their approximate start date, oldest first. The start date used for sorting is shown on each card. Dates are estimates and regional: the Iron Age starts at different times in different places. Ties are neighbours, and any order among equal dates is accepted.')}
       <div id="order-list" class="order-list" data-testid="order-list" role="list"></div>
       <div class="challenge-actions">
         <button class="button button--primary" type="button" data-testid="check-order">Check my order</button>
@@ -132,7 +132,7 @@ export async function renderTimelineChallenge(root) {
         <span class="order-item__number" aria-hidden="true">${i + 1}</span>
         <div class="order-item__body">
           <strong>${escapeHtml(item.name)}</strong>
-          <span class="muted small">${escapeHtml(item.period_text)}</span>
+          <span class="muted small">${escapeHtml(item.period_text)} · starts c. ${escapeHtml(yearLabel(item.start_year))}</span>
         </div>
         <div class="order-item__buttons">
           <button class="icon-button" type="button" data-testid="up-${item.id}" data-id="${item.id}" data-dir="-1" aria-label="Move ${escapeHtml(item.name)} up" ${i === 0 || checked ? 'disabled' : ''}>↑</button>
@@ -237,7 +237,7 @@ export async function renderTimelineChallenge(root) {
       <ol class="correct-order">
         ${sorted.map((item) => `<li><strong>${escapeHtml(item.name)}</strong> <span class="muted">${escapeHtml(rangeLabel(item.start_year, item.end_year))}</span></li>`).join('')}
       </ol>
-      <p class="muted small">Dates mark the approximate beginning of the surviving material, not a tradition's end. Period labels are regional; for example, the Iron Age begins around 1200 BCE in Anatolia, 800 BCE in central Europe and 500 BCE in Scandinavia.</p>
+      <p class="muted small">Start dates mark the approximate beginning of the surviving material, not a tradition's end. Period labels are regional; for example, the Iron Age begins around 1200 BCE in Anatolia, 800 BCE in central Europe and 500 BCE in Scandinavia.</p>
       <p class="muted small">Best so far: ${record.bestScore}/${record.bestTotal} · ${record.attempts} attempt${record.attempts === 1 ? '' : 's'}</p>
       <div class="result-actions">
         <button class="button button--primary" type="button" data-testid="timeline-retry">Try a new set</button>

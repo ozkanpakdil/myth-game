@@ -65,15 +65,15 @@ Dates are approximate and must be treated as `verified: false`. "Record" means w
 | 22 | Mongolic & Turkic (Tengri) | ancient–medieval | Epics (Manas, Dede Korkut) | Asia |
 | 23 | Southeast Asian | ancient–present | Inscriptions, chronicles, oral epics | Asia |
 | 24 | Siberian / Arctic (incl. Inuit) | ancient–present | Oral, 19th–20th c. records | Asia/N. America |
-| 25 | Yoruba / Orisha | ancient–present | Oral (Ifá), written from 19th c. | Africa |
-| 26 | Akan / West African (Anansi) | ancient–present | Oral | Africa |
-| 27 | Dogon & Mande | ancient–present | Oral, Sundiata epic | Africa |
-| 28 | Bantu (Zulu, Shona, Kongo) | ancient–present | Oral | Africa |
+| 25 | Yoruba / Orisha | from about 900 CE–present | Oral (Ifá), written from 19th c. | Africa |
+| 26 | Akan / West African (Anansi) | from about 1000 CE–present | Oral | Africa |
+| 27 | Dogon & Mande | from about 1200 CE–present | Oral, Sundiata epic | Africa |
+| 28 | Bantu (Zulu, Shona, Kongo) | from about 1000 BCE–present | Oral | Africa |
 | 29 | Maya | ~1000 BCE–present | Popol Vuh (16th c.) | Americas |
 | 30 | Aztec / Mesoamerican | Olmec ~1200 BCE; Aztec 14th–16th c. | Codices | Americas |
 | 31 | Andean (Chavín, Inca) | ~900 BCE–1533 CE | Colonial chronicles | Americas |
 | 32 | North American Indigenous | very ancient, oral | Oral, 17th c.+ collections | Americas |
-| 33 | Amazonian & Caribbean | ancient–present | Oral, colonial records | Americas |
+| 33 | Amazonian & Caribbean | from about 1000 BCE–present | Oral, colonial records | Americas |
 | 34 | Polynesian (Māori, Hawaiian, etc.) | ~1000–1300 CE far Polynesia; older roots | Oral, 19th c.+ | Oceania |
 | 35 | Aboriginal Australian (Dreaming) | 60,000+ years of occupation | Oral, art, song | Oceania |
 
@@ -465,4 +465,4 @@ Add one line per finished task. Newest at the bottom.
 | 2026-11-08 | T619 | Added Caucasian / Nart as the twenty-sixth playable tradition: the birth of the Narts, Sosruko's fire, Setenaya, Batraz, Syrdon and the Nart cup, with 20 questions, 10 figures, 10 terms, a bow sigil and notes on Ossetian, Circassian and Abkhaz variants. |
 
 | 2026-11-08 | T620–T628 | Completed the final nine traditions as playable packs: Buddhist narratives, Tibetan / Bon, Yoruba / Orisha, Mongolic & Turkic / Steppe, Southeast Asian, Siberian / Arctic, North American Indigenous, Amazonian & Caribbean, and Aboriginal Australian. Each has six stories, 20 questions, 10 figures, 10 terms, map marker, icon and three narration voices. All 35 traditions are now playable. |
-| 2026-11-08 | T629 | Timeline Builder: added mouse drag-and-drop while keeping arrow controls, corrected the Norse Iron Age start to about 500 BCE, dated both Iron Age labels, and added the regional Iron Age note to the challenge result and timeline page. |
+| 2026-11-08 | T629 | Timeline Builder: added mouse drag-and-drop while keeping arrow controls, showed the start date used for sorting on every card, corrected the Norse Iron Age start to about 500 BCE and tightened the broad African and Amazonian start dates, dated both Iron Age labels, and added the regional Iron Age note to the challenge result and timeline page. |

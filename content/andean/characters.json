@@ -1,0 +1,170 @@
+[
+  {
+    "id": "viracocha",
+    "name": "Viracocha",
+    "role": "Creator and culture bringer who rose from Lake Titicaca",
+    "domain": [
+      "creation",
+      "the sky",
+      "civilisation"
+    ],
+    "symbols": [
+      "Lake Titicaca",
+      "the golden staff",
+      "the sun and moon"
+    ],
+    "fun_fact": "The name Viracocha was also used by Andean people for the Spaniards, who were first mistaken for returning creators.",
+    "verified": false
+  },
+  {
+    "id": "pachamama",
+    "name": "Pachamama",
+    "role": "Living earth mother who receives offerings and gives life",
+    "domain": [
+      "earth",
+      "fertility",
+      "reciprocity"
+    ],
+    "symbols": [
+      "the soil",
+      "coca leaves",
+      "chicha poured on the ground"
+    ],
+    "fun_fact": "Before drinking, many people in the Andes pour a few drops on the ground for Pachamama, a small daily act of thanks.",
+    "verified": false
+  },
+  {
+    "id": "inti",
+    "name": "Inti",
+    "role": "Sun god and divine ancestor of the Inka kings",
+    "domain": [
+      "sun",
+      "kingship",
+      "harvest"
+    ],
+    "symbols": [
+      "the golden disk",
+      "the sun mask",
+      "the solstice festival"
+    ],
+    "fun_fact": "The Inka ruler was called the child of the sun, and the great sun temple in Cusco was lined with gold.",
+    "verified": false
+  },
+  {
+    "id": "manco_capac",
+    "name": "Manco Capac",
+    "role": "Founder of Cusco and first Inka king",
+    "domain": [
+      "kingship",
+      "foundation",
+      "law"
+    ],
+    "symbols": [
+      "the golden staff",
+      "the cave of Tambotoco"
+    ],
+    "fun_fact": "The golden staff he carried was said to sink into the earth at the exact spot where Cusco would be built.",
+    "verified": false
+  },
+  {
+    "id": "mama_ocllo",
+    "name": "Mama Ocllo",
+    "role": "Sister and wife of Manco Capac, teacher of weaving",
+    "domain": [
+      "weaving",
+      "marriage",
+      "craft"
+    ],
+    "symbols": [
+      "the backstrap loom",
+      "the spindle",
+      "the city of Cusco"
+    ],
+    "fun_fact": "She is remembered as the one who taught Andean women to spin and weave, skills that carried both wealth and sacred meaning.",
+    "verified": false
+  },
+  {
+    "id": "ai_apaec",
+    "name": "Ai Apaec",
+    "role": "Fanged Moche being shown with a knife and a severed head",
+    "domain": [
+      "mountains",
+      "water",
+      "sacrifice"
+    ],
+    "symbols": [
+      "the crescent headdress",
+      "the tumi knife",
+      "the severed head"
+    ],
+    "fun_fact": "His name is a later label, and scholars still argue whether he was one god, several, or a role played by a priest.",
+    "verified": false
+  },
+  {
+    "id": "inkarri",
+    "name": "Inkarrí",
+    "role": "Inka king whose severed head grows a new body underground",
+    "domain": [
+      "return",
+      "justice",
+      "the underworld"
+    ],
+    "symbols": [
+      "the buried head",
+      "the growing body",
+      "the pachakuti"
+    ],
+    "fun_fact": "In the Quechua stories his body grows bone by bone, and when it is complete the world will turn over.",
+    "verified": false
+  },
+  {
+    "id": "fox",
+    "name": "Fox",
+    "role": "Cunning Andean trickster who tries to reach the moon",
+    "domain": [
+      "cunning",
+      "hunger",
+      "failure"
+    ],
+    "symbols": [
+      "the bushy tail",
+      "the dark marks on the moon"
+    ],
+    "fun_fact": "Andean storytellers have long pointed to the dark patches on the moon and called them the fox who climbed too high.",
+    "verified": false
+  },
+  {
+    "id": "apu",
+    "name": "Apu",
+    "role": "Mountain lord and guardian of a particular territory",
+    "domain": [
+      "mountains",
+      "water",
+      "weather"
+    ],
+    "symbols": [
+      "the snow peak",
+      "the offering bundle",
+      "the condor"
+    ],
+    "fun_fact": "Each apu has a personal name, and pilgrims still climb to high passes to greet the greatest peaks with offerings.",
+    "verified": false
+  },
+  {
+    "id": "mama_quilla",
+    "name": "Mama Quilla",
+    "role": "Moon goddess, sister and wife of the sun",
+    "domain": [
+      "moon",
+      "calendars",
+      "women"
+    ],
+    "symbols": [
+      "the silver disk",
+      "the lunar eclipse",
+      "the night sky"
+    ],
+    "fun_fact": "Inka priests tracked her phases to set festivals, and an eclipse was read as a sign that she was troubled.",
+    "verified": false
+  }
+]

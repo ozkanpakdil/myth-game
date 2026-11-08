@@ -27,7 +27,7 @@ An educational game about world myths. Players pick a mythology, read short stor
 | Version 2 (Phases 5–6) | World map for choosing a myth, plus simple pixel art |
 | Audience | Ages 12+ |
 | Tech | Static website: HTML + CSS + vanilla JavaScript. Content in JSON files. No server |
-| MVP content | 18 mythologies, 6 stories each, 20 quiz questions each |
+| MVP content | 20 mythologies, 6 stories each, 20 quiz questions each |
 
 **Implementation note (this build):** images are delivered as **SVG** (not PNG).
 Pixel-art sprites are authored as text grids and compiled to SVG by
@@ -403,7 +403,7 @@ An AI that writes text can create pixel art as **text grids**, one character per
 ## 8. Definition of Done
 
 **Version 1 (text):**
-- [x] 18 MVP mythologies complete (6 stories, 20 quiz questions, 10 characters, 10 glossary terms each)
+- [x] 20 MVP mythologies complete (6 stories, 20 quiz questions, 10 characters, 10 glossary terms each)
 - [x] `validate_content.js` passes with no errors
 - [x] All screens work on desktop and mobile
 - [x] Progress saves and loads correctly
@@ -455,3 +455,5 @@ Add one line per finished task. Newest at the bottom.
 | 2026-11-08 | T609 | Added Etruscan as the sixteenth playable tradition: Tinia's thunder, Uni and the triad, Turms and the underworld, Tanaquil, the haruspex and the banquet of the dead, with 20 questions, 10 figures, 10 terms, a winged-horse sigil and notes on the absence of connected Etruscan narrative. |
 | 2026-11-08 | T610 | Added Baltic as the seventeenth playable tradition: Dievas and Velnias, Perkūnas, Saulė and Mėnulis, Jūratė and Kastytis, Eglė and Sovijus, with 20 questions, 10 figures, 10 terms, an amber-sun sigil and notes on song-based reconstruction. |
 | 2026-11-08 | T611 | Added Korean as the eighteenth playable tradition: Dangun, Jumong, Princess Bari, the woodcutter and the heavenly maiden, the rabbit and the Dragon King, and Sim Cheong, with 20 questions, 10 figures, 10 terms, a three-legged-crow sigil and a medium-sensitivity note for living musok. |
+| 2026-11-08 | T612 | Added Andean as the nineteenth playable tradition: Viracocha, the Ayar brothers, Pachamama and the apus, Ai Apaec, Inkarrí and the fox and the moon, with 20 questions, 10 figures, 10 terms, a stepped-pyramid sigil and notes on colonial and living sources. |
+| 2026-11-08 | T613 | Added Aztec / Mesoamerican as the twentieth playable tradition: the Five Suns, the making of the earth, Coatlicue and Huitzilopochtli, Quetzalcoatl in Mictlan, the founding of Tenochtitlan and Tlaloc, with 20 questions, 10 figures, 10 terms, an eagle sigil and a medium-sensitivity note. |

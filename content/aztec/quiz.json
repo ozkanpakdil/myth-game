@@ -1,0 +1,302 @@
+[
+  {
+    "id": "aztec-q01",
+    "story_id": "aztec-01",
+    "question": "How many earlier world ages precede the fifth sun in the Leyenda de los Soles?",
+    "choices": [
+      "Four",
+      "Three",
+      "Five",
+      "Two"
+    ],
+    "correct_index": 0,
+    "explanation": "The Leyenda describes four previous suns, each destroyed in turn, before the present fifth age begins.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "aztec-q02",
+    "story_id": "aztec-01",
+    "question": "What destroys the age of Four Jaguar in the Leyenda de los Soles?",
+    "choices": [
+      "A great flood covers the earth",
+      "A rain of fire falls",
+      "Jaguars devour its people",
+      "The sky collapses in wind"
+    ],
+    "correct_index": 2,
+    "explanation": "In the first age, Four Jaguar, the people are eaten by jaguars, and the age ends.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "aztec-q03",
+    "story_id": "aztec-01",
+    "question": "Who leaps first into the fire at Teotihuacan and becomes the sun?",
+    "choices": [
+      "Tecuciztecatl",
+      "Nanahuatzin",
+      "Quetzalcoatl",
+      "Huitzilopochtli"
+    ],
+    "correct_index": 1,
+    "explanation": "Nanahuatzin, the poor and humble god, jumps first and rises as the sun; Tecuciztecatl follows and becomes the moon.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "aztec-q04",
+    "story_id": "aztec-01",
+    "question": "Which date-name belongs to the fifth sun and foretells its destruction?",
+    "choices": [
+      "Four Water",
+      "Four Jaguar",
+      "Four Wind",
+      "Four Movement"
+    ],
+    "correct_index": 3,
+    "explanation": "The fifth sun is Four Movement (Nahui Ollin), and it is expected to end in a great earthquake.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "aztec-q05",
+    "story_id": "aztec-02",
+    "question": "What do Quetzalcoatl and Tezcatlipoca make from Cipactli's torn body?",
+    "choices": [
+      "The sun and the moon",
+      "The sea and the stars",
+      "The sky and the earth",
+      "The first people"
+    ],
+    "correct_index": 2,
+    "explanation": "The two gods tear the earth monster apart and make the sky from one half and the earth from the other.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "aztec-q06",
+    "story_id": "aztec-02",
+    "question": "Which two gods become serpents to pull Cipactli apart?",
+    "choices": [
+      "Quetzalcoatl and Tezcatlipoca",
+      "Huitzilopochtli and Tlaloc",
+      "Mictlantecuhtli and Xolotl",
+      "Coatlicue and Coyolxauhqui"
+    ],
+    "correct_index": 0,
+    "explanation": "Quetzalcoatl and Tezcatlipoca turn into serpents, seize the monster and tear her in two.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "aztec-q07",
+    "story_id": "aztec-02",
+    "question": "What grows from Cipactli's hair in the Leyenda de los Soles?",
+    "choices": [
+      "Rivers and caves",
+      "Mountains and valleys",
+      "Springs and wells",
+      "Trees, flowers and herbs"
+    ],
+    "correct_index": 3,
+    "explanation": "Her hair becomes trees, flowers and herbs; her skin becomes grass, her eyes springs, her mouth rivers, her nose valleys and her shoulders mountains.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "aztec-q08",
+    "story_id": "aztec-03",
+    "question": "Who is the mother of Huitzilopochtli in the Florentine Codex story?",
+    "choices": [
+      "Coyolxauhqui",
+      "Coatlicue",
+      "Chicomecoatl",
+      "Mictecacihuatl"
+    ],
+    "correct_index": 1,
+    "explanation": "Coatlicue, the mother goddess, becomes pregnant when a ball of feathers falls from the sky.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "aztec-q09",
+    "story_id": "aztec-03",
+    "question": "What falls from the sky and makes Coatlicue pregnant?",
+    "choices": [
+      "An eagle's egg",
+      "A piece of jade",
+      "A ball of feathers",
+      "A flaming arrow"
+    ],
+    "correct_index": 2,
+    "explanation": "A ball of feathers, or down, falls as she sweeps the shrine at Coatepec, and she conceives Huitzilopochtli.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "aztec-q10",
+    "story_id": "aztec-03",
+    "question": "What happens to Coyolxauhqui after Huitzilopochtli defeats her?",
+    "choices": [
+      "Her head is thrown into the sky and becomes the moon",
+      "She becomes the morning star",
+      "She is buried beneath the Templo Mayor",
+      "She becomes the goddess of maize"
+    ],
+    "correct_index": 0,
+    "explanation": "Huitzilopochtli cuts off her head and throws it into the sky, where it becomes the moon; her brothers become the stars.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "aztec-q11",
+    "story_id": "aztec-04",
+    "question": "Whom does Quetzalcoatl ask for the bones of earlier people?",
+    "choices": [
+      "Tlaloc",
+      "Tezcatlipoca",
+      "Huitzilopochtli",
+      "Mictlantecuhtli"
+    ],
+    "correct_index": 3,
+    "explanation": "Quetzalcoatl goes down to Mictlan and asks its lord, Mictlantecuhtli, for the bones of the old humanity.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "aztec-q12",
+    "story_id": "aztec-04",
+    "question": "What test does Mictlantecuhtli set before giving up the bones?",
+    "choices": [
+      "Carry a mountain of water",
+      "Blow a conch shell with no holes",
+      "Name every star in the sky",
+      "Cross a river of fire"
+    ],
+    "correct_index": 1,
+    "explanation": "Quetzalcoatl must sound a conch shell without holes; worms bore the holes and bees make it sound.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "aztec-q13",
+    "story_id": "aztec-04",
+    "question": "How are the bones turned into new people?",
+    "choices": [
+      "They are planted in the earth and watered",
+      "Quetzalcoatl breathes on them for four days",
+      "Cihuacoatl grinds them and the gods bleed into the mixture",
+      "The sun warms them until they hatch"
+    ],
+    "correct_index": 2,
+    "explanation": "Cihuacoatl grinds the bones in a jade bowl, the gods let their blood fall in, and the people of the fifth sun are made.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "aztec-q14",
+    "story_id": "aztec-05",
+    "question": "Which god leads the Mexica on their migration?",
+    "choices": [
+      "Quetzalcoatl",
+      "Tlaloc",
+      "Tezcatlipoca",
+      "Huitzilopochtli"
+    ],
+    "correct_index": 3,
+    "explanation": "Huitzilopochtli guides the Mexica from Aztlan and tells them where to settle.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "aztec-q15",
+    "story_id": "aztec-05",
+    "question": "What sign marks the place where the Mexica should found their city?",
+    "choices": [
+      "A jaguar sleeping in a cave",
+      "An eagle perched on a cactus",
+      "A serpent coiled in a lake",
+      "A mountain burning at night"
+    ],
+    "correct_index": 1,
+    "explanation": "The Mexica are told to settle where they see an eagle on a nopal cactus; they find it on an island in Lake Texcoco.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "aztec-q16",
+    "story_id": "aztec-05",
+    "question": "On what kind of site was Tenochtitlan founded?",
+    "choices": [
+      "On an island in Lake Texcoco",
+      "On a hill above a river",
+      "In a cave in the mountains",
+      "At a desert oasis"
+    ],
+    "correct_index": 0,
+    "explanation": "The city was built on an island in Lake Texcoco, linked to the shore by causeways and surrounded by chinampas.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "aztec-q17",
+    "story_id": "aztec-05",
+    "question": "What happened in 1428 that helped the Mexica become an imperial power?",
+    "choices": [
+      "The Spanish captured Tenochtitlan",
+      "The Templo Mayor was first built",
+      "The Triple Alliance defeated Azcapotzalco",
+      "The Mexica left Aztlan"
+    ],
+    "correct_index": 2,
+    "explanation": "Tenochtitlan allied with Texcoco and Tlacopan, defeated Azcapotzalco, and formed the Triple Alliance that underpinned the empire.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "aztec-q18",
+    "story_id": "aztec-06",
+    "question": "Who are the tlaloque in Tlaloc's cult?",
+    "choices": [
+      "The lords of the dead",
+      "Tlaloc's helpers who pour the rain",
+      "The four hundred stars",
+      "The priests of the Templo Mayor"
+    ],
+    "correct_index": 1,
+    "explanation": "The tlaloque are Tlaloc's helpers, who carry jars of water from the mountains and pour them out as rain.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "aztec-q19",
+    "story_id": "aztec-06",
+    "question": "What kind of place is Tlalocan?",
+    "choices": [
+      "The underworld of Mictlantecuhtli",
+      "The house of the sun",
+      "The island of Tenochtitlan",
+      "A green paradise of Tlaloc"
+    ],
+    "correct_index": 3,
+    "explanation": "Tlalocan is Tlaloc's abundant paradise, where those who die by water, lightning or certain illnesses go; it is not a hell.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "aztec-q20",
+    "story_id": "aztec-06",
+    "question": "Which goddess is associated with maize in the story of Tlaloc and the rain?",
+    "choices": [
+      "Chicomecoatl",
+      "Coyolxauhqui",
+      "Coatlicue",
+      "Mictecacihuatl"
+    ],
+    "correct_index": 0,
+    "explanation": "Chicomecoatl, Seven Serpent, is the maize goddess whose festivals follow the maize cycle.",
+    "difficulty": "easy",
+    "verified": false
+  }
+]

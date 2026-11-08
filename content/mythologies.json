@@ -385,7 +385,7 @@
     "start_year": -1200,
     "end_year": 1521,
     "summary": "Aztec narratives describe a world created and destroyed in cycles, the sun god Huitzilopochtli, and the journey of the dead to Mictlan.",
-    "mvp": false,
+    "mvp": true,
     "sensitivity": "medium",
     "verified": false
   },
@@ -398,7 +398,7 @@
     "start_year": -900,
     "end_year": 1533,
     "summary": "Inka and earlier Andean traditions honour the sun Inti, the earth mother Pachamama, and the mountain lords who guard the highlands.",
-    "mvp": false,
+    "mvp": true,
     "sensitivity": "medium",
     "verified": false
   },

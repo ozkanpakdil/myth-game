@@ -78,6 +78,8 @@
     "slavic": [32, 7],
     "etruscan": [33, 9],
     "baltic": [33, 6],
-    "korean": [57, 9]
+    "korean": [57, 9],
+    "aztec": [10, 11],
+    "andean": [14, 21]
   }
 }

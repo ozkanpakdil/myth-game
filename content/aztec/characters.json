@@ -1,0 +1,172 @@
+[
+  {
+    "id": "tezcatlipoca",
+    "name": "Tezcatlipoca",
+    "role": "Smoking Mirror, god of night, fate and royal power",
+    "domain": [
+      "night",
+      "fate",
+      "kingship"
+    ],
+    "symbols": [
+      "obsidian mirror",
+      "jaguar",
+      "missing foot"
+    ],
+    "fun_fact": "His name means Smoking Mirror, and his obsidian mirror was thought to show hidden thoughts and futures.",
+    "verified": false
+  },
+  {
+    "id": "quetzalcoatl",
+    "name": "Quetzalcoatl",
+    "role": "Feathered Serpent, god of wind, learning and creation",
+    "domain": [
+      "wind",
+      "knowledge",
+      "creation"
+    ],
+    "symbols": [
+      "quetzal feathers",
+      "conch shell",
+      "the planet Venus"
+    ],
+    "fun_fact": "He is one of the few Mesoamerican gods also remembered as a legendary priest-king of Tollan.",
+    "verified": false
+  },
+  {
+    "id": "coatlicue",
+    "name": "Coatlicue",
+    "role": "Serpent Skirt, earth mother of the gods",
+    "domain": [
+      "earth",
+      "motherhood",
+      "death and rebirth"
+    ],
+    "symbols": [
+      "serpents",
+      "skulls",
+      "the sacred mountain"
+    ],
+    "fun_fact": "Her name means Serpent Skirt, and her colossal statue in Mexico City's National Museum of Anthropology is one of the most famous works of Aztec sculpture.",
+    "verified": false
+  },
+  {
+    "id": "huitzilopochtli",
+    "name": "Huitzilopochtli",
+    "role": "Hummingbird of the Left, patron god of the Mexica, war and the sun",
+    "domain": [
+      "war",
+      "sun",
+      "the city"
+    ],
+    "symbols": [
+      "hummingbird",
+      "xiuhcoatl fire serpent",
+      "blue paint"
+    ],
+    "fun_fact": "He was born fully armed, according to the Florentine Codex, and his shrine stood at the top of the Templo Mayor beside Tlaloc's.",
+    "verified": false
+  },
+  {
+    "id": "coyolxauhqui",
+    "name": "Coyolxauhqui",
+    "role": "Moon goddess and leader of the four hundred stars",
+    "domain": [
+      "moon",
+      "war",
+      "the night sky"
+    ],
+    "symbols": [
+      "bells",
+      "the moon",
+      "dismembered body"
+    ],
+    "fun_fact": "Her name is often translated as She of the Golden Bells, and the great stone showing her dismembered body was found in Mexico City in 1978.",
+    "verified": false
+  },
+  {
+    "id": "tlaloc",
+    "name": "Tlaloc",
+    "role": "God of rain, thunder and the waters that feed the earth",
+    "domain": [
+      "rain",
+      "fertility",
+      "mountains"
+    ],
+    "symbols": [
+      "goggle eyes",
+      "fangs",
+      "jars of water"
+    ],
+    "fun_fact": "His helpers, the tlaloque, were thought to pour rain from jars kept in the mountains, and thunder was the sound of those jars breaking.",
+    "verified": false
+  },
+  {
+    "id": "mictlantecuhtli",
+    "name": "Mictlantecuhtli",
+    "role": "Lord of Mictlan, the land of the dead",
+    "domain": [
+      "death",
+      "the underworld",
+      "the north"
+    ],
+    "symbols": [
+      "skull",
+      "owl",
+      "bones"
+    ],
+    "fun_fact": "He tried to keep Quetzalcoatl from taking the bones of the old people, and the story makes death the boundary that no one escapes.",
+    "verified": false
+  },
+  {
+    "id": "tonatiuh",
+    "name": "Tonatiuh",
+    "role": "The sun god, especially the sun of the fifth age",
+    "domain": [
+      "sun",
+      "war",
+      "sacrifice"
+    ],
+    "symbols": [
+      "sun disk",
+      "eagle",
+      "gold"
+    ],
+    "fun_fact": "His face is at the center of the Aztec sun stone, surrounded by the signs of the earlier ages and the date Four Movement.",
+    "verified": false
+  },
+  {
+    "id": "xolotl",
+    "name": "Xolotl",
+    "role": "Quetzalcoatl's twin, guide of the dead and god of the evening star",
+    "domain": [
+      "death",
+      "Venus",
+      "twins"
+    ],
+    "symbols": [
+      "dog",
+      "axolotl",
+      "evening star"
+    ],
+    "fun_fact": "His name is linked to the axolotl, the salamander that stays in the water, and dogs were buried with the dead to guide them.",
+    "verified": false
+  },
+  {
+    "id": "chicomecoatl",
+    "name": "Chicomecoatl",
+    "role": "Seven Serpent, goddess of maize and the harvest",
+    "domain": [
+      "maize",
+      "abundance",
+      "agriculture"
+    ],
+    "symbols": [
+      "maize ears",
+      "water",
+      "ripe grain"
+    ],
+    "fun_fact": "Her name means Seven Serpent, and she was honored in festivals that followed the planting and harvesting of maize.",
+    "verified": false
+  }
+]

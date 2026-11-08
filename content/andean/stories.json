@@ -1,0 +1,142 @@
+[
+  {
+    "id": "andean-01",
+    "title": "Viracocha and the Creation",
+    "source_ref": "Cieza de León, Crónica del Perú (1553); Sarmiento de Gamboa, Historia de los Incas (1572); Guaman Poma, Nueva corónica y buen gobierno (c. 1615)",
+    "paragraphs": [
+      "In the beginning, the chronicles say, the world was dark and shapeless. Viracocha rose from the deep water of Lake Titicaca and made the sun, the moon and the stars, setting them in the sky over a land still empty. The lake, the island and the high plateau are named in every account, though the order of events shifts between tellings.",
+      "He made people, the stories say, and gave them forms and languages. Cieza de León heard that his first creation was a race of giants, or a stiff and unshaped people, who displeased him. Sarmiento adds that Viracocha sent the new peoples underground, to come out from caves and springs in their own places. Each nation received its own language, dress and customs.",
+      "Then came the flood. The creator drowned the flawed creation and began again, carving fresh peoples from stone. Some stones he left where they lay, and they are still rocks on the plain. Variants name different mountains from which the peoples emerged, and some give the making of the sun and moon a different order.",
+      "The colonial writers were not neutral witnesses. Sarmiento wrote to justify Spanish rule; Guaman Poma wrote to defend Andean lords against it; and both read Viracocha through Christian ideas of a creator and a flood. Andean people still tell of the creator at Titicaca, and the name Viracocha was also used for the Spaniards themselves."
+    ],
+    "characters": [
+      "viracocha",
+      "inti",
+      "mama_quilla"
+    ],
+    "themes": [
+      "creation",
+      "flood",
+      "colonial memory"
+    ],
+    "notes": "The creation accounts differ in order and detail. Cieza de León, Sarmiento de Gamboa and Guaman Poma wrote decades after the conquest, in Spanish and under Christian influence; the flood, the giants and the making of peoples from stone are motifs they shaped for their own purposes. The meaning of the name Viracocha and its relation to the Inka sun cult are still debated.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "andean-02",
+    "title": "The Ayar Brothers",
+    "source_ref": "Betanzos, Suma y narración de los Incas (1551); Sarmiento de Gamboa (1572); Guaman Poma (c. 1615)",
+    "paragraphs": [
+      "Four brothers and their four sisters came out of a cave called Tambotoco, at Pacaritambo, south of Cusco. They were Ayar Manco, Ayar Cachi, Ayar Uchu and Ayar Auca. Their father was the sun, some accounts say; others name the creator, or no father at all. They carried seeds, tools and golden vessels, and they were looking for land soft enough to hold a city.",
+      "Each brother carried a staff of gold, the tapac-yauri. Thrown to the ground, it would sink where the soil was deep and fertile. The brothers walked north, testing the earth as they went. At a place below the hills the staff went in and did not come out again. That place was Cusco. In other versions the staff belongs to Manco alone.",
+      "Ayar Cachi was too strong. He split mountains with his sling, and his brothers came to fear him. They asked him to go back into the cave for a golden vessel they had forgotten, and when he went in they sealed the entrance with a stone. In some tellings he remains inside as a huaca; in others he escapes as a bird.",
+      "Ayar Uchu became the stone shrine of Huanacauri, and Ayar Auca the stone that marked the ground of the city. Manco Capac took the name of a king, and with Mama Ocllo and the sisters he settled Cusco. Betanzos, Sarmiento and Guaman Poma tell these events differently, and each version serves a different claim about who had the right to rule."
+    ],
+    "characters": [
+      "manco_capac",
+      "mama_ocllo",
+      "apu"
+    ],
+    "themes": [
+      "origins",
+      "kingship",
+      "landscape"
+    ],
+    "notes": "Betanzos, Sarmiento and Guaman Poma give different numbers of siblings, different roles for the women, and different fates for Ayar Cachi and Ayar Uchu. The golden staff, the cave of Tambotoco and the founding of Cusco are constant, but the sequence and the claims about legitimate descent vary with each writer's purpose.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "andean-03",
+    "title": "Pachamama and the Apus",
+    "source_ref": "Colonial and ethnographic accounts of Quechua and Aymara ritual; Michael Sallnow, Pilgrims of the Andes (1987)",
+    "paragraphs": [
+      "Pachamama is the earth as a living mother: the soil under the fields, the ground that feeds and receives the dead. She is not a character in a single story. People greet her before drinking, pour a little chicha on the ground and give her the first mouthful of a meal. In Quechua and Aymara communities she is present in ordinary acts.",
+      "The apus are the mountain lords. Each high peak is a being with a name, a temper and a territory, and the greatest, such as Ausangate or Salkantay, are known far beyond their valleys. They send water, weather and pasture, and they can withhold them. A community's relationship with its apu is local, practical and long.",
+      "The offerings are called despacho, or pago a la tierra, a payment to the earth. Coca leaves, maize, chicha, llama fat, sweets and paper figures are arranged, blessed and then burned or buried. The rite asks for health, rain, fertility or safe travel, and gives something back for what has been taken. Reciprocity, ayni, is the logic of the relationship.",
+      "These are living traditions, not survivals. Quechua and Aymara ritual specialists still make offerings, and the forms differ from valley to valley: what is given, to whom, and when. Colonial writers condemned the rites as idolatry, and ethnographers have recorded them since the twentieth century. Sallnow and Allen describe a relationship that changes as communities change."
+    ],
+    "characters": [
+      "pachamama",
+      "apu",
+      "inti"
+    ],
+    "themes": [
+      "reciprocity",
+      "land",
+      "living tradition"
+    ],
+    "notes": "Pachamama is not a single fixed goddess. Names, offerings and rites vary between Quechua and Aymara communities and between valleys, and some of what is written about her comes from colonial polemic or from later synthesis. This entry describes a living relationship in general terms; particular communities hold their own knowledge and authority over it.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "andean-04",
+    "title": "Ai Apaec and the Moche Sacrifice",
+    "source_ref": "Moche ceramics and archaeology; Christopher Donnan, Moche Art of Peru (1978); Steve Bourget, Sex, Death and Sacrifice in Moche Religion and Visual Culture (2006)",
+    "paragraphs": [
+      "On the north coast of Peru, between about 100 and 700 CE, the Moche made painted pottery in great numbers. Their vessels show a fanged being with a crescent headdress, a belt of serpents and a knife in one hand. Scholars call him Ai Apaec, or the Decapitator, and read him as a mountain and water deity. The Moche left no texts.",
+      "The pots show a cycle, not a plot. A warrior-priest in a fanged mask, a bird-man, a woman and their attendants pass a cup filled with blood. Bound prisoners are displayed, and heads are cut and offered. Archaeologists call this the Sacrifice Ceremony, reconstructed from scenes that repeat across many vessels. Whether it records one event, a myth or a ritual calendar is still argued.",
+      "The violence was real. Excavations at Huaca de la Luna and other Moche centres have found the bodies of sacrificed men, dismembered and buried in the plaza. They were probably captured warriors. The pottery and the bones agree, but they do not explain what the Moche believed the deaths accomplished, and no single narrative connects every scene.",
+      "Interpretation is uncertain. The Decapitator may be one being or several, a god or a mask worn by a priest. The name Ai Apaec is a later label, and treating him as a supreme creator is a modern simplification. What survives is a visual language of power, water, fertility and death, made by a society that expected the mountain to give and to take."
+    ],
+    "characters": [
+      "ai_apaec"
+    ],
+    "themes": [
+      "sacrifice",
+      "iconography",
+      "interpretation"
+    ],
+    "notes": "The Moche left no written narratives, so all interpretation comes from art and excavation. The name Ai Apaec is a later label; the Decapitator may be a single being, several, or a role assumed by a priest. The Sacrifice Ceremony is a modern reconstruction from repeated scenes, and what the rituals meant to Moche people cannot be recovered with certainty. This retelling deliberately avoids inventing a connected story.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "andean-05",
+    "title": "Inkarrí",
+    "source_ref": "Twentieth-century ethnographic accounts from Ayacucho and Cusco, especially José María Arguedas, 'Puquio, una cultura en proceso de cambio' (1956)",
+    "paragraphs": [
+      "The story is told in Quechua villages of Ayacucho, Cusco and beyond, and it was written down only in the twentieth century. The Inka king, Inkarrí, was killed when the Spaniards came. They cut off his head and buried it, or sent it to Lima, or hid it in Cusco. The body was never found, and the world was left incomplete.",
+      "Beneath the earth the head is growing a new body. Slowly, hair by hair and bone by bone, the trunk and limbs are forming. In some accounts he is almost complete, but the Spaniards keep cutting him back. In others the work goes on quietly, out of sight, and the world above grows poorer as the body below grows whole.",
+      "When the body is finished, Inkarrí will rise. The earth will turn over, a pachakuti, and the order of the conquerors will end. The story is not only about a king: it names the loss of land, the mines and the forced labour of the mita, and the hope that a just order will return. Arguedas heard it in Puquio and made it famous.",
+      "This is a modern indigenous tradition, not a colonial chronicle. It grew out of conquest and its aftermath, and it is told differently in each place: the head may be in Lima or Cusco, the body whole or unfinished, the return near or far. Some versions identify Inkarrí with a mountain or with Christ, and the story has been used both in protest and in anthropology."
+    ],
+    "characters": [
+      "inkarri",
+      "pachamama"
+    ],
+    "themes": [
+      "return",
+      "justice",
+      "colonial trauma"
+    ],
+    "notes": "Inkarrí is a twentieth-century ethnographic record of oral tradition, not a colonial text. Versions collected in Ayacucho, Cusco and elsewhere differ over where the head is buried, how complete the body is, and what the return will bring. The story is a living expression of indigenous memory, and outsiders' retellings should be read with that in mind.",
+    "uncertain": true,
+    "verified": false
+  },
+  {
+    "id": "andean-06",
+    "title": "The Fox and the Moon",
+    "source_ref": "Huarochirí Manuscript (early seventeenth century, Quechua); Frank Salomon and George Urioste, The Huarochirí Manuscript: A Testament of Ancient and Colonial Andean Religion (1991)",
+    "paragraphs": [
+      "The Huarochirí Manuscript is a Quechua text of about 1608, written in a parish under the priest Francisco de Ávila. It records the gods, shrines and stories of the people of the highlands above Lima, and it was written to expose their errors. Its Quechua is difficult, its sentences are compressed, and the stories were collected through a hostile interpreter.",
+      "Among them is a story of the fox. The fox looks up and sees the moon, and wants her. He wants to reach her, to bring her down or to climb to her, and he sets out. The text gives only a few lines. In some readings he climbs a mountain or a tree; in others he is invited, and follows a rope the moon lets down.",
+      "The moon is not kind. She tricks him, or the height does, and he falls. What happens then depends on the telling: he is broken on the rocks, changed into a stone, or pressed into the moon's face, where the dark marks are still shown as his shape. Andean storytellers have long explained those patches as a fox or a tree.",
+      "The problems are textual. The manuscript survives in a single copy, its Quechua is not fully understood, and translators differ over who tricks whom and what the fox becomes. Salomon and Urioste mark uncertain passages. This retelling follows the outline most versions share, and leaves the ending open, as the source does."
+    ],
+    "characters": [
+      "fox",
+      "mama_quilla"
+    ],
+    "themes": [
+      "longing",
+      "trickery",
+      "translation"
+    ],
+    "notes": "The Huarochirí Manuscript survives in one seventeenth-century copy and its Quechua is difficult. The fox and moon episode is brief and allusive, and translations differ over the trick, the fall and the transformation; the identification of the moon's dark patches with the fox belongs to wider Andean lore. This retelling is an outline, not a translation.",
+    "uncertain": true,
+    "verified": false
+  }
+]

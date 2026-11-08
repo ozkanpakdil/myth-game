@@ -203,6 +203,26 @@ Mythos is an educational draft. The retellings are new, short summaries in moder
 - **Heinz Insu Fenkl and Bella Myong-wol Dalton-Fenkl, The Korean Myths** — A modern retelling and introduction to Korean myth and folklore.
 - **Michael J. Pettid, Unyong-jon** — A study of a Korean narrative tradition that situates folk tales in their literary and social contexts.
 
+### Andean
+
+- **The Huarochirí Manuscript (early seventeenth century)** — A Quechua account of local myths and rituals from the highlands near Lima, probably compiled with Francisco de Ávila; the key surviving indigenous-language source.
+- **Pedro Cieza de León, Crónica del Perú (1553)** — An early Spanish chronicle with important reports on Viracocha, Titicaca and Andean religious practice.
+- **Pedro Sarmiento de Gamboa, Historia de los Incas (1572)** — A royal commission history of the Inka, useful for dynastic myth but shaped by its political purpose.
+- **Felipe Guaman Poma de Ayala, Nueva corónica y buen gobierno (c. 1615)** — An illustrated account by an Andean nobleman, combining chronicle, protest and indigenous tradition.
+- **Frank Salomon and George Urioste, The Huarochirí Manuscript** — A translation and study that makes the Quechua text accessible while marking its obscurities.
+- **Michael J. Sallnow, Pilgrims of the Andes** — An ethnographic study of regional cults, pilgrimage and mountain veneration.
+- **Gary Urton, The History of a Myth** — An analysis of how Andean origin narratives were shaped and transmitted.
+
+### Aztec / Mesoamerican
+
+- **Florentine Codex (Historia general de las cosas de Nueva España)** — A twelve-book Nahuatl and Spanish compendium compiled under Bernardino de Sahagún with Nahua scholars and artists; the fullest colonial source for Mexica religion.
+- **Codex Chimalpopoca, including the Leyenda de los Soles** — A Nahuatl manuscript copied in 1558 preserving the creation ages, the earth-making and Quetzalcoatl's descent to Mictlan.
+- **Crónica Mexicayotl** — A Nahuatl history attributed to Hernando Alvarado Tezozomoc, tracing the Mexica migration and the founding of Tenochtitlan.
+- **Diego Durán, History of the Indies of New Spain** — A Dominican friar's history of the Mexica, rich in ritual detail but shaped by his own theological concerns.
+- **Richard F. Townsend, The Aztecs** — A standard archaeological and historical introduction to Mexica society.
+- **David Carrasco, City of Sacrifice** — A study of ritual, cosmology and urban life in Mesoamerica, useful for context and interpretation.
+- **Karl Taube, Aztec and Maya Myths** — A concise comparative guide to Mesoamerican myth and iconography.
+
 ## Review and sensitivity status
 
 | Tradition | Sensitivity | Verified |
@@ -225,8 +245,10 @@ Mythos is an educational draft. The retellings are new, short summaries in moder
 | Etruscan | low | false |
 | Baltic | low | false |
 | Korean | medium | false |
+| Andean | medium | false |
+| Aztec / Mesoamerican | medium | false |
 
-Hindu stories are a living sacred tradition and are marked **high** sensitivity. Shinto (Japanese), Maya and Chinese traditions are marked **medium**. All eighteen traditions need a human fact-check of dates, names, spellings, answer keys and source notes before release. The Hindu, Shinto, Maya, Chinese and Korean material also needs a sensitivity review by someone with relevant community or scholarly knowledge.
+Hindu stories are a living sacred tradition and are marked **high** sensitivity. Shinto (Japanese), Maya, Chinese, Korean, Andean and Aztec / Mesoamerican traditions are marked **medium**. All twenty traditions need a human fact-check of dates, names, spellings, answer keys and source notes before release. The Hindu, Shinto, Maya, Chinese, Korean, Andean and Aztec / Mesoamerican material also needs a sensitivity review by someone with relevant community or scholarly knowledge.
 
 If a retelling is inaccurate or disrespectful, the correct response is to revise or remove it — not to defend the text. See the `NEEDS HUMAN` tasks in `PLAN_AND_TODO.md`.
 

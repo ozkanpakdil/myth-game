@@ -1,0 +1,302 @@
+[
+  {
+    "id": "andean-q01",
+    "story_id": "andean-01",
+    "question": "Where does Viracocha rise from in the creation story?",
+    "choices": [
+      "Lake Titicaca",
+      "The Amazon river",
+      "A cave at Pacaritambo",
+      "The Pacific Ocean"
+    ],
+    "correct_index": 0,
+    "explanation": "The chronicles place Viracocha's emergence at Lake Titicaca, on the high plateau, before he makes the sky and its lights.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "andean-q02",
+    "story_id": "andean-01",
+    "question": "What does Viracocha set in the sky over the empty land?",
+    "choices": [
+      "The sun, the moon and the stars",
+      "Only the moon and the clouds",
+      "A ring of golden pillars",
+      "The mountains and the sea"
+    ],
+    "correct_index": 0,
+    "explanation": "Viracocha makes the sun, the moon and the stars and sets them in the sky above a world that is still dark and empty.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "andean-q03",
+    "story_id": "andean-01",
+    "question": "According to the chronicles, how does Viracocha deal with his flawed first creation?",
+    "choices": [
+      "He destroys it with a flood",
+      "He turns it into birds",
+      "He teaches it to farm",
+      "He sends it to live underground"
+    ],
+    "correct_index": 0,
+    "explanation": "The story says the creator drowned the flawed creation and began again, making new peoples out of stone.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "andean-q04",
+    "story_id": "andean-01",
+    "question": "Why do historians read the colonial accounts of Viracocha with caution?",
+    "choices": [
+      "They were written decades after the conquest and shaped by Christian ideas",
+      "They were written by Moche priests before the Inka",
+      "They are copies of Huarochirí songs",
+      "They were written in Quechua by Andean farmers"
+    ],
+    "correct_index": 0,
+    "explanation": "Cieza, Sarmiento and Guaman Poma wrote after the conquest, and their Christian assumptions about a creator and a flood shaped how they told the story.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "andean-q05",
+    "story_id": "andean-02",
+    "question": "Where do the Ayar brothers and their sisters first come from?",
+    "choices": [
+      "A cave called Tambotoco at Pacaritambo",
+      "The island of the Sun in Lake Titicaca",
+      "A temple in the city of Cusco",
+      "The coast near the Moche valleys"
+    ],
+    "correct_index": 0,
+    "explanation": "The origin narratives bring the four brothers and their sisters out of the cave of Tambotoco, at Pacaritambo south of Cusco.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "andean-q06",
+    "story_id": "andean-02",
+    "question": "What do the brothers use to test whether the land is good?",
+    "choices": [
+      "A staff of gold",
+      "A silver cup",
+      "A stone axe",
+      "A knotted rope"
+    ],
+    "correct_index": 0,
+    "explanation": "The golden staff, the tapac-yauri, sinks into the ground where the soil is deep enough to found the city.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "andean-q07",
+    "story_id": "andean-02",
+    "question": "What happens to the too-powerful Ayar Cachi?",
+    "choices": [
+      "He is sealed inside the cave",
+      "He is made king of Cusco",
+      "He is turned into a fox",
+      "He is sent to the coast"
+    ],
+    "correct_index": 0,
+    "explanation": "His brothers trick him into the cave for a forgotten vessel and seal the entrance, though tellings differ about what becomes of him.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "andean-q08",
+    "story_id": "andean-03",
+    "question": "Who is Pachamama in Andean tradition?",
+    "choices": [
+      "The earth understood as a living mother",
+      "The moon goddess of the Inka court",
+      "The Moche being called the Decapitator",
+      "The first king of the Inka"
+    ],
+    "correct_index": 0,
+    "explanation": "Pachamama is the earth as a living mother, present in the fields, the ground and the everyday acts of sharing food and drink.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "andean-q09",
+    "story_id": "andean-03",
+    "question": "What are the apus in Andean tradition?",
+    "choices": [
+      "Mountain lords with their own territories",
+      "Judges of the dead in the underworld",
+      "Spanish officials in the colonial period",
+      "Stars that guide the planting calendar"
+    ],
+    "correct_index": 0,
+    "explanation": "Each high peak is understood as a named mountain lord with a territory, a temperament and the power to send water and weather.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "andean-q10",
+    "story_id": "andean-03",
+    "question": "What does the principle of ayni describe in this account?",
+    "choices": [
+      "Reciprocal exchange between people, earth and mountains",
+      "Forced labour for the Inka state",
+      "The bundle of a mummified ancestor",
+      "A song performed at the solstice"
+    ],
+    "correct_index": 0,
+    "explanation": "Ayni is reciprocity: offerings and labour are given back for what the earth and the mountain lords provide.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "andean-q11",
+    "story_id": "andean-04",
+    "question": "What does the Moche Decapitator figure hold in Moche art?",
+    "choices": [
+      "A knife and a severed head",
+      "A bow and a quiver of arrows",
+      "A cup of maize beer",
+      "A golden staff"
+    ],
+    "correct_index": 0,
+    "explanation": "The fanged being is shown with a crescent headdress, a serpent belt, a knife and often a severed head in his hand.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "andean-q12",
+    "story_id": "andean-04",
+    "question": "Why can we not be sure of the Moche name for this being?",
+    "choices": [
+      "The Moche left no written texts",
+      "The pottery was deliberately destroyed",
+      "The name was forbidden by the Inka",
+      "The Spaniards renamed all Moche gods"
+    ],
+    "correct_index": 0,
+    "explanation": "Moche society left no written narratives, so the name Ai Apaec is a later label rather than a securely attested Moche name.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "andean-q13",
+    "story_id": "andean-04",
+    "question": "What have excavations at Huaca de la Luna revealed?",
+    "choices": [
+      "The remains of sacrificed and dismembered men",
+      "A royal tomb filled with gold",
+      "A library of painted manuscripts",
+      "A map of the Moche irrigation canals"
+    ],
+    "correct_index": 0,
+    "explanation": "Bodies of sacrificed men, probably captured warriors, were found in the plaza, matching the scenes painted on Moche vessels.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "andean-q14",
+    "story_id": "andean-05",
+    "question": "What happens to Inkarrí when the Spaniards come?",
+    "choices": [
+      "He is killed and his head is cut off",
+      "He flees to the mountains and disappears",
+      "He is taken to Spain as a prisoner",
+      "He becomes the moon and leaves the earth"
+    ],
+    "correct_index": 0,
+    "explanation": "In the story the Inka king is killed and beheaded, and his head is buried or sent away while the world is left incomplete.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "andean-q15",
+    "story_id": "andean-05",
+    "question": "What is happening to Inkarrí beneath the earth?",
+    "choices": [
+      "A new body is slowly growing",
+      "A great tree is spreading its roots",
+      "A hidden city is being built",
+      "An army of the dead is gathering"
+    ],
+    "correct_index": 0,
+    "explanation": "The severed head is slowly growing a new body underground, and when it is complete Inkarrí will rise.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "andean-q16",
+    "story_id": "andean-05",
+    "question": "What does the Quechua word pachakuti refer to in the story?",
+    "choices": [
+      "A turning over of the world",
+      "A song sung at harvest",
+      "A type of offering bundle",
+      "A shrine on a mountain pass"
+    ],
+    "correct_index": 0,
+    "explanation": "Pachakuti names the turning over of the world that will come when Inkarrí returns and the colonial order ends.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "andean-q17",
+    "story_id": "andean-05",
+    "question": "Why is Inkarrí described as a modern tradition rather than a colonial chronicle?",
+    "choices": [
+      "It was recorded from living communities in the twentieth century",
+      "It appears in a chronicle printed in 1615",
+      "It was painted on Moche ceramics",
+      "It is a Spanish folktale brought by priests"
+    ],
+    "correct_index": 0,
+    "explanation": "The story was collected from Quechua communities in the twentieth century, above all by Arguedas, and it grows out of conquest and its aftermath.",
+    "difficulty": "hard",
+    "verified": false
+  },
+  {
+    "id": "andean-q18",
+    "story_id": "andean-06",
+    "question": "In what language was the Huarochirí Manuscript written?",
+    "choices": [
+      "Quechua",
+      "Spanish",
+      "Moche",
+      "Aymara"
+    ],
+    "correct_index": 0,
+    "explanation": "The manuscript is a Quechua text of about 1608, compiled in a parish under the priest Francisco de Ávila.",
+    "difficulty": "easy",
+    "verified": false
+  },
+  {
+    "id": "andean-q19",
+    "story_id": "andean-06",
+    "question": "What does the fox want in the Huarochirí story?",
+    "choices": [
+      "To reach the moon",
+      "To steal the maize harvest",
+      "To become a star",
+      "To find a hidden spring"
+    ],
+    "correct_index": 0,
+    "explanation": "The fox looks up, sees the moon and wants her, so he sets out to climb to her or bring her down.",
+    "difficulty": "medium",
+    "verified": false
+  },
+  {
+    "id": "andean-q20",
+    "story_id": "andean-06",
+    "question": "Why is the ending of the fox story uncertain?",
+    "choices": [
+      "The text is brief and translations differ",
+      "The manuscript has been lost entirely",
+      "The fox tells the story himself",
+      "The moon never appears in the text"
+    ],
+    "correct_index": 0,
+    "explanation": "The episode survives in only a few compressed lines, and translators disagree about the trick, the fall and what the fox becomes.",
+    "difficulty": "medium",
+    "verified": false
+  }
+]

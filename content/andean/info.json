@@ -1,0 +1,69 @@
+{
+  "id": "andean",
+  "name": "Andean",
+  "intro": "The Andes have been home to many peoples, from Chavín and Moche to Tiwanaku, Wari and the Inka empire, which fell to Spanish invaders in the 1530s. Andean religion is not one system but a family of local relationships with the sun, the moon, the earth, the mountains and the ancestors, kept by Quechua- and Aymara-speaking communities who still practise them. The stories here come from three kinds of source: archaeology and painted pottery, colonial chronicles written by Spaniards and by Andean writers such as Guaman Poma, and the Quechua Huarochirí Manuscript of about 1608. Those sources were shaped by conquest and evangelisation, and modern ethnography has added living voices. The retellings are cautious, and the notes mark where versions differ, where the record is silent, and where a story belongs to a living community rather than to a colonial book.",
+  "timeline": [
+    {
+      "label": "Chavín de Huántar",
+      "year_text": "900-200 BCE",
+      "note": "A highland ceremonial centre whose art and oracle influenced much of the Andes; its staff god and animal imagery anticipate later religious themes."
+    },
+    {
+      "label": "Moche culture",
+      "year_text": "100-700 CE",
+      "note": "North-coast societies build adobe pyramids and produce painted ceramics showing warriors, ritual sacrifice and a fanged deity."
+    },
+    {
+      "label": "Tiwanaku and Wari",
+      "year_text": "500-1000 CE",
+      "note": "Two great states spread Andean religious forms; Tiwanaku's gateway and staff god, and Wari's shrines, shape later Inka ideas."
+    },
+    {
+      "label": "Inka empire",
+      "year_text": "1438-1533 CE",
+      "note": "The Inka expand from Cusco, organising the sun cult, the mita and a network of shrines and roads until the Spanish invasion."
+    },
+    {
+      "label": "Colonial chronicles",
+      "year_text": "1532-1615 CE",
+      "note": "Cieza de León, Betanzos, Sarmiento de Gamboa and Guaman Poma write accounts of Andean religion shaped by conquest and evangelisation."
+    },
+    {
+      "label": "Huarochirí Manuscript and modern ethnography",
+      "year_text": "c. 1608-20th century",
+      "note": "A Quechua manuscript records the traditions of Huarochirí; from the twentieth century, ethnographers record living ritual and the Inkarrí stories."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Huarochirí Manuscript",
+      "note": "A Quechua account of the gods, shrines and stories of the province of Huarochirí, compiled around 1608 under the priest Francisco de Ávila. It survives in a single copy and is our richest colonial source for Andean narrative."
+    },
+    {
+      "title": "Pedro Cieza de León, Crónica del Perú",
+      "note": "Published from 1553, this chronicle by a Spanish soldier and writer records creation stories, shrines and customs from across the Andes, including the emergence of Viracocha from Lake Titicaca."
+    },
+    {
+      "title": "Pedro Sarmiento de Gamboa, Historia de los Incas",
+      "note": "Completed in 1572 at the order of the viceroy, this history preserves Inka origin narratives and creation accounts, but it was written to justify Spanish rule and must be read with that purpose in mind."
+    },
+    {
+      "title": "Felipe Guaman Poma de Ayala, Nueva corónica y buen gobierno",
+      "note": "An Andean writer's illustrated chronicle of about 1615, combining Inka history, colonial critique and Christian apologetics. Its drawings are a major source for Andean religious imagery."
+    },
+    {
+      "title": "Frank Salomon and George Urioste, The Huarochirí Manuscript",
+      "note": "A Quechua edition and English translation, first published in 1991, with extensive commentary on the text's language, its gaps and the problems of translating colonial Quechua."
+    },
+    {
+      "title": "Michael J. Sallnow, Pilgrims of the Andes",
+      "note": "An ethnographic study of pilgrimage and regional cults in the southern Andes, showing how mountain shrines and local communities maintain relationships with the landscape."
+    },
+    {
+      "title": "Gary Urton, The History of a Myth",
+      "note": "A study of Pacariqtambo and the Inka origin narratives, examining how a foundation story is told, located and used by the people who claim it."
+    }
+  ],
+  "sensitivity": "medium",
+  "verified": false
+}

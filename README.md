@@ -1,6 +1,6 @@
 # Mythos — a world mythology game
 
-A text-first educational game for ages 12+. Read short retellings from eighteen
+A text-first educational game for ages 12+. Read short retellings from twenty
 world traditions, answer quizzes, unlock a codex of figures and terms, and
 explore a stylised world map and timeline. A separate branching saga,
 **The Ash-Seed**, lets you walk a Norse myth as a mortal of your own naming,
@@ -58,8 +58,10 @@ any static host.
 | Etruscan | 6 | 20 | 10 | 10 |
 | Baltic | 6 | 20 | 10 | 10 |
 | Korean | 6 | 20 | 10 | 10 |
+| Andean | 6 | 20 | 10 | 10 |
+| Aztec / Mesoamerican | 6 | 20 | 10 | 10 |
 
-The timeline catalogues 35 traditions. The other 17 are marked as planned for
+The timeline catalogues 35 traditions. The other 15 are marked as planned for
 later editions and are not playable yet.
 
 ### The Ash-Seed (branching saga)
@@ -142,7 +144,7 @@ js/
   narration.js          studio-clip playback with browser speech fallback
   ui.js                 shared escaping, formatting and dialog helpers
 content/
-  mythologies.json      35-tradition catalogue; `mvp: true` for the eighteen
+  mythologies.json      35-tradition catalogue; `mvp: true` for the twenty
   greek/ ...            five JSON files per playable tradition
   saga/norse.json       the branching Ash-Seed story graph, paths and endings
 schemas/                JSON Schema documents for every content file
@@ -210,7 +212,7 @@ definitive or authoritative source.
 
 - **Hindu** content is marked `high` sensitivity: a living tradition requiring
   a dedicated sensitivity review.
-- **Japanese (Shinto)**, **Maya**, **Chinese** and **Korean** content are marked `medium`: living traditions that need a sensitivity review.
+- **Japanese (Shinto)**, **Maya**, **Chinese**, **Korean**, **Andean** and **Aztec / Mesoamerican** content are marked `medium`: living traditions that need a sensitivity review.
 - Other traditions are marked `low`, which still requires a fact-check.
 
 The in-game About screen and each tradition page carry review and sensitivity
@@ -259,7 +261,7 @@ not fetched images. See `assets/STYLE_GUIDE.md` for the palette and grid rules.
 
 ## Testing
 
-The suite covers the shell, every route, all eighteen traditions, the Greek read →
+The suite covers the shell, every route, all twenty traditions, the Greek read →
 quiz → unlock → persistence loop, failed quiz and retry, the final challenge,
 codex unlocks, timeline, all three challenges, the map and its mobile scroll,
 story and quiz SVG scenes, answer icons, narration controls, studio-clip playback,

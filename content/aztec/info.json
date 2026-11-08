@@ -1,0 +1,69 @@
+{
+  "id": "aztec",
+  "name": "Aztec / Mesoamerican",
+  "intro": "Aztec is a modern name for the Nahua peoples of central Mexico, and especially for the Mexica, who founded Tenochtitlan in the fourteenth century and built an empire that fell to Spanish and Indigenous allies in 1521. Their stories survive mainly in colonial-era codices and chronicles written in Nahuatl, Spanish or both, often with Nahua scholars and artists working alongside friars such as Bernardino de Sahagun. These texts preserve creation cycles, the making of human beings, the births of gods and the founding of cities, but they also reflect Christian censorship and the politics of their own time. The six stories here retell well-known Nahua narratives with attention to their variants and to the communities who still speak Nahuatl. Dates are traditional, and the retellings mark what is reconstructed.",
+  "timeline": [
+    {
+      "label": "Teotihuacan and the classic past",
+      "year_text": "about 100 BCE-550 CE",
+      "note": "The great city of Teotihuacan rises and falls centuries before the Mexica. Nahua tradition later makes it the place where the gods created the fifth sun, and its name means 'place where the gods were made.'"
+    },
+    {
+      "label": "The Mexica migration",
+      "year_text": "12th-13th century",
+      "note": "The Mexica leave Aztlan in the north, guided by Huitzilopochtli, and move through Chicomoztoc and the Basin of Mexico. The route and dates survive in accounts written after the conquest."
+    },
+    {
+      "label": "Foundation of Tenochtitlan",
+      "year_text": "1325 (traditional; some sources say 1345)",
+      "note": "The Mexica see an eagle on a cactus on an island in Lake Texcoco and found their city there. The date is traditional, and the story later became a founding emblem of Mexico."
+    },
+    {
+      "label": "The Triple Alliance",
+      "year_text": "1428",
+      "note": "Tenochtitlan, Texcoco and Tlacopan defeat Azcapotzalco and form an alliance that becomes the basis of the Aztec Empire. The Mexica turn from tributaries into rulers."
+    },
+    {
+      "label": "Conquest and colonial codices",
+      "year_text": "1519-1580s",
+      "note": "Spanish forces and Indigenous allies take Tenochtitlan in 1521. In the following decades Nahua scholars, working with friars or on their own, produce the Florentine Codex, the Leyenda de los Soles, the Cronica Mexicayotl and other accounts of the old stories."
+    },
+    {
+      "label": "The stone and living communities",
+      "year_text": "1978-present",
+      "note": "Workers find the Coyolxauhqui stone in Mexico City in 1978, and excavations of the Templo Mayor begin. Nahua languages and communities continue today, and scholars work with them on the sources."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Florentine Codex (Historia general de las cosas de Nueva Espana), compiled under Bernardino de Sahagun",
+      "note": "A twelve-book encyclopedia of Nahua life compiled between about 1545 and 1590 with Nahua scholars, artists and informants. Book 1 describes the gods, Book 7 the sun and moon, and Book 12 the conquest. It is a colonial project and also a major Nahua text."
+    },
+    {
+      "title": "Codex Chimalpopoca, including the Leyenda de los Soles",
+      "note": "A Nahuatl manuscript copied in 1558, containing the Annales de Cuauhtitlan and the Leyenda de los Soles. The Leyenda is the fullest surviving account of the five suns, the making of the earth and Quetzalcoatl's descent to Mictlan."
+    },
+    {
+      "title": "Cronica Mexicayotl, attributed to Hernando Alvarado Tezozomoc",
+      "note": "A Nahuatl history written around 1598, tracing the Mexica from Aztlan to Tenochtitlan and beyond. It is a key source for the migration and founding stories."
+    },
+    {
+      "title": "Diego Duran, History of the Indies of New Spain",
+      "note": "A Dominican friar's history completed around 1581, combining written sources, oral testimony and his own observations. It preserves Mexica history and ritual in detail, with a hostile and reformist edge."
+    },
+    {
+      "title": "Richard F. Townsend, The Aztecs",
+      "note": "A standard modern introduction to Aztec history, society and archaeology, with attention to Tenochtitlan, the Templo Mayor and the imperial capital."
+    },
+    {
+      "title": "David Carrasco, City of Sacrifice: The Aztec Empire and the Role of Violence in Civilization",
+      "note": "A study of Tenochtitlan as a ritual city, arguing that sacrifice and the sacred center shaped Mexica politics and cosmology. It is interpretive and should be read alongside the sources."
+    },
+    {
+      "title": "Karl Taube, Aztec and Maya Myths",
+      "note": "A concise comparative guide to Mesoamerican myth, useful for the Five Suns, Quetzalcoatl, Tlaloc and the gods of the underworld."
+    }
+  ],
+  "sensitivity": "medium",
+  "verified": false
+}

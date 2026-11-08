@@ -22,6 +22,63 @@ test.describe('settings', () => {
   });
 });
 
+test.describe('system theme', () => {
+  test('a fresh visit starts from the OS colour scheme', async ({ browser }) => {
+    for (const scheme of ['light', 'dark']) {
+      const context = await browser.newContext({ colorScheme: scheme });
+      const page = await context.newPage();
+      await page.goto('/#/');
+      await expect(page.locator('html')).toHaveAttribute('data-theme', scheme);
+      const opposite = scheme === 'dark' ? 'light' : 'dark';
+      await expect(page.getByRole('button', { name: `Switch to ${opposite} theme` })).toBeVisible();
+      const themeColor = await page.evaluate(() => document.getElementById('theme-color').getAttribute('content'));
+      expect(themeColor).toBe(scheme === 'light' ? '#f3ede0' : '#0e1310');
+      await context.close();
+    }
+  });
+
+  test('the head script picks the palette before the app module loads', async ({ browser }) => {
+    for (const scheme of ['light', 'dark']) {
+      const context = await browser.newContext({ colorScheme: scheme });
+      const page = await context.newPage();
+      await page.route('**/js/app.js*', (route) => route.abort());
+      await page.goto('/#/');
+      await expect(page.locator('html')).toHaveAttribute('data-theme', scheme);
+      const opposite = scheme === 'dark' ? 'light' : 'dark';
+      await expect(page.getByRole('button', { name: `Switch to ${opposite} theme` })).toBeVisible();
+      await context.close();
+    }
+  });
+
+  test('live OS changes are followed until a theme is chosen', async ({ page }) => {
+    await page.emulateMedia({ colorScheme: 'dark' });
+    await page.goto('/#/');
+    await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
+
+    await page.emulateMedia({ colorScheme: 'light' });
+    await expect(page.locator('html')).toHaveAttribute('data-theme', 'light');
+
+    await page.getByRole('button', { name: 'Switch to dark theme' }).click();
+    await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
+    expect(await page.evaluate(() => JSON.parse(localStorage.getItem('mythos.settings.v1')).themeMode)).toBe('dark');
+
+    await page.emulateMedia({ colorScheme: 'light' });
+    await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
+    await page.reload();
+    await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
+  });
+
+  test('an explicit light choice survives a dark OS after migration', async ({ browser }) => {
+    const context = await browser.newContext({ colorScheme: 'dark' });
+    const page = await context.newPage();
+    await page.goto('/#/');
+    await page.evaluate(() => localStorage.setItem('mythos.settings.v1', JSON.stringify({ theme: 'light', fontScale: 'md' })));
+    await page.reload();
+    await expect(page.locator('html')).toHaveAttribute('data-theme', 'light');
+    await context.close();
+  });
+});
+
 test.describe('progress reset', () => {
   test('cancel keeps progress; confirm clears it but keeps settings', async ({ page }) => {
     await page.goto('/#/');

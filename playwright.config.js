@@ -41,6 +41,8 @@ export default defineConfig({
   use: {
     baseURL: 'http://127.0.0.1:4180',
     viewport: { width: 1280, height: 900 },
+    // Tests start from a dark OS preference unless a test emulates light.
+    colorScheme: 'dark',
     trace: 'retain-on-failure',
     screenshot: 'only-on-failure',
     video: 'off',

@@ -13,7 +13,7 @@ import {
   countWords,
   REGION_ORDER,
   SENSITIVITY_LABEL,
-} from './content.js?v=20261108-4';
+} from './content.js?v=20261108-5';
 import {
   getState,
   getSettings,
@@ -24,7 +24,7 @@ import {
   recordStoryRead,
   awardBadges,
   resetProgress,
-} from './storage.js?v=20261108-4';
+} from './storage.js?v=20261108-5';
 import {
   mythStats,
   overallStats,
@@ -33,8 +33,8 @@ import {
   glossaryUnlockedCount,
   allStoryQuizzesPassed,
   isStoryUnlocked,
-} from './progress.js?v=20261108-4';
-import { badgeCatalog, evaluateBadges } from './badges.js?v=20261108-4';
+} from './progress.js?v=20261108-5';
+import { badgeCatalog, evaluateBadges } from './badges.js?v=20261108-5';
 import {
   escapeHtml,
   iconImg,
@@ -50,19 +50,19 @@ import {
   toast,
   confirmDialog,
   emptyState,
-} from './ui.js?v=20261108-4';
-import { renderQuiz } from './quiz.js?v=20261108-4';
+} from './ui.js?v=20261108-5';
+import { renderQuiz } from './quiz.js?v=20261108-5';
 import {
   renderChallengeHub,
   renderTimelineChallenge,
   renderMatchChallenge,
   renderCultureChallenge,
-} from './challenges.js?v=20261108-4';
-import { renderMap } from './map.js?v=20261108-4';
-import { storyScene, characterPortrait } from './scene.js?v=20261108-4';
-import { sagaScene } from './saga-art.js?v=20261108-4';
-import { renderSaga, sagaContinueHref, sagaSummary } from './saga.js?v=20261108-4';
-import { narrate, stopNarration, speechSupported, availableVoices, narrationSupported, studioAudioUrl } from './narration.js?v=20261108-4';
+} from './challenges.js?v=20261108-5';
+import { renderMap } from './map.js?v=20261108-5';
+import { storyScene, characterPortrait } from './scene.js?v=20261108-5';
+import { sagaScene } from './saga-art.js?v=20261108-5';
+import { renderSaga, sagaContinueHref, sagaSummary } from './saga.js?v=20261108-5';
+import { narrate, stopNarration, speechSupported, availableVoices, narrationSupported, studioAudioUrl } from './narration.js?v=20261108-5';
 
 const app = document.getElementById('app');
 const nav = document.querySelector('.main-nav');
@@ -95,6 +95,8 @@ document.addEventListener('mythos:narration-stop', () => {
 function applySettings(settings = getSettings()) {
   document.documentElement.dataset.theme = settings.theme;
   document.documentElement.dataset.font = settings.fontScale;
+  const themeColor = document.getElementById('theme-color');
+  if (themeColor) themeColor.setAttribute('content', settings.theme === 'light' ? '#f3ede0' : '#0e1310');
   if (themeButton) {
     const dark = settings.theme === 'dark';
     themeButton.textContent = dark ? '☾' : '☀';
@@ -240,6 +242,13 @@ function narrateWithButton(text, button, idleLabel, audioUrl = '') {
 
 function initChrome() {
   applySettings();
+  // While no theme has been chosen explicitly, mirror OS light/dark changes live.
+  const systemScheme = typeof window.matchMedia === 'function'
+    ? window.matchMedia('(prefers-color-scheme: light)')
+    : null;
+  systemScheme?.addEventListener?.('change', () => {
+    if (getSettings().themeMode === 'system') applySettings();
+  });
   themeButton?.addEventListener('click', () => {
     const next = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
     updateSettings({ theme: next });

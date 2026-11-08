@@ -4,6 +4,8 @@
    ========================================================================== */
 
 :root {
+  color-scheme: dark;
+
   --font-display: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
   --font-body: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 
@@ -31,6 +33,8 @@
 }
 
 [data-theme="light"] {
+  color-scheme: light;
+
   --bg: #f3ede0;
   --bg-2: #ece4d3;
   --surface: #fdf9ef;

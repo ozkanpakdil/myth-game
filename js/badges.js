@@ -5,7 +5,7 @@
  * all describe them the same way. Evaluation is derived from stored progress;
  * nothing extra needs to be saved when a badge is earned.
  */
-import { getState } from './storage.js?v=20261108-4';
+import { getState } from './storage.js?v=20261108-5';
 
 export const STATIC_BADGES = [
   { id: 'first-story', name: 'First Steps', description: 'Read your first story.', icon: '✦' },

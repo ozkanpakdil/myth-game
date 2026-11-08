@@ -137,8 +137,37 @@ function loadState() {
 /** Studio narrators that have pre-generated clips under audio/voices/. */
 export const STUDIO_VOICES = ['cori', 'joe', 'morgan'];
 
+const SYSTEM_LIGHT_QUERY = '(prefers-color-scheme: light)';
+const THEME_MODES = ['system', 'light', 'dark'];
+
+/** The reader's OS-level colour preference. Fall back to dark when unknown. */
+export function systemTheme() {
+  try {
+    return window.matchMedia && window.matchMedia(SYSTEM_LIGHT_QUERY).matches ? 'light' : 'dark';
+  } catch {
+    return 'dark';
+  }
+}
+
+/** Resolve a stored theme preference ('system' | 'light' | 'dark') to a palette. */
+export function resolveTheme(mode) {
+  return mode === 'light' || mode === 'dark' ? mode : systemTheme();
+}
+
 function defaultSettings() {
-  return { theme: 'dark', fontScale: 'md', audio: true, voice: '', studioVoice: 'morgan', voiceChosen: false };
+  return { themeMode: 'system', fontScale: 'md', audio: true, voice: '', studioVoice: 'morgan', voiceChosen: false };
+}
+
+/**
+ * Older builds stored only a concrete 'dark' or 'light' and used dark as the
+ * default, so a stored 'dark' may just be that default. Light was never a
+ * default, so keep it as an explicit choice; otherwise follow the OS until the
+ * reader picks a theme. New writes store an unambiguous themeMode.
+ */
+function themeModeFrom(parsed) {
+  if (THEME_MODES.includes(parsed.themeMode)) return parsed.themeMode;
+  if (parsed.theme === 'light') return 'light';
+  return 'system';
 }
 
 function loadSettings() {
@@ -147,7 +176,7 @@ function loadSettings() {
   try {
     const parsed = JSON.parse(raw);
     return {
-      theme: parsed.theme === 'light' ? 'light' : 'dark',
+      themeMode: themeModeFrom(parsed),
       fontScale: ['md', 'lg', 'xl'].includes(parsed.fontScale) ? parsed.fontScale : 'md',
       audio: parsed.audio !== false,
       voice: typeof parsed.voice === 'string' ? parsed.voice.slice(0, 200) : '',
@@ -180,13 +209,16 @@ export function isPersistent() {
 }
 
 export function getSettings() {
-  return { ...settings };
+  return { ...settings, theme: resolveTheme(settings.themeMode) };
 }
 
 export function updateSettings(patch) {
+  const themeMode = THEME_MODES.includes(patch.themeMode)
+    ? patch.themeMode
+    : (THEME_MODES.includes(patch.theme) ? patch.theme : undefined);
   settings = {
     ...settings,
-    ...(patch.theme === 'light' || patch.theme === 'dark' ? { theme: patch.theme } : {}),
+    ...(themeMode ? { themeMode } : {}),
     ...(['md', 'lg', 'xl'].includes(patch.fontScale) ? { fontScale: patch.fontScale } : {}),
     ...(typeof patch.audio === 'boolean' ? { audio: patch.audio } : {}),
     ...(typeof patch.voice === 'string' ? { voice: patch.voice.slice(0, 200) } : {}),

@@ -5,13 +5,13 @@
  * review questions from the previous stories, so every quiz has 4–5 questions
  * and a passing mark of 70% (3/4 or 4/5). The final challenge uses all 20.
  */
-import { escapeHtml, iconImg, progressBar, toast, focusPage, difficultyClass, percent, listenButtonContent } from './ui.js?v=20261108-4';
-import { getQuizRecord, recordQuizResult, recordFinalQuiz, recordStoryRead, awardBadges, isStoryRead, getSettings } from './storage.js?v=20261108-4';
-import { loadMythology, loadMythologies, storyIndexById, nextStory } from './content.js?v=20261108-4';
-import { allStoryQuizzesPassed, isStoryUnlocked } from './progress.js?v=20261108-4';
-import { evaluateBadges } from './badges.js?v=20261108-4';
-import { questionScene, choiceIcon } from './scene.js?v=20261108-4';
-import { narrate, stopNarration, ensureNarration, narrationSupported, studioAudioUrl } from './narration.js?v=20261108-4';
+import { escapeHtml, iconImg, progressBar, toast, focusPage, difficultyClass, percent, listenButtonContent } from './ui.js?v=20261108-5';
+import { getQuizRecord, recordQuizResult, recordFinalQuiz, recordStoryRead, awardBadges, isStoryRead, getSettings } from './storage.js?v=20261108-5';
+import { loadMythology, loadMythologies, storyIndexById, nextStory } from './content.js?v=20261108-5';
+import { allStoryQuizzesPassed, isStoryUnlocked } from './progress.js?v=20261108-5';
+import { evaluateBadges } from './badges.js?v=20261108-5';
+import { questionScene, choiceIcon } from './scene.js?v=20261108-5';
+import { narrate, stopNarration, ensureNarration, narrationSupported, studioAudioUrl } from './narration.js?v=20261108-5';
 
 const PASS_RATIO = 0.7;
 let activeQuizListen = null;

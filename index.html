@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Mythos is a text-first educational game about world mythologies: walk a branching Norse saga, read short stories, answer quizzes, and unlock a codex of figures and terms.">
-    <meta name="theme-color" content="#0e1310">
+    <meta name="theme-color" content="#0e1310" id="theme-color">
     <title>Mythos · A world mythology game</title>
     <link rel="icon" href="assets/svg/logo.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="css/style.css?v=20261108-4">
+    <link rel="stylesheet" href="css/style.css?v=20261108-5">
     <!-- Google tag (gtag.js). Kept off localhost so development and tests stay quiet. -->
     <script>
       (function () {
@@ -24,15 +24,41 @@
       })();
     </script>
     <script>
+      // Paint the right palette before first paint: an explicit choice wins,
+      // otherwise follow the reader's OS preference (prefers-color-scheme).
       (function () {
+        var root = document.documentElement;
+
+        function systemTheme() {
+          try {
+            return window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+          } catch (error) {
+            return 'dark';
+          }
+        }
+
+        function themeMode(saved) {
+          if (saved.themeMode === 'system' || saved.themeMode === 'light' || saved.themeMode === 'dark') return saved.themeMode;
+          // Older builds stored only 'dark'/'light' and defaulted to dark, so
+          // keep an explicit light choice and let dark fall back to the OS.
+          return saved.theme === 'light' ? 'light' : 'system';
+        }
+
+        var mode = 'system';
+        var font = 'md';
         try {
           var saved = JSON.parse(localStorage.getItem('mythos.settings.v1') || '{}');
-          document.documentElement.dataset.theme = saved.theme === 'light' ? 'light' : 'dark';
-          document.documentElement.dataset.font = ['md', 'lg', 'xl'].indexOf(saved.fontScale) !== -1 ? saved.fontScale : 'md';
+          mode = themeMode(saved);
+          font = ['md', 'lg', 'xl'].indexOf(saved.fontScale) !== -1 ? saved.fontScale : 'md';
         } catch (error) {
-          document.documentElement.dataset.theme = 'dark';
-          document.documentElement.dataset.font = 'md';
+          mode = 'system';
+          font = 'md';
         }
+
+        var theme = mode === 'light' || mode === 'dark' ? mode : systemTheme();
+        root.dataset.theme = theme;
+        root.dataset.font = font;
+        document.getElementById('theme-color').setAttribute('content', theme === 'light' ? '#f3ede0' : '#0e1310');
       })();
     </script>
   </head>
@@ -72,6 +98,18 @@
         </div>
       </div>
     </header>
+
+    <script>
+      // Keep the theme toggle honest before the module graph loads.
+      (function () {
+        var button = document.getElementById('theme-toggle');
+        if (!button) return;
+        var dark = document.documentElement.dataset.theme === 'dark';
+        button.textContent = dark ? '☾' : '☀';
+        button.setAttribute('aria-label', dark ? 'Switch to light theme' : 'Switch to dark theme');
+        button.setAttribute('title', dark ? 'Switch to light theme' : 'Switch to dark theme');
+      })();
+    </script>
 
     <main id="main" tabindex="-1">
       <div id="app" aria-live="off">
@@ -159,6 +197,6 @@
 
     <div id="toast" role="status" aria-live="polite"></div>
 
-    <script type="module" src="js/app.js?v=20261108-4"></script>
+    <script type="module" src="js/app.js?v=20261108-5"></script>
   </body>
 </html>

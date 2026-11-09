@@ -152,7 +152,7 @@ test.describe('Saga library', () => {
     await expect.poll(() => page.evaluate(() => window.__sagaSpoken)).toContain('You are Iris');
   });
 
-  test('offers pre-recorded F5 voice clips only on the new sagas', async ({ page }) => {
+  test('offers pre-recorded Sonia and Eric studio clips only on the new sagas', async ({ page }) => {
     let askedHuggingFace = false;
     page.on('request', (request) => {
       if (request.url().includes('huggingface.co')) askedHuggingFace = true;
@@ -162,46 +162,45 @@ test.describe('Saga library', () => {
     await expect(page.getByTestId('saga-landing')).toBeVisible();
     await page.getByTestId('saga-begin').click();
     await expect(page.getByTestId('saga-page')).toHaveAttribute('data-node', 'start');
-    await expect(page.getByTestId('saga-f5')).toBeVisible();
-    await expect(page.getByTestId('saga-f5-panel')).toBeHidden();
-    await page.getByTestId('saga-f5-open').click();
-    await expect(page.getByTestId('saga-f5-panel')).toBeVisible();
-    await expect(page.getByTestId('saga-f5-panel')).toContainText('Nothing downloads here');
-    await expect(page.getByTestId('saga-f5-start')).toBeEnabled();
-    await expect(page.getByTestId('saga-f5-stop')).toBeHidden();
-    await expect(page.getByTestId('saga-f5-voice')).toHaveValue('sonia');
-    await expect(page.getByTestId('saga-f5-voice').locator('option')).toHaveText(['Sonia', 'Joe']);
-    await expect(page.getByTestId('saga-f5-consent')).toHaveCount(0);
+    await expect(page.getByTestId('saga-voice')).toBeVisible();
+    await expect(page.getByTestId('saga-voice-panel')).toBeHidden();
+    await page.getByTestId('saga-voice-open').click();
+    await expect(page.getByTestId('saga-voice-panel')).toBeVisible();
+    await expect(page.getByTestId('saga-voice-panel')).toContainText('Nothing downloads here');
+    await expect(page.getByTestId('saga-voice-start')).toBeEnabled();
+    await expect(page.getByTestId('saga-voice-stop')).toBeHidden();
+    await expect(page.getByTestId('saga-voice-select')).toHaveValue('sonia');
+    await expect(page.getByTestId('saga-voice-select').locator('option')).toHaveText(['Sonia', 'Eric']);
     expect(askedHuggingFace).toBe(false);
 
     await page.goto('/#/saga/norse');
     await page.getByTestId('saga-begin').click();
-    await expect(page.getByTestId('saga-f5')).toHaveCount(0);
+    await expect(page.getByTestId('saga-voice')).toHaveCount(0);
   });
 
-  test('plays the pre-rendered F5 clip for the default Greek opening', async ({ page }) => {
+  test('plays the pre-rendered Sonia clip for the default Greek opening', async ({ page }) => {
     await page.goto('/#/saga/greek-olive');
     await page.getByTestId('saga-begin').click();
     await expect(page.getByTestId('saga-page')).toHaveAttribute('data-node', 'start');
-    await page.getByTestId('saga-f5-open').click();
-    const clip = page.waitForRequest((request) => /\/assets\/f5\/clips\/sonia\/[0-9a-f]{8}\.mp3/.test(request.url()));
-    await page.getByTestId('saga-f5-start').click();
-    await expect(page.getByTestId('saga-f5-status')).toContainText('Playing with Sonia');
+    await page.getByTestId('saga-voice-open').click();
+    const clip = page.waitForRequest((request) => /\/audio\/saga\/sonia\/[0-9a-f]{8}\.mp3/.test(request.url()));
+    await page.getByTestId('saga-voice-start').click();
+    await expect(page.getByTestId('saga-voice-status')).toContainText('Playing with Sonia');
     await expect(clip).resolves.toBeTruthy();
-    await page.getByTestId('saga-f5-stop').click();
-    await expect(page.getByTestId('saga-f5-status')).toContainText('Stopped');
+    await page.getByTestId('saga-voice-stop').click();
+    await expect(page.getByTestId('saga-voice-status')).toContainText('Stopped');
   });
 
-  test('explains when a custom name has no pre-rendered F5 clip', async ({ page }) => {
+  test('explains when a custom name has no pre-rendered studio clip', async ({ page }) => {
     await page.goto('/#/saga/greek-olive');
     await page.getByTestId('saga-name').fill('Zephyr');
     await page.getByTestId('saga-begin').click();
     await expect(page.getByTestId('saga-page')).toHaveAttribute('data-node', 'start');
-    await page.getByTestId('saga-f5-open').click();
-    await page.getByTestId('saga-f5-start').click();
-    await expect(page.getByTestId('saga-f5-status')).toContainText('No Sonia clip exists');
-    await expect(page.getByTestId('saga-f5-stop')).toBeHidden();
-    await expect(page.getByTestId('saga-f5-start')).toBeEnabled();
+    await page.getByTestId('saga-voice-open').click();
+    await page.getByTestId('saga-voice-start').click();
+    await expect(page.getByTestId('saga-voice-status')).toContainText('No Sonia clip exists');
+    await expect(page.getByTestId('saga-voice-stop')).toBeHidden();
+    await expect(page.getByTestId('saga-voice-start')).toBeEnabled();
   });
 
   test('keeps old #/saga/<node> links working and migrates the old save', async ({ page }) => {
@@ -509,8 +508,8 @@ test.describe('mobile saga', () => {
     }));
     expect(metrics.doc).toBe(metrics.viewport);
     await expect(page.getByTestId('saga-choices')).toBeVisible();
-    await page.getByTestId('saga-f5-open').click();
-    await expect(page.getByTestId('saga-f5-panel')).toBeVisible();
+    await page.getByTestId('saga-voice-open').click();
+    await expect(page.getByTestId('saga-voice-panel')).toBeVisible();
     metrics = await page.evaluate(() => ({
       doc: document.documentElement.scrollWidth,
       viewport: document.documentElement.clientWidth,

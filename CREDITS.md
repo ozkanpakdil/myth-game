@@ -22,33 +22,23 @@ Mythos is an educational draft. The retellings are new, short summaries in moder
     `Non-commercial (voice clone)` manifest entry; remove them before any
     commercial distribution.
   - The five newer story paths use the reader's installed browser voice for
-    the normal Listen control, and also ship optional pre-rendered F5 clips.
-    The Norse saga and the archive stories keep the recorded voices above.
-- **Pre-rendered F5 saga voices.** The new stories can optionally play clips
-  generated offline with
-  [`DownFlow/webasmr-f5tts`](https://huggingface.co/DownFlow/webasmr-f5tts).
-  The base F5-TTS weights are CC-BY-4.0; the published fine-tune is released
-  under `other` and its corpus is **non-commercial**. Treat the generated clips
-  as non-commercial and do not sell access to them.
-  - The model is an ASMR-oriented fine-tune and its upstream reference pack is
-    not suitable for children. Mythos never uses that pack. The two references
-    are **Sonia**, an `en-GB-SoniaNeural` sample from
-    [`yaph/tts-samples`](https://github.com/yaph/tts-samples) (the repository is
-    MIT-licensed; generated Edge TTS output is subject to Microsoft's terms),
-    and **Joe**, a sample supplied by the project owner and trimmed to the first
-    seven seconds. Both were converted with `tools/build_f5_reference.py` and
-    live in `assets/f5/refs/`. They are reference material for fixed,
-    non-commercial narration clips, not a claim that either voice endorses this
-    project.
-  - The clips live in `assets/f5/clips/`. They are ordinary MP3s served by the
-    site; the browser never loads the F5 model or an ONNX runtime. The authoring
-    runtime is under `tools/f5-runtime/` and is not copied into the published
-    site.
-  - The flow/vocoder/ISTFT implementation follows the layout documented in the
-    model card and the behaviour of the
-    [WebASMR Space](https://huggingface.co/spaces/DownFlow/webasmr); the
-    authoring code in this repository is a fresh, simplified implementation for
-    Mythos.
+    the normal Listen control, and also ship optional pre-rendered Sonia and
+    Eric clips. The Norse saga and the archive stories keep the recorded voices
+    above.
+- **Sonia and Eric saga voices.** The five newer stories can optionally play
+  pre-recorded clips made with **Microsoft Edge TTS**. The voice IDs are
+  `en-GB-SoniaNeural` and `en-US-EricNeural`. The source samples are from
+  [`yaph/tts-samples`](https://github.com/yaph/tts-samples) — the repository is
+  MIT-licensed, but generated Edge TTS output is subject to Microsoft's terms.
+  Confirm those terms before redistributing the clips or using them
+  commercially.
+  - The clips live in `audio/saga/`. They are ordinary MP3s served by the site;
+    the browser never contacts Edge TTS or loads a speech model. The authoring
+    script is `tools/build_saga_voices.py`; it runs only when the clips are
+    rebuilt, not during deployment or at play time.
+  - Sonia and Eric are fixed studio-style voices, not endorsements of this
+    project. The stories remain child-friendly; the clips are not presented as
+    a commercial voice service.
 - Fonts are the operating system serif and sans-serif stacks. No external fonts or assets are loaded.
 
 ## Sources by tradition
@@ -454,6 +444,6 @@ The game uses objects and symbols rather than faces of deities. It does not atte
 
 ## Third-party licences
 
-No third-party fonts, photographs or illustrations are bundled. The authoring-only F5 runtime under `tools/f5-runtime/` uses onnxruntime-web 1.30.0 (MIT); its licence is included there, and the directory is not copied into the published site. `@playwright/test` is a development dependency only and is not shipped to players. The source texts listed above are cited as references; the retellings do not reproduce long passages.
+No third-party fonts, photographs or illustrations are bundled. `@playwright/test` and the Edge TTS authoring package are development dependencies only and are not shipped to players. The source texts listed above are cited as references; the retellings do not reproduce long passages.
 
-The F5 model weights are not shipped and are not downloaded by players. The upstream model is a non-commercial research fine-tune; the generated saga clips must not be presented as a commercial voice service. Only the two declared Sonia and Joe reference packs were used, never the upstream ASMR corpus references. The Sonia source repository is MIT-licensed, but its Edge TTS output remains subject to Microsoft's terms; the Joe sample is used on the project owner's instruction. Confirm those terms before redistributing the reference packs or the generated clips.
+The Sonia and Eric clips were generated with Microsoft Edge TTS from the two declared samples. No speech model is shipped or downloaded by players. The sample repository is MIT-licensed, but the generated Edge TTS output remains subject to Microsoft's terms. Confirm those terms before redistributing the clips.

@@ -9,7 +9,7 @@
  * catalog and one story JSON.
  */
 
-import { loadSagaCatalog, loadSagaStory } from './content.js?v=20261110-1';
+import { loadSagaCatalog, loadSagaStory } from './content.js?v=20261110-2';
 import {
   escapeHtml,
   progressBar,
@@ -17,9 +17,9 @@ import {
   confirmDialog,
   setDocumentTitle,
   listenButtonContent,
-} from './ui.js?v=20261110-1';
-import { sagaScene, sagaGlyph } from './saga-art.js?v=20261110-1';
-import { f5AudioUrl, f5VoiceLabel } from './f5-voice.js?v=20261110-1';
+} from './ui.js?v=20261110-2';
+import { sagaScene, sagaGlyph } from './saga-art.js?v=20261110-2';
+import { sagaVoiceUrl, sagaVoiceLabel } from './saga-voice.js?v=20261110-2';
 import {
   narrate,
   narrateSequence,
@@ -30,7 +30,7 @@ import {
   selectedStudioVoice,
   voiceChosen,
   sagaAudioUrl,
-} from './narration.js?v=20261110-1';
+} from './narration.js?v=20261110-2';
 import {
   loadSaga as loadSagaRun,
   saveSaga as saveSagaRun,
@@ -40,7 +40,7 @@ import {
   pushHistory,
   applyEffects,
   cleanName,
-} from './saga-state.js?v=20261110-1';
+} from './saga-state.js?v=20261110-2';
 
 const STAT_LABELS = { insight: 'Insight', courage: 'Courage', cunning: 'Cleverness' };
 const MAX_PIPS = 5;
@@ -114,37 +114,37 @@ function boonList(data, state) {
 /* ------------------------------------------------------------------ */
 
 let activeSagaListen = null;
-let activeF5UI = null;
-let f5Run = 0;
+let activeSagaVoice = null;
+let sagaVoiceRun = 0;
 
-function f5Markup(data) {
+function sagaVoiceMarkup(data) {
   if (data.studio_clips !== false) return '';
-  return `<div class="saga-f5" data-testid="saga-f5">
-    <button class="button button--ghost button--small saga-f5__toggle" type="button" data-testid="saga-f5-open" aria-expanded="false" aria-controls="saga-f5-panel">
-      F5 voice <span class="pill pill--quiet">Pre-recorded</span>
+  return `<div class="saga-voices" data-testid="saga-voice">
+    <button class="button button--ghost button--small saga-voices__toggle" type="button" data-testid="saga-voice-open" aria-expanded="false" aria-controls="saga-voice-panel">
+      Sonia &amp; Eric <span class="pill pill--quiet">Studio</span>
     </button>
-    <div class="saga-f5__panel" id="saga-f5-panel" data-testid="saga-f5-panel" hidden>
-      <div class="saga-f5__intro">
-        <p class="eyebrow">Studio voices, made offline</p>
-        <p class="small">These saga clips were generated ahead of time with the F5 model. Nothing downloads here, and there is no model warm-up or waiting between sentences.</p>
-        <p class="small muted">Sonia and Joe are fixed reference voices. Clips use the story's default name; if you chose a different name, the normal <strong>Listen</strong> button is the fallback for that scene.</p>
+    <div class="saga-voices__panel" id="saga-voice-panel" data-testid="saga-voice-panel" hidden>
+      <div class="saga-voices__intro">
+        <p class="eyebrow">Two ready-made narrators</p>
+        <p class="small">These scenes are pre-recorded with Microsoft Edge's natural neural voices. Choose Sonia or Eric. Nothing downloads here, and there is no waiting between sentences.</p>
+        <p class="small muted">Both are fixed studio voices. Clips use the story's default name; if you chose a different name, the normal <strong>Listen</strong> button is the fallback for that scene.</p>
       </div>
-      <div class="saga-f5__controls">
-        <label class="saga-f5__voice" for="saga-f5-voice">Voice
-          <select id="saga-f5-voice" data-testid="saga-f5-voice">
+      <div class="saga-voices__controls">
+        <label class="saga-voices__voice" for="saga-voice-select">Voice
+          <select id="saga-voice-select" data-testid="saga-voice-select">
             <option value="sonia">Sonia</option>
-            <option value="joe">Joe</option>
+            <option value="eric">Eric</option>
           </select>
         </label>
-        <button class="button button--primary button--small" type="button" data-testid="saga-f5-start">Play F5 scene</button>
-        <button class="button button--ghost button--small" type="button" data-testid="saga-f5-stop" hidden>Stop</button>
+        <button class="button button--primary button--small" type="button" data-testid="saga-voice-start">Play scene</button>
+        <button class="button button--ghost button--small" type="button" data-testid="saga-voice-stop" hidden>Stop</button>
       </div>
-      <p class="small saga-f5__status" data-testid="saga-f5-status" role="status" aria-live="polite">Ready when you are.</p>
+      <p class="small saga-voices__status" data-testid="saga-voice-status" role="status" aria-live="polite">Ready when you are.</p>
     </div>
   </div>`;
 }
 
-function setF5Status(ui, message, { busy = false } = {}) {
+function setSagaVoiceStatus(ui, message, { busy = false } = {}) {
   if (!ui) return;
   if (ui.status) ui.status.textContent = message;
   if (ui.start) ui.start.disabled = busy;
@@ -152,25 +152,25 @@ function setF5Status(ui, message, { busy = false } = {}) {
   if (ui.voice) ui.voice.disabled = busy;
 }
 
-function stopF5({ silent = false } = {}) {
-  f5Run += 1;
+function stopSagaVoice({ silent = false } = {}) {
+  sagaVoiceRun += 1;
   stopNarration();
-  const ui = activeF5UI;
-  activeF5UI = null;
+  const ui = activeSagaVoice;
+  activeSagaVoice = null;
   if (ui && !silent) {
-    setF5Status(ui, 'Stopped. You can play it again whenever you like.');
+    setSagaVoiceStatus(ui, 'Stopped. You can play it again whenever you like.');
   }
 }
 
-function readF5(app, data, node, text, isEnding) {
-  const root = app.querySelector('[data-testid="saga-f5"]');
+function readSagaVoice(app, data, node, text, isEnding) {
+  const root = app.querySelector('[data-testid="saga-voice"]');
   if (!root) return;
-  const panel = root.querySelector('[data-testid="saga-f5-panel"]');
-  const open = root.querySelector('[data-testid="saga-f5-open"]');
-  const start = root.querySelector('[data-testid="saga-f5-start"]');
-  const stop = root.querySelector('[data-testid="saga-f5-stop"]');
-  const voice = root.querySelector('[data-testid="saga-f5-voice"]');
-  const status = root.querySelector('[data-testid="saga-f5-status"]');
+  const panel = root.querySelector('[data-testid="saga-voice-panel"]');
+  const open = root.querySelector('[data-testid="saga-voice-open"]');
+  const start = root.querySelector('[data-testid="saga-voice-start"]');
+  const stop = root.querySelector('[data-testid="saga-voice-stop"]');
+  const voice = root.querySelector('[data-testid="saga-voice-select"]');
+  const status = root.querySelector('[data-testid="saga-voice-status"]');
   const ui = { panel, open, start, stop, voice, status };
 
   open?.addEventListener('click', () => {
@@ -180,20 +180,20 @@ function readF5(app, data, node, text, isEnding) {
   });
 
   voice?.addEventListener('change', () => {
-    if (!activeF5UI && start) start.textContent = 'Play F5 scene';
+    if (!activeSagaVoice && start) start.textContent = 'Play scene';
   });
 
-  stop?.addEventListener('click', () => stopF5());
+  stop?.addEventListener('click', () => stopSagaVoice());
 
   start?.addEventListener('click', async () => {
     const speech = [...text];
     if (isEnding && node.ending) speech.push(node.ending.summary);
     const spoken = speech.join(' ');
     const voiceId = voice?.value || 'sonia';
-    const label = f5VoiceLabel(voiceId);
-    const url = f5AudioUrl(voiceId, spoken);
+    const label = sagaVoiceLabel(voiceId);
+    const url = sagaVoiceUrl(voiceId, spoken);
     if (!url) {
-      setF5Status(ui, 'There is no F5 clip for this scene yet.');
+      setSagaVoiceStatus(ui, 'There is no studio clip for this scene yet.');
       return;
     }
 
@@ -202,9 +202,9 @@ function readF5(app, data, node, text, isEnding) {
       resetSagaListen(activeSagaListen);
       activeSagaListen = null;
     }
-    const run = ++f5Run;
-    activeF5UI = ui;
-    setF5Status(ui, `Checking the ${label} clip…`, { busy: true });
+    const run = ++sagaVoiceRun;
+    activeSagaVoice = ui;
+    setSagaVoiceStatus(ui, `Checking the ${label} clip…`, { busy: true });
 
     let available = false;
     try {
@@ -213,29 +213,29 @@ function readF5(app, data, node, text, isEnding) {
     } catch {
       available = false;
     }
-    if (run !== f5Run) return;
+    if (run !== sagaVoiceRun) return;
     if (!available) {
-      activeF5UI = null;
-      setF5Status(ui, `No ${label} clip exists for this scene. This usually means the story name is not one of the recorded names. Use the normal Listen button, or start a run with the default name.`);
+      activeSagaVoice = null;
+      setSagaVoiceStatus(ui, `No ${label} clip exists for this scene. This usually means the story name is not one of the recorded names. Use the normal Listen button, or start a run with the default name.`);
       return;
     }
 
-    setF5Status(ui, `Playing with ${label}…`, { busy: true });
+    setSagaVoiceStatus(ui, `Playing with ${label}…`, { busy: true });
     narrate(spoken, {
       audioUrl: url,
       onStart: () => {
-        if (run === f5Run) setF5Status(ui, `Playing with ${label}…`, { busy: true });
+        if (run === sagaVoiceRun) setSagaVoiceStatus(ui, `Playing with ${label}…`, { busy: true });
       },
       onEnd: () => {
-        if (run !== f5Run) return;
-        activeF5UI = null;
+        if (run !== sagaVoiceRun) return;
+        activeSagaVoice = null;
         if (start) start.textContent = 'Play again';
-        setF5Status(ui, `Finished with ${label}. Play again, or pick the other voice.`);
+        setSagaVoiceStatus(ui, `Finished with ${label}. Play again, or pick the other voice.`);
       },
       onError: () => {
-        if (run !== f5Run) return;
-        activeF5UI = null;
-        setF5Status(ui, `The ${label} clip could not be played. Try the normal Listen button.`);
+        if (run !== sagaVoiceRun) return;
+        activeSagaVoice = null;
+        setSagaVoiceStatus(ui, `The ${label} clip could not be played. Try the normal Listen button.`);
       },
     });
   });
@@ -255,7 +255,7 @@ function resetSagaListen(button) {
 
 function playSagaNarration(button, text, audioUrls = [], { systemOnly = false } = {}) {
   if (!button) return;
-  if (activeF5UI) stopF5();
+  if (activeSagaVoice) stopSagaVoice();
   if (button.dataset.speaking === 'true') {
     stopNarration();
     resetSagaListen(button);
@@ -668,7 +668,7 @@ function renderNode(app, data, state) {
     renderLanding(app, data, state);
     return;
   }
-  stopF5({ silent: true });
+  stopSagaVoice({ silent: true });
   setDocumentTitle(node.title);
   const act = actFor(data, node);
   const text = storyText(data, node, state);
@@ -715,7 +715,7 @@ function renderNode(app, data, state) {
 
         <div class="saga-read-tools">
           <button class="button button--ghost button--small" type="button" data-saga-listen data-listen-target="scene" data-listen-label="Listen to scene" data-testid="saga-listen" aria-label="Listen to this scene">${listenButtonContent('Listen to scene')}</button>
-          ${f5Markup(data)}
+          ${sagaVoiceMarkup(data)}
         </div>
 
         <div class="saga-text" data-testid="saga-text">
@@ -778,7 +778,7 @@ function renderNode(app, data, state) {
   }
 
   function finishReveal() {
-    stopF5();
+    stopSagaVoice();
     stopNarration();
     if (activeSagaListen) {
       resetSagaListen(activeSagaListen);
@@ -835,7 +835,7 @@ function renderNode(app, data, state) {
     });
   });
 
-  readF5(app, data, node, text, isEnding);
+  readSagaVoice(app, data, node, text, isEnding);
 
   continueButton?.addEventListener('click', advance);
   skipButton?.addEventListener('click', () => {

@@ -1,0 +1,18 @@
+{
+  "engine": "Microsoft Edge TTS",
+  "generatedAt": "2026-11-09T20:39:57Z",
+  "voices": {
+    "sonia": 72,
+    "eric": 72
+  },
+  "voice_ids": {
+    "sonia": "en-GB-SoniaNeural",
+    "eric": "en-US-EricNeural"
+  },
+  "samples": {
+    "sonia": "https://github.com/yaph/tts-samples/blob/main/mp3/English/en-GB-SoniaNeural.mp3",
+    "eric": "https://github.com/yaph/tts-samples/blob/main/mp3/English/en-US-EricNeural.mp3"
+  },
+  "format": "48 kbps mono MP3, 24 kHz",
+  "note": "Clips use the exact scene text and FNV-1a hash from js/narration.js. The site only serves the MP3s; no speech model is shipped."
+}

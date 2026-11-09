@@ -113,47 +113,42 @@ sagas are English-only. Names use common English spellings, and living
 traditions are presented with care: the Hindu and Japanese notes explain
 multiple tellings and treat the figures with respect.
 
-### F5 saga voices (pre-rendered)
+### Sonia and Eric saga voices
 
-The five newer stories offer two **pre-rendered F5 voices**: **Sonia** and
-**Joe**. Choose one in the **F5 voice** panel and the scene plays like the other
-studio clips. There is no model download, no WebGPU requirement, no 460 MB
-cache, and no waiting between sentences.
+The five newer stories offer two **pre-recorded studio narrators**: **Sonia**
+(British English) and **Eric** (American English). Choose one in the
+**Sonia & Eric** panel and the scene plays like the other studio clips. There
+is no model download, no speech request, and no waiting between sentences.
 
-- The clips live in `assets/f5/clips/<voice>/<hash>.mp3`. The hash is the same
-  FNV-1a hash of the exact sentence text used for the Piper saga clips, so the
-  player needs no manifest lookup. A small `manifest.json` records what was
-  generated.
-- Each scene was rendered offline with
-  [`DownFlow/webasmr-f5tts`](https://huggingface.co/DownFlow/webasmr-f5tts)
-  using the **Sonia** and **Joe** reference packs in `assets/f5/refs/`. The
-  browser never loads the F5 model or its ONNX runtime.
+- The clips live in `audio/saga/<voice>/<hash>.mp3`. The hash is the same
+  FNV-1a hash of the exact scene text used for the Piper saga clips, so the
+  player needs no manifest lookup. `audio/saga/manifest.json` records the
+  voices and voice IDs.
+- Each scene was rendered offline with **Microsoft Edge TTS** using
+  `en-GB-SoniaNeural` and `en-US-EricNeural`. The browser only receives the
+  MP3s; it never talks to Edge TTS or loads a speech model.
+- The two source samples are from
+  [`yaph/tts-samples`](https://github.com/yaph/tts-samples): Sonia and Eric.
+  The repository is MIT-licensed, but generated Edge TTS output is subject to
+  Microsoft's terms. Confirm those terms before redistributing the clips.
 - Clips cover the story's default name and its suggested names. If a reader
   enters a different name, that scene has no matching clip; the panel says so
   and the normal **Listen** button remains the fallback. This avoids silently
   playing a clip that says the wrong name.
-- The F5 model is an **ASMR-oriented, non-commercial research fine-tune**. Treat
-  the generated clips as non-commercial. The upstream corpus reference is never
-  used; only the declared Sonia and Joe samples are.
-- The sample repository is MIT-licensed, but generated Edge TTS output is
-  subject to Microsoft's terms. The Joe sample is used on the project owner's
-  instruction; confirm the voice terms before redistributing the reference
-  packs or clips.
 
-To regenerate clips after changing saga prose, start the local server and run
-the authoring tool with Playwright, `ffmpeg` and Chrome/Chromium with WebGPU:
+To rebuild clips after changing saga prose:
 
 ```bash
-node tools/serve.js
-CHROME_PATH="/path/to/chrome" node tools/render_f5_audio.mjs --voices sonia,joe
+python3 -m venv .venv
+.venv/bin/pip install edge-tts
+.venv/bin/python tools/build_saga_voices.py --voices sonia,eric
 ```
 
-The authoring runtime stays under `tools/f5-runtime/` and is not copied to the
-published site. The model cache defaults to `/tmp/mythos-f5-render-profile`; a
-second run reuses it. The command skips clips that already exist, encodes the
-new WAVs to 48 kbps mono MP3 and rewrites the manifest. After regenerating a
-clip with the same hash, bump `F5_CLIP_VERSION` in `js/f5-voice.js` and the
-global asset version so browsers fetch the new audio.
+The tool needs a network connection while it renders, skips clips that already
+exist, and rewrites the manifest. It never runs during deployment or at play
+time. After replacing audio for an unchanged scene, bump
+`SAGA_VOICE_VERSION` in `js/saga-voice.js` and the global asset version so
+browsers fetch the new MP3.
 
 ### Game rules
 
@@ -216,7 +211,7 @@ js/
   saga.js               story library, per-saga landing, scene reader, choices and endings
   saga-art.js           animated inline-SVG saga scenes and path glyphs
   saga-state.js         per-story save/rewind/effects with v1 migration
-  f5-voice.js           lookup and labels for the pre-rendered F5 clips
+  saga-voice.js         lookup and labels for the Sonia and Eric clips
   narration.js          studio-clip playback with browser speech fallback
   ui.js                 shared escaping, formatting and dialog helpers
 content/
@@ -233,9 +228,8 @@ schemas/                JSON Schema documents for every content file
 audio/
   voices/               joe, cori and morgan narration clips
   samples/              short in-dialog audition files
+  saga/                 pre-rendered Sonia and Eric saga clips
 assets/
-  f5/clips/             pre-rendered Sonia and Joe saga clips
-  f5/refs/              float16 reference mel packs used by the author tool
   palette.json          16-key pixel palette
   sprites/icons/        16×16 text grids: mythology sigils and map markers
   svg/icons/            generated SVG sigils
@@ -248,6 +242,7 @@ tools/
   render_sprites.js     text-grid → SVG compiler
   make_map.js           regenerates assets/map/world.txt
   generate_piper_audio.py  offline authoring tool for studio narration clips
+  build_saga_voices.py     Edge TTS authoring tool for Sonia and Eric saga clips
 tests/                  Playwright end-to-end tests
 ```
 
@@ -357,8 +352,8 @@ per-story state, a complete Greek path, browser-voice narration for the new
 stories, legacy-link migration, name entry and the default protagonist,
 progressive reveal, scene and paragraph narration, the myth note, gated
 choices, persistence and resume, in-game back, restart confirmation, ending
-collection, mobile overflow, and the pre-rendered F5 panel. CI never downloads
-the F5 model.
+collection, mobile overflow, and the pre-rendered Sonia/Eric panel. CI never
+calls Edge TTS.
 
 ```bash
 npm test
@@ -399,16 +394,16 @@ layout. Hash routes need no rewrite rules.
 The published build loads Google Analytics 4 with measurement ID
 `G-NSB9K61M5S`. The tag is deliberately skipped on `localhost`/`127.0.0.1` so
 local development and the Playwright suite stay quiet. Progress and settings
-remain in `localStorage`; no game progress is sent to analytics. F5 clips are
-served from this site like the other studio audio, so no model request is made
-at play time. Add a consent banner before promoting the site if your audience or
-jurisdiction requires one.
+remain in `localStorage`; no game progress is sent to analytics. Sonia and Eric
+clips are served from this site like the other studio audio, so no speech
+service request is made at play time. Add a consent banner before promoting the
+site if your audience or jurisdiction requires one.
 
 ## Licence and credits
 
 Code and original SVG art: the Mythos project. Retellings are new summaries,
 not translations; source notes are listed per tradition in `CREDITS.md` and in
 the game. No third-party fonts or images are used. Google Analytics is the
-only third-party script on the published site. The F5 voice clips were generated
-offline with a non-commercial research model; the model and its ONNX runtime are
-not shipped. See `CREDITS.md`.
+only third-party script on the published site. The Sonia and Eric clips were
+generated offline with Microsoft Edge TTS; no speech model or runtime is
+shipped. See `CREDITS.md`.

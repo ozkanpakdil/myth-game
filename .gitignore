@@ -8,4 +8,4 @@ playwright-report/
 __pycache__/
 *.pyc
 
-assets/f5/clips/**/*.wav
+.venv/

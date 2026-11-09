@@ -7,3 +7,5 @@ playwright-report/
 .dsh-vision-router/
 __pycache__/
 *.pyc
+
+assets/f5/clips/**/*.wav

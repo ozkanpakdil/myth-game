@@ -9,7 +9,7 @@
  * catalog and one story JSON.
  */
 
-import { loadSagaCatalog, loadSagaStory } from './content.js?v=20261109-2';
+import { loadSagaCatalog, loadSagaStory } from './content.js?v=20261110-1';
 import {
   escapeHtml,
   progressBar,
@@ -17,9 +17,9 @@ import {
   confirmDialog,
   setDocumentTitle,
   listenButtonContent,
-} from './ui.js?v=20261109-2';
-import { sagaScene, sagaGlyph } from './saga-art.js?v=20261109-2';
-import { F5Narrator, canUseWebGPU, clearF5Cache } from './f5-voice.js?v=20261109-2';
+} from './ui.js?v=20261110-1';
+import { sagaScene, sagaGlyph } from './saga-art.js?v=20261110-1';
+import { f5AudioUrl, f5VoiceLabel } from './f5-voice.js?v=20261110-1';
 import {
   narrate,
   narrateSequence,
@@ -30,7 +30,7 @@ import {
   selectedStudioVoice,
   voiceChosen,
   sagaAudioUrl,
-} from './narration.js?v=20261109-2';
+} from './narration.js?v=20261110-1';
 import {
   loadSaga as loadSagaRun,
   saveSaga as saveSagaRun,
@@ -40,7 +40,7 @@ import {
   pushHistory,
   applyEffects,
   cleanName,
-} from './saga-state.js?v=20261109-2';
+} from './saga-state.js?v=20261110-1';
 
 const STAT_LABELS = { insight: 'Insight', courage: 'Courage', cunning: 'Cleverness' };
 const MAX_PIPS = 5;
@@ -114,22 +114,20 @@ function boonList(data, state) {
 /* ------------------------------------------------------------------ */
 
 let activeSagaListen = null;
-let f5Narrator = null;
-let f5Run = 0;
 let activeF5UI = null;
+let f5Run = 0;
 
-function f5Markup(data, node, text) {
+function f5Markup(data) {
   if (data.studio_clips !== false) return '';
   return `<div class="saga-f5" data-testid="saga-f5">
     <button class="button button--ghost button--small saga-f5__toggle" type="button" data-testid="saga-f5-open" aria-expanded="false" aria-controls="saga-f5-panel">
-      F5 voice <span class="pill pill--quiet">Experimental</span>
+      F5 voice <span class="pill pill--quiet">Pre-recorded</span>
     </button>
     <div class="saga-f5__panel" id="saga-f5-panel" data-testid="saga-f5-panel" hidden>
       <div class="saga-f5__intro">
-        <p class="eyebrow">A voice made on your device</p>
-        <p class="small">This is a try-it experiment. The first run downloads about <strong>460 MB</strong> (a 425 MB voice model plus its runtime) from Hugging Face, then speaks locally. WebGPU makes it much faster. The normal <strong>Listen</strong> button is still the light, instant way to hear the story.</p>
-        <p class="small muted">Research model, not the standard narrator. Only the selected Sonia and Joe samples are used as references. It may take a minute to warm up, and it is not recommended on a phone or a metered connection. If a line sounds odd, stop and use the normal <strong>Listen</strong> button.</p>
-        <label class="saga-f5__consent"><input type="checkbox" data-testid="saga-f5-consent"> <span>I have a grown-up with me, and I understand this downloads about 460 MB.</span></label>
+        <p class="eyebrow">Studio voices, made offline</p>
+        <p class="small">These saga clips were generated ahead of time with the F5 model. Nothing downloads here, and there is no model warm-up or waiting between sentences.</p>
+        <p class="small muted">Sonia and Joe are fixed reference voices. Clips use the story's default name; if you chose a different name, the normal <strong>Listen</strong> button is the fallback for that scene.</p>
       </div>
       <div class="saga-f5__controls">
         <label class="saga-f5__voice" for="saga-f5-voice">Voice
@@ -138,41 +136,29 @@ function f5Markup(data, node, text) {
             <option value="joe">Joe</option>
           </select>
         </label>
-        <button class="button button--primary button--small" type="button" data-testid="saga-f5-start" disabled>Download 460 MB &amp; read</button>
+        <button class="button button--primary button--small" type="button" data-testid="saga-f5-start">Play F5 scene</button>
         <button class="button button--ghost button--small" type="button" data-testid="saga-f5-stop" hidden>Stop</button>
       </div>
-      <progress class="saga-f5__progress" data-testid="saga-f5-progress" max="1" value="0" hidden></progress>
       <p class="small saga-f5__status" data-testid="saga-f5-status" role="status" aria-live="polite">Ready when you are.</p>
-      <button class="text-link saga-f5__clear" type="button" data-testid="saga-f5-clear">Forget the saved voice (frees about 434 MB)</button>
     </div>
   </div>`;
 }
 
-function setF5Status(ui, message, { value = null, busy = false } = {}) {
+function setF5Status(ui, message, { busy = false } = {}) {
   if (!ui) return;
-  const { status, progress } = ui;
-  if (status) status.textContent = message;
-  if (progress) {
-    progress.hidden = false;
-    if (value == null) progress.removeAttribute('value');
-    else progress.value = Math.max(0, Math.min(1, value));
-  }
-  if (ui.start) ui.start.disabled = busy || (ui.consent ? !ui.consent.checked : false);
+  if (ui.status) ui.status.textContent = message;
+  if (ui.start) ui.start.disabled = busy;
   if (ui.stop) ui.stop.hidden = !busy;
   if (ui.voice) ui.voice.disabled = busy;
-  if (ui.consent) ui.consent.disabled = busy;
 }
 
 function stopF5({ silent = false } = {}) {
   f5Run += 1;
-  if (f5Narrator) {
-    f5Narrator.stop();
-    f5Narrator = null;
-  }
+  stopNarration();
   const ui = activeF5UI;
   activeF5UI = null;
   if (ui && !silent) {
-    setF5Status(ui, 'Stopped. You can try again whenever you like.', { value: null, busy: false });
+    setF5Status(ui, 'Stopped. You can play it again whenever you like.');
   }
 }
 
@@ -185,105 +171,73 @@ function readF5(app, data, node, text, isEnding) {
   const stop = root.querySelector('[data-testid="saga-f5-stop"]');
   const voice = root.querySelector('[data-testid="saga-f5-voice"]');
   const status = root.querySelector('[data-testid="saga-f5-status"]');
-  const progress = root.querySelector('[data-testid="saga-f5-progress"]');
-  const consent = root.querySelector('[data-testid="saga-f5-consent"]');
-  const clear = root.querySelector('[data-testid="saga-f5-clear"]');
-  const ui = { panel, open, start, stop, voice, status, progress, consent, clear };
+  const ui = { panel, open, start, stop, voice, status };
 
   open?.addEventListener('click', () => {
     panel.hidden = !panel.hidden;
     open.setAttribute('aria-expanded', String(!panel.hidden));
-    if (!panel.hidden) start.focus({ preventScroll: true });
+    if (!panel.hidden) start?.focus({ preventScroll: true });
+  });
+
+  voice?.addEventListener('change', () => {
+    if (!activeF5UI && start) start.textContent = 'Play F5 scene';
   });
 
   stop?.addEventListener('click', () => stopF5());
-  clear?.addEventListener('click', async () => {
-    const ok = await confirmDialog({
-      title: 'Forget the saved voice?',
-      message: 'This removes the 434 MB model from this browser. The story and the normal Listen button are not affected.',
-      confirmLabel: 'Forget it',
-      cancelLabel: 'Keep it',
-      danger: true,
-    });
-    if (!ok) return;
-    const removed = await clearF5Cache();
-    setF5Status(ui, removed ? 'Saved voice removed. It will download again next time.' : 'There was no saved voice to remove.', { value: null, busy: false });
-  });
-  consent?.addEventListener('change', () => {
-    if (start) start.disabled = !consent.checked;
-  });
 
   start?.addEventListener('click', async () => {
+    const speech = [...text];
+    if (isEnding && node.ending) speech.push(node.ending.summary);
+    const spoken = speech.join(' ');
+    const voiceId = voice?.value || 'sonia';
+    const label = f5VoiceLabel(voiceId);
+    const url = f5AudioUrl(voiceId, spoken);
+    if (!url) {
+      setF5Status(ui, 'There is no F5 clip for this scene yet.');
+      return;
+    }
+
     stopNarration();
     if (activeSagaListen) {
       resetSagaListen(activeSagaListen);
       activeSagaListen = null;
     }
-    const speech = [...text];
-    if (isEnding && node.ending) speech.push(node.ending.summary);
     const run = ++f5Run;
     activeF5UI = ui;
-    setF5Status(ui, 'Checking this browser…', { value: null, busy: true });
-    let narrator = f5Narrator;
-    if (!narrator) {
-      const gpu = await canUseWebGPU();
-      if (run !== f5Run) return;
-      if (!gpu) {
-        setF5Status(
-          ui,
-          'This experimental voice needs WebGPU. Try Chrome or Edge on a desktop.',
-          { value: null, busy: false },
-        );
-        activeF5UI = null;
-        return;
-      }
-      narrator = new F5Narrator();
-      f5Narrator = narrator;
-    }
-    narrator.onProgress = (update) => {
-      if (run !== f5Run) return;
-      if (update.stage === 'download') {
-        const ratio = update.total ? update.loaded / update.total : null;
-        const loaded = update.loaded ? `${(update.loaded / 1e6).toFixed(0)}` : '0';
-        const total = update.total ? ` of ${(update.total / 1e6).toFixed(0)} MB` : '';
-        setF5Status(ui, `Downloading the voice model: ${loaded}${total}`, { value: ratio, busy: true });
-      } else if (update.stage === 'warmup') {
-        setF5Status(ui, update.message || 'Warming up the voice…', { value: 0.05, busy: true });
-      } else if (update.stage === 'cache') {
-        const ratio = update.total ? update.loaded / update.total : null;
-        setF5Status(ui, update.message || 'Saving the voice for next time…', { value: ratio, busy: true });
-      } else if (update.stage === 'session') {
-        setF5Status(ui, update.message || 'Starting the voice model…', { value: null, busy: true });
-      } else if (update.stage === 'flow') {
-        setF5Status(ui, update.message || 'Making the voice…', { value: 0.55, busy: true });
-      } else if (update.stage === 'vocode') {
-        setF5Status(ui, 'Making the audio…', { value: 0.75, busy: true });
-      } else if (update.stage === 'chunk') {
-        setF5Status(ui, update.message || 'Reading…', { value: 0.2 + 0.8 * ((update.index - 1) / Math.max(update.total, 1)), busy: true });
-      } else if (update.stage === 'complete') {
-        if (start) start.textContent = 'Read again';
-        setF5Status(ui, 'Finished. Listen again, or pick another voice.', { value: 1, busy: false });
-      } else if (update.stage === 'stopped') {
-        setF5Status(ui, 'Stopped.', { value: null, busy: false });
-      } else if (update.stage === 'error') {
-        setF5Status(ui, update.message || 'The experimental voice could not start.', { value: null, busy: false });
-      }
-    };
-    setF5Status(ui, 'Downloading and warming up the experimental voice. You can stop at any time.', { value: null, busy: true });
+    setF5Status(ui, `Checking the ${label} clip…`, { busy: true });
+
+    let available = false;
     try {
-      await narrator.speak(speech.join(' '), { voiceId: voice?.value || 'sonia' });
-    } catch (error) {
-      if (run === f5Run && error.name !== 'AbortError') {
-        setF5Status(ui, `The experimental voice failed: ${error.message}`, { value: null, busy: false });
-      }
-    } finally {
-      if (run === f5Run) {
-        if (activeF5UI === ui) activeF5UI = null;
-        if (start) start.disabled = false;
-        if (stop) stop.hidden = true;
-        if (voice) voice.disabled = false;
-      }
+      const response = await fetch(url, { method: 'HEAD' });
+      available = response.ok;
+    } catch {
+      available = false;
     }
+    if (run !== f5Run) return;
+    if (!available) {
+      activeF5UI = null;
+      setF5Status(ui, `No ${label} clip exists for this scene. This usually means the story name is not one of the recorded names. Use the normal Listen button, or start a run with the default name.`);
+      return;
+    }
+
+    setF5Status(ui, `Playing with ${label}…`, { busy: true });
+    narrate(spoken, {
+      audioUrl: url,
+      onStart: () => {
+        if (run === f5Run) setF5Status(ui, `Playing with ${label}…`, { busy: true });
+      },
+      onEnd: () => {
+        if (run !== f5Run) return;
+        activeF5UI = null;
+        if (start) start.textContent = 'Play again';
+        setF5Status(ui, `Finished with ${label}. Play again, or pick the other voice.`);
+      },
+      onError: () => {
+        if (run !== f5Run) return;
+        activeF5UI = null;
+        setF5Status(ui, `The ${label} clip could not be played. Try the normal Listen button.`);
+      },
+    });
   });
 }
 
@@ -301,7 +255,7 @@ function resetSagaListen(button) {
 
 function playSagaNarration(button, text, audioUrls = [], { systemOnly = false } = {}) {
   if (!button) return;
-  if (f5Narrator) stopF5();
+  if (activeF5UI) stopF5();
   if (button.dataset.speaking === 'true') {
     stopNarration();
     resetSagaListen(button);
@@ -761,7 +715,7 @@ function renderNode(app, data, state) {
 
         <div class="saga-read-tools">
           <button class="button button--ghost button--small" type="button" data-saga-listen data-listen-target="scene" data-listen-label="Listen to scene" data-testid="saga-listen" aria-label="Listen to this scene">${listenButtonContent('Listen to scene')}</button>
-          ${f5Markup(data, node, text)}
+          ${f5Markup(data)}
         </div>
 
         <div class="saga-text" data-testid="saga-text">

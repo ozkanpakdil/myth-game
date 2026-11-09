@@ -7,7 +7,7 @@
  * opt-in per click, stops on navigation, and degrades quietly.
  */
 
-import { getSettings, updateSettings, STUDIO_VOICES } from './storage.js?v=20261109-2';
+import { getSettings, updateSettings, STUDIO_VOICES } from './storage.js?v=20261110-1';
 
 let generation = 0;
 let currentAudio = null;

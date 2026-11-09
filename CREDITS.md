@@ -21,35 +21,33 @@ Mythos is an educational draft. The retellings are new, short summaries in moder
     or used to deceive a listener. The `morgan` clips carry a
     `Non-commercial (voice clone)` manifest entry; remove them before any
     commercial distribution.
-  - The five newer story paths do not ship recorded clips. They use the
-    reader's installed browser voice, which keeps the download small and lets
-    the stories change without regenerating audio. The Norse saga and the
-    archive stories keep the recorded voices above.
-- **Experimental F5 voice.** The new stories can optionally run
-  [`DownFlow/webasmr-f5tts`](https://huggingface.co/DownFlow/webasmr-f5tts), a
-  4-step int4 browser export of an F5-TTS v1 Base fine-tune, through
-  onnxruntime-web. The base F5-TTS weights are CC-BY-4.0; the published
-  fine-tune is released under `other` and its corpus is **non-commercial**.
-  Treat the experiment as non-commercial and do not sell access to it.
+  - The five newer story paths use the reader's installed browser voice for
+    the normal Listen control, and also ship optional pre-rendered F5 clips.
+    The Norse saga and the archive stories keep the recorded voices above.
+- **Pre-rendered F5 saga voices.** The new stories can optionally play clips
+  generated offline with
+  [`DownFlow/webasmr-f5tts`](https://huggingface.co/DownFlow/webasmr-f5tts).
+  The base F5-TTS weights are CC-BY-4.0; the published fine-tune is released
+  under `other` and its corpus is **non-commercial**. Treat the generated clips
+  as non-commercial and do not sell access to them.
   - The model is an ASMR-oriented fine-tune and its upstream reference pack is
-    not suitable for children. Mythos never loads that pack. The two references
+    not suitable for children. Mythos never uses that pack. The two references
     are **Sonia**, an `en-GB-SoniaNeural` sample from
     [`yaph/tts-samples`](https://github.com/yaph/tts-samples) (the repository is
     MIT-licensed; generated Edge TTS output is subject to Microsoft's terms),
     and **Joe**, a sample supplied by the project owner and trimmed to the first
     seven seconds. Both were converted with `tools/build_f5_reference.py` and
-    live in `assets/f5/refs/`. They are reference material for a non-commercial
-    on-device experiment, not a claim that either voice endorses this project.
-  - `js/f5/vendor/ort/` is onnxruntime-web 1.30.0, MIT-licensed; the licence
-    text is bundled beside it. The rest of the F5 runtime in `js/f5/` is
-    original Mythos code.
-  - The experiment downloads about 425 MB from Hugging Face only after an
-    explicit consent checkbox, caches the weights locally, and never sends
-    story text or generated audio to a server. It is not the default narrator.
+    live in `assets/f5/refs/`. They are reference material for fixed,
+    non-commercial narration clips, not a claim that either voice endorses this
+    project.
+  - The clips live in `assets/f5/clips/`. They are ordinary MP3s served by the
+    site; the browser never loads the F5 model or an ONNX runtime. The authoring
+    runtime is under `tools/f5-runtime/` and is not copied into the published
+    site.
   - The flow/vocoder/ISTFT implementation follows the layout documented in the
     model card and the behaviour of the
     [WebASMR Space](https://huggingface.co/spaces/DownFlow/webasmr); the
-    browser code in this repository is a fresh, simplified implementation for
+    authoring code in this repository is a fresh, simplified implementation for
     Mythos.
 - Fonts are the operating system serif and sans-serif stacks. No external fonts or assets are loaded.
 
@@ -456,6 +454,6 @@ The game uses objects and symbols rather than faces of deities. It does not atte
 
 ## Third-party licences
 
-No third-party fonts, photographs or illustrations are bundled. The optional F5 experiment bundles onnxruntime-web 1.30.0 (MIT) under `js/f5/vendor/ort/`; its licence is included there. `@playwright/test` is a development dependency only and is not shipped to players. The source texts listed above are cited as references; the retellings do not reproduce long passages.
+No third-party fonts, photographs or illustrations are bundled. The authoring-only F5 runtime under `tools/f5-runtime/` uses onnxruntime-web 1.30.0 (MIT); its licence is included there, and the directory is not copied into the published site. `@playwright/test` is a development dependency only and is not shipped to players. The source texts listed above are cited as references; the retellings do not reproduce long passages.
 
-The F5 model weights are downloaded from Hugging Face at runtime, not bundled. The upstream model is a non-commercial research fine-tune; the experiment must not be presented as a commercial voice service. Only the two declared Sonia and Joe reference packs are used, never the upstream ASMR corpus references. The Sonia source repository is MIT-licensed, but its Edge TTS output remains subject to Microsoft's terms; the Joe sample is used on the project owner's instruction. Confirm those terms before redistributing the reference packs.
+The F5 model weights are not shipped and are not downloaded by players. The upstream model is a non-commercial research fine-tune; the generated saga clips must not be presented as a commercial voice service. Only the two declared Sonia and Joe reference packs were used, never the upstream ASMR corpus references. The Sonia source repository is MIT-licensed, but its Edge TTS output remains subject to Microsoft's terms; the Joe sample is used on the project owner's instruction. Confirm those terms before redistributing the reference packs or the generated clips.

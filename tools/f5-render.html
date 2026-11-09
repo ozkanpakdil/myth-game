@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Mythos F5 renderer</title>
+<style>body{font:14px system-ui;margin:2rem;max-width:60rem}code{background:#eee;padding:.1rem .3rem}pre{white-space:pre-wrap}</style>
+</head>
+<body>
+<h1>Mythos F5 renderer</h1>
+<p>Authoring page. The Node runner sends jobs through <code>window.renderJobs</code>; this page synthesizes each scene and posts a WAV to the local runner.</p>
+<pre id="log"></pre>
+<script type="module">
+const WORKER_URL = '/tools/f5-runtime/worker.js?v=20261109-2';
+const SAMPLE_RATE = 24000;
+const GAP_SECONDS = 0.16;
+const MAX_CHUNK = 110;
+
+function log(message) {
+  console.log(message);
+  const line = document.createElement('div');
+  line.textContent = message;
+  document.getElementById('log').append(line);
+}
+
+function splitSentences(text) {
+  return String(text || '').replace(/\s+/g, ' ').split(/(?<=[.!?])\s+/).map((part) => part.trim()).filter(Boolean);
+}
+
+function splitLong(sentence) {
+  const parts = [];
+  let rest = sentence;
+  while (rest.length > MAX_CHUNK) {
+    let cut = rest.lastIndexOf(' ', MAX_CHUNK);
+    if (cut < 30) cut = rest.indexOf(' ', MAX_CHUNK);
+    if (cut < 0) cut = MAX_CHUNK;
+    parts.push(rest.slice(0, cut).trim());
+    rest = rest.slice(cut).trim();
+  }
+  if (rest) parts.push(rest);
+  return parts;
+}
+
+function chunkText(text) {
+  const chunks = [];
+  let current = '';
+  for (const sentence of splitSentences(text)) {
+    for (const part of sentence.length > MAX_CHUNK ? splitLong(sentence) : [sentence]) {
+      if (!current) current = part;
+      else if (current.length + 1 + part.length <= MAX_CHUNK) current += ` ${part}`;
+      else { chunks.push(current); current = part; }
+    }
+  }
+  if (current) chunks.push(current);
+  return chunks;
+}
+
+let worker = null;
+let pending = null;
+let ready = null;
+
+function startWorker() {
+  if (ready) return ready;
+  worker = new Worker(WORKER_URL, { type: 'module' });
+  worker.addEventListener('message', (event) => {
+    const message = event.data || {};
+    if (message.type === 'progress') {
+      if (message.stage === 'download') log(`F5-DOWNLOAD ${message.loaded || 0} / ${message.total || 0}`);
+      return;
+    }
+    if (message.type === 'ready') {
+      log(`F5-READY webgpu=${!!message.webgpu}`);
+      pending?.resolve(message);
+      pending = null;
+      return;
+    }
+    if (message.type === 'audio') {
+      pending?.resolve(message);
+      pending = null;
+      return;
+    }
+    if (message.type === 'idle') return;
+    if (message.type === 'error') {
+      const error = new Error(message.message || 'F5 worker error');
+      pending?.reject(error);
+      pending = null;
+      log(`F5-ERROR ${error.message}`);
+    }
+  });
+  worker.addEventListener('error', (event) => {
+    const error = new Error(event.message || 'F5 worker stopped');
+    pending?.reject(error);
+    pending = null;
+    log(`F5-ERROR ${error.message}`);
+  });
+  ready = new Promise((resolve, reject) => {
+    pending = { resolve, reject };
+    worker.postMessage({ type: 'init' });
+  });
+  return ready;
+}
+
+function ask(message) {
+  return new Promise((resolve, reject) => {
+    pending = { resolve, reject };
+    worker.postMessage(message);
+  });
+}
+
+function concatPcm(parts) {
+  const gap = Math.round(GAP_SECONDS * SAMPLE_RATE);
+  const total = parts.reduce((sum, part) => sum + part.length, 0) + Math.max(0, parts.length - 1) * gap;
+  const out = new Float32Array(total);
+  let offset = 0;
+  parts.forEach((part, index) => {
+    out.set(part, offset);
+    offset += part.length;
+    if (index < parts.length - 1) offset += gap;
+  });
+  return out;
+}
+
+function encodeWav(pcm) {
+  const dataBytes = pcm.length * 2;
+  const buffer = new ArrayBuffer(44 + dataBytes);
+  const view = new DataView(buffer);
+  const write = (offset, text) => { for (let i = 0; i < text.length; i += 1) view.setUint8(offset + i, text.charCodeAt(i)); };
+  write(0, 'RIFF');
+  view.setUint32(4, 36 + dataBytes, true);
+  write(8, 'WAVE');
+  write(12, 'fmt ');
+  view.setUint32(16, 16, true);
+  view.setUint16(20, 1, true);
+  view.setUint16(22, 1, true);
+  view.setUint32(24, SAMPLE_RATE, true);
+  view.setUint32(28, SAMPLE_RATE * 2, true);
+  view.setUint16(32, 2, true);
+  view.setUint16(34, 16, true);
+  write(36, 'data');
+  view.setUint32(40, dataBytes, true);
+  for (let i = 0; i < pcm.length; i += 1) {
+    const sample = Math.max(-1, Math.min(1, pcm[i]));
+    view.setInt16(44 + i * 2, sample < 0 ? sample * 0x8000 : sample * 0x7fff, true);
+  }
+  return new Blob([buffer], { type: 'audio/wav' });
+}
+
+async function renderJob(job) {
+  const chunks = chunkText(job.text);
+  if (!chunks.length) throw new Error('empty text');
+  const parts = [];
+  for (const chunk of chunks) {
+    const result = await ask({ type: 'synthesize', text: chunk, voiceId: job.voice, seed: 1234 });
+    parts.push(result.pcm);
+  }
+  const pcm = concatPcm(parts);
+  const wav = encodeWav(pcm);
+  const response = await fetch(`/__f5_save/${encodeURIComponent(job.voice)}/${encodeURIComponent(job.id)}.wav`, {
+    method: 'POST',
+    body: wav,
+  });
+  if (!response.ok) throw new Error(`save failed: ${response.status}`);
+  return { seconds: pcm.length / SAMPLE_RATE, chunks: chunks.length };
+}
+
+window.renderJobs = async (jobs) => {
+  const started = performance.now();
+  try {
+    await startWorker();
+  } catch (error) {
+    log(`F5-FATAL model could not start: ${error.message}`);
+    window.__f5Done = true;
+    window.__f5Result = { done: 0, failed: jobs.length };
+    return;
+  }
+  let done = 0;
+  let failed = 0;
+  for (const job of jobs) {
+    const jobStarted = performance.now();
+    let result = null;
+    let lastError = null;
+    for (let attempt = 1; attempt <= 2 && !result; attempt += 1) {
+      try {
+        result = await renderJob(job);
+      } catch (error) {
+        lastError = error;
+        log(`F5-RETRY ${job.voice} ${job.saga}/${job.node}: ${error.message}`);
+      }
+    }
+    if (!result) {
+      failed += 1;
+      log(`F5-FAIL ${job.voice} ${job.saga}/${job.node}: ${lastError?.message || 'unknown'}`);
+      continue;
+    }
+    done += 1;
+    const elapsed = ((performance.now() - jobStarted) / 1000).toFixed(1);
+    log(`F5-DONE ${done}/${jobs.length} ${job.voice} ${job.saga}/${job.node} ${result.seconds.toFixed(1)}s in ${elapsed}s`);
+  }
+  const total = ((performance.now() - started) / 1000).toFixed(1);
+  log(`F5-ALL done=${done} failed=${failed} elapsed=${total}s`);
+  window.__f5Done = true;
+  window.__f5Result = { done, failed };
+};
+</script>
+</body>
+</html>

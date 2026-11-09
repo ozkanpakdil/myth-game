@@ -179,6 +179,8 @@ test.describe('Saga library', () => {
     await expect(page.getByTestId('saga-f5-panel')).toBeVisible();
     await expect(page.getByTestId('saga-f5-start')).toBeDisabled();
     await expect(page.getByTestId('saga-f5-stop')).toBeHidden();
+    await expect(page.getByTestId('saga-f5-voice')).toHaveValue('sonia');
+    await expect(page.getByTestId('saga-f5-voice').locator('option')).toHaveText(['Sonia', 'Joe']);
 
     await page.getByTestId('saga-f5-consent').check();
     await expect(page.getByTestId('saga-f5-start')).toBeEnabled();

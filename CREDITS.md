@@ -32,10 +32,14 @@ Mythos is an educational draft. The retellings are new, short summaries in moder
   fine-tune is released under `other` and its corpus is **non-commercial**.
   Treat the experiment as non-commercial and do not sell access to it.
   - The model is an ASMR-oriented fine-tune and its upstream reference pack is
-    not suitable for children. Mythos never loads that pack: the only two
-    references are our own synthetic Piper **Cori** and **Joe** samples
-    (`assets/f5/refs/`), built by `tools/build_f5_reference.py` from clips
-    already in this repository.
+    not suitable for children. Mythos never loads that pack. The two references
+    are **Sonia**, an `en-GB-SoniaNeural` sample from
+    [`yaph/tts-samples`](https://github.com/yaph/tts-samples) (the repository is
+    MIT-licensed; generated Edge TTS output is subject to Microsoft's terms),
+    and **Joe**, a sample supplied by the project owner and trimmed to the first
+    seven seconds. Both were converted with `tools/build_f5_reference.py` and
+    live in `assets/f5/refs/`. They are reference material for a non-commercial
+    on-device experiment, not a claim that either voice endorses this project.
   - `js/f5/vendor/ort/` is onnxruntime-web 1.30.0, MIT-licensed; the licence
     text is bundled beside it. The rest of the F5 runtime in `js/f5/` is
     original Mythos code.
@@ -454,4 +458,4 @@ The game uses objects and symbols rather than faces of deities. It does not atte
 
 No third-party fonts, photographs or illustrations are bundled. The optional F5 experiment bundles onnxruntime-web 1.30.0 (MIT) under `js/f5/vendor/ort/`; its licence is included there. `@playwright/test` is a development dependency only and is not shipped to players. The source texts listed above are cited as references; the retellings do not reproduce long passages.
 
-The F5 model weights are downloaded from Hugging Face at runtime, not bundled. The upstream model is a non-commercial research fine-tune; the experiment must not be presented as a commercial voice service. Only synthetic Mythos reference samples are used, never the upstream ASMR corpus references.
+The F5 model weights are downloaded from Hugging Face at runtime, not bundled. The upstream model is a non-commercial research fine-tune; the experiment must not be presented as a commercial voice service. Only the two declared Sonia and Joe reference packs are used, never the upstream ASMR corpus references. The Sonia source repository is MIT-licensed, but its Edge TTS output remains subject to Microsoft's terms; the Joe sample is used on the project owner's instruction. Confirm those terms before redistributing the reference packs.

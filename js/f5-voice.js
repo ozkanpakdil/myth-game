@@ -143,7 +143,7 @@ export class F5Narrator {
     if (this.worker && this.ready) return this.caps;
     if (this.worker && this.initializing) return this.initializing;
     this.stopped = false;
-    this.worker = new Worker(new URL('./f5/worker.js', import.meta.url), { type: 'module' });
+    this.worker = new Worker(new URL('./f5/worker.js?v=20261109-2', import.meta.url), { type: 'module' });
     this.worker.addEventListener('message', this.handleMessage);
     this.worker.addEventListener('error', (event) => {
       this.ready = false;
@@ -165,7 +165,7 @@ export class F5Narrator {
     return this.initializing;
   }
 
-  async speak(text, { voiceId = 'cori' } = {}) {
+  async speak(text, { voiceId = 'sonia' } = {}) {
     const chunks = chunkText(text);
     if (!chunks.length) throw new Error('There is no text to read.');
     const caps = await this.ensureReady();

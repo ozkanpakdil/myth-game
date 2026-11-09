@@ -131,9 +131,16 @@ box and presses the download button.
   15–20 s on an M-series laptop); later lines take about 3 s for 1.7 s of audio.
   A slow CPU fallback is deliberately not offered in the UI.
 - The upstream model is an **ASMR-oriented, non-commercial research fine-tune**.
-  Mythos uses only its own synthetic Piper Cori and Joe samples as reference
-  voices, never the upstream corpus reference. The experiment is gated behind a
-  grown-up consent checkbox and explained in the panel.
+  The two reference voices are **Sonia** (an `en-GB-SoniaNeural` sample from
+  [`yaph/tts-samples`](https://github.com/yaph/tts-samples)) and **Joe** (the
+  first seven seconds of a sample supplied by the project owner; the full
+  transcript is recorded in the reference metadata). The upstream corpus
+  reference is never loaded. The experiment is gated behind a grown-up consent checkbox and
+  explained in the panel.
+- The sample repository is MIT-licensed, but generated Edge TTS output is
+  subject to Microsoft's terms. The Joe sample is used here on the project
+  owner's instruction; confirm the voice terms before redistributing either
+  reference pack.
 - The reference packs live in `assets/f5/refs/`. To add another voice, make a
   clean 4–8 second sample and run this author-side tool (it needs `ffmpeg` and
   NumPy; neither is shipped to players):
@@ -142,7 +149,10 @@ box and presses the download button.
 python3 tools/build_f5_reference.py \
   --audio path/to/sample.wav \
   --text "The exact words spoken in the sample" \
-  --id my-voice --name "My voice" --out assets/f5/refs
+  --id my-voice --name "My voice" \
+  --source "Where the sample came from" \
+  --license "Rights note for this sample" \
+  --out assets/f5/refs
 ```
 
   Then add the id to the `VOICES` set in `js/f5/worker.js` and the voice

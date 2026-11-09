@@ -25,7 +25,8 @@ const GRAPHS = {
   vocoder: 'vocoder_4s_int4.onnx',
 };
 const REF_BASE = new URL('../../assets/f5/refs/', import.meta.url).href;
-const VOICES = new Set(['cori', 'joe']);
+const VOICES = new Set(['sonia', 'joe']);
+const REF_VERSION = '20261109-2';
 const CACHE_NAME = 'mythos-f5-model-v1';
 const CACHE_CHUNK = 48 * 1024 * 1024;
 
@@ -266,10 +267,10 @@ function tokenize(text) {
 // ---------------------------------------------------------------------------
 
 async function loadVoice(voiceId) {
-  const id = VOICES.has(voiceId) ? voiceId : 'cori';
+  const id = VOICES.has(voiceId) ? voiceId : 'sonia';
   if (voiceCache.has(id)) return voiceCache.get(id);
-  const meta = await fetchJson(`${REF_BASE}${id}.json`);
-  const raw = await (await fetch(`${REF_BASE}${id}.bin`)).arrayBuffer();
+  const meta = await fetchJson(`${REF_BASE}${id}.json?v=${REF_VERSION}`);
+  const raw = await (await fetch(`${REF_BASE}${id}.bin?v=${REF_VERSION}`)).arrayBuffer();
   if (raw.byteLength !== meta.mel_shape[0] * meta.mel_shape[1] * 2) {
     throw new Error(`Voice reference ${id} has an unexpected size`);
   }

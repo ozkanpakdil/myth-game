@@ -9,7 +9,7 @@
  * catalog and one story JSON.
  */
 
-import { loadSagaCatalog, loadSagaStory } from './content.js?v=20261109-1';
+import { loadSagaCatalog, loadSagaStory } from './content.js?v=20261109-2';
 import {
   escapeHtml,
   progressBar,
@@ -17,9 +17,9 @@ import {
   confirmDialog,
   setDocumentTitle,
   listenButtonContent,
-} from './ui.js?v=20261109-1';
-import { sagaScene, sagaGlyph } from './saga-art.js?v=20261109-1';
-import { F5Narrator, canUseWebGPU, clearF5Cache } from './f5-voice.js?v=20261109-1';
+} from './ui.js?v=20261109-2';
+import { sagaScene, sagaGlyph } from './saga-art.js?v=20261109-2';
+import { F5Narrator, canUseWebGPU, clearF5Cache } from './f5-voice.js?v=20261109-2';
 import {
   narrate,
   narrateSequence,
@@ -30,7 +30,7 @@ import {
   selectedStudioVoice,
   voiceChosen,
   sagaAudioUrl,
-} from './narration.js?v=20261109-1';
+} from './narration.js?v=20261109-2';
 import {
   loadSaga as loadSagaRun,
   saveSaga as saveSagaRun,
@@ -40,7 +40,7 @@ import {
   pushHistory,
   applyEffects,
   cleanName,
-} from './saga-state.js?v=20261109-1';
+} from './saga-state.js?v=20261109-2';
 
 const STAT_LABELS = { insight: 'Insight', courage: 'Courage', cunning: 'Cleverness' };
 const MAX_PIPS = 5;
@@ -128,13 +128,13 @@ function f5Markup(data, node, text) {
       <div class="saga-f5__intro">
         <p class="eyebrow">A voice made on your device</p>
         <p class="small">This is a try-it experiment. The first run downloads about <strong>460 MB</strong> (a 425 MB voice model plus its runtime) from Hugging Face, then speaks locally. WebGPU makes it much faster. The normal <strong>Listen</strong> button is still the light, instant way to hear the story.</p>
-        <p class="small muted">Research model, not the standard narrator. Only our synthetic Cori and Joe samples are used as references. It may take a minute to warm up, and it is not recommended on a phone or a metered connection. If a line sounds odd, stop and use the normal <strong>Listen</strong> button.</p>
+        <p class="small muted">Research model, not the standard narrator. Only the selected Sonia and Joe samples are used as references. It may take a minute to warm up, and it is not recommended on a phone or a metered connection. If a line sounds odd, stop and use the normal <strong>Listen</strong> button.</p>
         <label class="saga-f5__consent"><input type="checkbox" data-testid="saga-f5-consent"> <span>I have a grown-up with me, and I understand this downloads about 460 MB.</span></label>
       </div>
       <div class="saga-f5__controls">
         <label class="saga-f5__voice" for="saga-f5-voice">Voice
           <select id="saga-f5-voice" data-testid="saga-f5-voice">
-            <option value="cori">Cori</option>
+            <option value="sonia">Sonia</option>
             <option value="joe">Joe</option>
           </select>
         </label>
@@ -271,7 +271,7 @@ function readF5(app, data, node, text, isEnding) {
     };
     setF5Status(ui, 'Downloading and warming up the experimental voice. You can stop at any time.', { value: null, busy: true });
     try {
-      await narrator.speak(speech.join(' '), { voiceId: voice?.value || 'cori' });
+      await narrator.speak(speech.join(' '), { voiceId: voice?.value || 'sonia' });
     } catch (error) {
       if (run === f5Run && error.name !== 'AbortError') {
         setF5Status(ui, `The experimental voice failed: ${error.message}`, { value: null, busy: false });

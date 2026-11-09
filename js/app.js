@@ -13,7 +13,7 @@ import {
   countWords,
   REGION_ORDER,
   SENSITIVITY_LABEL,
-} from './content.js?v=20261109-1';
+} from './content.js?v=20261109-2';
 import {
   getState,
   getSettings,
@@ -24,7 +24,7 @@ import {
   recordStoryRead,
   awardBadges,
   resetProgress,
-} from './storage.js?v=20261109-1';
+} from './storage.js?v=20261109-2';
 import {
   mythStats,
   overallStats,
@@ -33,8 +33,8 @@ import {
   glossaryUnlockedCount,
   allStoryQuizzesPassed,
   isStoryUnlocked,
-} from './progress.js?v=20261109-1';
-import { badgeCatalog, evaluateBadges } from './badges.js?v=20261109-1';
+} from './progress.js?v=20261109-2';
+import { badgeCatalog, evaluateBadges } from './badges.js?v=20261109-2';
 import {
   escapeHtml,
   iconImg,
@@ -50,19 +50,19 @@ import {
   toast,
   confirmDialog,
   emptyState,
-} from './ui.js?v=20261109-1';
-import { renderQuiz } from './quiz.js?v=20261109-1';
+} from './ui.js?v=20261109-2';
+import { renderQuiz } from './quiz.js?v=20261109-2';
 import {
   renderChallengeHub,
   renderTimelineChallenge,
   renderMatchChallenge,
   renderCultureChallenge,
-} from './challenges.js?v=20261109-1';
-import { renderMap } from './map.js?v=20261109-1';
-import { storyScene, characterPortrait } from './scene.js?v=20261109-1';
-import { sagaScene } from './saga-art.js?v=20261109-1';
-import { renderSaga, sagaContinueHref, sagaSummary } from './saga.js?v=20261109-1';
-import { narrate, stopNarration, speechSupported, availableVoices, narrationSupported, studioAudioUrl } from './narration.js?v=20261109-1';
+} from './challenges.js?v=20261109-2';
+import { renderMap } from './map.js?v=20261109-2';
+import { storyScene, characterPortrait } from './scene.js?v=20261109-2';
+import { sagaScene } from './saga-art.js?v=20261109-2';
+import { renderSaga, sagaContinueHref, sagaSummary } from './saga.js?v=20261109-2';
+import { narrate, stopNarration, speechSupported, availableVoices, narrationSupported, studioAudioUrl } from './narration.js?v=20261109-2';
 
 const app = document.getElementById('app');
 const nav = document.querySelector('.main-nav');

@@ -100,6 +100,8 @@ def main():
     parser.add_argument('--text', required=True, help='exact transcript of the sample')
     parser.add_argument('--id', required=True, help='lowercase id used in the URL and file names')
     parser.add_argument('--name', default='', help='human-readable voice name')
+    parser.add_argument('--source', default='', help='where the sample came from (URL, file, permission note)')
+    parser.add_argument('--license', default='', help='rights or licence note for the sample')
     parser.add_argument('--out', default='assets/f5/refs', help='output directory')
     args = parser.parse_args()
 
@@ -131,6 +133,10 @@ def main():
         'ref_text': text,
         'seconds': round(audio.size / SAMPLE_RATE, 2),
     }
+    if args.source:
+        meta['source'] = args.source
+    if args.license:
+        meta['license'] = args.license
     json_path.write_text(json.dumps(meta, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print(f'wrote {bin_path} ({bin_path.stat().st_size:,} bytes)')
     print(f'wrote {json_path} ({frames} frames, {meta["seconds"]}s)')

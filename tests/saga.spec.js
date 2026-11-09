@@ -152,6 +152,45 @@ test.describe('Saga library', () => {
     await expect.poll(() => page.evaluate(() => window.__sagaSpoken)).toContain('You are Iris');
   });
 
+  test('offers the experimental F5 voice only on new sagas and gates it behind consent', async ({ page }) => {
+    await page.addInitScript(() => {
+      try {
+        Object.defineProperty(Navigator.prototype, 'gpu', { configurable: true, get: () => undefined });
+      } catch {
+        try {
+          Object.defineProperty(navigator, 'gpu', { configurable: true, get: () => undefined });
+        } catch {
+          // The browser does not expose WebGPU; this is the branch under test.
+        }
+      }
+    });
+    let askedHuggingFace = false;
+    page.on('request', (request) => {
+      if (request.url().includes('huggingface.co')) askedHuggingFace = true;
+    });
+
+    await page.goto('/#/saga/greek-olive');
+    await expect(page.getByTestId('saga-landing')).toBeVisible();
+    await page.getByTestId('saga-begin').click();
+    await expect(page.getByTestId('saga-page')).toHaveAttribute('data-node', 'start');
+    await expect(page.getByTestId('saga-f5')).toBeVisible();
+    await expect(page.getByTestId('saga-f5-panel')).toBeHidden();
+    await page.getByTestId('saga-f5-open').click();
+    await expect(page.getByTestId('saga-f5-panel')).toBeVisible();
+    await expect(page.getByTestId('saga-f5-start')).toBeDisabled();
+    await expect(page.getByTestId('saga-f5-stop')).toBeHidden();
+
+    await page.getByTestId('saga-f5-consent').check();
+    await expect(page.getByTestId('saga-f5-start')).toBeEnabled();
+    await page.getByTestId('saga-f5-start').click();
+    await expect(page.getByTestId('saga-f5-status')).toContainText('needs WebGPU');
+    expect(askedHuggingFace).toBe(false);
+
+    await page.goto('/#/saga/norse');
+    await page.getByTestId('saga-begin').click();
+    await expect(page.getByTestId('saga-f5')).toHaveCount(0);
+  });
+
   test('keeps old #/saga/<node> links working and migrates the old save', async ({ page }) => {
     await seedLegacySaga(page, sagaState({ name: 'Michael', node: 'raven-4' }));
     await page.goto('/#/saga/raven-4');
@@ -457,5 +496,12 @@ test.describe('mobile saga', () => {
     }));
     expect(metrics.doc).toBe(metrics.viewport);
     await expect(page.getByTestId('saga-choices')).toBeVisible();
+    await page.getByTestId('saga-f5-open').click();
+    await expect(page.getByTestId('saga-f5-panel')).toBeVisible();
+    metrics = await page.evaluate(() => ({
+      doc: document.documentElement.scrollWidth,
+      viewport: document.documentElement.clientWidth,
+    }));
+    expect(metrics.doc).toBe(metrics.viewport);
   });
 });

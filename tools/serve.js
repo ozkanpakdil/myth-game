@@ -33,6 +33,7 @@ const MIME = {
   '.ogg': 'audio/ogg',
   '.wav': 'audio/wav',
   '.webm': 'audio/webm',
+  '.wasm': 'application/wasm',
 };
 
 const server = http.createServer(async (request, response) => {

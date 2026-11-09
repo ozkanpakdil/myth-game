@@ -113,6 +113,42 @@ sagas are English-only. Names use common English spellings, and living
 traditions are presented with care: the Hindu and Japanese notes explain
 multiple tellings and treat the figures with respect.
 
+### Experimental F5 voice (new stories only)
+
+The five newer stories also have an explicit **F5 voice** experiment beside the
+normal Listen control. It runs
+[`DownFlow/webasmr-f5tts`](https://huggingface.co/DownFlow/webasmr-f5tts) in a
+Web Worker with [onnxruntime-web](https://onnxruntime.ai/docs/tutorials/web/) —
+no server, no account and no audio leaves the device. It is not the default and
+nothing downloads until a reader opens the panel, checks the grown-up consent
+box and presses the download button.
+
+- The first run fetches the 4-step int4 DiT (about 425 MB), the vocoder (about
+  9 MB) and the vendored runtime (about 27 MB), then stores the voice weights
+  in Cache Storage in 48 MB chunks (about 434 MB on disk). Later visits load
+  the saved copy. The "Forget the saved voice" link removes it.
+- WebGPU is required for usable speed. The first line compiles kernels (roughly
+  15–20 s on an M-series laptop); later lines take about 3 s for 1.7 s of audio.
+  A slow CPU fallback is deliberately not offered in the UI.
+- The upstream model is an **ASMR-oriented, non-commercial research fine-tune**.
+  Mythos uses only its own synthetic Piper Cori and Joe samples as reference
+  voices, never the upstream corpus reference. The experiment is gated behind a
+  grown-up consent checkbox and explained in the panel.
+- The reference packs live in `assets/f5/refs/`. To add another voice, make a
+  clean 4–8 second sample and run this author-side tool (it needs `ffmpeg` and
+  NumPy; neither is shipped to players):
+
+```bash
+python3 tools/build_f5_reference.py \
+  --audio path/to/sample.wav \
+  --text "The exact words spoken in the sample" \
+  --id my-voice --name "My voice" --out assets/f5/refs
+```
+
+  Then add the id to the `VOICES` set in `js/f5/worker.js` and the voice
+  `<select>` in `js/saga.js`. Only use a voice you have permission to clone;
+  the tool writes the float16 log-mel layout the model expects.
+
 ### Game rules
 
 - Story 1 of each tradition is open. Passing a story quiz (70%, i.e. 3/4 or
@@ -174,6 +210,9 @@ js/
   saga.js               story library, per-saga landing, scene reader, choices and endings
   saga-art.js           animated inline-SVG saga scenes and path glyphs
   saga-state.js         per-story save/rewind/effects with v1 migration
+  f5-voice.js           lazy client for the experimental on-device F5 voice
+  f5/worker.js          F5 flow, vocoder and chunked Cache Storage worker
+  f5/vendor/ort/        vendored onnxruntime-web (MIT) used only by F5
   narration.js          studio-clip playback with browser speech fallback
   ui.js                 shared escaping, formatting and dialog helpers
 content/
@@ -191,6 +230,7 @@ audio/
   voices/               joe, cori and morgan narration clips
   samples/              short in-dialog audition files
 assets/
+  f5/refs/              float16 reference mel packs for the F5 experiment
   palette.json          16-key pixel palette
   sprites/icons/        16×16 text grids: mythology sigils and map markers
   svg/icons/            generated SVG sigils
@@ -312,7 +352,8 @@ per-story state, a complete Greek path, browser-voice narration for the new
 stories, legacy-link migration, name entry and the default protagonist,
 progressive reveal, scene and paragraph narration, the myth note, gated
 choices, persistence and resume, in-game back, restart confirmation, ending
-collection and mobile overflow.
+collection, mobile overflow, and the F5 consent/WebGPU gate. The full 425 MB
+model is not downloaded in CI.
 
 ```bash
 npm test
@@ -353,12 +394,16 @@ layout. Hash routes need no rewrite rules.
 The published build loads Google Analytics 4 with measurement ID
 `G-NSB9K61M5S`. The tag is deliberately skipped on `localhost`/`127.0.0.1` so
 local development and the Playwright suite stay quiet. Progress and settings
-remain in `localStorage`; no game progress is sent to analytics. Add a consent
-banner before promoting the site if your audience or jurisdiction requires one.
+remain in `localStorage`; no game progress is sent to analytics. The F5
+experiment makes no Hugging Face request until a reader opts in, then caches the
+weights locally. Add a consent banner before promoting the site if your audience
+or jurisdiction requires one.
 
 ## Licence and credits
 
 Code and original SVG art: the Mythos project. Retellings are new summaries,
 not translations; source notes are listed per tradition in `CREDITS.md` and in
 the game. No third-party fonts or images are used. Google Analytics is the
-only third-party script on the published site.
+only third-party script on the published site. The optional F5 experiment
+bundles onnxruntime-web (MIT) and, after opt-in, downloads the non-commercial
+WebASMR F5-TTS fine-tune from Hugging Face; see `CREDITS.md`.

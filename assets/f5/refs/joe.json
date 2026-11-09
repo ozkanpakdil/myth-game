@@ -1,0 +1,14 @@
+{
+  "id": "joe",
+  "name": "Joe",
+  "mel_file": "joe.bin",
+  "mel_shape": [
+    100,
+    505
+  ],
+  "dtype": "float16",
+  "ref_text": "The seed was warm. Thor waited. For a god of thunder, he was patient when it mattered.",
+  "seconds": 5.38,
+  "source": "Piper synthetic narrator sample, clipped from audio/voices/joe/saga/8ca16911.mp3",
+  "license": "Synthetic Piper voice sample; not a human recording."
+}

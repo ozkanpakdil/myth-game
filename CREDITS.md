@@ -25,6 +25,28 @@ Mythos is an educational draft. The retellings are new, short summaries in moder
     reader's installed browser voice, which keeps the download small and lets
     the stories change without regenerating audio. The Norse saga and the
     archive stories keep the recorded voices above.
+- **Experimental F5 voice.** The new stories can optionally run
+  [`DownFlow/webasmr-f5tts`](https://huggingface.co/DownFlow/webasmr-f5tts), a
+  4-step int4 browser export of an F5-TTS v1 Base fine-tune, through
+  onnxruntime-web. The base F5-TTS weights are CC-BY-4.0; the published
+  fine-tune is released under `other` and its corpus is **non-commercial**.
+  Treat the experiment as non-commercial and do not sell access to it.
+  - The model is an ASMR-oriented fine-tune and its upstream reference pack is
+    not suitable for children. Mythos never loads that pack: the only two
+    references are our own synthetic Piper **Cori** and **Joe** samples
+    (`assets/f5/refs/`), built by `tools/build_f5_reference.py` from clips
+    already in this repository.
+  - `js/f5/vendor/ort/` is onnxruntime-web 1.30.0, MIT-licensed; the licence
+    text is bundled beside it. The rest of the F5 runtime in `js/f5/` is
+    original Mythos code.
+  - The experiment downloads about 425 MB from Hugging Face only after an
+    explicit consent checkbox, caches the weights locally, and never sends
+    story text or generated audio to a server. It is not the default narrator.
+  - The flow/vocoder/ISTFT implementation follows the layout documented in the
+    model card and the behaviour of the
+    [WebASMR Space](https://huggingface.co/spaces/DownFlow/webasmr); the
+    browser code in this repository is a fresh, simplified implementation for
+    Mythos.
 - Fonts are the operating system serif and sans-serif stacks. No external fonts or assets are loaded.
 
 ## Sources by tradition
@@ -430,4 +452,6 @@ The game uses objects and symbols rather than faces of deities. It does not atte
 
 ## Third-party licences
 
-No third-party code, fonts, photographs or illustrations are bundled. `@playwright/test` is a development dependency only and is not shipped to players. The source texts listed above are cited as references; the retellings do not reproduce long passages.
+No third-party fonts, photographs or illustrations are bundled. The optional F5 experiment bundles onnxruntime-web 1.30.0 (MIT) under `js/f5/vendor/ort/`; its licence is included there. `@playwright/test` is a development dependency only and is not shipped to players. The source texts listed above are cited as references; the retellings do not reproduce long passages.
+
+The F5 model weights are downloaded from Hugging Face at runtime, not bundled. The upstream model is a non-commercial research fine-tune; the experiment must not be presented as a commercial voice service. Only synthetic Mythos reference samples are used, never the upstream ASMR corpus references.

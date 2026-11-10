@@ -120,7 +120,32 @@ test.describe('Saga library', () => {
     await expect(page.getByTestId('saga-card-greek-olive')).toContainText('Continue as Iris');
   });
 
-  test('uses the browser voice for the new stories without asking for a studio narrator', async ({ page }) => {
+  test('uses one shared studio voice picker on every saga', async ({ page }) => {
+    await page.goto('/#/saga/greek-olive');
+    await page.getByTestId('saga-name').fill('Iris');
+    await page.getByTestId('saga-begin').click();
+    await expect(page.getByTestId('saga-page')).toHaveAttribute('data-node', 'start');
+    await expect(page.getByTestId('saga-voice')).toHaveCount(0);
+    await expect(page.getByTestId('saga-listen')).toBeVisible();
+
+    await page.getByTestId('saga-listen-0').click();
+    await expect(page.getByTestId('voice-dialog')).toBeVisible();
+    await expect(page.getByTestId('studio-voice-sonia')).toBeChecked();
+    await expect(page.getByTestId('studio-voice-status')).toContainText('Sonia is selected');
+    await page.getByTestId('voice-close').click();
+
+    const clip = page.waitForRequest((request) => /\/audio\/voices\/sonia\/saga\/[0-9a-f]{8}\.mp3/.test(request.url()));
+    await page.getByTestId('saga-listen-0').click();
+    await expect(clip).resolves.toBeTruthy();
+
+    await page.goto('/#/saga/norse');
+    await page.getByTestId('saga-begin').click();
+    await expect(page.getByTestId('saga-page')).toHaveAttribute('data-node', 'prologue');
+    await expect(page.getByTestId('saga-voice')).toHaveCount(0);
+    await expect(page.getByTestId('saga-listen')).toBeVisible();
+  });
+
+  test('falls back to the system voice when no studio narrator is selected', async ({ page }) => {
     await page.addInitScript(() => {
       class FakeUtterance {
         constructor(text) {
@@ -141,6 +166,9 @@ test.describe('Saga library', () => {
       };
       Object.defineProperty(window, 'SpeechSynthesisUtterance', { configurable: true, value: FakeUtterance });
       Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: synth });
+      localStorage.setItem('mythos.settings.v1', JSON.stringify({
+        theme: 'dark', fontScale: 'md', audio: true, voice: '', studioVoice: '', voiceChosen: true,
+      }));
     });
 
     await page.goto('/#/saga/greek-olive');
@@ -152,55 +180,20 @@ test.describe('Saga library', () => {
     await expect.poll(() => page.evaluate(() => window.__sagaSpoken)).toContain('You are Iris');
   });
 
-  test('offers pre-recorded Sonia and Eric studio clips only on the new sagas', async ({ page }) => {
-    let askedHuggingFace = false;
-    page.on('request', (request) => {
-      if (request.url().includes('huggingface.co')) askedHuggingFace = true;
-    });
-
+  test('applies a newly chosen Eric to the next saga Listen', async ({ page }) => {
     await page.goto('/#/saga/greek-olive');
-    await expect(page.getByTestId('saga-landing')).toBeVisible();
+    await page.getByTestId('saga-name').fill('Iris');
     await page.getByTestId('saga-begin').click();
-    await expect(page.getByTestId('saga-page')).toHaveAttribute('data-node', 'start');
-    await expect(page.getByTestId('saga-voice')).toBeVisible();
-    await expect(page.getByTestId('saga-voice-panel')).toBeHidden();
-    await page.getByTestId('saga-voice-open').click();
-    await expect(page.getByTestId('saga-voice-panel')).toBeVisible();
-    await expect(page.getByTestId('saga-voice-panel')).toContainText('Nothing downloads here');
-    await expect(page.getByTestId('saga-voice-start')).toBeEnabled();
-    await expect(page.getByTestId('saga-voice-stop')).toBeHidden();
-    await expect(page.getByTestId('saga-voice-select')).toHaveValue('sonia');
-    await expect(page.getByTestId('saga-voice-select').locator('option')).toHaveText(['Sonia', 'Eric']);
-    expect(askedHuggingFace).toBe(false);
 
-    await page.goto('/#/saga/norse');
-    await page.getByTestId('saga-begin').click();
-    await expect(page.getByTestId('saga-voice')).toHaveCount(0);
-  });
+    await page.locator('#audio-toggle').click();
+    await page.getByTestId('studio-voice-eric').check();
+    await expect(page.getByTestId('studio-voice-status')).toContainText('Eric is selected');
+    await page.getByTestId('voice-close').click();
 
-  test('plays the pre-rendered Sonia clip for the default Greek opening', async ({ page }) => {
-    await page.goto('/#/saga/greek-olive');
-    await page.getByTestId('saga-begin').click();
-    await expect(page.getByTestId('saga-page')).toHaveAttribute('data-node', 'start');
-    await page.getByTestId('saga-voice-open').click();
-    const clip = page.waitForRequest((request) => /\/audio\/saga\/sonia\/[0-9a-f]{8}\.mp3/.test(request.url()));
-    await page.getByTestId('saga-voice-start').click();
-    await expect(page.getByTestId('saga-voice-status')).toContainText('Playing with Sonia');
+    const clip = page.waitForRequest((request) => /\/audio\/voices\/eric\/saga\/[0-9a-f]{8}\.mp3/.test(request.url()));
+    await page.getByTestId('saga-listen-0').click();
     await expect(clip).resolves.toBeTruthy();
-    await page.getByTestId('saga-voice-stop').click();
-    await expect(page.getByTestId('saga-voice-status')).toContainText('Stopped');
-  });
-
-  test('explains when a custom name has no pre-rendered studio clip', async ({ page }) => {
-    await page.goto('/#/saga/greek-olive');
-    await page.getByTestId('saga-name').fill('Zephyr');
-    await page.getByTestId('saga-begin').click();
-    await expect(page.getByTestId('saga-page')).toHaveAttribute('data-node', 'start');
-    await page.getByTestId('saga-voice-open').click();
-    await page.getByTestId('saga-voice-start').click();
-    await expect(page.getByTestId('saga-voice-status')).toContainText('No Sonia clip exists');
-    await expect(page.getByTestId('saga-voice-stop')).toBeHidden();
-    await expect(page.getByTestId('saga-voice-start')).toBeEnabled();
+    await expect(page.getByTestId('saga-listen-0')).toContainText('Stop');
   });
 
   test('keeps old #/saga/<node> links working and migrates the old save', async ({ page }) => {
@@ -308,19 +301,19 @@ test.describe('branching play', () => {
     expect(fullScene.length).toBeGreaterThan(firstParagraph.length);
   });
 
-  test('asks for a narrator on the first Listen and uses Morgan once chosen', async ({ page }) => {
+  test('asks for a narrator on the first Listen and uses Sonia once chosen', async ({ page }) => {
     await page.goto('/#/saga/norse');
     await page.getByTestId('saga-name').fill('Michael');
     await page.getByTestId('saga-begin').click();
 
     await page.getByTestId('saga-listen-0').click();
     await expect(page.getByTestId('voice-dialog')).toBeVisible();
-    await expect(page.getByTestId('studio-voice-morgan')).toBeChecked();
-    await expect(page.getByTestId('studio-voice-status')).toContainText('Morgan is selected');
+    await expect(page.getByTestId('studio-voice-sonia')).toBeChecked();
+    await expect(page.getByTestId('studio-voice-status')).toContainText('Sonia is selected');
     await page.getByTestId('voice-close').click();
     await expect(page.getByTestId('voice-dialog')).not.toBeVisible();
 
-    const clip = page.waitForRequest((request) => request.url().includes('/audio/voices/morgan/saga/'));
+    const clip = page.waitForRequest((request) => request.url().includes('/audio/voices/sonia/saga/'));
     await page.getByTestId('saga-listen-0').click();
     await clip;
   });
@@ -337,10 +330,10 @@ test.describe('branching play', () => {
 
     await page.locator('#audio-toggle').click();
     await expect(page.getByTestId('saga-listen-0')).toContainText('Listen');
-    await page.getByTestId('studio-voice-joe').check();
+    await page.getByTestId('studio-voice-eric').check();
     await page.getByTestId('voice-close').click();
 
-    const clip = page.waitForRequest((request) => request.url().includes('/audio/voices/joe/saga/'));
+    const clip = page.waitForRequest((request) => request.url().includes('/audio/voices/eric/saga/'));
     await page.getByTestId('saga-listen-0').click();
     await clip;
   });
@@ -543,8 +536,7 @@ test.describe('mobile saga', () => {
     }));
     expect(metrics.doc).toBe(metrics.viewport);
     await expect(page.getByTestId('saga-choices')).toBeVisible();
-    await page.getByTestId('saga-voice-open').click();
-    await expect(page.getByTestId('saga-voice-panel')).toBeVisible();
+    await expect(page.getByTestId('saga-listen')).toBeVisible();
     metrics = await page.evaluate(() => ({
       doc: document.documentElement.scrollWidth,
       viewport: document.documentElement.clientWidth,

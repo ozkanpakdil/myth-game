@@ -135,7 +135,9 @@ function loadState() {
 }
 
 /** Studio narrators that have pre-generated clips under audio/voices/. */
-export const STUDIO_VOICES = ['cori', 'joe', 'morgan'];
+export const STUDIO_VOICES = ['sonia', 'eric', 'morgan'];
+
+const STUDIO_ALIASES = { cori: 'sonia', joe: 'eric' };
 
 const SYSTEM_LIGHT_QUERY = '(prefers-color-scheme: light)';
 const THEME_MODES = ['system', 'light', 'dark'];
@@ -155,7 +157,7 @@ export function resolveTheme(mode) {
 }
 
 function defaultSettings() {
-  return { themeMode: 'system', fontScale: 'md', audio: true, voice: '', studioVoice: 'morgan', voiceChosen: false };
+  return { themeMode: 'system', fontScale: 'md', audio: true, voice: '', studioVoice: 'sonia', voiceChosen: false };
 }
 
 /**
@@ -182,7 +184,9 @@ function loadSettings() {
       voice: typeof parsed.voice === 'string' ? parsed.voice.slice(0, 200) : '',
       studioVoice: parsed.studioVoice === ''
         ? ''
-        : (STUDIO_VOICES.includes(parsed.studioVoice) ? parsed.studioVoice : 'morgan'),
+        : (STUDIO_VOICES.includes(parsed.studioVoice)
+          ? parsed.studioVoice
+          : (STUDIO_ALIASES[parsed.studioVoice] || 'sonia')),
       voiceChosen: typeof parsed.voiceChosen === 'boolean'
         ? parsed.voiceChosen
         : (Object.prototype.hasOwnProperty.call(parsed, 'studioVoice') || Boolean(parsed.voice)),

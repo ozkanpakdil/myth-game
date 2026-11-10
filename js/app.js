@@ -13,7 +13,7 @@ import {
   countWords,
   REGION_ORDER,
   SENSITIVITY_LABEL,
-} from './content.js?v=20261110-3';
+} from './content.js?v=20261110-4';
 import {
   getState,
   getSettings,
@@ -24,7 +24,7 @@ import {
   recordStoryRead,
   awardBadges,
   resetProgress,
-} from './storage.js?v=20261110-3';
+} from './storage.js?v=20261110-4';
 import {
   mythStats,
   overallStats,
@@ -33,8 +33,8 @@ import {
   glossaryUnlockedCount,
   allStoryQuizzesPassed,
   isStoryUnlocked,
-} from './progress.js?v=20261110-3';
-import { badgeCatalog, evaluateBadges } from './badges.js?v=20261110-3';
+} from './progress.js?v=20261110-4';
+import { badgeCatalog, evaluateBadges } from './badges.js?v=20261110-4';
 import {
   escapeHtml,
   iconImg,
@@ -50,19 +50,19 @@ import {
   toast,
   confirmDialog,
   emptyState,
-} from './ui.js?v=20261110-3';
-import { renderQuiz } from './quiz.js?v=20261110-3';
+} from './ui.js?v=20261110-4';
+import { renderQuiz } from './quiz.js?v=20261110-4';
 import {
   renderChallengeHub,
   renderTimelineChallenge,
   renderMatchChallenge,
   renderCultureChallenge,
-} from './challenges.js?v=20261110-3';
-import { renderMap } from './map.js?v=20261110-3';
-import { storyScene, characterPortrait } from './scene.js?v=20261110-3';
-import { sagaScene } from './saga-art.js?v=20261110-3';
-import { renderSaga, sagaContinueHref, sagaSummary } from './saga.js?v=20261110-3';
-import { narrate, stopNarration, speechSupported, availableVoices, narrationSupported, studioAudioUrl } from './narration.js?v=20261110-3';
+} from './challenges.js?v=20261110-4';
+import { renderMap } from './map.js?v=20261110-4';
+import { storyScene, characterPortrait } from './scene.js?v=20261110-4';
+import { sagaScene } from './saga-art.js?v=20261110-4';
+import { renderSaga, sagaContinueHref, sagaSummary } from './saga.js?v=20261110-4';
+import { narrate, stopNarration, speechSupported, availableVoices, narrationSupported, studioAudioUrl } from './narration.js?v=20261110-4';
 
 const app = document.getElementById('app');
 const nav = document.querySelector('.main-nav');
@@ -119,15 +119,15 @@ function applySettings(settings = getSettings()) {
   if (narrationToggle) narrationToggle.checked = settings.audio !== false;
 }
 
-const STUDIO_LABELS = { cori: 'Cori', joe: 'Joe', morgan: 'Morgan' };
+const STUDIO_LABELS = { sonia: 'Sonia', eric: 'Eric', morgan: 'Morgan' };
 
 function updateStudioVoiceUI() {
   const saved = getSettings().studioVoice || '';
   const status = document.getElementById('studio-voice-status');
   if (!status) return;
   status.textContent = saved
-    ? `${STUDIO_LABELS[saved] || saved} is selected. Listen uses ${STUDIO_LABELS[saved] || saved}'s recorded narration for stories and the Norse saga. The new story paths use your browser voice so they can grow without new recordings.`
-    : 'System voice selected. Listen uses your installed voice. The new story paths always use your browser voice.';
+    ? `${STUDIO_LABELS[saved] || saved} is selected. Listen uses ${STUDIO_LABELS[saved] || saved}'s recorded narration across stories, quizzes and every saga.`
+    : 'System voice selected. Listen uses your installed voice across the site.';
 }
 
 function chooseStudioVoice(input) {
@@ -1332,7 +1332,7 @@ async function renderAbout() {
       <p>The game uses native links and buttons, a skip link, visible focus styles, quiz results that take focus so they are read aloud, keyboard-operable challenges and a text-size control. Animations are minimal and respect <code>prefers-reduced-motion</code>. The world map has a list-view alternative.</p>
       <h2>Images and narration</h2>
       <p>All images are original SVG: sixteen-pixel sigils, story scenes, quiz clues and character portraits are built from a small palette and a deterministic pixel grid. The map is an inline SVG built from a text tile grid. No photographs or generated raster art are used.</p>
-      <p>Narration is optional. Choose a generated narrator (Joe, Cori or Morgan) in the speaker menu, or use any installed system voice as the fallback. Joe and Cori are open-voice models with permissive licences; Morgan is a fan-made voice clone of a public figure, licensed for non-commercial use only and never presented as an endorsement. No audio is sent to a server. Use the Listen button beside a story or question.</p>
+      <p>Narration is optional. Choose a generated narrator (Sonia, Eric or Morgan) in the speaker menu, or use any installed system voice as the fallback. Sonia and Eric are Microsoft Edge neural voices with recorded clips across the site; Morgan is a fan-made voice clone of a public figure, licensed for non-commercial use only and never presented as an endorsement. No audio is sent to a server. Use the Listen button beside a story, question or saga scene.</p>
     </section>
 
     <section class="panel">

@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#0e1310" id="theme-color">
     <title>Mythos · A world mythology game</title>
     <link rel="icon" href="assets/svg/logo.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="css/style.css?v=20261110-3">
+    <link rel="stylesheet" href="css/style.css?v=20261110-4">
     <!-- Google tag (gtag.js). Kept off localhost so development and tests stay quiet. -->
     <script>
       (function () {
@@ -144,7 +144,7 @@
       <form method="dialog" class="dialog__panel">
         <p class="eyebrow">Narration</p>
         <h2 class="dialog__title" id="voice-dialog-title">Choose a voice</h2>
-        <p class="dialog__body">Morgan is selected by default. Choose any voice below; the change applies the next time you press Listen.</p>
+        <p class="dialog__body">Sonia is selected by default. Choose any voice below; the change applies the next time you press Listen.</p>
         <label class="narration-switch" for="narration-enabled">
           <span><strong>Narration</strong><small>Read aloud when you press Listen.</small></span>
           <input type="checkbox" id="narration-enabled" data-testid="narration-enabled">
@@ -155,22 +155,22 @@
         </select>
         <p class="voice-note" id="voice-note" data-testid="voice-note" aria-live="polite">Looking for voices…</p>
         <section class="studio-samples" aria-labelledby="studio-samples-title">
-          <h3 class="studio-samples__title" id="studio-samples-title">Try a local neural narrator</h3>
-          <p class="studio-samples__note">Audition each, then choose one. The studio voices have recorded story clips and the Norse saga. The five new story paths use your browser voice, so they can grow without new recordings.</p>
-          <p class="studio-samples__status" id="studio-voice-status" data-testid="studio-voice-status" aria-live="polite">Morgan is selected by default.</p>
+          <h3 class="studio-samples__title" id="studio-samples-title">Choose a studio narrator</h3>
+          <p class="studio-samples__note">Audition the voices, then choose one. Sonia and Eric have recorded clips for every story, quiz and saga, so the same narrator follows you across the whole site.</p>
+          <p class="studio-samples__status" id="studio-voice-status" data-testid="studio-voice-status" aria-live="polite">Sonia is selected by default.</p>
           <div class="studio-sample">
             <label class="studio-sample__choice">
-              <input type="radio" name="studio-voice" value="cori" data-testid="studio-voice-cori">
-              <span><strong>Cori</strong><small>British English · public domain</small></span>
+              <input type="radio" name="studio-voice" value="sonia" data-testid="studio-voice-sonia">
+              <span><strong>Sonia</strong><small>British English · Microsoft neural</small></span>
             </label>
-            <audio controls preload="none" src="audio/samples/en_GB-cori-high.mp3" data-testid="studio-sample-cori" aria-label="Cori voice sample"></audio>
+            <audio controls preload="none" src="audio/samples/sonia.mp3" data-testid="studio-sample-sonia" aria-label="Sonia voice sample"></audio>
           </div>
           <div class="studio-sample">
             <label class="studio-sample__choice">
-              <input type="radio" name="studio-voice" value="joe" data-testid="studio-voice-joe">
-              <span><strong>Joe</strong><small>American English · CC0</small></span>
+              <input type="radio" name="studio-voice" value="eric" data-testid="studio-voice-eric">
+              <span><strong>Eric</strong><small>American English · Microsoft neural</small></span>
             </label>
-            <audio controls preload="none" src="audio/samples/en_US-joe-medium.mp3" data-testid="studio-sample-joe" aria-label="Joe voice sample"></audio>
+            <audio controls preload="none" src="audio/samples/eric.mp3" data-testid="studio-sample-eric" aria-label="Eric voice sample"></audio>
           </div>
           <div class="studio-sample">
             <label class="studio-sample__choice">
@@ -185,7 +185,7 @@
               <span><strong>System voice</strong><small>Use my installed voice only</small></span>
             </label>
           </div>
-          <p class="studio-samples__note" data-testid="studio-voice-disclosure">Morgan is a fan-made voice clone of a public figure, generated on-device and licensed for non-commercial use. Do not imply the person's endorsement or use it to deceive.</p>
+          <p class="studio-samples__note" data-testid="studio-voice-disclosure">Morgan is a fan-made voice clone of a public figure with pre-recorded clips, licensed for non-commercial use only. Do not imply the person's endorsement or use it to deceive.</p>
         </section>
         <p class="voice-tip"><strong>Want a more human voice?</strong> Install a Premium or Enhanced system voice: on macOS, System Settings → Accessibility → Spoken Content → Manage Voices; on Windows, Settings → Time &amp; language → Speech. The list updates after a refresh.</p>
         <div class="dialog__actions">
@@ -197,6 +197,6 @@
 
     <div id="toast" role="status" aria-live="polite"></div>
 
-    <script type="module" src="js/app.js?v=20261110-3"></script>
+    <script type="module" src="js/app.js?v=20261110-4"></script>
   </body>
 </html>

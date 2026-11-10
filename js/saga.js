@@ -9,7 +9,7 @@
  * catalog and one story JSON.
  */
 
-import { loadSagaCatalog, loadSagaStory } from './content.js?v=20261110-3';
+import { loadSagaCatalog, loadSagaStory } from './content.js?v=20261110-4';
 import {
   escapeHtml,
   progressBar,
@@ -17,9 +17,8 @@ import {
   confirmDialog,
   setDocumentTitle,
   listenButtonContent,
-} from './ui.js?v=20261110-3';
-import { sagaScene, sagaGlyph } from './saga-art.js?v=20261110-3';
-import { sagaVoiceUrl, sagaVoiceLabel } from './saga-voice.js?v=20261110-3';
+} from './ui.js?v=20261110-4';
+import { sagaScene, sagaGlyph } from './saga-art.js?v=20261110-4';
 import {
   narrate,
   narrateSequence,
@@ -30,7 +29,7 @@ import {
   selectedStudioVoice,
   voiceChosen,
   sagaAudioUrl,
-} from './narration.js?v=20261110-3';
+} from './narration.js?v=20261110-4';
 import {
   loadSaga as loadSagaRun,
   saveSaga as saveSagaRun,
@@ -40,7 +39,7 @@ import {
   pushHistory,
   applyEffects,
   cleanName,
-} from './saga-state.js?v=20261110-3';
+} from './saga-state.js?v=20261110-4';
 
 const STAT_LABELS = { insight: 'Insight', courage: 'Courage', cunning: 'Cleverness' };
 const MAX_PIPS = 5;
@@ -114,132 +113,6 @@ function boonList(data, state) {
 /* ------------------------------------------------------------------ */
 
 let activeSagaListen = null;
-let activeSagaVoice = null;
-let sagaVoiceRun = 0;
-
-function sagaVoiceMarkup(data) {
-  if (data.studio_clips !== false) return '';
-  return `<div class="saga-voices" data-testid="saga-voice">
-    <button class="button button--ghost button--small saga-voices__toggle" type="button" data-testid="saga-voice-open" aria-expanded="false" aria-controls="saga-voice-panel">
-      Sonia &amp; Eric <span class="pill pill--quiet">Studio</span>
-    </button>
-    <div class="saga-voices__panel" id="saga-voice-panel" data-testid="saga-voice-panel" hidden>
-      <div class="saga-voices__intro">
-        <p class="eyebrow">Two ready-made narrators</p>
-        <p class="small">These scenes are pre-recorded with Microsoft Edge's natural neural voices. Choose Sonia or Eric. Nothing downloads here, and there is no waiting between sentences.</p>
-        <p class="small muted">Both are fixed studio voices. Clips use the story's default name; if you chose a different name, the normal <strong>Listen</strong> button is the fallback for that scene.</p>
-      </div>
-      <div class="saga-voices__controls">
-        <label class="saga-voices__voice" for="saga-voice-select">Voice
-          <select id="saga-voice-select" data-testid="saga-voice-select">
-            <option value="sonia">Sonia</option>
-            <option value="eric">Eric</option>
-          </select>
-        </label>
-        <button class="button button--primary button--small" type="button" data-testid="saga-voice-start">Play scene</button>
-        <button class="button button--ghost button--small" type="button" data-testid="saga-voice-stop" hidden>Stop</button>
-      </div>
-      <p class="small saga-voices__status" data-testid="saga-voice-status" role="status" aria-live="polite">Ready when you are.</p>
-    </div>
-  </div>`;
-}
-
-function setSagaVoiceStatus(ui, message, { busy = false } = {}) {
-  if (!ui) return;
-  if (ui.status) ui.status.textContent = message;
-  if (ui.start) ui.start.disabled = busy;
-  if (ui.stop) ui.stop.hidden = !busy;
-  if (ui.voice) ui.voice.disabled = busy;
-}
-
-function stopSagaVoice({ silent = false } = {}) {
-  sagaVoiceRun += 1;
-  stopNarration();
-  const ui = activeSagaVoice;
-  activeSagaVoice = null;
-  if (ui && !silent) {
-    setSagaVoiceStatus(ui, 'Stopped. You can play it again whenever you like.');
-  }
-}
-
-function readSagaVoice(app, data, node, text, isEnding) {
-  const root = app.querySelector('[data-testid="saga-voice"]');
-  if (!root) return;
-  const panel = root.querySelector('[data-testid="saga-voice-panel"]');
-  const open = root.querySelector('[data-testid="saga-voice-open"]');
-  const start = root.querySelector('[data-testid="saga-voice-start"]');
-  const stop = root.querySelector('[data-testid="saga-voice-stop"]');
-  const voice = root.querySelector('[data-testid="saga-voice-select"]');
-  const status = root.querySelector('[data-testid="saga-voice-status"]');
-  const ui = { panel, open, start, stop, voice, status };
-
-  open?.addEventListener('click', () => {
-    panel.hidden = !panel.hidden;
-    open.setAttribute('aria-expanded', String(!panel.hidden));
-    if (!panel.hidden) start?.focus({ preventScroll: true });
-  });
-
-  voice?.addEventListener('change', () => {
-    if (!activeSagaVoice && start) start.textContent = 'Play scene';
-  });
-
-  stop?.addEventListener('click', () => stopSagaVoice());
-
-  start?.addEventListener('click', async () => {
-    const speech = [...text];
-    if (isEnding && node.ending) speech.push(node.ending.summary);
-    const spoken = speech.join(' ');
-    const voiceId = voice?.value || 'sonia';
-    const label = sagaVoiceLabel(voiceId);
-    const url = sagaVoiceUrl(voiceId, spoken);
-    if (!url) {
-      setSagaVoiceStatus(ui, 'There is no studio clip for this scene yet.');
-      return;
-    }
-
-    stopNarration();
-    if (activeSagaListen) {
-      resetSagaListen(activeSagaListen);
-      activeSagaListen = null;
-    }
-    const run = ++sagaVoiceRun;
-    activeSagaVoice = ui;
-    setSagaVoiceStatus(ui, `Checking the ${label} clip…`, { busy: true });
-
-    let available = false;
-    try {
-      const response = await fetch(url, { method: 'HEAD' });
-      available = response.ok;
-    } catch {
-      available = false;
-    }
-    if (run !== sagaVoiceRun) return;
-    if (!available) {
-      activeSagaVoice = null;
-      setSagaVoiceStatus(ui, `No ${label} clip exists for this scene. This usually means the story name is not one of the recorded names. Use the normal Listen button, or start a run with the default name.`);
-      return;
-    }
-
-    setSagaVoiceStatus(ui, `Playing with ${label}…`, { busy: true });
-    narrate(spoken, {
-      audioUrl: url,
-      onStart: () => {
-        if (run === sagaVoiceRun) setSagaVoiceStatus(ui, `Playing with ${label}…`, { busy: true });
-      },
-      onEnd: () => {
-        if (run !== sagaVoiceRun) return;
-        activeSagaVoice = null;
-        if (start) start.textContent = 'Play again';
-        setSagaVoiceStatus(ui, `Finished with ${label}. Play again, or pick the other voice.`);
-      },
-      onError: () => {
-        if (run !== sagaVoiceRun) return;
-        activeSagaVoice = null;
-        setSagaVoiceStatus(ui, `The ${label} clip could not be played. Try the normal Listen button.`);
-      },
-    });
-  });
-}
 
 document.addEventListener('mythos:narration-stop', () => {
   if (!activeSagaListen) return;
@@ -253,9 +126,8 @@ function resetSagaListen(button) {
   button.innerHTML = listenButtonContent(button.dataset.listenLabel || 'Listen');
 }
 
-function playSagaNarration(button, text, audioUrls = [], { systemOnly = false } = {}) {
+function playSagaNarration(button, text, audioUrls = []) {
   if (!button) return;
-  if (activeSagaVoice) stopSagaVoice();
   if (button.dataset.speaking === 'true') {
     stopNarration();
     resetSagaListen(button);
@@ -263,19 +135,19 @@ function playSagaNarration(button, text, audioUrls = [], { systemOnly = false } 
     return;
   }
   if (activeSagaListen && activeSagaListen !== button) resetSagaListen(activeSagaListen);
-  if (!systemOnly && !voiceChosen()) {
+  if (!voiceChosen()) {
     document.dispatchEvent(new CustomEvent('mythos:open-voice'));
-    toast('Choose a narrator first. Morgan is selected by default.', { tone: 'gold', duration: 3200 });
+    toast('Choose a narrator first. Sonia is selected by default.', { tone: 'gold', duration: 3200 });
     return;
   }
-  const urls = systemOnly ? [] : audioUrls.filter(Boolean);
+  const urls = audioUrls.filter(Boolean);
   if (!narrationSupported(urls[0])) {
     toast('Narration is not available in this browser.', { tone: 'warn' });
     return;
   }
   if (!narrationEnabled()) {
     ensureNarration();
-    toast(systemOnly ? 'Narration on. Using your browser voice.' : 'Narration on. Using your chosen voice.', { tone: 'gold', duration: 2400 });
+    toast('Narration on. Using your chosen voice.', { tone: 'gold', duration: 2400 });
   }
   const clean = String(text || '').trim();
   if (!clean) {
@@ -533,9 +405,8 @@ function renderLanding(app, data, state) {
   }
 
   app.querySelector('[data-testid="saga-intro-listen"]')?.addEventListener('click', (event) => {
-    const systemOnly = data.studio_clips === false;
-    const studio = systemOnly ? '' : selectedStudioVoice();
-    playSagaNarration(event.currentTarget, data.intro, studio ? [sagaAudioUrl(studio, data.intro)] : [], { systemOnly });
+    const studio = selectedStudioVoice();
+    playSagaNarration(event.currentTarget, data.intro, studio ? [sagaAudioUrl(studio, data.intro)] : []);
   });
 
   app.querySelectorAll('form[data-testid="saga-name-form"]').forEach((form) => {
@@ -668,7 +539,7 @@ function renderNode(app, data, state) {
     renderLanding(app, data, state);
     return;
   }
-  stopSagaVoice({ silent: true });
+  stopNarration();
   setDocumentTitle(node.title);
   const act = actFor(data, node);
   const text = storyText(data, node, state);
@@ -713,7 +584,6 @@ function renderNode(app, data, state) {
 
         <div class="saga-read-tools">
           <button class="button button--ghost button--small" type="button" data-saga-listen data-listen-target="scene" data-listen-label="Listen to scene" data-testid="saga-listen" aria-label="Listen to this scene">${listenButtonContent('Listen to scene')}</button>
-          ${sagaVoiceMarkup(data)}
         </div>
 
         <div class="saga-text" data-testid="saga-text" aria-live="polite">
@@ -802,7 +672,6 @@ function renderNode(app, data, state) {
   }
 
   function finishReveal() {
-    stopSagaVoice();
     stopNarration();
     if (activeSagaListen) {
       resetSagaListen(activeSagaListen);
@@ -859,13 +728,10 @@ function renderNode(app, data, state) {
         speech = text[Number(target.split('-')[1])] || '';
         segments = [speech];
       }
-      const systemOnly = data.studio_clips === false;
-      const studio = systemOnly ? '' : selectedStudioVoice();
-      playSagaNarration(button, speech, studio ? segments.map((part) => sagaAudioUrl(studio, part)) : [], { systemOnly });
+      const studio = selectedStudioVoice();
+      playSagaNarration(button, speech, studio ? segments.map((part) => sagaAudioUrl(studio, part)) : []);
     });
   });
-
-  readSagaVoice(app, data, node, text, isEnding);
 
   continueButton?.addEventListener('click', advance);
   skipButton?.addEventListener('click', () => {

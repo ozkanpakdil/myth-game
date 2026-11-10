@@ -1,0 +1,10 @@
+{
+  "voice": "sonia",
+  "label": "Sonia",
+  "language": "British English",
+  "license": "Microsoft Edge TTS output \u2014 see Microsoft terms",
+  "model": "Microsoft Edge TTS (en-GB-SoniaNeural)",
+  "engine": "Microsoft Edge TTS",
+  "clips": 2001,
+  "generatedAt": "2026-11-10T14:31:17Z"
+}

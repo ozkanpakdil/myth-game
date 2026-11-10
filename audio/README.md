@@ -1,25 +1,28 @@
 # Narration audio
 
-Mythos ships three pre-generated narrators for story, quiz and saga clips. The
-browser's SpeechSynthesis voice remains the fallback when a clip is missing or
-cannot play.
+Mythos ships three pre-generated narrators. Sonia and Eric cover every story,
+quiz and saga clip; Morgan covers the archive stories and quizzes plus the
+Norse saga. The browser's SpeechSynthesis voice remains the fallback when a
+clip is missing or cannot play.
 
 ## Voices
 
 | Voice | Engine | Language | License |
 | --- | --- | --- | --- |
-| `joe` | Piper `en_US-joe-medium` | American English | CC0 |
-| `cori` | Piper `en_GB-cori-high` | British English | Public-domain dataset |
+| `sonia` | Microsoft Edge TTS `en-GB-SoniaNeural` | British English | Microsoft terms |
+| `eric` | Microsoft Edge TTS `en-US-EricNeural` | American English | Microsoft terms |
 | `morgan` | XTTS v2 (archive) + Piper (saga) | American English | **Non-commercial** |
 
-`joe` and `cori` are open voices with permissive licences. `morgan` is a
-fan-made clone of a public figure's voice. The archive clips use the XTTS v2
-fine-tune from
+Sonia and Eric are the standard narrators for every story, quiz and saga. The
+header voice picker is the only place to choose a studio voice; a saga has no
+special player. Morgan remains an optional third voice.
+
+Morgan is a fan-made clone of a public figure's voice. The archive clips use the
+XTTS v2 fine-tune from
 [`drewThomasson/Morgan_freeman_xtts_model`](https://huggingface.co/drewThomasson/Morgan_freeman_xtts_model);
 the saga clips use the smaller Piper Morgan model so they can be regenerated
-quickly.
-Two limits apply and are disclosed in the voice dialog, the About page and
-`CREDITS.md`:
+quickly. Two limits apply and are disclosed in the voice dialog, the About page
+and `CREDITS.md`:
 
 - The checkpoint's MIT tag covers the repository, not the person's likeness. It
   is not made with the subject's consent, and it must never be used to imply his
@@ -29,9 +32,9 @@ Two limits apply and are disclosed in the voice dialog, the About page and
   manifest. Ship it for an educational demo; strip it if the project ever goes
   commercial.
 
-No cloud service and no API key are involved; every clip is generated on the
-author's machine. The model files stay outside the repository; only the
-generated MP3s are committed.
+No cloud service and no API key are involved at play time; every clip is
+generated on the author's machine. Model files stay outside the repository;
+only the generated MP3s are committed.
 
 ## Layout
 
@@ -39,12 +42,12 @@ generated MP3s are committed.
 audio/
   samples/                 short audition files used by the voice dialog
   voices/
-    joe/
+    sonia/
       story/<story-id>-<paragraph>.mp3
       quiz/<question-id>.mp3
       saga/<text-hash>.mp3
       manifest.json
-    cori/
+    eric/
       ...
     morgan/
       ...
@@ -54,27 +57,31 @@ The player derives these paths in `js/narration.js` (`studioAudioUrl`) from the
 `STUDIO_VOICES` list in `js/storage.js`, so no large manifest lookup is needed
 at runtime.
 
-## Regenerate the Piper voices
+## Regenerate the standard Sonia and Eric voices
 
-Install Piper and download a voice model, then run the authoring script:
+The Edge TTS package is a development dependency only:
 
 ```bash
-python3 -m venv /tmp/piper-venv
-/tmp/piper-venv/bin/pip install piper-tts
-/tmp/piper-venv/bin/python -m piper.download_voices \
-  --download-dir /tmp/piper-voices en_US-joe-medium en_GB-cori-high
-
-python3 tools/generate_piper_audio.py \
-  --voice joe \
-  --model /tmp/piper-voices/en_US-joe-medium.onnx \
-  --config /tmp/piper-voices/en_US-joe-medium.onnx.json \
-  --label Joe --license CC0 --language "American English" \
-  --workers 3
+python3 -m venv .venv
+.venv/bin/pip install edge-tts
+.venv/bin/python tools/build_edge_voices.py --voices sonia,eric
 ```
 
-Use `--voice cori` with the Cori model/config for the second narrator.
-Add `--kind saga` to regenerate only the saga clips (story and quiz clips are
-skipped when they already exist).
+Useful options:
+
+```bash
+# only one kind, or one tradition/saga
+.venv/bin/python tools/build_edge_voices.py --kind story
+.venv/bin/python tools/build_edge_voices.py --only greek-olive
+
+# resume a partial run with more workers
+.venv/bin/python tools/build_edge_voices.py --concurrency 24
+```
+
+Existing files are skipped, so re-running is safe after content changes. The
+script writes `audio/voices/<voice>/manifest.json` and the short audition files
+in `audio/samples/`. It needs a network connection while rendering; the
+published site only serves the MP3s.
 
 ## Regenerate the Morgan saga voice
 
@@ -122,23 +129,13 @@ done
   --language "American English"
 ```
 
-The same weights are also published as `7_epoches/model.zip` in
-`drewThomasson/Morgan_freeman_xtts_model`; the fine-tuned-models copy is the
-same epoch 7 checkpoint (identical `model.pth` hash) but ships as loose files,
-so no unzip step is needed. The `fineTunedTTSModels` repository is tagged
-Apache-2.0, which does not change the base XTTS licence or the voice-rights
-caveat above.
-
 Pass `--device mps` on Apple Silicon to try the GPU, `--limit 5` for a quick
 smoke test, and `--shard 0/3 … 2/3` to split a full render across three
-processes (roughly 3× faster on an 8–10 core laptop).
-
-Existing files are skipped in both scripts, so they are safe to re-run after
-content changes.
+processes. Existing files are skipped in every script, so they are safe to
+re-run after content changes.
 
 ## Audition samples
 
 The `samples/` folder holds short recordings of the same paragraph, played by
 the in-dialog audition before a voice is selected:
-`samples/en_GB-cori-high.mp3`, `samples/en_US-joe-medium.mp3` and
-`samples/morgan-xtts.mp3`.
+`samples/sonia.mp3`, `samples/eric.mp3` and `samples/morgan-xtts.mp3`.

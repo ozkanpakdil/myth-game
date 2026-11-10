@@ -1,9 +1,0 @@
-{
-  "voice": "cori",
-  "label": "Cori",
-  "language": "British English",
-  "license": "Public domain",
-  "model": "en_GB-cori-high.onnx",
-  "clips": 1668,
-  "generatedAt": "2026-11-08T18:57:36Z"
-}

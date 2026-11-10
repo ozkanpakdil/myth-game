@@ -7,35 +7,35 @@ Mythos is an educational draft. The retellings are new, short summaries in moder
 - Design, code and retellings: the Mythos project.
 - Built with HTML, CSS and vanilla JavaScript. No frameworks, no build step. Google Analytics is the only third-party script and is disabled on localhost.
 - All images are original SVG: 16×16 text-grid sigils compiled by `tools/render_sprites.js`, procedural story scenes and character portraits from `js/scene.js`, plus an inline SVG map generated from a text tile grid.
-- Narration is optional and generated on the author's machine. The browser's
-  SpeechSynthesis API is the fallback; the shipped clips come from three models:
-  - **Joe** — Piper `en_US-joe-medium`, CC0.
-  - **Cori** — Piper `en_GB-cori-high`, trained on a public-domain dataset.
-  - **Morgan** — a fan-made clone of Morgan Freeman's voice. The archive clips
-    use the XTTS v2 fine-tune
-    [`drewThomasson/Morgan_freeman_xtts_model`](https://huggingface.co/drewThomasson/Morgan_freeman_xtts_model);
-    the saga clips use the Piper Morgan model from the same family of
-    fine-tunes. The clone was not made with his consent, so it is used only as
-    a non-commercial demonstration of narration, is labelled as a fan-made
+- Narration is optional. The browser's SpeechSynthesis API is the fallback; the
+  shipped clips were pre-rendered on the author's machine with the three voices
+  below. Edge TTS uses Microsoft's service only while authoring, never at play
+  time:
+  - **Sonia** — Microsoft Edge TTS `en-GB-SoniaNeural`, British English. The
+    standard narrator for every story, quiz and saga.
+  - **Eric** — Microsoft Edge TTS `en-US-EricNeural`, American English. The
+    second standard narrator across the site.
+  - **Morgan** — an optional fan-made clone of Morgan Freeman's voice. The
+    archive and saga clips use XTTS v2 / Piper fine-tunes from the
+    [`drewThomasson/Morgan_freeman_xtts_model`](https://huggingface.co/drewThomasson/Morgan_freeman_xtts_model)
+    family. The clone was not made with his consent, so it is used only as a
+    non-commercial demonstration of narration, is labelled as a fan-made
     clone in the voice dialog, and must never be presented as his endorsement
     or used to deceive a listener. The `morgan` clips carry a
     `Non-commercial (voice clone)` manifest entry; remove them before any
     commercial distribution.
-  - The five newer story paths use the reader's installed browser voice for
-    the normal Listen control, and also ship optional pre-rendered Sonia and
-    Eric clips. The Norse saga and the archive stories keep the recorded voices
-    above.
-- **Sonia and Eric saga voices.** The five newer stories can optionally play
-  pre-recorded clips made with **Microsoft Edge TTS**. The voice IDs are
+- **Sonia and Eric clips.** Every story paragraph, quiz question and saga
+  paragraph has a pre-recorded Sonia and Eric clip. The voice IDs are
   `en-GB-SoniaNeural` and `en-US-EricNeural`. The source samples are from
-  [`yaph/tts-samples`](https://github.com/yaph/tts-samples) — the repository is
+  [`yaph/tts-samples`](https://github.com/yaph/tts-samples) — that repository is
   MIT-licensed, but generated Edge TTS output is subject to Microsoft's terms.
   Confirm those terms before redistributing the clips or using them
   commercially.
-  - The clips live in `audio/saga/`. They are ordinary MP3s served by the site;
-    the browser never contacts Edge TTS or loads a speech model. The authoring
-    script is `tools/build_saga_voices.py`; it runs only when the clips are
-    rebuilt, not during deployment or at play time.
+  - The clips live in `audio/voices/sonia/` and `audio/voices/eric/`. They are
+    ordinary MP3s served by the site; the browser never contacts Edge TTS or
+    loads a speech model. The authoring script is
+    `tools/build_edge_voices.py`; it runs only when the clips are rebuilt, not
+    during deployment or at play time.
   - Sonia and Eric are fixed studio-style voices, not endorsements of this
     project. The stories remain child-friendly; the clips are not presented as
     a commercial voice service.
@@ -446,4 +446,4 @@ The game uses objects and symbols rather than faces of deities. It does not atte
 
 No third-party fonts, photographs or illustrations are bundled. `@playwright/test` and the Edge TTS authoring package are development dependencies only and are not shipped to players. The source texts listed above are cited as references; the retellings do not reproduce long passages.
 
-The Sonia and Eric clips were generated with Microsoft Edge TTS from the two declared samples. No speech model is shipped or downloaded by players. The sample repository is MIT-licensed, but the generated Edge TTS output remains subject to Microsoft's terms. Confirm those terms before redistributing the clips.
+The Sonia and Eric clips were generated with Microsoft Edge TTS from the two declared samples. No speech model is shipped or downloaded by players. The sample repository is MIT-licensed, but the generated Edge TTS output remains subject to Microsoft's terms. Confirm those terms before redistributing the clips. The old Cori and Joe Piper clips are no longer shipped.

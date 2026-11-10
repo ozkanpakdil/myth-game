@@ -7,7 +7,7 @@
  * opt-in per click, stops on navigation, and degrades quietly.
  */
 
-import { getSettings, updateSettings, STUDIO_VOICES } from './storage.js?v=20261110-3';
+import { getSettings, updateSettings, STUDIO_VOICES } from './storage.js?v=20261110-4';
 
 let generation = 0;
 let currentAudio = null;
@@ -30,7 +30,7 @@ export function narrationEnabled() {
 
 /**
  * Build the stable path for a generated studio clip. Paths mirror the authoring
- * scripts in tools/ (generate_piper_audio.py, generate_xtts_audio.py); no
+ * scripts in tools/ (build_edge_voices.py, generate_xtts_audio.py); no
  * manifest lookup is needed.
  */
 export function studioAudioUrl(voice, kind, id, index = 0) {

@@ -109,48 +109,47 @@ shorter and use simpler language.
 A run is stored per story in `mythos.saga.v2`, so one path never overwrites
 another and saga runs never disturb quiz, codex or challenge progress. The old
 single-story key, `mythos.saga.v1`, is migrated automatically on first read.
-The five new stories use the browser's installed voice for narration; the
-existing stories and the Norse saga also offer the recorded studio voices. The
-sagas are English-only. Names use common English spellings, and living
-traditions are presented with care: the Hindu and Japanese notes explain
-multiple tellings and treat the figures with respect.
+Every story, quiz and saga uses the same studio-voice picker. The sagas are
+English-only. Names use common English spellings, and living traditions are
+presented with care: the Hindu and Japanese notes explain multiple tellings
+and treat the figures with respect.
 
-### Sonia and Eric saga voices
+### Sonia and Eric studio voices
 
-The five newer stories offer two **pre-recorded studio narrators**: **Sonia**
-(British English) and **Eric** (American English). Choose one in the
-**Sonia & Eric** panel and the scene plays like the other studio clips. There
-is no model download, no speech request, and no waiting between sentences.
+**Sonia** (British English) and **Eric** (American English) are the standard
+pre-recorded narrators across the whole site. The same choice follows you from
+a myth story to its quiz and into every saga scene. The header speaker menu
+holds the picker; there is no saga-only voice box. Morgan remains an optional
+third studio voice and the browser's installed voice is always the fallback.
 
-- The clips live in `audio/saga/<voice>/<hash>.mp3`. The hash is the same
-  FNV-1a hash of the exact scene text used for the Piper saga clips, so the
-  player needs no manifest lookup. `audio/saga/manifest.json` records the
-  voices and voice IDs.
-- Each scene was rendered offline with **Microsoft Edge TTS** using
+- Story and quiz clips live in `audio/voices/<voice>/story/` and
+  `audio/voices/<voice>/quiz/`; saga clips live in
+  `audio/voices/<voice>/saga/`. A saga clip is addressed by the FNV-1a hash of
+  the exact paragraph instead of a manifest lookup.
+- All clips were pre-rendered with **Microsoft Edge TTS** using
   `en-GB-SoniaNeural` and `en-US-EricNeural`. The browser only receives the
   MP3s; it never talks to Edge TTS or loads a speech model.
 - The two source samples are from
   [`yaph/tts-samples`](https://github.com/yaph/tts-samples): Sonia and Eric.
   The repository is MIT-licensed, but generated Edge TTS output is subject to
   Microsoft's terms. Confirm those terms before redistributing the clips.
-- Clips cover the story's default name and its suggested names. If a reader
-  enters a different name, that scene has no matching clip; the panel says so
-  and the normal **Listen** button remains the fallback. This avoids silently
+- Clips cover each saga's default name and its suggested names. If a reader
+  enters a different name, that scene has no matching clip and the normal
+  **Listen** button falls back to the system voice. This avoids silently
   playing a clip that says the wrong name.
 
-To rebuild clips after changing saga prose:
+To rebuild clips after changing story, quiz or saga prose:
 
 ```bash
 python3 -m venv .venv
 .venv/bin/pip install edge-tts
-.venv/bin/python tools/build_saga_voices.py --voices sonia,eric
+.venv/bin/python tools/build_edge_voices.py --voices sonia,eric
 ```
 
 The tool needs a network connection while it renders, skips clips that already
-exist, and rewrites the manifest. It never runs during deployment or at play
-time. After replacing audio for an unchanged scene, bump
-`SAGA_VOICE_VERSION` in `js/saga-voice.js` and the global asset version so
-browsers fetch the new MP3.
+exist, and writes a per-voice manifest. It never runs during deployment or at
+play time. After replacing audio for an unchanged clip, bump the global asset
+version in `index.html` and the `js/*.js` imports so browsers fetch the new MP3.
 
 ### Game rules
 
@@ -213,7 +212,6 @@ js/
   saga.js               story library, per-saga landing, scene reader, choices and endings
   saga-art.js           animated inline-SVG saga scenes and path glyphs
   saga-state.js         per-story save/rewind/effects with v1 migration
-  saga-voice.js         lookup and labels for the Sonia and Eric clips
   narration.js          studio-clip playback with browser speech fallback
   ui.js                 shared escaping, formatting and dialog helpers
 content/
@@ -228,9 +226,8 @@ content/
   saga/egypt-sunboat.json
 schemas/                JSON Schema documents for every content file
 audio/
-  voices/               joe, cori and morgan narration clips
+  voices/               sonia, eric and morgan narration clips
   samples/              short in-dialog audition files
-  saga/                 pre-rendered Sonia and Eric saga clips
 assets/
   palette.json          16-key pixel palette
   sprites/icons/        16×16 text grids: mythology sigils and map markers
@@ -243,8 +240,9 @@ tools/
   validate_content.js   content validator
   render_sprites.js     text-grid → SVG compiler
   make_map.js           regenerates assets/map/world.txt
-  generate_piper_audio.py  offline authoring tool for studio narration clips
-  build_saga_voices.py     Edge TTS authoring tool for Sonia and Eric saga clips
+  generate_piper_audio.py  offline authoring tool for the optional Morgan saga
+  generate_xtts_audio.py   offline authoring tool for the optional Morgan archive
+  build_edge_voices.py     Edge TTS authoring tool for every Sonia and Eric clip
 tests/                  Playwright end-to-end tests
 ```
 
@@ -329,15 +327,15 @@ not fetched images. See `assets/STYLE_GUIDE.md` for the palette and grid rules.
 - The map has focusable regions, a list view and a horizontally scrollable
   mobile view; region details are announced in a live region.
 - Text-size control (`Aa`) cycles 100 / 112.5 / 125%, persisted locally.
-- Optional narration uses pre-generated neural clips — open Piper voices (Joe,
-  Cori) plus a fan-made, non-commercial Morgan clone — or the browser's
-  SpeechSynthesis API as a fallback. Morgan is preselected; the first Listen
-  opens the voice picker so the choice is explicit. It never autoplays and
-  stops on navigation or when the voice is changed. The header speaker button
-  opens a narration dialog with an on/off switch, a fallback system-voice
-  picker and selectable studio voices. Selecting a studio voice applies
-  immediately and is saved as `studioVoice`; each Listen button plays its clip
-  and falls back to the system voice if the clip is unavailable.
+- Optional narration uses pre-generated neural clips — standard Microsoft Edge
+  voices Sonia and Eric, plus an optional fan-made, non-commercial Morgan clone
+  — or the browser's SpeechSynthesis API as a fallback. Sonia is preselected;
+  the first Listen opens the voice picker so the choice is explicit. It never
+  autoplays and stops on navigation or when the voice is changed. The header
+  speaker button opens a narration dialog with an on/off switch, a fallback
+  system-voice picker and selectable studio voices. Selecting a studio voice
+  applies immediately and is saved as `studioVoice`; each Listen button plays
+  its clip and falls back to the system voice if the clip is unavailable.
   Premium/Enhanced/Natural system voices are grouped first with a ★.
 - `prefers-reduced-motion` removes animations.
 - All decorative sigils have empty `alt`; labels are in text.
@@ -407,5 +405,4 @@ Code and original SVG art: the Mythos project. Retellings are new summaries,
 not translations; source notes are listed per tradition in `CREDITS.md` and in
 the game. No third-party fonts or images are used. Google Analytics is the
 only third-party script on the published site. The Sonia and Eric clips were
-generated offline with Microsoft Edge TTS; no speech model or runtime is
-shipped. See `CREDITS.md`.
+pre-rendered with Microsoft Edge TTS; no speech model or runtime is shipped. See `CREDITS.md`.

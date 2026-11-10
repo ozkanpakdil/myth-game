@@ -9,7 +9,7 @@
  * catalog and one story JSON.
  */
 
-import { loadSagaCatalog, loadSagaStory } from './content.js?v=20261110-2';
+import { loadSagaCatalog, loadSagaStory } from './content.js?v=20261110-3';
 import {
   escapeHtml,
   progressBar,
@@ -17,9 +17,9 @@ import {
   confirmDialog,
   setDocumentTitle,
   listenButtonContent,
-} from './ui.js?v=20261110-2';
-import { sagaScene, sagaGlyph } from './saga-art.js?v=20261110-2';
-import { sagaVoiceUrl, sagaVoiceLabel } from './saga-voice.js?v=20261110-2';
+} from './ui.js?v=20261110-3';
+import { sagaScene, sagaGlyph } from './saga-art.js?v=20261110-3';
+import { sagaVoiceUrl, sagaVoiceLabel } from './saga-voice.js?v=20261110-3';
 import {
   narrate,
   narrateSequence,
@@ -30,7 +30,7 @@ import {
   selectedStudioVoice,
   voiceChosen,
   sagaAudioUrl,
-} from './narration.js?v=20261110-2';
+} from './narration.js?v=20261110-3';
 import {
   loadSaga as loadSagaRun,
   saveSaga as saveSagaRun,
@@ -40,7 +40,7 @@ import {
   pushHistory,
   applyEffects,
   cleanName,
-} from './saga-state.js?v=20261110-2';
+} from './saga-state.js?v=20261110-3';
 
 const STAT_LABELS = { insight: 'Insight', courage: 'Courage', cunning: 'Cleverness' };
 const MAX_PIPS = 5;
@@ -491,7 +491,7 @@ function renderLanding(app, data, state) {
       <p class="eyebrow">How it works</p>
       <h2 id="saga-how-title">Read a little. Choose. See what happens.</h2>
       <ol class="saga-how__steps">
-        <li><span>01</span><div><strong>One step at a time</strong><p>Each scene opens one paragraph at a time. The myth note appears when the scene is finished.</p></div></li>
+        <li><span>01</span><div><strong>One step at a time</strong><p>Each scene shows one paragraph at a time. <strong>Next</strong> replaces it, so the page stays in one place. The myth note appears when the scene is finished.</p></div></li>
         <li><span>02</span><div><strong>Make a choice</strong><p>Every choice adds something to what you carry. Some choices only appear if you have earned them.</p></div></li>
         <li><span>03</span><div><strong>Try another path</strong><p>Your place, your gifts and your endings are saved in this browser. Start again to find a different ending.</p></div></li>
       </ol>
@@ -673,8 +673,6 @@ function renderNode(app, data, state) {
   const act = actFor(data, node);
   const text = storyText(data, node, state);
   const isEnding = Boolean(node.ending);
-  const revealed = isEnding ? text.length : 1;
-  const complete = revealed >= text.length;
   const availableChoices = (node.choices || []).filter((choice) => choiceAvailable(choice, state));
   const last = state.history[state.history.length - 1];
 
@@ -709,7 +707,7 @@ function renderNode(app, data, state) {
             </div>
             <span class="muted small" data-testid="saga-progress">Paragraph 1 of ${text.length}</span>
             ${progressBar(1, text.length, 'Scene reading progress', { compact: true }).replace('class="progress', 'data-saga-progress class="progress')}
-            ${isEnding || complete ? '' : '<button class="text-link saga-skip" type="button" data-testid="saga-skip">Reveal the whole scene</button>'}
+            <button class="text-link saga-skip" type="button" data-testid="saga-skip">Skip to the end</button>
           </div>
         </header>
 
@@ -718,26 +716,26 @@ function renderNode(app, data, state) {
           ${sagaVoiceMarkup(data)}
         </div>
 
-        <div class="saga-text" data-testid="saga-text">
+        <div class="saga-text" data-testid="saga-text" aria-live="polite">
           ${text
             .map(
-              (paragraph, index) => `<div class="saga-paragraph-group" data-paragraph-group="${index}"${index < revealed ? '' : ' hidden'}>
-                <p class="saga-paragraph${index < revealed ? '' : ' is-hidden'}" data-paragraph="${index}"${index < revealed ? '' : ' hidden'}>${escapeHtml(paragraph)}</p>
+              (paragraph, index) => `<div class="saga-paragraph-group" data-paragraph-group="${index}"${index === 0 ? '' : ' hidden'}>
+                <p class="saga-paragraph${index === 0 ? '' : ' is-hidden'}" data-paragraph="${index}"${index === 0 ? '' : ' hidden'}>${escapeHtml(paragraph)}</p>
                 <button class="saga-listen-inline" type="button" data-saga-listen data-listen-target="paragraph-${index}" data-listen-label="Listen" data-testid="saga-listen-${index}" aria-label="Listen to paragraph ${index + 1}">${listenButtonContent('Listen')}</button>
               </div>`,
             )
             .join('')}
+          <div class="saga-controls">
+            <button class="button button--primary" type="button" data-testid="saga-continue">${text.length === 1 ? 'Finish scene' : 'Next'} <span aria-hidden="true">→</span></button>
+            <span class="small muted">Click, or press Enter</span>
+          </div>
         </div>
 
-        <div class="saga-after" ${complete ? '' : 'hidden'}>
+        <div class="saga-after" hidden>
           ${loreMarkup(node)}
           ${isEnding ? endingMarkup(data, state, node) : choiceMarkup(node.choices || [], state, data)}
         </div>
 
-        <div class="saga-controls" ${isEnding || complete ? 'hidden' : ''}>
-          <button class="button button--primary" type="button" data-testid="saga-continue">Continue <span aria-hidden="true">→</span></button>
-          <span class="small muted">Click, or press Enter</span>
-        </div>
       </section>
     </div>
   </div>`;
@@ -751,12 +749,35 @@ function renderNode(app, data, state) {
   const continueButton = app.querySelector('[data-testid="saga-continue"]');
   const skipButton = app.querySelector('[data-testid="saga-skip"]');
   const choices = app.querySelector('[data-testid="saga-choices"]');
-  let shown = revealed;
+  let shown = 1;
+
+  function reserveReadingHeight() {
+    const textEl = app.querySelector('[data-testid="saga-text"]');
+    if (!textEl) return;
+    const groups = [...textEl.querySelectorAll('[data-paragraph-group]')];
+    let tallest = 0;
+    for (const group of groups) {
+      const paragraph = group.querySelector('[data-paragraph]');
+      const groupHidden = group.hidden;
+      const paragraphHidden = paragraph?.hidden;
+      group.hidden = false;
+      if (paragraph) paragraph.hidden = false;
+      tallest = Math.max(tallest, group.getBoundingClientRect().height);
+      group.hidden = groupHidden;
+      if (paragraph && paragraphHidden !== undefined) paragraph.hidden = paragraphHidden;
+    }
+    if (tallest > 0) {
+      const controlsHeight = controls?.getBoundingClientRect().height || 0;
+      textEl.style.minHeight = `${Math.ceil(tallest + controlsHeight + 16)}px`;
+    }
+  }
+
+  reserveReadingHeight();
 
   function updateProgress() {
     if (progressLabel) {
       progressLabel.textContent = isEnding
-        ? `Ending · ${text.length} paragraph${text.length === 1 ? '' : 's'}`
+        ? `Ending · paragraph ${shown} of ${text.length}`
         : `Paragraph ${shown} of ${text.length}`;
     }
     if (progressWrap) progressWrap.setAttribute('aria-valuenow', String(shown));
@@ -767,14 +788,17 @@ function renderNode(app, data, state) {
     });
   }
 
-  function reveal(index) {
-    const group = app.querySelector(`[data-paragraph-group="${index}"]`);
-    if (group) group.hidden = false;
-    const paragraph = app.querySelector(`[data-paragraph="${index}"]`);
-    if (paragraph) {
-      paragraph.hidden = false;
-      paragraph.classList.remove('is-hidden');
-    }
+  function showParagraph(index) {
+    const activeIndex = Math.max(0, Math.min(text.length - 1, index));
+    app.querySelectorAll('[data-paragraph-group]').forEach((group) => {
+      const active = Number(group.dataset.paragraphGroup) === activeIndex;
+      group.hidden = !active;
+      const paragraph = group.querySelector('[data-paragraph]');
+      if (paragraph) {
+        paragraph.hidden = !active;
+        paragraph.classList.toggle('is-hidden', !active);
+      }
+    });
   }
 
   function finishReveal() {
@@ -784,7 +808,7 @@ function renderNode(app, data, state) {
       resetSagaListen(activeSagaListen);
       activeSagaListen = null;
     }
-    for (let index = shown; index < text.length; index += 1) reveal(index);
+    showParagraph(text.length - 1);
     shown = text.length;
     updateProgress();
     if (after) after.hidden = false;
@@ -803,11 +827,17 @@ function renderNode(app, data, state) {
       finishReveal();
       return;
     }
-    reveal(shown);
+    showParagraph(shown);
     shown += 1;
     updateProgress();
-    if (shown >= text.length) finishReveal();
+    if (continueButton) {
+      continueButton.innerHTML = shown >= text.length
+        ? 'Finish scene <span aria-hidden="true">→</span>'
+        : 'Next <span aria-hidden="true">→</span>';
+    }
   }
+
+  updateProgress();
 
   app.querySelectorAll('[data-saga-listen]').forEach((button) => {
     button.addEventListener('click', () => {
@@ -842,7 +872,7 @@ function renderNode(app, data, state) {
     finishReveal();
   });
   app.querySelector('.saga-copy')?.addEventListener('keydown', (event) => {
-    if (event.key !== 'Enter' || event.defaultPrevented || shown >= text.length) return;
+    if (event.key !== 'Enter' || event.defaultPrevented) return;
     if (event.target.closest('button, a, input, textarea, select, summary')) return;
     event.preventDefault();
     advance();

@@ -96,9 +96,11 @@ tellings disagree.
 | The Boat of the Sun | Egyptian | 9+ | lamp, stars, names | 4 |
 | The Ash-Seed | Norse | 10+ | raven, wolf, hammer | 5 |
 
-You name the protagonist, then read one short scene at a time. A Listen control
-reads the scene aloud, and every visible paragraph has its own Listen button; a
-myth note and a set of choices appear when the scene is complete. Some choices
+You name the protagonist, then read one short scene at a time. Each scene is
+paginated: **Next** replaces the current paragraph in place, so the page does not
+grow as you read. A Listen control reads the scene aloud, and the current
+paragraph has its own Listen button; a myth note and a set of choices appear when
+the scene is complete. Some choices
 are gated by gifts and debts collected earlier, and every choice is saved as a
 snapshot so the in-game back button and browser history can rewind cleanly. The
 Norse story is a longer, older-reader path with 20 scenes; the new stories are
@@ -350,7 +352,7 @@ system-voice selection, theme/font persistence, OS `prefers-color-scheme` defaul
 link and quiz keyboard feedback. The saga suite covers the six-story library,
 per-story state, a complete Greek path, browser-voice narration for the new
 stories, legacy-link migration, name entry and the default protagonist,
-progressive reveal, scene and paragraph narration, the myth note, gated
+one-paragraph pagination, scene and paragraph narration, the myth note, gated
 choices, persistence and resume, in-game back, restart confirmation, ending
 collection, mobile overflow, and the pre-rendered Sonia/Eric panel. CI never
 calls Edge TTS.

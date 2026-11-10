@@ -3,10 +3,10 @@
  * Drag-and-drop is supported where a mouse is available; every action also has
  * keyboard controls, so no drag-and-drop is required.
  */
-import { escapeHtml, focusPage, progressBar, toast, yearLabel, rangeLabel } from './ui.js?v=20261110-2';
-import { loadMythologies, loadAllPlayable } from './content.js?v=20261110-2';
-import { awardBadges, getChallengeRecord, recordChallenge } from './storage.js?v=20261110-2';
-import { evaluateBadges } from './badges.js?v=20261110-2';
+import { escapeHtml, focusPage, progressBar, toast, yearLabel, rangeLabel } from './ui.js?v=20261110-3';
+import { loadMythologies, loadAllPlayable } from './content.js?v=20261110-3';
+import { awardBadges, getChallengeRecord, recordChallenge } from './storage.js?v=20261110-3';
+import { evaluateBadges } from './badges.js?v=20261110-3';
 
 const CHALLENGES = [
   {

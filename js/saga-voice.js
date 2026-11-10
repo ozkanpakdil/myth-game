@@ -7,14 +7,14 @@
  * was not recorded simply has no URL.
  */
 
-import { sagaTextId } from './narration.js?v=20261110-2';
+import { sagaTextId } from './narration.js?v=20261110-3';
 
 export const SAGA_VOICES = Object.freeze([
   { id: 'sonia', label: 'Sonia', note: 'female, British English' },
   { id: 'eric', label: 'Eric', note: 'male, American English' },
 ]);
 
-export const SAGA_VOICE_VERSION = '20261110-2';
+export const SAGA_VOICE_VERSION = '20261110-3';
 
 export function isSagaVoice(voice) {
   return SAGA_VOICES.some((entry) => entry.id === voice);

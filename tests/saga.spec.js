@@ -345,7 +345,7 @@ test.describe('branching play', () => {
     await clip;
   });
 
-  test('reveals prose step by step, opens the myth note, and follows a chosen road', async ({ page }) => {
+  test('paginates prose one paragraph at a time, then opens the myth note and roads', async ({ page }) => {
     await page.goto('/#/saga/norse');
     await page.getByTestId('saga-name').fill('Michael');
     await page.getByTestId('saga-begin').click();
@@ -361,18 +361,19 @@ test.describe('branching play', () => {
 
     await page.getByTestId('saga-continue').click();
     await expect(page.getByTestId('saga-progress')).toContainText('Paragraph 2 of');
-    await expect(page.locator('.saga-paragraph:visible')).toHaveCount(2);
+    await expect(page.locator('.saga-paragraph:visible')).toHaveCount(1);
+    await expect(page.getByTestId('saga-listen-0')).toBeHidden();
+    await expect(page.getByTestId('saga-listen-1')).toBeVisible();
 
     await page.getByTestId('saga-skip').click();
     await expect(page.getByTestId('saga-progress')).toContainText(`Paragraph ${saga.nodes.prologue.text.length} of`);
-    await expect(page.locator('.saga-paragraph:visible')).toHaveCount(saga.nodes.prologue.text.length);
+    await expect(page.locator('.saga-paragraph:visible')).toHaveCount(1);
     await expect(page.getByTestId('saga-lore')).toBeVisible();
     await expect(page.getByTestId('saga-choices')).toBeVisible();
     await expect(page.locator('.saga-choice')).toHaveCount(3);
     await expect(page.getByTestId('saga-lore-listen')).toBeVisible();
-    for (let index = 0; index < saga.nodes.prologue.text.length; index += 1) {
-      await expect(page.getByTestId(`saga-listen-${index}`)).toBeVisible();
-    }
+    await expect(page.getByTestId(`saga-listen-${saga.nodes.prologue.text.length - 1}`)).toBeVisible();
+    await expect(page.getByTestId('saga-listen-0')).toBeHidden();
 
     await chooseSaga(page, 0);
     await expect(page.getByTestId('saga-page')).toHaveAttribute('data-node', 'raven-1');
@@ -411,6 +412,38 @@ test.describe('branching play', () => {
     await expect(page.getByTestId('saga-continue')).toHaveAttribute('href', '#/saga/norse/forge-1');
   });
 
+  test('replaces the paragraph on Next instead of growing the page', async ({ page }) => {
+    await page.setViewportSize({ width: 390, height: 844 });
+    await page.goto('/#/saga/norse');
+    await page.getByTestId('saga-name').fill('Michael');
+    await page.getByTestId('saga-begin').click();
+
+    const paragraphs = saga.nodes.prologue.text.map((paragraph) => paragraph.replaceAll('{name}', 'Michael'));
+    const next = page.getByTestId('saga-continue');
+    await next.scrollIntoViewIfNeeded();
+    const before = await page.evaluate(() => window.scrollY);
+    const box = await next.boundingBox();
+    await page.mouse.click(box.x + box.width / 2, box.y + box.height / 2);
+
+    await expect(page.getByTestId('saga-progress')).toContainText('Paragraph 2 of');
+    await expect(page.locator('.saga-paragraph:visible')).toHaveCount(1);
+    await expect(page.locator('.saga-paragraph:visible')).toContainText(paragraphs[1].slice(0, 35));
+    await expect(page.getByTestId('saga-listen-0')).toBeHidden();
+    const after = await page.evaluate(() => window.scrollY);
+    expect(Math.abs(after - before)).toBeLessThanOrEqual(2);
+
+    for (let index = 2; index < paragraphs.length; index += 1) {
+      await next.click();
+      await expect(page.getByTestId('saga-progress')).toContainText(`Paragraph ${index + 1} of`);
+      await expect(page.locator('.saga-paragraph:visible')).toHaveCount(1);
+    }
+    await expect(next).toContainText('Finish scene');
+    await next.click();
+    await expect(page.getByTestId('saga-choices')).toBeVisible();
+    await expect(page.locator('.saga-paragraph:visible')).toHaveCount(1);
+    await expect(page.getByTestId('saga-continue')).toBeHidden();
+  });
+
   test('shows only choices whose requirements the thread has earned', async ({ page }) => {
     await seedLegacySaga(page, sagaState({ node: 'raven-4', visited: ['prologue', 'raven-1', 'raven-2', 'raven-3', 'raven-4'] }));
     await page.goto('/#/saga/norse/raven-4');
@@ -440,6 +473,8 @@ test.describe('endings and reset', () => {
     await chooseSaga(page, 0);
 
     await expect(page.getByTestId('saga-page')).toHaveAttribute('data-ending', 'true');
+    await expect(page.getByTestId('saga-ending')).toBeHidden();
+    await page.getByTestId('saga-skip').click();
     await expect(page.getByTestId('saga-ending')).toBeVisible();
     await expect(page.getByTestId('saga-ending')).toContainText('The Thread Renewed');
     await expect(page.getByTestId('saga-scene')).toHaveAttribute('data-art', 'meadow');

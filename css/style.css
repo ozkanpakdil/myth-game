@@ -2065,7 +2065,7 @@ a.story-row:hover { border-color: var(--gold); background: var(--surface-2); tra
   .saga-voices__controls .button { width: 100%; }
   .saga-voices__voice { width: 100%; }
 }
-.saga-text { min-height: 14rem; padding: 1.3rem 0 0.3rem; }
+.saga-text { min-height: 14rem; padding: 1.3rem 0 0.3rem; overflow-anchor: none; }
 .saga-text .saga-paragraph {
   max-width: 60ch;
   margin: 0 0 1.15rem;
@@ -2074,7 +2074,7 @@ a.story-row:hover { border-color: var(--gold); background: var(--surface-2); tra
   font-size: clamp(1.18rem, 1.65vw, 1.34rem);
   line-height: 1.78;
 }
-.saga-text .saga-paragraph:first-child::first-letter {
+.saga-text .saga-paragraph-group:first-child .saga-paragraph::first-letter {
   float: left;
   margin: 0.12em 0.1em 0 0;
   color: var(--gold-2);

@@ -57,6 +57,18 @@ The player derives these paths in `js/narration.js` (`studioAudioUrl`) from the
 `STUDIO_VOICES` list in `js/storage.js`, so no large manifest lookup is needed
 at runtime.
 
+## Compression
+
+The committed MP3s are normalised to **32 kbps mono at 22.05 kHz** so the Pages artifact stays small. Edge TTS renders at 48 kbps; recompress after a rebuild with:
+
+```bash
+find audio -name '*.mp3' -print0 | xargs -0 -P 8 -n 1 bash -c '
+  f="$1"; tmp="${f%.mp3}.tmp.mp3"
+  ffmpeg -hide_banner -loglevel error -y -i "$f" -map_metadata -1 \
+    -codec:a libmp3lame -b:a 32k -ar 22050 -ac 1 -write_xing 0 "$tmp" && mv "$tmp" "$f"
+' _
+```
+
 ## Regenerate the standard Sonia and Eric voices
 
 The Edge TTS package is a development dependency only:
